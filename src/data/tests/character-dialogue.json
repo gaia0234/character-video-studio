@@ -1,0 +1,16 @@
+{
+  "image": "assets/tests/square.svg",
+  "characters": {
+    "ルーノ": {"src": "assets/characters/test-cutouts/luno-front-v1.png", "width": 233, "height": 272, "contentHeight": 240, "padding": 16},
+    "ミーノ": {"src": "assets/characters/test-cutouts/miino-front-v1.png", "width": 218, "height": 282, "contentHeight": 250, "padding": 16},
+    "カーノ": {"src": "assets/characters/test-cutouts/kano-front-v1.png", "width": 190, "height": 243, "contentHeight": 211, "padding": 16}
+  },
+  "beats": [
+    {"speaker": "ルーノ", "text": "これ、実は\n正方形なんです。", "seconds": 5, "stage": "character", "reaction": "enter"},
+    {"speaker": "ルーノ", "text": "この画像のこと。", "seconds": 6, "stage": "reveal", "reaction": "point"},
+    {"speaker": "ミーノ", "text": "え、縦長じゃ\nないの？", "seconds": 5, "stage": "character", "reaction": "tilt"},
+    {"speaker": "ルーノ", "text": "画像じゃなくて、\n置き方の話。", "seconds": 8, "stage": "layout", "reaction": "point"},
+    {"speaker": "カーノ", "text": "画面は縦長。\n画像は１：１だね。", "seconds": 3, "stage": "character", "reaction": "nod"},
+    {"speaker": "ルーノ", "text": "形はそのまま。\n見せ方を変えよう。", "seconds": 3, "stage": "character", "reaction": "nod"}
+  ]
+}

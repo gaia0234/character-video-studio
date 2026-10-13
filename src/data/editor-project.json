@@ -1,0 +1,149 @@
+{
+  "image": "assets/tests/square.svg",
+  "characters": {
+    "ルーノ": {
+      "src": "assets/characters/test-cutouts/luno-front-v1.png",
+      "width": 233,
+      "height": 272,
+      "contentHeight": 240,
+      "padding": 16
+    },
+    "ミーノ": {
+      "src": "assets/characters/test-cutouts/miino-front-v1.png",
+      "width": 218,
+      "height": 282,
+      "contentHeight": 250,
+      "padding": 16
+    },
+    "カーノ": {
+      "src": "assets/characters/test-cutouts/kano-front-v1.png",
+      "width": 190,
+      "height": 243,
+      "contentHeight": 211,
+      "padding": 16
+    }
+  },
+  "beats": [
+    {
+      "speaker": "ルーノ",
+      "text": "これ、実は\n正方形なんです。",
+      "stage": "character",
+      "reaction": "enter",
+      "audio": {
+        "src": "audio/character-dialogue-v1/beat-01.wav",
+        "seconds": 2.453333333333333,
+        "generatedFor": "[\"ルーノ\",\"これ、実は正方形なんです。\",1.04]"
+      },
+      "spokenText": "これ、実は正方形なんです。",
+      "id": "beat-01",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.313333333,
+      "holdSeconds": 0,
+      "characterScale": 1,
+      "characterX": 0,
+      "characterY": 0
+    },
+    {
+      "speaker": "ルーノ",
+      "text": "この画像のこと。",
+      "stage": "reveal",
+      "reaction": "point",
+      "audio": {
+        "src": "audio/character-dialogue-v1/beat-02.wav",
+        "seconds": 1.184,
+        "generatedFor": "[\"ルーノ\",\"この画像のこと。\",1.04]"
+      },
+      "spokenText": "この画像のこと。",
+      "id": "beat-02",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.316,
+      "holdSeconds": 1,
+      "characterScale": 1,
+      "characterX": 0,
+      "characterY": 0
+    },
+    {
+      "speaker": "ミーノ",
+      "text": "え、縦長じゃ\nないの？",
+      "stage": "character",
+      "reaction": "tilt",
+      "audio": {
+        "src": "audio/character-dialogue-v1/beat-03.wav",
+        "seconds": 1.76,
+        "generatedFor": "[\"ミーノ\",\"え、縦長じゃないの？\",1.06]"
+      },
+      "spokenText": "え、縦長じゃないの？",
+      "id": "beat-03",
+      "voiceSpeed": 1.06,
+      "pauseSeconds": 0.306666667,
+      "holdSeconds": 0,
+      "characterScale": 1,
+      "characterX": 0,
+      "characterY": 0
+    },
+    {
+      "speaker": "ルーノ",
+      "text": "画像じゃなくて、\n置き方の話。",
+      "stage": "layout",
+      "reaction": "point",
+      "audio": {
+        "src": "audio/character-dialogue-v1/beat-04.wav",
+        "seconds": 2.5493333333333332,
+        "generatedFor": "[\"ルーノ\",\"画像じゃなくて、置き方の話。\",1.04]"
+      },
+      "spokenText": "画像じゃなくて、置き方の話。",
+      "id": "beat-04",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.317333333,
+      "holdSeconds": 1,
+      "characterScale": 1,
+      "characterX": 0,
+      "characterY": 0
+    },
+    {
+      "speaker": "カーノ",
+      "text": "画面は縦長。\n画像は１：１。\n縦と横が同じ長さだね。",
+      "stage": "character",
+      "reaction": "nod",
+      "audio": {
+        "src": "audio/character-dialogue-v1/beat-05.wav",
+        "seconds": 6.1226666666666665,
+        "generatedFor": "[\"カーノ\",\"画面は縦長。画像は、いち対いち。縦と横が同じ長さだね。\",0.9]"
+      },
+      "spokenText": "画面は縦長。画像は、いち対いち。縦と横が同じ長さだね。",
+      "id": "beat-05",
+      "voiceSpeed": 0.9,
+      "pauseSeconds": 0.310666667,
+      "holdSeconds": 0,
+      "characterScale": 1,
+      "characterX": 0,
+      "characterY": 0
+    },
+    {
+      "speaker": "ルーノ",
+      "text": "形はそのまま。\n見せ方を変えよう。",
+      "stage": "character",
+      "reaction": "nod",
+      "audio": {
+        "src": "audio/character-dialogue-v1/beat-06.wav",
+        "seconds": 2.7093333333333334,
+        "generatedFor": "[\"ルーノ\",\"形はそのまま。見せ方を変えよう。\",1.04]"
+      },
+      "spokenText": "形はそのまま。見せ方を変えよう。",
+      "id": "beat-06",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.324,
+      "holdSeconds": 0,
+      "characterScale": 1,
+      "characterX": 0,
+      "characterY": 0
+    }
+  ],
+  "voiceCredits": [
+    "VOICEVOX:雨晴はう",
+    "VOICEVOX:櫻歌ミコ",
+    "VOICEVOX:冥鳴ひまり"
+  ],
+  "version": 1,
+  "title": "正方形と縦長の画面"
+}

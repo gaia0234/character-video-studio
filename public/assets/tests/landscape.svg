@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<rect x="4" y="4" width="1192" height="667" rx="28" fill="#EFF5F9" stroke="#4779B5" stroke-width="8"/>
+<path d="M32 80V32H80M1120 32H1168V80M32 595V643H80M1120 643H1168V595" fill="none" stroke="#4779B5" stroke-width="8"/>
+<path d="M180.0 283.5C360.0 189.00000000000003 720.0 472.49999999999994 1020.0 303.75" fill="none" stroke="#4779B5" opacity=".22" stroke-width="5" stroke-dasharray="12 14"/>
+<circle cx="600.0" cy="337.5" r="148.5" fill="#FFFFFF" stroke="#4779B5" stroke-width="6"/>
+<circle cx="600.0" cy="337.5" r="118.80000000000001" fill="none" stroke="#4779B5" stroke-width="2" opacity=".3"/>
+<path d="M600.0 218.7L637.125 337.5 600.0 456.3 562.875 337.5Z" fill="#4779B5"/>
+<circle cx="600.0" cy="337.5" r="12" fill="#C9A45C"/>
+<text x="600.0" y="101.25" text-anchor="middle" fill="#4779B5" font-family="sans-serif" font-size="42" font-weight="bold" letter-spacing="6">LANDSCAPE</text>
+<text x="600.0" y="594.0" text-anchor="middle" fill="#5C7391" font-family="sans-serif" font-size="34">1200 × 675</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900">
+<rect x="4" y="4" width="892" height="892" rx="28" fill="#EFF5F9" stroke="#C8873E" stroke-width="8"/>
+<path d="M32 80V32H80M820 32H868V80M32 820V868H80M820 868H868V820" fill="none" stroke="#C8873E" stroke-width="8"/>
+<path d="M135.0 378.0C270.0 252.00000000000003 540.0 630.0 765.0 405.0" fill="none" stroke="#C8873E" opacity=".22" stroke-width="5" stroke-dasharray="12 14"/>
+<circle cx="450.0" cy="450.0" r="198.0" fill="#FFFFFF" stroke="#C8873E" stroke-width="6"/>
+<circle cx="450.0" cy="450.0" r="158.4" fill="none" stroke="#C8873E" stroke-width="2" opacity=".3"/>
+<path d="M450.0 291.6L499.5 450.0 450.0 608.4 400.5 450.0Z" fill="#C8873E"/>
+<circle cx="450.0" cy="450.0" r="12" fill="#C9A45C"/>
+<text x="450.0" y="135.0" text-anchor="middle" fill="#C8873E" font-family="sans-serif" font-size="42" font-weight="bold" letter-spacing="6">SQUARE</text>
+<text x="450.0" y="792.0" text-anchor="middle" fill="#5C7391" font-family="sans-serif" font-size="34">900 × 900</text>
+</svg>

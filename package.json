@@ -1,0 +1,35 @@
+{
+  "name": "character-video-studio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "editor": "node scripts/start-editor.mjs",
+    "verify:editor": "node scripts/verify-editor.cjs",
+    "dev": "remotion studio src/index.ts",
+    "check": "tsc --noEmit",
+    "render": "remotion render src/index.ts Shorts output/short.mp4 --codec=h264 --pixel-format=yuv420p",
+    "still": "remotion still src/index.ts Shorts output/preview.png --frame=210",
+    "still:test": "remotion still src/index.ts TestRanking3 output/test-preview.png --frame=210",
+    "preview:test": "node scripts/preview-tests.mjs",
+    "render:test": "node scripts/render-tests.mjs",
+    "render:test:ranking": "remotion render src/index.ts TestRanking3 output/test-ranking-3.mp4 --codec=h264 --pixel-format=yuv420p --concurrency=2",
+    "render:test:collection": "remotion render src/index.ts TestCollection5 output/test-collection-5.mp4 --codec=h264 --pixel-format=yuv420p --concurrency=2",
+    "render:test:character": "node scripts/render-character-test.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.533",
+    "@remotion/player": "4.0.533",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "remotion": "4.0.533",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@remotion/bundler": "4.0.533",
+    "@remotion/renderer": "4.0.533",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "esbuild": "0.28.1",
+    "typescript": "^5.9.0"
+  }
+}

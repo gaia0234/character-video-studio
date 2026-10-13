@@ -1,0 +1,83 @@
+{
+  "testMode": true,
+  "introSeconds": 3,
+  "endingSeconds": 3,
+  "ending": {
+    "title": "次の題材も、\nこの画面から。",
+    "message": "画像と台本を差し替えて\n新しい動画へ。"
+  },
+  "mode": "ranking",
+  "title": "画像の見せ方\nレイアウトTOP3",
+  "subtitle": "横長・縦長・正方形を\n同じテンプレートで。",
+  "scenes": [
+    {
+      "title": "横長の画像を\nすっきり見せる",
+      "body": "幅を活かしながら、\n画像の四隅を残します。",
+      "image": {
+        "src": "assets/tests/landscape.svg",
+        "width": 1200,
+        "height": 675
+      },
+      "comments": [
+        {
+          "speaker": "ルーノ",
+          "text": "画像と文字を\n別々に置こう。",
+          "startSeconds": 1.2
+        },
+        {
+          "speaker": "ミーノ",
+          "text": "四隅まで\n見えているね！",
+          "startSeconds": 3.6
+        }
+      ],
+      "seconds": 6,
+      "rank": 3
+    },
+    {
+      "title": "縦長の画像も\n形をそのままに",
+      "body": "縦横比を保って縮小。\n上下も切り取らずに表示。",
+      "image": {
+        "src": "assets/tests/portrait.svg",
+        "width": 675,
+        "height": 1200
+      },
+      "comments": [
+        {
+          "speaker": "ミーノ",
+          "text": "縦に長くても\n収まるかな？",
+          "startSeconds": 1.2
+        },
+        {
+          "speaker": "カーノ",
+          "text": "高さを基準に\nサイズを合わせよう。",
+          "startSeconds": 3.6
+        }
+      ],
+      "seconds": 6,
+      "rank": 2
+    },
+    {
+      "title": "正方形の画像と\n短い会話を組み合わせる",
+      "body": "見出し・画像・コメントを\n同じ配置で使い回します。",
+      "image": {
+        "src": "assets/tests/square.svg",
+        "width": 900,
+        "height": 900
+      },
+      "comments": [
+        {
+          "speaker": "カーノ",
+          "text": "配置が決まれば\n内容を差し替えられる。",
+          "startSeconds": 1.2
+        },
+        {
+          "speaker": "ルーノ",
+          "text": "次の題材でも\nこの画面を使おう。",
+          "startSeconds": 3.6
+        }
+      ],
+      "seconds": 6,
+      "rank": 1
+    }
+  ]
+}

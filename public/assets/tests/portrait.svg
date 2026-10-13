@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="675" height="1200" viewBox="0 0 675 1200">
+<rect x="4" y="4" width="667" height="1192" rx="28" fill="#EFF5F9" stroke="#488C88" stroke-width="8"/>
+<path d="M32 80V32H80M595 32H643V80M32 1120V1168H80M595 1168H643V1120" fill="none" stroke="#488C88" stroke-width="8"/>
+<path d="M101.25 504.0C202.5 336.00000000000006 405.0 840.0 573.75 540.0" fill="none" stroke="#488C88" opacity=".22" stroke-width="5" stroke-dasharray="12 14"/>
+<circle cx="337.5" cy="600.0" r="148.5" fill="#FFFFFF" stroke="#488C88" stroke-width="6"/>
+<circle cx="337.5" cy="600.0" r="118.80000000000001" fill="none" stroke="#488C88" stroke-width="2" opacity=".3"/>
+<path d="M337.5 481.2L374.625 600.0 337.5 718.8 300.375 600.0Z" fill="#488C88"/>
+<circle cx="337.5" cy="600.0" r="12" fill="#C9A45C"/>
+<text x="337.5" y="180.0" text-anchor="middle" fill="#488C88" font-family="sans-serif" font-size="42" font-weight="bold" letter-spacing="6">PORTRAIT</text>
+<text x="337.5" y="1056.0" text-anchor="middle" fill="#5C7391" font-family="sans-serif" font-size="34">675 × 1200</text>
+</svg>

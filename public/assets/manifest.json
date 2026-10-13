@@ -1,0 +1,287 @@
+{
+  "assets": [
+    {
+      "file": "assets/tests/landscape.svg",
+      "type": "layout-test-image",
+      "source": "Locally authored SVG geometry; no character art",
+      "version": "test-v1",
+      "sha256": "64028a6de42511bf586fb347f290b55e8bf2854507cd84693ed55e1a56c3d6f8",
+      "approvalStatus": "test-only"
+    },
+    {
+      "file": "assets/tests/portrait.svg",
+      "type": "layout-test-image",
+      "source": "Locally authored SVG geometry; no character art",
+      "version": "test-v1",
+      "sha256": "373eb6798d9f297019bd5d2eb84e28f5e44d7a2f6454ee41fb538c54020223b0",
+      "approvalStatus": "test-only"
+    },
+    {
+      "file": "assets/tests/square.svg",
+      "type": "layout-test-image",
+      "source": "Locally authored SVG geometry; no character art",
+      "version": "test-v1",
+      "sha256": "99627bb7b7a5947c23b8dff4ca77b4c95ac9da2d2957d3089106cf6a1fd888b8",
+      "approvalStatus": "test-only"
+    },
+    {
+      "file": "assets/fonts/NotoSansJP.ttf",
+      "type": "font",
+      "source": "https://github.com/google/fonts/tree/main/ofl/notosansjp",
+      "license": "SIL Open Font License 1.1; assets/fonts/OFL.txt",
+      "sha256": "c2f3b4d463500a2ddcd3849cded1fceeb9fd6d1c32e6cbecd568453ba50fc68f"
+    },
+    {
+      "id": "luno",
+      "name": "ルーノ",
+      "file": "assets/characters/test-cutouts/luno-front-v1.png",
+      "type": "character-test-cutout",
+      "source": "/home/gaia2/projects/knowledge-anime-character-system/materials/a_clean_vector_flat_2d_character_design_sheet_illu_1.png",
+      "sourceSha256": "889e26b8579068adfad1f9fef0a2dbbbfe6ebda4331ca11cccef34d776fab7af",
+      "crop": [
+        250,
+        132,
+        465,
+        389
+      ],
+      "protectedEllipses": [],
+      "width": 233,
+      "height": 272,
+      "contentBounds": [
+        16,
+        16,
+        201,
+        240
+      ],
+      "sourceContentBounds": [
+        257,
+        140,
+        201,
+        240
+      ],
+      "retainedPixels": 26919,
+      "removedPixels": 28336,
+      "modifiedRgb": 0,
+      "sha256": "b88ac57e66b1782cdd2262ae9ae49568be608f20308156f49210925c1e146089",
+      "version": "test-cutout-v1",
+      "approvalStatus": "test-only; not a finished character master",
+      "method": "Original RGB retained; exterior neutral bright background flood fill; largest connected foreground; no redrawing or upscaling"
+    },
+    {
+      "id": "miino",
+      "name": "ミーノ",
+      "file": "assets/characters/test-cutouts/miino-front-v1.png",
+      "type": "character-test-cutout",
+      "source": "/home/gaia2/projects/knowledge-anime-character-system/materials/ChatGPT Image 2026年9月6日 03_43_18.png",
+      "sourceSha256": "ef0aeb4a5730e5bb7f858e2d01e679b1a2a683d1b2c0e4238e95fa9d3255d5b4",
+      "crop": [
+        1250,
+        310,
+        1448,
+        569
+      ],
+      "protectedEllipses": [],
+      "width": 218,
+      "height": 282,
+      "contentBounds": [
+        16,
+        16,
+        186,
+        250
+      ],
+      "sourceContentBounds": [
+        1257,
+        317,
+        186,
+        250
+      ],
+      "retainedPixels": 29528,
+      "removedPixels": 21754,
+      "modifiedRgb": 0,
+      "sha256": "926689232a742bccca4f66a7b54296842e5cecf779f65901d6d13644b0154d20",
+      "version": "test-cutout-v1",
+      "approvalStatus": "test-only; not a finished character master",
+      "method": "Original RGB retained; exterior neutral bright background flood fill; largest connected foreground; no redrawing or upscaling"
+    },
+    {
+      "id": "kano",
+      "name": "カーノ",
+      "file": "assets/characters/test-cutouts/kano-front-v1.png",
+      "type": "character-test-cutout",
+      "source": "/home/gaia2/projects/knowledge-anime-character-system/materials/ChatGPT Image 2026年9月6日 03_43_18.png",
+      "sourceSha256": "ef0aeb4a5730e5bb7f858e2d01e679b1a2a683d1b2c0e4238e95fa9d3255d5b4",
+      "crop": [
+        1265,
+        590,
+        1433,
+        811
+      ],
+      "protectedEllipses": [
+        [
+          1395,
+          699,
+          27,
+          29
+        ]
+      ],
+      "width": 190,
+      "height": 243,
+      "contentBounds": [
+        16,
+        16,
+        158,
+        211
+      ],
+      "sourceContentBounds": [
+        1269,
+        596,
+        158,
+        211
+      ],
+      "retainedPixels": 22189,
+      "removedPixels": 14939,
+      "modifiedRgb": 0,
+      "sha256": "ea7aa654947361486f29001a0ac30bda6f6768f4616d243288d5998b084b4b63",
+      "version": "test-cutout-v1",
+      "approvalStatus": "test-only; not a finished character master",
+      "method": "Original RGB retained; exterior neutral bright background flood fill; largest connected foreground; no redrawing or upscaling"
+    },
+    {
+      "file": "assets/backgrounds/study-room-v1.svg",
+      "type": "video-background",
+      "source": "Locally authored SVG room and decorative motifs, based on the supplied visual reference",
+      "styleReference": "/home/gaia2/projects/knowledge-anime-character-system/materials/ChatGPT Image 2026年9月6日 03_36_43.png",
+      "styleReferenceSha256": "7948e1b795de4f7640b15a16acaae9f391de149d0d39635a242116301a735d27",
+      "version": "study-room-v1",
+      "sha256": "3b1924b457c7c742249612b38500ac9b357d004764939de744ee0a42c745f5ba",
+      "approvalStatus": "test-only",
+      "notes": "Decorative map and globe are stylized; not explanatory geography. No source character artwork copied or redesigned."
+    },
+    {
+      "file": "audio/character-dialogue-v1/beat-01.wav",
+      "type": "voice-test",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雨晴はう",
+        "style": 10,
+        "model": "0",
+        "speed": 1.04
+      },
+      "speaker": "ルーノ",
+      "credit": "VOICEVOX:雨晴はう",
+      "sha256": "0c6f8d0bbd24f9bdf5f053c9e74a0c9684cda35712acddfe4de5c580b26705ea",
+      "seconds": 2.453333333333333,
+      "approvalStatus": "test-only",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/character-dialogue-v1/beat-02.wav",
+      "type": "voice-test",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雨晴はう",
+        "style": 10,
+        "model": "0",
+        "speed": 1.04
+      },
+      "speaker": "ルーノ",
+      "credit": "VOICEVOX:雨晴はう",
+      "sha256": "9b9b306d4b1043680f1902c1c94260a99eec8a64f9696b32c6d6739373bb8d77",
+      "seconds": 1.184,
+      "approvalStatus": "test-only",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/character-dialogue-v1/beat-03.wav",
+      "type": "voice-test",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "櫻歌ミコ",
+        "style": 43,
+        "model": "11",
+        "speed": 1.06
+      },
+      "speaker": "ミーノ",
+      "credit": "VOICEVOX:櫻歌ミコ",
+      "sha256": "eb7b1e74baf86e1f206956c3301586bc52eec5cbdf9479560a6985d5de43e26a",
+      "seconds": 1.76,
+      "approvalStatus": "test-only",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/character-dialogue-v1/beat-04.wav",
+      "type": "voice-test",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雨晴はう",
+        "style": 10,
+        "model": "0",
+        "speed": 1.04
+      },
+      "speaker": "ルーノ",
+      "credit": "VOICEVOX:雨晴はう",
+      "sha256": "ee19424a2d3a43d4d48838cca902ba32bbfa328da6fe4d55435f3f4ea9841545",
+      "seconds": 2.5493333333333332,
+      "approvalStatus": "test-only",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/character-dialogue-v1/beat-05.wav",
+      "type": "voice-test",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "冥鳴ひまり",
+        "style": 14,
+        "model": "1",
+        "speed": 0.9
+      },
+      "speaker": "カーノ",
+      "credit": "VOICEVOX:冥鳴ひまり",
+      "sha256": "f0dee5d8cf0b9a8c6cc44756a0dbd9098c6631aa6e70cb23248761cd33439449",
+      "seconds": 6.1226666666666665,
+      "approvalStatus": "test-only",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/character-dialogue-v1/beat-06.wav",
+      "type": "voice-test",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雨晴はう",
+        "style": 10,
+        "model": "0",
+        "speed": 1.04
+      },
+      "speaker": "ルーノ",
+      "credit": "VOICEVOX:雨晴はう",
+      "sha256": "5154abb7dceeba2cf657815fb0709450e5ebb7a1c5670fa0f0bbc21f1b9dd71c",
+      "seconds": 2.7093333333333334,
+      "approvalStatus": "test-only",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/editor/1db089a9-e2e4-4ae8-a36e-b92ea950230c/beat-01.wav",
+      "type": "voice-test",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雨晴はう",
+        "style": 10,
+        "model": "0",
+        "speed": 1
+      },
+      "speaker": "ルーノ",
+      "credit": "VOICEVOX:雨晴はう",
+      "sha256": "3ecf79009cf736478b1bab9484620243b03423cac66ae2d91398299dd79bbbfd",
+      "seconds": 2.506666666666667,
+      "approvalStatus": "test-only",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    }
+  ]
+}
