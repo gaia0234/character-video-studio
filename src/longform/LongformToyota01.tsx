@@ -102,53 +102,154 @@ const Stamp = ({label, frame, appear, x = 0, y = 0, rotate = -12, fontSize = 54}
 // --- 図形（コード描画） ---
 const Car = ({scale = 1, dashed = false}: {scale?: number; dashed?: boolean}) =>
   <svg width={520 * scale} height={200 * scale} viewBox="0 0 520 200">
-    {/* セダンシルエット（右向き）: 車体 + キャビン + 2輪 */}
-    <path d="M40 150 L55 106 Q140 92 200 88 L232 62 Q320 52 372 88 L436 100 Q478 110 474 150 Z"
+    {/* 車体下側（右向きセダン） */}
+    <rect x="34" y="98" width="452" height="62" rx="26"
+      fill={dashed ? 'none' : colors.white} stroke={colors.ink} strokeWidth={4}
+      strokeDasharray={dashed ? '12 12' : undefined} />
+    {/* キャビン */}
+    <path d="M148 100 L168 56 Q174 46 188 46 L300 46 Q314 46 320 56 L340 100"
       fill={dashed ? 'none' : colors.white} stroke={colors.ink} strokeWidth={4}
       strokeDasharray={dashed ? '12 12' : undefined} strokeLinejoin="round" />
     {!dashed ? <>
-      <path d="M225 66 L250 68 L250 92 L212 92 Z" fill={colors.paleBlue} stroke={colors.ink} strokeWidth={3} />
-      <path d="M258 68 L320 66 L340 92 L258 92 Z" fill={colors.paleBlue} stroke={colors.ink} strokeWidth={3} />
+      {/* 後席・前席の窓 */}
+      <path d="M160 94 L176 62 Q180 56 190 56 L226 56 L226 94 Z"
+        fill={colors.paleBlue} stroke={colors.ink} strokeWidth={3} />
+      <path d="M242 56 L292 56 Q300 56 304 62 L318 94 L242 94 Z"
+        fill={colors.paleBlue} stroke={colors.ink} strokeWidth={3} />
+      {/* ドアライン・ハンドル */}
+      <line x1="234" y1="98" x2="234" y2="156" stroke={colors.ink} strokeWidth={3} />
+      <rect x="248" y="110" width="22" height="6" rx="3" fill={colors.ink} />
+      {/* ドアミラー */}
+      <path d="M344 94 L358 84" stroke={colors.ink} strokeWidth={5} strokeLinecap="round" />
+      {/* ヘッドライト・テールライト */}
+      <rect x="446" y="108" width="18" height="12" rx="5" fill={colors.gold} stroke={colors.ink} strokeWidth={2} />
+      <rect x="44" y="108" width="14" height="12" rx="5" fill={colors.muted} stroke={colors.ink} strokeWidth={2} />
     </> : null}
-    <circle cx="130" cy="152" r="26" fill={dashed ? 'none' : colors.paper}
-      stroke={colors.ink} strokeWidth={4} />
-    <circle cx="392" cy="152" r="26" fill={dashed ? 'none' : colors.paper}
-      stroke={colors.ink} strokeWidth={4} />
+    {/* タイヤ＋ハブ */}
+    <circle cx="122" cy="160" r="30" fill={dashed ? 'none' : colors.ink}
+      stroke={colors.ink} strokeWidth={dashed ? 4 : 0} strokeDasharray={dashed ? '12 12' : undefined} />
+    <circle cx="122" cy="160" r="13" fill={dashed ? 'none' : colors.paper} />
+    <circle cx="398" cy="160" r="30" fill={dashed ? 'none' : colors.ink}
+      stroke={colors.ink} strokeWidth={dashed ? 4 : 0} strokeDasharray={dashed ? '12 12' : undefined} />
+    <circle cx="398" cy="160" r="13" fill={dashed ? 'none' : colors.paper} />
   </svg>;
 
 const ConferenceHall = ({scale = 1, withFlags = false}: {scale?: number; withFlags?: boolean}) =>
   <svg width={420 * scale} height={310 * scale} viewBox="0 0 420 310">
-    {/* フラグ（控えめ） */}
+    {/* フラグ（控えめ・ペナント） */}
     {withFlags ? Array.from({length: 8}, (_, i) => <g key={i}>
-      <rect x={44 + i * 42} y={26} width={3} height={22} fill={colors.ink} />
-      <rect x={47 + i * 42} y={26} width={22} height={14} fill={i % 2 ? colors.paleBlue : colors.muted} />
+      <rect x={44 + i * 42} y={22} width={3} height={28} fill={colors.ink} />
+      <polygon points={`${47 + i * 42},22 ${69 + i * 42},29 ${47 + i * 42},36`}
+        fill={i % 2 ? colors.paleBlue : colors.muted} />
     </g>) : null}
-    {/* 屋根 */}
-    <rect x={16} y={56} width={388} height={18} fill={colors.ink} />
+    {/* ペディメント（三角屋根）＋エンタブラチュア */}
+    <polygon points="210,34 396,74 24,74" fill={colors.muted} />
+    <rect x="16" y="74" width="388" height="16" fill={colors.ink} />
     {/* 主体 */}
-    <rect x={36} y={74} width={348} height={206} fill={colors.paleBlue} stroke={colors.ink} strokeWidth={4} />
-    {/* 柱 */}
-    {Array.from({length: 5}, (_, i) => <rect key={i} x={62 + i * 64} y={74} width={22} height={206}
-      fill={colors.white} stroke={colors.ink} strokeWidth={3} />)}
-    {/* 玄関 */}
-    <rect x={182} y={210} width={56} height={70} fill={colors.ink} />
-    {/* 基壇 */}
-    <rect x={10} y={280} width={400} height={22} fill={colors.muted} />
+    <rect x="36" y="90" width="348" height="190" fill={colors.paleBlue} stroke={colors.ink} strokeWidth={4} />
+    {/* 柱（柱頭付き・中央は入口を広く） */}
+    {[62, 126, 246, 310].map((cx) => <g key={cx}>
+      <rect x={cx - 4} y={90} width={30} height={10} fill={colors.white} stroke={colors.ink} strokeWidth={2} />
+      <rect x={cx} y={100} width={22} height={182} fill={colors.white} stroke={colors.ink} strokeWidth={3} />
+    </g>)}
+    {/* 窓（柱の間・入口の両脇） */}
+    <rect x="92" y="106" width="26" height="50" fill={colors.white} stroke={colors.ink} strokeWidth={2} />
+    <rect x="278" y="106" width="26" height="50" fill={colors.white} stroke={colors.ink} strokeWidth={2} />
+    <rect x="150" y="108" width="16" height="42" fill={colors.white} stroke={colors.ink} strokeWidth={2} />
+    <rect x="230" y="108" width="16" height="42" fill={colors.white} stroke={colors.ink} strokeWidth={2} />
+    {/* 玄関ドア＋キャノピー */}
+    <rect x="172" y="192" width="56" height="88" fill={colors.ink} />
+    <polygon points="200,166 236,196 164,196" fill={colors.ink} />
+    {/* 観客席シルエット（建物前） */}
+    <g fill={colors.muted} opacity={0.55}>
+      {Array.from({length: 7}, (_, i) => <g key={i}>
+        <circle cx={60 + i * 52} cy={270 + (i % 2) * 4} r={9} />
+        <rect x={47 + i * 52} y={278 + (i % 2) * 4} width={26} height={24} rx={8} />
+      </g>)}
+    </g>
+    {/* 基壇と階段 */}
+    <rect x="0" y="292" width="420" height="10" fill={colors.ink} />
+    <rect x="-8" y="302" width="436" height="8" fill={colors.muted} />
   </svg>;
 
 const Factory = ({scale = 1}: {scale?: number}) =>
   <svg width={420 * scale} height={310 * scale} viewBox="0 0 420 310">
-    {/* 煙突 */}
-    <rect x={306} y={30} width={26} height={60} fill={colors.muted} />
-    <rect x={344} y={44} width={26} height={46} fill={colors.muted} />
+    {/* 煙突と煙 */}
+    <rect x="298" y="34" width="30" height="70" fill={colors.muted} />
+    <rect x="342" y="52" width="30" height="52" fill={colors.muted} />
+    <g fill="#EDF2F7">
+      <circle cx="313" cy="16" r="12" />
+      <circle cx="334" cy="6" r="9" />
+      <circle cx="357" cy="32" r="10" />
+    </g>
     {/* のこぎり屋根 */}
-    <path d="M20 140 L20 196 L120 196 L120 158 L200 158 L200 196 L300 196 L300 158 L380 158 L380 196 L400 196 L400 140 L300 118 L200 118 L120 118 Z"
+    <path d="M20 140 L20 196 L120 196 L120 158 L200 158 L200 196 L296 196 L296 158 L376 158 L376 196 L396 196 L396 140 L296 118 L200 118 L120 118 Z"
       fill={colors.ink} />
     {/* 工場の壁 */}
-    <rect x={20} y={192} width={380} height={88} fill={colors.paleBlue} stroke={colors.ink} strokeWidth={4} />
-    {Array.from({length: 6}, (_, i) => <rect key={i} x={44 + i * 58} y={216} width={34} height={40}
+    <rect x="20" y="192" width="376" height="90" fill={colors.paleBlue} stroke={colors.ink} strokeWidth={4} />
+    {/* 高窓 */}
+    {Array.from({length: 6}, (_, i) => <rect key={i} x={42 + i * 58} y={208} width={34} height={40}
       fill={colors.white} stroke={colors.ink} strokeWidth={3} />)}
+    {/* 大きな出荷扉 */}
+    <rect x="140" y="234" width="60" height="48" fill={colors.ink} />
+    {/* 別棟 */}
+    <rect x="300" y="228" width="96" height="54" fill={colors.white} stroke={colors.ink} strokeWidth={4} />
+    <rect x="314" y="242" width="26" height="40" fill={colors.ink} />
   </svg>;
+
+const BackdropHills = () =>
+  <svg width={1920} height={1080} viewBox="0 0 1920 1080"
+    style={{position: 'absolute', left: 0, top: 0}}>
+    {/* 淡い空の帯と日差し */}
+    <rect x="0" y="0" width="1920" height="1080" fill="#F1F5FA" />
+    <circle cx="1580" cy="230" r="95" fill="#F5ECD7" />
+    {/* 雲 */}
+    <g fill={colors.white} opacity={0.9}>
+      <ellipse cx="380" cy="180" rx="90" ry="30" />
+      <ellipse cx="445" cy="158" rx="58" ry="25" />
+      <ellipse cx="1150" cy="120" rx="80" ry="26" />
+      <ellipse cx="1205" cy="142" rx="52" ry="22" />
+      <ellipse cx="600" cy="430" rx="70" ry="22" />
+    </g>
+    {/* 遠い丘・近い丘 */}
+    <path d="M0 880 Q240 780 520 850 T1080 860 Q1360 900 1920 830 L1920 1080 L0 1080 Z" fill="#DEE8E0" />
+    <path d="M0 960 Q420 860 860 940 T1920 950 L1920 1080 L0 1080 Z" fill="#D2E2D4" />
+  </svg>;
+
+const BackdropCity = () =>
+  <svg width={1920} height={1080} viewBox="0 0 1920 1080"
+    style={{position: 'absolute', left: 0, top: 0}}>
+    <rect x="0" y="0" width="1920" height="1080" fill="#F0F4F9" />
+    <circle cx="300" cy="210" r="90" fill="#F5ECD7" />
+    {/* 雲 */}
+    <g fill={colors.white} opacity={0.9}>
+      <ellipse cx="1420" cy="170" rx="85" ry="28" />
+      <ellipse cx="1478" cy="194" rx="55" ry="22" />
+      <ellipse cx="640" cy="260" rx="70" ry="24" />
+    </g>
+    {/* 遠景スカイライン（中央は図解を活かすため空ける） */}
+    <g fill="#DDE6EE">
+      <rect x="60" y="640" width="120" height="360" />
+      <rect x="210" y="560" width="90" height="440" />
+      <rect x="340" y="690" width="140" height="310" />
+      <rect x="520" y="610" width="100" height="390" />
+      <rect x="660" y="720" width="150" height="280" />
+      <rect x="1190" y="630" width="110" height="370" />
+      <rect x="1330" y="710" width="140" height="290" />
+      <rect x="1500" y="580" width="90" height="420" />
+      <rect x="1620" y="670" width="130" height="330" />
+      <rect x="1780" y="710" width="80" height="290" />
+    </g>
+    {/* 中景 */}
+    <g fill="#D3DFE9">
+      <rect x="0" y="770" width="180" height="310" />
+      <rect x="940" y="800" width="60" height="280" />
+      <rect x="1740" y="810" width="180" height="270" />
+    </g>
+  </svg>;
+
+const Backdrop = ({variant}: {variant: 'hills' | 'city'}) =>
+  variant === 'city' ? <BackdropCity /> : <BackdropHills />;
 
 const Timeline = ({progress, dashed = false}: {progress: number; dashed?: boolean}) =>
   <svg width={960} height={150} viewBox="0 0 960 150">
@@ -427,6 +528,7 @@ const ToyotaScene = ({scene}: {scene: ToyotaScene}) => {
     ? interpolate(frame, [0, 45], [0.9, 0], clampBoth) : 0;
   return <AbsoluteFill style={{color: colors.ink, fontFamily: '"Studio Noto Sans JP", sans-serif',
     filter: gray > 0.01 ? `grayscale(${gray.toFixed(3)})` : undefined}}>
+    <Backdrop variant={scene.id.startsWith('1-') ? 'city' : 'hills'} />
     <Visual scene={scene} />
     <ChapterBadge scene={scene} />
     {scene.year ? <YearBadge year={scene.year} /> : null}
