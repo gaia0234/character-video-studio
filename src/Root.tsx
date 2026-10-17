@@ -6,6 +6,7 @@ import collectionTestJson from './data/tests/collection-5.json';
 import {validateAssets} from './data/assets';
 import {durationFor, FPS, videoPropsSchema, videoSchema} from './data/video';
 import {CharacterDialogue, KlingEditorPilot} from './CharacterDialogue';
+import {LongformToyota01, toyota01DurationFrames} from './longform/LongformToyota01';
 import dialogueJson from './data/tests/character-dialogue.json';
 import voiceDialogueJson from './data/tests/character-dialogue-voice.json';
 import editorProjectJson from './data/editor-project.json';
@@ -39,4 +40,7 @@ export const Root = () => <>{compositions.map(({id, video: data}) => (
     const parsed = dialogueSchema.parse(props.dialogue);
     await validateDialogueAssets(parsed);
     return {durationInFrames: dialogueDuration(parsed), props: {dialogue: parsed}};
-  }} />)}</>;
+  }} />)}
+  <Composition id="LongformToyota01" component={LongformToyota01}
+    width={1920} height={1080} fps={FPS} durationInFrames={toyota01DurationFrames} />
+</>;
