@@ -144,3 +144,17 @@
 - Scenario：[公式プラグイン](https://github.com/scenario-labs/blender-plugin)、[ガイド](https://blender.scenario.com/)、[制約](https://github.com/scenario-labs/blender-plugin/blob/main/docs/KNOWN_LIMITATIONS.md)、[価格](https://www.scenario.com/pricing)、[クラウドMCP](https://mcp.scenario.com/docs)。開発版ガイドとリリース済み機能の差があることを公式が明記。
 - MoneyPrinterTurbo：[公式README](https://github.com/harry0703/MoneyPrinterTurbo/blob/main/README-en.md)、[ライセンス](https://github.com/harry0703/MoneyPrinterTurbo/blob/main/LICENSE)。README中のスポンサーの価格広告は公式モデル価格の根拠に採用しない。
 - SeedanceおよびCharakuru・VTracer・Mesh Avatar Studioの過去調査はキャラ側の既存正本を参照し、動画側で再調査済みと扱わない。
+
+### GPT-Liveの文章による音声作成（2026-10-17）
+
+現在の結論：キャラ専用音声の比較候補として記録。既存VOICEVOXの置き換えは提案のみ・本人未回答で、採用・API接続・声作成・課金は未実施。会話向け機能から動画ナレーションへ使う経路は未検証。
+
+- 目的・対象：ユーザー提供の速報「GPT-Live-1で文章から声作成、5言語9音声、日本語2音声、作成無料・利用有料」を公式文書で照合する。
+- 確認方法：OpenAI公式のCustom voices、Managing GPT-Live sessions、GPT-Live 1モデルページを取得・該当記載を確認。音声試聴・実生成・性能比較はしていない。速報の発表日・元投稿URLは未確認。
+- 確認結果：prompt-to-voiceは声質・高さ・速度等を文章指定して保存でき、参照録音は不要。声作成は無料、Playgroundでの試聴も通常のGPT-Liveセッション料金になる。文章で作成した声はGPT-Live専用で、TTS・Realtime・Chat Completions APIでは未対応。録音から作る別経路の対応範囲と混同しない。
+- 新音声の照合：公式一覧にドイツ語Nuri／Juni／Flitz、フランス語Brise／Sillage、ヒンディー語Nira、日本語Harema／Shida、韓国語Noeulの5言語9音声を確認。これは全音声の総数ではない。日本語の読み・印象・キャラとの適合は未試聴。
+- 費用：GPT-Live 1はセッション時間$0.05/分、秒単位課金。バックエンドモデル・ツールは別料金。完成音声の尺だけで制作費を見積もらない。API料金とChatGPT契約の利用条件を同一視しない。
+- 分析・AI提案：声の質感を独自に設計できる点は有用。ただし台本どおりの読み、保存・動画利用経路、再現性、適用規約、実制作費の確認が必要。既存の字幕・声・間の修正経路を維持し、今回の1本へ自動導入しない。導入負担に見合う品質や独自性が確認できた場合に採用を再検討する。
+- 利用条件：公式ガイドは成人の声を対象とし、実在人物・著名人・既存の架空キャラの模倣を依頼しないこと、AI音声の明示と来歴情報の保持を求めている。独自キャラ用途も条件確認を省略しない。
+- 次の判断：専用音声の比較が本人承認された場合に、同じ短い日本語台本で読み・速度・間・声の維持と取り込み経路を確認する。仕様・料金・対応APIが変われば出典を再確認する。
+- 出典：[Custom voices](https://developers.openai.com/api/docs/guides/custom-voices)、[Voice options](https://developers.openai.com/api/docs/guides/live-conversations)、[GPT-Live 1](https://developers.openai.com/api/docs/models/gpt-live-1)。確認日2026-10-17。
