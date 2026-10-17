@@ -9,7 +9,7 @@ YouTube Shorts・X向け縦型解説動画の独立プロジェクト。React / 
 - 最初の動画は既存の「正方形と縦長の画面」6場面を流用する。制作条件・生成指示案・確認結果は [動画の出典と素材](sources/sources.md#初回の生成映像併用動画2026-10-16) に記録する。
 - Seedance 2.5とMiniMax H3は比較候補。motion-explainerは演出の参考、ScenarioとBlenderは将来の3D制作候補で、導入済みとは扱わない。
 - 調査済みツールの比較・採否・出典は [ツール調査と制作方式の判断](sources/sources.md#ツール調査と制作方式の判断2026-10-17) に集約する。料金・仕様は調査時点の情報で、実行前に利用画面と適用条件を確認する。
-- 現行実装は静止画を使う編集・音声・Remotion出力。Kling MCPの登録・OAuthログインは成功。ツール経由の実接続、生成動画の取り込みは未確認・未実装。Klingへの素材送信・動画生成・課金・公開は未実施で、対象・条件・費用を提示して承認後に行う。
+- 静止画を使う編集室とは別に、本人がKling Webで生成した初回MP4を使う非公開試作 `KlingEditorPilot` を実装済み。型確認・全尺出力・代表画面確認が完了。Kling MCPの登録・OAuthログインは成功しているが、ツール経由の実接続は未確認。公開・商用の採用は未確認。
 
 ## Knowledge Anime 専用編集画面
 
@@ -51,6 +51,15 @@ npm run render:test
 - `render:test:ranking` / `render:test:collection`：片方だけ再出力。
 
 既存のChrome／Chromiumを使う場合は、各コマンドの末尾に `-- --browser-executable=/absolute/path/to/chrome` を付ける。環境ごとの実行ファイルのパスはソースへ固定していない。
+
+### Kling映像の非公開編集試作（2026-10-17）
+
+`KlingEditorPilot` は編集室の既存6場面・字幕・音声を流用する専用Composition。ルーノの4場面だけ `public/assets/videos/luno-loop-kling4-v1.mp4` を先頭から再生し、他2キャラは既存静止画を使う。生成映像の音声はミュートし、元フレームと透かしをcontainで保持。正方形の図解を動画の上部余白へ配置する。既存 `EditorDialogue` と編集室の保存形式は変更していない。
+
+- 確認済み：`npm run check`、共有元と取込素材のSHA-256一致、台本ファイルの不変。
+- 出力済み：1080×1920・30fps・674フレーム（約22.5秒）、AAC音声付き。代表6画面を確認。本人の再開承認後に権限昇格で出力成功。
+- 共有：`\\192.168.1.115\Shared\Transfer\character-video-studio\2026-10-17-kling-remotion-pilot\kling-editor-pilot-v1.mp4`（コピー一致確認済み）。
+- 証拠・条件・停止結果： [動画の出典と素材](sources/sources.md#kling生成映像のremotion編集試作2026-10-17)。連続再生・聴取と公開・商用条件の確認は未実施。
 
 試験用図形は `public/assets/tests/`、日本語フォントとライセンスは `public/assets/fonts/`。画像が存在しない場合や、JSONの寸法が実画像と異なる場合は、レンダリング前にエラーにする。`testMode: true` で試験注記とキャラ配置枠を表示する。本番では既定の `false` を使う。
 

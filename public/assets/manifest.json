@@ -1,6 +1,22 @@
 {
   "assets": [
     {
+      "file": "assets/videos/luno-loop-kling4-v1.mp4",
+      "type": "generated-character-video-test",
+      "character": "ルーノ",
+      "source": "User-provided Kling Web generation; see sources/sources.md",
+      "sourceFile": "kling_20261017_VIDEO_ルーノが本を持ったま_3773_0.mp4",
+      "model": "Kling 4.0 (Web UI screenshot; full generation parameters not returned)",
+      "version": "kling4-v1",
+      "sha256": "75d69535669b8c816c72ce86afe2e267f421d386bbd9c9bdfc58ae74902404e3",
+      "width": 724,
+      "height": 1284,
+      "fps": 24,
+      "seconds": 5.041667,
+      "approvalStatus": "test-only; approved for nonpublic Remotion editing pilot 2026-10-17",
+      "notes": "Original bytes retained; generated audio muted in pilot; full source frame and KlingAI watermark retained. Public/commercial plan conditions unverified."
+    },
+    {
       "file": "assets/tests/landscape.svg",
       "type": "layout-test-image",
       "source": "Locally authored SVG geometry; no character art",

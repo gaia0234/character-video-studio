@@ -5,7 +5,7 @@ import rankingTestJson from './data/tests/ranking-3.json';
 import collectionTestJson from './data/tests/collection-5.json';
 import {validateAssets} from './data/assets';
 import {durationFor, FPS, videoPropsSchema, videoSchema} from './data/video';
-import {CharacterDialogue} from './CharacterDialogue';
+import {CharacterDialogue, KlingEditorPilot} from './CharacterDialogue';
 import dialogueJson from './data/tests/character-dialogue.json';
 import voiceDialogueJson from './data/tests/character-dialogue-voice.json';
 import editorProjectJson from './data/editor-project.json';
@@ -31,8 +31,9 @@ export const Root = () => <>{compositions.map(({id, video: data}) => (
       return {durationInFrames: durationFor(parsed), props: {video: parsed}};
     }} />
 ))}{[{id: 'TestCharacterDialogue', data: dialogue}, {id: 'TestCharacterDialogueVoice', data: voiceDialogue},
-  {id: 'EditorDialogue', data: editorDialogue}].map(({id, data}) =>
-  <Composition key={id} id={id} component={CharacterDialogue} width={1080} height={1920}
+  {id: 'EditorDialogue', data: editorDialogue},
+  {id: 'KlingEditorPilot', data: editorDialogue}].map(({id, data}) =>
+  <Composition key={id} id={id} component={id === 'KlingEditorPilot' ? KlingEditorPilot : CharacterDialogue} width={1080} height={1920}
   fps={FPS} durationInFrames={dialogueDuration(data)} defaultProps={{dialogue: data}}
   schema={dialoguePropsSchema} calculateMetadata={async ({props}) => {
     const parsed = dialogueSchema.parse(props.dialogue);
