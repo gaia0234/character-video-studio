@@ -1,13 +1,13 @@
 {
   "title": "ロング解説試作 トヨタ「29年前の答え」",
-  "note": "章1の表秒数合計は82秒（台本見出しは90秒・合計145秒と不一致）。シーン個別の秒数を正とする。合計137秒=4110フレーム@30fps。",
+  "note": "元の台本・ナレーションを保持。長い末尾無音と章カードを短縮し、合計117秒=3510フレーム@30fps。各音声は場面開始+0.4秒、末尾余裕0.5秒以上。",
   "scenes": [
     {
       "id": "0-1",
       "chapter": "00｜終わらないと言われ続けて",
       "year": null,
       "visual": "answerTitle",
-      "seconds": 8,
+      "seconds": 7,
       "subtitle": "一九九七年十二月。日本は、二つの答えを出した。",
       "audio": {
         "src": "audio/longform-toyota01-v1/0-1.wav",
@@ -19,8 +19,8 @@
       "chapter": "00｜終わらないと言われ続けて",
       "year": "1997",
       "visual": "conference",
-      "seconds": 7,
-      "subtitle": "京都の会議場では、世界が温暖化の枠組みを決め始めた。",
+      "seconds": 6,
+      "subtitle": "京都の会議場では、世界が\n温暖化の枠組みを決め始めた。",
       "audio": {
         "src": "audio/longform-toyota01-v1/0-2.wav",
         "seconds": 4.576
@@ -32,7 +32,7 @@
       "year": null,
       "visual": "carReveal",
       "character": "luno",
-      "seconds": 8,
+      "seconds": 5.5,
       "subtitle": "一方、トヨタは、一台の車で応えた。",
       "audio": {
         "src": "audio/longform-toyota01-v1/0-3.wav",
@@ -49,8 +49,8 @@
         "遅れている",
         "時代遅れ"
       ],
-      "seconds": 9,
-      "subtitle": "それからの29年。トヨタのハイブリッドは、「遅れた技」と言われ続けてきた。",
+      "seconds": 8,
+      "subtitle": "それからの29年。トヨタのハイブリッドは、\n「遅れた技」と言われ続けてきた。",
       "audio": {
         "src": "audio/longform-toyota01-v1/0-4.wav",
         "seconds": 6.357
@@ -75,8 +75,8 @@
       "year": "2026",
       "visual": "reborn",
       "recolor": true,
-      "seconds": 9,
-      "subtitle": "しかし二〇二六年。トヨタは、その二十九年をまるごと作り直した。",
+      "seconds": 7,
+      "subtitle": "しかし二〇二六年。トヨタは、\nその二十九年をまるごと作り直した。",
       "audio": {
         "src": "audio/longform-toyota01-v1/0-6.wav",
         "seconds": 5.675
@@ -88,7 +88,7 @@
       "year": null,
       "visual": "timelinePreview",
       "character": "luno",
-      "seconds": 7,
+      "seconds": 4,
       "subtitle": "物語は、29年前に戻る。",
       "audio": {
         "src": "audio/longform-toyota01-v1/0-7.wav",
@@ -100,7 +100,7 @@
       "chapter": "01｜1997年、二つの答え",
       "year": null,
       "visual": "chapterCard",
-      "seconds": 4,
+      "seconds": 1.5,
       "subtitle": "第1章　1997年、二つの答え"
     },
     {
@@ -109,8 +109,8 @@
       "year": "1997",
       "visual": "adoptStamp",
       "stamp": "1997.12.11　採択",
-      "seconds": 9,
-      "subtitle": "一九九七年十二月十一日。京都で、京都議定書が採択された。",
+      "seconds": 8,
+      "subtitle": "一九九七年十二月十一日。京都で、\n京都議定書が採択された。",
       "audio": {
         "src": "audio/longform-toyota01-v1/1-2.wav",
         "seconds": 6.517
@@ -121,8 +121,8 @@
       "chapter": "01｜1997年、二つの答え",
       "year": null,
       "visual": "globeCO2",
-      "seconds": 7,
-      "subtitle": "温室効果ガスを減らすこと。それが世界共通の目標になった。",
+      "seconds": 6,
+      "subtitle": "温室効果ガスを減らすこと。\nそれが世界共通の目標になった。",
       "audio": {
         "src": "audio/longform-toyota01-v1/1-3.wav",
         "seconds": 4.661
@@ -138,7 +138,7 @@
         "モーター",
         "電池"
       ],
-      "seconds": 10,
+      "seconds": 8,
       "subtitle": "車も減らさなければならない。トヨタの答えは、\nエンジンとモーターを組み合わせる仕組みだった。",
       "audio": {
         "src": "audio/longform-toyota01-v1/1-4.wav",
@@ -155,7 +155,7 @@
         "量産"
       ],
       "seconds": 8,
-      "subtitle": "一九九七年十二月。プリウスが発売された。世界初の量産ハイブリッド車。",
+      "subtitle": "一九九七年十二月。プリウスが発売された。\n世界初の量産ハイブリッド車。",
       "audio": {
         "src": "audio/longform-toyota01-v1/1-5.wav",
         "seconds": 6.965
@@ -167,8 +167,8 @@
       "year": "2015",
       "visual": "patentFly2015",
       "patentCount": 5680,
-      "seconds": 9,
-      "subtitle": "二〇一五年一月。トヨタは燃料電池の特許、5,680件を無償で開放した。",
+      "seconds": 8.5,
+      "subtitle": "二〇一五年一月。トヨタは燃料電池の特許、\n5,680件を無償で開放した。",
       "audio": {
         "src": "audio/longform-toyota01-v1/1-6.wav",
         "seconds": 7.296
@@ -182,7 +182,7 @@
       "patentCount": 23740,
       "patentCards": 14,
       "seconds": 10,
-      "subtitle": "二〇一九年四月。電動化の特許、約23,740件を無償開放。期限は2030年末。",
+      "subtitle": "二〇一九年四月。電動化の特許、\n約23,740件を無償開放。期限は2030年末。",
       "audio": {
         "src": "audio/longform-toyota01-v1/1-7.wav",
         "seconds": 9.013
@@ -195,8 +195,8 @@
       "visual": "freeStamp",
       "character": "miino",
       "stamp": "無償",
-      "seconds": 8,
-      "subtitle": "技は独り占めせず、道を開けるために配る。それがトヨタの選択だった。",
+      "seconds": 7,
+      "subtitle": "技は独り占めせず、道を開けるために配る。\nそれがトヨタの選択だった。",
       "audio": {
         "src": "audio/longform-toyota01-v1/1-8.wav",
         "seconds": 5.504
@@ -208,8 +208,8 @@
       "year": "2020",
       "visual": "count15m",
       "count": 1500,
-      "seconds": 8,
-      "subtitle": "二〇二〇年一月。世界のハイブリッド累計は1,500万台を超えた。",
+      "seconds": 7,
+      "subtitle": "二〇二〇年一月。世界のハイブリッド累計は\n1,500万台を超えた。",
       "audio": {
         "src": "audio/longform-toyota01-v1/1-9.wav",
         "seconds": 5.653
@@ -221,13 +221,13 @@
       "year": null,
       "visual": "timelineEnd",
       "character": "kano",
-      "seconds": 9,
-      "subtitle": "二十九年前の、一台の答え。それが、今のトヨタを作っている。",
+      "seconds": 8.5,
+      "subtitle": "二十九年前の、一台の答え。\nそれが、今のトヨタを作っている。",
       "audio": {
         "src": "audio/longform-toyota01-v1/1-10.wav",
         "seconds": 5.92
       }
     }
   ],
-  "durationFrames": 4110
+  "durationFrames": 3510
 }

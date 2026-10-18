@@ -586,6 +586,63 @@
       "seconds": 5.653333333333333,
       "approvalStatus": "test-only",
       "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "id": "luno-longform-v4-poses",
+      "file": "assets/characters/longform-v4/luno-poses-v1.png",
+      "type": "character-video-pose-sheet",
+      "version": "video-poses-v1",
+      "source": "knowledge-anime-character-system/production/raster/longform-v4/luno-poses-v1.png",
+      "reference": "materials/a_clean_vector_flat_2d_character_design_sheet_illu_1.png",
+      "generator": "built-in image_gen.imagegen",
+      "width": 1536,
+      "height": 1024,
+      "poses": [
+        "neutral",
+        "explain",
+        "react"
+      ],
+      "sha256": "fb98809f5125539d355c56a6cadd0ff4b44e79e18b61682cacf6dd7fc49aa855",
+      "approvalStatus": "video-v4 production scope approved 2026-10-18; not a replacement character master",
+      "provenance": "sources/longform-v4-assets.json"
+    },
+    {
+      "id": "miino-longform-v4-poses",
+      "file": "assets/characters/longform-v4/miino-poses-v1.png",
+      "type": "character-video-pose-sheet",
+      "version": "video-poses-v1",
+      "source": "knowledge-anime-character-system/production/raster/longform-v4/miino-poses-v1.png",
+      "reference": "materials/ChatGPT Image 2026年9月6日 03_43_18.png",
+      "generator": "built-in image_gen.imagegen",
+      "width": 1536,
+      "height": 1024,
+      "poses": [
+        "neutral",
+        "explain",
+        "react"
+      ],
+      "sha256": "857071b926e1cb4c0366a362d32b0676e987d814c66e2db11296b9ca16c993b2",
+      "approvalStatus": "video-v4 production scope approved 2026-10-18; not a replacement character master",
+      "provenance": "sources/longform-v4-assets.json"
+    },
+    {
+      "id": "kano-longform-v4-poses",
+      "file": "assets/characters/longform-v4/kano-poses-v1.png",
+      "type": "character-video-pose-sheet",
+      "version": "video-poses-v1",
+      "source": "knowledge-anime-character-system/production/raster/longform-v4/kano-poses-v1.png",
+      "reference": "materials/ChatGPT Image 2026年9月6日 03_43_18.png",
+      "generator": "built-in image_gen.imagegen",
+      "width": 1536,
+      "height": 1024,
+      "poses": [
+        "neutral",
+        "explain",
+        "react"
+      ],
+      "sha256": "9b2539211550853f71c01d9017a9f6be31617b6d8eee82f8af01560ba3d8f2a6",
+      "approvalStatus": "video-v4 production scope approved 2026-10-18; not a replacement character master",
+      "provenance": "sources/longform-v4-assets.json"
     }
   ]
 }

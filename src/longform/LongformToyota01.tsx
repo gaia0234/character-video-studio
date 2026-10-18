@@ -1,27 +1,20 @@
-import {AbsoluteFill, Audio, Img, Series, staticFile, useCurrentFrame} from 'remotion';
-import {cancelRender, continueRender, delayRender, interpolate, Sequence} from 'remotion';
-import {useEffect, useState, type CSSProperties} from 'react';
+import {AbsoluteFill, Audio, Img, Series, staticFile, useCurrentFrame, cancelRender, continueRender, delayRender, interpolate, Sequence} from 'remotion';
+import {useEffect, useState, type CSSProperties, type ReactNode} from 'react';
 import {z} from 'zod';
-import {colors, speakerColors} from '../design';
 import toyota01Json from '../data/longform/toyota01.json';
 
-// 横型16:9（1920x1080）・30fps・無音・字幕主体のロング解説試作。
-// 台本正本: sources/script-longform-toyota-01.md
-// 演出はuseCurrentFrame/interpolate等のframe計算のみ。乱数・Date・外部画像は使わない。
-
-const accent = speakerColors['ミーノ'];
-const stampRed = '#BE3F2F';
+// 16:9 / 30fps。台本・音声は保持し、演出はフレームから決定する。
 const FPS = 30;
-const clampBoth = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
-const ramp = (frame: number, start: number, end: number) => interpolate(frame, [start, end], [0, 1], clampBoth);
-
-// --- 台本データ（Scene schema） ---
+const c = {ink: '#293747', paper: '#F5F0E5', white: '#FFFCF5', blue: '#437B9D', light: '#D4E7EB',
+  gold: '#D9AB56', red: '#AC5144', muted: '#687885', green: '#72998C', line: '#AAB8B6'};
+const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
+const ramp = (f: number, a: number, b: number) => interpolate(f, [a, b], [0, 1], clamp);
 const sceneSchema = z.object({
   id: z.string().regex(/^[01]-\d{1,2}$/),
   chapter: z.string().min(1),
   year: z.string().min(4).max(4).nullable().optional(),
   visual: z.string().min(1),
-  seconds: z.number().int().min(1).max(30),
+  seconds: z.number().min(1).max(30),
   subtitle: z.string().min(1),
   character: z.enum(['luno', 'miino', 'kano']).nullable().optional(),
   desaturated: z.boolean().nullable().optional(),
@@ -35,531 +28,383 @@ const sceneSchema = z.object({
   count: z.number().int().min(0).max(100000).nullable().optional(),
   audio: z.object({src: z.string().min(1), seconds: z.number().min(0.1)}).nullable().optional(),
 });
-const longformSchema = z.object({
+const parsed = z.object({
   title: z.string().min(1),
   note: z.string().optional(),
   durationFrames: z.number().int().min(1).optional(),
   scenes: z.array(sceneSchema).min(1).max(20),
-});
+}).parse(toyota01Json);
 type ToyotaScene = Readonly<z.infer<typeof sceneSchema>>;
-const parsed = longformSchema.parse(toyota01Json);
 export const toyota01Scenes = parsed.scenes;
-export const toyota01DurationFrames = toyota01Scenes.reduce((sum, s) => sum + s.seconds, 0) * FPS;
+const sceneFrames = (s: ToyotaScene) => Math.round(s.seconds * FPS);
+export const toyota01DurationFrames = toyota01Scenes.reduce((sum, s) => sum + sceneFrames(s), 0);
 
-const cutoutFiles = {
-  luno: 'assets/characters/test-cutouts/luno-front-v1.png',
-  miino: 'assets/characters/test-cutouts/miino-front-v1.png',
-  kano: 'assets/characters/test-cutouts/kano-front-v1.png',
-} as const;
-
-// --- 共通部品 ---
 let fontReady: Promise<FontFace> | undefined;
 const useStudioFont = () => {
   const [handle] = useState(() => delayRender('Load local Noto Sans JP'));
   useEffect(() => {
-    fontReady ??= new FontFace('Studio Noto Sans JP',
-      `url("${staticFile('assets/fonts/NotoSansJP.ttf')}")`, {weight: '100 900'}).load()
-      .then((font) => {document.fonts.add(font); return font;});
+    fontReady ??= new FontFace('Studio Noto Sans JP', `url("${staticFile('assets/fonts/NotoSansJP.ttf')}")`,
+      {weight: '100 900'}).load().then((font) => {document.fonts.add(font); return font;});
     fontReady.then(() => continueRender(handle)).catch(cancelRender);
     return () => continueRender(handle);
   }, [handle]);
 };
 
-const ChapterBadge = ({scene}: {scene: ToyotaScene}) => <div style={{position: 'absolute', top: 44, left: 60,
-  background: colors.white, border: `2px solid ${colors.line}`, borderRadius: 999, padding: '12px 30px',
-  fontSize: 30, letterSpacing: 1, color: colors.ink}}>{scene.chapter}</div>;
+const Shadow = ({x, y, w, h = 26}: {x: number; y: number; w: number; h?: number}) =>
+  <ellipse cx={x} cy={y} rx={w / 2} ry={h / 2} fill={c.ink} opacity={0.16} />;
+const Panel = ({children, style}: {children: ReactNode; style?: CSSProperties}) =>
+  <div style={{position: 'absolute', background: c.white, border: `4px solid ${c.ink}`, borderRadius: 24,
+    boxShadow: '0 12px 0 #29374718', ...style}}>{children}</div>;
+const Label = ({children, style}: {children: ReactNode; style?: CSSProperties}) =>
+  <div style={{background: c.ink, color: c.white, padding: '12px 28px', borderRadius: 14,
+    fontSize: 34, fontWeight: 800, textAlign: 'center', ...style}}>{children}</div>;
 
-const YearBadge = ({year}: {year: string | null | undefined}) => !year ? null : <div
-  style={{position: 'absolute', top: 44, right: 60, background: colors.ink, color: colors.white,
-    borderRadius: 999, padding: '12px 30px', fontSize: 30, letterSpacing: 1}}>{year}年</div>;
-
-const SubtitleBox = ({subtitle}: {subtitle: string}) => {
-  const frame = useCurrentFrame();
-  return <div style={{position: 'absolute', left: 110, right: 110, bottom: 64,
-    display: 'flex', justifyContent: 'center', opacity: ramp(frame, 0, 10), pointerEvents: 'none'}}>
-    <div style={{background: 'rgba(255,255,255,0.95)', border: `3px solid ${colors.line}`, borderRadius: 20,
-      padding: '24px 52px', fontSize: 44, lineHeight: 1.4, whiteSpace: 'pre-line', textAlign: 'center',
-      maxWidth: 1560}}>{subtitle}</div>
-  </div>;
-};
-
-const Cutout = ({character, style}: {character: 'luno' | 'miino' | 'kano'; style: CSSProperties}) =>
-  <Img src={staticFile(cutoutFiles[character])} style={style} />;
-
-const Stamp = ({label, frame, appear, x = 0, y = 0, rotate = -12, fontSize = 54}: {
-  label: string; frame: number; appear: number; x?: number; y?: number; rotate?: number; fontSize?: number;
+// 可変矩形でスプライトを切り出す。短い登場後は足位置を固定する。
+const spriteRects = {
+  luno: [[0, 240, 512, 505], [512, 240, 512, 505], [1024, 240, 512, 505]],
+  miino: [[0, 240, 512, 505], [512, 240, 512, 505], [1024, 240, 512, 505]],
+  kano: [[0, 240, 512, 505], [512, 240, 512, 505], [1024, 240, 512, 505]],
+} as const;
+const Character = ({who = 'luno', pose = 'explain', x = 1360, bottom = 250, height = 460}: {
+  who?: 'luno' | 'miino' | 'kano'; pose?: 'neutral' | 'explain' | 'react'; x?: number; bottom?: number; height?: number;
 }) => {
-  const t = ramp(frame, appear, appear + 14);
-  if (t <= 0) return null;
-  const scale = interpolate(t, [0, 1], [1.7, 1]);
-  return <div style={{position: 'absolute', left: '50%', top: '50%', transform:
-    `translate(-50%,-50%) translate(${x}px, ${y}px) rotate(${rotate + (1 - t) * 14}deg) scale(${scale})`,
-    opacity: t}}>
-    <div style={{border: `7px double ${stampRed}`, color: stampRed, borderRadius: 16,
-      padding: '14px 34px', fontSize, fontWeight: 700, letterSpacing: 6,
-      background: 'rgba(255,249,239,0.72)'}}>{label}</div>
+  const frame = useCurrentFrame();
+  const index = frame < 22 ? 0 : pose === 'explain' ? 1 : pose === 'react' ? 2 : 0;
+  const rect = spriteRects[who][index];
+  const width = height * 0.82;
+  const cropWidth = height * rect[2] / rect[3];
+  return <div style={{position: 'absolute', left: x, bottom, width, height,
+    opacity: ramp(frame, 0, 12), transform: `translateY(${(1 - ramp(frame, 0, 18)) * 18}px)`}}>
+    <svg width={width} height={24} style={{position: 'absolute', bottom: height * (rect[1] + rect[3] - (who === 'kano' ? 730 : 735)) / rect[3] - 12, left: 0}}>
+      <Shadow x={width / 2} y={12} w={width * 0.72} h={20} />
+    </svg>
+    <div style={{position: 'absolute', left: (width - cropWidth) / 2, top: 0,
+      width: cropWidth, height, overflow: 'hidden'}}>
+      <Img src={staticFile(`assets/characters/longform-v4/${who}-poses-v1.png`)}
+        style={{position: 'absolute', left: -rect[0] * height / rect[3], top: -rect[1] * height / rect[3],
+          width: 1536 * height / rect[3], height: 1024 * height / rect[3], maxWidth: 'none'}} />
+    </div>
   </div>;
 };
 
-// --- 図形（コード描画） ---
-const Car = ({scale = 1, dashed = false}: {scale?: number; dashed?: boolean}) =>
-  <svg width={520 * scale} height={200 * scale} viewBox="0 0 520 200">
-    {/* 車体下側（右向きセダン） */}
-    <rect x="34" y="98" width="452" height="62" rx="26"
-      fill={dashed ? 'none' : colors.white} stroke={colors.ink} strokeWidth={4}
-      strokeDasharray={dashed ? '12 12' : undefined} />
-    {/* キャビン */}
-    <path d="M148 100 L168 56 Q174 46 188 46 L300 46 Q314 46 320 56 L340 100"
-      fill={dashed ? 'none' : colors.white} stroke={colors.ink} strokeWidth={4}
-      strokeDasharray={dashed ? '12 12' : undefined} strokeLinejoin="round" />
-    {!dashed ? <>
-      {/* 後席・前席の窓 */}
-      <path d="M160 94 L176 62 Q180 56 190 56 L226 56 L226 94 Z"
-        fill={colors.paleBlue} stroke={colors.ink} strokeWidth={3} />
-      <path d="M242 56 L292 56 Q300 56 304 62 L318 94 L242 94 Z"
-        fill={colors.paleBlue} stroke={colors.ink} strokeWidth={3} />
-      {/* ドアライン・ハンドル */}
-      <line x1="234" y1="98" x2="234" y2="156" stroke={colors.ink} strokeWidth={3} />
-      <rect x="248" y="110" width="22" height="6" rx="3" fill={colors.ink} />
-      {/* ドアミラー */}
-      <path d="M344 94 L358 84" stroke={colors.ink} strokeWidth={5} strokeLinecap="round" />
-      {/* ヘッドライト・テールライト */}
-      <rect x="446" y="108" width="18" height="12" rx="5" fill={colors.gold} stroke={colors.ink} strokeWidth={2} />
-      <rect x="44" y="108" width="14" height="12" rx="5" fill={colors.muted} stroke={colors.ink} strokeWidth={2} />
-    </> : null}
-    {/* タイヤ＋ハブ */}
-    <circle cx="122" cy="160" r="30" fill={dashed ? 'none' : colors.ink}
-      stroke={colors.ink} strokeWidth={dashed ? 4 : 0} strokeDasharray={dashed ? '12 12' : undefined} />
-    <circle cx="122" cy="160" r="13" fill={dashed ? 'none' : colors.paper} />
-    <circle cx="398" cy="160" r="30" fill={dashed ? 'none' : colors.ink}
-      stroke={colors.ink} strokeWidth={dashed ? 4 : 0} strokeDasharray={dashed ? '12 12' : undefined} />
-    <circle cx="398" cy="160" r="13" fill={dashed ? 'none' : colors.paper} />
-  </svg>;
-
-const ConferenceHall = ({scale = 1, withFlags = false}: {scale?: number; withFlags?: boolean}) =>
-  <svg width={420 * scale} height={310 * scale} viewBox="0 0 420 310">
-    {/* フラグ（控えめ・ペナント） */}
-    {withFlags ? Array.from({length: 8}, (_, i) => <g key={i}>
-      <rect x={44 + i * 42} y={22} width={3} height={28} fill={colors.ink} />
-      <polygon points={`${47 + i * 42},22 ${69 + i * 42},29 ${47 + i * 42},36`}
-        fill={i % 2 ? colors.paleBlue : colors.muted} />
-    </g>) : null}
-    {/* ペディメント（三角屋根）＋エンタブラチュア */}
-    <polygon points="210,34 396,74 24,74" fill={colors.muted} />
-    <rect x="16" y="74" width="388" height="16" fill={colors.ink} />
-    {/* 主体 */}
-    <rect x="36" y="90" width="348" height="190" fill={colors.paleBlue} stroke={colors.ink} strokeWidth={4} />
-    {/* 柱（柱頭付き・中央は入口を広く） */}
-    {[62, 126, 246, 310].map((cx) => <g key={cx}>
-      <rect x={cx - 4} y={90} width={30} height={10} fill={colors.white} stroke={colors.ink} strokeWidth={2} />
-      <rect x={cx} y={100} width={22} height={182} fill={colors.white} stroke={colors.ink} strokeWidth={3} />
+const Car = ({scale = 1, muted = false}: {scale?: number; muted?: boolean}) =>
+  <svg width={640 * scale} height={270 * scale} viewBox="0 0 640 270">
+    <Shadow x={322} y={244} w={580} h={30} />
+    <path d="M40 159 L70 145 L145 139 L201 77 Q209 66 225 66 H380 Q395 66 410 80 L470 139 L574 154 Q601 160 604 180 L601 216 H38 Z"
+      fill={muted ? '#C2C9C9' : '#E9EBDF'} stroke={c.ink} strokeWidth={5} strokeLinejoin="round" />
+    <path d="M166 137 L215 83 H278 V137 Z M291 83 H378 L438 137 H291 Z"
+      fill={muted ? '#A2ADB4' : '#ACD4E1'} stroke={c.ink} strokeWidth={4} strokeLinejoin="round" />
+    <path d="M221 87 L180 132 M366 88 L320 132" stroke={c.white} strokeWidth={8} opacity={0.7} />
+    <path d="M280 141 V210 M451 145 V210 M73 177 H576" fill="none" stroke={c.ink} strokeWidth={3} opacity={0.6} />
+    <rect x={304} y={155} width={28} height={7} rx={3} fill={c.ink} />
+    <rect x={223} y={155} width={28} height={7} rx={3} fill={c.ink} />
+    <path d="M443 130 L462 120 L476 129 L469 141 H447 Z" fill={c.ink} />
+    <rect x={553} y={164} width={36} height={17} rx={5} fill={c.gold} stroke={c.ink} strokeWidth={3} />
+    <rect x={43} y={161} width={15} height={29} rx={3} fill={c.red} stroke={c.ink} strokeWidth={3} />
+    <path d="M47 212 H593 M544 194 H590" stroke={c.ink} strokeWidth={6} />
+    <text x={348} y={196} fontSize={17} letterSpacing={3} fill={c.blue} fontWeight={800}>HYBRID</text>
+    {[153, 493].map((x) => <g key={x}>
+      <circle cx={x} cy={214} r={39} fill={c.ink} />
+      <circle cx={x} cy={214} r={23} fill="#AEB7BA" stroke={c.white} strokeWidth={3} />
+      {[0, 60, 120].map((a) => <path key={a} d={`M${x - 19} 214 H${x + 19}`} stroke={c.ink}
+        strokeWidth={3} transform={`rotate(${a} ${x} 214)`} />)}
+      <circle cx={x} cy={214} r={5} fill={c.white} />
     </g>)}
-    {/* 窓（柱の間・入口の両脇） */}
-    <rect x="92" y="106" width="26" height="50" fill={colors.white} stroke={colors.ink} strokeWidth={2} />
-    <rect x="278" y="106" width="26" height="50" fill={colors.white} stroke={colors.ink} strokeWidth={2} />
-    <rect x="150" y="108" width="16" height="42" fill={colors.white} stroke={colors.ink} strokeWidth={2} />
-    <rect x="230" y="108" width="16" height="42" fill={colors.white} stroke={colors.ink} strokeWidth={2} />
-    {/* 玄関ドア＋キャノピー */}
-    <rect x="172" y="192" width="56" height="88" fill={colors.ink} />
-    <polygon points="200,166 236,196 164,196" fill={colors.ink} />
-    {/* 観客席シルエット（建物前） */}
-    <g fill={colors.muted} opacity={0.55}>
-      {Array.from({length: 7}, (_, i) => <g key={i}>
-        <circle cx={60 + i * 52} cy={270 + (i % 2) * 4} r={9} />
-        <rect x={47 + i * 52} y={278 + (i % 2) * 4} width={26} height={24} rx={8} />
-      </g>)}
-    </g>
-    {/* 基壇と階段 */}
-    <rect x="0" y="292" width="420" height="10" fill={colors.ink} />
-    <rect x="-8" y="302" width="436" height="8" fill={colors.muted} />
   </svg>;
 
-const Factory = ({scale = 1}: {scale?: number}) =>
-  <svg width={420 * scale} height={310 * scale} viewBox="0 0 420 310">
-    {/* 煙突と煙 */}
-    <rect x="298" y="34" width="30" height="70" fill={colors.muted} />
-    <rect x="342" y="52" width="30" height="52" fill={colors.muted} />
-    <g fill="#EDF2F7">
-      <circle cx="313" cy="16" r="12" />
-      <circle cx="334" cy="6" r="9" />
-      <circle cx="357" cy="32" r="10" />
+const Factory = ({x = 0, y = 0, scale = 1}: {x?: number; y?: number; scale?: number}) =>
+  <g transform={`translate(${x} ${y}) scale(${scale})`} stroke={c.ink} strokeWidth={4} strokeLinejoin="round">
+    <Shadow x={290} y={288} w={600} />
+    <path d="M435 100 V15 H470 V100 M490 100 V38 H524 V100" fill="#9BAAB0" />
+    <path d="M18 100 L130 52 V100 L242 52 V100 L354 52 V100 H552 V272 H18 Z" fill="#C0D2D1" />
+    <path d="M18 115 H550" fill="none" />
+    {Array.from({length: 8}, (_, i) => <g key={i}>
+      <rect x={36 + i * 63} y={137} width={42} height={56} fill="#E3F1EF" />
+      <path d={`M${57 + i * 63} 137 V193 M${36 + i * 63} 165 H${78 + i * 63}`} strokeWidth={2} />
+    </g>)}
+    <rect x={195} y={208} width={140} height={64} fill={c.muted} />
+    <path d="M210 222 H320 M210 239 H320 M210 255 H320" stroke={c.line} strokeWidth={2} />
+    <rect x={414} y={215} width={80} height={57} fill={c.white} />
+  </g>;
+const Hall = ({scale = 1}: {scale?: number}) => <svg width={630 * scale} height={430 * scale} viewBox="0 0 630 430">
+  <Shadow x={315} y={402} w={620} />
+  <path d="M45 125 L315 43 L585 125 Z" fill="#9BB4BB" stroke={c.ink} strokeWidth={5} />
+  <path d="M63 141 H567 V370 H63 Z" fill="#D9D6C5" stroke={c.ink} strokeWidth={5} />
+  {[87, 173, 366, 452].map((x) => <g key={x}>
+    <rect x={x} y={142} width={38} height={227} fill={c.white} stroke={c.ink} strokeWidth={4} />
+    <rect x={x - 9} y={133} width={56} height={18} fill={c.white} stroke={c.ink} strokeWidth={3} />
+  </g>)}
+  <rect x={249} y={223} width={97} height={147} fill={c.ink} />
+  <path d="M297 225 V366 M257 278 H337" stroke={c.line} strokeWidth={3} />
+  <path d="M31 372 H599 V386 H31 Z M13 386 H617 V402 H13 Z" fill="#A5B5B6" stroke={c.ink} strokeWidth={3} />
+  {[115, 195, 425, 505].map((x, i) => <g key={x}>
+    <path d={`M${x} 88 V32`} stroke={c.ink} strokeWidth={3} />
+    <path d={`M${x} 33 L${x + 37} 43 L${x} 55 Z`} fill={i % 2 ? c.gold : c.blue} stroke={c.ink} strokeWidth={2} />
+  </g>)}
+</svg>;
+
+const Backdrop = ({mode}: {mode: 'street' | 'workshop' | 'diagram'}) => <svg width={1920} height={1080}
+  style={{position: 'absolute'}} viewBox="0 0 1920 1080">
+  <rect width={1920} height={1080} fill={c.paper} />
+  {mode === 'workshop' ? <>
+    <rect x={85} y={120} width={1750} height={485} rx={12} fill="#C6DADB" stroke={c.ink} strokeWidth={6} />
+    <g fill="#AEC7CD" opacity={0.7}><Factory x={140} y={270} scale={0.9} /><Factory x={1010} y={230} scale={1.1} /></g>
+    {[350, 650, 950, 1250, 1550].map((x) => <path key={x} d={`M${x} 123 V603`} stroke={c.ink} strokeWidth={9} />)}
+    <path d="M88 345 H1832" stroke={c.ink} strokeWidth={9} />
+    <rect x={0} y={620} width={1920} height={145} fill="#D9D2BF" />
+    <path d="M0 621 H1920 M0 764 H1920" stroke={c.ink} strokeWidth={4} />
+    <g stroke={c.ink} strokeWidth={4} fill="#9CABAC">
+      <rect x={64} y={695} width={170} height={38} rx={7} /><path d="M84 733 V792 M214 733 V792" />
+      <rect x={1670} y={667} width={196} height={97} rx={8} /><path d="M1690 700 H1845 M1690 733 H1845" />
     </g>
-    {/* のこぎり屋根 */}
-    <path d="M20 140 L20 196 L120 196 L120 158 L200 158 L200 196 L296 196 L296 158 L376 158 L376 196 L396 196 L396 140 L296 118 L200 118 L120 118 Z"
-      fill={colors.ink} />
-    {/* 工場の壁 */}
-    <rect x="20" y="192" width="376" height="90" fill={colors.paleBlue} stroke={colors.ink} strokeWidth={4} />
-    {/* 高窓 */}
-    {Array.from({length: 6}, (_, i) => <rect key={i} x={42 + i * 58} y={208} width={34} height={40}
-      fill={colors.white} stroke={colors.ink} strokeWidth={3} />)}
-    {/* 大きな出荷扉 */}
-    <rect x="140" y="234" width="60" height="48" fill={colors.ink} />
-    {/* 別棟 */}
-    <rect x="300" y="228" width="96" height="54" fill={colors.white} stroke={colors.ink} strokeWidth={4} />
-    <rect x="314" y="242" width="26" height="40" fill={colors.ink} />
-  </svg>;
+  </> : mode === 'street' ? <>
+    <rect width={1920} height={760} fill="#DFE8E7" />
+    <circle cx={1530} cy={200} r={85} fill="#F2DFAC" />
+    <g fill="#C3D1D0">{Array.from({length: 12}, (_, i) => <rect key={i} x={i * 176 - 40}
+      y={360 + (i % 3) * 46} width={145} height={390} />)}</g>
+    {[0, 220, 1450, 1690].map((x, i) => <g key={x} stroke={c.ink} strokeWidth={3}>
+      <rect x={x} y={350 + (i % 2) * 80} width={192} height={400} fill={i % 2 ? '#C3C9BC' : '#CFD5CE'} />
+      {Array.from({length: 9}, (_, n) => <rect key={n} x={x + 24 + (n % 3) * 54}
+        y={380 + (i % 2) * 80 + Math.floor(n / 3) * 70} width={31} height={44} fill={n % 3 ? '#AFC3CA' : '#EDDAAC'} strokeWidth={2} />)}
+      <rect x={x + 12} y={655} width={168} height={65} fill={c.muted} />
+      <path d={`M${x + 4} 651 H${x + 187}`} stroke={c.white} strokeWidth={16} />
+    </g>)}
+    {[270, 1620].map((x) => <g key={x} stroke={c.ink} strokeWidth={8} fill={c.gold}>
+      <path d={`M${x} 478 V778`} /><path d={`M${x - 20} 481 L${x - 29} 431 H${x + 29} L${x + 20} 481 Z`} />
+    </g>)}
+  </> : <>
+    <rect width={1920} height={800} fill="#E6E9E1" />
+    <path d="M0 160 H1920 M0 785 H1920" stroke="#CDD4CB" strokeWidth={4} />
+    {Array.from({length: 20}, (_, i) => <path key={i} d={`M${i * 100} 170 V780`} stroke="#DCE2D8" strokeWidth={2} />)}
+  </>}
+  <path d="M0 790 H1920 V1080 H0 Z" fill={mode === 'street' ? '#B7B6A8' : '#CECBBB'} />
+  <path d="M0 790 H1920 M0 928 H1920" stroke="#8D998F" strokeWidth={3} />
+  {[0, 360, 720, 1080, 1440, 1800].map((x) => <path key={x} d={`M${960 + (x - 960) * 0.65} 790 L${x} 1080`}
+    stroke="#AEB3A5" strokeWidth={3} />)}
+</svg>;
 
-const BackdropHills = () =>
-  <svg width={1920} height={1080} viewBox="0 0 1920 1080"
-    style={{position: 'absolute', left: 0, top: 0}}>
-    {/* 淡い空の帯と日差し */}
-    <rect x="0" y="0" width="1920" height="1080" fill="#F1F5FA" />
-    <circle cx="1580" cy="230" r="95" fill="#F5ECD7" />
-    {/* 雲 */}
-    <g fill={colors.white} opacity={0.9}>
-      <ellipse cx="380" cy="180" rx="90" ry="30" />
-      <ellipse cx="445" cy="158" rx="58" ry="25" />
-      <ellipse cx="1150" cy="120" rx="80" ry="26" />
-      <ellipse cx="1205" cy="142" rx="52" ry="22" />
-      <ellipse cx="600" cy="430" rx="70" ry="22" />
-    </g>
-    {/* 遠い丘・近い丘 */}
-    <path d="M0 880 Q240 780 520 850 T1080 860 Q1360 900 1920 830 L1920 1080 L0 1080 Z" fill="#DEE8E0" />
-    <path d="M0 960 Q420 860 860 940 T1920 950 L1920 1080 L0 1080 Z" fill="#D2E2D4" />
-  </svg>;
-
-const BackdropCity = () =>
-  <svg width={1920} height={1080} viewBox="0 0 1920 1080"
-    style={{position: 'absolute', left: 0, top: 0}}>
-    <rect x="0" y="0" width="1920" height="1080" fill="#F0F4F9" />
-    <circle cx="300" cy="210" r="90" fill="#F5ECD7" />
-    {/* 雲 */}
-    <g fill={colors.white} opacity={0.9}>
-      <ellipse cx="1420" cy="170" rx="85" ry="28" />
-      <ellipse cx="1478" cy="194" rx="55" ry="22" />
-      <ellipse cx="640" cy="260" rx="70" ry="24" />
-    </g>
-    {/* 遠景スカイライン（中央は図解を活かすため空ける） */}
-    <g fill="#DDE6EE">
-      <rect x="60" y="640" width="120" height="360" />
-      <rect x="210" y="560" width="90" height="440" />
-      <rect x="340" y="690" width="140" height="310" />
-      <rect x="520" y="610" width="100" height="390" />
-      <rect x="660" y="720" width="150" height="280" />
-      <rect x="1190" y="630" width="110" height="370" />
-      <rect x="1330" y="710" width="140" height="290" />
-      <rect x="1500" y="580" width="90" height="420" />
-      <rect x="1620" y="670" width="130" height="330" />
-      <rect x="1780" y="710" width="80" height="290" />
-    </g>
-    {/* 中景 */}
-    <g fill="#D3DFE9">
-      <rect x="0" y="770" width="180" height="310" />
-      <rect x="940" y="800" width="60" height="280" />
-      <rect x="1740" y="810" width="180" height="270" />
-    </g>
-  </svg>;
-
-const Backdrop = ({variant}: {variant: 'hills' | 'city'}) =>
-  variant === 'city' ? <BackdropCity /> : <BackdropHills />;
-
-const Timeline = ({progress, dashed = false}: {progress: number; dashed?: boolean}) =>
-  <svg width={960} height={150} viewBox="0 0 960 150">
-    <line x1="40" y1="100" x2="920" y2="100" stroke={colors.line} strokeWidth={10}
-      strokeDasharray={dashed ? '18 14' : undefined} strokeLinecap="round" />
-    <line x1="40" y1="100" x2={40 + 880 * progress} y2="100" stroke={colors.gold} strokeWidth={10}
-      strokeLinecap="round" />
-    <circle cx="40" cy="100" r="16" fill={colors.white} stroke={colors.ink} strokeWidth={5} />
-    <circle cx="920" cy="100" r={16} fill={progress >= 0.99 ? colors.gold : colors.white}
-      stroke={colors.ink} strokeWidth={5} />
-    <text x="40" y="52" fontSize="40" fontWeight="700" fill={colors.ink} textAnchor="middle">1997</text>
-    <text x="920" y="52" fontSize="40" fontWeight="700" fill={colors.ink} textAnchor="middle">2026</text>
-  </svg>;
-
-const PatentCardBox = ({w = 380, h = 150, top = '燃料電池特許', bottom = '無償開放', fontSize = 36}: {
-  w?: number; h?: number; top?: string; bottom?: string; fontSize?: number;
-}) => <div style={{width: w, height: h, background: colors.white, border: `3px solid ${colors.ink}`,
-  borderRadius: 12, display: 'flex', flexDirection: 'column', alignItems: 'center',
-  justifyContent: 'center', gap: 8, boxShadow: '8px 8px 0 rgba(18,43,85,0.12)'}}>
-  <div style={{fontSize, fontWeight: 700}}>{top}</div>
-  <div style={{fontSize: fontSize - 10, color: stampRed, fontWeight: 700}}>{bottom}</div>
-</div>;
-
-// --- 各シーンの視覚 ---
-const AnswerTitle = () => {
-  const frame = useCurrentFrame();
-  return <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
-    <div style={{position: 'absolute', top: 190, fontSize: 96, fontWeight: 700, letterSpacing: 8,
-      opacity: ramp(frame, 5, 22)}}>二つの答え</div>
-    <div style={{position: 'absolute', left: 190, top: 440, opacity: ramp(frame, 8, 24)}}>
-      <ConferenceHall scale={0.9} />
-    </div>
-    <div style={{position: 'absolute', right: 190, top: 440, opacity: ramp(frame, 14, 30)}}>
-      <Factory scale={0.9} />
-    </div>
-  </AbsoluteFill>;
+const Stamp = ({text, x, y, appear = 24}: {text: string; x: number; y: number; appear?: number}) => {
+  const f = useCurrentFrame(); const t = ramp(f, appear, appear + 12);
+  return <div style={{position: 'absolute', left: x, top: y, border: `7px double ${c.red}`,
+    borderRadius: 14, padding: '14px 30px', color: c.red, background: '#FFFCF5ED', fontSize: 51,
+    fontWeight: 900, opacity: t, transform: `rotate(-7deg) scale(${1 + (1 - t) * 0.25})`}}>{text}</div>;
 };
+const Timeline = ({progress}: {progress: number}) => <svg width={1080} height={170} viewBox="0 0 1080 170">
+  <path d="M55 100 H1025" stroke={c.line} strokeWidth={12} strokeLinecap="round" />
+  <path d={`M55 100 H${55 + progress * 970}`} stroke={c.gold} strokeWidth={12} strokeLinecap="round" />
+  {[55, 1025].map((x) => <circle key={x} cx={x} cy={100} r={20} fill={c.white} stroke={c.ink} strokeWidth={5} />)}
+  <text x={55} y={52} fontSize={36} fontWeight={800} fill={c.ink} textAnchor="middle">1997</text>
+  <text x={1025} y={52} fontSize={36} fontWeight={800} fill={c.ink} textAnchor="middle">2026</text>
+</svg>;
 
-const ConferenceScene = () => <AbsoluteFill style={{alignItems: 'center'}}>
-  <div style={{marginTop: 90}}><ConferenceHall scale={1.45} withFlags /></div>
-</AbsoluteFill>;
+// 図は機能の組合せを説明する概念図。実車の内部構造・配線を表すものではない。
+const PartIcon = ({kind, active = false}: {kind: number; active?: boolean}) => <svg width={220} height={145} viewBox="0 0 220 145"
+  stroke={c.ink} strokeWidth={5} strokeLinejoin="round" fill={active ? '#E9BC63' : '#B9CBCB'}>
+  {kind === 0 ? <>
+    <path d="M34 48 H147 L171 69 V123 H31 V66 H16 V51 H34 Z" />
+    <path d="M51 31 H139 V48 H51 Z M169 71 H199 V114 H171" />
+    {[60, 84, 108, 132].map((x) => <path key={x} d={`M${x} 62 V106`} strokeWidth={3} />)}
+    <circle cx={57} cy={118} r={8} fill={c.white} />
+  </> : kind === 1 ? <>
+    <rect x={33} y={37} width={139} height={92} rx={24} /><ellipse cx={172} cy={83} rx={20} ry={46} />
+    <path d="M193 83 H215 M8 83 H33 M62 48 V116 M91 48 V116 M120 48 V116" strokeWidth={4} />
+  </> : <>
+    <rect x={22} y={39} width={177} height={89} rx={10} />
+    <path d="M43 26 H70 V39 M151 26 H178 V39" />
+    <path d="M61 65 V101 M43 83 H79 M145 83 H180" stroke={c.ink} strokeWidth={6} />
+  </>}
+</svg>;
 
-const CarReveal = ({scene}: {scene: ToyotaScene}) => <AbsoluteFill style={{justifyContent: 'center'}}>
-  <div style={{display: 'flex', justifyContent: 'center', alignItems: 'flex-end', gap: 70}}>
-    <div style={{transform: 'translateY(-60px)'}}><Car scale={1.5} /></div>
-    {scene.character ? <Cutout character={scene.character}
-      style={{height: 300, transform: 'translateY(-120px)'}} /> : null}
-  </div>
-</AbsoluteFill>;
-
-const SkepticTags = ({scene}: {scene: ToyotaScene}) => {
-  const frame = useCurrentFrame();
-  const tags = scene.tags ?? [];
-  const lefts = [420, 960, 700];
-  return <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
-    <div style={{position: 'absolute', top: 560}}><Car scale={1.0} dashed /></div>
-    {tags.map((tag, i) => <div key={tag} style={{position: 'absolute', top: 300 + i * 160,
-      left: lefts[i % 3], background: colors.white, border: `2px solid ${colors.muted}`, borderRadius: 999,
-      padding: '16px 40px', fontSize: 40, color: colors.ink,
-      transform: `rotate(${i % 2 ? 3 : -3}deg) translateY(${Math.sin((frame + i * 9) / 14) * 8}px)`,
-      opacity: ramp(frame, 6 + i * 14, 20 + i * 14), whiteSpace: 'nowrap'}}>{tag}？</div>)}
-    {Array.from({length: 3}, (_, i) => <div key={i} style={{position: 'absolute',
-      left: 1240 + i * 90, top: 250 + i * 54, width: 64, height: 64, borderRadius: '50%',
-      border: `2px solid ${colors.muted}`, color: colors.muted, fontSize: 36, fontWeight: 700,
-      display: 'flex', alignItems: 'center', justifyContent: 'center',
-      opacity: ramp(frame, 18 + i * 12, 30 + i * 12)}}>？</div>)}
-  </AbsoluteFill>;
-};
-
-const EvArrow = () => {
-  const frame = useCurrentFrame();
-  const p = ramp(frame, 8, 42);
-  return <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
-    <div style={{position: 'absolute', top: 400, left: 240, display: 'flex', alignItems: 'center', gap: 40}}>
-      <div style={{fontSize: 40, color: colors.muted, textDecoration: 'line-through'}}>ハイブリッド</div>
-      <svg width={960} height={120} viewBox="0 0 960 120">
-        <line x1="20" y1="64" x2={20 + 860 * p} y2="64" stroke={colors.ink} strokeWidth={10}
-          strokeLinecap="round" />
-        <polygon points="900,32 964,64 900,96" fill={colors.ink} opacity={p > 0.9 ? 1 : 0} />
+const Mechanism = () => {
+  const f = useCurrentFrame();
+  const active = f < 64 ? 0 : f < 111 ? 1 : 2;
+  return <>
+    <Panel style={{left: 100, top: 175, width: 1320, height: 575, padding: '28px 35px'}}>
+      <Label>エンジンとモーターを組み合わせる</Label>
+      <svg width={1240} height={340} style={{position: 'absolute', top: 102, left: 36}}>
+        <path d="M220 165 H604 M800 165 H1020" stroke={c.line} strokeWidth={10} />
+        <path d="M220 165 H604" stroke={c.gold} strokeWidth={10} opacity={ramp(f, 46, 63)} />
+        <path d="M800 165 H1020" stroke={c.gold} strokeWidth={10} opacity={ramp(f, 95, 112)} />
       </svg>
-      <div style={{fontSize: 72, fontWeight: 700, opacity: ramp(frame, 40, 56), whiteSpace: 'nowrap'}}>EV</div>
-    </div>
-  </AbsoluteFill>;
+      {['エンジン', 'モーター', '電池'].map((p, i) => <div key={p} style={{position: 'absolute', top: 173,
+        left: 40 + i * 420, width: 340, textAlign: 'center', borderRadius: 20,
+        background: active === i ? '#F8E8BD' : c.white, border: `3px solid ${active === i ? c.gold : c.line}`,
+        padding: '12px 0', opacity: ramp(f, 8 + i * 13, 20 + i * 13)}}>
+        <PartIcon kind={i} active={active === i} /><div style={{fontSize: 39, fontWeight: 800}}>{p}</div>
+      </div>)}
+      <div style={{position: 'absolute', bottom: 30, left: 40, right: 40, fontSize: 29, color: c.muted,
+        textAlign: 'center'}}>組合せを示す概念図</div>
+    </Panel>
+    <Character x={1510} height={440} />
+  </>;
 };
 
-const Reborn = () => {
-  const frame = useCurrentFrame();
-  return <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
-    <div style={{position: 'absolute', top: 240, background: accent, color: colors.white,
-      borderRadius: 999, padding: '14px 40px', fontSize: 38, fontWeight: 700,
-      transform: 'rotate(-5deg)', opacity: ramp(frame, 6, 20)}}>第6世代</div>
-    <div style={{fontSize: 132, fontWeight: 700, letterSpacing: 10,
-      opacity: ramp(frame, 14, 32)}}>2026</div>
-  </AbsoluteFill>;
-};
-
-const TimelinePreview = ({scene}: {scene: ToyotaScene}) => {
-  const frame = useCurrentFrame();
-  return <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
-    <div style={{position: 'absolute', top: 380}}>
-      <Timeline progress={ramp(frame, 6, 48)} dashed />
-    </div>
-    {scene.character ? <Cutout character={scene.character}
-      style={{position: 'absolute', right: 250, bottom: 270, height: 260}} /> : null}
-  </AbsoluteFill>;
-};
-
-const ChapterCard = () => {
-  const frame = useCurrentFrame();
-  const t = ramp(frame, 2, 16);
-  return <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
-    <div style={{background: colors.white, border: `4px solid ${colors.ink}`, borderRadius: 24,
-      padding: '60px 120px', textAlign: 'center', opacity: t,
-      transform: `scale(${interpolate(t, [0, 1], [0.92, 1])})`}}>
-      <div style={{fontSize: 40, color: colors.muted, letterSpacing: 8}}>第1章</div>
-      <div style={{fontSize: 76, fontWeight: 700, letterSpacing: 4, marginTop: 16}}>1997年、二つの答え</div>
-    </div>
-  </AbsoluteFill>;
-};
-
-const AdoptStamp = ({scene}: {scene: ToyotaScene}) => {
-  const frame = useCurrentFrame();
-  return <AbsoluteFill style={{alignItems: 'center'}}>
-    <div style={{marginTop: 100, opacity: ramp(frame, 0, 10)}}><ConferenceHall scale={1.3} /></div>
-    <Stamp label={scene.stamp ?? ''} frame={frame} appear={22} x={30} y={-60} rotate={-14} />
-  </AbsoluteFill>;
-};
-
-const GlobeCO2 = () => {
-  const frame = useCurrentFrame();
-  const arrowLen = interpolate(frame, [14, 46], [0, 210], clampBoth);
-  return <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
-    <svg width={360} height={360} viewBox="0 0 360 360">
-      <circle cx="180" cy="180" r="150" fill={colors.paleBlue} stroke={colors.ink} strokeWidth={5} />
-      <ellipse cx="180" cy="180" rx="150" ry="60" fill="none" stroke={colors.muted} strokeWidth={2} />
-      <ellipse cx="180" cy="180" rx="60" ry="150" fill="none" stroke={colors.muted} strokeWidth={2} />
-      <line x1="180" y1="70" x2="180" y2={80 + arrowLen} stroke={stampRed} strokeWidth={10}
-        strokeLinecap="round" />
-      <polygon points="158,292 180,338 202,292" fill={stampRed} opacity={ramp(frame, 40, 52)} />
-    </svg>
-    <div style={{position: 'absolute', left: 1250, top: 420, fontSize: 56, fontWeight: 700,
-      opacity: ramp(frame, 20, 36)}}>CO2 ↓</div>
-  </AbsoluteFill>;
-};
-
-const PartsLabels = ({scene}: {scene: ToyotaScene}) => {
-  const frame = useCurrentFrame();
-  const parts = scene.parts ?? [];
-  const pos = [{left: 400, top: 340}, {left: 800, top: 300}, {left: 1220, top: 340}];
-  return <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
-    <div style={{position: 'absolute', top: 500}}><Car scale={1.5} dashed /></div>
-    {parts.map((p, i) => <div key={p} style={{position: 'absolute', left: pos[i % pos.length].left,
-      top: pos[i % pos.length].top, background: colors.white, border: `3px solid ${colors.ink}`,
-      borderRadius: 14, padding: '16px 40px', fontSize: 42, fontWeight: 700,
-      transform: `translateY(${Math.sin((frame + i * 10) / 12) * 7}px)`,
-      opacity: ramp(frame, 8 + i * 10, 20 + i * 10), whiteSpace: 'nowrap'}}>{p}</div>)}
-  </AbsoluteFill>;
-};
-
-const WorldFirstStamps = ({scene}: {scene: ToyotaScene}) => {
-  const frame = useCurrentFrame();
-  const stamps = scene.stamps ?? [];
-  return <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
-    <div style={{transform: 'translateY(-40px)'}}><Car scale={1.6} /></div>
-    {stamps.map((s, i) => <Stamp key={s} label={s} frame={frame} appear={22 + i * 20}
-      x={i % 2 ? 240 : -260} y={i % 2 ? -140 : 110} rotate={i % 2 ? -14 : 10} />)}
-  </AbsoluteFill>;
-};
-
-const PatentFly2015 = ({scene}: {scene: ToyotaScene}) => {
-  const frame = useCurrentFrame();
-  const fly = ramp(frame, 5, 30);
-  const x = interpolate(fly, [0, 1], [-1150, 0]);
-  const n = Math.round(interpolate(ramp(frame, 32, 64), [0, 1], [0, scene.patentCount ?? 0]));
-  return <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
-    <div style={{transform: `translateX(${x}px) rotate(${interpolate(fly, [0, 1], [-12, 0])}deg)`}}>
-      <PatentCardBox />
-    </div>
-    <div style={{position: 'absolute', bottom: 280, fontSize: 100, fontWeight: 700,
-      whiteSpace: 'nowrap', opacity: frame >= 32 ? 1 : 0}}>
-      {n.toLocaleString('en-US')}件</div>
-  </AbsoluteFill>;
-};
-
-const PatentSwarm2019 = ({scene}: {scene: ToyotaScene}) => {
-  const frame = useCurrentFrame();
-  const cards = Array.from({length: scene.patentCards ?? 12}, (_, i) => i);
-  const display = (scene.patentCount ?? 0).toLocaleString('en-US');
-  return <AbsoluteFill>
-    {cards.map((i) => {
-      const speed = 9 + (i % 4) * 2.5;
-      const x = 2160 - ((frame * speed + i * 260) % 2500);
-      const y = 130 + (i % 6) * 128;
-      // 「23,740件」ディスプレイ(x約1265..1780, y約360..540)の帯では文字を読めなくさせない:
-      // y帯が重なる列だけ、帯の手前でフェードアウト→抜けた後フェードイン(frame決定論)。
-      const nearDisplay = y + 70 > 350 && y < 560;
-      const fade = Math.min(
-        interpolate(x, [1700, 1800], [0, 1], clampBoth),
-        interpolate(x, [950, 1070], [1, 0], clampBoth));
-      return <div key={i} style={{position: 'absolute', left: x, top: y, width: 250, height: 70,
-        background: colors.white, border: `2px solid ${colors.ink}`, borderRadius: 10,
-        display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 24, fontWeight: 700,
-        opacity: ramp(frame, i * 1.5, i * 1.5 + 8) * (nearDisplay ? fade : 1), whiteSpace: 'nowrap'}}>
-        {i % 3 === 0 ? '燃料電池' : '電動化特許'}
-      </div>;
-    })}
-    <div style={{position: 'absolute', right: 170, top: 360, background: colors.white,
-      border: `4px solid ${colors.ink}`, borderRadius: 16, padding: '30px 52px', fontSize: 88,
-      fontWeight: 700, boxShadow: '10px 10px 0 rgba(18,43,85,0.10)', whiteSpace: 'nowrap'}}>
-      {display}件</div>
-  </AbsoluteFill>;
-};
-
-const FreeStamp = ({scene}: {scene: ToyotaScene}) => {
-  const frame = useCurrentFrame();
-  return <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
-    {scene.character ? <Cutout character={scene.character}
-      style={{position: 'absolute', left: 420, bottom: 250, height: 320}} /> : null}
-    <Stamp label={scene.stamp ?? ''} frame={frame} appear={20} x={280} y={-40} rotate={-10} fontSize={74} />
-  </AbsoluteFill>;
-};
-
-const Count15m = ({scene}: {scene: ToyotaScene}) => {
-  const frame = useCurrentFrame();
-  const n = Math.round(interpolate(ramp(frame, 10, 62), [0, 1], [0, scene.count ?? 0]));
-  return <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
-    <div style={{position: 'absolute', top: 320, fontSize: 42, color: colors.muted}}>ハイブリッド世界累計</div>
-    <div style={{fontSize: 150, fontWeight: 700, whiteSpace: 'nowrap',
-      opacity: ramp(frame, 6, 18)}}>
-      {n.toLocaleString('en-US')}万台</div>
-    <div style={{position: 'absolute', top: 660, width: 560, height: 10, background: colors.gold,
-      transformOrigin: 'left', transform: `scaleX(${ramp(frame, 10, 62)})`, borderRadius: 5}} />
-  </AbsoluteFill>;
-};
-
-const TimelineEnd = ({scene}: {scene: ToyotaScene}) => {
-  const frame = useCurrentFrame();
-  return <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
-    <div style={{position: 'absolute', top: 380}}>
-      <Timeline progress={ramp(frame, 4, 40)} />
-    </div>
-    <div style={{position: 'absolute', right: 40, bottom: 320, fontSize: 60, fontWeight: 700,
-      color: colors.muted, letterSpacing: 6, opacity: ramp(frame, 30, 46)}}>つづく</div>
-    {scene.character ? <Cutout character={scene.character}
-      style={{position: 'absolute', right: 250, bottom: 270, height: 270}} /> : null}
-  </AbsoluteFill>;
+const PatentFlow = ({scene, many}: {scene: ToyotaScene; many: boolean}) => {
+  const f = useCurrentFrame();
+  const t = ramp(f, 16, 58);
+  return <>
+    <Panel style={{left: 115, top: 174, width: 1670, height: 590}}>
+      <Label style={{position: 'absolute', top: 27, left: 34}}>{many ? '電動化の特許' : '燃料電池の特許'}</Label>
+      <div style={{position: 'absolute', left: 90, top: 195, width: 310, height: 275}}>
+        {[2, 1, 0].map((i) => <div key={i} style={{position: 'absolute', left: i * 17, top: i * -15,
+          width: 252, height: 236, border: `4px solid ${c.ink}`, borderRadius: 12, background: c.white,
+          padding: '25px 20px', textAlign: 'center'}}>
+          <div style={{fontSize: 29, fontWeight: 800}}>TOYOTA</div>
+          <div style={{fontSize: 37, fontWeight: 900, marginTop: 18}}>特許</div>
+          <div style={{borderTop: `4px solid ${c.line}`, marginTop: 21}} />
+        </div>)}
+      </div>
+      <svg width={600} height={210} style={{position: 'absolute', left: 410, top: 240}}>
+        <path d="M0 90 H560 M530 65 L560 90 L530 115" fill="none" stroke={c.gold} strokeWidth={13} />
+      </svg>
+      {[0, 1, 2].map((i) => <div key={i} style={{position: 'absolute', left: 485 + t * 270 + i * 26,
+        top: 253 - i * 24, width: 100, height: 128, border: `3px solid ${c.ink}`, borderRadius: 7,
+        background: c.white, opacity: ramp(f, 8 + i * 9, 20 + i * 9), padding: '16px 8px', fontSize: 22,
+        textAlign: 'center', fontWeight: 800}}>特許<div style={{height: 4, background: c.line, marginTop: 18}} />
+      </div>)}
+      <div style={{position: 'absolute', left: 1015, top: 184, width: 570, textAlign: 'center'}}>
+        <div style={{fontSize: 88, fontWeight: 900, whiteSpace: 'nowrap'}}>{many ? '約' : ''}{scene.patentCount?.toLocaleString('en-US')}件</div>
+        <Label style={{background: c.green, marginTop: 18, fontSize: 43}}>無償開放</Label>
+        {many ? <div style={{fontSize: 31, marginTop: 26, fontWeight: 800}}>期限：2030年末</div> : null}
+      </div>
+      <div style={{position: 'absolute', bottom: 25, left: 45, fontSize: 29, color: c.muted}}>保有する技術を、使える技術へ</div>
+    </Panel>
+  </>;
 };
 
 const Visual = ({scene}: {scene: ToyotaScene}) => {
+  const f = useCurrentFrame();
   switch (scene.visual) {
-    case 'answerTitle': return <AnswerTitle />;
-    case 'conference': return <ConferenceScene />;
-    case 'carReveal': return <CarReveal scene={scene} />;
-    case 'skepticTags': return <SkepticTags scene={scene} />;
-    case 'evArrow': return <EvArrow />;
-    case 'reborn': return <Reborn />;
-    case 'timelinePreview': return <TimelinePreview scene={scene} />;
-    case 'chapterCard': return <ChapterCard />;
-    case 'adoptStamp': return <AdoptStamp scene={scene} />;
-    case 'globeCO2': return <GlobeCO2 />;
-    case 'partsLabels': return <PartsLabels scene={scene} />;
-    case 'worldFirstStamps': return <WorldFirstStamps scene={scene} />;
-    case 'patentFly2015': return <PatentFly2015 scene={scene} />;
-    case 'patentSwarm2019': return <PatentSwarm2019 scene={scene} />;
-    case 'freeStamp': return <FreeStamp scene={scene} />;
-    case 'count15m': return <Count15m scene={scene} />;
-    case 'timelineEnd': return <TimelineEnd scene={scene} />;
+    case 'answerTitle': return <>
+      <div style={{position: 'absolute', left: 440, right: 440, top: 176, textAlign: 'center'}}>
+        <Label style={{display: 'inline-block', fontSize: 38, background: c.blue}}>1997年12月</Label>
+        <div style={{fontSize: 98, fontWeight: 900, marginTop: 18, letterSpacing: 6}}>二つの答え</div>
+      </div>
+      <div style={{position: 'absolute', left: 160, top: 380}}><Hall scale={0.83} /></div>
+      <svg width={650} height={400} style={{position: 'absolute', left: 1100, top: 425}}><Factory scale={1.1} /></svg>
+      <div style={{position: 'absolute', left: 385, top: 760, fontSize: 33, fontWeight: 800}}>世界の枠組み</div>
+      <div style={{position: 'absolute', left: 1320, top: 760, fontSize: 33, fontWeight: 800}}>一台の車</div>
+    </>;
+    case 'conference': case 'adoptStamp': return <>
+      <div style={{position: 'absolute', left: 250, top: 270}}><Hall scale={1.2} /></div>
+      <Panel style={{left: 1150, top: 255, width: 530, padding: '36px', textAlign: 'center'}}>
+        <div style={{fontSize: 38, color: c.muted}}>京都の会議場</div>
+        <div style={{fontSize: 62, fontWeight: 900, marginTop: 20}}>京都議定書</div>
+        <div style={{fontSize: 34, marginTop: 20}}>温暖化に、世界の枠組みを。</div>
+      </Panel>
+      {scene.visual === 'adoptStamp' ? <Stamp text={scene.stamp ?? ''} x={1110} y={610} /> : null}
+    </>;
+    case 'carReveal': return <>
+      <div style={{position: 'absolute', left: 300, top: 454,
+        transform: `translateX(${(1 - ramp(f, 0, 24)) * -60}px)`}}><Car scale={1.4} /></div>
+      <Label style={{position: 'absolute', left: 430, top: 300, background: c.blue}}>トヨタの答えは、一台の車。</Label>
+      <Character who={scene.character ?? 'luno'} x={1390} height={480} />
+    </>;
+    case 'skepticTags': return <>
+      <div style={{position: 'absolute', left: 410, top: 480}}><Car scale={1.4} muted /></div>
+      {(scene.tags ?? []).map((tag, i) => <Panel key={tag} style={{left: 380 + i * 590, top: 240,
+        padding: '24px 38px', fontSize: 45, fontWeight: 800, opacity: ramp(f, 8 + i * 18, 23 + i * 18)}}>{tag}？</Panel>)}
+      <Character x={1480} pose="react" height={440} />
+    </>;
+    case 'evArrow': return <>
+      <Panel style={{left: 130, top: 230, width: 1650, height: 440}}>
+        <Label style={{position: 'absolute', left: 38, top: 30, background: c.muted}}>向けられた声</Label>
+        <div style={{position: 'absolute', left: 70, top: 180, fontSize: 54, fontWeight: 800}}>ハイブリッド</div>
+        <svg width={670} height={150} style={{position: 'absolute', left: 560, top: 170}}>
+          <path d={`M20 70 H${20 + ramp(f, 8, 38) * 570}`} stroke={c.ink} strokeWidth={12} />
+          <path d="M560 39 L610 70 L560 101" fill="none" stroke={c.ink} strokeWidth={12} opacity={ramp(f, 25, 38)} />
+        </svg>
+        <div style={{position: 'absolute', left: 1340, top: 145, fontSize: 104, fontWeight: 900}}>EV</div>
+      </Panel>
+      <div style={{position: 'absolute', left: 455, top: 700, fontSize: 38, color: c.muted}}>「電気に乗り換えればいい」</div>
+    </>;
+    case 'reborn': return <>
+      <Label style={{position: 'absolute', left: 310, top: 220, background: c.blue}}>29年を、作り直す。</Label>
+      <div style={{position: 'absolute', left: 1060, top: 175, fontSize: 136, fontWeight: 900}}>2026</div>
+      <Label style={{position: 'absolute', left: 1260, top: 360, background: c.gold, color: c.ink}}>第6世代</Label>
+      <div style={{position: 'absolute', left: 320, top: 485}}><Car scale={1.4} /></div>
+      <Character x={1450} pose="react" height={440} />
+    </>;
+    case 'timelinePreview': case 'timelineEnd': return <>
+      <Panel style={{left: 110, top: 220, width: 1280, height: 500, padding: '42px'}}>
+        <div style={{fontSize: 55, fontWeight: 900}}>{scene.visual === 'timelinePreview' ? '物語は、29年前へ。' : '一台の答えが、今につながる。'}</div>
+        <div style={{position: 'absolute', left: 90, top: 240}}><Timeline progress={ramp(f, 8, 55)} /></div>
+      </Panel>
+      <Character who={scene.character ?? 'luno'} x={1505} height={440} pose={scene.visual === 'timelineEnd' ? 'react' : 'explain'} />
+      {scene.visual === 'timelineEnd' ? <Label style={{position: 'absolute', right: 180, top: 200}}>つづく</Label> : null}
+    </>;
+    case 'chapterCard': return <Panel style={{left: 260, top: 275, width: 1400, padding: '60px', textAlign: 'center', opacity: ramp(f, 0, 12)}}>
+      <div style={{fontSize: 40, color: c.blue, fontWeight: 800}}>第1章</div>
+      <div style={{fontSize: 83, fontWeight: 900, marginTop: 22}}>1997年、二つの答え</div>
+    </Panel>;
+    case 'globeCO2': return <>
+      <Panel style={{left: 180, top: 190, width: 1540, height: 560}}>
+        <svg width={520} height={480} viewBox="0 0 520 480" style={{position: 'absolute', left: 85, top: 38}}>
+          <circle cx={250} cy={235} r={185} fill={c.light} stroke={c.ink} strokeWidth={6} />
+          <path d="M138 92 L203 76 L248 125 L227 183 L161 204 L123 162 Z M274 216 L324 191 L358 228 L327 304 L277 357 L253 300 Z" fill={c.green} stroke={c.ink} strokeWidth={3} />
+          <ellipse cx={250} cy={235} rx={185} ry={72} fill="none" stroke={c.ink} strokeWidth={3} opacity={0.4} />
+        </svg>
+        <div style={{position: 'absolute', left: 715, top: 100, fontSize: 48, fontWeight: 800}}>世界共通の目標</div>
+        <div style={{position: 'absolute', left: 710, top: 205, fontSize: 118, fontWeight: 900, color: c.blue}}>CO₂ ↓</div>
+        <div style={{position: 'absolute', left: 710, top: 400, fontSize: 40}}>温室効果ガスを減らす</div>
+      </Panel>
+    </>;
+    case 'partsLabels': return <Mechanism />;
+    case 'worldFirstStamps': return <>
+      <Label style={{position: 'absolute', top: 205, left: 570}}>1997年12月　プリウス発売</Label>
+      <div style={{position: 'absolute', left: 420, top: 460}}><Car scale={1.6} /></div>
+      {(scene.stamps ?? []).map((s, i) => <Stamp key={s} text={s} x={420 + i * 800} y={350} appear={24 + i * 18} />)}
+    </>;
+    case 'patentFly2015': return <PatentFlow scene={scene} many={false} />;
+    case 'patentSwarm2019': return <PatentFlow scene={scene} many />;
+    case 'freeStamp': return <>
+      <Character who={scene.character ?? 'miino'} x={1490} height={490} />
+      <Panel style={{left: 110, top: 225, width: 1190, height: 500, padding: '48px'}}>
+        <div style={{fontSize: 56, fontWeight: 900}}>技を配り、道を開く。</div>
+        <div style={{fontSize: 36, marginTop: 34, color: c.muted}}>独り占めせず、次へつなげる。</div>
+      </Panel>
+      <Stamp text={scene.stamp ?? ''} x={690} y={500} />
+    </>;
+    case 'count15m': return <>
+      <Panel style={{left: 240, top: 175, width: 1440, height: 590, textAlign: 'center', padding: '35px'}}>
+        <div style={{fontSize: 43, fontWeight: 800}}>ハイブリッド世界累計</div>
+        <div style={{fontSize: 144, fontWeight: 900, color: c.blue, marginTop: 12}}>1,500万台超</div>
+        <div style={{display: 'flex', justifyContent: 'center', gap: 14, marginTop: 12}}>
+          {[0, 1, 2, 3].map((i) => <div key={i} style={{opacity: ramp(f, 8 + i * 10, 20 + i * 10)}}><Car scale={0.43} /></div>)}
+        </div>
+      </Panel>
+    </>;
     default: return null;
   }
 };
 
-const ToyotaScene = ({scene}: {scene: ToyotaScene}) => {
-  const frame = useCurrentFrame();
-  // 脱色/再着色: 0-4・0-5は常時脱色、0-6は冒頭1.5秒で再着色。
-  const gray = scene.desaturated ? 1 : scene.recolor
-    ? interpolate(frame, [0, 45], [0.9, 0], clampBoth) : 0;
-  return <AbsoluteFill style={{color: colors.ink, fontFamily: '"Studio Noto Sans JP", sans-serif',
-    filter: gray > 0.01 ? `grayscale(${gray.toFixed(3)})` : undefined}}>
-    <Backdrop variant={scene.id.startsWith('1-') ? 'city' : 'hills'} />
+const ToyotaSceneView = ({scene}: {scene: ToyotaScene}) => {
+  const f = useCurrentFrame();
+  const gray = scene.desaturated ? 0.85 : scene.recolor ? 0.85 * (1 - ramp(f, 0, 40)) : 0;
+  const street = ['answerTitle', 'conference', 'adoptStamp', 'carReveal', 'skepticTags', 'worldFirstStamps'].includes(scene.visual);
+  const mode = scene.visual === 'reborn' || scene.visual === 'partsLabels' ? 'workshop' : street ? 'street' : 'diagram';
+  return <AbsoluteFill style={{fontFamily: '"Studio Noto Sans JP", sans-serif', color: c.ink,
+    filter: gray > 0 ? `grayscale(${gray})` : undefined}}>
+    <Backdrop mode={mode} />
     <Visual scene={scene} />
-    <ChapterBadge scene={scene} />
-    {scene.year ? <YearBadge year={scene.year} /> : null}
-    <SubtitleBox subtitle={scene.subtitle} />
+    <Label style={{position: 'absolute', top: 36, left: 55, fontSize: 29, borderRadius: 999}}>{scene.chapter}</Label>
+    {scene.year ? <Label style={{position: 'absolute', top: 36, right: 55, borderRadius: 999, background: c.blue}}>{scene.year}年</Label> : null}
+    <div style={{position: 'absolute', bottom: 43, left: 95, right: 95, display: 'flex', justifyContent: 'center', opacity: ramp(f, 0, 7)}}>
+      <div style={{background: '#293747F5', color: c.white, borderRadius: 16, padding: '22px 38px',
+        fontSize: 43, fontWeight: 800, lineHeight: 1.4, whiteSpace: 'pre-line', textAlign: 'center', maxWidth: 1690}}>{scene.subtitle}</div>
+    </div>
   </AbsoluteFill>;
 };
 
 export const LongformToyota01 = () => {
   useStudioFont();
-  // 各シーンの開始フレーム（演出と音声開始の決定論的基準）。
   let elapsed = 0;
-  const startFrames = toyota01Scenes.map((scene) => {
-    const start = elapsed;
-    elapsed += scene.seconds * FPS;
-    return start;
-  });
-  return <AbsoluteFill style={{background: colors.paper}}>
-    <Series>
-      {toyota01Scenes.map((scene) => <Series.Sequence key={scene.id}
-        durationInFrames={scene.seconds * FPS}>
-        <ToyotaScene scene={scene} />
-      </Series.Sequence>)}
-    </Series>
-    {/* 音声: シーン開始+12フレームで再生。字幕なしの章カード1-1には音声がない。 */}
-    {toyota01Scenes.map((scene, index) => scene.audio
-      ? <Sequence key={`voice-${scene.id}`} from={startFrames[index] + 12}
-          durationInFrames={scene.seconds * FPS - 12}>
-        <Audio src={staticFile(scene.audio.src)} />
-      </Sequence>
-      : null)}
+  const starts = toyota01Scenes.map((s) => {const start = elapsed; elapsed += sceneFrames(s); return start;});
+  return <AbsoluteFill style={{background: c.paper}}>
+    <Series>{toyota01Scenes.map((scene) => <Series.Sequence key={scene.id} durationInFrames={sceneFrames(scene)}>
+      <ToyotaSceneView scene={scene} />
+    </Series.Sequence>)}</Series>
+    {toyota01Scenes.map((scene, i) => scene.audio ? <Sequence key={scene.id} from={starts[i] + 12}
+      durationInFrames={sceneFrames(scene) - 12}><Audio src={staticFile(scene.audio.src)} /></Sequence> : null)}
   </AbsoluteFill>;
 };

@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-18",
+  "status": "video derivatives generated, copied and visually inspected; not replacement character masters",
+  "tool": "built-in image_gen.imagegen",
+  "characterSource": "../knowledge-anime-character-system/materials/キャラクター決定事項.md",
+  "prompts": {
+    "luno": "Use case: identity-preserve. Create ONE production animation sprite strip PNG for the EXISTING character LUNO, using the provided approved design sheet as the identity reference, not as a layout to copy. Transparent background, landscape 3:2 canvas ideally 1536x1024. Exactly THREE equal-width columns in a SINGLE HORIZONTAL ROW. Each column contains the SAME full-body Luno, all three EXACTLY same scale, same baseline around 86% image height, equal whitespace, each entirely within its column with 10% safety margin. No grid, no text, no labels, no background, no ground shadows. Column 1 neutral gentle front/three-quarter pose holding closed navy book, pointer upright. Column 2 explaining with pointer extended toward the LEFT within its own column and gaze toward left, book cradled. Column 3 thoughtful/pleased with gently curved eyes and hand near book, no mouth. Identity invariants: small white non-animal teardrop silhouette with rounded white feet, blue-and-gold head feather, tiny round gold glasses, two dark oval eyes, navy blue cape with gold circular brooch, navy book with GOLD SHIP STEERING WHEEL emblem (not compass), rope border and small anchor corner ornaments; brown wooden pointer. MUST HAVE NO MOUTH in every pose. Preserve head/body proportions, glasses and costume of FRONT reference. Clean professional flat 2D cartoon, crisp consistent dark navy outline, limited solid fills, minimal cel shading, no painterly texture, no blur. No redesign, no new accessories, no lettering, no orange background. Output genuinely transparent alpha and three nonoverlapping full figures. This is an improved derived video asset, not a redesign of the source sheet."
+  },
+  "note": "Three initial strips were layout-adjusted to prevent clipping at sprite boundaries. Original artwork remains unchanged. No mouth for Luno. Final adoption of a replacement character master is not implied.",
+  "finalAssets": [
+    {
+      "id": "luno-longform-v4-poses",
+      "file": "assets/characters/longform-v4/luno-poses-v1.png",
+      "type": "character-video-pose-sheet",
+      "version": "video-poses-v1",
+      "source": "knowledge-anime-character-system/production/raster/longform-v4/luno-poses-v1.png",
+      "reference": "materials/a_clean_vector_flat_2d_character_design_sheet_illu_1.png",
+      "generator": "built-in image_gen.imagegen",
+      "width": 1536,
+      "height": 1024,
+      "poses": [
+        "neutral",
+        "explain",
+        "react"
+      ],
+      "sha256": "fb98809f5125539d355c56a6cadd0ff4b44e79e18b61682cacf6dd7fc49aa855",
+      "approvalStatus": "video-v4 production scope approved 2026-10-18; not a replacement character master",
+      "provenance": "sources/longform-v4-assets.json",
+      "generatedPath": "/home/ds-work/.codex/generated_images/01a14ef0-15c3-70d3-97c5-90df6862e9d8/exec-c680baf4-b1dd-45c9-adb2-40e38bae3cc7.png"
+    },
+    {
+      "id": "miino-longform-v4-poses",
+      "file": "assets/characters/longform-v4/miino-poses-v1.png",
+      "type": "character-video-pose-sheet",
+      "version": "video-poses-v1",
+      "source": "knowledge-anime-character-system/production/raster/longform-v4/miino-poses-v1.png",
+      "reference": "materials/ChatGPT Image 2026年9月6日 03_43_18.png",
+      "generator": "built-in image_gen.imagegen",
+      "width": 1536,
+      "height": 1024,
+      "poses": [
+        "neutral",
+        "explain",
+        "react"
+      ],
+      "sha256": "857071b926e1cb4c0366a362d32b0676e987d814c66e2db11296b9ca16c993b2",
+      "approvalStatus": "video-v4 production scope approved 2026-10-18; not a replacement character master",
+      "provenance": "sources/longform-v4-assets.json",
+      "generatedPath": "/home/ds-work/.codex/generated_images/01a14ef0-15c3-70d3-97c5-90df6862e9d8/exec-80a3dd5e-af41-4002-899e-207be403d41d.png"
+    },
+    {
+      "id": "kano-longform-v4-poses",
+      "file": "assets/characters/longform-v4/kano-poses-v1.png",
+      "type": "character-video-pose-sheet",
+      "version": "video-poses-v1",
+      "source": "knowledge-anime-character-system/production/raster/longform-v4/kano-poses-v1.png",
+      "reference": "materials/ChatGPT Image 2026年9月6日 03_43_18.png",
+      "generator": "built-in image_gen.imagegen",
+      "width": 1536,
+      "height": 1024,
+      "poses": [
+        "neutral",
+        "explain",
+        "react"
+      ],
+      "sha256": "9b2539211550853f71c01d9017a9f6be31617b6d8eee82f8af01560ba3d8f2a6",
+      "approvalStatus": "video-v4 production scope approved 2026-10-18; not a replacement character master",
+      "provenance": "sources/longform-v4-assets.json",
+      "generatedPath": "/home/ds-work/.codex/generated_images/01a14ef0-15c3-70d3-97c5-90df6862e9d8/exec-27eb39ef-67f5-4e95-9434-5c87e6eb946f.png"
+    }
+  ],
+  "inspection": {
+    "allNinePoses": "Visual auditor confirmed major identity features and crop containment",
+    "lunoNoMouth": true,
+    "alphaEvidence": "output/longform-v4-review/asset-alpha.json",
+    "compositeStills": [
+      "output/longform-toyota01-v4-14s.png",
+      "output/longform-toyota01-v4-63s.png"
+    ],
+    "compositeResult": "no opaque rectangle, unnatural glow or clipped props; scene grounding and diagram relations improved",
+    "unverified": [
+      "replacement-master acceptance",
+      "pixel equality to original artwork",
+      "complete fidelity of tiny book ornaments",
+      "listening quality"
+    ]
+  }
+}

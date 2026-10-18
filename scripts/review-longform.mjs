@@ -1,19 +1,26 @@
-// レビュー用コマ送りシート生成: node scripts/review-longform.mjs <input.mp4>
+// レビュー用コマ送りシート生成: node scripts/review-longform.mjs <input.mp4> [output-directory]
 // 同梱ffmpeg(@remotion/compositor-linux-x64-gnu)にはdrawtext/overlay/tileが無いため:
 //   抽出=ffmpeg(rawvideo rgba) → タイムコード焼き込み=内蔵ビットマップフォント →
 //   8x4=32枚/シート合成とPNG化=node標準API(node:zlib)。決定論・外部依存なし。
 import {spawnSync} from 'node:child_process';
 import {mkdirSync, rmSync, writeFileSync, existsSync} from 'node:fs';
-import {join, dirname} from 'node:path';
+import {join, dirname, resolve, relative} from 'node:path';
 import {inflateSync, deflateSync} from 'node:zlib';
 import {fileURLToPath} from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const ffmpeg = join(root, 'node_modules/@remotion/compositor-linux-x64-gnu/ffmpeg');
 const input = process.argv[2];
+const customOutput = process.argv[3];
+const outDir = customOutput ? resolve(root, customOutput) : join(root, 'output/longform-review');
+// 明示した保存先は既存の証拠を消さず、空であっても上書きしない。
+if (customOutput && existsSync(outDir)) {
+  console.error(`出力先が既に存在します。新しいフォルダを指定してください: ${outDir}`);
+  process.exit(2);
+}
 
 if (!input || !(existsSync(join(root, input)) || existsSync(input))) {
-  console.error('使い方: npm run review:longform -- output/<file>.mp4（存在する入力を指定）');
+  console.error('使い方: npm run review:longform -- output/<file>.mp4 [output-directory]（存在する入力を指定）');
   process.exit(2);
 }
 
@@ -34,8 +41,8 @@ const ROWS = 4;
 const PER_SHEET = COLS * ROWS; // 32枚/シート
 const STEP = 0.5;
 
-const outDir = join(root, 'output/longform-review');
-rmSync(outDir, {recursive: true, force: true});
+// 従来の引数なし呼出しは既存の出力先・置換動作を維持する。
+if (!customOutput) rmSync(outDir, {recursive: true, force: true});
 mkdirSync(outDir, {recursive: true});
 
 // --- 内蔵 5x7 ビットマップフォント（0-9 . s 空白） ---
@@ -188,8 +195,10 @@ function encodePng(width, height, rgba) {
   ]);
 }
 
+// AACパディング等でコンテナー尺に生じる半秒未満の端数は、映像EOFの抽出を避けるため除く。
+const samplingEnd = Math.floor(duration / STEP) * STEP;
 const times = [];
-for (let t = 0; t < duration - 1e-6; t += STEP) times.push(Math.round(t * 10) / 10);
+for (let t = 0; t < samplingEnd - 1e-6; t += STEP) times.push(Math.round(t * 10) / 10);
 
 // シート単位で抽出→合成
 const indexLines = [];
@@ -235,5 +244,5 @@ for (let s = 0; s * PER_SHEET < times.length; s++) {
 
 writeFileSync(join(outDir, 'frames-index.txt'), indexLines.join('\n') + '\n');
 console.log(`入力: ${input} / duration ${match[0].slice(10)} / ${times.length}コマ / ${sheetFiles.length}シート`);
-for (const f of sheetFiles) console.log(`  output/longform-review/${f}`);
+for (const f of sheetFiles) console.log(`  ${join(relative(root, outDir), f)}`);
 console.log('frames-index.txt を同フォルダへ出力しました');
