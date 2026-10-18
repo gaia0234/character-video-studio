@@ -14,7 +14,9 @@
     "render:test": "node scripts/render-tests.mjs",
     "render:test:ranking": "remotion render src/index.ts TestRanking3 output/test-ranking-3.mp4 --codec=h264 --pixel-format=yuv420p --concurrency=2",
     "render:test:collection": "remotion render src/index.ts TestCollection5 output/test-collection-5.mp4 --codec=h264 --pixel-format=yuv420p --concurrency=2",
-    "render:test:character": "node scripts/render-character-test.mjs"
+    "render:test:character": "node scripts/render-character-test.mjs",
+    "check:longform": "node scripts/check-longform.mjs",
+    "review:longform": "node scripts/review-longform.mjs"
   },
   "dependencies": {
     "@remotion/cli": "4.0.533",

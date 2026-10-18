@@ -298,6 +298,294 @@
       "seconds": 2.506666666666667,
       "approvalStatus": "test-only",
       "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v1/0-1.wav",
+      "type": "voice-test",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雨晴はう",
+        "style": 10,
+        "model": "0",
+        "speed": 1.04
+      },
+      "speaker": "ルーノ",
+      "credit": "VOICEVOX:雨晴はう",
+      "sha256": "91919500342cfc73967b8e0558db57f2313f8466febef34d092a47d6462b758a",
+      "seconds": 5.312,
+      "approvalStatus": "test-only",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v1/0-2.wav",
+      "type": "voice-test",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雨晴はう",
+        "style": 10,
+        "model": "0",
+        "speed": 1.04
+      },
+      "speaker": "ルーノ",
+      "credit": "VOICEVOX:雨晴はう",
+      "sha256": "5614cd336196c89282d1a4ca7a52a640be2075c0847c68ea0a5b0574e6b646aa",
+      "seconds": 4.576,
+      "approvalStatus": "test-only",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v1/0-3.wav",
+      "type": "voice-test",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雨晴はう",
+        "style": 10,
+        "model": "0",
+        "speed": 1.04
+      },
+      "speaker": "ルーノ",
+      "credit": "VOICEVOX:雨晴はう",
+      "sha256": "deda9bfd44d556221d509968a66f08dac167a0cdf5eb62b02268b05b1ab857ab",
+      "seconds": 3.6586666666666665,
+      "approvalStatus": "test-only",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v1/0-4.wav",
+      "type": "voice-test",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雨晴はう",
+        "style": 10,
+        "model": "0",
+        "speed": 1.04
+      },
+      "speaker": "ルーノ",
+      "credit": "VOICEVOX:雨晴はう",
+      "sha256": "b191fcb5d1afce0b76b3b5375f5d8ef6400c93acbf9a2d6d118a56821160d3a9",
+      "seconds": 6.357333333333333,
+      "approvalStatus": "test-only",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v1/0-5.wav",
+      "type": "voice-test",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雨晴はう",
+        "style": 10,
+        "model": "0",
+        "speed": 1.04
+      },
+      "speaker": "ルーノ",
+      "credit": "VOICEVOX:雨晴はう",
+      "sha256": "7d8957d602228e56591072af54179dd87900a565d2b7789b3c3dedb6f70e495b",
+      "seconds": 5.898666666666666,
+      "approvalStatus": "test-only",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v1/0-6.wav",
+      "type": "voice-test",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雨晴はう",
+        "style": 10,
+        "model": "0",
+        "speed": 1.04
+      },
+      "speaker": "ルーノ",
+      "credit": "VOICEVOX:雨晴はう",
+      "sha256": "c0b529ecd386fa9acc042c6a1ba3ada2d2d2051340af7724a647d2344bb1324c",
+      "seconds": 5.674666666666667,
+      "approvalStatus": "test-only",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v1/0-7.wav",
+      "type": "voice-test",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雨晴はう",
+        "style": 10,
+        "model": "0",
+        "speed": 1.04
+      },
+      "speaker": "ルーノ",
+      "credit": "VOICEVOX:雨晴はう",
+      "sha256": "0e4c3ac67e6dd7feb226362e8b6f266b70fe67b7f6ec663f61e46cce406d58c0",
+      "seconds": 2.8373333333333335,
+      "approvalStatus": "test-only",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v1/1-2.wav",
+      "type": "voice-test",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雨晴はう",
+        "style": 10,
+        "model": "0",
+        "speed": 1.04
+      },
+      "speaker": "ルーノ",
+      "credit": "VOICEVOX:雨晴はう",
+      "sha256": "48a17102a9442c7ff0411feb142619ef4a49546c354d49786441b49e3f57e0cc",
+      "seconds": 6.517333333333333,
+      "approvalStatus": "test-only",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v1/1-3.wav",
+      "type": "voice-test",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雨晴はう",
+        "style": 10,
+        "model": "0",
+        "speed": 1.04
+      },
+      "speaker": "ルーノ",
+      "credit": "VOICEVOX:雨晴はう",
+      "sha256": "73b20769b9c4fc4abd8d83c29fa35c013ad971cdacbc7907be1d96216bcb20bd",
+      "seconds": 4.661333333333333,
+      "approvalStatus": "test-only",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v1/1-4.wav",
+      "type": "voice-test",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雨晴はう",
+        "style": 10,
+        "model": "0",
+        "speed": 1.04
+      },
+      "speaker": "ルーノ",
+      "credit": "VOICEVOX:雨晴はう",
+      "sha256": "839d2d3d59e3c3851ca54132a2da06072e64dfd51bbd019f390145c4408e57d0",
+      "seconds": 6.325333333333333,
+      "approvalStatus": "test-only",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v1/1-5.wav",
+      "type": "voice-test",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雨晴はう",
+        "style": 10,
+        "model": "0",
+        "speed": 1.04
+      },
+      "speaker": "ルーノ",
+      "credit": "VOICEVOX:雨晴はう",
+      "sha256": "82445a2140d3bc59f7ac5e36549b468223820da8f94201af6500ee065a7caf40",
+      "seconds": 6.965333333333334,
+      "approvalStatus": "test-only",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v1/1-6.wav",
+      "type": "voice-test",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雨晴はう",
+        "style": 10,
+        "model": "0",
+        "speed": 1.04
+      },
+      "speaker": "ルーノ",
+      "credit": "VOICEVOX:雨晴はう",
+      "sha256": "c5e9425cf8cdc12a46f1cf3ea13d5386f6c87825a5320681e1b15f975c1ef8a5",
+      "seconds": 7.296,
+      "approvalStatus": "test-only",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v1/1-7.wav",
+      "type": "voice-test",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雨晴はう",
+        "style": 10,
+        "model": "0",
+        "speed": 1.04
+      },
+      "speaker": "ルーノ",
+      "credit": "VOICEVOX:雨晴はう",
+      "sha256": "74aaa3e900c73d003b2e63077d124b8ef72af2c0333d8a271bb2951ef4f7c1cb",
+      "seconds": 9.013333333333334,
+      "approvalStatus": "test-only",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v1/1-8.wav",
+      "type": "voice-test",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "櫻歌ミコ",
+        "style": 43,
+        "model": "11",
+        "speed": 1.06
+      },
+      "speaker": "ミーノ",
+      "credit": "VOICEVOX:櫻歌ミコ",
+      "sha256": "414b2f8c456e2a8c7f68e77f4ff4a205ea2766baf3e18c9320bda44565b7425e",
+      "seconds": 5.504,
+      "approvalStatus": "test-only",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v1/1-10.wav",
+      "type": "voice-test",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "冥鳴ひまり",
+        "style": 14,
+        "model": "1",
+        "speed": 0.9
+      },
+      "speaker": "カーノ",
+      "credit": "VOICEVOX:冥鳴ひまり",
+      "sha256": "51b33b357814833b6e36b56b773b3e8f7f04e9a9be1a328c57d038c9fee4baba",
+      "seconds": 5.92,
+      "approvalStatus": "test-only",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v1/1-9.wav",
+      "type": "voice-test",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雨晴はう",
+        "style": 10,
+        "model": "0",
+        "speed": 1.04
+      },
+      "speaker": "ルーノ",
+      "credit": "VOICEVOX:雨晴はう",
+      "sha256": "49eee04cda735359e71e9e43da63d93cf834b9281062d6cc5dcf55ae47be808d",
+      "seconds": 5.653333333333333,
+      "approvalStatus": "test-only",
+      "licenseReference": "sources/character-dialogue-voice.md"
     }
   ]
 }

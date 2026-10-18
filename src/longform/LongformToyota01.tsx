@@ -1,5 +1,5 @@
-import {AbsoluteFill, Img, Series, staticFile, useCurrentFrame} from 'remotion';
-import {cancelRender, continueRender, delayRender, interpolate} from 'remotion';
+import {AbsoluteFill, Audio, Img, Series, staticFile, useCurrentFrame} from 'remotion';
+import {cancelRender, continueRender, delayRender, interpolate, Sequence} from 'remotion';
 import {useEffect, useState, type CSSProperties} from 'react';
 import {z} from 'zod';
 import {colors, speakerColors} from '../design';
@@ -33,10 +33,12 @@ const sceneSchema = z.object({
   patentCount: z.number().int().min(0).max(1000000).nullable().optional(),
   patentCards: z.number().int().min(0).max(30).nullable().optional(),
   count: z.number().int().min(0).max(100000).nullable().optional(),
+  audio: z.object({src: z.string().min(1), seconds: z.number().min(0.1)}).nullable().optional(),
 });
 const longformSchema = z.object({
   title: z.string().min(1),
   note: z.string().optional(),
+  durationFrames: z.number().int().min(1).optional(),
   scenes: z.array(sceneSchema).min(1).max(20),
 });
 type ToyotaScene = Readonly<z.infer<typeof sceneSchema>>;
@@ -538,6 +540,13 @@ const ToyotaScene = ({scene}: {scene: ToyotaScene}) => {
 
 export const LongformToyota01 = () => {
   useStudioFont();
+  // 各シーンの開始フレーム（演出と音声開始の決定論的基準）。
+  let elapsed = 0;
+  const startFrames = toyota01Scenes.map((scene) => {
+    const start = elapsed;
+    elapsed += scene.seconds * FPS;
+    return start;
+  });
   return <AbsoluteFill style={{background: colors.paper}}>
     <Series>
       {toyota01Scenes.map((scene) => <Series.Sequence key={scene.id}
@@ -545,5 +554,12 @@ export const LongformToyota01 = () => {
         <ToyotaScene scene={scene} />
       </Series.Sequence>)}
     </Series>
+    {/* 音声: シーン開始+12フレームで再生。字幕なしの章カード1-1には音声がない。 */}
+    {toyota01Scenes.map((scene, index) => scene.audio
+      ? <Sequence key={`voice-${scene.id}`} from={startFrames[index] + 12}
+          durationInFrames={scene.seconds * FPS - 12}>
+        <Audio src={staticFile(scene.audio.src)} />
+      </Sequence>
+      : null)}
   </AbsoluteFill>;
 };
