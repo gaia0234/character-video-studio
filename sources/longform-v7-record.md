@@ -36,7 +36,11 @@
 
 ## 未確認・残作業
 
-- B設定（低め）の声質は本人聴取待ち。もう一声低い／気がとの調整はpitchScale等の追加指定で対応可能。
+- B設定（低め）の声質は本人聴取待ち。**本人から「もっと低く、ダンディな声に」の追加指示（2026-10-19 08時台）があり、v8候補の聴取比較を共有済み**：
+  - 候補：A=男声2（style10000・pitch-0.06・抑揚0.75・速度0.94）／B=男声3（10002・同調整）／C=男声1を一段深め（pitch-0.13・抑揚0.65・速度0.90）
+  - 比較音源：`\\192.168.1.115\Shared\Transfer\character-video-studio\2026-10-19-longform-v8-narrator-audition\narrator-v8-audition.wav`（44.97秒・SHA-256 `4c94c9dd…824f57`・再生順は同フォルダの聴取案内.txt）
+  - 生成：新規スクリプト `scripts/generate-voice-v8.py`（共有 `generate-dialogue-voice.py` の複製・VOICESに男声2/3を追加、他は同一）。beats `src/data/longform/narrator-audition-v8.json`、実測 `output/longform-v8-review/audio/audition-result.json`（6本・非無音）。男声2/3は読みが男声1より約1.2〜1.3倍長い実測。
+  - 採用待ち：本人選択後に全16本再生成→シーン秒数再計算→本編レンダー。中間生成物 `public/audio/longform-v8-audition/` は削除候補（一時）。
 - 分離方式の記録統合（sources.md／台本正本）はCodex側停止確認後に別途承認。
 - `public/audio/longform-toyota01-narrator-v5/`（重複）は削除候補、本人指示時のみ。
 - push・公開は対象外。

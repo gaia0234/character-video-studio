@@ -1,0 +1,65 @@
+{
+  "note": "v8ナレーター候補聴取比較。男声2（style10000）／男声3（10002）／男声1を一段深め（pitch-0.13・intonation0.65・speed0.90）。各2文。クレジット：VOICEVOX Nemo。",
+  "beats": [
+    {
+      "id": "a2-1",
+      "speaker": "ナレ2",
+      "spokenText": "一九九七年十二月。日本は、二つの答えを出した。",
+      "voiceSpeed": 0.94,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75
+    },
+    {
+      "id": "a2-2",
+      "speaker": "ナレ2",
+      "spokenText": "二〇一九年四月。電動化の特許、約2万3千740件を無償開放。期限は2030年末。",
+      "voiceSpeed": 0.94,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75
+    },
+    {
+      "id": "a3-1",
+      "speaker": "ナレ3",
+      "spokenText": "一九九七年十二月。日本は、二つの答えを出した。",
+      "voiceSpeed": 0.94,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75
+    },
+    {
+      "id": "a3-2",
+      "speaker": "ナレ3",
+      "spokenText": "二〇一九年四月。電動化の特許、約2万3千740件を無償開放。期限は2030年末。",
+      "voiceSpeed": 0.94,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75
+    },
+    {
+      "id": "a1d-1",
+      "speaker": "ナレ1d",
+      "spokenText": "一九九七年十二月。日本は、二つの答えを出した。",
+      "voiceSpeed": 0.9,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "pitchScale": -0.13,
+      "intonationScale": 0.65
+    },
+    {
+      "id": "a1d-2",
+      "speaker": "ナレ1d",
+      "spokenText": "二〇一九年四月。電動化の特許、約2万3千740件を無償開放。期限は2030年末。",
+      "voiceSpeed": 0.9,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "pitchScale": -0.13,
+      "intonationScale": 0.65
+    }
+  ]
+}
