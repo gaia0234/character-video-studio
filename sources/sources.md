@@ -1,12 +1,13 @@
 # 動画の出典と素材
 
-### V9 credit修正版の完成（2026-10-19・技術受入済み／本人視聴・共有待ち）
+### V9 credit修正版の完成（2026-10-19・技術受入・共有済み／本人視聴待ち）
 
-現在の結論：OpenCode GLM-5.3-Flash-freeのvariant=maxを実値確認して残工程を担当させ、V9末尾へ掛け合い3声creditを横並び追加した新版MP4を出力。Mainが完成MP4の119秒原寸を確認し字幕・Nemo表示・カーノ・年表との非干渉を受入。本人の視聴・声／テンポ判断は未確認、共有は未実施。監査時点の「修正版MP4未確認」から本工程で更新し、旧版と監査履歴は保持する。
+現在の結論：OpenCode GLM-5.3-Flash-freeのvariant=maxを実値確認して残工程を担当させ、V9末尾へ掛け合い3声creditを横並び追加した新版MP4を出力。Mainが完成MP4の119秒原寸を確認し字幕・Nemo表示・カーノ・年表との非干渉を受入。本人の視聴・声／テンポ判断は未確認。本人「進める」で標準共有先への保存を承認し、コピー一致確認まで完了。監査時点の「修正版MP4未確認」から本工程で更新し、旧版と監査履歴は保持する。
 
-- 成果物：`output/longform-toyota01-v9-credits-lufs14.mp4`、121.600秒・7,582,369bytes、SHA-256 `43d25d35ed782240744cee48be9f1751041e6ff3f04d8e0c914ad80d7a59a00a`をMainが報告値と照合。共有前のローカル成果物。原V9は保全。
+- 成果物：`output/longform-toyota01-v9-credits-lufs14.mp4`、121.600秒・7,582,369bytes、SHA-256 `43d25d35ed782240744cee48be9f1751041e6ff3f04d8e0c914ad80d7a59a00a`をMainが報告値と照合。共有済み成果物。原V9は保全。
+- 共有結果（2026-10-19）：`\\192.168.1.115\Shared\Transfer\character-video-studio\2026-10-19-longform-v9-credits\longform-toyota01-v9-credits-lufs14.mp4`へ新規保存。7,582,369bytes・元と共有先のSHA-256一致。証拠`output/longform-v9-credit-review/shared-copy.json`。追加モデル実行・動画生成・再検査なし。
 - 変更・必要検査：`LongformToyota01V9.tsx`3行だけで台詞・音声・尺は維持。既存の型／台本／代表still合格を再利用し、全尺render exit0（3648f）→既存loudnorm2pass→実音読み戻しI−14.3 LUFS／TP−2.0dBTP・非無音（peak−1.56/RMS−17.76dBFS）→完成MP4末尾PNGを確認。新規全編シート・比較・音声生成なし。技術検査の担当証拠は`output/longform-v9-credit-review/verification.json`。
-- 分担・状態：DSは配置案のみ、実装／出力はGLM max、Codexは指示と受入。過去high比較は変更しない。OpenCode結果の本人受入表記をMain技術受入／本人待ちに訂正するよう指示した。共有は本人画面受入と共有範囲承認後の別工程、push・公開・削除なし。
+- 分担・状態：DSは配置案のみ、実装／出力はGLM max、Codexは指示と受入。過去high比較は変更しない。OpenCode結果の本人受入表記をMain技術受入／本人待ちに訂正するよう指示した。共有は本人の保存承認後に別工程で実施し、視聴済みとは扱わない。push・公開・削除なし。
 - 保全・停止：基底v6・manifest・旧音声・drafts・キャッシュと過去のMain調整差分は今回commitから除外。動画失敗10／次15、通信7／次10を保持し、この出力工程の新規失敗0。再開時fetch成功ahead20/behind0と未commit差分を区別。一時中間・ログは担当の棚卸しを参照し、明示削除なし。
 
 
