@@ -1,0 +1,13 @@
+{
+  "created": "2026-10-18",
+  "registered": "2026-10-19",
+  "tool": "built-in image_gen.imagegen",
+  "prompt": "Use case: identity-preserve, public figure editorial illustration. Image 1 is the identity reference: official Toyota portrait of AKIO TOYODA. Image 2 is ONLY the target cartoon scene's line and color style, not a character identity to copy. Generate ONE original full-body character illustration of Akio Toyoda as a clearly simplified rounded-face flat 2D editorial character for a Japanese educational video. Transparent PNG, portrait 1024x1536, entire head and both shoes inside frame with 12% clear margins, centered, standing calmly facing slightly LEFT, arms relaxed by sides or hands gently clasped at waist. Recognizable mature Japanese man: round friendly face, short neatly parted dark hair with a little gray, thin rectangular rimmed glasses, gentle closed-lip smile, charcoal business suit, white shirt, subdued blue tie, black shoes. Slightly oversized round head and compact simplified body like an explanatory cartoon. Clean dark charcoal navy outlines (#293747) of consistent thickness, flat solid muted colors, minimal cel shading, crisp edges. Match the graphic density of the illustrated car and buildings in image 2; do not render photographically, do not copy the spirit mascot. No podium, no microphone, no vehicle, no logos, no text, no labels, no quotation marks, no floor or cast shadow. This is an editorial depiction of a story participant, not an invented speech or exact event reconstruction. Single pose only; no sprite strip. Genuine transparent alpha background. Keep all details legible at about 400px body height.",
+  "referencePhoto": "https://global.toyota/pages/materials/20200407/images/release/akio_toyoda_kv_w1920.jpg",
+  "profile": "https://global.toyota/jp/company/profile/executives/akio_toyoda.html",
+  "referenceStyle": "output/longform-toyota01-v4-14s.png",
+  "generatedFile": "/home/ds-work/.codex/generated_images/01a14ef0-15c3-70d3-97c5-90df6862e9d8/exec-f22ff681-454d-4d3d-a42f-ab2eac8f2708.png",
+  "asset": "public/assets/people/akio-toyoda-v1.png",
+  "status": "editorial illustrated depiction; not an exact event reconstruction; no invented quote or cloned voice",
+  "referencePhotoUse": "reference only; photo not used in rendered video or shared package"
+}

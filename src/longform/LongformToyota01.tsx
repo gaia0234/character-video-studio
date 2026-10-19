@@ -3,7 +3,7 @@ import {useEffect, useState, type CSSProperties, type ReactNode} from 'react';
 import {z} from 'zod';
 import toyota01Json from '../data/longform/toyota01.json';
 
-// 16:9 / 30fps。台本・音声は保持し、演出はフレームから決定する。
+// 16:9 / 30fps。画面外ナレーター・説明役・物語の登場人物を分ける。
 const FPS = 30;
 const c = {ink: '#293747', paper: '#F5F0E5', white: '#FFFCF5', blue: '#437B9D', light: '#D4E7EB',
   gold: '#D9AB56', red: '#AC5144', muted: '#687885', green: '#72998C', line: '#AAB8B6'};
@@ -17,6 +17,8 @@ const sceneSchema = z.object({
   seconds: z.number().min(1).max(30),
   subtitle: z.string().min(1),
   character: z.enum(['luno', 'miino', 'kano']).nullable().optional(),
+  guide: z.enum(['luno', 'miino', 'kano']).nullable().optional(),
+  actor: z.enum(['engineer', 'akio-toyoda']).nullable().optional(),
   desaturated: z.boolean().nullable().optional(),
   recolor: z.boolean().nullable().optional(),
   tags: z.array(z.string().min(1).max(12)).nullable().optional(),
@@ -26,11 +28,13 @@ const sceneSchema = z.object({
   patentCount: z.number().int().min(0).max(1000000).nullable().optional(),
   patentCards: z.number().int().min(0).max(30).nullable().optional(),
   count: z.number().int().min(0).max(100000).nullable().optional(),
-  audio: z.object({src: z.string().min(1), seconds: z.number().min(0.1)}).nullable().optional(),
+  audio: z.object({src: z.string().min(1), seconds: z.number().min(0.1),
+    speaker: z.literal('narrator').optional()}).nullable().optional(),
 });
 const parsed = z.object({
   title: z.string().min(1),
   note: z.string().optional(),
+  narrator: z.object({id: z.literal('narrator'), label: z.string().min(1), credit: z.string().min(1)}).optional(),
   durationFrames: z.number().int().min(1).optional(),
   scenes: z.array(sceneSchema).min(1).max(20),
 }).parse(toyota01Json);
@@ -85,6 +89,55 @@ const Character = ({who = 'luno', pose = 'explain', x = 1360, bottom = 250, heig
           width: 1536 * height / rect[3], height: 1024 * height / rect[3], maxWidth: 'none'}} />
     </div>
   </div>;
+};
+
+// 架空の無名技術者。特定人物の容姿や発言を再現しない。
+const Engineer = () => <>
+  <svg width={315} height={500} viewBox="0 0 340 540" style={{position: 'absolute', left: 1435, top: 320}}>
+    <Shadow x={170} y={526} w={200} h={22} />
+    <g stroke={c.ink} strokeWidth={5} strokeLinejoin="round" strokeLinecap="round">
+      <path d="M115 367 V502 H159 L171 402 L185 502 H228 V367 Z" fill="#5D7687" />
+      <path d="M115 495 H160 V524 H101 Q91 519 101 508 Z M185 495 H228 L244 511 V524 H185 Z" fill={c.ink} />
+      <path d="M113 211 Q170 191 227 211 L246 374 H96 Z" fill="#AFCCD5" />
+      <path d="M112 216 L80 245 L36 228 L22 255 L83 289 Q98 293 119 273 M228 217 L255 236 L267 347 H238" fill="#AFCCD5" />
+      <path d="M32 228 Q20 214 9 226 Q-1 239 22 255 M238 345 Q234 370 253 373 Q273 372 267 347" fill="#F3D9BE" />
+      <path d="M149 205 L171 236 L193 205 M171 236 V370 M190 268 H225 V301 H190" fill="none" strokeWidth={3} />
+      <path d="M149 176 V210 Q171 229 193 210 V176" fill="#F3D9BE" />
+      <circle cx={171} cy={119} r={70} fill="#F3D9BE" />
+      <path d="M103 107 Q101 40 167 42 Q226 40 240 105 L214 87 Q172 102 133 83 Z" fill={c.ink} />
+      <path d="M103 79 Q111 37 166 36 Q218 38 234 72 L244 86 H99 Z" fill="#7296A8" />
+      <path d="M112 81 H239" fill="none" />
+      <circle cx={146} cy={121} r={5} fill={c.ink} stroke="none" />
+      <circle cx={195} cy={121} r={5} fill={c.ink} stroke="none" />
+      <path d="M157 153 Q172 162 187 153" fill="none" strokeWidth={3} />
+    </g>
+  </svg>
+  <Label style={{position: 'absolute', right: 100, top: 220, fontSize: 29, background: c.blue}}>技術者（イメージ）</Label>
+</>;
+
+const StoryActor = ({actor}: {actor: ToyotaScene['actor']}) => {
+  if (actor === 'engineer') return <Engineer />;
+  if (actor !== 'akio-toyoda') return null;
+  return <>
+    <svg width={340} height={28} style={{position: 'absolute', left: 1460, top: 794}}><Shadow x={170} y={14} w={235} h={22} /></svg>
+    <Img src={staticFile('assets/people/akio-toyoda-v1.png')}
+      style={{position: 'absolute', left: 1430, top: 220, width: 400, height: 600, objectFit: 'contain', objectPosition: 'center bottom'}} />
+    <Panel style={{position: 'absolute', right: 70, top: 116, padding: '8px 28px', lineHeight: 1.15, textAlign: 'center'}}>
+      <div style={{fontSize: 37, fontWeight: 900}}>豊田章男</div>
+      <div style={{fontSize: 27, marginTop: 6}}>トヨタ自動車 会長</div>
+    </Panel>
+  </>;
+};
+const guideOf = (scene: ToyotaScene) => scene.guide ?? scene.character;
+const Guide = ({scene, x, height, pose}: {scene: ToyotaScene; x: number; height: number; pose?: 'neutral' | 'explain' | 'react'}) => {
+  const who = guideOf(scene);
+  if (!who) return null;
+  return <>
+    <Character who={who} x={x} height={height} pose={pose} />
+    <Label style={{position: 'absolute', right: 55, top: 134, fontSize: 25, background: c.blue}}>
+      解説役｜{({luno: 'ルーノ', miino: 'ミーノ', kano: 'カーノ'})[who]}
+    </Label>
+  </>;
 };
 
 const Car = ({scale = 1, muted = false}: {scale?: number; muted?: boolean}) =>
@@ -215,7 +268,7 @@ const PartIcon = ({kind, active = false}: {kind: number; active?: boolean}) => <
   </>}
 </svg>;
 
-const Mechanism = () => {
+const Mechanism = ({scene}: {scene: ToyotaScene}) => {
   const f = useCurrentFrame();
   const active = f < 64 ? 0 : f < 111 ? 1 : 2;
   return <>
@@ -235,7 +288,7 @@ const Mechanism = () => {
       <div style={{position: 'absolute', bottom: 30, left: 40, right: 40, fontSize: 29, color: c.muted,
         textAlign: 'center'}}>組合せを示す概念図</div>
     </Panel>
-    <Character x={1510} height={440} />
+    <Guide scene={scene} x={1510} height={440} />
   </>;
 };
 
@@ -298,13 +351,12 @@ const Visual = ({scene}: {scene: ToyotaScene}) => {
       <div style={{position: 'absolute', left: 300, top: 454,
         transform: `translateX(${(1 - ramp(f, 0, 24)) * -60}px)`}}><Car scale={1.4} /></div>
       <Label style={{position: 'absolute', left: 430, top: 300, background: c.blue}}>トヨタの答えは、一台の車。</Label>
-      <Character who={scene.character ?? 'luno'} x={1390} height={480} />
+      {scene.actor ? <StoryActor actor={scene.actor} /> : <Guide scene={scene} x={1390} height={480} />}
     </>;
     case 'skepticTags': return <>
       <div style={{position: 'absolute', left: 410, top: 480}}><Car scale={1.4} muted /></div>
       {(scene.tags ?? []).map((tag, i) => <Panel key={tag} style={{left: 380 + i * 590, top: 240,
         padding: '24px 38px', fontSize: 45, fontWeight: 800, opacity: ramp(f, 8 + i * 18, 23 + i * 18)}}>{tag}？</Panel>)}
-      <Character x={1480} pose="react" height={440} />
     </>;
     case 'evArrow': return <>
       <Panel style={{left: 130, top: 230, width: 1650, height: 440}}>
@@ -323,15 +375,20 @@ const Visual = ({scene}: {scene: ToyotaScene}) => {
       <div style={{position: 'absolute', left: 1060, top: 175, fontSize: 136, fontWeight: 900}}>2026</div>
       <Label style={{position: 'absolute', left: 1260, top: 360, background: c.gold, color: c.ink}}>第6世代</Label>
       <div style={{position: 'absolute', left: 320, top: 485}}><Car scale={1.4} /></div>
-      <Character x={1450} pose="react" height={440} />
+      <StoryActor actor={scene.actor} />
     </>;
     case 'timelinePreview': case 'timelineEnd': return <>
       <Panel style={{left: 110, top: 220, width: 1280, height: 500, padding: '42px'}}>
         <div style={{fontSize: 55, fontWeight: 900}}>{scene.visual === 'timelinePreview' ? '物語は、29年前へ。' : '一台の答えが、今につながる。'}</div>
         <div style={{position: 'absolute', left: 90, top: 240}}><Timeline progress={ramp(f, 8, 55)} /></div>
       </Panel>
-      <Character who={scene.character ?? 'luno'} x={1505} height={440} pose={scene.visual === 'timelineEnd' ? 'react' : 'explain'} />
-      {scene.visual === 'timelineEnd' ? <Label style={{position: 'absolute', right: 180, top: 200}}>つづく</Label> : null}
+      <Guide scene={scene} x={1505} height={440} pose={scene.visual === 'timelineEnd' ? 'react' : 'explain'} />
+      {scene.visual === 'timelineEnd' ? <>
+        <Label style={{position: 'absolute', right: 180, top: 200}}>つづく</Label>
+        {parsed.narrator ? <Label style={{position: 'absolute', left: 150, top: 790, fontSize: 25, background: c.blue}}>
+          ナレーション（画面外）｜{parsed.narrator.credit}
+        </Label> : null}
+      </> : null}
     </>;
     case 'chapterCard': return <Panel style={{left: 260, top: 275, width: 1400, padding: '60px', textAlign: 'center', opacity: ramp(f, 0, 12)}}>
       <div style={{fontSize: 40, color: c.blue, fontWeight: 800}}>第1章</div>
@@ -349,7 +406,7 @@ const Visual = ({scene}: {scene: ToyotaScene}) => {
         <div style={{position: 'absolute', left: 710, top: 400, fontSize: 40}}>温室効果ガスを減らす</div>
       </Panel>
     </>;
-    case 'partsLabels': return <Mechanism />;
+    case 'partsLabels': return <Mechanism scene={scene} />;
     case 'worldFirstStamps': return <>
       <Label style={{position: 'absolute', top: 205, left: 570}}>1997年12月　プリウス発売</Label>
       <div style={{position: 'absolute', left: 420, top: 460}}><Car scale={1.6} /></div>
@@ -358,7 +415,7 @@ const Visual = ({scene}: {scene: ToyotaScene}) => {
     case 'patentFly2015': return <PatentFlow scene={scene} many={false} />;
     case 'patentSwarm2019': return <PatentFlow scene={scene} many />;
     case 'freeStamp': return <>
-      <Character who={scene.character ?? 'miino'} x={1490} height={490} />
+      <Guide scene={scene} x={1490} height={490} />
       <Panel style={{left: 110, top: 225, width: 1190, height: 500, padding: '48px'}}>
         <div style={{fontSize: 56, fontWeight: 900}}>技を配り、道を開く。</div>
         <div style={{fontSize: 36, marginTop: 34, color: c.muted}}>独り占めせず、次へつなげる。</div>

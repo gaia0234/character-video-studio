@@ -44,3 +44,16 @@ VOICEVOX:冥鳴ひまり
 - [櫻歌ミコ](https://voicevox35miko.studio.site/rule): 同梱モデル規約のクレジット要件は確認。個別ページはブラウザーでも502となり、詳細本文は未確認。本試験を公開済み・公開条件の確認完了とは扱わない。
 
 声の印象・キャラクターとの相性はユーザーの試聴で判断する。音声出力の技術検証と、声の本採用は区別する。
+
+
+## 長尺v5の独立ナレーター（2026-10-19）
+
+- 状態：本人承認の役割分離試作としてVOICEVOX Nemo「男声1」を生成・適用。主観的な落ち着き・読みの聴取、本採用は未確認。既存3キャラの音声設定・旧WAVは保持する。
+- Core0.17.0／モデル0.16.4の`n0.vvm`、Style10001、speedScale0.99。公式SHA-256 `e91e2e6ed5cfa6940ff55b61234ba89c631fce3d0146c23685552e7f5d2fe437`と照合済み。
+- クレジット：**VOICEVOX Nemo**。公式 https://voicevox.hiroshiba.jp/nemo/ はキャラなしナレーション用途、規約 https://voicevox.hiroshiba.jp/nemo/term/ はクレジット付きで商用・非商用利用可。規約条件は維持する。確認日2026-10-18、モデル実生成2026-10-19。
+- 既存`generate-dialogue-voice.py`に独立speaker「ナレーター」を追加。台本で使うモデルだけを読み込み、クレジットも使った音声のみを記録する。元3体のジョブに新モデルを必須化しない。
+- 入力：`src/data/longform/toyota01-narrator-v5.json`。生成：`public/audio/longform-toyota01-v5/`の16本。実値・割当・旧ファイル不変・規約判断は`output/longform-v5-review/audio/verification.json`、`audio-assignments.json`、`voice-terms.json`。動画側の適用・出力・共有は`sources.md`のv5節を参照。
+- 青山龍星は利用者属性に応じた事前申請条件のため保留し、取得・生成していない。属性または許諾が確認できた場合のみ再検討する。公開・新サービス・新アカウントは今回対象外。
+
+- 回帰確認：`python3 -B scripts/test-voice-selection.py`。旧3体の設定保持、旧ジョブにNemoを必須化しないこと、ナレーター単独のモデル／クレジット、未知speakerの早期拒否を確認する。実装前の失敗と適用後成功は上記audio検証記録を参照。
+- 未導入環境での必要モデル取得は既存CLIを使う：`.voicevox/download --only models --models-version 0.16.4 --models-pattern n0.vvm --tries 1 --output .voicevox/runtime`。対話端末で公式規約を確認し、配布SHA-256との一致を確認する。今回取得済みのモデルを再取得する手順ではない。

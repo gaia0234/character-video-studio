@@ -17,10 +17,29 @@ VOICES = {
     'ルーノ': {'name': '雨晴はう', 'style': 10, 'model': '0', 'speed': 1.04},
     'ミーノ': {'name': '櫻歌ミコ', 'style': 43, 'model': '11', 'speed': 1.06},
     'カーノ': {'name': '冥鳴ひまり', 'style': 14, 'model': '1', 'speed': 0.90},
+    'ナレーター': {'name': '男声1', 'style': 10001, 'model': 'n0', 'speed': 0.99,
+                'credit': 'VOICEVOX Nemo', 'licenseReference': 'https://voicevox.hiroshiba.jp/nemo/term/'},
 }
 EXPECTED = {'0': '917e592cae92a02fb7668bd9e168df4e39c8ab2f5302c2be71906c70ec4e2df2',
             '1': '8df20815be9a84a4b4723b9e778d2ef6a4df277e4872fe9efe29676a60e02774',
-            '11': '46c209914812c13b1717331701d76491708448f90c7f8e87b5b286e5ca91341e'}
+            '11': '46c209914812c13b1717331701d76491708448f90c7f8e87b5b286e5ca91341e',
+            'n0': 'e91e2e6ed5cfa6940ff55b61234ba89c631fce3d0146c23685552e7f5d2fe437'}
+
+def required_models(dialogue):
+    models = {}
+    for beat in dialogue['beats']:
+        speaker = beat['speaker']
+        if speaker not in VOICES:
+            raise ValueError(f'Unknown speaker: {speaker}')
+        number = VOICES[speaker]['model']
+        models[number] = EXPECTED[number]
+    return models
+
+def voice_credit(voice):
+    return voice.get('credit', f'VOICEVOX:{voice["name"]}')
+
+def project_voice_credits(dialogue):
+    return list(dict.fromkeys(voice_credit(VOICES[beat['speaker']]) for beat in dialogue['beats']))
 
 class LoadRuntime(C.Structure):
     _fields_ = [('filename', C.c_char_p)]
@@ -49,6 +68,8 @@ def main():
         DEST.relative_to(ROOT / 'public/audio')
         REPORT = args.result.resolve().parent
         REPORT.relative_to(ROOT / 'output')
+    dialogue = json.loads((args.project or ROOT / 'src/data/tests/character-dialogue.json').read_text())
+    model_checksums = required_models(dialogue)
     DEST.mkdir(parents=True, exist_ok=True)
     REPORT.mkdir(parents=True, exist_ok=True)
     lib = C.CDLL(str(RUNTIME / 'c_api/lib/libvoicevox_core.so'))
@@ -82,7 +103,7 @@ def main():
     check(new_jtalk(str(RUNTIME / 'dict/open_jtalk_dic_utf_8-1.11').encode(), C.byref(jtalk)))
     try:
         check(new_synth(runtime, jtalk, Initialize(1, 2), C.byref(synth)))
-        for number, expected in EXPECTED.items():
+        for number, expected in model_checksums.items():
             model_path = RUNTIME / f'models/vvms/{number}.vvm'
             assert hashlib.sha256(model_path.read_bytes()).hexdigest() == expected, model_path
             model = pointer()
@@ -91,7 +112,6 @@ def main():
                 check(load_model(synth, model, default_model()))
             finally:
                 model_free(model)
-        dialogue = json.loads((args.project or ROOT / 'src/data/tests/character-dialogue.json').read_text())
         results, pcm_clips = [], []
         for index, beat in enumerate(dialogue['beats']):
             voice = dict(VOICES[beat['speaker']])
@@ -151,6 +171,7 @@ def main():
                 del beat['audio']['startSeconds']
             result = {'speaker': beat['speaker'], 'spokenText': spoken, 'voice': voice,
                       'seconds': seconds, 'frames': frames, 'peak': max(abs(x) for x in pcm)/32768,
+                      'rms': math.sqrt(sum(x*x for x in pcm) / len(pcm)) / 32768,
                       'file': str(wav_path.relative_to(ROOT / 'public')),
                       'sha256': hashlib.sha256(wav_path.read_bytes()).hexdigest()}
             results.append(result)
@@ -160,7 +181,7 @@ def main():
         if not args.project:
             for index in [1, 3]:
                 dialogue['beats'][index]['seconds'] += 1
-        dialogue['voiceCredits'] = [f'VOICEVOX:{v["name"]}' for v in VOICES.values()]
+        dialogue['voiceCredits'] = project_voice_credits(dialogue)
         (args.result or ROOT / 'src/data/tests/character-dialogue-voice.json').write_text(json.dumps(dialogue, ensure_ascii=False, indent=2) + '\n')
         if not args.project:
             with wave.open(str(REPORT / 'voice-audition.wav'), 'wb') as wav:
@@ -169,7 +190,7 @@ def main():
                     wav.writeframes(pcm_clips[index].tobytes())
                     wav.writeframes(bytes(24000 * 2 * 1))
         (REPORT / 'voice-info.json').write_text(json.dumps({'coreVersion': version, 'modelRelease': '0.16.4',
-            'modelSha256': EXPECTED, 'provisional': True, 'clips': results,
+            'modelSha256': model_checksums, 'provisional': True, 'clips': results,
             'timelineFrames': sum(round(b['seconds'] * 30) for b in dialogue['beats'])}, ensure_ascii=False, indent=2) + '\n')
         manifest_path = ROOT / 'public/assets/manifest.json'
         manifest = json.loads(manifest_path.read_text())
@@ -185,9 +206,9 @@ def main():
             manifest['assets'].append({'file': result['file'],
                 'type': 'voice-test', 'source': 'https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4',
                 'coreVersion': version, 'voice': result['voice'], 'speaker': result['speaker'],
-                'credit': f'VOICEVOX:{result["voice"]["name"]}', 'sha256': result['sha256'],
+                'credit': voice_credit(result['voice']), 'sha256': result['sha256'],
                 'seconds': result['seconds'], 'approvalStatus': 'test-only',
-                'licenseReference': 'sources/character-dialogue-voice.md'})
+                'licenseReference': result['voice'].get('licenseReference', 'sources/character-dialogue-voice.md')})
         manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
     finally:
         if synth.value:

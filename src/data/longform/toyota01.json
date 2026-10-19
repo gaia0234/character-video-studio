@@ -1,17 +1,18 @@
 {
   "title": "ロング解説試作 トヨタ「29年前の答え」",
-  "note": "元の台本・ナレーションを保持。長い末尾無音と章カードを短縮し、合計117秒=3510フレーム@30fps。各音声は場面開始+0.4秒、末尾余裕0.5秒以上。",
+  "note": "v5：語りは画面外の男性ナレーター（VOICEVOX Nemo）、図解は説明役、物語は登場人物に分離。読み上げ本文を保持し、字幕は許可された数字表記と改行のみ変更。音声開始+0.4秒・末尾0.5秒以上、0.5秒刻みで再配分。合計87.5秒=2625フレーム@30fps。旧WAV・v4動画は別素材として保全。",
   "scenes": [
     {
       "id": "0-1",
       "chapter": "00｜終わらないと言われ続けて",
       "year": null,
       "visual": "answerTitle",
-      "seconds": 7,
-      "subtitle": "一九九七年十二月。日本は、二つの答えを出した。",
+      "seconds": 5,
+      "subtitle": "1997年12月。日本は、二つの答えを出した。",
       "audio": {
-        "src": "audio/longform-toyota01-v1/0-1.wav",
-        "seconds": 5.312
+        "src": "audio/longform-toyota01-v5/0-1.wav",
+        "seconds": 3.8506666666666667,
+        "speaker": "narrator"
       }
     },
     {
@@ -19,25 +20,27 @@
       "chapter": "00｜終わらないと言われ続けて",
       "year": "1997",
       "visual": "conference",
-      "seconds": 6,
+      "seconds": 4.5,
       "subtitle": "京都の会議場では、世界が\n温暖化の枠組みを決め始めた。",
       "audio": {
-        "src": "audio/longform-toyota01-v1/0-2.wav",
-        "seconds": 4.576
+        "src": "audio/longform-toyota01-v5/0-2.wav",
+        "seconds": 3.477333333333333,
+        "speaker": "narrator"
       }
     },
     {
       "id": "0-3",
       "chapter": "00｜終わらないと言われ続けて",
-      "year": null,
+      "year": "1997",
       "visual": "carReveal",
-      "character": "luno",
-      "seconds": 5.5,
+      "seconds": 4,
       "subtitle": "一方、トヨタは、一台の車で応えた。",
       "audio": {
-        "src": "audio/longform-toyota01-v1/0-3.wav",
-        "seconds": 3.659
-      }
+        "src": "audio/longform-toyota01-v5/0-3.wav",
+        "seconds": 2.7733333333333334,
+        "speaker": "narrator"
+      },
+      "actor": "engineer"
     },
     {
       "id": "0-4",
@@ -49,11 +52,12 @@
         "遅れている",
         "時代遅れ"
       ],
-      "seconds": 8,
+      "seconds": 5.5,
       "subtitle": "それからの29年。トヨタのハイブリッドは、\n「遅れた技」と言われ続けてきた。",
       "audio": {
-        "src": "audio/longform-toyota01-v1/0-4.wav",
-        "seconds": 6.357
+        "src": "audio/longform-toyota01-v5/0-4.wav",
+        "seconds": 4.565333333333333,
+        "speaker": "narrator"
       }
     },
     {
@@ -62,11 +66,12 @@
       "year": null,
       "visual": "evArrow",
       "desaturated": true,
-      "seconds": 7,
+      "seconds": 5.5,
       "subtitle": "電気に乗り換えればいい。ハイブリッドに未来はない。\n多くの人が、そう言った。",
       "audio": {
-        "src": "audio/longform-toyota01-v1/0-5.wav",
-        "seconds": 5.899
+        "src": "audio/longform-toyota01-v5/0-5.wav",
+        "seconds": 4.309333333333333,
+        "speaker": "narrator"
       }
     },
     {
@@ -75,12 +80,14 @@
       "year": "2026",
       "visual": "reborn",
       "recolor": true,
-      "seconds": 7,
-      "subtitle": "しかし二〇二六年。トヨタは、\nその二十九年をまるごと作り直した。",
+      "seconds": 5.5,
+      "subtitle": "しかし2026年。トヨタは、\nその29年をまるごと作り直した。",
       "audio": {
-        "src": "audio/longform-toyota01-v1/0-6.wav",
-        "seconds": 5.675
-      }
+        "src": "audio/longform-toyota01-v5/0-6.wav",
+        "seconds": 4.192,
+        "speaker": "narrator"
+      },
+      "actor": "akio-toyoda"
     },
     {
       "id": "0-7",
@@ -88,12 +95,14 @@
       "year": null,
       "visual": "timelinePreview",
       "character": "luno",
-      "seconds": 4,
+      "seconds": 3.5,
       "subtitle": "物語は、29年前に戻る。",
       "audio": {
-        "src": "audio/longform-toyota01-v1/0-7.wav",
-        "seconds": 2.837
-      }
+        "src": "audio/longform-toyota01-v5/0-7.wav",
+        "seconds": 2.1653333333333333,
+        "speaker": "narrator"
+      },
+      "guide": "luno"
     },
     {
       "id": "1-1",
@@ -109,11 +118,12 @@
       "year": "1997",
       "visual": "adoptStamp",
       "stamp": "1997.12.11　採択",
-      "seconds": 8,
-      "subtitle": "一九九七年十二月十一日。京都で、\n京都議定書が採択された。",
+      "seconds": 6,
+      "subtitle": "1997年12月11日。京都で、\n京都議定書が採択された。",
       "audio": {
-        "src": "audio/longform-toyota01-v1/1-2.wav",
-        "seconds": 6.517
+        "src": "audio/longform-toyota01-v5/1-2.wav",
+        "seconds": 4.810666666666667,
+        "speaker": "narrator"
       }
     },
     {
@@ -121,11 +131,12 @@
       "chapter": "01｜1997年、二つの答え",
       "year": null,
       "visual": "globeCO2",
-      "seconds": 6,
+      "seconds": 4.5,
       "subtitle": "温室効果ガスを減らすこと。\nそれが世界共通の目標になった。",
       "audio": {
-        "src": "audio/longform-toyota01-v1/1-3.wav",
-        "seconds": 4.661
+        "src": "audio/longform-toyota01-v5/1-3.wav",
+        "seconds": 3.498666666666667,
+        "speaker": "narrator"
       }
     },
     {
@@ -138,12 +149,14 @@
         "モーター",
         "電池"
       ],
-      "seconds": 8,
+      "seconds": 6,
       "subtitle": "車も減らさなければならない。トヨタの答えは、\nエンジンとモーターを組み合わせる仕組みだった。",
       "audio": {
-        "src": "audio/longform-toyota01-v1/1-4.wav",
-        "seconds": 6.325
-      }
+        "src": "audio/longform-toyota01-v5/1-4.wav",
+        "seconds": 4.928,
+        "speaker": "narrator"
+      },
+      "guide": "luno"
     },
     {
       "id": "1-5",
@@ -154,11 +167,12 @@
         "世界初",
         "量産"
       ],
-      "seconds": 8,
-      "subtitle": "一九九七年十二月。プリウスが発売された。\n世界初の量産ハイブリッド車。",
+      "seconds": 6,
+      "subtitle": "1997年12月。プリウスが発売された。\n世界初の量産ハイブリッド車。",
       "audio": {
-        "src": "audio/longform-toyota01-v1/1-5.wav",
-        "seconds": 6.965
+        "src": "audio/longform-toyota01-v5/1-5.wav",
+        "seconds": 5.013333333333334,
+        "speaker": "narrator"
       }
     },
     {
@@ -167,11 +181,12 @@
       "year": "2015",
       "visual": "patentFly2015",
       "patentCount": 5680,
-      "seconds": 8.5,
-      "subtitle": "二〇一五年一月。トヨタは燃料電池の特許、\n5,680件を無償で開放した。",
+      "seconds": 6.5,
+      "subtitle": "2015年1月。トヨタは燃料電池の特許、\n5,680件を無償で開放した。",
       "audio": {
-        "src": "audio/longform-toyota01-v1/1-6.wav",
-        "seconds": 7.296
+        "src": "audio/longform-toyota01-v5/1-6.wav",
+        "seconds": 5.226666666666667,
+        "speaker": "narrator"
       }
     },
     {
@@ -181,11 +196,12 @@
       "visual": "patentSwarm2019",
       "patentCount": 23740,
       "patentCards": 14,
-      "seconds": 10,
-      "subtitle": "二〇一九年四月。電動化の特許、\n約23,740件を無償開放。期限は2030年末。",
+      "seconds": 8,
+      "subtitle": "2019年4月。電動化の特許、\n約23,740件を無償開放。期限は2030年末。",
       "audio": {
-        "src": "audio/longform-toyota01-v1/1-7.wav",
-        "seconds": 9.013
+        "src": "audio/longform-toyota01-v5/1-7.wav",
+        "seconds": 6.698666666666667,
+        "speaker": "narrator"
       }
     },
     {
@@ -195,12 +211,14 @@
       "visual": "freeStamp",
       "character": "miino",
       "stamp": "無償",
-      "seconds": 7,
+      "seconds": 5.5,
       "subtitle": "技は独り占めせず、道を開けるために配る。\nそれがトヨタの選択だった。",
       "audio": {
-        "src": "audio/longform-toyota01-v1/1-8.wav",
-        "seconds": 5.504
-      }
+        "src": "audio/longform-toyota01-v5/1-8.wav",
+        "seconds": 4.128,
+        "speaker": "narrator"
+      },
+      "guide": "miino"
     },
     {
       "id": "1-9",
@@ -208,11 +226,12 @@
       "year": "2020",
       "visual": "count15m",
       "count": 1500,
-      "seconds": 7,
-      "subtitle": "二〇二〇年一月。世界のハイブリッド累計は\n1,500万台を超えた。",
+      "seconds": 5,
+      "subtitle": "2020年1月。世界のハイブリッド累計は\n1,500万台を超えた。",
       "audio": {
-        "src": "audio/longform-toyota01-v1/1-9.wav",
-        "seconds": 5.653
+        "src": "audio/longform-toyota01-v5/1-9.wav",
+        "seconds": 4.074666666666666,
+        "speaker": "narrator"
       }
     },
     {
@@ -221,13 +240,20 @@
       "year": null,
       "visual": "timelineEnd",
       "character": "kano",
-      "seconds": 8.5,
-      "subtitle": "二十九年前の、一台の答え。\nそれが、今のトヨタを作っている。",
+      "seconds": 5,
+      "subtitle": "29年前の、一台の答え。\nそれが、今のトヨタを作っている。",
       "audio": {
-        "src": "audio/longform-toyota01-v1/1-10.wav",
-        "seconds": 5.92
-      }
+        "src": "audio/longform-toyota01-v5/1-10.wav",
+        "seconds": 4.074666666666666,
+        "speaker": "narrator"
+      },
+      "guide": "kano"
     }
   ],
-  "durationFrames": 3510
+  "durationFrames": 2625,
+  "narrator": {
+    "id": "narrator",
+    "label": "男性ナレーター（画面外）",
+    "credit": "VOICEVOX Nemo"
+  }
 }
