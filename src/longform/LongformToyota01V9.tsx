@@ -405,6 +405,9 @@ const Visual = ({scene}: {scene: ToyotaScene}) => {
         {parsed.narrator ? <Label style={{position: 'absolute', left: 150, top: 790, fontSize: 25, background: c.blue}}>
           ナレーション（画面外）｜{parsed.narrator.credit}
         </Label> : null}
+        <Label style={{position: 'absolute', left: 740, top: 790, fontSize: 25, background: c.blue}}>
+          掛け合い｜VOICEVOX:櫻歌ミコ／冥鳴ひまり／雨晴はう
+        </Label>
       </> : null}
     </>;
     case 'chapterCard': return <Panel style={{left: 260, top: 275, width: 1400, padding: '60px', textAlign: 'center', opacity: ramp(f, 0, 12)}}>
