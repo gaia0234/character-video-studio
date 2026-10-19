@@ -1,0 +1,29 @@
+{
+  "note": "v6冒頭掛け合い。3シーン。話者はミーノ・カーノ。ナレーターは既存v5音声を継続利用。クレジット：VOICEVOX（雨晴はう／櫻歌ミコ／冥鳴ひまり）とVOICEVOX Nemo。",
+  "beats": [
+    {
+      "id": "open-1",
+      "speaker": "ミーノ",
+      "spokenText": "世界は、イーブイの時代って聞くけど、日本は遅れていないの？",
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "voiceSpeed": 1.06
+    },
+    {
+      "id": "open-2",
+      "speaker": "カーノ",
+      "spokenText": "そんなことはないみたいですよ。トヨタのハイブリッドは、今も人気があるみたいです。",
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "voiceSpeed": 0.9
+    },
+    {
+      "id": "open-3",
+      "speaker": "ミーノ",
+      "spokenText": "それじゃあ、トヨタのハイブリッドの歴史を、ひもといてみよう！",
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "voiceSpeed": 1.06
+    }
+  ]
+}
