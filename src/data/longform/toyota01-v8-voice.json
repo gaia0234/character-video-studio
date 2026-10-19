@@ -1,0 +1,189 @@
+{
+  "note": "v8本編。ナレーター=男声2（style10000・pitch-0.06・intonation0.75・speed0.94）を本人聴取で採用（A）。会話3本はv7と同一設定。クレジット：VOICEVOX（雨晴はう／櫻歌ミコ／冥鳴ひまり）、VOICEVOX Nemo。",
+  "beats": [
+    {
+      "id": "0-1",
+      "speaker": "ミーノ",
+      "spokenText": "世界は、イーブイの時代って聞くけど、日本は遅れていないの？",
+      "voiceSpeed": 1.06,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0
+    },
+    {
+      "id": "0-2",
+      "speaker": "カーノ",
+      "spokenText": "そんなことはないみたいですよ。トヨタのハイブリッドは、今も人気があるみたいです。",
+      "voiceSpeed": 0.9,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0
+    },
+    {
+      "id": "0-3",
+      "speaker": "ルーノ",
+      "spokenText": "それじゃあ、トヨタのハイブリッドの歴史を、ひもといてみよう！",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0
+    },
+    {
+      "id": "0-4",
+      "speaker": "ナレ2",
+      "spokenText": "一九九七年十二月。日本は、二つの答えを出した。",
+      "voiceSpeed": 0.94,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75
+    },
+    {
+      "id": "0-5",
+      "speaker": "ナレ2",
+      "spokenText": "京都の会議場では、世界が温暖化の枠組みを決め始めた。",
+      "voiceSpeed": 0.94,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75
+    },
+    {
+      "id": "0-6",
+      "speaker": "ナレ2",
+      "spokenText": "一方、トヨタは、一台の車で応えた。",
+      "voiceSpeed": 0.94,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75
+    },
+    {
+      "id": "0-7",
+      "speaker": "ナレ2",
+      "spokenText": "それからの29年。トヨタのハイブリッドは、「遅れた技」と言われ続けてきた。",
+      "voiceSpeed": 0.94,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75
+    },
+    {
+      "id": "0-8",
+      "speaker": "ナレ2",
+      "spokenText": "電気に乗り換えればいい。ハイブリッドに未来はない。多くの人が、そう言った。",
+      "voiceSpeed": 0.94,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75
+    },
+    {
+      "id": "0-9",
+      "speaker": "ナレ2",
+      "spokenText": "しかし二〇二六年。トヨタは、その二十九年をまるごと作り直した。",
+      "voiceSpeed": 0.94,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75
+    },
+    {
+      "id": "0-10",
+      "speaker": "ナレ2",
+      "spokenText": "物語は、29年前に戻る。",
+      "voiceSpeed": 0.94,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75
+    },
+    {
+      "id": "1-2",
+      "speaker": "ナレ2",
+      "spokenText": "一九九七年十二月十一日。京都で、京都議定書が採択された。",
+      "voiceSpeed": 0.94,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75
+    },
+    {
+      "id": "1-3",
+      "speaker": "ナレ2",
+      "spokenText": "温室効果ガスを減らすこと。それが世界共通の目標になった。",
+      "voiceSpeed": 0.94,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75
+    },
+    {
+      "id": "1-4",
+      "speaker": "ナレ2",
+      "spokenText": "車も減らさなければならない。トヨタの答えは、エンジンとモーターを組み合わせる仕組みだった。",
+      "voiceSpeed": 0.94,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75
+    },
+    {
+      "id": "1-5",
+      "speaker": "ナレ2",
+      "spokenText": "一九九七年十二月。プリウスが発売された。世界初の量産ハイブリッド車。",
+      "voiceSpeed": 0.94,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75
+    },
+    {
+      "id": "1-6",
+      "speaker": "ナレ2",
+      "spokenText": "二〇一五年一月。トヨタは燃料電池の特許、5千680件を無償で開放した。",
+      "voiceSpeed": 0.94,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75
+    },
+    {
+      "id": "1-7",
+      "speaker": "ナレ2",
+      "spokenText": "二〇一九年四月。電動化の特許、約2万3千740件を無償開放。期限は2030年末。",
+      "voiceSpeed": 0.94,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75
+    },
+    {
+      "id": "1-8",
+      "speaker": "ナレ2",
+      "spokenText": "技は独り占めせず、道を開けるために配る。それがトヨタの選択だった。",
+      "voiceSpeed": 0.94,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75
+    },
+    {
+      "id": "1-9",
+      "speaker": "ナレ2",
+      "spokenText": "二〇二〇年一月。世界のハイブリッド累計は1千5百万台を超えた。",
+      "voiceSpeed": 0.94,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75
+    },
+    {
+      "id": "1-10",
+      "speaker": "ナレ2",
+      "spokenText": "二十九年前の、一台の答え。それが、今のトヨタを作っている。",
+      "voiceSpeed": 0.94,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75
+    }
+  ]
+}
