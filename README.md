@@ -1,6 +1,29 @@
 # Character Video Studio
 
-YouTube Shorts・X向け縦型解説動画の独立プロジェクト。React / Remotion、1080×1920、30fps。キャラクターの正本は `../knowledge-anime-character-system/` で管理する。
+YouTube Shorts・X向け縦型解説動画の独立プロジェクト。React / Remotion、1080×1920、30fps。キャラクターの正本は `../knowledge-anime-character-system/` で管理する。縦型Shortsに加えて横型16:9のロング解説も制作する。ロングの工程運用は「ロング解説の6工程」節を参照する。
+
+## ロング解説の6工程
+
+横型16:9のロング解説は、参考→データ→台本→画面→音声→出荷の6工程で進める。この節が6工程の運用正本で、各工程の正本・成果物・受入境界を表で一意に定める。制作状態と失敗累計の最新記録は [sources/longform-v9-record.md](sources/longform-v9-record.md)、横長／縦長の別Compositionや音声・字幕の運用は [skills/youtube-short-generator/SKILL.md](skills/youtube-short-generator/SKILL.md) に引き継ぐ。
+
+| 工程 | 工程正本と入力 | 成果物 | 担当と受入境界 |
+|---|---|---|---|
+| reference | `sources/sources.md` の参考比較＋本人の録画・抽出画像 | 採用する見た目・構成 | 本人・Codexが採否判断。見た範囲と不明を区別し、参考動画のテンポ実測は未取得のまま。既存V9の実尺を参考値にしない |
+| data | `sources/longform-toyota-full-facts.md`（資料ID F/G） | 台本への主張・出典の紐付け（事実・日付・単位・対象範囲） | 紐付けは担当、受入はCodex。旧v1台本の出典表は履歴で、数値の文字列一致だけでは意味・基準日を保証しない |
+| story | `sources/script-longform-toyota-full-v1.md`（シーンID＋根拠ID・未実装の提案正本） | 対象版の字幕JSON・voice JSON（実装時はこの組が実装の正本。sceneIDで版別対応） | 台本は担当が作成しCodex文書受入・本人台本確認。既存にないclaimIDや対応を創作・補完しない |
+| motion | 対象版のvisual JSON＋版別TSX | 画面・動きの実装 | 実装は担当。Codexが承認された変更場面と見切れ・字幕・キャラ・年表の非干渉を技術受入 |
+| direct | 対象版のvoice JSON＋WAV・実尺証拠＋版別秒のAudio配置 | 同期・声・間の実装 | 実装は担当。CodexがWAV非無音・予定尺一致を技術受入。本人の聞こえ方の受入はこれと区別する |
+| ship | 対象版の専用entry・Composition・版別record＋既存のrender／loudnorm／review証拠 | 版付きMP4・証拠・共有記録 | 機械処理完了→Codex技術受入→本人の画面・聴取受入→共有範囲の明示承認→標準のTransfer共有へ新規コピー＋元とのSHA-256読み戻し。公開は別承認 |
+
+- 着手時に、対象版・各入力ファイル・編集所有・成果物と証拠の保存先をその版のrecordへ固定する。同じsceneIDでも版が異なれば別の内容として照合する。現行V9の実装パスは [V9記録](sources/longform-v9-record.md#新規作成ファイル) を参照する。
+- 責任分担：Codex＝要件・構成・採否／受入。GLM maxの1担当＝明確な作業と必要検証。本人＝画面・聴取・共有・公開の承認。
+- 未受入の成果物を自動共有する構成にしない。過去に別途承認された共有の履歴を無効化しない。
+- 既存の各版JSON・音声・成果物・証拠をそのまま再利用し、正本の内容を別文書へ全文複製しない。形式・ファイル名の統一や6Agent化はしない。
+
+### 次回の限定計画（未着手・別途承認）
+
+- 版の音声・配置を変更する前に、その版のTSXと尺検査だけを対象に、Audioの開始offset＋音声実尺＋末尾余白を同じ定義で判定する最小修正案を計画する。現行の `scripts/check-longform-v9.mjs` はscene秒−0.5で検査し、Audio開始0.4秒を明示控除していない。現行の配置が必ずはみ出すとは断定せず、末尾余白0.5秒を維持するなら開始0.4秒の控除も条件に入る。受入は一致境界pass・+1フレーム超過fail・実WAVとJSON尺の一致・既存の合法sceneを壊さないこと。
+- 描画・音声配置・尺検査ロジックの重複が次版の制作を妨げる場合に限り、共通化を計画する。対象は次版と `src/longform/LongformToyota01V9.tsx`・`scripts/check-longform-v9.mjs` の該当処理で、旧版の保存と対象版の代表画面・音声時刻・総尺の一致を受入条件にする。既存V9の固定コピーと旧版・基底v6を無断で共通実装へ付け替えず、新しい共通ファイル名・全版一本化を確定しない。A一本化／B出荷自動化／C数値出典照合／D仕様分離の実装承認とは別の単位。
 
 ## 動画制作の構成（2026-10-16）
 
