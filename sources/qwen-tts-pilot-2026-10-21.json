@@ -109,11 +109,11 @@
     "pcmIdenticalToApiOriginal": true,
     "nonSilent": true,
     "userListening": "pending",
-    "shared": false,
+    "shared": true,
     "actualBilling": "unknown"
   },
   "failures": {
-    "video": 36,
+    "video": 38,
     "nextVideoStop": 40,
     "communication": 11,
     "nextCommunicationStop": 15
@@ -126,5 +126,23 @@
       "output/qwen-tts-pilot-2026-10-21-resume1/qwen-api-original.wav",
       "output/qwen-tts-pilot-2026-10-21-resume1/result-before-header-fix.json"
     ]
+  },
+  "sharing": {
+    "date": "2026-10-21",
+    "source": "/home/ds-work/projects/character-video-studio/output/qwen-tts-pilot-2026-10-21-resume1/qwen-eldric-sage-2-6-b1.wav",
+    "destination": "/mnt/CE14D65D14D6485B/Shared/Transfer/character-video-studio/2026-10-21-qwen-tts-pilot/qwen-eldric-sage-2-6-b1.wav",
+    "windowsPath": "\\\\192.168.1.115\\Shared\\Transfer\\character-video-studio\\2026-10-21-qwen-tts-pilot\\qwen-eldric-sage-2-6-b1.wav",
+    "bytes": 1378604,
+    "sha256": "e10f623c3c70f2895666245976f2702a41c48c9a3ab469b4f7c45ddde1b1ea66",
+    "sha256Match": true,
+    "state": "new copy",
+    "authorization": "本人「共有する」",
+    "recordCommitRecovery": {
+      "failures": 2,
+      "cause": "sandbox index read-only prevented staging; subsequent commit had no staged changes",
+      "resolution": "explicit escalated staging, then inspect and commit sequentially",
+      "cumulativeVideoFailures": 38,
+      "nextStop": 40
+    }
   }
 }
