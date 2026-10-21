@@ -443,7 +443,7 @@ v3検査時点の結論（2026-10-18。後続の改善は「v4視覚改善の制
 
 ### Gemini TTS男性ナレーションの限定試聴（2026-10-21）
 
-現在の状態：本人承認の男性ナレーション試聴1本を生成し技術受入。Gemini 3.8 Flash TTS/Charon・29.92秒。本人の自然さ/全文読みの受入は未確認。V10本編差替え・共有なし。既存キーは本人が案件.envへ設定、Git除外/mode600を維持。以下の準備段階の未実施表記は当時の状態、結果は末尾。
+現在の状態（2026-10-21更新）：男性ナレーション試聴1本を生成・共有、Gemini 3.8 Flash TTS/Charon・29.92秒の自然さを本人が高く評価。本人「3キャラもGeminiにしましょう」で全4役をGeminiにする制作方針へ更新。3キャラ声割当・全編差替えは未実施。全文読み/長尺一貫性は未確認。既存キーは.env/Git除外/mode600。下記の未実施表記は各時点の履歴。
 
 - 固定入力：V10の2-6-b1（131文字、原文台詞）。比較元は既存VOICEVOX24.2027秒、音声再生成なし。候補1本/生成1回、落ち着いた低め男性・自然な抑揚/文節の間を指示し、読み/欠落/実尺/音量差/本人の自然さを確認する。V10変更なし。
 - 候補モデル：gemini-3.8-flash-tts、声Charon（Google公式は説明向け/男性と表示）。実際の日本語の自然さ・低さは未評価。公式REST /v1beta/interactions のschema/steps[].content[].dataを確認、SDK追加や新規ランチャーは不要。入力/話し方/request JSONとbaselineはoutput/gemini-tts-pilot-2026-10-21/、plan.jsonへ承認/受入/制限を固定。
@@ -460,3 +460,29 @@ v3検査時点の結論（2026-10-18。後続の改善は「v4視覚改善の制
 
 - 本人の試聴評価（2026-10-21）：共有2音声を比較した本人が「Geminiのほうが自然だね」と回答。今回のgemini-3.8-flash-tts/Charon・2-6-b1短編の自然さではGeminiを高く評価したことを確認。Main独立聴取・全台詞読み・長尺一貫性は未確認、全編採用承認とは区別。正本gemini-tts-pilot-2026-10-21.jsonへ反映。
 - 次版の推奨案（2026-10-21・提案/本人未回答）：男性ナレーションはGemini、3キャラは既存VOICEVOXとし、音声の実尺に合わせて場面/字幕同期を調整する。期待効果は説明の自然さと既存キャラ声の継続、負担は全章ナレ生成・実尺調整・再render/必要受入。今回の短編は約5.7秒長かったため全編尺は実音生成前に確定しない。V10/共有版は保全。本編差替え/追加生成/共有は計画承認後、今回は評価の記録だけ。失敗数は動画33/次35・通信10/次15のまま。
+
+
+### 全4役のGemini方針・無料TTS/中国系モデルとOC/CC連携（2026-10-21）
+
+現在の結論：本人はナレーターに加え3キャラもGeminiにする方針を承認。従来の「3キャラはVOICEVOX維持」案は本人修正により撤回、実装未着手。今回の資料調査では、制作本線は既に試聴受入のあるGemini、無料ローカル候補はAlibaba Qwen3-TTS（特に1.7B CustomVoice/VoiceDesign）を第一の検討候補とする提案。Qwen/CosyVoice/OpenAI等の音質優劣は未実測で、Geminiからの切替は未採用。
+
+- 依頼/対象：本人「ChatGPTにも同様サービス/無料サービス」「OCやCCにあれば」「Alibabaなど中華系も調査」。CCは本人訂正とHub既存参照から**Command Code**（https://commandcode.ai/）と確認。Claude Codeとして調べた資料は採否に使わない。Hub docs/operations-decisions.mdの2026-10-20 Command Code GOAT評価を関連箇所だけ読み、未採用/未導入の境界を維持。
+- 方法/範囲：2026-10-21に公式OpenAI/Google/Alibabaの仕様・料金/制限、Qwen/CosyVoice/GLM-TTS/Kokoroの提供元repo・Qwen model card、OpenCode/Command Code公式の外部ツール/Provider APIをWeb読取。OpenAI DocsスキルでOpenAI部分を公式確認。Mainが既存資料との比較/採否判断を担当。新規アカウント・契約・導入・実行比較・追加音声生成・本編変更なし。
+
+| 候補 | 確認できた日本語/表現制御 | 無料の意味と費用/条件 | 本案件の判断 |
+|---|---|---|---|
+| Gemini 3.8 Flash TTS | 日本語・声/話し方制御。今回Charonの自然さは本人評価あり | 公式無料Tierあり。実効枠はAI Studioでプロジェクト別確認、無制限ではない。今回キーの実請求は未確認 | 全4役に使う方針を本人承認。3キャラ声の割当/受入は次工程 |
+| Alibaba Qwen3-TTS公開モデル | 10言語に日本語。1.7B CustomVoiceは9プリセット＋演出指示、VoiceDesignは声の説明から設計。0.6Bは軽量候補だが同じinstruction control対応とは扱わない | Qwen公式1.7B CustomVoice model cardはApache-2.0。ローカルならAPI従量料金なし、PC/計算資源/電力/導入負担あり。モデル/素材それぞれの条件は採用時確認 | 無料ローカルの第一検討候補（AI提案/本人未回答）。本機の性能/日本語自然さ未検証、未導入 |
+| Alibaba qwen3-tts-flash API | 公式に日本語対応。公開weightsとクラウドAPI/モデル名を区別 | Singapore/Internationalの価格表では入力1万文字$0.10、無料11万文字。無料枠は対象モデル・リージョン限定、原則90日。期限/枠超過後は従量課金、Free Quota Only設定あり | ローカル導入不要の候補。本人Alibabaアカウント/対象枠不明、新規作成/有効化なし |
+| Alibaba CosyVoice（公開Fun-CosyVoice3系） | 公開repoで日本語含む9言語。演出/声制御を説明 | repoはApache-2.0表記。モデルweights/素材条件は採用時の対象版で確認、ローカル計算資源は必要。クラウドcosyvoice-v3.5等は別契約/版 | 追加の無料ローカル候補、Qwenとの比較は未実施 |
+| OpenAI音声生成 | 公式に音声生成APIあり。日本語等対応、TTS演出指定 | APIは別の有料サービス。旧Speechモデルtts-1/tts-1-hd/gpt-4o-mini-ttsは2027-01-06終了予定、公式はRealtime後継へ移行案内。後継gpt-realtime-2.1-miniはFree tier非対応 | 利用可能な代替系統だが無料の第一候補にしない。新規連携/音声比較なし |
+| Kokoro-82M | 公式repoに日本語lang_code j/追加依存の案内 | 公開weightsはApache-2.0、ローカルAPI料金なし、導入/電力/推論負担あり | 小さい公開モデルの予備候補、日本語/キャラ自然さ未評価 |
+| Zhipu GLM-TTS | 公式repoは主に中国語＋英語混在を説明、日本語対応の裏付けなし | 公開repoの存在だけで必要言語の性能を保証しない | 今回の日本語本線候補から外す。GLMコーディングモデルの採用実績をTTSへ流用しない |
+| MiniMax speech系 | 音声API候補自体は把握したが、今回の主要ガイド取得失敗で日本語/無料条件の必要裏付けを揃えていない | 無料・商用可・日本語品質を確認済みとはしない | 保留。未確認を埋めるための追加実行/契約はしない |
+
+- 新旧モデルの注意：Alibaba最新のQwen-Audio-TTS系列は公式表でsystem voiceの言語条件とcloned voiceの条件が違う。Qwen3-TTSの日本語プリセット対応を、Qwen-Audio-TTS全版の全voiceへ一般化しない。公開model card/提供元ベンチマークの自然さ/速度は作者主張とし、本機実測と分ける。Apache-2.0表記と動画内の全素材/声の権利条件を同一視しない。
+- OC/CC：**OCからGemini生成は本案件で実証済み**（60f973b）。OpenCode公式は任意言語scriptをcustom toolから呼べる。Command Code公式はshell/MCP等の連携経路を持つが、本環境でのCC連携は未検証。Provider APIの公開endpoint表はchat/completions・responses・messages等で、TTS専用endpoint/音声生成の契約枠を確認できない（入力はtext/image、audio partsは拒否と明記）。OC/CCのコーディング用Qwen/GLM等のmodel選択や月額枠がQwen3-TTS/Gemini TTS利用を含むとは扱わない。
+- 推奨運用（AI提案/未回答）：まず実証済みのOC→Gemini APIと既存.envを使い、ナレ/3キャラを別voiceで固定する計画を作る。CCに移っても同じ生成処理を呼ぶ設計は可能だが、今は専用MCP/ランチャーを新設せず、必要時に最小修正を計画。無料ローカルが必要ならQwen3-TTSを次の限定候補にする。今回の資料調査だけで追加試験・本編生成を開始しない。
+- 重要な未確認：本人Gemini/Alibaba/OC/CC契約の実効無料枠/音声API権限、OpenAI/他モデルの実音比較、各モデルの日本語長尺の読み/声の一貫性、ローカルRAM/GPU/処理時間、全4役のvoice割当/生成費/完成尺。無料枠の値/期限・APIやライセンス版の変更時に必要差分だけ再確認。
+- 出典：Google https://ai.google.dev/gemini-api/docs/pricing /rate-limits、Alibaba https://www.alibabacloud.com/help/en/model-studio/model-pricing /new-free-quota /tts-model/ /qwen-tts-api、Qwen https://github.com/QwenLM/Qwen3-TTS と https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice、CosyVoice https://github.com/QwenAudio/CosyVoice、GLM https://github.com/zai-org/GLM-TTS、Kokoro https://github.com/hexgrad/kokoro と https://huggingface.co/hexgrad/Kokoro-82M、OpenAI https://developers.openai.com/api/docs/guides/text-to-speech と /api/docs/models/gpt-realtime-2.1-mini、OC https://docs.opencode.ai/docs/custom-tools/、CC https://commandcode.ai/docs/provider と /docs/headless。各短縮相対部分は直前ドメインの公式資料を今回開いたもの。
+- 失敗/保全：MiniMax https://platform.minimax.io/docs/guides/speech-t2a-intro がWeb toolでアクセス不可1。再試行/別経路の実行なし、動画関連33→34/次35、通信10/次15を保持。検索0件は成功応答として扱い実行失敗に加算しない。既存sources.md47行/他dirty/旧版/V10/APIキーを保全し今回分析/本人方針の記録だけlocal commit。新規一時物/clone/モデルdownload/音声生成/共有/削除/pushなし。
