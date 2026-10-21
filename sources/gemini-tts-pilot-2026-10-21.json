@@ -201,15 +201,25 @@
         "30_RPD": 3,
         "100_RPD": 1
       },
-      "estimateLimits": "これらRPDは説明用の仮定で現在契約枠ではない。再生成/他用途消費/TPM/RPM/容量により日数は増える。Gemini化後の音声尺は未確定。"
+      "estimateLimits": "これらRPDは説明用の仮定で現在契約枠ではない。再生成/他用途消費/TPM/RPM/容量により日数は増える。Gemini化後の音声尺は未確定。",
+      "adoptedRPD": 10,
+      "minimumCalendarDaysAtFullDailyQuota": 9,
+      "productionPolicy": "生成済み音声を再利用、最大10回/日、声の試作と修正も同じ日枠から消費。既存85本を各1回なら最短9日で、試作/再生成/残枠に応じ追加日。"
     },
-    "pending": "実プロジェクトのFree/Paid Tierと対象モデルのRPM/TPM/RPD・残枠の確認。既存キーのHTTP200だけで無料適用を断定しない。",
+    "pending": "RPM/TPM/当日残枠/請求Tierの未確認は保持。3キャラ声割当と本編の実音尺調整を具体計画化、未確認を無料適用確認済みとは扱わない。",
     "nextStep": "AI Studio表示値を確認し無料の実効枠内で、声割当/生成範囲/保存と再開条件を具体化。課金有効化/有料への切替/429の自動反復は行わない。今回追加音声生成なし。",
     "failures": {
       "video": 38,
       "nextVideoStop": 40,
       "communication": 11,
       "nextCommunicationStop": 15
+    },
+    "reportedQuota": {
+      "date": "2026-10-21",
+      "source": "本人「1日10回だね」",
+      "modelContext": "gemini-3.8-flash-tts",
+      "requestsPerDay": 10,
+      "verification": "本人確認値として受領。CodexによるAI Studio画面の独立確認は未実施。RPM/TPM/現在の残枠/請求Tierは未確認。"
     }
   }
 }
