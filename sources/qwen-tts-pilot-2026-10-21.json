@@ -108,7 +108,7 @@
     "wavHeaderMatchesPcm": true,
     "pcmIdenticalToApiOriginal": true,
     "nonSilent": true,
-    "userListening": "pending",
+    "userListening": "2026-10-21 本人「Geminiがいいね」：今回のQwen試聴よりGeminiを選好。全音声モデル/全声への一般化はしない。",
     "shared": true,
     "actualBilling": "unknown"
   },
@@ -144,5 +144,30 @@
       "cumulativeVideoFailures": 38,
       "nextStop": 40
     }
+  },
+  "decision": {
+    "date": "2026-10-21",
+    "production": "Gemini narrator plus three characters; prior approved direction reaffirmed",
+    "qwen": "not adopted for main production after this audition",
+    "openai": "documentation confirmed; no generation or adoption authorized"
+  },
+  "openaiFollowup": {
+    "date": "2026-10-21",
+    "question": "OpenAIにはないの?",
+    "method": "OpenAI Docs skill; official-domain search followed by opening TTS guide, successor model page, pricing; no API calls",
+    "findings": [
+      "Japanese TTS and WAV/MP3 generation available",
+      "tts-1 / tts-1-hd / gpt-4o-mini-tts deprecated; shutdown 2027-01-06 per fetched official guide",
+      "Official migration target gpt-realtime-2.1-mini via Realtime API, not a model for /v1/audio/speech",
+      "Successor Free tier not supported; paid API",
+      "OpenAI voice quality relative to Gemini has not been tested in this project"
+    ],
+    "sources": [
+      "https://developers.openai.com/api/docs/guides/text-to-speech",
+      "https://developers.openai.com/api/docs/models/gpt-realtime-2.1-mini",
+      "https://developers.openai.com/api/docs/pricing"
+    ],
+    "scope": "documentation and decision recording only; no key access, generation, service activation, billing or main video change",
+    "recheck": "before any newly approved OpenAI audio implementation, recheck current model/API/pricing and account access"
   }
 }
