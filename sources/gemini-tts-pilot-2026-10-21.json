@@ -1,7 +1,7 @@
 {
   "date": "2026-10-21",
   "approval": "本人「進める」で男性ナレ短編試聴を承認、既存キーあり/.env作成/設定確認後に実行",
-  "scope": "1候補1回の生成と必要検証。本人聴取/本編差替え/共有は未実施。",
+  "scope": "1候補1回の生成と必要検証、本人「共有する」で試聴用2音声の共有完了。本人聴取/本編差替えは未実施。",
   "request": {
     "model": "gemini-3.8-flash-tts",
     "input": [
@@ -121,5 +121,28 @@
   ],
   "baselineSource": "public/audio/longform-toyota01-v10/2-6-b1.wav",
   "artifactsDirectory": "output/gemini-tts-pilot-2026-10-21",
-  "secretHandling": "APIキーは.env（Git除外/mode600）、値は記録しない。"
+  "secretHandling": "APIキーは.env（Git除外/mode600）、値は記録しない。",
+  "sharing": {
+    "date": "2026-10-21",
+    "approval": "本人「共有する」・試聴用2音声のみ",
+    "destination": "/mnt/CE14D65D14D6485B/Shared/Transfer/character-video-studio/2026-10-21-gemini-tts-pilot",
+    "windowsDirectory": "\\\\192.168.1.115\\Shared\\Transfer\\character-video-studio\\2026-10-21-gemini-tts-pilot",
+    "files": [
+      {
+        "name": "gemini-charon-2-6-b1.wav",
+        "bytes": 1442278,
+        "sourceSha256": "620cef6e08a7c2833655713bcc741898677569233c5782efc3c0d329c57f23cc",
+        "destinationSha256": "620cef6e08a7c2833655713bcc741898677569233c5782efc3c0d329c57f23cc",
+        "match": true
+      },
+      {
+        "name": "baseline-voicevox-2-6-b1.wav",
+        "bytes": 1161772,
+        "sourceSha256": "cd981f0d941cb8ead6cfd7686088ef12817899cbe7638a0278d191285f3ae8f9",
+        "destinationSha256": "cd981f0d941cb8ead6cfd7686088ef12817899cbe7638a0278d191285f3ae8f9",
+        "match": true
+      }
+    ],
+    "notes": "Gemini29.92秒・現行VOICEVOX24.2027秒。同じ台詞、GeminiのRMS約1.84dB高め。自然さの評価時は再生音量差に注意。"
+  }
 }
