@@ -58,7 +58,8 @@
 
 ## GPT画像生成用プロンプト（2026-10-21 新案・旧プロンプトは別ファイルへ退避）
 
-- **2026-10-21 実行状況**：Gemini画像生成（`gemini-3-pro-image` → `gemini-2.5-flash-image`）を5回試行し**全件HTTP429（クォータ/モデル利用不可）で画像0枚**。同じ目的の失敗が累計5回のため自動再試行・別プロバイダ切替は停止し、経路決定を待つ。記録：`sources/elder-channel-characters-imagegen-2026-10-21.json`、実行スクリプト `scripts/generate-elder-characters-gemini.py`
+- **画像生成は2026-10-19承認方針どおり本人によるGPT（ChatGPT）生成**。OpenCodeの役割はプロンプト作成（=`sources/elder-channel-characters.md` のプロンプト節と共有フォルダ `2026-10-21-新キャラ確定仕様/画像生成プロンプト.txt`）。生成結果を受け取り、背景除去・`public/assets/` への取り込み・Remotion側の差し替えまでが後続工程
+- **2026-10-21 実施メモ（中止）**：Gemini画像API（`gemini-3-pro-image` → `gemini-2.5-flash-image`）を5回試行し全件HTTP429（クォータ/モデル利用不可）で画像0枚。この経路は承認外的自発実行であり、**Gemini画像生成は採用しない**（記録のみ・`sources/elder-channel-characters-imagegen-2026-10-21.json`、スクリプト `scripts/generate-elder-characters-gemini.py` は再実行しない）
 - 生成が通り次第、生成物は `public/assets/drafts/elder-characters-2026-10-21/`（set-v1／homer-v1／judd-v1／kent-v1）へ保存される。プロンプトは下記と同一
 
 **共通スタイル（3体セットで一貫させる）**
@@ -94,7 +95,7 @@
 
 ## 制作手順（残工程）と承認境界
 
-1. **素材化**（画像生成経路の決定待ち）→ 立ち絵・3面図・表情差分を `public/assets/` へ
+1. **素材化**（本人によるGPT画像生成・プロンプトは本書のプロンプト節／共有フォルダ）→ 立ち絵・3面図・表情差分を `public/assets/` へ
 2. **第1話台本**（出典確認付き・題材は本人提示が未了）→ 数値・固有名詞は出典確認、検証役が事実確認を担当
 3. **音声**（Gemini TTS・2026-10-21本人決定／制作は保留）→ クレジット表記
 4. **動画化**（Remotion・1920×1080・30fps）→ 実装は別承認
@@ -102,7 +103,8 @@
 
 ## 未確認・残作業
 
-- 画像生成経路の決定（Gemini画像クォータ／GPT手動生成／別プロバイダ）と、生成0件のため清書・立ち絵・表情差分・配色・顔型の反映は未着手
+- 画像生成（本人によるGPT生成）と、後続の背景除去・`public/assets/` 取り込み・Remotion差し替えが未着手
+- 音色割当（Gemini TTS・ボイス選定・クレジット表記・Google TTSの利用条件確認）は保留中
 - 第1話の題材・台本・出典確認は未着手
 - Google TTSの利用条件・商用利用条件・クレジット表記は未確認
 - 「ホーマー」の名称・商標調査は未実施（正式採用前）
