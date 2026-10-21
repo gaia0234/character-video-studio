@@ -170,5 +170,46 @@
     "decision": "3キャラもGemini",
     "approved": "制作方針",
     "notYetDone": "3キャラ声割当、短い掛け合い、全編差替え/再render"
+  },
+  "freeTierProductionDecision": {
+    "date": "2026-10-21",
+    "authorization": "本人「API契約はないので中止、Geminiで作りましょう。無料枠をまずは使います」",
+    "scope": "ナレーターと3キャラのGemini制作方針、無料枠内。OpenAI試聴中止。",
+    "officialCheck": {
+      "date": "2026-10-21",
+      "model": "gemini-3.8-flash-tts",
+      "standardInputAndOutputFree": true,
+      "limits": "RPM/入力TPM/RPD等、project単位、RPDは太平洋時間午前0時リセット。モデル別実効値はAI Studioで確認、固定公開値は今回確認できない。",
+      "sources": [
+        "https://ai.google.dev/gemini-api/docs/pricing",
+        "https://ai.google.dev/gemini-api/docs/rate-limits",
+        "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash-tts"
+      ]
+    },
+    "planningEstimate": {
+      "input": "src/data/longform/toyota01-v10-voice.json beats audio.srcのある85本を集計、再生成/声試作は含まない",
+      "existingVoicedBeats": 85,
+      "existingVoicedSeconds": 769.003,
+      "speakers": {
+        "ミーノ": 14,
+        "カーノ": 13,
+        "ルーノ": 7,
+        "ナレ2": 51
+      },
+      "oneRequestPerBeatExamples": {
+        "10_RPD": 9,
+        "30_RPD": 3,
+        "100_RPD": 1
+      },
+      "estimateLimits": "これらRPDは説明用の仮定で現在契約枠ではない。再生成/他用途消費/TPM/RPM/容量により日数は増える。Gemini化後の音声尺は未確定。"
+    },
+    "pending": "実プロジェクトのFree/Paid Tierと対象モデルのRPM/TPM/RPD・残枠の確認。既存キーのHTTP200だけで無料適用を断定しない。",
+    "nextStep": "AI Studio表示値を確認し無料の実効枠内で、声割当/生成範囲/保存と再開条件を具体化。課金有効化/有料への切替/429の自動反復は行わない。今回追加音声生成なし。",
+    "failures": {
+      "video": 38,
+      "nextVideoStop": 40,
+      "communication": 11,
+      "nextCommunicationStop": 15
+    }
   }
 }
