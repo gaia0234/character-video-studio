@@ -204,7 +204,8 @@
       "estimateLimits": "これらRPDは説明用の仮定で現在契約枠ではない。再生成/他用途消費/TPM/RPM/容量により日数は増える。Gemini化後の音声尺は未確定。",
       "adoptedRPD": 10,
       "minimumCalendarDaysAtFullDailyQuota": 9,
-      "productionPolicy": "生成済み音声を再利用、最大10回/日、声の試作と修正も同じ日枠から消費。既存85本を各1回なら最短9日で、試作/再生成/残枠に応じ追加日。"
+      "productionPolicy": "生成済み音声を再利用、最大10回/日、声の試作と修正も同じ日枠から消費。既存85本を各1回なら最短9日で、試作/再生成/残枠に応じ追加日。",
+      "clarification": "以前の最短9日は1音声beat=1リクエストを固定した条件付き計算。85beatのファイル数とAPIリクエスト数は同じである必要はない。同一話者の章単位等をまとめて生成し分割配置する案なら回数を削減できるが、読み/間/scene同期/再生成範囲への影響があり未実装・未検証。"
     },
     "pending": "RPM/TPM/当日残枠/請求Tierの未確認は保持。3キャラ声割当と本編の実音尺調整を具体計画化、未確認を無料適用確認済みとは扱わない。",
     "nextStep": "AI Studio表示値を確認し無料の実効枠内で、声割当/生成範囲/保存と再開条件を具体化。課金有効化/有料への切替/429の自動反復は行わない。今回追加音声生成なし。",
@@ -216,10 +217,29 @@
     },
     "reportedQuota": {
       "date": "2026-10-21",
-      "source": "本人「1日10回だね」",
+      "source": "本人貼付AI Studioモデル別RPM/TPM/RPD表（画像/画面の独立検証なし）",
       "modelContext": "gemini-3.8-flash-tts",
+      "requestsPerMinute": 3,
+      "inputTokensPerMinute": 10000,
       "requestsPerDay": 10,
-      "verification": "本人確認値として受領。CodexによるAI Studio画面の独立確認は未実施。RPM/TPM/現在の残枠/請求Tierは未確認。"
+      "displayedUsage": {
+        "RPM": 1,
+        "TPM": 92,
+        "RPD": 1
+      },
+      "remainingRequestsAtDisplayedMoment": 9,
+      "verification": "本人提供表で数値確認。表示時点の値で、現在残数/請求Tierを直接取得したものではない。",
+      "otherTTSRows": "Gemini 2.5 Flash TTS、3.1 Flash TTS、3.8 Flash Lite TTSは各3RPM/10K TPM/10RPD表示。品質未比較で別モデル枠を合算/自動利用しない。",
+      "liveRows": "一部LiveのRPM/RPDが無制限表示でもTTSと別用途/別モデル。無料で無制限のナレーション生成可能とは判断しない。"
+    },
+    "batchingProposal": {
+      "date": "2026-10-21",
+      "status": "提案中・未実装・未検証",
+      "purpose": "無料10RPDのまま17分本編の制作日数を短縮",
+      "content": "同一話者の文章を章または数分単位でまとめて生成、既存scene/beatへ分割配置する。3キャラ短い声確認を先に行い、ナレは受入済みCharonを再利用。",
+      "benefit": "API回数削減と同一声のまとまり",
+      "costAndAcceptance": "分割/間/全文読取/既存映像との同期を確認、上限や失敗時に再生成範囲が大きくならない長さに限定。品質維持できる単位は未実測、1日完成を保証しない。",
+      "scope": "Gemini3.8FlashTTS内。別モデル枠合算/Liveへの切替/自動実行/課金変更なし。"
     }
   }
 }
