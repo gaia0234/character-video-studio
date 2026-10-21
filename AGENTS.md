@@ -2,6 +2,7 @@
 
 - 作業開始時は [README.md](README.md) と今回の対象資料・制約を読む。全履歴を一括で読まない。
 - 作業前のプラン報告・承認、秘密情報の保護、最小変更・既存変更の保持を守る。
+- 2026-10-21本人指示：**基本はCodexとOpenCodeを使う**。**Geminiを含む他プロバイダの外部AI API（テキスト・画像・音声・動画生成・動画理解等）の利用は、そのつど本人から明示的な許可を得る**（対象＝モデル・用途・回数・上限を明記し、他の承認を転用しない。呼び出しを伴わない確認は可）。`.env`にキーが存在しても許可なしの生成・課金を伴う実行は禁止。保存済みの外部AI APIスクリプト（例 `scripts/generate-elder-characters-gemini.py`・`scripts/generate-gemini-tts-pilot.py`）も、承認なく再実行・連続試行しない。共通正本は /home/ds-work/.codex/AGENTS.md と Project Hub `docs/operations-decisions.md`（2026-10-21節）。
 
 ## サブエージェント・失敗対応・トークン最適化（2026-10-09）
 

@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""エルダーチャンネル 新キャラ3体の画像生成（Gemini image / 2026-10-21 本人指示「キャラを生成する」）。
+"""エルダーチャンネル 新キャラ3体の画像生成（Gemini image / 2026-10-21）。
+
+【実行禁止・未承認】2026-10-21本人指示「Geminiを使うときは明示的に許可を得ること」に基づき、
+このスクリプトは**承認なく実行・再実行・連続試行してはならない**（結果は記録・共有のみ）。
+2026-10-21の試行5回は全件HTTP429（クォータ）で画像0枚。承認方針は本人によるGPT（ChatGPT）生成。
+本スクリプトは失敗記録と将来の許可時に備えた実行手段として保存する。
 
 担当工程: scripts/generate-elder-characters-gemini.py と public/assets/drafts/elder-characters-2026-10-21/
           および output/elder-channel-characters-2026-10-21/ のみ。

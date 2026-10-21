@@ -34,7 +34,7 @@
 
 ## 声（2026-10-21 方針変更：Gemini TTS・制作は保留）
 
-- **2026-10-21本人決定**：音声は**Gemini TTS**で作成する。制作は当面保留。VOICEVOX男声の割当（下記）・試聴音源は保留（記録のみ保持。試聴音源は `../knowledge-anime-character-system/materials/男声試聴-2026-10-20/` に試験限定・非公開で残置）
+- **2026-10-21本人決定**：音声は**Gemini TTS**で作成する。制作は当面保留。**Geminiの使用は本人からの明示許可が前提**（2026-10-21本人指示「Geminiを使うときは明示的に許可を得ること」。基本ツールはCodexとOpenCode）。許可なしにGemini APIの生成・課金を伴う実行・再試行はしない。VOICEVOX男声の割当（下記）・試聴音源は保留（記録のみ保持。試聴音源は `../knowledge-anime-character-system/materials/男声試聴-2026-10-20/` に試験限定・非公開で残置）
 - Gemini側の既存パイロット：`sources/gemini-tts-pilot-2026-10-21.json`（model `gemini-3.8-flash-tts`／voice `Charon`／`POST /v1beta/interactions`／キーは `.env`）。キャラ別の声はボイス選択で割当。GoogleのTTS利用条件・商用利用条件は**未確認**（採用前に確認）
 - ナレーターは従前どおりVOICEVOX NemoまたはGeminiの読み上げ音声のいずれか。音声表記（クレジット）方針は音声経路確定時に見直す
 
