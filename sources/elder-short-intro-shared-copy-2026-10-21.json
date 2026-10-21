@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-21",
+  "approval": "本人「共有する」／試作ショート（無音・字幕のみ・試験段階）",
+  "destination": "/mnt/CE14D65D14D6485B/Shared/Transfer/エルダーチャンネル/2026-10-21-試作ショート",
+  "windowsDirectory": "\\\\192.168.1.115\\Shared\\Transfer\\エルダーチャンネル\\2026-10-21-試作ショート",
+  "files": [
+    {
+      "name": "elder-short-intro-v1.mp4",
+      "bytes": 6890567,
+      "source": "output/elder-channel-characters-2026-10-21/elder-short-intro-v1.mp4",
+      "sourceSha256": "ed5896156d3caff0783ab7fe94a02d5d0efe9f782d5c5129f5acef81f37dfa7d",
+      "destinationSha256": "ed5896156d3caff0783ab7fe94a02d5d0efe9f782d5c5129f5acef81f37dfa7d",
+      "match": true
+    },
+    {
+      "name": "still-100.png",
+      "bytes": 1230434,
+      "source": "output/elder-channel-characters-2026-10-21/still-100.png",
+      "sourceSha256": "caedfa41d194b69390b824287370df855fa21ccfefbafbfaf72dadf3e1d47ade",
+      "destinationSha256": "caedfa41d194b69390b824287370df855fa21ccfefbafbfaf72dadf3e1d47ade",
+      "match": true
+    },
+    {
+      "name": "still-450.png",
+      "bytes": 1416018,
+      "source": "output/elder-channel-characters-2026-10-21/still-450.png",
+      "sourceSha256": "6205d683af48f84b7445fb2de8c1f2f85fa238118b52f40faef17a834b7eb439",
+      "destinationSha256": "6205d683af48f84b7445fb2de8c1f2f85fa238118b52f40faef17a834b7eb439",
+      "match": true
+    },
+    {
+      "name": "contact-sheet.png",
+      "bytes": 493823,
+      "source": "output/elder-channel-characters-2026-10-21/contact-sheet.png",
+      "sourceSha256": "512b866c63e2f6762d1e49485019c1370f2ea57c4655f7e0501fbfd1bf611ea1",
+      "destinationSha256": "512b866c63e2f6762d1e49485019c1370f2ea57c4655f7e0501fbfd1bf611ea1",
+      "match": true
+    },
+    {
+      "name": "homer.png",
+      "bytes": 769919,
+      "source": "public/assets/drafts/elder-characters-2026-10-21/homer.png",
+      "sourceSha256": "65daaa129523f98e34ad71a9954ac5b432bd8326aabaccf39014ce178125d3be",
+      "destinationSha256": "65daaa129523f98e34ad71a9954ac5b432bd8326aabaccf39014ce178125d3be",
+      "match": true
+    },
+    {
+      "name": "judd.png",
+      "bytes": 550710,
+      "source": "public/assets/drafts/elder-characters-2026-10-21/judd.png",
+      "sourceSha256": "145126187bd32071e2aee42ac14499911f528dc9c45455a4c5e6797584b0a01e",
+      "destinationSha256": "145126187bd32071e2aee42ac14499911f528dc9c45455a4c5e6797584b0a01e",
+      "match": true
+    },
+    {
+      "name": "kent.png",
+      "bytes": 690105,
+      "source": "public/assets/drafts/elder-characters-2026-10-21/kent.png",
+      "sourceSha256": "9fdb83751b7d3de1213d387bf1815701b6535efac9ec5f3d63ed3def9bc10134",
+      "destinationSha256": "9fdb83751b7d3de1213d387bf1815701b6535efac9ec5f3d63ed3def9bc10134",
+      "match": true
+    }
+  ],
+  "readme": {
+    "name": "README.md",
+    "bytes": 2796
+  },
+  "notes": "MP4は1080x1920・30fps・20.00秒・無音（H.264/yuv420p）。3体のPNGは差し色（帽子の帯・蝶ネクタイ・燕尾服の裏地のみ赤青緑）適用済み・背景透過。共有は試験段階・未公開。"
+}
