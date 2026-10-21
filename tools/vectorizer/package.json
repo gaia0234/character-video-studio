@@ -1,0 +1,10 @@
+{
+  "name": "elder-vectorizer",
+  "private": true,
+  "version": "1.0.0",
+  "description": "エルダーチャンネルの線画ラスタ→SVG変換（専用トレーサ・自前実装Queriesなし）",
+  "dependencies": {
+    "imagetracerjs": "^1.2.6",
+    "pngjs": "^7.0.0"
+  }
+}

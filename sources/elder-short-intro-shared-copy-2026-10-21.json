@@ -1,37 +1,48 @@
 {
   "date": "2026-10-21",
-  "approval": "本人「共有する」＋色付け位置の修正指摘「色がズレてる」",
+  "approval": "本人「共有する」＋「専用トレーサを入れる」承認",
   "destination": "/mnt/CE14D65D14D6485B/Shared/Transfer/エルダーチャンネル/2026-10-21-試作ショート",
   "windowsDirectory": "\\\\192.168.1.115\\Shared\\Transfer\\エルダーチャンネル\\2026-10-21-試作ショート",
-  "version": "v3（SVG素材・差し色位置を修正）",
+  "version": "v4（専用トレーサでベクター化・差し色はクリップ塗り分け）",
   "superseded": [
     "elder-short-intro-v1.mp4",
-    "elder-short-intro-v2-svg.mp4"
+    "elder-short-intro-v2-svg.mp4",
+    "elder-short-intro-v3-svg.mp4"
   ],
-  "fix": "蝶ネクタイ指定が襟の白地/ラペルを塗り潰していたため、白地（シャツ前立て）の連結成分とink密度プロファイルで蝶の実形状を同定して原本座標へ修正。リボン帯は冠の下端（つばのすぐ上）に移動。つばは黒のまま・裾は着色対象外。線画の形状は不変",
+  "vectorPipeline": {
+    "tracer": "imagetracerjs（npm・tools/vectorizer/）＋自作の輪郭抽出（scripts/build-elder-svg.py）",
+    "structure": "白地(シルエット)＋黒線画(evenodd)＋差し色(currentColor・クリップ領域で切り出し)",
+    "editable": "ルート要素のcolor属性1行で差し色を変更可能",
+    "background": "透明（白地パスは人物の内部のみ）"
+  },
+  "imageModel": {
+    "permission": "本人許可（設定シート由来の線画3枚の着色・生成3回まで）",
+    "status": "実行不可。現キーは画像モデルへ到達可（countTokens 200）だが生成側がクォータ429",
+    "script": "scripts/gemini-colorize-characters.py（保存のみ・再実行は許可の更新時のみ）"
+  },
   "files": [
     {
-      "name": "elder-short-intro-v3-svg.mp4",
-      "bytes": 6782133,
-      "source": "output/elder-channel-characters-2026-10-21/elder-short-intro-v3-svg.mp4",
-      "sourceSha256": "535f6e45dde44ccaa7f4af0faec28c9beba040696a7bb4ec8c7ba7715fcd5028",
-      "destinationSha256": "535f6e45dde44ccaa7f4af0faec28c9beba040696a7bb4ec8c7ba7715fcd5028",
+      "name": "elder-short-intro-v4-svg.mp4",
+      "bytes": 6768094,
+      "source": "output/elder-channel-characters-2026-10-21/elder-short-intro-v4-svg.mp4",
+      "sourceSha256": "903caa528e00e0604477a4bf0daaf2ba7fb1f69d34da33781d3d6a9c47a2edd4",
+      "destinationSha256": "903caa528e00e0604477a4bf0daaf2ba7fb1f69d34da33781d3d6a9c47a2edd4",
       "match": true
     },
     {
       "name": "still-100.png",
-      "bytes": 942126,
+      "bytes": 951446,
       "source": "output/elder-channel-characters-2026-10-21/still-100.png",
-      "sourceSha256": "28b0d8ed9a5099c8dd062a6d2234638fc852a91cc956804cc49cf65de3f30851",
-      "destinationSha256": "28b0d8ed9a5099c8dd062a6d2234638fc852a91cc956804cc49cf65de3f30851",
+      "sourceSha256": "1a8704ea60c22454929629e0c5cf2de1435de397c63b9ac6615e0b1463a0d99d",
+      "destinationSha256": "1a8704ea60c22454929629e0c5cf2de1435de397c63b9ac6615e0b1463a0d99d",
       "match": true
     },
     {
       "name": "still-450.png",
-      "bytes": 962060,
+      "bytes": 977934,
       "source": "output/elder-channel-characters-2026-10-21/still-450.png",
-      "sourceSha256": "32a0e18f9331272818287f507a2987bae456eaa6b4f8a83607aec406bcc109e3",
-      "destinationSha256": "32a0e18f9331272818287f507a2987bae456eaa6b4f8a83607aec406bcc109e3",
+      "sourceSha256": "9b8b7d04586fc7727ced9b96cec85a1fdf255f23af0092e8fb2ecd3e062311b3",
+      "destinationSha256": "9b8b7d04586fc7727ced9b96cec85a1fdf255f23af0092e8fb2ecd3e062311b3",
       "match": true
     },
     {
@@ -68,28 +79,28 @@
     },
     {
       "name": "svg/homer.svg",
-      "bytes": 39551,
+      "bytes": 53697,
       "source": "public/assets/characters/elder-svg/homer.svg",
-      "sourceSha256": "d484853b7af59589e91c17662d5e2fdce5885600665c995d583377a24a162851",
-      "destinationSha256": "d484853b7af59589e91c17662d5e2fdce5885600665c995d583377a24a162851",
+      "sourceSha256": "8cf7a2ffb098c6714bb018cde5a0739df394ada0639f9214b70be0d117c613a8",
+      "destinationSha256": "8cf7a2ffb098c6714bb018cde5a0739df394ada0639f9214b70be0d117c613a8",
       "match": true
     },
     {
       "name": "svg/judd.svg",
-      "bytes": 38969,
+      "bytes": 54291,
       "source": "public/assets/characters/elder-svg/judd.svg",
-      "sourceSha256": "f17872f8c048a73e1aca1d093d163e7a46b24fe16555a953ad80306eb8d980c3",
-      "destinationSha256": "f17872f8c048a73e1aca1d093d163e7a46b24fe16555a953ad80306eb8d980c3",
+      "sourceSha256": "dd89411f02d9347eaec5de921bc642ab6d47eeb17dcf2940f30ef1e990807dc5",
+      "destinationSha256": "dd89411f02d9347eaec5de921bc642ab6d47eeb17dcf2940f30ef1e990807dc5",
       "match": true
     },
     {
       "name": "svg/kent.svg",
-      "bytes": 41499,
+      "bytes": 49568,
       "source": "public/assets/characters/elder-svg/kent.svg",
-      "sourceSha256": "3641a125ccf22f1ea5292ade71d852cfbe9fc3a13f815c8b6d58a2d22d88867d",
-      "destinationSha256": "3641a125ccf22f1ea5292ade71d852cfbe9fc3a13f815c8b6d58a2d22d88867d",
+      "sourceSha256": "4c4ff387c3c8a6fc2b29d5bf3f8019af07faff2a9a9479d3d566cbde9020029b",
+      "destinationSha256": "4c4ff387c3c8a6fc2b29d5bf3f8019af07faff2a9a9479d3d566cbde9020029b",
       "match": true
     }
   ],
-  "notes": "MP4は1080x1920・30fps・20.00秒・無音。SVGは白地/黒線画/差し色の3パス、差し色はroot要素のcolor属性1行で差し替え可。"
+  "notes": "MP4は1080x1920・30fps・20.00秒・無音。線画は元ラスタのトレースで絵の形状は不変。"
 }
