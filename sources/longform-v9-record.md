@@ -171,3 +171,7 @@
 - 参考チャンネル分析（2026-10-21）：本人指定「深読み地図」の公開2本/説明/目次/サムネイルを確認。分析正本はsources.md末尾「参考チャンネル『深読み地図』の分析」、構造化証拠reference-fukayomi-chizu-2026-10-21.json。問い→根拠→答え/専門性のあるキャラ/図の区別を提案段階で保存、未採用・V10変更なし。本編の声/動き/テンポは未確認。取得失敗1＋旧形式抽出不成立1を加え動画関連33/次35、通信10/次15を保持。sources.md既存47行を保全し今回追記だけstage。
 
 - 音声方針/モデル調査（2026-10-21）：本人「3キャラもGemini」でナレ含む全4役Gemini方針へ。実装未着手。CCはClaude CodeでなくCommand Codeと訂正。OpenAI/無料枠/Alibaba Qwen3-TTS・CosyVoice/GLM-TTS/OC・CC連携を公式資料調査し、採否/未確認はsources.md末尾「全4役のGemini方針・無料TTS/中国系モデルとOC/CC連携」へ。制作本線Gemini、無料ローカル第一検討Qwen3-TTSというAI推奨（他モデル採用未承認/未試験）。MiniMaxガイド取得失敗1で動画関連34/次35、通信10/次15。追加生成・導入・共有・本編変更・課金/アカウント作成なし。
+
+- Qwen試聴・累計35停止（2026-10-21）：本人承認のqwen3-tts-flash/Eldric Sage/Japanese、Gemini同原文1回はHTTP200で認証/生成成功。担当scriptが返却音声URLをscheme/host条件で拒みexit3、WAV未保存。動画関連35に達したため再試行/代替/追加調査/編集/委譲停止・本人再開待ち。通信11/次15（履歴JSON末尾切断1、先頭解析で受信確認）。詳細はsources.md末尾「Qwen TTS限定試聴」、証拠output/qwen-tts-pilot-2026-10-21/{request,result}.json。未完成・local commitなし、既存差分/成果保全、共有なし。
+
+- Qwen試聴の再開完了（2026-10-21本人「進める」）：再生成1回・HTTPS取得成功、WAV不定長ヘッダーをPCM不変で確定し28.72秒/24kHzmonoPCM16/非無音を技術受入。試聴用output/qwen-tts-pilot-2026-10-21-resume1/qwen-eldric-sage-2-6-b1.wav、SHA e10f623c3c70f2895666245976f2702a41c48c9a3ab469b4f7c45ddde1b1ea66。誤測定1を加え動画36/次40、通信11/次15。現OpenCodeはMiniMax maxへ変更されidleのため設定を戻さず小修正をMain直接処理。詳細sources.md末尾とsources/qwen-tts-pilot-2026-10-21.json。本人聴感/実請求未確認、Gemini本線方針維持、本編変更/共有/pushなし。

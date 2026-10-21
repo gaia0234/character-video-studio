@@ -486,3 +486,25 @@ v3検査時点の結論（2026-10-18。後続の改善は「v4視覚改善の制
 - 重要な未確認：本人Gemini/Alibaba/OC/CC契約の実効無料枠/音声API権限、OpenAI/他モデルの実音比較、各モデルの日本語長尺の読み/声の一貫性、ローカルRAM/GPU/処理時間、全4役のvoice割当/生成費/完成尺。無料枠の値/期限・APIやライセンス版の変更時に必要差分だけ再確認。
 - 出典：Google https://ai.google.dev/gemini-api/docs/pricing /rate-limits、Alibaba https://www.alibabacloud.com/help/en/model-studio/model-pricing /new-free-quota /tts-model/ /qwen-tts-api、Qwen https://github.com/QwenLM/Qwen3-TTS と https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice、CosyVoice https://github.com/QwenAudio/CosyVoice、GLM https://github.com/zai-org/GLM-TTS、Kokoro https://github.com/hexgrad/kokoro と https://huggingface.co/hexgrad/Kokoro-82M、OpenAI https://developers.openai.com/api/docs/guides/text-to-speech と /api/docs/models/gpt-realtime-2.1-mini、OC https://docs.opencode.ai/docs/custom-tools/、CC https://commandcode.ai/docs/provider と /docs/headless。各短縮相対部分は直前ドメインの公式資料を今回開いたもの。
 - 失敗/保全：MiniMax https://platform.minimax.io/docs/guides/speech-t2a-intro がWeb toolでアクセス不可1。再試行/別経路の実行なし、動画関連33→34/次35、通信10/次15を保持。検索0件は成功応答として扱い実行失敗に加算しない。既存sources.md47行/他dirty/旧版/V10/APIキーを保全し今回分析/本人方針の記録だけlocal commit。新規一時物/clone/モデルdownload/音声生成/共有/削除/pushなし。
+
+
+### Qwen TTS限定試聴（2026-10-21）
+
+現在の結論：Qwen3-TTS Flash / Eldric Sageの同原文試聴WAVを作成し技術受入済み（28.72秒・24kHz/mono/PCM16・非無音）。本人の聴感は未確認、Geminiからの本線切替は未採用。DASHSCOPE_API_KEYは設定/認証成功、秘密値は記録しない。共有未実施。構造化記録はqwen-tts-pilot-2026-10-21.json。
+
+- 計画/対象：qwen3-tts-flash、声Eldric Sage、日本語、Singaporeの公式APIへ1回のみ。声は公式に落ち着いた年長男性/日本語対応と記載。Geminiと同じ2-6-b1原文を用い、WAVの尺/非無音/peak/RMS/SHAを検証する。無料枠/キーの地域/実請求は未確認、設定変更や別地域再試行はしない。
+- 根拠：2026-10-21に公式 https://www.alibabacloud.com/help/en/model-studio/qwen-tts-api と https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list の対象REST/非リアルタイム声一覧を確認。生成応答はoutput.audio.url、有効24時間。署名URLやキーを証拠へ保存しない。
+- 所有/受入：既存GLM max ses_ea9f62caaffebkeqUSUg80ZXuv（同案件・待機確認済み）へ実装/必要検証を依頼、所有はscripts/generate-qwen-tts-pilot.pyとoutput/qwen-tts-pilot-2026-10-21/。Mainはsources記録/最終受入を所有。コード/依存追加は最小、標準ライブラリ使用。本編/旧版/既存差分は保全、共有/公開/削除/pushなし。
+- 完了条件：生成1回の状態と保存WAVの実値、秘密を除く固定request/result、未確認/一時物を報告。本人聴感と技術受入は区別。動画関連34/次35、通信10/次15維持。次の実失敗で35に達したら再試行・代替・追加調査を止め本人相談。
+
+- 限定試聴の停止結果（2026-10-21）：GLM担当の実行報告/result.jsonにpostHttpStatus=200、requestId=426e45bb-5353-9f36-86e6-bbad3071f434、usage.characters=249。qwen3-tts-flash/Eldric Sage/JapaneseへのPOST1回は成功、認証は通った。入力はGeminiと同じ131文字（usageの249との数え方の差は未調査）。構文確認成功。返却audio URLのscheme/hostが担当実装の許可条件に合わずerror_url_scheme/exit3、ダウンロードせず停止。実URLを保存/表示しておらずhostとschemeのどちらが不一致かは未確認。WAV未作成、尺/非無音/音質は未確認。API/モデルの音質失敗とは扱わない。
+- 動画関連累計35に到達、再試行/代替/追加調査/実装/委譲を停止し本人再開待ち。通信は長い履歴応答のJSON末尾切断による解析失敗1で累計11/次15、先頭の最新3件だけを解析する修正で受信確認済み。成功で累計をリセットしない。未完成のためtask commit/共有なし。既存差分と新規scripts/generate-qwen-tts-pilot.py、output/qwen-tts-pilot-2026-10-21/request.json・result.jsonを保全。
+- 再開時の限定案（未承認）：実際の返却scheme/hostを秘密URL非表示で照合し、公式の配信先に合う最小修正と1音声の取得/必要測定を計画。URL未保存のため再生成の要否も未確認。再生成が必要なら同じ原文/同じ声1回に限定し、追加候補/本編更新/共有/設定変更へ広げない。
+
+- 累計35停止後の本人再開承認（2026-10-21「進める」）：既存コード/結果を照合し、公式応答例がhttp配信URLである一方、実装がhttps限定のため拒否した可能性が高いと判断（旧実URLは未保存で断定不可）。同じhost/path/queryのHTTPS化とAlibaba配信hostの境界判定を最小修正し、同じ原文/声1回のみを再生成、WAV取得/実値検証まで行う。旧失敗結果を保持し新規output/qwen-tts-pilot-2026-10-21-resume1/へ保存。実URL/キーは表示保存しない。動画35/次40、通信11/次15を維持。
+- 担当確認：既存OpenCodeセッションの実効モデルがminimax-m3.1-flash-free/maxへ変更されていたため、GLMと偽らず設定変更/新担当の起動を行わない。小規模で原因の絞れた修正と秘密キーを扱う単発処理のためMainが直接所有を引き取る（セッションはsucceeded/idle、実行中作業なし）。今回の所有はscripts/generate-qwen-tts-pilot.pyと上記resume1出力、sources記録。既存V10recordの別共有追記は他作業として保全/commit除外。
+
+- 再開結果/受入（2026-10-21）：同原文131文字・Eldric Sage・Japaneseを1回再生成しPOST/ダウンロードとも200。返却scheme=http、host=dashscope-result-sgp.oss-ap-southeast-1.aliyuncs.com（署名URL非保存）。HTTPS化で取得成功、初回URL拒否の原因はscheme条件が有力。host境界判定を正しく修正し、redirect先にもHTTPS/Alibaba境界を適用。キーは生成先のみ、音声取得先には渡さない。
+- WAVのRIFF/data長が不定長のままで、既存測定がヘッダーのframesを信じ44739秒と誤算した。検査不成立1を加え動画36/次40。実PCM量から28.72秒/689280framesと確認し、サンプルを一切変えずヘッダー長だけ確定、前後PCM一致を検証。API原本と誤測定resultは保存、新しい測定は非無音・peak=-5.82dBFS/RMS=-24.76dBFS、1,378,604bytes、SHA e10f623c3c70f2895666245976f2702a41c48c9a3ab469b4f7c45ddde1b1ea66。
+- Gemini（29.92秒/RMS=-19.49dBFS）より1.20秒短く5.27dB小さい。音量差があるためそのままの聴取印象を品質差と断定しない。読み/自然さ/声の印象は本人確認待ち。今回生成は1回（旧停止前と計2回）、再生成反復や本編変更なし、実請求/無料枠未確認。
+- 成果/一時物：試聴用output/qwen-tts-pilot-2026-10-21-resume1/qwen-eldric-sage-2-6-b1.wav、request/result。旧失敗記録、API原WAV、result-before-header-fix.jsonは原因/再現証拠として保全。新規の削除対象なし、共有/削除/pushなし。必要検証は構文・URL変換/偽ドメイン拒否・取得成功・WAV実尺/非無音・PCM一致。今回script/構造化記録/関連正本だけlocal commit、旧版/別共有記録/既存47行の差分は除外。

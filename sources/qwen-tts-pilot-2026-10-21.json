@@ -1,0 +1,130 @@
+{
+  "date": "2026-10-21",
+  "status": "technical_acceptance_complete_listening_pending",
+  "model": "qwen3-tts-flash",
+  "voice": "Eldric Sage",
+  "request": {
+    "model": "qwen3-tts-flash",
+    "input": {
+      "text": "1997年3月、トヨタはTHS、トヨタハイブリッドシステムを発表しました。エンジン、モーターと発電機を、動力分割装置でつなぐ仕組みです。その年の12月、初代プリウスが発売されました。本格的な量産開発から発売までは、約2年。構想を、一台の車として送り出したのです。",
+      "voice": "Eldric Sage",
+      "language_type": "Japanese"
+    }
+  },
+  "initialAttempt": {
+    "task": "Qwen TTS limited trial 1 candidate/1 generation (2-6-b1 male narration)",
+    "date": "2026-10-21",
+    "status": "error_url_scheme",
+    "model": "qwen3-tts-flash",
+    "voice": "Eldric Sage",
+    "language_type": "Japanese",
+    "endpointHost": "dashscope-intl.aliyuncs.com",
+    "failureCount": 1,
+    "failures": [
+      "audio url scheme/host not allowed"
+    ],
+    "unverified": [],
+    "leftoverTemps": [],
+    "notes": [],
+    "textLen": 131,
+    "textSha256-16": "6d00e62699d3a908",
+    "textMatchesGemini2-6-b1": true,
+    "requestFile": "output/qwen-tts-pilot-2026-10-21/request.json (saved before POST)",
+    "requestSha256-16": "f2fc7626ecbba4ce",
+    "keySource": ".env",
+    "postHttpStatus": 200,
+    "requestId": "426e45bb-5353-9f36-86e6-bbad3071f434",
+    "usage": {
+      "characters": 249
+    },
+    "blockReason": "audio url scheme/host not allowed"
+  },
+  "result": {
+    "task": "Qwen TTS limited trial 1 candidate/1 generation (2-6-b1 male narration)",
+    "date": "2026-10-21",
+    "status": "ok",
+    "model": "qwen3-tts-flash",
+    "voice": "Eldric Sage",
+    "language_type": "Japanese",
+    "endpointHost": "dashscope-intl.aliyuncs.com",
+    "failureCount": 0,
+    "failures": [],
+    "unverified": [
+      "主観的な音質・自然な日本語読み・THSの読み方（Qwen側は指示制御パラメータなし）は本人確認待ち",
+      "キーの地域/無料枠/実請求額は未確認（usageのみ記録）"
+    ],
+    "leftoverTemps": [],
+    "notes": [],
+    "textLen": 131,
+    "textSha256-16": "6d00e62699d3a908",
+    "textMatchesGemini2-6-b1": true,
+    "requestFile": "output/qwen-tts-pilot-2026-10-21-resume1/request.json (saved before POST)",
+    "requestSha256-16": "f2fc7626ecbba4ce",
+    "keySource": ".env",
+    "postHttpStatus": 200,
+    "requestId": "eb514362-c9ea-9481-8b97-a6019e34f40d",
+    "usage": {
+      "characters": 249
+    },
+    "audioUrlSchemeReceived": "http",
+    "audioUrlHostReceived": "dashscope-result-sgp.oss-ap-southeast-1.aliyuncs.com",
+    "audioHostChecked": "Alibaba domain boundary verified; HTTPS enforced including redirects",
+    "downloadHttpStatus": 200,
+    "generated": {
+      "format": "RIFF/WAVE(PCM16)",
+      "channels": 1,
+      "sampleWidthBytes": 2,
+      "sampleRateHz": 24000,
+      "frames": 689280,
+      "seconds": 28.72,
+      "peakDBFS": -5.82,
+      "rmsDBFS": -24.76,
+      "nonSilent": true
+    },
+    "audioSummary": {
+      "bytes": 1378604,
+      "sha256": "e10f623c3c70f2895666245976f2702a41c48c9a3ab469b4f7c45ddde1b1ea66",
+      "file": "output/qwen-tts-pilot-2026-10-21-resume1/qwen-eldric-sage-2-6-b1.wav"
+    },
+    "comparison": {
+      "reference": "gemini 2-6-b1 (Charon)",
+      "geminiSeconds": 29.92,
+      "geminiRmsDBFS": -19.49,
+      "durationDeltaSeconds": -1.2,
+      "rmsDeltaDB": -5.27
+    },
+    "headerNormalized": {
+      "samplesUnchanged": true,
+      "apiOriginal": "qwen-api-original.wav",
+      "originalSha256": "fffc47e40c6d8e90b6847194f2defea07cd77c4eca4e4878be043334bbf9c0cb",
+      "actualFrames": 689280,
+      "reason": "API RIFF/data declared sizes exceed actual PCM length"
+    },
+    "correctedMeasurementFailure": 1,
+    "cumulativeVideoFailures": 36,
+    "nextVideoStop": 40
+  },
+  "acceptance": {
+    "wavHeaderMatchesPcm": true,
+    "pcmIdenticalToApiOriginal": true,
+    "nonSilent": true,
+    "userListening": "pending",
+    "shared": false,
+    "actualBilling": "unknown"
+  },
+  "failures": {
+    "video": 36,
+    "nextVideoStop": 40,
+    "communication": 11,
+    "nextCommunicationStop": 15
+  },
+  "artifacts": {
+    "listening": "output/qwen-tts-pilot-2026-10-21-resume1/qwen-eldric-sage-2-6-b1.wav",
+    "preserved": [
+      "output/qwen-tts-pilot-2026-10-21/request.json",
+      "output/qwen-tts-pilot-2026-10-21/result.json",
+      "output/qwen-tts-pilot-2026-10-21-resume1/qwen-api-original.wav",
+      "output/qwen-tts-pilot-2026-10-21-resume1/result-before-header-fix.json"
+    ]
+  }
+}
