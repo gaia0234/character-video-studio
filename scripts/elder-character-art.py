@@ -276,6 +276,74 @@ def recolor_poly(rgba, w, h, points, rgb, max_lum=INK_MAX, min_lum=0):
     return count
 
 
+def recolor_light_line(rgba, w, h, p1, p2, width, rgb, min_lum=200):
+    """2点間の帯（幅width px）内の白（輝度>=min_lum）だけを色置換。つば上の白抜きリボン用。"""
+    x1, y1 = p1
+    x2, y2 = p2
+    dx, dy = x2 - x1, y2 - y1
+    length = (dx * dx + dy * dy) ** 0.5 or 1.0
+    half = max(1, width // 2)
+    r0, g0, b0 = rgb
+    count = 0
+    xmin = max(0, int(min(x1, x2) - half - 2))
+    xmax = min(w - 1, int(max(x1, x2) + half + 2))
+    ymin = max(0, int(min(y1, y2) - half - 2))
+    ymax = min(h - 1, int(max(y1, y2) + half + 2))
+    for y in range(ymin, ymax + 1):
+        for x in range(xmin, xmax + 1):
+            i = (y * w + x) * 4
+            if rgba[i + 3] == 0:
+                continue
+            t = ((x - x1) * dx + (y - y1) * dy) / (length * length)
+            if t < 0 or t > 1:
+                continue
+            dist = abs((x - x1) * dy - (y - y1) * dx) / length
+            if dist > half:
+                continue
+            L = lum(rgba[i], rgba[i + 1], rgba[i + 2])
+            if L < min_lum:
+                continue
+            rgba[i] = min(255, int(r0 * (0.75 + 0.25 * min(1.0, L / 255.0))))
+            rgba[i + 1] = min(255, int(g0 * (0.75 + 0.25 * min(1.0, L / 255.0))))
+            rgba[i + 2] = min(255, int(b0 * (0.75 + 0.25 * min(1.0, L / 255.0))))
+            count += 1
+    return count
+
+
+def recolor_band(rgba, w, h, p1, p2, width, offset, rgb):
+    """基準線から法線方向へoffset離れた幅widthの帯を、フラット色で塗る。つばの上のリボン帯用。"""
+    x1, y1 = p1
+    x2, y2 = p2
+    dx, dy = x2 - x1, y2 - y1
+    length = (dx * dx + dy * dy) ** 0.5 or 1.0
+    nx, ny = dy / length, -dx / length
+    bx1, by1 = x1 + nx * offset, y1 + ny * offset
+    bx2, by2 = x2 + nx * offset, y2 + ny * offset
+    half = max(1, width // 2)
+    r0, g0, b0 = rgb
+    count = 0
+    xmin = max(0, int(min(bx1, bx2) - half - 2))
+    xmax = min(w - 1, int(max(bx1, bx2) + half + 2))
+    ymin = max(0, int(min(by1, by2) - half - 2))
+    ymax = min(h - 1, int(max(by1, by2) + half + 2))
+    for y in range(ymin, ymax + 1):
+        for x in range(xmin, xmax + 1):
+            i = (y * w + x) * 4
+            if rgba[i + 3] == 0:
+                continue
+            t = ((x - bx1) * (bx2 - bx1) + (y - by1) * (by2 - by1)) / (length * length)
+            if t < -0.05 or t > 1.05:
+                continue
+            dist = abs((x - bx1) * (by2 - by1) - (y - by1) * (bx2 - bx1)) / length
+            if dist > half:
+                continue
+            rgba[i] = r0
+            rgba[i + 1] = g0
+            rgba[i + 2] = b0
+            count += 1
+    return count
+
+
 def ascii_map(rgba, w, h, box, cols=60):
     x, y, cw, ch = box
     rows = max(1, int(cols * (ch / max(1, cw)) / 2.0))
@@ -352,6 +420,10 @@ def cmd_build(rules_path):
                 p1 = (rule['p1'][0] - ox, rule['p1'][1] - oy)
                 p2 = (rule['p2'][0] - ox, rule['p2'][1] - oy)
                 n = recolor_line(cropped, cw, ch, p1, p2, rule['width'], color, INK_MAX, 0)
+            elif mode == 'band':
+                p1 = (rule['p1'][0] - ox, rule['p1'][1] - oy)
+                p2 = (rule['p2'][0] - ox, rule['p2'][1] - oy)
+                n = recolor_band(cropped, cw, ch, p1, p2, rule['width'], rule.get('offset', 0), color)
             elif mode == 'poly':
                 pts = [(p[0] - ox, p[1] - oy) for p in rule['points']]
                 n = recolor_poly(cropped, cw, ch, pts, color, INK_MAX, 0)

@@ -1,167 +1,44 @@
 {
-  "note": "rules の座標は設定シート原本（1122x1402）の座標。切り出し位置（crop）を変えてもrulesは不変。",
+  "note": "rules の座標は設定シート原本（1122x1402）の座標。切り出し位置（crop）を変えてもrulesは不変。色付けは 蝶ネクタイ／つばの上のリボン帯（白抜き）の2点のみ。裾（裏地）は対象外。",
   "outDir": "/home/ds-work/projects/character-video-studio/public/assets/drafts/elder-characters-2026-10-21",
   "characters": [
     {
       "name": "ホーマー（称賛）",
       "source": "/mnt/CE14D65D14D6485B/Shared/Transfer/キャラ参考/ChatGPT Image Oct 20, 2026, 03_18_02 AM.png",
-      "crop": [
-        20,
-        20,
-        630,
-        1185
-      ],
+      "crop": [20, 20, 630, 1185],
       "tighten": true,
       "pad": 6,
       "cutout": true,
       "out": "homer.png",
       "rules": [
-        {
-          "mode": "ink",
-          "color": [
-            200,
-            50,
-            44
-          ],
-          "box": [
-            245,
-            522,
-            60,
-            40
-          ],
-          "note": "蝶ネクタイ"
-        },
-        {
-          "mode": "line",
-          "color": [
-            200,
-            50,
-            44
-          ],
-          "p1": [
-            128,
-            450
-          ],
-          "p2": [
-            293,
-            380
-          ],
-          "width": 20,
-          "note": "帽子の帯"
-        }
+        {"mode": "ink", "color": [200, 50, 44], "box": [245, 522, 60, 40], "note": "蝶ネクタイ"},
+        {"mode": "band", "color": [200, 50, 44], "p1": [128, 450], "p2": [293, 380], "width": 12, "offset": 20, "note": "つばの上のリボン帯"}
       ]
     },
     {
       "name": "ジャッド（批判）",
       "source": "/mnt/CE14D65D14D6485B/Shared/Transfer/キャラ参考/ChatGPT Image Oct 20, 2026, 03_18_13 AM.png",
-      "crop": [
-        100,
-        137,
-        500,
-        1125
-      ],
+      "crop": [100, 137, 500, 1125],
       "tighten": true,
       "pad": 6,
       "cutout": true,
       "out": "judd.png",
       "rules": [
-        {
-          "mode": "ink",
-          "color": [
-            43,
-            95,
-            168
-          ],
-          "box": [
-            331,
-            429,
-            32,
-            28
-          ],
-          "note": "蝶ネクタイ"
-        },
-        {
-          "mode": "line",
-          "color": [
-            43,
-            95,
-            168
-          ],
-          "p1": [
-            147,
-            385
-          ],
-          "p2": [
-            339,
-            263
-          ],
-          "width": 20,
-          "note": "帽子の帯"
-        }
+        {"mode": "ink", "color": [43, 95, 168], "box": [331, 429, 32, 28], "note": "蝶ネクタイ"},
+        {"mode": "band", "color": [43, 95, 168], "p1": [147, 385], "p2": [339, 263], "width": 12, "offset": 7, "note": "つばの上のリボン帯"}
       ]
     },
     {
       "name": "ケント（検証）",
       "source": "/mnt/CE14D65D14D6485B/Shared/Transfer/キャラ参考/ChatGPT Image Oct 20, 2026, 03_17_47 AM.png",
-      "crop": [
-        10,
-        80,
-        560,
-        1150
-      ],
+      "crop": [10, 80, 560, 1150],
       "tighten": true,
       "pad": 6,
       "cutout": true,
       "out": "kent.png",
       "rules": [
-        {
-          "mode": "ink",
-          "color": [
-            46,
-            125,
-            79
-          ],
-          "box": [
-            291,
-            386,
-            32,
-            28
-          ],
-          "note": "蝶ネクタイ"
-        },
-        {
-          "mode": "line",
-          "color": [
-            46,
-            125,
-            79
-          ],
-          "p1": [
-            129,
-            270
-          ],
-          "p2": [
-            389,
-            185
-          ],
-          "width": 22,
-          "note": "帽子の帯"
-        },
-        {
-          "mode": "light",
-          "color": [
-            46,
-            125,
-            79
-          ],
-          "box": [
-            363,
-            382,
-            64,
-            112
-          ],
-          "note": "燕尾服の裏地（ジグザグ）"
-        }
+        {"mode": "ink", "color": [46, 125, 79], "box": [291, 386, 32, 28], "note": "蝶ネクタイ"},
+        {"mode": "band", "color": [46, 125, 79], "p1": [129, 270], "p2": [389, 185], "width": 12, "offset": 14, "note": "つばの上のリボン帯"}
       ]
     }
   ]

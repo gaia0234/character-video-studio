@@ -2,7 +2,7 @@ import React from 'react';
 import {AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {useLocalFont} from '../components/useLocalFont';
 
-type Accent = {key: string; name: string; role: string; line: string; file: string; color: string};
+type Accent = {key: string; name: string; role: string; line: string; file: string; color: string; ratio: number};
 
 const CHARACTERS: Accent[] = [
   {
@@ -10,24 +10,27 @@ const CHARACTERS: Accent[] = [
     name: 'ホーマー',
     role: '称賛役',
     line: 'あの時代を、誇りをもって話したい',
-    file: 'assets/drafts/elder-characters-2026-10-21/homer.png',
+    file: 'assets/characters/elder-svg/homer.svg',
     color: '#C8322C',
+    ratio: 627 / 1175,
   },
   {
     key: 'judd',
     name: 'ジャッド',
     role: '批判役',
     line: '大変だったことも、忘れない',
-    file: 'assets/drafts/elder-characters-2026-10-21/judd.png',
+    file: 'assets/characters/elder-svg/judd.svg',
     color: '#2B5FA8',
+    ratio: 466 / 1125,
   },
   {
     key: 'kent',
     name: 'ケント',
     role: '検証役',
     line: '数字も記憶も、確かめてから',
-    file: 'assets/drafts/elder-characters-2026-10-21/kent.png',
+    file: 'assets/characters/elder-svg/kent.svg',
     color: '#2E7D4F',
+    ratio: 541 / 1150,
   },
 ];
 
@@ -65,12 +68,13 @@ const Character: React.FC<{
         left: x - slide,
         top: baseY - height + breath,
         height,
+        width: height * data.ratio,
         opacity,
         transform: `translateX(-50%) rotate(${tilt}deg) translateX(${sway}px)`,
         transformOrigin: 'bottom center',
       }}
     >
-      <Img src={staticFile(data.file)} style={{height: '100%', width: 'auto', display: 'block'}} />
+      <Img src={staticFile(data.file)} style={{height: '100%', width: '100%', objectFit: 'contain', display: 'block'}} />
     </div>
   );
 };
