@@ -47,5 +47,12 @@
     "Geminiモデル/voice名、話者配分、実際の声質/テンポ/動き/制作ソフトは未確認",
     "公開2本のみで量産再現性・成功原因・AIのみの自動制作を断定しない"
   ],
-  "thumbnailEvidence": "output/reference-fukayomi-chizu-2026-10-21"
+  "thumbnailEvidence": "output/reference-fukayomi-chizu-2026-10-21",
+  "userAssessment": {
+    "date": "2026-10-21",
+    "source": "本人の視聴所見",
+    "voice": "自然で人間が話しているよう。当動画より音声品質が高い。",
+    "motion": "動きは単純。",
+    "verification": "Main独立聴取/動き実測は未実施。本人評価と区別。"
+  }
 }
