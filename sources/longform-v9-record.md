@@ -167,3 +167,5 @@
 - V10最終記録受入（2026-10-21）：本人が累計30停止後に再開承認。停止/idle確認済みGLMからMainへ最終記録所有を戻し、V10record/verificationの最新累計30/次35（通信10/次15）、peak取得済み、未確認の互換性/moov配置/AACpadding断定を訂正。Mainが最終MP4実bytes/SHA一致を確認、初稿として技術受入。再render/追加測定/検査反復なし。今回分local commit準備、既存dirty/他資料とoutput証拠を保全。本人全編視聴/聴感は未確認、共有削除pushなし。正本は[最終V10記録](longform-v10-record.md#最終受入記録訂正2026-10-21main)。
 
 - V10共有完了（2026-10-21）：本人「共有して」で完成V10のみを標準Transfer/character-video-studio/2026-10-21-longform-v10/へ新規コピー、元/コピーSHA一致。43,242,863bytes、SHA50b746c303056d74da379631192b4269a4eb2c0bba5be3c1d5c3456e3806e41f。詳細[V10共有記録](longform-v10-record.md#本人承認による共有2026-10-21)、証拠output/longform-v10-review/shared-copy.json。Mainのコピー前構文エラー1を加え動画累計31/次35、通信10/次15。本人視聴/聴感未確認、公開/削除/pushなし。
+
+- 参考チャンネル分析（2026-10-21）：本人指定「深読み地図」の公開2本/説明/目次/サムネイルを確認。分析正本はsources.md末尾「参考チャンネル『深読み地図』の分析」、構造化証拠reference-fukayomi-chizu-2026-10-21.json。問い→根拠→答え/専門性のあるキャラ/図の区別を提案段階で保存、未採用・V10変更なし。本編の声/動き/テンポは未確認。取得失敗1＋旧形式抽出不成立1を加え動画関連33/次35、通信10/次15を保持。sources.md既存47行を保全し今回追記だけstage。

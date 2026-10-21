@@ -1,0 +1,51 @@
+{
+  "checked": "2026-10-21 UTC",
+  "channel": "深読み地図",
+  "url": "https://www.youtube.com/@fukayomi-chizu",
+  "channelId": "UC1LAsfrWGAol_m4f2IExBVQ",
+  "subscribersDisplayed": 3980,
+  "videosDisplayed": 2,
+  "method": "公開videos/watch HTMLの埋込JSONを読取。サムネイル2枚を取得して目視。未ログイン、動画本体・音声・字幕本文は取得していない。",
+  "creatorClaims": {
+    "voices": "Gemini TTS",
+    "characterIllustrations": "OpenAI画像生成",
+    "figures": "一次資料と公開データを加工した地図・断面・比較図",
+    "roles": "ホリ＝地面の下にくわしいモグラ、ソラ＝空から地図を見る渡り鳥"
+  },
+  "videos": [
+    {
+      "id": "uxvFoLUsPCo",
+      "title": "太平洋の真ん中になぜハワイ？海を抜いて見てみた",
+      "lengthSeconds": "1294",
+      "viewCount": "261040",
+      "publishDate": "2026-10-17T05:02:25-07:00",
+      "uploadDate": "2026-10-17T05:02:25-07:00",
+      "captionTracks": [
+        {
+          "languageCode": "ja",
+          "kind": "asr"
+        }
+      ]
+    },
+    {
+      "id": "3xdIwOjzUL8",
+      "title": "四国と九州になぜ橋がない？海を抜いて見てみた",
+      "lengthSeconds": "1129",
+      "viewCount": "1674471",
+      "publishDate": "2026-10-15T17:00:17-07:00",
+      "uploadDate": "2026-10-15T17:00:17-07:00",
+      "captionTracks": [
+        {
+          "languageCode": "ja",
+          "kind": "asr"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "登録者/視聴数は取得時点の公開値、推移・CTR・視聴維持率・視聴者年齢は不明",
+    "Geminiモデル/voice名、話者配分、実際の声質/テンポ/動き/制作ソフトは未確認",
+    "公開2本のみで量産再現性・成功原因・AIのみの自動制作を断定しない"
+  ],
+  "thumbnailEvidence": "output/reference-fukayomi-chizu-2026-10-21"
+}
