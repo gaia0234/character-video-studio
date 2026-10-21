@@ -1,0 +1,76 @@
+{
+  "task": "エルダーチャンネル 新キャラ3体の画像生成（Gemini image / 本人指示「キャラを生成する」）",
+  "date": "2026-10-21",
+  "approval": "本人指示「音声はGemini TTSで作成・今は保留。キャラを生成する」",
+  "status": "blocked_quota",
+  "imagesGenerated": 0,
+  "keySource": ".env（値は記録しない）",
+  "modelsProbe": {
+    "method": "GET /v1beta/models?pageSize=200（1回・読取のみ）",
+    "totalKnown": 63,
+    "imageModelsListed": [
+      "gemini-2.5-flash-image",
+      "gemini-3-pro-image",
+      "gemini-3-pro-image-preview",
+      "gemini-3.1-flash-image",
+      "gemini-3.1-flash-image-preview",
+      "gemini-3.1-flash-lite-image",
+      "gemini-nano-banana-2.1",
+      "nano-banana-pro-preview"
+    ],
+    "note": "モデル一覧に存在しても利用可否（クォータ）は別。access≠quota"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "model": "gemini-3-pro-image",
+      "endpoint": "POST /v1beta/models/gemini-3-pro-image:generateContent",
+      "items": ["set", "homer", "judd", "kent"],
+      "calls": 4,
+      "httpStatus": 429,
+      "error": "http status=429（レスポンス本文が空でクォータ指標名を取得できず）",
+      "result": "全件失敗・画像0枚"
+    },
+    {
+      "attempt": 2,
+      "model": "gemini-2.5-flash-image",
+      "endpoint": "POST /v1beta/models/gemini-2.5-flash-image:generateContent",
+      "items": ["set"],
+      "calls": 1,
+      "httpStatus": 429,
+      "error": "http status=429（レスポンス本文が空）",
+      "result": "失敗・画像0枚"
+    }
+  ],
+  "failureCount": 5,
+  "stopRule": "同じ目的（Gemini画像生成）で累計5回失敗のため、代替モデル・別プロバイダ・追加試行はユーザー相談まで停止（自動再試行なし）",
+  "causeAnalysis": {
+    "hypothesis": "このAPIキーのプロジェクトに画像生成のクォータが無い（Imagen/Gemini画像モデルの無料枠リミット0、または画像モデルが未有効化）。2モデル×複数呼び出しで一律429になる点はRPM制限ではなくモデル利用可否/クォータ由来を示唆",
+    "alternatives": [
+      "429が短時間のリクエストレート由来の可能性は低い（初回から全件429）",
+      "リクエスト形状（フィールド表記・responseModalities）起因なら400になる想定で、429では考えにくい"
+    ],
+    "confirmed": "429（RESOURCE_EXHAUSTED相当）であることのみ。クォータ指標名・上限値は未確認"
+  },
+  "unverified": [
+    "API応答本文が空のため、429のクォータ指標名（per minute / per day / tier）を特定できていない",
+    "課金・ tiers変更・別キー・別プロバイダでの到達可否は未検証",
+    "実請求額・無料枠の適用は未確認（応答のusageは生成0件のため取得なし）"
+  ],
+  "nextActionsForUser": [
+    "A: 画像生成が使えるキー（課金/Imagen有効化/別プロジェクト）に差し替えて再実行",
+    "B: 既存方針どおりGPT（ChatGPT）画像生成にプロンプトを渡して手動生成",
+    "C: 同一リポジトリの .env にある OPENAI_API_KEY で画像生成経路を試す（別プロバイダ・要承認）",
+    "D: 保留"
+  ],
+  "assets": {
+    "script": "scripts/generate-elder-characters-gemini.py",
+    "outputDir": "output/elder-channel-characters-2026-10-21/",
+    "draftDir": "public/assets/drafts/elder-characters-2026-10-21/（生成0件）",
+    "requestFiles": ["request-set-camel.json", "request-homer-camel.json", "request-judd-camel.json", "request-kent-camel.json"]
+  },
+  "notes": [
+    "音声はGemini TTSで作成へ変更（本人決定2026-10-21）。VOICEVOXの音源割当・試聴は保留。",
+    "生成プロンプトは character-video-studio/sources/elder-channel-characters.md と Transfer/エルダーチャンネル/2026-10-21-新キャラ確定仕様/画像生成プロンプト.txt に整備済み"
+  ]
+}
