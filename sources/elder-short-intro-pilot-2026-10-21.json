@@ -1,0 +1,93 @@
+{
+  "task": "エルダーチャンネル 新キャラ3体の色付け＋動きのある試作ショート",
+  "date": "2026-10-21",
+  "approval": "本人承認（9:16・20秒・3体の自己紹介・無音＋字幕／Remotion用ブラウザ取得も許可）",
+  "status": "ok_trial",
+  "pipeline": {
+    "imageProcessing": "純Python標準ライブラリ（外部AI API不使用）",
+    "script": "scripts/elder-character-art.py",
+    "rules": "output/elder-channel-characters-2026-10-21/character-art-rules.json（規則座標は設定シート原本座標）",
+    "video": "Remotion 4（src/elder/ElderShortIntro.tsx / entry src/elder/index.ts / composition ElderShortIntro）",
+    "browser": "Chrome Headless Shell 149.0.7790.0（npx remotion browser ensure で取得・node_modules/.remotion 配下）"
+  },
+  "characters": [
+    {
+      "key": "homer",
+      "name": "ホーマー",
+      "role": "称賛",
+      "color": "#C8322C",
+      "source": "Transfer/キャラ参考/ChatGPT Image Oct 20, 2026, 03_18_02 AM.png（HERO POSE）",
+      "out": "public/assets/drafts/elder-characters-2026-10-21/homer.png",
+      "size": [
+        627,
+        1175
+      ],
+      "sha256": "65daaa129523f98e34ad71a9954ac5b432bd8326aabaccf39014ce178125d3be",
+      "accents": [
+        "帽子の帯",
+        "蝶ネクタイ"
+      ]
+    },
+    {
+      "key": "judd",
+      "name": "ジャッド",
+      "role": "批判",
+      "color": "#2B5FA8",
+      "source": "Transfer/キャラ参考/ChatGPT Image Oct 20, 2026, 03_18_13 AM.png（FULL BODY）",
+      "out": "public/assets/drafts/elder-characters-2026-10-21/judd.png",
+      "size": [
+        466,
+        1125
+      ],
+      "sha256": "145126187bd32071e2aee42ac14499911f528dc9c45455a4c5e6797584b0a01e",
+      "accents": [
+        "帽子の帯",
+        "蝶ネクタイ"
+      ]
+    },
+    {
+      "key": "kent",
+      "name": "ケント",
+      "role": "検証",
+      "color": "#2E7D4F",
+      "source": "Transfer/キャラ参考/ChatGPT Image Oct 20, 2026, 03_17_47 AM.png（FULL BODY）",
+      "out": "public/assets/drafts/elder-characters-2026-10-21/kent.png",
+      "size": [
+        541,
+        1150
+      ],
+      "sha256": "9fdb83751b7d3de1213d387bf1815701b6535efac9ec5f3d63ed3def9bc10134",
+      "accents": [
+        "帽子の帯",
+        "蝶ネクタイ",
+        "燕尾服の裏地（ジグザグ）"
+      ]
+    }
+  ],
+  "video": {
+    "file": "output/elder-channel-characters-2026-10-21/elder-short-intro-v1.mp4",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 20.0,
+    "audio": "なし（無音・字幕のみ）",
+    "codec": "h264",
+    "bytes": 6890567,
+    "sha256": "ed5896156d3caff0783ab7fe94a02d5d0efe9f782d5c5129f5acef81f37dfa7d",
+    "shared": "Transfer/エルダーチャンネル/2026-10-21-試作ショート/elder-short-intro-v1.mp4"
+  },
+  "unverified": [
+    "映像の画質と動きの印象は本人目視待ち（自動判定なし）",
+    "差し色3点目の裏地はホーマー・ジャッドで設定シートに独立面がないため未適用（ケントのみジグザグで表現）",
+    "口・手足の動きは線画にリグがないため未表現（呼吸・揺れ・カメラ・スライドのみ）",
+    "3面図（正面/側面/背面）の切替による簡易回転演出は未実装",
+    "表情差分（喜/悲/疑問）の素材Expandは未着手"
+  ],
+  "leftoverTemps": [
+    "/tmp/opencode/probe-gemini-image.py（別目的の残骸・未削除）"
+  ],
+  "notes": [
+    "画像処理・動画合成とも外部AI API（Gemini等）不使用。本人指示（2026-10-21）に整合",
+    "背景除去の透明化処理に全画素透明化の不具合があり修正済み（初回ビルドは差し色0画素）"
+  ]
+}
