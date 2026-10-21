@@ -59,6 +59,7 @@
 ## GPT画像生成用プロンプト（2026-10-21 新案・旧プロンプトは別ファイルへ退避）
 
 - **画像生成は2026-10-19承認方針どおり本人によるGPT（ChatGPT）生成**。OpenCodeの役割はプロンプト作成（=`sources/elder-channel-characters.md` のプロンプト節と共有フォルダ `2026-10-21-新キャラ確定仕様/画像生成プロンプト.txt`）。生成結果を受け取り、背景除去・`public/assets/` への取り込み・Remotion側の差し替えまでが後続工程
+- **設定シート加工ルートも整備済み（2026-10-21）**：設定シート3枚から立ち絵を切り出し・背景除去・差し色塗り（`scripts/elder-character-art.py`）→ Remotionで動き（`src/elder/ElderShortIntro.tsx`）。試作ショート（1080×1920・20秒・無音＋字幕・3体の自己紹介）を作成し `Transfer/エルダーチャンネル/2026-10-21-試作ショート/` へ共有済み。GPT生成が受入された場合は公式素材へ差し替えるか、本ルートを正式版の足場にするかを本人判断で決める
 - **2026-10-21 実施メモ（中止）**：Gemini画像API（`gemini-3-pro-image` → `gemini-2.5-flash-image`）を5回試行し全件HTTP429（クォータ/モデル利用不可）で画像0枚。この経路は承認外的自発実行であり、**Gemini画像生成は採用しない**（記録のみ・`sources/elder-channel-characters-imagegen-2026-10-21.json`、スクリプト `scripts/generate-elder-characters-gemini.py` は再実行しない）
 - 生成が通り次第、生成物は `public/assets/drafts/elder-characters-2026-10-21/`（set-v1／homer-v1／judd-v1／kent-v1）へ保存される。プロンプトは下記と同一
 
