@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-21",
+  "approval": "本人「進める」で男性ナレ短編試聴を承認、既存キーあり/.env作成/設定確認後に実行",
+  "scope": "1候補1回の生成と必要検証。本人聴取/本編差替え/共有は未実施。",
+  "request": {
+    "model": "gemini-3.8-flash-tts",
+    "input": [
+      {
+        "type": "user_input",
+        "content": [
+          {
+            "type": "text",
+            "text": "1997年3月、トヨタはTHS、トヨタハイブリッドシステムを発表しました。エンジン、モーターと発電機を、動力分割装置でつなぐ仕組みです。その年の12月、初代プリウスが発売されました。本格的な量産開発から発売までは、約2年。構想を、一台の車として送り出したのです。",
+            "annotations": [
+              {
+                "type": "speech_metadata",
+                "style": "日本語の落ち着いた男性ナレーション。低めで温かみがあり、人に説明する自然な話し方。過度な演技や誇張、ニュースのような硬い読みは避ける。文の意味のまとまりで抑揚と短い間を付け、説明を急がない。台詞は省略・追加せず正確に読む。THSはティーエイチエスと読む。"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "response_format": {
+      "type": "audio"
+    },
+    "generation_config": {
+      "speech_config": [
+        {
+          "voice": "Charon"
+        }
+      ]
+    }
+  },
+  "result": {
+    "task": "Gemini TTS pilot 1 Candidate/1 Generation (2-6-b1 male narration)",
+    "date": "2026-10-21",
+    "requestFile": "output/gemini-tts-pilot-2026-10-21/request.json (sent as-is)",
+    "targetModel": "gemini-3.8-flash-tts",
+    "voice": "Charon",
+    "status": "ok",
+    "unverified": [
+      "音質の聴感・正しい全文読み・苔自然さは本人確認待ち（自動値では断定しない）",
+      "billing: 本人プロジェクトの実請求額/無料枠の適用はusageのみから部分記録"
+    ],
+    "leftoverTemps": [],
+    "notes": [],
+    "keySource": ".env",
+    "inputTextLen": 131,
+    "inputTextSha256-16": "6d00e62699d3a908",
+    "voiceJsonBeatTextLen": 131,
+    "textMatchesVoiceJson_2-6-b1": true,
+    "baselineSecondsExpected": 24.202666666666666,
+    "modelsCheck": {
+      "targetFound": true,
+      "ttsModelNames": [
+        "gemini-2.5-flash-preview-tts",
+        "gemini-2.5-pro-preview-tts",
+        "gemini-3.1-flash-tts-preview",
+        "gemini-3.8-flash-lite-tts",
+        "gemini-3.8-flash-tts"
+      ],
+      "totalKnown": 63
+    },
+    "postHttpStatus": 200,
+    "responseId": "v1_ChdaMFhZYXRtYkc5R012cjBQdnRIWGlBOBIXWjBYWWF0bWJHOUdNdnIwUHZ0SFhpQTg",
+    "responseModel": "gemini-3.8-flash-tts",
+    "usage": {
+      "total_tokens": 825,
+      "total_input_tokens": 77,
+      "total_cached_tokens": 0,
+      "total_output_tokens": 748,
+      "total_tool_use_tokens": 0,
+      "total_thought_tokens": 0
+    },
+    "audioSummary": {
+      "mime": "audio/wav",
+      "bytes": 1442278,
+      "sha256": "620cef6e08a7c2833655713bcc741898677569233c5782efc3c0d329c57f23cc",
+      "file": "output/gemini-tts-pilot-2026-10-21/gemini-charon-2-6-b1.wav"
+    },
+    "generated": {
+      "format": "RIFF/WAVE(PCM16)",
+      "channels": 1,
+      "sampleWidthBytes": 2,
+      "sampleRateHz": 24000,
+      "frames": 718080,
+      "seconds": 29.92,
+      "peakDBFS": -1.67,
+      "rmsDBFS": -19.49,
+      "nonSilent": true
+    },
+    "baseline": {
+      "format": "RIFF/WAVE(PCM16)",
+      "channels": 1,
+      "sampleWidthBytes": 2,
+      "sampleRateHz": 24000,
+      "frames": 580864,
+      "seconds": 24.2027,
+      "peakDBFS": -1.41,
+      "rmsDBFS": -21.33,
+      "nonSilent": true
+    },
+    "durationDeltaSeconds": 5.7173,
+    "failureCount": 0,
+    "failures": []
+  },
+  "mainAcceptance": {
+    "shaAndBytesMatch": true,
+    "technicalStatus": "試聴用WAVとして受入",
+    "listeningStatus": "未確認（Main/本人の自然さ・全文読み判定は別）",
+    "comparisonCaution": "Geminiは29.92秒、VOICEVOX24.2027秒。GeminiのRMSは約1.84dB高く、音量と間の違いを分けて比較する。時間伸縮なし。",
+    "estimatedApiChargeUsd": 0.0067705,
+    "billingStatus": "公式表示単価とusageからの試算。実請求/無料枠適用は未確認。",
+    "failureCounters": "動画33/次35、通信10/次15。今回失敗0。"
+  },
+  "references": [
+    "https://ai.google.dev/gemini-api/docs/speech-generation",
+    "https://ai.google.dev/gemini-api/docs/pricing",
+    "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts"
+  ],
+  "baselineSource": "public/audio/longform-toyota01-v10/2-6-b1.wav",
+  "artifactsDirectory": "output/gemini-tts-pilot-2026-10-21",
+  "secretHandling": "APIキーは.env（Git除外/mode600）、値は記録しない。"
+}
