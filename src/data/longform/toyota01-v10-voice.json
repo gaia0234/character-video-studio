@@ -1,0 +1,3501 @@
+{
+  "note": "本人「一度作ってから修正します」（2026-10-20）。完成版台本v1の全章60sceneを初稿V10用に取り込み。字幕（text）は算用数字の原文、spokenTextはVOICEVOX読替えのみ。beat間の間0.3s・字幕は30〜40字目安で切替。ナレ2＝男声2 速度1.04/pitch-0.06/intonation0.75、ミーノ1.06、カーノ0.9、ルーノ1.04（V9承認値を踏襲）。",
+  "spec": {
+    "fps": 30,
+    "startSeconds": 0.4,
+    "tailSeconds": 0.5,
+    "beatPauseSeconds": 0.3
+  },
+  "characters": {
+    "ナレ2": {
+      "name": "男声2",
+      "style": 10000,
+      "model": "n0",
+      "credit": "VOICEVOX Nemo",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    "ミーノ": {
+      "name": "櫻歌ミコ",
+      "style": 43,
+      "model": "11"
+    },
+    "カーノ": {
+      "name": "冥鳴ひまり",
+      "style": 14,
+      "model": "1"
+    },
+    "ルーノ": {
+      "name": "雨晴はう",
+      "style": 10,
+      "model": "0"
+    }
+  },
+  "beats": [
+    {
+      "id": "0-1-b1",
+      "sceneId": "0-1",
+      "speaker": "ミーノ",
+      "text": "世界は、EVの時代って聞くけど、日本は遅れていないの？",
+      "spokenText": "世界は、イーブイの時代って聞くけど、日本は遅れていないの？",
+      "voiceSpeed": 1.06,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/0-1-b1.wav",
+        "seconds": 4.768,
+        "generatedFor": "[\"ミーノ\",\"世界は、イーブイの時代って聞くけど、日本は遅れていないの？\",1.06]"
+      }
+    },
+    {
+      "id": "0-2-b1",
+      "sceneId": "0-2",
+      "speaker": "カーノ",
+      "text": "そんなことはないみたいですよ。トヨタのハイブリッドは、これまで世界に広がってきた技術です。",
+      "spokenText": "そんなことはないみたいですよ。トヨタのハイブリッドは、これまで世界に広がってきた技術です。",
+      "voiceSpeed": 0.9,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/0-2-b1.wav",
+        "seconds": 7.1786666666666665,
+        "generatedFor": "[\"カーノ\",\"そんなことはないみたいですよ。トヨタのハイブリッドは、これまで世界に広がってきた技術です。\",0.9]"
+      }
+    },
+    {
+      "id": "0-3-b1",
+      "sceneId": "0-3",
+      "speaker": "ルーノ",
+      "text": "それじゃあ、トヨタのハイブリッドの歴史を、ひもといてみよう！",
+      "spokenText": "それじゃあ、トヨタのハイブリッドの歴史を、ひもといてみよう！",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/0-3-b1.wav",
+        "seconds": 4.384,
+        "generatedFor": "[\"ルーノ\",\"それじゃあ、トヨタのハイブリッドの歴史を、ひもといてみよう！\",1.04]"
+      }
+    },
+    {
+      "id": "0-4-b1",
+      "sceneId": "0-4",
+      "speaker": "ナレ2",
+      "text": "1997年12月。日本は、二つの答えを出した。",
+      "spokenText": "一九九七年十二月。日本は、二つの答えを出した。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/0-4-b1.wav",
+        "seconds": 4.992,
+        "generatedFor": "[\"ナレ2\",\"一九九七年十二月。日本は、二つの答えを出した。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "0-5-b1",
+      "sceneId": "0-5",
+      "speaker": "ナレ2",
+      "text": "京都の会議場では、世界が温暖化の枠組みを決め始めた。",
+      "spokenText": "京都の会議場では、世界が温暖化の枠組みを決め始めた。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/0-5-b1.wav",
+        "seconds": 4.234666666666667,
+        "generatedFor": "[\"ナレ2\",\"京都の会議場では、世界が温暖化の枠組みを決め始めた。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "0-6-b1",
+      "sceneId": "0-6",
+      "speaker": "ナレ2",
+      "text": "一方、トヨタからも、一台の車が出た。",
+      "spokenText": "一方、トヨタからも、一台の車が出た。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/0-6-b1.wav",
+        "seconds": 3.68,
+        "generatedFor": "[\"ナレ2\",\"一方、トヨタからも、一台の車が出た。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "0-7-b1",
+      "sceneId": "0-7",
+      "speaker": "ナレ2",
+      "text": "それからの29年。トヨタのハイブリッドは、技術を磨きながら広がってきた。",
+      "spokenText": "それからの29年。トヨタのハイブリッドは、技術を磨きながら広がってきた。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/0-7-b1.wav",
+        "seconds": 5.728,
+        "generatedFor": "[\"ナレ2\",\"それからの29年。トヨタのハイブリッドは、技術を磨きながら広がってきた。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "0-8-b1",
+      "sceneId": "0-8",
+      "speaker": "ナレ2",
+      "text": "電気で走る車という選択肢が広がるなか、ハイブリッドの役割は問い直されてきた。",
+      "spokenText": "電気で走る車という選択肢が広がるなか、ハイブリッドの役割は問い直されてきた。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/0-8-b1.wav",
+        "seconds": 5.578666666666667,
+        "generatedFor": "[\"ナレ2\",\"電気で走る車という選択肢が広がるなか、ハイブリッドの役割は問い直されてきた。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "0-9-b1",
+      "sceneId": "0-9",
+      "speaker": "ナレ2",
+      "text": "しかし2025年5月21日。トヨタは、PHEVに新しい第6世代を載せた新型RAV4を発表しました。",
+      "spokenText": "しかし二〇二五年五月二十一日。トヨタは、ピーエイチイーブイに新しい第6世代を載せた新型ラブフォーを発表しました。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/0-9-b1.wav",
+        "seconds": 8.821333333333333,
+        "generatedFor": "[\"ナレ2\",\"しかし二〇二五年五月二十一日。トヨタは、ピーエイチイーブイに新しい第6世代を載せた新型ラブフォーを発表しました。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "0-10-b1",
+      "sceneId": "0-10",
+      "speaker": "ナレ2",
+      "text": "物語は、29年前に戻る。",
+      "spokenText": "物語は、29年前に戻る。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/0-10-b1.wav",
+        "seconds": 2.688,
+        "generatedFor": "[\"ナレ2\",\"物語は、29年前に戻る。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "1-2-b1",
+      "sceneId": "1-2",
+      "speaker": "ナレ2",
+      "text": "1997年12月11日。京都で、京都議定書が採択された。",
+      "spokenText": "一九九七年十二月十一日。京都で、京都議定書が採択された。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/1-2-b1.wav",
+        "seconds": 6.208,
+        "generatedFor": "[\"ナレ2\",\"一九九七年十二月十一日。京都で、京都議定書が採択された。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "1-3-b1",
+      "sceneId": "1-3",
+      "speaker": "ナレ2",
+      "text": "京都議定書は、先進国などに温室効果ガスの削減義務を課す枠組みでした。",
+      "spokenText": "京都議定書は、先進国などに温室効果ガスの削減義務を課す枠組みでした。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/1-3-b1.wav",
+        "seconds": 5.429333333333333,
+        "generatedFor": "[\"ナレ2\",\"京都議定書は、先進国などに温室効果ガスの削減義務を課す枠組みでした。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "1-4-b1",
+      "sceneId": "1-4",
+      "speaker": "ナレ2",
+      "text": "車から出るCO2も減らす課題になります。トヨタの答えは、エンジンとモーターを組み合わせる仕組みでした。プリウスの開発は、この会議よりも前から進んでいました。",
+      "spokenText": "車から出る二酸化炭素も減らす課題になります。トヨタの答えは、エンジンとモーターを組み合わせる仕組みでした。プリウスの開発は、この会議よりも前から進んでいました。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/1-4-b1.wav",
+        "seconds": 11.52,
+        "generatedFor": "[\"ナレ2\",\"車から出る二酸化炭素も減らす課題になります。トヨタの答えは、エンジンとモーターを組み合わせる仕組みでした。プリウスの開発は、この会議よりも前から進んでいました。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "1-5-b1",
+      "sceneId": "1-5",
+      "speaker": "ナレ2",
+      "text": "1997年12月。プリウスが発売された。世界初の量産ハイブリッド乗用車。",
+      "spokenText": "一九九七年十二月。プリウスが発売された。世界初の量産ハイブリッド乗用車。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/1-5-b1.wav",
+        "seconds": 6.858666666666666,
+        "generatedFor": "[\"ナレ2\",\"一九九七年十二月。プリウスが発売された。世界初の量産ハイブリッド乗用車。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "1-6-b1",
+      "sceneId": "1-6",
+      "speaker": "ナレ2",
+      "text": "2015年1月。トヨタは燃料電池の特許、5,680件を無償で開放した。",
+      "spokenText": "二〇一五年一月。トヨタは燃料電池の特許、5千680件を無償で開放した。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/1-6-b1.wav",
+        "seconds": 6.816,
+        "generatedFor": "[\"ナレ2\",\"二〇一五年一月。トヨタは燃料電池の特許、5千680件を無償で開放した。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "1-7-b1",
+      "sceneId": "1-7",
+      "speaker": "ナレ2",
+      "text": "2019年4月。電動化の特許、約23,740件を無償開放。期限は2030年末。",
+      "spokenText": "二〇一九年四月。電動化の特許、約2万3千740件を無償開放。期限は2030年末。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/1-7-b1.wav",
+        "seconds": 8.693333333333333,
+        "generatedFor": "[\"ナレ2\",\"二〇一九年四月。電動化の特許、約2万3千740件を無償開放。期限は2030年末。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "1-8-b1",
+      "sceneId": "1-8",
+      "speaker": "ナレ2",
+      "text": "技は独り占めせず、道を開けるために配る。それがトヨタの選択だった。",
+      "spokenText": "技は独り占めせず、道を開けるために配る。それがトヨタの選択だった。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/1-8-b1.wav",
+        "seconds": 5.184,
+        "generatedFor": "[\"ナレ2\",\"技は独り占めせず、道を開けるために配る。それがトヨタの選択だった。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "1-9-b1",
+      "sceneId": "1-9",
+      "speaker": "ナレ2",
+      "text": "2020年1月。トヨタのハイブリッド累計は、1,500万台を超えた。",
+      "spokenText": "二〇二〇年一月。トヨタのハイブリッド累計は、1千5百万台を超えた。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/1-9-b1.wav",
+        "seconds": 5.792,
+        "generatedFor": "[\"ナレ2\",\"二〇二〇年一月。トヨタのハイブリッド累計は、1千5百万台を超えた。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "1-10-b1",
+      "sceneId": "1-10",
+      "speaker": "ナレ2",
+      "text": "29年前の、一台の答え。それが、今のトヨタを作っている。",
+      "spokenText": "29年前の、一台の答え。それが、今のトヨタを作っている。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/1-10-b1.wav",
+        "seconds": 5.418666666666667,
+        "generatedFor": "[\"ナレ2\",\"29年前の、一台の答え。それが、今のトヨタを作っている。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "2-1-b1",
+      "sceneId": "2-1",
+      "speaker": "ナレ2",
+      "text": "1993年、トヨタの社内で、21世紀にふさわしい車を考える動きが始まりました。この取り組みが、後のG21です。当時は、燃費の改良と言えばエンジンの力が中心。量産ハイブリッド乗用車は、どこにもありませんでした。",
+      "spokenText": "一九九三年、トヨタの社内で、21世紀にふさわしい車を考える動きが始まりました。この取り組みが、後のジートゥエンティワンです。当時は、燃費の改良と言えばエンジンの力が中心。量産ハイブリッド乗用車は、どこにもありませんでした。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/2-1-b1.wav",
+        "seconds": 18.346666666666668,
+        "generatedFor": "[\"ナレ2\",\"一九九三年、トヨタの社内で、21世紀にふさわしい車を考える動きが始まりました。この取り組みが、後のジートゥエンティワンです。当時は、燃費の改良と言えばエンジンの力が中心。量産ハイブリッド乗用車は、どこにもありませんでした。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "2-2-b1",
+      "sceneId": "2-2",
+      "speaker": "ナレ2",
+      "text": "G21が最初に決めた目標は、燃費を1.5倍にすること。しかし研究開発の責任者から、2倍に引き上げる指示が出ました。",
+      "spokenText": "ジートゥエンティワンが最初に決めた目標は、燃費を1.5倍にすること。しかし研究開発の責任者から、2倍に引き上げる指示が出ました。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/2-2-b1.wav",
+        "seconds": 9.386666666666667,
+        "generatedFor": "[\"ナレ2\",\"ジートゥエンティワンが最初に決めた目標は、燃費を1.5倍にすること。しかし研究開発の責任者から、2倍に引き上げる指示が出ました。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "2-2-b2",
+      "sceneId": "2-2",
+      "speaker": "ミーノ",
+      "text": "エンジンの改良だけでは、届かない数字ですね。",
+      "spokenText": "エンジンの改良だけでは、届かない数字ですね。",
+      "voiceSpeed": 1.06,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/2-2-b2.wav",
+        "seconds": 3.466666666666667,
+        "generatedFor": "[\"ミーノ\",\"エンジンの改良だけでは、届かない数字ですね。\",1.06]"
+      }
+    },
+    {
+      "id": "2-3-b1",
+      "sceneId": "2-3",
+      "speaker": "ナレ2",
+      "text": "エンジンとモーターを組み合わせる、ハイブリッド方式。これが答えになりつつありました。1994年夏、G21の基本コンセプトが承認されました。量産へ進めるには、明確な形を持たせる必要がありました。",
+      "spokenText": "エンジンとモーターを組み合わせる、ハイブリッド方式。これが答えになりつつありました。一九九四年夏、ジートゥエンティワンの基本コンセプトが承認されました。量産へ進めるには、明確な形を持たせる必要がありました。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/2-3-b1.wav",
+        "seconds": 15.541333333333334,
+        "generatedFor": "[\"ナレ2\",\"エンジンとモーターを組み合わせる、ハイブリッド方式。これが答えになりつつありました。一九九四年夏、ジートゥエンティワンの基本コンセプトが承認されました。量産へ進めるには、明確な形を持たせる必要がありました。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "2-3-b2",
+      "sceneId": "2-3",
+      "speaker": "カーノ",
+      "text": "その後、1995年秋の東京モーターショーへ、コンセプトカーを出すことが決まります。",
+      "spokenText": "その後、一九九五年秋の東京モーターショーへ、コンセプトカーを出すことが決まります。",
+      "voiceSpeed": 0.9,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/2-3-b2.wav",
+        "seconds": 7.488,
+        "generatedFor": "[\"カーノ\",\"その後、一九九五年秋の東京モーターショーへ、コンセプトカーを出すことが決まります。\",0.9]"
+      }
+    },
+    {
+      "id": "2-4-b1",
+      "sceneId": "2-4",
+      "speaker": "ナレ2",
+      "text": "1995年、東京モーターショーへの出展に向けて試作が進みます。完成したコンセプトカーは、電気をためる装置にキャパシタを使っていました。これは、量産された初代プリウスの電池とは異なる構成です。",
+      "spokenText": "一九九五年、東京モーターショーへの出展に向けて試作が進みます。完成したコンセプトカーは、電気をためる装置にキャパシタを使っていました。これは、量産された初代プリウスの電池とは異なる構成です。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/2-4-b1.wav",
+        "seconds": 14.944,
+        "generatedFor": "[\"ナレ2\",\"一九九五年、東京モーターショーへの出展に向けて試作が進みます。完成したコンセプトカーは、電気をためる装置にキャパシタを使っていました。これは、量産された初代プリウスの電池とは異なる構成です。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "2-4-b2",
+      "sceneId": "2-4",
+      "speaker": "ミーノ",
+      "text": "試作しながら、仕組みを絞り込んだんですね。",
+      "spokenText": "試作しながら、仕組みを絞り込んだんですね。",
+      "voiceSpeed": 1.06,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/2-4-b2.wav",
+        "seconds": 3.2213333333333334,
+        "generatedFor": "[\"ミーノ\",\"試作しながら、仕組みを絞り込んだんですね。\",1.06]"
+      }
+    },
+    {
+      "id": "2-5-b1",
+      "sceneId": "2-5",
+      "speaker": "ナレ2",
+      "text": "1996年12月、電池パックのため、トヨタと松下電器産業の合弁会社が設立されます。1997年1月には、電動車両の開発を一つにまとめる新部門が発足。前例のない仕組みを量産するため、部品だけでなく、開発の体制も整えられました。",
+      "spokenText": "一九九六年十二月、電池パックのため、トヨタと松下電器産業の合弁会社が設立されます。一九九七年一月には、電動車両の開発を一つにまとめる新部門が発足。前例のない仕組みを量産するため、部品だけでなく、開発の体制も整えられました。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/2-5-b1.wav",
+        "seconds": 20.874666666666666,
+        "generatedFor": "[\"ナレ2\",\"一九九六年十二月、電池パックのため、トヨタと松下電器産業の合弁会社が設立されます。一九九七年一月には、電動車両の開発を一つにまとめる新部門が発足。前例のない仕組みを量産するため、部品だけでなく、開発の体制も整えられました。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "2-5-b2",
+      "sceneId": "2-5",
+      "speaker": "カーノ",
+      "text": "電池を作る準備も、並行して進めたんですね。",
+      "spokenText": "電池を作る準備も、並行して進めたんですね。",
+      "voiceSpeed": 0.9,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/2-5-b2.wav",
+        "seconds": 3.8613333333333335,
+        "generatedFor": "[\"カーノ\",\"電池を作る準備も、並行して進めたんですね。\",0.9]"
+      }
+    },
+    {
+      "id": "2-6-b1",
+      "sceneId": "2-6",
+      "speaker": "ナレ2",
+      "text": "1997年3月、トヨタはTHS、トヨタハイブリッドシステムを発表しました。エンジン、モーターと発電機を、動力分割装置でつなぐ仕組みです。その年の12月、初代プリウスが発売されました。本格的な量産開発から発売までは、約2年。構想を、一台の車として送り出したのです。",
+      "spokenText": "一九九七年三月、トヨタはティーエイチエス、トヨタハイブリッドシステムを発表しました。エンジン、モーターと発電機を、動力分割装置でつなぐ仕組みです。その年の12月、初代プリウスが発売されました。本格的な量産開発から発売までは、約2年。構想を、一台の車として送り出したのです。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/2-6-b1.wav",
+        "seconds": 24.202666666666666,
+        "generatedFor": "[\"ナレ2\",\"一九九七年三月、トヨタはティーエイチエス、トヨタハイブリッドシステムを発表しました。エンジン、モーターと発電機を、動力分割装置でつなぐ仕組みです。その年の12月、初代プリウスが発売されました。本格的な量産開発から発売までは、約2年。構想を、一台の車として送り出したのです。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "2-6-b2",
+      "sceneId": "2-6",
+      "speaker": "ミーノ",
+      "text": "作るだけでなく、売り続けられる形にしたんですね。",
+      "spokenText": "作るだけでなく、売り続けられる形にしたんですね。",
+      "voiceSpeed": 1.06,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/2-6-b2.wav",
+        "seconds": 3.904,
+        "generatedFor": "[\"ミーノ\",\"作るだけでなく、売り続けられる形にしたんですね。\",1.06]"
+      }
+    },
+    {
+      "id": "3-1-b1",
+      "sceneId": "3-1",
+      "speaker": "ナレ2",
+      "text": "まず、発進と低速走行。ここで動くのはモーターです。静かに走り出し、街中ではエンジンが回り続けない場面が生まれます。",
+      "spokenText": "まず、発進と低速走行。ここで動くのはモーターです。静かに走り出し、街中ではエンジンが回り続けない場面が生まれます。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/3-1-b1.wav",
+        "seconds": 9.76,
+        "generatedFor": "[\"ナレ2\",\"まず、発進と低速走行。ここで動くのはモーターです。静かに走り出し、街中ではエンジンが回り続けない場面が生まれます。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "3-1-b2",
+      "sceneId": "3-1",
+      "speaker": "カーノ",
+      "text": "モーターとエンジンの分担は、電池の残量や暖機の状況によっても変わります。",
+      "spokenText": "モーターとエンジンの分担は、電池の残量や暖機の状況によっても変わります。",
+      "voiceSpeed": 0.9,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/3-1-b2.wav",
+        "seconds": 6.112,
+        "generatedFor": "[\"カーノ\",\"モーターとエンジンの分担は、電池の残量や暖機の状況によっても変わります。\",0.9]"
+      }
+    },
+    {
+      "id": "3-2-b1",
+      "sceneId": "3-2",
+      "speaker": "ナレ2",
+      "text": "次に加速。アクセルを踏むとエンジンが力を出し、モーターが補助します。モーターは瞬時に力を出せるため、押し出しを強める手助けをします。",
+      "spokenText": "次に加速。アクセルを踏むとエンジンが力を出し、モーターが補助します。モーターは瞬時に力を出せるため、押し出しを強める手助けをします。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/3-2-b1.wav",
+        "seconds": 9.930666666666667,
+        "generatedFor": "[\"ナレ2\",\"次に加速。アクセルを踏むとエンジンが力を出し、モーターが補助します。モーターは瞬時に力を出せるため、押し出しを強める手助けをします。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "3-2-b2",
+      "sceneId": "3-2",
+      "speaker": "ミーノ",
+      "text": "エンジンにモーターが乗る、という連携ですね。",
+      "spokenText": "エンジンにモーターが乗る、という連携ですね。",
+      "voiceSpeed": 1.06,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/3-2-b2.wav",
+        "seconds": 3.1893333333333334,
+        "generatedFor": "[\"ミーノ\",\"エンジンにモーターが乗る、という連携ですね。\",1.06]"
+      }
+    },
+    {
+      "id": "3-3-b1",
+      "sceneId": "3-3",
+      "speaker": "ナレ2",
+      "text": "減速とブレーキ。ここがハイブリッドの大きな強みです。普通は摩擦熱として捨てられるエネルギーを、回生という仕組みで電気に変え、電池へ戻します。",
+      "spokenText": "減速とブレーキ。ここがハイブリッドの大きな強みです。普通は摩擦熱として捨てられるエネルギーを、回生という仕組みで電気に変え、電池へ戻します。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/3-3-b1.wav",
+        "seconds": 10.72,
+        "generatedFor": "[\"ナレ2\",\"減速とブレーキ。ここがハイブリッドの大きな強みです。普通は摩擦熱として捨てられるエネルギーを、回生という仕組みで電気に変え、電池へ戻します。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "3-3-b2",
+      "sceneId": "3-3",
+      "speaker": "カーノ",
+      "text": "走って得た力を捨てずに回収できるのは、エンジンとモーターの組み合わせならではの動きです。",
+      "spokenText": "走って得た力を捨てずに回収できるのは、エンジンとモーターの組み合わせならではの動きです。",
+      "voiceSpeed": 0.9,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/3-3-b2.wav",
+        "seconds": 6.912,
+        "generatedFor": "[\"カーノ\",\"走って得た力を捨てずに回収できるのは、エンジンとモーターの組み合わせならではの動きです。\",0.9]"
+      }
+    },
+    {
+      "id": "3-4-b1",
+      "sceneId": "3-4",
+      "speaker": "ナレ2",
+      "text": "信号待ちなどで車が止まる時。エンジンを止めて待つことができます。再び走り出すときは、モーターが静かに発進します。",
+      "spokenText": "信号待ちなどで車が止まる時。エンジンを止めて待つことができます。再び走り出すときは、モーターが静かに発進します。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/3-4-b1.wav",
+        "seconds": 8.672,
+        "generatedFor": "[\"ナレ2\",\"信号待ちなどで車が止まる時。エンジンを止めて待つことができます。再び走り出すときは、モーターが静かに発進します。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "3-4-b2",
+      "sceneId": "3-4",
+      "speaker": "ルーノ",
+      "text": "必要なタイミングでエンジンが動き、停車中の燃料消費は抑えられます。",
+      "spokenText": "必要なタイミングでエンジンが動き、停車中の燃料消費は抑えられます。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/3-4-b2.wav",
+        "seconds": 5.333333333333333,
+        "generatedFor": "[\"ルーノ\",\"必要なタイミングでエンジンが動き、停車中の燃料消費は抑えられます。\",1.04]"
+      }
+    },
+    {
+      "id": "3-5-b1",
+      "sceneId": "3-5",
+      "speaker": "ナレ2",
+      "text": "もう1つの特徴が電池です。プラグから充電はしません。走行中に生まれた電気を、エンジンの発電と回生でためて、走りの中で電池残量を保ちます。",
+      "spokenText": "もう1つの特徴が電池です。プラグから充電はしません。走行中に生まれた電気を、エンジンの発電と回生でためて、走りの中で電池残量を保ちます。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/3-5-b1.wav",
+        "seconds": 11.370666666666667,
+        "generatedFor": "[\"ナレ2\",\"もう1つの特徴が電池です。プラグから充電はしません。走行中に生まれた電気を、エンジンの発電と回生でためて、走りの中で電池残量を保ちます。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "3-5-b2",
+      "sceneId": "3-5",
+      "speaker": "ミーノ",
+      "text": "ガソリンだけで補給しながら、電気も走りの主軸になっているんですね。",
+      "spokenText": "ガソリンだけで補給しながら、電気も走りの主軸になっているんですね。",
+      "voiceSpeed": 1.06,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/3-5-b2.wav",
+        "seconds": 4.928,
+        "generatedFor": "[\"ミーノ\",\"ガソリンだけで補給しながら、電気も走りの主軸になっているんですね。\",1.06]"
+      }
+    },
+    {
+      "id": "3-6-b1",
+      "sceneId": "3-6",
+      "speaker": "ナレ2",
+      "text": "この連携を支えるのが、動力分割装置です。エンジンの力を、車輪を動かす側と発電する側に分けます。モーターとエンジンの働きを調整し、得意な場面を組み合わせて燃料の消費を抑えます。電池も、ためた電気を使うだけでなく、回収して再び使う役割を担っています。",
+      "spokenText": "この連携を支えるのが、動力分割装置です。エンジンの力を、車輪を動かす側と発電する側に分けます。モーターとエンジンの働きを調整し、得意な場面を組み合わせて燃料の消費を抑えます。電池も、ためた電気を使うだけでなく、回収して再び使う役割を担っています。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/3-6-b1.wav",
+        "seconds": 20.533333333333335,
+        "generatedFor": "[\"ナレ2\",\"この連携を支えるのが、動力分割装置です。エンジンの力を、車輪を動かす側と発電する側に分けます。モーターとエンジンの働きを調整し、得意な場面を組み合わせて燃料の消費を抑えます。電池も、ためた電気を使うだけでなく、回収して再び使う役割を担っています。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "3-6-b2",
+      "sceneId": "3-6",
+      "speaker": "カーノ",
+      "text": "力をどう使い分けるかが、工夫なんですね。",
+      "spokenText": "力をどう使い分けるかが、工夫なんですね。",
+      "voiceSpeed": 0.9,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/3-6-b2.wav",
+        "seconds": 3.445333333333333,
+        "generatedFor": "[\"カーノ\",\"力をどう使い分けるかが、工夫なんですね。\",0.9]"
+      }
+    },
+    {
+      "id": "4-1-b1",
+      "sceneId": "4-1",
+      "speaker": "ナレ2",
+      "text": "2000年。初代プリウスは、小規模な改良を経て、北米と欧州へ発売されます。日本で生まれた一台が、海外の市場へ向かいました。",
+      "spokenText": "二〇〇〇年。初代プリウスは、小規模な改良を経て、北米と欧州へ発売されます。日本で生まれた一台が、海外の市場へ向かいました。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/4-1-b1.wav",
+        "seconds": 10.176,
+        "generatedFor": "[\"ナレ2\",\"二〇〇〇年。初代プリウスは、小規模な改良を経て、北米と欧州へ発売されます。日本で生まれた一台が、海外の市場へ向かいました。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "4-1-b2",
+      "sceneId": "4-1",
+      "speaker": "ルーノ",
+      "text": "燃費の高さが評価された形です。",
+      "spokenText": "燃費の高さが評価された形です。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/4-1-b2.wav",
+        "seconds": 2.6133333333333333,
+        "generatedFor": "[\"ルーノ\",\"燃費の高さが評価された形です。\",1.04]"
+      }
+    },
+    {
+      "id": "4-2-b1",
+      "sceneId": "4-2",
+      "speaker": "ナレ2",
+      "text": "2003年9月。第2代プリウスが登場します。システムはTHS IIへ進化し、高圧回路へ対応したモーター出力が向上。",
+      "spokenText": "二〇〇三年九月。第2代プリウスが登場します。システムはティーエイチエス・ツーへ進化し、高圧回路へ対応したモーター出力が向上。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/4-2-b1.wav",
+        "seconds": 9.536,
+        "generatedFor": "[\"ナレ2\",\"二〇〇三年九月。第2代プリウスが登場します。システムはティーエイチエス・ツーへ進化し、高圧回路へ対応したモーター出力が向上。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "4-2-b2",
+      "sceneId": "4-2",
+      "speaker": "カーノ",
+      "text": "走りと環境性能の両方を一段上へ引き上げました。",
+      "spokenText": "走りと環境性能の両方を一段上へ引き上げました。",
+      "voiceSpeed": 0.9,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/4-2-b2.wav",
+        "seconds": 4.341333333333333,
+        "generatedFor": "[\"カーノ\",\"走りと環境性能の両方を一段上へ引き上げました。\",0.9]"
+      }
+    },
+    {
+      "id": "4-3-b1",
+      "sceneId": "4-3",
+      "speaker": "ナレ2",
+      "text": "ハイブリッドの搭載は、プリウスにとどまりません。2001年にはミニバンのエスティマ。2005年にはSUV。2006年、2007年にはレクサスのセダンにも採用されました。",
+      "spokenText": "ハイブリッドの搭載は、プリウスにとどまりません。二〇〇一年にはミニバンのエスティマ。二〇〇五年にはSUV。二〇〇六年、二〇〇七年にはレクサスのセダンにも採用されました。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/4-3-b1.wav",
+        "seconds": 12.938666666666666,
+        "generatedFor": "[\"ナレ2\",\"ハイブリッドの搭載は、プリウスにとどまりません。二〇〇一年にはミニバンのエスティマ。二〇〇五年にはSUV。二〇〇六年、二〇〇七年にはレクサスのセダンにも採用されました。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "4-3-b2",
+      "sceneId": "4-3",
+      "speaker": "ミーノ",
+      "text": "ミニバンやSUVにも、広がりました。",
+      "spokenText": "ミニバンやSUVにも、広がりました。",
+      "voiceSpeed": 1.06,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/4-3-b2.wav",
+        "seconds": 3.1146666666666665,
+        "generatedFor": "[\"ミーノ\",\"ミニバンやSUVにも、広がりました。\",1.06]"
+      }
+    },
+    {
+      "id": "4-4-b1",
+      "sceneId": "4-4",
+      "speaker": "ナレ2",
+      "text": "生産も海外へ広がりました。2005年に中国。2006年にアメリカ。2010年にはイギリスで量産が始まります。",
+      "spokenText": "生産も海外へ広がりました。二〇〇五年に中国。二〇〇六年にアメリカ。二〇一〇年にはイギリスで量産が始まります。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/4-4-b1.wav",
+        "seconds": 8.821333333333333,
+        "generatedFor": "[\"ナレ2\",\"生産も海外へ広がりました。二〇〇五年に中国。二〇〇六年にアメリカ。二〇一〇年にはイギリスで量産が始まります。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "4-4-b2",
+      "sceneId": "4-4",
+      "speaker": "ルーノ",
+      "text": "日本で磨かれた仕組みが、海外の工場でも作れるようになりました。",
+      "spokenText": "日本で磨かれた仕組みが、海外の工場でも作れるようになりました。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/4-4-b2.wav",
+        "seconds": 4.938666666666666,
+        "generatedFor": "[\"ルーノ\",\"日本で磨かれた仕組みが、海外の工場でも作れるようになりました。\",1.04]"
+      }
+    },
+    {
+      "id": "4-5-b1",
+      "sceneId": "4-5",
+      "speaker": "ナレ2",
+      "text": "販売台数も積み重なっていきます。トヨタのハイブリッド車は、2007年5月に累計100万台。2009年9月に200万台、2011年2月には300万台を超えました。ここでの数字は、その年だけの販売ではなく、発売以来の合計です。",
+      "spokenText": "販売台数も積み重なっていきます。トヨタのハイブリッド車は、二〇〇七年五月に累計100万台。二〇〇九年九月に200万台、二〇一一年二月には300万台を超えました。ここでの数字は、その年だけの販売ではなく、発売以来の合計です。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/4-5-b1.wav",
+        "seconds": 18.624,
+        "generatedFor": "[\"ナレ2\",\"販売台数も積み重なっていきます。トヨタのハイブリッド車は、二〇〇七年五月に累計100万台。二〇〇九年九月に200万台、二〇一一年二月には300万台を超えました。ここでの数字は、その年だけの販売ではなく、発売以来の合計です。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "4-5-b2",
+      "sceneId": "4-5",
+      "speaker": "カーノ",
+      "text": "一台ずつの積み重ねが、こうして見えてくるんですね。",
+      "spokenText": "一台ずつの積み重ねが、こうして見えてくるんですね。",
+      "voiceSpeed": 0.9,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/4-5-b2.wav",
+        "seconds": 4.042666666666666,
+        "generatedFor": "[\"カーノ\",\"一台ずつの積み重ねが、こうして見えてくるんですね。\",0.9]"
+      }
+    },
+    {
+      "id": "4-6-b1",
+      "sceneId": "4-6",
+      "speaker": "ナレ2",
+      "text": "そして2020年1月。トヨタのハイブリッド累計は、1,500万台を超えました。23年間で台数はこうして積み上がっています。",
+      "spokenText": "そして二〇二〇年一月。トヨタのハイブリッド累計は、1千5百万台を超えました。23年間で台数はこうして積み上がっています。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/4-6-b1.wav",
+        "seconds": 9.706666666666667,
+        "generatedFor": "[\"ナレ2\",\"そして二〇二〇年一月。トヨタのハイブリッド累計は、1千5百万台を超えました。23年間で台数はこうして積み上がっています。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "4-6-b2",
+      "sceneId": "4-6",
+      "speaker": "ミーノ",
+      "text": "一台から始まった挑戦が、世界の普通の車へ育っているんですね。",
+      "spokenText": "一台から始まった挑戦が、世界の普通の車へ育っているんですね。",
+      "voiceSpeed": 1.06,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/4-6-b2.wav",
+        "seconds": 5.1946666666666665,
+        "generatedFor": "[\"ミーノ\",\"一台から始まった挑戦が、世界の普通の車へ育っているんですね。\",1.06]"
+      }
+    },
+    {
+      "id": "5-1-b1",
+      "sceneId": "5-1",
+      "speaker": "ナレ2",
+      "text": "2015年1月。トヨタは燃料電池車に必要な特許、約5,680件を無償で使用させていくと発表しました。",
+      "spokenText": "二〇一五年一月。トヨタは燃料電池車に必要な特許、約5千680件を無償で使用させていくと発表しました。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/5-1-b1.wav",
+        "seconds": 8.864,
+        "generatedFor": "[\"ナレ2\",\"二〇一五年一月。トヨタは燃料電池車に必要な特許、約5千680件を無償で使用させていくと発表しました。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "5-1-b2",
+      "sceneId": "5-1",
+      "speaker": "ミーノ",
+      "text": "新しい技術を、他社とともに広げる選択をしたんですね。",
+      "spokenText": "新しい技術を、他社とともに広げる選択をしたんですね。",
+      "voiceSpeed": 1.06,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/5-1-b2.wav",
+        "seconds": 4.288,
+        "generatedFor": "[\"ミーノ\",\"新しい技術を、他社とともに広げる選択をしたんですね。\",1.06]"
+      }
+    },
+    {
+      "id": "5-2-b1",
+      "sceneId": "5-2",
+      "speaker": "ナレ2",
+      "text": "無償で使うにも、トヨタとの契約は必要でした。2015年の発表では、燃料電池車に関わる特許の許諾は、初期導入期の2020年頃までとされました。一方、水素ステーション関連の約70件は無期限です。",
+      "spokenText": "無償で使うにも、トヨタとの契約は必要でした。二〇一五年の発表では、燃料電池車に関わる特許の許諾は、初期導入期の二〇二〇年頃までとされました。一方、水素ステーション関連の約70件は無期限です。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/5-2-b1.wav",
+        "seconds": 16.384,
+        "generatedFor": "[\"ナレ2\",\"無償で使うにも、トヨタとの契約は必要でした。二〇一五年の発表では、燃料電池車に関わる特許の許諾は、初期導入期の二〇二〇年頃までとされました。一方、水素ステーション関連の約70件は無期限です。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "5-2-b2",
+      "sceneId": "5-2",
+      "speaker": "カーノ",
+      "text": "無料でも、対象と期限を分けて見る必要があるんですね。",
+      "spokenText": "無料でも、対象と期限を分けて見る必要があるんですね。",
+      "voiceSpeed": 0.9,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/5-2-b2.wav",
+        "seconds": 4.48,
+        "generatedFor": "[\"カーノ\",\"無料でも、対象と期限を分けて見る必要があるんですね。\",0.9]"
+      }
+    },
+    {
+      "id": "5-3-b1",
+      "sceneId": "5-3",
+      "speaker": "ナレ2",
+      "text": "2019年4月、トヨタは電動化に関わる約23,740件の特許について、無償で使用を許諾すると発表します。モーター、電力を調整するパワーコントロールユニット、システム制御などが対象です。発表された期限は2030年末。利用には契約が必要です。",
+      "spokenText": "二〇一九年四月、トヨタは電動化に関わる約2万3千740件の特許について、無償で使用を許諾すると発表します。モーター、電力を調整するパワーコントロールユニット、システム制御などが対象です。発表された期限は2030年末。利用には契約が必要です。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/5-3-b1.wav",
+        "seconds": 20.373333333333335,
+        "generatedFor": "[\"ナレ2\",\"二〇一九年四月、トヨタは電動化に関わる約2万3千740件の特許について、無償で使用を許諾すると発表します。モーター、電力を調整するパワーコントロールユニット、システム制御などが対象です。発表された期限は2030年末。利用には契約が必要です。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "5-3-b2",
+      "sceneId": "5-3",
+      "speaker": "ルーノ",
+      "text": "今度は、水素の車だけの話ではないんですね。",
+      "spokenText": "今度は、水素の車だけの話ではないんですね。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/5-3-b2.wav",
+        "seconds": 3.712,
+        "generatedFor": "[\"ルーノ\",\"今度は、水素の車だけの話ではないんですね。\",1.04]"
+      }
+    },
+    {
+      "id": "5-4-b1",
+      "sceneId": "5-4",
+      "speaker": "ナレ2",
+      "text": "2015年は燃料電池車、2019年は電動化に関わる幅広い技術。同じ「特許の無償開放」という言葉でも、対象が違います。件数だけを並べると、同じ制度が拡大したように見えますが、それぞれの発表の範囲と条件を読む必要があります。",
+      "spokenText": "二〇一五年は燃料電池車、二〇一九年は電動化に関わる幅広い技術。同じ「特許の無償開放」という言葉でも、対象が違います。件数だけを並べると、同じ制度が拡大したように見えますが、それぞれの発表の範囲と条件を読む必要があります。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/5-4-b1.wav",
+        "seconds": 19.797333333333334,
+        "generatedFor": "[\"ナレ2\",\"二〇一五年は燃料電池車、二〇一九年は電動化に関わる幅広い技術。同じ「特許の無償開放」という言葉でも、対象が違います。件数だけを並べると、同じ制度が拡大したように見えますが、それぞれの発表の範囲と条件を読む必要があります。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "5-4-b2",
+      "sceneId": "5-4",
+      "speaker": "カーノ",
+      "text": "年と件数だけでなく、何の技術なのかも大事ですね。",
+      "spokenText": "年と件数だけでなく、何の技術なのかも大事ですね。",
+      "voiceSpeed": 0.9,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/5-4-b2.wav",
+        "seconds": 4.565333333333333,
+        "generatedFor": "[\"カーノ\",\"年と件数だけでなく、何の技術なのかも大事ですね。\",0.9]"
+      }
+    },
+    {
+      "id": "5-5-b1",
+      "sceneId": "5-5",
+      "speaker": "ナレ2",
+      "text": "トヨタが特許の外に用意したのは、有料の技術支援でした。他社がトヨタのモーターや電池、パワーコントロールユニットを使うとき、その車に合う調整や性能設定を手伝う。",
+      "spokenText": "トヨタが特許の外に用意したのは、有料の技術支援でした。他社がトヨタのモーターや電池、パワーコントロールユニットを使うとき、その車に合う調整や性能設定を手伝う。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/5-5-b1.wav",
+        "seconds": 12.224,
+        "generatedFor": "[\"ナレ2\",\"トヨタが特許の外に用意したのは、有料の技術支援でした。他社がトヨタのモーターや電池、パワーコントロールユニットを使うとき、その車に合う調整や性能設定を手伝う。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "5-5-b2",
+      "sceneId": "5-5",
+      "speaker": "ミーノ",
+      "text": "無償の特許と、契約ベースの技術支援。二本立ての支援なんですね。",
+      "spokenText": "無償の特許と、契約ベースの技術支援。二本立ての支援なんですね。",
+      "voiceSpeed": 1.06,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/5-5-b2.wav",
+        "seconds": 5.6,
+        "generatedFor": "[\"ミーノ\",\"無償の特許と、契約ベースの技術支援。二本立ての支援なんですね。\",1.06]"
+      }
+    },
+    {
+      "id": "5-6-b1",
+      "sceneId": "5-6",
+      "speaker": "ナレ2",
+      "text": "では、なぜここまで配るのでしょう。公式の発表に書かれているのは、電動車を広く社会へ広げる役割を担いたい、という考えです。",
+      "spokenText": "では、なぜここまで配るのでしょう。公式の発表に書かれているのは、電動車を広く社会へ広げる役割を担いたい、という考えです。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/5-6-b1.wav",
+        "seconds": 9.610666666666667,
+        "generatedFor": "[\"ナレ2\",\"では、なぜここまで配るのでしょう。公式の発表に書かれているのは、電動車を広く社会へ広げる役割を担いたい、という考えです。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "5-6-b2",
+      "sceneId": "5-6",
+      "speaker": "ルーノ",
+      "text": "独自に閉じ込めるより、市場が広がるほうが、技術も大きな力を持ちます。",
+      "spokenText": "独自に閉じ込めるより、市場が広がるほうが、技術も大きな力を持ちます。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/5-6-b2.wav",
+        "seconds": 5.76,
+        "generatedFor": "[\"ルーノ\",\"独自に閉じ込めるより、市場が広がるほうが、技術も大きな力を持ちます。\",1.04]"
+      }
+    },
+    {
+      "id": "6-1-b1",
+      "sceneId": "6-1",
+      "speaker": "ナレ2",
+      "text": "ここで、車の呼び方を整理しましょう。この動画で扱うHEVは、外から充電せず、ガソリンを補給して使うハイブリッドです。PHEVは、外部からも充電できるプラグインハイブリッド。エンジンとモーターの両方を持ちます。BEVは、エンジンを持たず、充電した電気でモーターを動かす車です。",
+      "spokenText": "ここで、車の呼び方を整理しましょう。この動画で扱うエイチイーブイは、外から充電せず、ガソリンを補給して使うハイブリッドです。ピーエイチイーブイは、外部からも充電できるプラグインハイブリッド。エンジンとモーターの両方を持ちます。ビーイーブイは、エンジンを持たず、充電した電気でモーターを動かす車です。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/6-1-b1.wav",
+        "seconds": 22.208,
+        "generatedFor": "[\"ナレ2\",\"ここで、車の呼び方を整理しましょう。この動画で扱うエイチイーブイは、外から充電せず、ガソリンを補給して使うハイブリッドです。ピーエイチイーブイは、外部からも充電できるプラグインハイブリッド。エンジンとモーターの両方を持ちます。ビーイーブイは、エンジンを持たず、充電した電気でモーターを動かす車です。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "6-1-b2",
+      "sceneId": "6-1",
+      "speaker": "ミーノ",
+      "text": "同じ電動車でも、電気のため方が違うんですね。",
+      "spokenText": "同じ電動車でも、電気のため方が違うんですね。",
+      "voiceSpeed": 1.06,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/6-1-b2.wav",
+        "seconds": 3.7013333333333334,
+        "generatedFor": "[\"ミーノ\",\"同じ電動車でも、電気のため方が違うんですね。\",1.06]"
+      }
+    },
+    {
+      "id": "6-2-b1",
+      "sceneId": "6-2",
+      "speaker": "ナレ2",
+      "text": "充電にかかる時間は、充電設備・車種・温度・残量で変わります。そのため、この車が生活の中で都合よく使えるかは、家で夜間に充電できるか、出先の充電設備が使えるかに左右されます。",
+      "spokenText": "充電にかかる時間は、充電設備・車種・温度・残量で変わります。そのため、この車が生活の中で都合よく使えるかは、家で夜間に充電できるか、出先の充電設備が使えるかに左右されます。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/6-2-b1.wav",
+        "seconds": 16.266666666666666,
+        "generatedFor": "[\"ナレ2\",\"充電にかかる時間は、充電設備・車種・温度・残量で変わります。そのため、この車が生活の中で都合よく使えるかは、家で夜間に充電できるか、出先の充電設備が使えるかに左右されます。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "6-2-b2",
+      "sceneId": "6-2",
+      "speaker": "ミーノ",
+      "text": "充電のできる環境まで含めて考えたほうがよさそうですね。",
+      "spokenText": "充電のできる環境まで含めて考えたほうがよさそうですね。",
+      "voiceSpeed": 1.06,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/6-2-b2.wav",
+        "seconds": 4.213333333333333,
+        "generatedFor": "[\"ミーノ\",\"充電のできる環境まで含めて考えたほうがよさそうですね。\",1.06]"
+      }
+    },
+    {
+      "id": "6-2-b3",
+      "sceneId": "6-2",
+      "speaker": "ナレ2",
+      "text": "そう見ると、充電環境まで含めた選び方が見えてきます。",
+      "spokenText": "そう見ると、充電環境まで含めた選び方が見えてきます。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/6-2-b3.wav",
+        "seconds": 4.1386666666666665,
+        "generatedFor": "[\"ナレ2\",\"そう見ると、充電環境まで含めた選び方が見えてきます。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "6-3-b1",
+      "sceneId": "6-3",
+      "speaker": "ナレ2",
+      "text": "環境への影響は、1つの視点だけでは決まりません。",
+      "spokenText": "環境への影響は、1つの視点だけでは決まりません。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/6-3-b1.wav",
+        "seconds": 3.6906666666666665,
+        "generatedFor": "[\"ナレ2\",\"環境への影響は、1つの視点だけでは決まりません。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "6-3-b2",
+      "sceneId": "6-3",
+      "speaker": "カーノ",
+      "text": "EVには走行時の排気がありません。電気を作るときのCO2は、電源構成によって変わります。",
+      "spokenText": "イーブイには走行時の排気がありません。電気を作るときの二酸化炭素は、電源構成によって変わります。",
+      "voiceSpeed": 0.9,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/6-3-b2.wav",
+        "seconds": 8.277333333333333,
+        "generatedFor": "[\"カーノ\",\"イーブイには走行時の排気がありません。電気を作るときの二酸化炭素は、電源構成によって変わります。\",0.9]"
+      }
+    },
+    {
+      "id": "6-3-b3",
+      "sceneId": "6-3",
+      "speaker": "ナレ2",
+      "text": "発電や製造を含めても、EVの排出量がガソリン車より低くなることは多い。ただ具体的な差は、比べる車種や電源などの条件で変わります。",
+      "spokenText": "発電や製造を含めても、イーブイの排出量がガソリン車より低くなることは多い。ただ具体的な差は、比べる車種や電源などの条件で変わります。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/6-3-b3.wav",
+        "seconds": 10.442666666666666,
+        "generatedFor": "[\"ナレ2\",\"発電や製造を含めても、イーブイの排出量がガソリン車より低くなることは多い。ただ具体的な差は、比べる車種や電源などの条件で変わります。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "6-4-b1",
+      "sceneId": "6-4",
+      "speaker": "ナレ2",
+      "text": "もう一つ大事なこと。合う車は、地域や使い方で変わります。都市に住む人、郊外に住む人。週末に長い距離を走る人、毎日通勤する人。",
+      "spokenText": "もう一つ大事なこと。合う車は、地域や使い方で変わります。都市に住む人、郊外に住む人。週末に長い距離を走る人、毎日通勤する人。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/6-4-b1.wav",
+        "seconds": 11.541333333333334,
+        "generatedFor": "[\"ナレ2\",\"もう一つ大事なこと。合う車は、地域や使い方で変わります。都市に住む人、郊外に住む人。週末に長い距離を走る人、毎日通勤する人。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "6-4-b2",
+      "sceneId": "6-4",
+      "speaker": "ルーノ",
+      "text": "同じ「電動化」でも、快適さや手軽さは違います。自分の生活に合う形を選ぶことが大事になります。",
+      "spokenText": "同じ「電動化」でも、快適さや手軽さは違います。自分の生活に合う形を選ぶことが大事になります。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/6-4-b2.wav",
+        "seconds": 8.810666666666666,
+        "generatedFor": "[\"ルーノ\",\"同じ「電動化」でも、快適さや手軽さは違います。自分の生活に合う形を選ぶことが大事になります。\",1.04]"
+      }
+    },
+    {
+      "id": "6-5-b1",
+      "sceneId": "6-5",
+      "speaker": "ナレ2",
+      "text": "2025年5月21日。トヨタは、新型RAV4を世界で初公開しました。",
+      "spokenText": "二〇二五年五月二十一日。トヨタは、新型ラブフォーを世界で初公開しました。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/6-5-b1.wav",
+        "seconds": 6.506666666666667,
+        "generatedFor": "[\"ナレ2\",\"二〇二五年五月二十一日。トヨタは、新型ラブフォーを世界で初公開しました。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "6-5-b2",
+      "sceneId": "6-5",
+      "speaker": "ミーノ",
+      "text": "プラグインハイブリッドに、初搭載となる第6世代システムが発表されました。",
+      "spokenText": "プラグインハイブリッドに、初搭載となる第6世代システムが発表されました。",
+      "voiceSpeed": 1.06,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/6-5-b2.wav",
+        "seconds": 5.706666666666667,
+        "generatedFor": "[\"ミーノ\",\"プラグインハイブリッドに、初搭載となる第6世代システムが発表されました。\",1.06]"
+      }
+    },
+    {
+      "id": "6-5-b3",
+      "sceneId": "6-5",
+      "speaker": "ナレ2",
+      "text": "外から充電できるPHEVへ、これまで磨いてきたハイブリッドの技術を引き継いだ形です。じつはここに、続けてきた挑戦のつながりが読み取れます。",
+      "spokenText": "外から充電できるピーエイチイーブイへ、これまで磨いてきたハイブリッドの技術を引き継いだ形です。じつはここに、続けてきた挑戦のつながりが読み取れます。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/6-5-b3.wav",
+        "seconds": 10.336,
+        "generatedFor": "[\"ナレ2\",\"外から充電できるピーエイチイーブイへ、これまで磨いてきたハイブリッドの技術を引き継いだ形です。じつはここに、続けてきた挑戦のつながりが読み取れます。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "6-6-b1",
+      "sceneId": "6-6",
+      "speaker": "ナレ2",
+      "text": "見どころは、エンジンか電気かという選択だけではありません。エンジンとモーターをどう組み合わせ、ためた電気をどう使うか。その工夫が、外から充電できる車にも生かされています。新型RAV4の発表は、ハイブリッドを磨いてきた流れをたどる、一つの手がかりになります。",
+      "spokenText": "見どころは、エンジンか電気かという選択だけではありません。エンジンとモーターをどう組み合わせ、ためた電気をどう使うか。その工夫が、外から充電できる車にも生かされています。新型ラブフォーの発表は、ハイブリッドを磨いてきた流れをたどる、一つの手がかりになります。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/6-6-b1.wav",
+        "seconds": 18.986666666666668,
+        "generatedFor": "[\"ナレ2\",\"見どころは、エンジンか電気かという選択だけではありません。エンジンとモーターをどう組み合わせ、ためた電気をどう使うか。その工夫が、外から充電できる車にも生かされています。新型ラブフォーの発表は、ハイブリッドを磨いてきた流れをたどる、一つの手がかりになります。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "6-6-b2",
+      "sceneId": "6-6",
+      "speaker": "カーノ",
+      "text": "名前は同じでも、中身は進化しているんですね。",
+      "spokenText": "名前は同じでも、中身は進化しているんですね。",
+      "voiceSpeed": 0.9,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/6-6-b2.wav",
+        "seconds": 3.8826666666666667,
+        "generatedFor": "[\"カーノ\",\"名前は同じでも、中身は進化しているんですね。\",0.9]"
+      }
+    },
+    {
+      "id": "7-1-b1",
+      "sceneId": "7-1",
+      "speaker": "ミーノ",
+      "text": "最初は、電気自動車でなければ遅れているのかなと思っていました。でも、ハイブリッドにも、モーターや電池、電気を使う技術が積み重なっていたんですね。",
+      "spokenText": "最初は、電気自動車でなければ遅れているのかなと思っていました。でも、ハイブリッドにも、モーターや電池、電気を使う技術が積み重なっていたんですね。",
+      "voiceSpeed": 1.06,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/7-1-b1.wav",
+        "seconds": 11.552,
+        "generatedFor": "[\"ミーノ\",\"最初は、電気自動車でなければ遅れているのかなと思っていました。でも、ハイブリッドにも、モーターや電池、電気を使う技術が積み重なっていたんですね。\",1.06]"
+      }
+    },
+    {
+      "id": "7-2-b1",
+      "sceneId": "7-2",
+      "speaker": "ナレ2",
+      "text": "技術は1つではありません。エンジンの改良、モーターの小型化、回生の効率、電池の性能。約30年にわたる実験と量産の中で磨かれてきました。それが今日の電動化の道です。この積み重ねを知ることが、電気で走る車の今を理解する入り口になります。",
+      "spokenText": "技術は1つではありません。エンジンの改良、モーターの小型化、回生の効率、電池の性能。約30年にわたる実験と量産の中で磨かれてきました。それが今日の電動化の道です。この積み重ねを知ることが、電気で走る車の今を理解する入り口になります。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/7-2-b1.wav",
+        "seconds": 19.285333333333334,
+        "generatedFor": "[\"ナレ2\",\"技術は1つではありません。エンジンの改良、モーターの小型化、回生の効率、電池の性能。約30年にわたる実験と量産の中で磨かれてきました。それが今日の電動化の道です。この積み重ねを知ることが、電気で走る車の今を理解する入り口になります。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    },
+    {
+      "id": "7-3-b1",
+      "sceneId": "7-3",
+      "speaker": "カーノ",
+      "text": "エンジンか電気か、その二択だけでは日本の歩みを捉えきれないですね。地域や使い方、電力や充電環境に合わせて選ぶ。その条件に合わせた視点こそ、大事になると感じました。",
+      "spokenText": "エンジンか電気か、その二択だけでは日本の歩みを捉えきれないですね。地域や使い方、電力や充電環境に合わせて選ぶ。その条件に合わせた視点こそ、大事になると感じました。",
+      "voiceSpeed": 0.9,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/7-3-b1.wav",
+        "seconds": 15.306666666666667,
+        "generatedFor": "[\"カーノ\",\"エンジンか電気か、その二択だけでは日本の歩みを捉えきれないですね。地域や使い方、電力や充電環境に合わせて選ぶ。その条件に合わせた視点こそ、大事になると感じました。\",0.9]"
+      }
+    },
+    {
+      "id": "7-4-b1",
+      "sceneId": "7-4",
+      "speaker": "ナレ2",
+      "text": "ハイブリッドは、エンジンだけでなく、電動化という技術を積み上げた答えの一つ。地域・使い方・電力や充電環境によって、選択肢は異なります。1997年から続く取り組みは、約30年にわたる実験と量産の繰り返しの中で磨かれてきました。それが、いま世界に広がる車種の幅と台数につながっています。1997年の、一台の答え。それが、今のトヨタを作っています。日本の技術の面白さを、これからも見届けましょう。",
+      "spokenText": "ハイブリッドは、エンジンだけでなく、電動化という技術を積み上げた答えの一つ。地域・使い方・電力や充電環境によって、選択肢は異なります。一九九七年から続く取り組みは、約30年にわたる実験と量産の繰り返しの中で磨かれてきました。それが、いま世界に広がる車種の幅と台数につながっています。一九九七年の、一台の答え。それが、今のトヨタを作っています。日本の技術の面白さを、これからも見届けましょう。",
+      "voiceSpeed": 1.04,
+      "pauseSeconds": 0.3,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75,
+      "audio": {
+        "src": "audio/longform-toyota01-v10/7-4-b1.wav",
+        "seconds": 34.32533333333333,
+        "generatedFor": "[\"ナレ2\",\"ハイブリッドは、エンジンだけでなく、電動化という技術を積み上げた答えの一つ。地域・使い方・電力や充電環境によって、選択肢は異なります。一九九七年から続く取り組みは、約30年にわたる実験と量産の繰り返しの中で磨かれてきました。それが、いま世界に広がる車種の幅と台数につながっています。一九九七年の、一台の答え。それが、今のトヨタを作っています。日本の技術の面白さを、これからも見届けましょう。\",1.04,{\"pitchScale\":-0.06,\"intonationScale\":0.75}]"
+      }
+    }
+  ],
+  "scenes": [
+    {
+      "id": "0-1",
+      "chapterNo": 0,
+      "chapter": "00｜冒頭の3人",
+      "year": null,
+      "visual": "openingTalk",
+      "plannedSeconds": 5.8,
+      "evidence": [],
+      "character": "miino",
+      "guide": "miino",
+      "beatIds": [
+        "0-1-b1"
+      ],
+      "cueTexts": [
+        [
+          "世界は、EVの時代って聞くけど、日本は遅れていないの？"
+        ]
+      ]
+    },
+    {
+      "id": "0-2",
+      "chapterNo": 0,
+      "chapter": "00｜冒頭の3人",
+      "year": null,
+      "visual": "openingTalk",
+      "plannedSeconds": 11.4,
+      "evidence": [
+        "F7"
+      ],
+      "character": "kano",
+      "guide": "kano",
+      "beatIds": [
+        "0-2-b1"
+      ],
+      "cueTexts": [
+        [
+          "そんなことはないみたいですよ。",
+          "トヨタのハイブリッドは、これまで世界に広がってきた技術です。"
+        ]
+      ]
+    },
+    {
+      "id": "0-3",
+      "chapterNo": 0,
+      "chapter": "00｜冒頭の3人",
+      "year": null,
+      "visual": "openingTalk",
+      "plannedSeconds": 6.6,
+      "evidence": [],
+      "character": "luno",
+      "guide": "luno",
+      "beatIds": [
+        "0-3-b1"
+      ],
+      "cueTexts": [
+        [
+          "それじゃあ、トヨタのハイブリッドの歴史を、ひもといてみよう！"
+        ]
+      ]
+    },
+    {
+      "id": "0-4",
+      "chapterNo": 0,
+      "chapter": "00｜冒頭の3人",
+      "year": null,
+      "visual": "answerTitle",
+      "plannedSeconds": 5.1,
+      "evidence": [
+        "F1",
+        "F6"
+      ],
+      "character": null,
+      "guide": null,
+      "beatIds": [
+        "0-4-b1"
+      ],
+      "cueTexts": [
+        [
+          "1997年12月。",
+          "日本は、二つの答えを出した。"
+        ]
+      ]
+    },
+    {
+      "id": "0-5",
+      "chapterNo": 0,
+      "chapter": "00｜冒頭の3人",
+      "year": "1997",
+      "visual": "conference",
+      "plannedSeconds": 5.7,
+      "evidence": [
+        "F1"
+      ],
+      "character": null,
+      "guide": null,
+      "beatIds": [
+        "0-5-b1"
+      ],
+      "cueTexts": [
+        [
+          "京都の会議場では、世界が温暖化の枠組みを決め始めた。"
+        ]
+      ]
+    },
+    {
+      "id": "0-6",
+      "chapterNo": 0,
+      "chapter": "00｜冒頭の3人",
+      "year": null,
+      "visual": "carReveal",
+      "plannedSeconds": 4.0,
+      "evidence": [
+        "F6"
+      ],
+      "sub": "トヨタ自体が造り上げた",
+      "stamp": "1997年12月",
+      "title": "初代プリウス",
+      "character": null,
+      "guide": null,
+      "beatIds": [
+        "0-6-b1"
+      ],
+      "cueTexts": [
+        [
+          "一方、トヨタからも、一台の車が出た。"
+        ]
+      ]
+    },
+    {
+      "id": "0-7",
+      "chapterNo": 0,
+      "chapter": "00｜冒頭の3人",
+      "year": null,
+      "visual": "timelineShow",
+      "plannedSeconds": 7.9,
+      "evidence": [
+        "F3",
+        "F9"
+      ],
+      "headline": "29年の流れ",
+      "stops": [
+        {
+          "t": "1997",
+          "d": "量産開始"
+        },
+        {
+          "t": "2000",
+          "d": "海外へ"
+        },
+        {
+          "t": "2015",
+          "d": "特許無償"
+        },
+        {
+          "t": "2019",
+          "d": "電動化へ"
+        },
+        {
+          "t": "2025",
+          "d": "第6世代"
+        }
+      ],
+      "character": null,
+      "guide": null,
+      "beatIds": [
+        "0-7-b1"
+      ],
+      "cueTexts": [
+        [
+          "それからの29年。",
+          "トヨタのハイブリッドは、技術を磨きながら広がってきた。"
+        ]
+      ]
+    },
+    {
+      "id": "0-8",
+      "chapterNo": 0,
+      "chapter": "00｜冒頭の3人",
+      "year": null,
+      "visual": "cardsRow",
+      "plannedSeconds": 8.3,
+      "evidence": [
+        "G1〜G3"
+      ],
+      "headline": "電動車の3形式",
+      "cards": [
+        {
+          "title": "HEV",
+          "body": "ガソリン補給・充電せず",
+          "tone": "blue"
+        },
+        {
+          "title": "PHEV",
+          "body": "外部からも充電可",
+          "tone": "gold"
+        },
+        {
+          "title": "BEV",
+          "body": "充電した電気のみ",
+          "tone": "green"
+        }
+      ],
+      "character": null,
+      "guide": null,
+      "beatIds": [
+        "0-8-b1"
+      ],
+      "cueTexts": [
+        [
+          "電気で走る車という選択肢が広がるなか、ハイブリッドの役割は問い直されてきた。"
+        ]
+      ]
+    },
+    {
+      "id": "0-9",
+      "chapterNo": 0,
+      "chapter": "00｜冒頭の3人",
+      "year": "2025",
+      "visual": "carAnnounce",
+      "plannedSeconds": 10.8,
+      "evidence": [
+        "F12"
+      ],
+      "sub": "PHEVに搭載",
+      "stamp": "2025.5.21　新型RAV4発表",
+      "title": "第6世代システム",
+      "character": null,
+      "guide": null,
+      "beatIds": [
+        "0-9-b1"
+      ],
+      "cueTexts": [
+        [
+          "しかし2025年5月21日。",
+          "トヨタは、PHEVに新しい第6世代を載せた新型RAV4を発表しました。"
+        ]
+      ]
+    },
+    {
+      "id": "0-10",
+      "chapterNo": 0,
+      "chapter": "00｜冒頭の3人",
+      "year": null,
+      "visual": "timelineShow",
+      "plannedSeconds": 2.6,
+      "evidence": [
+        "F1",
+        "F6"
+      ],
+      "headline": "1997年の画面へ",
+      "back": true,
+      "character": null,
+      "guide": null,
+      "beatIds": [
+        "0-10-b1"
+      ],
+      "cueTexts": [
+        [
+          "物語は、29年前に戻る。"
+        ]
+      ]
+    },
+    {
+      "id": "1-1",
+      "chapterNo": 1,
+      "chapter": "01｜1997年、二つの答え",
+      "year": null,
+      "visual": "chapterCard",
+      "cardNo": "第1章",
+      "cardText": "1997年、二つの答え",
+      "plannedSeconds": 1.5,
+      "evidence": [],
+      "character": null,
+      "guide": null,
+      "beatIds": [],
+      "cueTexts": []
+    },
+    {
+      "id": "1-2",
+      "chapterNo": 1,
+      "chapter": "01｜1997年、二つの答え",
+      "year": "1997",
+      "visual": "conference",
+      "plannedSeconds": 6.1,
+      "evidence": [
+        "F1"
+      ],
+      "stamp": "1997.12.11　採択",
+      "character": null,
+      "guide": null,
+      "beatIds": [
+        "1-2-b1"
+      ],
+      "cueTexts": [
+        [
+          "1997年12月11日。",
+          "京都で、京都議定書が採択された。"
+        ]
+      ]
+    },
+    {
+      "id": "1-3",
+      "chapterNo": 1,
+      "chapter": "01｜1997年、二つの答え",
+      "year": null,
+      "visual": "globeCO2",
+      "plannedSeconds": 7.5,
+      "evidence": [
+        "F1"
+      ],
+      "character": null,
+      "guide": null,
+      "beatIds": [
+        "1-3-b1"
+      ],
+      "cueTexts": [
+        [
+          "京都議定書は、先進国などに温室効果ガスの削減義務を課す枠組みでした。"
+        ]
+      ]
+    },
+    {
+      "id": "1-4",
+      "chapterNo": 1,
+      "chapter": "01｜1997年、二つの答え",
+      "year": null,
+      "visual": "twoTracks",
+      "plannedSeconds": 17.1,
+      "evidence": [
+        "F1",
+        "F4"
+      ],
+      "sub": "別々の時系列",
+      "character": null,
+      "guide": null,
+      "beatIds": [
+        "1-4-b1"
+      ],
+      "cueTexts": [
+        [
+          "車から出るCO2も減らす課題になります。",
+          "トヨタの答えは、エンジンとモーターを組み合わせる仕組みでした。",
+          "プリウスの開発は、この会議よりも前から進んでいました。"
+        ]
+      ]
+    },
+    {
+      "id": "1-5",
+      "chapterNo": 1,
+      "chapter": "01｜1997年、二つの答え",
+      "year": null,
+      "visual": "worldFirstStamps",
+      "plannedSeconds": 7.9,
+      "evidence": [
+        "F4",
+        "F6"
+      ],
+      "stamps": [
+        "世界初",
+        "量産"
+      ],
+      "character": null,
+      "guide": null,
+      "beatIds": [
+        "1-5-b1"
+      ],
+      "cueTexts": [
+        [
+          "1997年12月。",
+          "プリウスが発売された。",
+          "世界初の量産ハイブリッド乗用車。"
+        ]
+      ]
+    },
+    {
+      "id": "1-6",
+      "chapterNo": 1,
+      "chapter": "01｜1997年、二つの答え",
+      "year": "2015",
+      "visual": "patentFly2015",
+      "plannedSeconds": 7.7,
+      "evidence": [
+        "F10"
+      ],
+      "patentCount": 5680,
+      "character": null,
+      "guide": null,
+      "beatIds": [
+        "1-6-b1"
+      ],
+      "cueTexts": [
+        [
+          "2015年1月。",
+          "トヨタは燃料電池の特許、5,680件を無償で開放した。"
+        ]
+      ]
+    },
+    {
+      "id": "1-7",
+      "chapterNo": 1,
+      "chapter": "01｜1997年、二つの答え",
+      "year": "2019",
+      "visual": "patentSwarm2019",
+      "plannedSeconds": 8.6,
+      "evidence": [
+        "F11"
+      ],
+      "patentCount": 23740,
+      "character": null,
+      "guide": null,
+      "beatIds": [
+        "1-7-b1"
+      ],
+      "cueTexts": [
+        [
+          "2019年4月。",
+          "電動化の特許、約23,740件を無償開放。",
+          "期限は2030年末。"
+        ]
+      ]
+    },
+    {
+      "id": "1-8",
+      "chapterNo": 1,
+      "chapter": "01｜1997年、二つの答え",
+      "year": null,
+      "visual": "freeStamp",
+      "plannedSeconds": 7.2,
+      "evidence": [
+        "F10",
+        "F11"
+      ],
+      "stamp": "無償",
+      "character": null,
+      "guide": null,
+      "beatIds": [
+        "1-8-b1"
+      ],
+      "cueTexts": [
+        [
+          "技は独り占めせず、道を開けるために配る。",
+          "それがトヨタの選択だった。"
+        ]
+      ]
+    },
+    {
+      "id": "1-9",
+      "chapterNo": 1,
+      "chapter": "01｜1997年、二つの答え",
+      "year": "2020",
+      "visual": "count15m",
+      "plannedSeconds": 7.5,
+      "evidence": [
+        "F7"
+      ],
+      "character": null,
+      "guide": null,
+      "beatIds": [
+        "1-9-b1"
+      ],
+      "cueTexts": [
+        [
+          "2020年1月。",
+          "トヨタのハイブリッド累計は、1,500万台を超えた。"
+        ]
+      ]
+    },
+    {
+      "id": "1-10",
+      "chapterNo": 1,
+      "chapter": "01｜1997年、二つの答え",
+      "year": null,
+      "visual": "timelineShow",
+      "plannedSeconds": 6.1,
+      "evidence": [
+        "F6",
+        "F7"
+      ],
+      "headline": "1997年と現代を重ねる",
+      "character": null,
+      "guide": null,
+      "beatIds": [
+        "1-10-b1"
+      ],
+      "cueTexts": [
+        [
+          "29年前の、一台の答え。",
+          "それが、今のトヨタを作っている。"
+        ]
+      ]
+    },
+    {
+      "id": "2-0",
+      "chapterNo": 2,
+      "chapter": "02｜まだ答えのなかった開発",
+      "year": null,
+      "visual": "chapterCard",
+      "cardNo": "第2章",
+      "cardText": "まだ答えのなかった開発",
+      "plannedSeconds": 1.5,
+      "evidence": [],
+      "character": null,
+      "guide": null,
+      "beatIds": [],
+      "cueTexts": []
+    },
+    {
+      "id": "2-1",
+      "chapterNo": 2,
+      "chapter": "02｜まだ答えのなかった開発",
+      "year": "1993",
+      "visual": "g21Meeting",
+      "plannedSeconds": 22.8,
+      "evidence": [
+        "F4",
+        "F5"
+      ],
+      "character": null,
+      "guide": null,
+      "beatIds": [
+        "2-1-b1"
+      ],
+      "cueTexts": [
+        [
+          "1993年、トヨタの社内で、21世紀にふさわしい車を考える動きが始まりました。",
+          "この取り組みが、後のG21です。",
+          "当時は、燃費の改良と言えばエンジンの力が中心。",
+          "量産ハイブリッド乗用車は、どこにもありませんでした。"
+        ]
+      ]
+    },
+    {
+      "id": "2-2",
+      "chapterNo": 2,
+      "chapter": "02｜まだ答えのなかった開発",
+      "year": null,
+      "visual": "cardsRow",
+      "plannedSeconds": 17.3,
+      "evidence": [
+        "F2"
+      ],
+      "headline": "目標の引き上げ",
+      "cards": [
+        {
+          "title": "1.5倍",
+          "body": "G21が最初に決めた目標",
+          "tone": "blue"
+        },
+        {
+          "title": "2倍",
+          "body": "責任者からの指示",
+          "tone": "red"
+        }
+      ],
+      "arrow": true,
+      "character": null,
+      "guide": "miino",
+      "beatIds": [
+        "2-2-b1",
+        "2-2-b2"
+      ],
+      "cueTexts": [
+        [
+          "G21が最初に決めた目標は、燃費を1.5倍にすること。",
+          "しかし研究開発の責任者から、2倍に引き上げる指示が出ました。"
+        ],
+        [
+          "エンジンの改良だけでは、届かない数字ですね。"
+        ]
+      ]
+    },
+    {
+      "id": "2-3",
+      "chapterNo": 2,
+      "chapter": "02｜まだ答えのなかった開発",
+      "year": null,
+      "visual": "flowDiagram",
+      "plannedSeconds": 31.5,
+      "evidence": [
+        "F2",
+        "F5"
+      ],
+      "flow": {
+        "nodes": [
+          {
+            "label": "基本コンセプト承認",
+            "t": "1994夏",
+            "x": 300,
+            "y": 240,
+            "icon": "people"
+          },
+          {
+            "label": "東京モーターショー",
+            "t": "1995秋",
+            "x": 1220,
+            "y": 240,
+            "icon": "car"
+          }
+        ],
+        "edges": [
+          {
+            "from": 0,
+            "to": 1,
+            "label": "出展へ"
+          }
+        ]
+      },
+      "character": null,
+      "guide": "kano",
+      "beatIds": [
+        "2-3-b1",
+        "2-3-b2"
+      ],
+      "cueTexts": [
+        [
+          "エンジンとモーターを組み合わせる、ハイブリッド方式。",
+          "これが答えになりつつありました。",
+          "1994年夏、G21の基本コンセプトが承認されました。",
+          "量産へ進めるには、明確な形を持たせる必要がありました。"
+        ],
+        [
+          "その後、1995年秋の東京モーターショーへ、コンセプトカーを出すことが決まります。"
+        ]
+      ]
+    },
+    {
+      "id": "2-4",
+      "chapterNo": 2,
+      "chapter": "02｜まだ答えのなかった開発",
+      "year": "1995",
+      "visual": "prototypeWorkshop",
+      "plannedSeconds": 25.4,
+      "evidence": [
+        "F5"
+      ],
+      "character": null,
+      "guide": "miino",
+      "beatIds": [
+        "2-4-b1",
+        "2-4-b2"
+      ],
+      "cueTexts": [
+        [
+          "1995年、東京モーターショーへの出展に向けて試作が進みます。",
+          "完成したコンセプトカーは、電気をためる装置にキャパシタを使っていました。",
+          "これは、量産された初代プリウスの電池とは異なる構成です。"
+        ],
+        [
+          "試作しながら、仕組みを絞り込んだんですね。"
+        ]
+      ]
+    },
+    {
+      "id": "2-5",
+      "chapterNo": 2,
+      "chapter": "02｜まだ答えのなかった開発",
+      "year": "1996",
+      "visual": "flowDiagram",
+      "plannedSeconds": 29.7,
+      "evidence": [
+        "F5"
+      ],
+      "flow": {
+        "nodes": [
+          {
+            "label": "トヨタ自動車",
+            "x": 250,
+            "y": 150,
+            "icon": "factory"
+          },
+          {
+            "label": "松下電器産業",
+            "x": 250,
+            "y": 380,
+            "icon": "factory"
+          },
+          {
+            "label": "合弁会社",
+            "t": "1996.12",
+            "x": 1150,
+            "y": 265,
+            "icon": "battery"
+          }
+        ],
+        "edges": [
+          {
+            "from": 0,
+            "to": 2,
+            "label": "合弁"
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "label": "電池パック"
+          }
+        ],
+        "note": "1997年1月　電動車両開発の新部門"
+      },
+      "character": null,
+      "guide": "kano",
+      "beatIds": [
+        "2-5-b1",
+        "2-5-b2"
+      ],
+      "cueTexts": [
+        [
+          "1996年12月、電池パックのため、トヨタと松下電器産業の合弁会社が設立されます。",
+          "1997年1月には、電動車両の開発を一つにまとめる新部門が発足。",
+          "前例のない仕組みを量産するため、部品だけでなく、開発の体制も整えられました。"
+        ],
+        [
+          "電池を作る準備も、並行して進めたんですね。"
+        ]
+      ]
+    },
+    {
+      "id": "2-6",
+      "chapterNo": 2,
+      "chapter": "02｜まだ答えのなかった開発",
+      "year": "1997",
+      "visual": "flowDiagram",
+      "plannedSeconds": 33.9,
+      "evidence": [
+        "F3",
+        "F6"
+      ],
+      "stamp": "1997年3月　THS発表",
+      "flow": {
+        "nodes": [
+          {
+            "label": "エンジン",
+            "x": 230,
+            "y": 150,
+            "icon": "engine"
+          },
+          {
+            "label": "モーター・発電機",
+            "x": 230,
+            "y": 380,
+            "icon": "motor"
+          },
+          {
+            "label": "動力分割装置",
+            "x": 760,
+            "y": 265,
+            "icon": "split"
+          },
+          {
+            "label": "車輪",
+            "x": 1290,
+            "y": 265,
+            "icon": "wheel"
+          }
+        ],
+        "edges": [
+          {
+            "from": 0,
+            "to": 2
+          },
+          {
+            "from": 1,
+            "to": 2
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "label": "分けて使う"
+          }
+        ],
+        "note": "1997年12月　初代プリウス発売"
+      },
+      "character": null,
+      "guide": "miino",
+      "beatIds": [
+        "2-6-b1",
+        "2-6-b2"
+      ],
+      "cueTexts": [
+        [
+          "1997年3月、トヨタはTHS、トヨタハイブリッドシステムを発表しました。",
+          "エンジン、モーターと発電機を、動力分割装置でつなぐ仕組みです。",
+          "その年の12月、初代プリウスが発売されました。",
+          "本格的な量産開発から発売までは、約2年。",
+          "構想を、一台の車として送り出したのです。"
+        ],
+        [
+          "作るだけでなく、売り続けられる形にしたんですね。"
+        ]
+      ]
+    },
+    {
+      "id": "3-0",
+      "chapterNo": 3,
+      "chapter": "03｜エンジンとモーターが助け合う",
+      "year": null,
+      "visual": "chapterCard",
+      "cardNo": "第3章",
+      "cardText": "エンジンとモーターが助け合う",
+      "plannedSeconds": 1.5,
+      "evidence": [],
+      "character": null,
+      "guide": null,
+      "beatIds": [],
+      "cueTexts": []
+    },
+    {
+      "id": "3-1",
+      "chapterNo": 3,
+      "chapter": "03｜エンジンとモーターが助け合う",
+      "year": null,
+      "visual": "driveShot",
+      "plannedSeconds": 21.6,
+      "evidence": [
+        "G10"
+      ],
+      "headline": "低速走行：静かに発進",
+      "character": null,
+      "guide": "kano",
+      "beatIds": [
+        "3-1-b1",
+        "3-1-b2"
+      ],
+      "cueTexts": [
+        [
+          "まず、発進と低速走行。",
+          "ここで動くのはモーターです。",
+          "静かに走り出し、街中ではエンジンが回り続けない場面が生まれます。"
+        ],
+        [
+          "モーターとエンジンの分担は、電池の残量や暖機の状況によっても変わります。"
+        ]
+      ]
+    },
+    {
+      "id": "3-2",
+      "chapterNo": 3,
+      "chapter": "03｜エンジンとモーターが助け合う",
+      "year": null,
+      "visual": "driveShot",
+      "plannedSeconds": 19.2,
+      "evidence": [
+        "G10"
+      ],
+      "headline": "加速：エンジン＋モーター",
+      "character": null,
+      "guide": "miino",
+      "beatIds": [
+        "3-2-b1",
+        "3-2-b2"
+      ],
+      "cueTexts": [
+        [
+          "次に加速。",
+          "アクセルを踏むとエンジンが力を出し、モーターが補助します。",
+          "モーターは瞬時に力を出せるため、押し出しを強める手助けをします。"
+        ],
+        [
+          "エンジンにモーターが乗る、という連携ですね。"
+        ]
+      ]
+    },
+    {
+      "id": "3-3",
+      "chapterNo": 3,
+      "chapter": "03｜エンジンとモーターが助け合う",
+      "year": null,
+      "visual": "flowDiagram",
+      "plannedSeconds": 26.5,
+      "evidence": [
+        "G10"
+      ],
+      "headline": "回生",
+      "flow": {
+        "nodes": [
+          {
+            "label": "車輪",
+            "t": "減速時",
+            "x": 300,
+            "y": 260,
+            "icon": "wheel"
+          },
+          {
+            "label": "モーター",
+            "x": 770,
+            "y": 260,
+            "icon": "motor"
+          },
+          {
+            "label": "電池",
+            "x": 1230,
+            "y": 260,
+            "icon": "battery"
+          }
+        ],
+        "edges": [
+          {
+            "from": 0,
+            "to": 1,
+            "label": "回生"
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "label": "電気で戻す"
+          }
+        ]
+      },
+      "character": null,
+      "guide": "kano",
+      "beatIds": [
+        "3-3-b1",
+        "3-3-b2"
+      ],
+      "cueTexts": [
+        [
+          "減速とブレーキ。",
+          "ここがハイブリッドの大きな強みです。",
+          "普通は摩擦熱として捨てられるエネルギーを、回生という仕組みで電気に変え、",
+          "電池へ戻します。"
+        ],
+        [
+          "走って得た力を捨てずに回収できるのは、エンジンとモーターの組み合わせならではの動きです。"
+        ]
+      ]
+    },
+    {
+      "id": "3-4",
+      "chapterNo": 3,
+      "chapter": "03｜エンジンとモーターが助け合う",
+      "year": null,
+      "visual": "driveShot",
+      "plannedSeconds": 19.5,
+      "evidence": [
+        "G10"
+      ],
+      "headline": "信号待ち：再始動",
+      "character": null,
+      "guide": "luno",
+      "beatIds": [
+        "3-4-b1",
+        "3-4-b2"
+      ],
+      "cueTexts": [
+        [
+          "信号待ちなどで車が止まる時。",
+          "エンジンを止めて待つことができます。",
+          "再び走り出すときは、モーターが静かに発進します。"
+        ],
+        [
+          "必要なタイミングでエンジンが動き、停車中の燃料消費は抑えられます。"
+        ]
+      ]
+    },
+    {
+      "id": "3-5",
+      "chapterNo": 3,
+      "chapter": "03｜エンジンとモーターが助け合う",
+      "year": null,
+      "visual": "gauges",
+      "plannedSeconds": 22.0,
+      "evidence": [
+        "G10",
+        "G8"
+      ],
+      "headline": "電池とガソリン",
+      "character": null,
+      "guide": "miino",
+      "beatIds": [
+        "3-5-b1",
+        "3-5-b2"
+      ],
+      "cueTexts": [
+        [
+          "もう1つの特徴が電池です。",
+          "プラグから充電はしません。",
+          "走行中に生まれた電気を、エンジンの発電と回生でためて、走りの中で電池残量を保ちます。"
+        ],
+        [
+          "ガソリンだけで補給しながら、電気も走りの主軸になっているんですね。"
+        ]
+      ]
+    },
+    {
+      "id": "3-6",
+      "chapterNo": 3,
+      "chapter": "03｜エンジンとモーターが助け合う",
+      "year": null,
+      "visual": "flowDiagram",
+      "plannedSeconds": 32.1,
+      "evidence": [
+        "F3"
+      ],
+      "headline": "動力分割",
+      "flow": {
+        "nodes": [
+          {
+            "label": "エンジン",
+            "x": 230,
+            "y": 170,
+            "icon": "engine"
+          },
+          {
+            "label": "動力分割装置",
+            "x": 640,
+            "y": 170,
+            "icon": "split"
+          },
+          {
+            "label": "車輪",
+            "x": 1150,
+            "y": 90,
+            "icon": "wheel"
+          },
+          {
+            "label": "モーター・発電機",
+            "x": 1150,
+            "y": 290,
+            "icon": "motor"
+          },
+          {
+            "label": "電池",
+            "x": 640,
+            "y": 385,
+            "icon": "battery"
+          }
+        ],
+        "edges": [
+          {
+            "from": 0,
+            "to": 1
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "label": "走る"
+          },
+          {
+            "from": 1,
+            "to": 3,
+            "label": "発電"
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "label": "ためて再利用"
+          }
+        ]
+      },
+      "character": null,
+      "guide": "kano",
+      "beatIds": [
+        "3-6-b1",
+        "3-6-b2"
+      ],
+      "cueTexts": [
+        [
+          "この連携を支えるのが、動力分割装置です。",
+          "エンジンの力を、車輪を動かす側と発電する側に分けます。",
+          "モーターとエンジンの働きを調整し、得意な場面を組み合わせて燃料の消費を抑えます。",
+          "電池も、ためた電気を使うだけでなく、回収して再び使う役割を担っています。"
+        ],
+        [
+          "力をどう使い分けるかが、工夫なんですね。"
+        ]
+      ]
+    },
+    {
+      "id": "4-0",
+      "chapterNo": 4,
+      "chapter": "04｜一台のプリウスから広がった理由",
+      "year": null,
+      "visual": "chapterCard",
+      "cardNo": "第4章",
+      "cardText": "一台のプリウスから広がった理由",
+      "plannedSeconds": 1.5,
+      "evidence": [],
+      "character": null,
+      "guide": null,
+      "beatIds": [],
+      "cueTexts": []
+    },
+    {
+      "id": "4-1",
+      "chapterNo": 4,
+      "chapter": "04｜一台のプリウスから広がった理由",
+      "year": "2000",
+      "visual": "exportShip",
+      "plannedSeconds": 16.7,
+      "evidence": [
+        "F9"
+      ],
+      "headline": "北米・欧州へ",
+      "character": null,
+      "guide": "luno",
+      "beatIds": [
+        "4-1-b1",
+        "4-1-b2"
+      ],
+      "cueTexts": [
+        [
+          "2000年。",
+          "初代プリウスは、小規模な改良を経て、北米と欧州へ発売されます。",
+          "日本で生まれた一台が、海外の市場へ向かいました。"
+        ],
+        [
+          "燃費の高さが評価された形です。"
+        ]
+      ]
+    },
+    {
+      "id": "4-2",
+      "chapterNo": 4,
+      "chapter": "04｜一台のプリウスから広がった理由",
+      "year": "2003",
+      "visual": "flowDiagram",
+      "plannedSeconds": 18.3,
+      "evidence": [
+        "F9"
+      ],
+      "flow": {
+        "nodes": [
+          {
+            "label": "エンジン",
+            "x": 300,
+            "y": 260,
+            "icon": "engine"
+          },
+          {
+            "label": "THS II",
+            "t": "高圧化",
+            "x": 770,
+            "y": 260,
+            "icon": "split"
+          },
+          {
+            "label": "モーター",
+            "x": 1230,
+            "y": 260,
+            "icon": "motor"
+          }
+        ],
+        "edges": [
+          {
+            "from": 0,
+            "to": 1
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "label": "出力向上"
+          }
+        ],
+        "note": "2003年9月　第2代プリウス"
+      },
+      "character": null,
+      "guide": "kano",
+      "beatIds": [
+        "4-2-b1",
+        "4-2-b2"
+      ],
+      "cueTexts": [
+        [
+          "2003年9月。",
+          "第2代プリウスが登場します。",
+          "システムはTHS IIへ進化し、高圧回路へ対応したモーター出力が向上。"
+        ],
+        [
+          "走りと環境性能の両方を一段上へ引き上げました。"
+        ]
+      ]
+    },
+    {
+      "id": "4-3",
+      "chapterNo": 4,
+      "chapter": "04｜一台のプリウスから広がった理由",
+      "year": null,
+      "visual": "cardsRow",
+      "plannedSeconds": 22.3,
+      "evidence": [
+        "F9"
+      ],
+      "headline": "車種を広げる",
+      "cards": [
+        {
+          "title": "ミニバン",
+          "body": "2001年・エスティマ",
+          "tone": "blue"
+        },
+        {
+          "title": "SUV",
+          "body": "2005年・第一モデル",
+          "tone": "gold"
+        },
+        {
+          "title": "セダン",
+          "body": "レクサス2006・2007",
+          "tone": "green"
+        }
+      ],
+      "character": null,
+      "guide": "miino",
+      "beatIds": [
+        "4-3-b1",
+        "4-3-b2"
+      ],
+      "cueTexts": [
+        [
+          "ハイブリッドの搭載は、プリウスにとどまりません。",
+          "2001年にはミニバンのエスティマ。",
+          "2005年にはSUV。",
+          "2006年、2007年にはレクサスのセダンにも採用されました。"
+        ],
+        [
+          "ミニバンやSUVにも、広がりました。"
+        ]
+      ]
+    },
+    {
+      "id": "4-4",
+      "chapterNo": 4,
+      "chapter": "04｜一台のプリウスから広がった理由",
+      "year": "2010",
+      "visual": "globePins",
+      "plannedSeconds": 18.7,
+      "evidence": [
+        "F9"
+      ],
+      "headline": "生産も海外へ",
+      "pins": [
+        {
+          "t": "中国",
+          "d": "2005"
+        },
+        {
+          "t": "アメリカ",
+          "d": "2006"
+        },
+        {
+          "t": "イギリス",
+          "d": "2010"
+        }
+      ],
+      "character": null,
+      "guide": "luno",
+      "beatIds": [
+        "4-4-b1",
+        "4-4-b2"
+      ],
+      "cueTexts": [
+        [
+          "生産も海外へ広がりました。",
+          "2005年に中国。",
+          "2006年にアメリカ。",
+          "2010年にはイギリスで量産が始まります。"
+        ],
+        [
+          "日本で磨かれた仕組みが、海外の工場でも作れるようになりました。"
+        ]
+      ]
+    },
+    {
+      "id": "4-5",
+      "chapterNo": 4,
+      "chapter": "04｜一台のプリウスから広がった理由",
+      "year": null,
+      "visual": "barsChart",
+      "plannedSeconds": 30.7,
+      "evidence": [
+        "F9"
+      ],
+      "headline": "累計の伸び",
+      "bars": {
+        "items": [
+          {
+            "label": "2007.5",
+            "value": "100万台",
+            "ratio": 0.35
+          },
+          {
+            "label": "2009.9",
+            "value": "200万台",
+            "ratio": 0.65
+          },
+          {
+            "label": "2011.2",
+            "value": "300万台",
+            "ratio": 0.95
+          }
+        ],
+        "note": "発売以来の累計"
+      },
+      "character": null,
+      "guide": "kano",
+      "beatIds": [
+        "4-5-b1",
+        "4-5-b2"
+      ],
+      "cueTexts": [
+        [
+          "販売台数も積み重なっていきます。",
+          "トヨタのハイブリッド車は、2007年5月に累計100万台。",
+          "2009年9月に200万台、2011年2月には300万台を超えました。",
+          "ここでの数字は、その年だけの販売ではなく、発売以来の合計です。"
+        ],
+        [
+          "一台ずつの積み重ねが、こうして見えてくるんですね。"
+        ]
+      ]
+    },
+    {
+      "id": "4-6",
+      "chapterNo": 4,
+      "chapter": "04｜一台のプリウスから広がった理由",
+      "year": "2020",
+      "visual": "count15m",
+      "plannedSeconds": 19.9,
+      "evidence": [
+        "F7"
+      ],
+      "sub": "プリウスの名前を引き継いだ車も",
+      "character": null,
+      "guide": "miino",
+      "beatIds": [
+        "4-6-b1",
+        "4-6-b2"
+      ],
+      "cueTexts": [
+        [
+          "そして2020年1月。",
+          "トヨタのハイブリッド累計は、1,500万台を超えました。",
+          "23年間で台数はこうして積み上がっています。"
+        ],
+        [
+          "一台から始まった挑戦が、世界の普通の車へ育っているんですね。"
+        ]
+      ]
+    },
+    {
+      "id": "5-0",
+      "chapterNo": 5,
+      "chapter": "05｜技術を広げるという選択",
+      "year": null,
+      "visual": "chapterCard",
+      "cardNo": "第5章",
+      "cardText": "技術を広げるという選択",
+      "plannedSeconds": 1.5,
+      "evidence": [],
+      "character": null,
+      "guide": null,
+      "beatIds": [],
+      "cueTexts": []
+    },
+    {
+      "id": "5-1",
+      "chapterNo": 5,
+      "chapter": "05｜技術を広げるという選択",
+      "year": "2015",
+      "visual": "fcvRelease",
+      "plannedSeconds": 16.6,
+      "evidence": [
+        "F10"
+      ],
+      "character": null,
+      "guide": "miino",
+      "beatIds": [
+        "5-1-b1",
+        "5-1-b2"
+      ],
+      "cueTexts": [
+        [
+          "2015年1月。",
+          "トヨタは燃料電池車に必要な特許、約5,680件を無償で使用させていくと発表しました。"
+        ],
+        [
+          "新しい技術を、他社とともに広げる選択をしたんですね。"
+        ]
+      ]
+    },
+    {
+      "id": "5-2",
+      "chapterNo": 5,
+      "chapter": "05｜技術を広げるという選択",
+      "year": "2015",
+      "visual": "cardsRow",
+      "plannedSeconds": 27.5,
+      "evidence": [
+        "F10"
+      ],
+      "headline": "条件と期限の整理",
+      "cards": [
+        {
+          "title": "燃料電池車の特許",
+          "body": "許諾は2020年頃まで",
+          "tone": "blue"
+        },
+        {
+          "title": "水素ステーション約70件",
+          "body": "無期限",
+          "tone": "green"
+        }
+      ],
+      "character": null,
+      "guide": "kano",
+      "beatIds": [
+        "5-2-b1",
+        "5-2-b2"
+      ],
+      "cueTexts": [
+        [
+          "無償で使うにも、トヨタとの契約は必要でした。",
+          "2015年の発表では、燃料電池車に関わる特許の許",
+          "諾は、初期導入期の2020年頃までとされました。",
+          "一方、水素ステーション関連の約70件は無期限です。"
+        ],
+        [
+          "無料でも、対象と期限を分けて見る必要があるんですね。"
+        ]
+      ]
+    },
+    {
+      "id": "5-3",
+      "chapterNo": 5,
+      "chapter": "05｜技術を広げるという選択",
+      "year": "2019",
+      "visual": "patentScope",
+      "plannedSeconds": 30.7,
+      "evidence": [
+        "F11"
+      ],
+      "character": null,
+      "guide": "luno",
+      "beatIds": [
+        "5-3-b1",
+        "5-3-b2"
+      ],
+      "cueTexts": [
+        [
+          "2019年4月、トヨタは電動化に関わる約23,740件の特許について、",
+          "無償で使用を許諾すると発表します。",
+          "モーター、電力を調整するパワーコントロールユニット、システム制御などが対象です。",
+          "発表された期限は2030年末。",
+          "利用には契約が必要です。"
+        ],
+        [
+          "今度は、水素の車だけの話ではないんですね。"
+        ]
+      ]
+    },
+    {
+      "id": "5-4",
+      "chapterNo": 5,
+      "chapter": "05｜技術を広げるという選択",
+      "year": null,
+      "visual": "cardsRow",
+      "plannedSeconds": 30.2,
+      "evidence": [
+        "F10",
+        "F11"
+      ],
+      "headline": "2015年と2019年を比べる",
+      "cards": [
+        {
+          "title": "2015.1",
+          "body": "燃料電池車・約5,680件",
+          "tone": "blue"
+        },
+        {
+          "title": "2019.4",
+          "body": "電動化全般・約23,740件",
+          "tone": "gold"
+        }
+      ],
+      "character": null,
+      "guide": "kano",
+      "beatIds": [
+        "5-4-b1",
+        "5-4-b2"
+      ],
+      "cueTexts": [
+        [
+          "2015年は燃料電池車、2019年は電動化に関わる幅広い技術。",
+          "同じ「特許の無償開放」という言葉でも、対象が違います。",
+          "件数だけを並べると、同じ制度が拡大したように見えます",
+          "が、それぞれの発表の範囲と条件を読む必要があります。"
+        ],
+        [
+          "年と件数だけでなく、何の技術なのかも大事ですね。"
+        ]
+      ]
+    },
+    {
+      "id": "5-5",
+      "chapterNo": 5,
+      "chapter": "05｜技術を広げるという選択",
+      "year": null,
+      "visual": "flowDiagram",
+      "plannedSeconds": 24.0,
+      "evidence": [
+        "F11"
+      ],
+      "headline": "技術支援の流れ",
+      "flow": {
+        "nodes": [
+          {
+            "label": "他社",
+            "x": 300,
+            "y": 260,
+            "icon": "people"
+          },
+          {
+            "label": "技術支援",
+            "t": "契約ベース",
+            "x": 770,
+            "y": 260,
+            "icon": "job"
+          },
+          {
+            "label": "調整・性能設定",
+            "x": 1230,
+            "y": 260,
+            "icon": "job"
+          }
+        ],
+        "edges": [
+          {
+            "from": 0,
+            "to": 1
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "label": "含む"
+          }
+        ],
+        "note": "モーター・電池・PCUの調整"
+      },
+      "character": null,
+      "guide": "miino",
+      "beatIds": [
+        "5-5-b1",
+        "5-5-b2"
+      ],
+      "cueTexts": [
+        [
+          "トヨタが特許の外に用意したのは、有料の技術支援でした。",
+          "他社がトヨタのモーターや電池、パワーコントロールユニットを使うとき、",
+          "その車に合う調整や性能設定を手伝う。"
+        ],
+        [
+          "無償の特許と、契約ベースの技術支援。",
+          "二本立ての支援なんですね。"
+        ]
+      ]
+    },
+    {
+      "id": "5-6",
+      "chapterNo": 5,
+      "chapter": "05｜技術を広げるという選択",
+      "year": null,
+      "visual": "peoplePanel",
+      "plannedSeconds": 20.6,
+      "evidence": [
+        "F11"
+      ],
+      "headline": "社会への広がり",
+      "character": null,
+      "guide": "luno",
+      "beatIds": [
+        "5-6-b1",
+        "5-6-b2"
+      ],
+      "cueTexts": [
+        [
+          "では、なぜここまで配るのでしょう。",
+          "公式の発表に書かれているのは、電動車を広く社会へ広げる役割を担いたい、",
+          "という考えです。"
+        ],
+        [
+          "独自に閉じ込めるより、市場が広がるほうが、技術も大きな力を持ちます。"
+        ]
+      ]
+    },
+    {
+      "id": "6-0",
+      "chapterNo": 6,
+      "chapter": "06｜EVの時代に残る役割",
+      "year": null,
+      "visual": "chapterCard",
+      "cardNo": "第6章",
+      "cardText": "EVの時代に残る役割",
+      "plannedSeconds": 1.5,
+      "evidence": [],
+      "character": null,
+      "guide": null,
+      "beatIds": [],
+      "cueTexts": []
+    },
+    {
+      "id": "6-1",
+      "chapterNo": 6,
+      "chapter": "06｜EVの時代に残る役割",
+      "year": null,
+      "visual": "cardsRow",
+      "plannedSeconds": 34.8,
+      "evidence": [
+        "G1",
+        "G2",
+        "G3"
+      ],
+      "headline": "3つの形式",
+      "cards": [
+        {
+          "title": "HEV",
+          "body": "充電せず・ガソリン補給",
+          "tone": "blue"
+        },
+        {
+          "title": "PHEV",
+          "body": "外部充電可・エンジン＋モーター",
+          "tone": "gold"
+        },
+        {
+          "title": "BEV",
+          "body": "エンジンなし・充電電気",
+          "tone": "green"
+        }
+      ],
+      "character": null,
+      "guide": "miino",
+      "beatIds": [
+        "6-1-b1",
+        "6-1-b2"
+      ],
+      "cueTexts": [
+        [
+          "ここで、車の呼び方を整理しましょう。",
+          "この動画で扱うHEVは、外から充電せず、ガソリンを補給して使うハイブリッドです。",
+          "PHEVは、外部からも充電できるプラグインハイブリッド。",
+          "エンジンとモーターの両方を持ちます。",
+          "BEVは、エンジンを持たず、充電した電気でモーターを動かす車です。"
+        ],
+        [
+          "同じ電動車でも、電気のため方が違うんですね。"
+        ]
+      ]
+    },
+    {
+      "id": "6-2",
+      "chapterNo": 6,
+      "chapter": "06｜EVの時代に残る役割",
+      "year": null,
+      "visual": "cardsRow",
+      "plannedSeconds": 30.4,
+      "evidence": [
+        "G2",
+        "G3"
+      ],
+      "headline": "充電設備と使う場面",
+      "sub": "時間は設備・車種・温度・残量で変わる",
+      "cards": [
+        {
+          "title": "家・夜間",
+          "body": "自宅での充電環境",
+          "tone": "blue"
+        },
+        {
+          "title": "出先",
+          "body": "充電設備の有無",
+          "tone": "gold"
+        }
+      ],
+      "character": null,
+      "guide": "miino",
+      "beatIds": [
+        "6-2-b1",
+        "6-2-b2",
+        "6-2-b3"
+      ],
+      "cueTexts": [
+        [
+          "充電にかかる時間は、充電設備・車種・温度・残量で変わります。",
+          "そのため、この車が生活の中で都合よく使えるかは、家で夜間に充電できるか、",
+          "出先の充電設備が使えるかに左右されます。"
+        ],
+        [
+          "充電のできる環境まで含めて考えたほうがよさそうですね。"
+        ],
+        [
+          "そう見ると、充電環境まで含めた選び方が見えてきます。"
+        ]
+      ]
+    },
+    {
+      "id": "6-3",
+      "chapterNo": 6,
+      "chapter": "06｜EVの時代に残る役割",
+      "year": null,
+      "visual": "flowDiagram",
+      "plannedSeconds": 30.5,
+      "evidence": [
+        "G4"
+      ],
+      "headline": "CO2の流れ",
+      "flow": {
+        "nodes": [
+          {
+            "label": "発電",
+            "t": "電源構成",
+            "x": 300,
+            "y": 260,
+            "icon": "plant"
+          },
+          {
+            "label": "走行時",
+            "x": 770,
+            "y": 260,
+            "icon": "car"
+          },
+          {
+            "label": "製造〜寿命",
+            "x": 1230,
+            "y": 260,
+            "icon": "factory"
+          }
+        ],
+        "edges": [
+          {
+            "from": 0,
+            "to": 1,
+            "label": "条件付き"
+          },
+          {
+            "from": 1,
+            "to": 2
+          }
+        ],
+        "note": "差は比べる車種・電源などの条件で変わる"
+      },
+      "character": null,
+      "guide": "kano",
+      "beatIds": [
+        "6-3-b1",
+        "6-3-b2",
+        "6-3-b3"
+      ],
+      "cueTexts": [
+        [
+          "環境への影響は、1つの視点だけでは決まりません。"
+        ],
+        [
+          "EVには走行時の排気がありません。",
+          "電気を作るときのCO2は、電源構成によって変わります。"
+        ],
+        [
+          "発電や製造を含めても、EVの排出量がガソリン車より低くなることは多い。",
+          "ただ具体的な差は、比べる車種や電源などの条件で変わります。"
+        ]
+      ]
+    },
+    {
+      "id": "6-4",
+      "chapterNo": 6,
+      "chapter": "06｜EVの時代に残る役割",
+      "year": null,
+      "visual": "cardsRow",
+      "plannedSeconds": 23.7,
+      "evidence": [
+        "G4"
+      ],
+      "headline": "地域と生活スタイル",
+      "cards": [
+        {
+          "title": "都市",
+          "body": "毎日の距離が短い",
+          "tone": "blue"
+        },
+        {
+          "title": "郊外",
+          "body": "車の利用が長め",
+          "tone": "gold"
+        },
+        {
+          "title": "長距離",
+          "body": "週末に遠出",
+          "tone": "green"
+        },
+        {
+          "title": "通勤",
+          "body": "毎日決まった道",
+          "tone": "blue"
+        }
+      ],
+      "character": null,
+      "guide": "luno",
+      "beatIds": [
+        "6-4-b1",
+        "6-4-b2"
+      ],
+      "cueTexts": [
+        [
+          "もう一つ大事なこと。",
+          "合う車は、地域や使い方で変わります。",
+          "都市に住む人、郊外に住む人。",
+          "週末に長い距離を走る人、毎日通勤する人。"
+        ],
+        [
+          "同じ「電動化」でも、快適さや手軽さは違います。",
+          "自分の生活に合う形を選ぶことが大事になります。"
+        ]
+      ]
+    },
+    {
+      "id": "6-5",
+      "chapterNo": 6,
+      "chapter": "06｜EVの時代に残る役割",
+      "year": "2025",
+      "visual": "carAnnounce",
+      "plannedSeconds": 30.4,
+      "evidence": [
+        "F12"
+      ],
+      "sub": "PHEVに第6世代を初搭載",
+      "stamp": "2025.5.21",
+      "title": "新型RAV4",
+      "character": null,
+      "guide": "miino",
+      "beatIds": [
+        "6-5-b1",
+        "6-5-b2",
+        "6-5-b3"
+      ],
+      "cueTexts": [
+        [
+          "2025年5月21日。",
+          "トヨタは、新型RAV4を世界で初公開しました。"
+        ],
+        [
+          "プラグインハイブリッドに、初搭載となる第6世代システムが発表されました。"
+        ],
+        [
+          "外から充電できるPHEVへ、これまで磨いてきたハイブリッドの技術を引き継いだ形です。",
+          "じつはここに、続けてきた挑戦のつながりが読み取れます。"
+        ]
+      ]
+    },
+    {
+      "id": "6-6",
+      "chapterNo": 6,
+      "chapter": "06｜EVの時代に残る役割",
+      "year": "2025",
+      "visual": "flowDiagram",
+      "plannedSeconds": 33.7,
+      "evidence": [
+        "F12"
+      ],
+      "headline": "RAV4発表の整理",
+      "flow": {
+        "nodes": [
+          {
+            "label": "ハイブリッド",
+            "t": "磨いた技術",
+            "x": 320,
+            "y": 260,
+            "icon": "tech"
+          },
+          {
+            "label": "PHEV",
+            "t": "外部充電可",
+            "x": 1200,
+            "y": 260,
+            "icon": "car"
+          }
+        ],
+        "edges": [
+          {
+            "from": 0,
+            "to": 1,
+            "label": "引き継ぐ"
+          }
+        ],
+        "note": "名前は同じでも中身は進化"
+      },
+      "character": null,
+      "guide": "kano",
+      "beatIds": [
+        "6-6-b1",
+        "6-6-b2"
+      ],
+      "cueTexts": [
+        [
+          "見どころは、エンジンか電気かという選択だけではありません。",
+          "エンジンとモーターをどう組み合わせ、ためた電気をどう使うか。",
+          "その工夫が、外から充電できる車にも生かされています。",
+          "新型RAV4の発表は、ハイブリッドを磨いてきた流れをたどる、",
+          "一つの手がかりになります。"
+        ],
+        [
+          "名前は同じでも、中身は進化しているんですね。"
+        ]
+      ]
+    },
+    {
+      "id": "7-0",
+      "chapterNo": 7,
+      "chapter": "07｜冒頭の問いへの答え",
+      "year": null,
+      "visual": "chapterCard",
+      "cardNo": "第7章",
+      "cardText": "冒頭の問いへの答え",
+      "plannedSeconds": 1.5,
+      "evidence": [],
+      "character": null,
+      "guide": null,
+      "beatIds": [],
+      "cueTexts": []
+    },
+    {
+      "id": "7-1",
+      "chapterNo": 7,
+      "chapter": "07｜冒頭の問いへの答え",
+      "year": null,
+      "visual": "questionRecap",
+      "plannedSeconds": 15.5,
+      "evidence": [
+        "F1",
+        "F7"
+      ],
+      "character": "miino",
+      "guide": "miino",
+      "beatIds": [
+        "7-1-b1"
+      ],
+      "cueTexts": [
+        [
+          "最初は、電気自動車でなければ遅れているのかなと思っていました。",
+          "でも、ハイブリッドにも、モーターや電池、電気を使う技術が積み重なっていたんですね。"
+        ]
+      ]
+    },
+    {
+      "id": "7-2",
+      "chapterNo": 7,
+      "chapter": "07｜冒頭の問いへの答え",
+      "year": null,
+      "visual": "barsChart",
+      "plannedSeconds": 25.5,
+      "evidence": [
+        "F9"
+      ],
+      "headline": "技術の積み重ね",
+      "bars": {
+        "items": [
+          {
+            "label": "エンジン",
+            "value": "改良",
+            "ratio": 0.3
+          },
+          {
+            "label": "モーター",
+            "value": "小型化",
+            "ratio": 0.5
+          },
+          {
+            "label": "回生",
+            "value": "効率",
+            "ratio": 0.7
+          },
+          {
+            "label": "電池",
+            "value": "性能",
+            "ratio": 0.95
+          }
+        ],
+        "note": "約30年の実験と量産"
+      },
+      "character": null,
+      "guide": null,
+      "beatIds": [
+        "7-2-b1"
+      ],
+      "cueTexts": [
+        [
+          "技術は1つではありません。",
+          "エンジンの改良、モーターの小型化、回生の効率、電池の性能。",
+          "約30年にわたる実験と量産の中で磨かれてきました。",
+          "それが今日の電動化の道です。",
+          "この積み重ねを知ることが、電気で走る車の今を理解する入り口になります。"
+        ]
+      ]
+    },
+    {
+      "id": "7-3",
+      "chapterNo": 7,
+      "chapter": "07｜冒頭の問いへの答え",
+      "year": null,
+      "visual": "cardsRow",
+      "plannedSeconds": 20.6,
+      "evidence": [
+        "G1〜G4"
+      ],
+      "headline": "選び方の整理",
+      "cards": [
+        {
+          "title": "地域",
+          "body": "住む場所の特性",
+          "tone": "blue"
+        },
+        {
+          "title": "使い方",
+          "body": "走る距離・頻度",
+          "tone": "gold"
+        },
+        {
+          "title": "電力",
+          "body": "電源構成の方針",
+          "tone": "green"
+        },
+        {
+          "title": "充電環境",
+          "body": "設備の有無",
+          "tone": "blue"
+        }
+      ],
+      "character": null,
+      "guide": "kano",
+      "beatIds": [
+        "7-3-b1"
+      ],
+      "cueTexts": [
+        [
+          "エンジンか電気か、その二択だけでは日本の歩みを捉えきれないですね。",
+          "地域や使い方、電力や充電環境に合わせて選ぶ。",
+          "その条件に合わせた視点こそ、大事になると感じました。"
+        ]
+      ]
+    },
+    {
+      "id": "7-4",
+      "chapterNo": 7,
+      "chapter": "07｜冒頭の問いへの答え",
+      "year": null,
+      "visual": "finale",
+      "plannedSeconds": 42.8,
+      "evidence": [
+        "F1〜F12"
+      ],
+      "headline": "1997年からの積み重ね",
+      "stops": [
+        {
+          "t": "1997",
+          "d": "二つの答え"
+        },
+        {
+          "t": "2000",
+          "d": "海外へ"
+        },
+        {
+          "t": "2015",
+          "d": "FCV特許"
+        },
+        {
+          "t": "2019",
+          "d": "電動化特許"
+        },
+        {
+          "t": "2025",
+          "d": "第6世代"
+        }
+      ],
+      "character": null,
+      "guide": null,
+      "beatIds": [
+        "7-4-b1"
+      ],
+      "cueTexts": [
+        [
+          "ハイブリッドは、エンジンだけでなく、電動化という技術を積み上げた答えの一つ。",
+          "地域・使い方・電力や充電環境によって、選択肢は異なります。",
+          "1997年から続く取り組みは、約30年にわた",
+          "る実験と量産の繰り返しの中で磨かれてきました。",
+          "それが、いま世界に広がる車種の幅と台数につながっています。",
+          "1997年の、一台の答え。",
+          "それが、今のトヨタを作っています。",
+          "日本の技術の面白さを、これからも見届けましょう。"
+        ]
+      ]
+    }
+  ]
+}

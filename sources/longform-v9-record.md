@@ -133,3 +133,35 @@
 - Mainのstage分離（2026-10-20）：変更前の作業ツリーを基に作ったsources.mdパッチは、既存未commit差分を含む周辺行がindex/HEADと一致せず`git apply --cached`が1回失敗（作業ファイル/当該indexへの適用なし）。原因を特定し、HEADの本文から今回変更の2箇所だけを厳密一致で組み立てたパッチへ修正。既存47行差分を含めず、ステージ済みの他3文書を保全する。動画関連累計18/次20停止、通信9/次10停止を保持する。
 
 - 最終整合：sources.md先頭のcredit出力工程の古い停止数は「2026-10-19当時」とラベルを付け、最新累計と区別した。差分分離用の `/tmp/cvs-six-stage-sources-only.patch`（初回失敗）、`/tmp/cvs-six-stage-sources-only-v2.patch`、`/tmp/cvs-six-stage-history-label.patch` も証拠として保持し削除しない。
+
+### 全編初稿V10の制作開始（2026-10-20）
+
+本人「一度作ってから修正します」により、台本事前確定を待たず全編の音声付き初稿制作へ進む。台本は初稿用の仮採用、動画を見てから修正する。要件/対象/担当/完成条件/必須検証/共有境界は [V10記録](longform-v10-record.md) に固定。旧版と基底v6は保全。V10専用の多話者/字幕cueと開始offsetを含む尺検査は、全編を成立させる今回の必要変更として扱い、共通化/A〜Dへ広げない。動画関連18/次20、通信9/次10を引き継ぐ。
+
+- V10制作中の承認差し戻し（2026-10-20）：GLMのsource msg_158d82de6001CJX5jhBIYvmnLu/shellが`source README.md 2>/dev/null | head -0`を含み、参照文書をshellとして実行しようとしていた。案件パスと実tool inputを照合しper_158d84ce0001pqzoG2uVaGclHtをreject、実行前に防止。README実行の再試行/代替を禁止し、必要だった代表frame位置/Composition/既存render経路をCodexが固定入力として渡した。もとの承認済み生成工程のみ続行。拒否1を加え動画関連19/次20、通信9/次10を保持。V10 JSONの読み取りでは60scene/30741f=1024.7秒まで構築済み、型合格は担当報告、映像出力はまだ未確認。
+
+- V10停止（2026-10-20）：代表still9枚の生成とMainの初稿画像確認後、保存済みshell結果 `msg_158ee14c7001XoowF45LSXnPbx` がTool execution interrupted/session interruptedとなっていたことを確認。拒否後19に中断1を加えて動画関連20到達で追加実行/原因調査/代替を停止。完成MP4・音量・全尺成功は未確認。中断未把握時にqueueした続行フィードバックを撤回し、OpenCodeへ停止維持とツール禁止だけを通知した。詳細と再開の限定承認単位は[V10記録](longform-v10-record.md#累計20停止2026-10-20)。通信9/次10、再開後動画20/次25を保持。未完成のためtask commit/push/共有なし。
+
+- V10再開・全尺render開始（2026-10-20）：本人が累計20停止後に再開承認。中断shellはstill3枚の再出力だったと保存入力で判明。修復済みSVG編集ミスの未算入1件を加え動画21/次25。再開指示のCLI引数誤りで通信10停止後、本人が再度「進める」と明示承認。正しい `--data` により指示msg_159f00ca9001f801oaGXoaayhjをqueue受付、実入力照合済みのper_159d460ee001buHJu0K4dvGuGdをonce許可。既存GLM maxの背景shell sh_159f042d2001kQ1ntHTj5qSi6fで30741fの全尺render開始をログで確認。開始成功と完成は区別し、現在は未完成。終了通知で担当が後続音量統一/最終読戻し/証拠へ進む。通信10/次15を保持。代表9枚はicon/stamp/位置の小修正前なので最終映像と小差あり、全コマ目視/本人聴取は未確認。Main差分レビューで1f境界テストの実データが3f/2f超過だった点を指摘し、同テストだけ最小訂正・実行を依頼（msg_159f907cc001twy9RkM7LTfe7Z）。コード/音声再生成や合格検証の反復は要求していない。V10記録所有は担当、V9入口/受入はMain。未完成のためcommit/共有/pushなし。
+
+- 途中経過確認（2026-10-20）：全尺renderは13449/30741f（43.75%）でフレームwriteのUnknown system error -122によりexit1。完成MP4/音量統一版/verification.jsonは未作成。/tmpは3.6GB tmpfs（確認時1.3GB使用）、projectディスク空き42GB。EDQUOT相当の割当制限エラーだが、発生時の枯渇先・制限は未特定。単にディスク全体が満杯だったとは断定しない。担当の診断shell1件はlocation shut downで中断、再開後の診断実行中。境界テストassert旧値残存による想定外Red1（修正後pass）、render失敗1、診断中断1を21へ加算し動画累計24/次25停止へ訂正。通信10/次15維持。Mainは本体を再実行せず保存結果/現在容量のみ照合。出力不能解消に必要な最小修正だけ既存承認内、削除/設定拡大/新規実装/共有は行わない。
+
+- 動画累計25停止（2026-10-20）：本人「適切に処理し、乾燥させる」は文脈上「完成させる」の指示と解釈し現状を確認したが、既存担当が24到達後の再renderコマンドで改行/引数を誤り、mkdirへ--codec等が渡る失敗1を起こしていた。全尺renderの2回目は開始していない。この実エラーを加え累計25に達したため追加試行/診断/代替を停止。通信10/次15維持。次の保留要求per_15a36b10c001DluNxHI8POQl1Sは/home/ds-work/tmp/v10-renderを含み元の所有範囲外のため実行許可しない。Mainが停止指示・要求rejectのみを送る。
+  原因候補と最小修正：/tmpは上限3.6GBのtmpfs、projectの実ディスク空き42GB。EDQUOTは一時保存制限が有力だが発生時の上限到達は未観測。再開時は案件内output/longform-v10-review/tmp-renderへTMPDIRを向け、実改行または正しい単一コマンドでmkdir/env/renderを分けて照合、元のChrome/concurrency2/映像/音声は維持しrender後の音量統一/読戻しまで。実行前に対象パス/シェル入力をMainが照合。削除や全体変更、追加比較は不要。本人が25停止を踏まえて明示再開後は次30、通信は次15。V10記録は担当所有のままMainは変更しない。完成MP4は未作成、全途中成果/ログ保全。
+
+- 累計25停止後の再開承認（2026-10-20）：本人「進める」により案件内ディスク一時領域への切替・全尺render・音量統一・完成読戻しを再開。動画25/次30、通信10/次15を保持。既存GLM max/案件パス/idle/保留なしを確認。ローカルRemotion実装render-media.jsのworkingDirとtmp-dir.jsがos.tmpdir()を使うことを該当箇所だけ読み、TMPDIRの局所指定で一時領域を移せる根拠を照合。候補output/longform-v10-review/tmp-renderは既存承認の成果領域内。恒久設定変更/削除/旧版変更はしない。最終実コマンドはMainが個別許可前に照合する。
+
+- V10入力対応の受入照合（2026-10-20）：Mainが原台本第5〜11節の60sceneと版JSONの発話本文を全件照合、差分0。入力SHA-256 c73898df63166f59d35d399c8842c4c13faf892fdfd93d4519fe1dcc262d4a4d不変、voice85beat、30741f/1024.7秒設計。担当の合格済み尺checkerを再実行せず、checkerが字数集計だけでは保証しない原文対応を確認した。保存先修正依頼はmsg_15a4535f10010MhtfdSPxSbLj1でqueue受付、実行許可/完成とは区別する。
+
+- V10全尺出力確認（2026-10-20）：本人saikaiにより継続。render-log3.txtのEncoded30741/30741と元MP4約65.3MB出力完了をMain確認。既存担当の実入力が指定の案件内TMPDIR/Chrome/concurrency2と一致することも保存tool inputで照合。画像writeの再エラーなし。元MP4の出力完了であり、最終音量調整/実音読戻し/verification/本人受入は未完了。既存担当へ同じ承認範囲の後続をqueue、二重renderはしない。動画25/次30・通信10/次15を維持。
+
+- V10音量工程の原因整理（2026-10-21）：元renderのSHA=379a18abaca0fac1fbfbdb58d813772f1decf4d11c3d9d30e4155db08ff77926、65313465bytesを担当保存結果で照合。pass1コマンドのリテラル\nと$FF展開が崩れてcommand not found/実終了127。後続tail成功でtool exit0となったため見かけの成功と区別。失敗1を加え動画26/次30・通信10/次15。原因は既知のshell組立で、正確な絶対パス/単一ffmpeg呼出し/print_format=json（first_passは付けない）をMainが固定入力で渡す。旧ログを保全しpass1-v2へ測定。2回原因整理済み、既定30停止前の同承認範囲修正として担当へ継続依頼。過去担当の「想定外失敗1件で即停止」はMain意図と異なる過剰停止として訂正。V10記録は担当所有、Mainは同じ測定を実行しない。
+
+- V10最終読戻し（2026-10-21・途中）：pass1-v2でI=-19.22/TP=-3.97/LRA5.50を測定し、pass2で音量版MP4を生成。ffprobe保存結果は映像H264/1920x1080/30fps/30741f/1024.7秒、pix_fmt=yuvj420p、音声AAC/stereo/96kHz/1024.8秒（rawは48kHz/1024.704秒）。yuv420p指定に対しfullrange yuvj420p観測で、8bit4:2:0の初稿互換性差として明記。映像コピー/初稿完成を優先し再render/48k再出力を追加しない。finalのI/TP/非無音はまだ証拠照合前。
+  readbackのebur128未搭載exit8とastats未搭載失敗の2件を加え動画28/次30（通信10/次15）。同原因が2回なのでこれ以上未確認filterを試さず、成功済みloudnormのinput測定と必要なら標準PCMdecode/標準Pythonのpeak/RMSで確認するよう担当へ固定方針を渡した。既存の成功readbackがあれば再実行不要。本人の全編視聴/聴感は別、共有commitpushなし。
+
+- V10初稿出力済み・累計30停止（2026-10-21）：保存verification/ffprobe/担当メッセージで、完成ファイルoutput/longform-toyota01-v10-lufs14.mp4＝43,242,863bytes、SHA-256 50b746c303056d74da379631192b4269a4eb2c0bba5be3c1d5c3456e3806e41f。映像17分4.7秒/30741f/1920x1080/30fps/H264、最終音量I=-14.10 LUFS/TP=-1.62dBTP。PCM WAVストリーム計算は24,592,896samples/1024.704秒・sample peak=-1.80dBFS/RMS=-18.13dBFS・非無音Trueと担当保存結果にあり、動画ファイル自体は生成済み。本人全編視聴/聴感と現動画の全コマ目視は未確認。
+  追加失敗：s16le muxer非搭載のdecode失敗1（28→29）、verification.jsonのoldString不一致edit失敗1（29→30）。書込は未適用。30到達後に追加試行/代替/検証/編集/委譲を停止するよう正規steerで通知。V10record/verification内の古い失敗累計26とpeak未取得、AACのlocal再生に支障なし等の未確認断定、moov記述誤記は未訂正。現在の正確な累計は30/再開後次35、通信10/次15。
+  今回は完成MP4の存在/保存証拠を示せるが、最終記録訂正とMainによる提出証拠・SHA照合/taskcommitは未完了。自動commitを急ぐため停止境界を越えない。次の限定承認単位は記録の事実訂正（V10record/verificationの未確認断定と最新数値/累計）、既存証拠と最終差分の必要照合、今回分だけlocal commit。動画再生成/追加測定/比較/共有/削除/pushは不要・未承認。新しいPCM一時物readback-pcm24k.wav/pcm-stats-20261021.py/readbackログは保全し、証拠と一時物を記録訂正時に区分。Mainは所有中のV9入口のみ更新、GLM所有ファイルへ同時編集しない。
+
+- V10最終記録受入（2026-10-21）：本人が累計30停止後に再開承認。停止/idle確認済みGLMからMainへ最終記録所有を戻し、V10record/verificationの最新累計30/次35（通信10/次15）、peak取得済み、未確認の互換性/moov配置/AACpadding断定を訂正。Mainが最終MP4実bytes/SHA一致を確認、初稿として技術受入。再render/追加測定/検査反復なし。今回分local commit準備、既存dirty/他資料とoutput証拠を保全。本人全編視聴/聴感は未確認、共有削除pushなし。正本は[最終V10記録](longform-v10-record.md#最終受入記録訂正2026-10-21main)。

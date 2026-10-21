@@ -1,0 +1,2537 @@
+{
+  "assets": [
+    {
+      "file": "audio/longform-toyota01-v10/0-1-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "櫻歌ミコ",
+        "style": 43,
+        "model": "11",
+        "speed": 1.06
+      },
+      "speaker": "ミーノ",
+      "credit": "VOICEVOX:櫻歌ミコ",
+      "sha256": "3bac8f863191da49a4ee45de16fafcf59ea4d7a17e3dbeebdf653bf6ccc07d23",
+      "seconds": 4.768,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/0-2-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "冥鳴ひまり",
+        "style": 14,
+        "model": "1",
+        "speed": 0.9
+      },
+      "speaker": "カーノ",
+      "credit": "VOICEVOX:冥鳴ひまり",
+      "sha256": "421eccceba86c6e0f9c5ccbcb748b03369c00511fb6313882e7ed24685bcbf13",
+      "seconds": 7.1786666666666665,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/0-3-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雨晴はう",
+        "style": 10,
+        "model": "0",
+        "speed": 1.04
+      },
+      "speaker": "ルーノ",
+      "credit": "VOICEVOX:雨晴はう",
+      "sha256": "824f566755ffc2c7d65933d8f009052d01fc620cb7f3b179f1003a11409158c7",
+      "seconds": 4.384,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/0-4-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "388af07503f21bcde5c01968e24fbcaf581a318f1065ad213a9532bfb4673755",
+      "seconds": 4.992,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/0-5-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "441440142853700142f9dd9d1184267a40b8f3c2e4b203237b962b2f83611d9d",
+      "seconds": 4.234666666666667,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/0-6-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "d7429efb667fdbad5d38df311b9e36a0427c08c9daa16cfb3f795b400095e2ca",
+      "seconds": 3.68,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/0-7-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "82caa77fe10883684b905fbf781ac894a843262758445fbed9278001c45db153",
+      "seconds": 5.728,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/0-8-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "4b914ddaa3546e6d0809d1066b06213b2d136d5cd5fd649578c61f403adfe07a",
+      "seconds": 5.578666666666667,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/0-9-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "7a0ede4265882f1dd6af4595dce5fd5c4f6f8c6a187f43dab05a196f8c75cb07",
+      "seconds": 8.821333333333333,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/0-10-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "36a35378af6f83197011c1d8cb64d31965942fa04b07c271d28180a0f7d0cc4a",
+      "seconds": 2.688,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/1-2-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "5ebc6987e10a5970a0c3e55a08d90b83b09f67674562ad10d57e7cf160748bb5",
+      "seconds": 6.208,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/1-3-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "248f4551828dffd6e32b23c3d116344c425a5f1544b08075abfe1ead595d2f09",
+      "seconds": 5.429333333333333,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/1-4-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "f1702135c759e7ec36fd84d975f4e6ab1be71a9b0a2979ff575ec5a006a6fef0",
+      "seconds": 11.52,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/1-5-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "f01c30bc0ad5264720f32b240945856424957dedee0f0b0d5781374022a4b9d0",
+      "seconds": 6.858666666666666,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/1-6-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "5d36771df04f89b4d6e52ed1e255cf1e5c5d36ab98dba077f65dc072b27da8df",
+      "seconds": 6.816,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/1-7-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "55e4268272c1e26266b7667df68a54e4fd4d79dbc54cea0867636da35bc8629f",
+      "seconds": 8.693333333333333,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/1-8-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "03020c2ec87bfcec0823514be249bfc1b89ad7edb717dd42e9b8b354f5f90f59",
+      "seconds": 5.184,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/1-9-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "cd708232fe16d83ec948f7280f655f098da32233785f6ed7c7a5ef9f145d59d5",
+      "seconds": 5.792,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/1-10-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "51ceb9e99d61518aa810ca2be1c7fd2d7d36e670553f8736c5fb4b4391002bae",
+      "seconds": 5.418666666666667,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/2-1-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "8981562cd431e0792d507f7559dee309dfdc5afc9341d1c41ee47bdde25b1c17",
+      "seconds": 18.346666666666668,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/2-2-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "8b22df52700e29496c5424599222b9ee90134c4e3a79caab50746f926ec897b1",
+      "seconds": 9.386666666666667,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/2-2-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "櫻歌ミコ",
+        "style": 43,
+        "model": "11",
+        "speed": 1.06
+      },
+      "speaker": "ミーノ",
+      "credit": "VOICEVOX:櫻歌ミコ",
+      "sha256": "8dd1fd46fa831b2d8978bbf6e3aec14c1b7487d61473d3762e843ac1fcca2fcc",
+      "seconds": 3.466666666666667,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/2-3-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "a4b87e0e81c0d1a8f06880d24cf8a960c43480f097e7e8dbdbe1f4617b7262ab",
+      "seconds": 15.541333333333334,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/2-3-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "冥鳴ひまり",
+        "style": 14,
+        "model": "1",
+        "speed": 0.9
+      },
+      "speaker": "カーノ",
+      "credit": "VOICEVOX:冥鳴ひまり",
+      "sha256": "95fefcbe562c96159ce7d7f7bb7be8826d012f42d2b4d421a2ec9f9551908d50",
+      "seconds": 7.488,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/2-4-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "61d12113aaf36f3b82f64377aa7c3ad0d49fa4ad6afaaf9be59f6cca432416b6",
+      "seconds": 14.944,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/2-4-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "櫻歌ミコ",
+        "style": 43,
+        "model": "11",
+        "speed": 1.06
+      },
+      "speaker": "ミーノ",
+      "credit": "VOICEVOX:櫻歌ミコ",
+      "sha256": "eda86cb4e39b66021116aa4425b00bbca9006b08c7edb53dbc23dbeaa78f761f",
+      "seconds": 3.2213333333333334,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/2-5-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "d530d3ac5de513de5e940b643a817bedad10622120d0b82591e885e49b975767",
+      "seconds": 20.874666666666666,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/2-5-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "冥鳴ひまり",
+        "style": 14,
+        "model": "1",
+        "speed": 0.9
+      },
+      "speaker": "カーノ",
+      "credit": "VOICEVOX:冥鳴ひまり",
+      "sha256": "bb673ee208a3d1e1d7532ea891109a099ae279402cc7658aa90fc18d5dd7a0d9",
+      "seconds": 3.8613333333333335,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/2-6-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "cd981f0d941cb8ead6cfd7686088ef12817899cbe7638a0278d191285f3ae8f9",
+      "seconds": 24.202666666666666,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/2-6-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "櫻歌ミコ",
+        "style": 43,
+        "model": "11",
+        "speed": 1.06
+      },
+      "speaker": "ミーノ",
+      "credit": "VOICEVOX:櫻歌ミコ",
+      "sha256": "d7c844b2c4baef8bf26b9885f1753f1e683442bb435ed22b7abbf7f0ba7f2390",
+      "seconds": 3.904,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/3-1-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "18cc8e9e63496da954c1411859584bc9a709dd73fb1494f657087aea02bd07f8",
+      "seconds": 9.76,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/3-1-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "冥鳴ひまり",
+        "style": 14,
+        "model": "1",
+        "speed": 0.9
+      },
+      "speaker": "カーノ",
+      "credit": "VOICEVOX:冥鳴ひまり",
+      "sha256": "6f937ea239ccda0c9f63bde33ede2b49edab82313825eefb4938092974c514ef",
+      "seconds": 6.112,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/3-2-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "3b66cd44119da452bcecb001006743de63ca352e9ba6cc026ab99cbc1696197a",
+      "seconds": 9.930666666666667,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/3-2-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "櫻歌ミコ",
+        "style": 43,
+        "model": "11",
+        "speed": 1.06
+      },
+      "speaker": "ミーノ",
+      "credit": "VOICEVOX:櫻歌ミコ",
+      "sha256": "7032a60154bccc9231b2da93d695d2dadbd8b2f3cf67ee757601d9944254093d",
+      "seconds": 3.1893333333333334,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/3-3-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "05a12843b7e17c2370f5d3a2beb29267b2b49c1bb9093a88543120e133eb7201",
+      "seconds": 10.72,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/3-3-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "冥鳴ひまり",
+        "style": 14,
+        "model": "1",
+        "speed": 0.9
+      },
+      "speaker": "カーノ",
+      "credit": "VOICEVOX:冥鳴ひまり",
+      "sha256": "e690284beaaf16ee35638690135ce2cf3e5ba172ba6b8cf13a42ff8c33e8e8d9",
+      "seconds": 6.912,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/3-4-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "720ed704f10759b488c36e11d3d358b1cdbd5ea1328e9349435623fff4a87a06",
+      "seconds": 8.672,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/3-4-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雨晴はう",
+        "style": 10,
+        "model": "0",
+        "speed": 1.04
+      },
+      "speaker": "ルーノ",
+      "credit": "VOICEVOX:雨晴はう",
+      "sha256": "621b89f2f452ddc4dd8e2c7035ea4b78959db67eff27674798a7270e04b1b158",
+      "seconds": 5.333333333333333,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/3-5-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "9695d69b474dbfc88f90246c2e78d0744be5dcfcd10053137fba2eb838d29a0e",
+      "seconds": 11.370666666666667,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/3-5-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "櫻歌ミコ",
+        "style": 43,
+        "model": "11",
+        "speed": 1.06
+      },
+      "speaker": "ミーノ",
+      "credit": "VOICEVOX:櫻歌ミコ",
+      "sha256": "f556fb12b57c7b5c72267ccf756eac1f758fd60a2e36d974800936820f2f8042",
+      "seconds": 4.928,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/3-6-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "b63b19f74dde63ba9c4ee30e23014f61acadd6bd9d2da0c5e01c1cb637e82b53",
+      "seconds": 20.533333333333335,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/3-6-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "冥鳴ひまり",
+        "style": 14,
+        "model": "1",
+        "speed": 0.9
+      },
+      "speaker": "カーノ",
+      "credit": "VOICEVOX:冥鳴ひまり",
+      "sha256": "9f9f4af9d10134ba96c93bb4f1ec3e63cf92f509b6001ae8da317d0938a5f2fe",
+      "seconds": 3.445333333333333,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/4-1-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "b5997702724a34eba9e758a0dbc36830fae8b182bcf66d590f9c31f05bb4ba6e",
+      "seconds": 10.176,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/4-1-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雨晴はう",
+        "style": 10,
+        "model": "0",
+        "speed": 1.04
+      },
+      "speaker": "ルーノ",
+      "credit": "VOICEVOX:雨晴はう",
+      "sha256": "7f2efa6222efc6ceead6f1a50217dc4d0183a64a49b29a02e070d19684df6b2c",
+      "seconds": 2.6133333333333333,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/4-2-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "9b317fc093a559810327795e5e4650b91d4dcab7b1261c7b5b376bc14c038df4",
+      "seconds": 9.536,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/4-2-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "冥鳴ひまり",
+        "style": 14,
+        "model": "1",
+        "speed": 0.9
+      },
+      "speaker": "カーノ",
+      "credit": "VOICEVOX:冥鳴ひまり",
+      "sha256": "db153e199ce760cf29ad6d361e2536b20a48c9221d4d14b03db9e05583a99057",
+      "seconds": 4.341333333333333,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/4-3-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "15d6b5fa35c7fa35b1b462f2555d57a2ee4bb2fcf9eb270e67de4322461f442b",
+      "seconds": 12.938666666666666,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/4-3-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "櫻歌ミコ",
+        "style": 43,
+        "model": "11",
+        "speed": 1.06
+      },
+      "speaker": "ミーノ",
+      "credit": "VOICEVOX:櫻歌ミコ",
+      "sha256": "1c00ef5092337b53409f48cf394da32ab0e62312f939f0cadae3bdec980184d0",
+      "seconds": 3.1146666666666665,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/4-4-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "f72df92679a1d7a3b27c823214d80a76374c03cdc33633b15821704673aea5fc",
+      "seconds": 8.821333333333333,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/4-4-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雨晴はう",
+        "style": 10,
+        "model": "0",
+        "speed": 1.04
+      },
+      "speaker": "ルーノ",
+      "credit": "VOICEVOX:雨晴はう",
+      "sha256": "d5fcfde4c13322bd183fbd739b4e98be9ec750703d8ed80f3606a1595ed05bd2",
+      "seconds": 4.938666666666666,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/4-5-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "cc990a603ed0cd58bc052ebd72e7ea3cbd29ce06be5236070189c3965519b516",
+      "seconds": 18.624,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/4-5-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "冥鳴ひまり",
+        "style": 14,
+        "model": "1",
+        "speed": 0.9
+      },
+      "speaker": "カーノ",
+      "credit": "VOICEVOX:冥鳴ひまり",
+      "sha256": "26cf1342c8d0a71457a9c20ccc72ae0da2d59f84d8544629fd2cf8bbdc2f6163",
+      "seconds": 4.042666666666666,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/4-6-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "62e992951e8b61513d131c15c54aaefc43f227901c144585ad81fc2677ca0d82",
+      "seconds": 9.706666666666667,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/4-6-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "櫻歌ミコ",
+        "style": 43,
+        "model": "11",
+        "speed": 1.06
+      },
+      "speaker": "ミーノ",
+      "credit": "VOICEVOX:櫻歌ミコ",
+      "sha256": "acd79ac353544698660356747e9859c23ca277371ddf0171508d5b677c275cdf",
+      "seconds": 5.1946666666666665,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/5-1-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "21ae9712a9ceaac4f1f8b262355dce3913b35a8c5ef7ca00f076141ac5b10070",
+      "seconds": 8.864,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/5-1-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "櫻歌ミコ",
+        "style": 43,
+        "model": "11",
+        "speed": 1.06
+      },
+      "speaker": "ミーノ",
+      "credit": "VOICEVOX:櫻歌ミコ",
+      "sha256": "be2d6796e5cbdf2d58a8fe05c818c0d143a87f4723d761231ddf98b2aba2ecf6",
+      "seconds": 4.288,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/5-2-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "edb721aecb68e1cb9443e391e1ee5953a97670ddf23d63047431041315df48ac",
+      "seconds": 16.384,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/5-2-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "冥鳴ひまり",
+        "style": 14,
+        "model": "1",
+        "speed": 0.9
+      },
+      "speaker": "カーノ",
+      "credit": "VOICEVOX:冥鳴ひまり",
+      "sha256": "267df2e862598233c30d5251b9cfe3095a9f1193b1553e7e42f43883ba443a8d",
+      "seconds": 4.48,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/5-3-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "bcb66cdafdeadb402a9bb149ec79f94f5f36e15ee188416ac5cad387917561d0",
+      "seconds": 20.373333333333335,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/5-3-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雨晴はう",
+        "style": 10,
+        "model": "0",
+        "speed": 1.04
+      },
+      "speaker": "ルーノ",
+      "credit": "VOICEVOX:雨晴はう",
+      "sha256": "9c3892f5abef915a763d942435c630124cb374cb8b4c82fa0e1076da64f39f38",
+      "seconds": 3.712,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/5-4-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "76a9bc3d8121a8fdce73cd11a9897d9f0b1dfc0f41cc4a7af3f2a50ee8dca65f",
+      "seconds": 19.797333333333334,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/5-4-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "冥鳴ひまり",
+        "style": 14,
+        "model": "1",
+        "speed": 0.9
+      },
+      "speaker": "カーノ",
+      "credit": "VOICEVOX:冥鳴ひまり",
+      "sha256": "72ca63280b5fc5ddf80b911afdc6c389df3ea4ee1c55ff0399eb00bc717d4c12",
+      "seconds": 4.565333333333333,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/5-5-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "cce7b6b254b0ffe9efa0c15c531fa57b896dd304fc40fded21afe29c8a81c677",
+      "seconds": 12.224,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/5-5-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "櫻歌ミコ",
+        "style": 43,
+        "model": "11",
+        "speed": 1.06
+      },
+      "speaker": "ミーノ",
+      "credit": "VOICEVOX:櫻歌ミコ",
+      "sha256": "9965c1abe36f8ab816dd5d5af25c2a50763b4a438b0709301d4b1220874b6048",
+      "seconds": 5.6,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/5-6-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "9615ef56583b5bb02d262e42a165f168590bb24bb8b611da3c11ee12648e1fcc",
+      "seconds": 9.610666666666667,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/5-6-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雨晴はう",
+        "style": 10,
+        "model": "0",
+        "speed": 1.04
+      },
+      "speaker": "ルーノ",
+      "credit": "VOICEVOX:雨晴はう",
+      "sha256": "28e2ac46d3cc83fd74851abf6523c6b6879d40654bd31ab951b8956053654cb1",
+      "seconds": 5.76,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/6-1-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "0191b940837c2d4fb8a514b2cccabb8bd8339add88fe9538075a3dc14fd3e380",
+      "seconds": 22.208,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/6-1-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "櫻歌ミコ",
+        "style": 43,
+        "model": "11",
+        "speed": 1.06
+      },
+      "speaker": "ミーノ",
+      "credit": "VOICEVOX:櫻歌ミコ",
+      "sha256": "02cf266c8c821b5d48f069b38c9662635afdd5a14b09985cc07f381dcdb4f632",
+      "seconds": 3.7013333333333334,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/6-2-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "8e948f9d79236561126472ee446ad131197378861e593d388da1366f5df06baf",
+      "seconds": 16.266666666666666,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/6-2-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "櫻歌ミコ",
+        "style": 43,
+        "model": "11",
+        "speed": 1.06
+      },
+      "speaker": "ミーノ",
+      "credit": "VOICEVOX:櫻歌ミコ",
+      "sha256": "8bfc1a166ac7cb283e5a0b2aa8319496011391f3b396d4aa4f55be38f2987bf5",
+      "seconds": 4.213333333333333,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/6-2-b3.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "22e81fafc1aa2659cc854f92b5ce70e0d747496977b876f9b14defd8bcdbebc3",
+      "seconds": 4.1386666666666665,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/6-3-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "d1809d44bd52d75f9e95f7c68160cb83b4a03838421ffd5e85098c0fb32bcda2",
+      "seconds": 3.6906666666666665,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/6-3-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "冥鳴ひまり",
+        "style": 14,
+        "model": "1",
+        "speed": 0.9
+      },
+      "speaker": "カーノ",
+      "credit": "VOICEVOX:冥鳴ひまり",
+      "sha256": "73e5b6cb06689d6248ea5ef92c77b09f6c842eee6d7504538409b21d5fc1ff2a",
+      "seconds": 8.277333333333333,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/6-3-b3.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "7f28e25c9a56aa13de52c4b760611c7eddfa907ea9b8574a58a4915073b92f15",
+      "seconds": 10.442666666666666,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/6-4-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "ba570db9cefdae34f4c1b92fc253480ab44b47e4b68f4f005d2f6c099411d64a",
+      "seconds": 11.541333333333334,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/6-4-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雨晴はう",
+        "style": 10,
+        "model": "0",
+        "speed": 1.04
+      },
+      "speaker": "ルーノ",
+      "credit": "VOICEVOX:雨晴はう",
+      "sha256": "8bb1c770f9acdf7b0762c6940acf9c51d3d9ce78dd7460f8d324b3f18e77dd16",
+      "seconds": 8.810666666666666,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/6-5-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "8d5e4ca41f5a2403665db8d12c005eb098ac1f6798bddaaf0b853aaf15489922",
+      "seconds": 6.506666666666667,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/6-5-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "櫻歌ミコ",
+        "style": 43,
+        "model": "11",
+        "speed": 1.06
+      },
+      "speaker": "ミーノ",
+      "credit": "VOICEVOX:櫻歌ミコ",
+      "sha256": "35591526720f26cf1620bfd008c6f677ff5a520a1f5da362b659a88c6147a1e6",
+      "seconds": 5.706666666666667,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/6-5-b3.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "7254e88a8e4c50938327fae659133b8ed211a087dfff7367d321fc2ab459a357",
+      "seconds": 10.336,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/6-6-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "30bc7c77a497af800bfa9b0bcd909ac9870577c55e92e317b089e6fed0fb6ce9",
+      "seconds": 18.986666666666668,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/6-6-b2.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "冥鳴ひまり",
+        "style": 14,
+        "model": "1",
+        "speed": 0.9
+      },
+      "speaker": "カーノ",
+      "credit": "VOICEVOX:冥鳴ひまり",
+      "sha256": "73e1c6576ac50c2fd9b699ee0f92d2504cf616b475180ed84cde5b9bf66fcf2d",
+      "seconds": 3.8826666666666667,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/7-1-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "櫻歌ミコ",
+        "style": 43,
+        "model": "11",
+        "speed": 1.06
+      },
+      "speaker": "ミーノ",
+      "credit": "VOICEVOX:櫻歌ミコ",
+      "sha256": "1e618b3b9b2185f19a374bdf9d4b7785016e83a7d6f0bbd868a4ce5c71061107",
+      "seconds": 11.552,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/7-2-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "3ddcbaaebeb9d8d3105bd04779c95815de80d4e22b849ab43b6c7e76bc58b733",
+      "seconds": 19.285333333333334,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/7-3-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "冥鳴ひまり",
+        "style": 14,
+        "model": "1",
+        "speed": 0.9
+      },
+      "speaker": "カーノ",
+      "credit": "VOICEVOX:冥鳴ひまり",
+      "sha256": "49191c4dfc15f087f2e2ed26a45704fd71a001c30c8d18ce69e0c261376d4ab0",
+      "seconds": 15.306666666666667,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/7-4-b1.wav",
+      "type": "voice-v10",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "bcf69778d46edcebff2312f6db3e752871e72ed9e6502c501cee3a541f7de87e",
+      "seconds": 34.32533333333333,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-0-1.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "3bac8f863191da49a4ee45de16fafcf59ea4d7a17e3dbeebdf653bf6ccc07d23",
+      "seconds": 4.768,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-0-10.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "36a35378af6f83197011c1d8cb64d31965942fa04b07c271d28180a0f7d0cc4a",
+      "seconds": 2.688,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-0-2.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "421eccceba86c6e0f9c5ccbcb748b03369c00511fb6313882e7ed24685bcbf13",
+      "seconds": 7.1786666666666665,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-0-3.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "824f566755ffc2c7d65933d8f009052d01fc620cb7f3b179f1003a11409158c7",
+      "seconds": 4.384,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-0-4.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "388af07503f21bcde5c01968e24fbcaf581a318f1065ad213a9532bfb4673755",
+      "seconds": 4.992,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-0-5.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "441440142853700142f9dd9d1184267a40b8f3c2e4b203237b962b2f83611d9d",
+      "seconds": 4.234666666666667,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-0-6.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "d7429efb667fdbad5d38df311b9e36a0427c08c9daa16cfb3f795b400095e2ca",
+      "seconds": 3.68,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-0-7.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "82caa77fe10883684b905fbf781ac894a843262758445fbed9278001c45db153",
+      "seconds": 5.728,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-0-8.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "4b914ddaa3546e6d0809d1066b06213b2d136d5cd5fd649578c61f403adfe07a",
+      "seconds": 5.578666666666667,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-0-9.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "7a0ede4265882f1dd6af4595dce5fd5c4f6f8c6a187f43dab05a196f8c75cb07",
+      "seconds": 8.821333333333333,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-1-10.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "51ceb9e99d61518aa810ca2be1c7fd2d7d36e670553f8736c5fb4b4391002bae",
+      "seconds": 5.418666666666667,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-1-2.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "5ebc6987e10a5970a0c3e55a08d90b83b09f67674562ad10d57e7cf160748bb5",
+      "seconds": 6.208,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-1-3.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "248f4551828dffd6e32b23c3d116344c425a5f1544b08075abfe1ead595d2f09",
+      "seconds": 5.429333333333333,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-1-4.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "f1702135c759e7ec36fd84d975f4e6ab1be71a9b0a2979ff575ec5a006a6fef0",
+      "seconds": 11.52,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-1-5.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "f01c30bc0ad5264720f32b240945856424957dedee0f0b0d5781374022a4b9d0",
+      "seconds": 6.858666666666666,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-1-6.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "5d36771df04f89b4d6e52ed1e255cf1e5c5d36ab98dba077f65dc072b27da8df",
+      "seconds": 6.816,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-1-7.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "55e4268272c1e26266b7667df68a54e4fd4d79dbc54cea0867636da35bc8629f",
+      "seconds": 8.693333333333333,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-1-8.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "03020c2ec87bfcec0823514be249bfc1b89ad7edb717dd42e9b8b354f5f90f59",
+      "seconds": 5.184,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-1-9.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "cd708232fe16d83ec948f7280f655f098da32233785f6ed7c7a5ef9f145d59d5",
+      "seconds": 5.792,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-2-1.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "8981562cd431e0792d507f7559dee309dfdc5afc9341d1c41ee47bdde25b1c17",
+      "seconds": 18.346666666666668,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-2-2.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "6e3f891f5e9eebb300a8c97c8f23827b796915c15bbea4d745225d9cbcbe6676",
+      "seconds": 13.153333333333334,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-2-3.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "df420926cbc79e99166a8fe6dcdc7ceed15cf496c268ef658b02d588ea77fc94",
+      "seconds": 23.329333333333334,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-2-4.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "de9f9429aecf700ff74e054af68fb9303823c95849e8cdb8e8a9f30cce40081f",
+      "seconds": 18.465333333333334,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-2-5.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "5f5cd39ee5a9768a7c3140c363e5f3abed6b8742f7176b38d4a1467dceb228b6",
+      "seconds": 25.036,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-2-6.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "a110d904612454d1b230cdec3adda7cc8f5392a6d2edda184a139042dde6285f",
+      "seconds": 28.406666666666666,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-3-1.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "988dac867bbe38a198152eb6c56dae0a8fe65117fda431907871717653105cbf",
+      "seconds": 16.172,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-3-2.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "ec854383242125ade51c4861ec333b69793dede79b9a3a244cfb83b2509dc36d",
+      "seconds": 13.42,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-3-3.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "45443708b8fc187f095c4c5ae7cf3208cc756bbc4852c6487253b5aa0ef0ff07",
+      "seconds": 17.932,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-3-4.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "617b57046affdcc6e19a174efc2d5325386159602ac4fb66b298d08d992b913e",
+      "seconds": 14.305333333333333,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-3-5.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "df4752df76a3b7e59f1cdc475c630b68f3e25e06dae3b83b0496f588cf79c3c5",
+      "seconds": 16.598666666666666,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-3-6.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "a845171a3661b6cb9de5748daee969f3e6ccacff677f29d3f3f9a56f4e808ad2",
+      "seconds": 24.278666666666666,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-4-1.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "9e7aaa62ddbb37f8c58a90ffd134c9d6d8533fed07244cb00d87537c7373b853",
+      "seconds": 13.089333333333334,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-4-2.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "7a8ea94ff87c4211c55efc750f036eb5162f9e81036f8ea25fc8ad493cdd3af6",
+      "seconds": 14.177333333333333,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-4-3.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "cc3699717f5c80ae4611e5fa3380d30f4f789da579b5e861f1a58983a6f51388",
+      "seconds": 16.35333333333333,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-4-4.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "0d46a0e79dbf937c3d74a399affbd505020e4afd763f89049bc9487d2d417507",
+      "seconds": 14.06,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-4-5.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "024761322b282d3f5335f13af944d8b49d7342b76b0b3c7a039162d5ba8d2e4a",
+      "seconds": 22.966666666666665,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-4-6.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "a421ba88981fd1f6afa9a403a164407beb95b3b3d5328dc0153d30d8a762a112",
+      "seconds": 15.201333333333332,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-5-1.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "ed62a7a04056575c8130bea8a511c7963aa2745b95a9b5bfb70de16f9c9a3043",
+      "seconds": 13.452,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-5-2.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "b1dc3c665e0f6aa894a6057fa933fd4bf2a0639bb15040f967b4a4d239a5fe3c",
+      "seconds": 21.164,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-5-3.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "1af8be0f7ac2880784831179dd2b103d81395bd7fb66d715df52dfd7d77cb504",
+      "seconds": 24.38533333333333,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-5-4.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "7fe11e6efbe88fa7c42fe0316a1adaf425375d4603b94bbc26507f15e2928ccc",
+      "seconds": 24.662666666666667,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-5-5.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "fb9b840ecd3c5f284887b1941c164174acc3fdbc73c9ed89004de7fbdf1ddc0d",
+      "seconds": 18.124,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-5-6.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "a51d225a75afbc11ce526149e868243e52b426c4c724c50d4ccba537eb044e3d",
+      "seconds": 15.670666666666667,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-6-1.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "f1ff5f999a7507f62def9753e160b4e6052d349ebc060fe15631a9dea4e51133",
+      "seconds": 26.209333333333333,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-6-2.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "1b55bb4d1857d3d18873788ee6bff6adb42fe9ee8c8803e30c5e57ce0c4b98e3",
+      "seconds": 25.218666666666667,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-6-3.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "831ccf5b9d41f2060b27b0ccabb075dc8b0b17c1e351ee56dd42b24502f1b332",
+      "seconds": 23.010666666666665,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-6-4.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "4b57d3cdf653c38f746de55f5d5b6c277b2b8be29674547db2af40ef127a4c3d",
+      "seconds": 20.652,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-6-5.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "91666325bc14b9aad0b354ad5b80a17de4cfba91a5e07306bc62561ff52a77e5",
+      "seconds": 23.149333333333335,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-6-6.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "54a544f29e5a41c858b3720e485f4466bae937d1f97290bad17f027b90083708",
+      "seconds": 23.169333333333334,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-7-1.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "1e618b3b9b2185f19a374bdf9d4b7785016e83a7d6f0bbd868a4ce5c71061107",
+      "seconds": 11.552,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-7-2.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "3ddcbaaebeb9d8d3105bd04779c95815de80d4e22b849ab43b6c7e76bc58b733",
+      "seconds": 19.285333333333334,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-7-3.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "49191c4dfc15f087f2e2ed26a45704fd71a001c30c8d18ce69e0c261376d4ab0",
+      "seconds": 15.306666666666667,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    },
+    {
+      "file": "audio/longform-toyota01-v10/scene-7-4.wav",
+      "type": "voice-v10-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（beat WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "beatWAV合成",
+      "sha256": "bcf69778d46edcebff2312f6db3e752871e72ed9e6502c501cee3a541f7de87e",
+      "seconds": 34.32533333333333,
+      "approvalStatus": "draft-v10",
+      "licenseReference": "sources/character-dialogue-voice.md"
+    }
+  ]
+}
