@@ -5,40 +5,151 @@
     {
       "name": "ホーマー（称賛）",
       "source": "/mnt/CE14D65D14D6485B/Shared/Transfer/キャラ参考/ChatGPT Image Oct 20, 2026, 03_18_02 AM.png",
-      "crop": [20, 20, 630, 1185],
+      "crop": [
+        20,
+        20,
+        630,
+        1185
+      ],
       "tighten": true,
       "pad": 6,
       "cutout": true,
       "out": "homer.png",
       "rules": [
-        {"mode": "ink", "color": [200, 50, 44], "box": [245, 522, 60, 40], "note": "蝶ネクタイ"},
-        {"mode": "band", "color": [200, 50, 44], "p1": [128, 450], "p2": [293, 380], "width": 12, "offset": 20, "note": "つばの上のリボン帯"}
+        {
+          "mode": "ink",
+          "color": [
+            200,
+            50,
+            44
+          ],
+          "box": [
+            293,
+            514,
+            26,
+            26
+          ],
+          "note": "蝶ネクタイ"
+        },
+        {
+          "mode": "band",
+          "color": [
+            200,
+            50,
+            44
+          ],
+          "p1": [
+            128,
+            450
+          ],
+          "p2": [
+            293,
+            380
+          ],
+          "width": 12,
+          "offset": 30,
+          "note": "つばの上のリボン帯"
+        }
       ]
     },
     {
       "name": "ジャッド（批判）",
       "source": "/mnt/CE14D65D14D6485B/Shared/Transfer/キャラ参考/ChatGPT Image Oct 20, 2026, 03_18_13 AM.png",
-      "crop": [100, 137, 500, 1125],
+      "crop": [
+        100,
+        137,
+        500,
+        1125
+      ],
       "tighten": true,
       "pad": 6,
       "cutout": true,
       "out": "judd.png",
       "rules": [
-        {"mode": "ink", "color": [43, 95, 168], "box": [331, 429, 32, 28], "note": "蝶ネクタイ"},
-        {"mode": "band", "color": [43, 95, 168], "p1": [147, 385], "p2": [339, 263], "width": 12, "offset": 7, "note": "つばの上のリボン帯"}
+        {
+          "mode": "ink",
+          "color": [
+            43,
+            95,
+            168
+          ],
+          "box": [
+            320,
+            449,
+            21,
+            21
+          ],
+          "note": "蝶ネクタイ"
+        },
+        {
+          "mode": "band",
+          "color": [
+            43,
+            95,
+            168
+          ],
+          "p1": [
+            147,
+            385
+          ],
+          "p2": [
+            339,
+            263
+          ],
+          "width": 12,
+          "offset": 16,
+          "note": "つばの上のリボン帯"
+        }
       ]
     },
     {
       "name": "ケント（検証）",
       "source": "/mnt/CE14D65D14D6485B/Shared/Transfer/キャラ参考/ChatGPT Image Oct 20, 2026, 03_17_47 AM.png",
-      "crop": [10, 80, 560, 1150],
+      "crop": [
+        10,
+        80,
+        560,
+        1150
+      ],
       "tighten": true,
       "pad": 6,
       "cutout": true,
       "out": "kent.png",
       "rules": [
-        {"mode": "ink", "color": [46, 125, 79], "box": [291, 386, 32, 28], "note": "蝶ネクタイ"},
-        {"mode": "band", "color": [46, 125, 79], "p1": [129, 270], "p2": [389, 185], "width": 12, "offset": 14, "note": "つばの上のリボン帯"}
+        {
+          "mode": "ink",
+          "color": [
+            46,
+            125,
+            79
+          ],
+          "box": [
+            319,
+            370,
+            30,
+            28
+          ],
+          "note": "蝶ネクタイ"
+        },
+        {
+          "mode": "band",
+          "color": [
+            46,
+            125,
+            79
+          ],
+          "p1": [
+            129,
+            270
+          ],
+          "p2": [
+            389,
+            185
+          ],
+          "width": 12,
+          "offset": 18,
+          "note": "つばの上のリボン帯"
+        }
       ]
     }
   ]

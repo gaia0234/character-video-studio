@@ -5,7 +5,7 @@
       627,
       1175
     ],
-    "bytes": 39823
+    "bytes": 39551
   },
   {
     "file": "public/assets/characters/elder-svg/judd.svg",
@@ -13,7 +13,7 @@
       466,
       1125
     ],
-    "bytes": 39774
+    "bytes": 38969
   },
   {
     "file": "public/assets/characters/elder-svg/kent.svg",
@@ -21,6 +21,6 @@
       541,
       1150
     ],
-    "bytes": 41488
+    "bytes": 41499
   }
 ]
