@@ -168,6 +168,17 @@
       "https://developers.openai.com/api/docs/pricing"
     ],
     "scope": "documentation and decision recording only; no key access, generation, service activation, billing or main video change",
-    "recheck": "before any newly approved OpenAI audio implementation, recheck current model/API/pricing and account access"
+    "recheck": "before any newly approved OpenAI audio implementation, recheck current model/API/pricing and account access",
+    "trialPlan": {
+      "authorization": "2026-10-21 本人「進める」",
+      "scope": "Gemini/Qwenと同じ2-6-b1原文、落ち着いた男性声1候補/生成1回のOpenAI限定試聴",
+      "model": "gpt-realtime-2.1-mini via Realtime API",
+      "status": "blocked_missing_key; generation not started",
+      "dependency": "OPENAI_API_KEY absent in environment and .env; empty .env entry added; values never displayed",
+      "acceptance": "WAV保存、正しいPCM尺/非無音/SHA確認、本人聴感は別途",
+      "prohibitions": "本編変更/別候補連続生成/自動共有/新規アカウント/課金設定変更/秘密ログ/pushなし",
+      "failureBoundary": "動画関連38/次40・通信11/次15維持。キー不足は依存未充足で実行失敗に加算しない。",
+      "workflowReference": "https://developers.openai.com/api/docs/guides/voice-websockets"
+    }
   }
 }
