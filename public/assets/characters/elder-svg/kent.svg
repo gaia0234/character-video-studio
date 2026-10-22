@@ -31,9 +31,10 @@
     <path d="M126 172 h20 v22 h-20 z" fill="#FFFFFF" stroke="none"/>
     <!-- 顔（角丸四角） -->
     <path d="M100 112 L172 112 L172 172 Q172 200 136 202 Q100 200 100 172 Z" fill="#FFFFFF"/>
+    <g id="brows" fill="none" stroke="#111111" stroke-width="3.5" stroke-linecap="round"></g>
     <circle cx="120" cy="146" r="4.5" fill="#111111" stroke="none"/>
     <circle cx="152" cy="146" r="4.5" fill="#111111" stroke="none"/>
-    <circle cx="136" cy="176" r="5" fill="#111111" stroke="none"/>
+    <g id="mouth"><circle cx="136" cy="176" r="5" fill="#111111" stroke="none"/></g>
     <!-- 帽子（つば＋冠＋帯） -->
     <ellipse cx="136" cy="106" rx="56" ry="11" fill="#111111"/>
     <path d="M100 106 Q104 46 136 44 Q168 46 172 106 Z" fill="#111111"/>

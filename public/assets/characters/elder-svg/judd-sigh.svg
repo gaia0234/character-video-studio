@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 560" color="#2B5FA8">
+  <title>judd（sigh）</title>
+  <!-- 手書きフラットベクター。差し色は color 属性1行で変更可。 -->
+  <g stroke="#111111" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <!-- 杖 -->
+    <path d="M214 292 L214 500" fill="none" stroke-width="6"/>
+    <path d="M214 292 q-16 -4 -16 14" fill="none" stroke-width="6"/>
+    <!-- 後ろの燕尾服（長い裾） -->
+    <path d="M104 330 Q84 430 66 500 L112 500 L120 356 Z" fill="#111111"/>
+    <path d="M168 330 Q186 430 204 500 L158 500 L150 356 Z" fill="#111111"/>
+    <!-- 脚（やや細い） -->
+    <path d="M116 376 L112 462" fill="none" stroke-width="12"/>
+    <path d="M158 376 L164 462" fill="none" stroke-width="12"/>
+    <path d="M94 486 q20 -5 34 3" fill="none" stroke-width="10"/>
+    <path d="M160 486 q20 -3 30 7" fill="none" stroke-width="10"/>
+    <!-- 胴（前かがみ） -->
+    <path d="M110 212 Q140 204 166 216 L184 316 L174 384 L104 384 L94 316 Z" fill="#111111"/>
+    <!-- シャツの白V -->
+    <path d="M122 210 L140 246 L158 212 Q140 206 122 210 Z" fill="#FFFFFF" stroke="none"/>
+    <!-- 蝶ネクタイ（差し色） -->
+    <path d="M134 222 L120 210 L120 234 Z" fill="currentColor" stroke="none"/>
+    <path d="M146 222 L160 210 L160 234 Z" fill="currentColor" stroke="none"/>
+    <rect x="135" y="212" width="10" height="20" fill="currentColor" stroke="none"/>
+    <!-- 左腕（垂れる） -->
+    <path d="M108 222 Q94 264 96 302" fill="none" stroke-width="12"/>
+    <circle cx="96" cy="306" r="9" fill="#FFFFFF"/>
+    <!-- 右腕（杖を持つ） -->
+    <path d="M170 226 Q196 252 212 286" fill="none" stroke-width="12"/>
+    <circle cx="214" cy="290" r="9" fill="#FFFFFF"/>
+    <!-- 首 -->
+    <path d="M130 188 h20 v22 h-20 z" fill="#FFFFFF" stroke="none"/>
+    <!-- 顔（丸みのある三角） -->
+    <path d="M110 114 L170 114 Q184 150 166 180 Q152 206 140 208 Q128 206 114 180 Q96 150 110 114 Z" fill="#FFFFFF"/>
+    <g id="brows" fill="none" stroke="#111111" stroke-width="3.5" stroke-linecap="round"><path d="M116 140 L134 132" /><path d="M146 132 L164 140" /></g>
+    <circle cx="126" cy="156" r="4.5" fill="#111111" stroke="none"/>
+    <circle cx="152" cy="154" r="4.5" fill="#111111" stroke="none"/>
+    <g id="mouth"><ellipse cx="140" cy="188" rx="11" ry="6" fill="#111111" stroke="none"/></g>
+    <!-- 帽子（つば＋冠＋帯） -->
+    <ellipse cx="140" cy="110" rx="58" ry="11" fill="#111111"/>
+    <path d="M100 110 L108 44 Q140 32 170 44 L178 110 Z" fill="#111111"/>
+    <path d="M104 86 L174 86 L176 102 L104 102 Z" fill="currentColor" stroke="none"/>
+  </g>
+  <ellipse cx="140" cy="500" rx="70" ry="8" fill="#111111" opacity="0.12"/>
+</svg>

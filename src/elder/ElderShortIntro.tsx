@@ -2,7 +2,7 @@ import React from 'react';
 import {AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {useLocalFont} from '../components/useLocalFont';
 
-type Accent = {key: string; name: string; role: string; line: string; file: string; color: string; ratio: number};
+type Accent = {key: string; name: string; role: string; line: string; file: string; color: string; ratio: number; exprFile?: string; exprAt?: number};
 
 const CHARACTERS: Accent[] = [
   {
@@ -11,6 +11,8 @@ const CHARACTERS: Accent[] = [
     role: '称賛役',
     line: 'あの時代を、誇りをもって話したい',
     file: 'assets/characters/elder-svg/homer.svg',
+    exprFile: 'assets/characters/elder-svg/homer-happy.svg',
+    exprAt: 26,
     color: '#C8322C',
     ratio: 340 / 560,
   },
@@ -20,6 +22,8 @@ const CHARACTERS: Accent[] = [
     role: '批判役',
     line: '大変だったことも、忘れない',
     file: 'assets/characters/elder-svg/judd.svg',
+    exprFile: 'assets/characters/elder-svg/judd-sigh.svg',
+    exprAt: 26,
     color: '#2B5FA8',
     ratio: 340 / 560,
   },
@@ -29,6 +33,8 @@ const CHARACTERS: Accent[] = [
     role: '検証役',
     line: '数字も記憶も、確かめてから',
     file: 'assets/characters/elder-svg/kent.svg',
+    exprFile: 'assets/characters/elder-svg/kent-think.svg',
+    exprAt: 26,
     color: '#2E7D4F',
     ratio: 340 / 560,
   },
@@ -50,7 +56,8 @@ const Character: React.FC<{
   height: number;
   baseY: number;
   lean?: number;
-}> = ({data, start, end, x, height, baseY, lean = 0}) => {
+  useExpr?: boolean;
+}> = ({data, start, end, x, height, baseY, lean = 0, useExpr = false}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const progress = enter(frame, start, fps);
@@ -74,7 +81,10 @@ const Character: React.FC<{
         transformOrigin: 'bottom center',
       }}
     >
-      <Img src={staticFile(data.file)} style={{height: '100%', width: '100%', objectFit: 'contain', display: 'block'}} />
+      <Img
+        src={staticFile(useExpr && data.exprFile && frame >= start + (data.exprAt ?? 0) ? data.exprFile : data.file)}
+        style={{height: '100%', width: '100%', objectFit: 'contain', display: 'block'}}
+      />
     </div>
   );
 };
@@ -229,6 +239,7 @@ export const ElderShortIntro: React.FC = () => {
             height={soloHeight[i]}
             baseY={1560}
             lean={data.key === 'judd' ? 1.5 : 0}
+            useExpr
           />
           <NamePlate data={data} start={soloStart[i]} end={soloEnd[i]} x={90} y={170} />
           <Caption text={data.line} start={soloStart[i] + 10} end={soloEnd[i]} />

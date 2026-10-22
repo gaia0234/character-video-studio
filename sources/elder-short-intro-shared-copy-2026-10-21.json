@@ -1,76 +1,111 @@
 {
-  "date": "2026-10-21",
-  "approval": "本人「共有する」／トレース版は「採用できない」との判定→手書きフラットベクターへ切替",
-  "destination": "/mnt/CE14D65D14D6485B/Shared/Transfer/エルダーチャンネル/2026-10-21-試作ショート",
-  "windowsDirectory": "\\\\192.168.1.115\\Shared\\Transfer\\エルダーチャンネル\\2026-10-21-試作ショート",
-  "version": "v5（手書きフラットベクターSVG・外部AI API不使用）",
-  "superseded": [
-    "elder-short-intro-v1.mp4",
-    "elder-short-intro-v2-svg.mp4",
-    "elder-short-intro-v3-svg.mp4",
-    "elder-short-intro-v4-svg.mp4"
-  ],
-  "characterArt": {
-    "method": "手書きSVG（既存キャラ ルーノ等と同じ作・手法）",
-    "assets": [
-      "public/assets/characters/elder-svg/homer.svg",
-      "judd.svg",
-      "kent.svg"
-    ],
-    "viewBox": "340x560",
-    "editable": "差し色はルート要素のcolor属性1行",
-    "accents": "蝶ネクタイと帽子の帯のみ（つばは黒・裾は対象外）",
-    "retired": "設定シートのトレース版（imagetracerjs/自前トレーサ）は線画のハッチングがノイズとなり不採用"
+  "date": "2026-10-22",
+  "approval": "本人「進める」／共有",
+  "destination": "/mnt/CE14D65D14D6485B/Shared/Transfer/エルダーチャンネル",
+  "windowsDirectory": "\\\\192.168.1.115\\Shared\\Transfer\\エルダーチャンネル",
+  "deliverables": {
+    "2026-10-21-試作ショート": {
+      "video": "elder-short-intro-v6-expr.mp4（1080x1920・30fps・20.00秒・無音・表情差分つき）",
+      "svg": "手書きフラットベクター3体＋表情差分6種（差し色はcolor属性1行で変更可）",
+      "reference": "参考-設定シート切出し/（ラスタ原本・採用版ではない）"
+    },
+    "2026-10-22-第1話台本": {
+      "script": "エルダーチャンネル第1話台本.md（初稿・出典確認済みの数値のみ使用）",
+      "sources": "人口推計（総務省統計局）2026-10-20公表分／確認日2026-10-22"
+    }
   },
   "files": [
     {
-      "name": "elder-short-intro-v5-flat-svg.mp4",
-      "bytes": 3287590,
-      "source": "output/elder-channel-characters-2026-10-21/elder-short-intro-v5-flat-svg.mp4",
-      "sourceSha256": "90ec81b002efd8030bb2b07f1a2abe33eb32384c0e6dc37483b392c5c2d6a44d",
-      "destinationSha256": "90ec81b002efd8030bb2b07f1a2abe33eb32384c0e6dc37483b392c5c2d6a44d",
+      "name": "2026-10-21-試作ショート/elder-short-intro-v6-expr.mp4",
+      "bytes": 3315184,
+      "sourceSha256": "906da9bd9e45422b6bf746eed858a4062f81c8513b094d20754b8de874cafc17",
+      "destinationSha256": "906da9bd9e45422b6bf746eed858a4062f81c8513b094d20754b8de874cafc17",
       "match": true
     },
     {
-      "name": "still-100.png",
+      "name": "2026-10-21-試作ショート/still-100.png",
       "bytes": 898920,
-      "source": "output/elder-channel-characters-2026-10-21/still-100.png",
       "sourceSha256": "1f818a10f3a55ac7ed1de849d06ec1a60473707e12a2723a4d3445246669adc5",
       "destinationSha256": "1f818a10f3a55ac7ed1de849d06ec1a60473707e12a2723a4d3445246669adc5",
       "match": true
     },
     {
-      "name": "still-450.png",
+      "name": "2026-10-21-試作ショート/still-450.png",
       "bytes": 923848,
-      "source": "output/elder-channel-characters-2026-10-21/still-450.png",
       "sourceSha256": "a2e566646ffc14c27691cf411ba5e8f3230486a3e1b0f64911145eb313a80d84",
       "destinationSha256": "a2e566646ffc14c27691cf411ba5e8f3230486a3e1b0f64911145eb313a80d84",
       "match": true
     },
     {
-      "name": "svg/homer.svg",
-      "bytes": 2664,
-      "source": "public/assets/characters/elder-svg/homer.svg",
-      "sourceSha256": "0a0c1f615c4c7d104c7ec86614929f59de6d49926f3cd618211c979e5568fcfe",
-      "destinationSha256": "0a0c1f615c4c7d104c7ec86614929f59de6d49926f3cd618211c979e5568fcfe",
+      "name": "2026-10-22-第1話台本/エルダーチャンネル第1話台本.md",
+      "bytes": 6254,
+      "sourceSha256": "81fa443551fdcc7c273e21a010d0ba09e08dcd87978eeb5d1bb8bae7e578fde1",
+      "destinationSha256": "81fa443551fdcc7c273e21a010d0ba09e08dcd87978eeb5d1bb8bae7e578fde1",
       "match": true
     },
     {
-      "name": "svg/judd.svg",
-      "bytes": 2621,
-      "source": "public/assets/characters/elder-svg/judd.svg",
-      "sourceSha256": "e694b847995a39cb594bae5dfcd8c51953525a833d3a193dd2e2e895197ac745",
-      "destinationSha256": "e694b847995a39cb594bae5dfcd8c51953525a833d3a193dd2e2e895197ac745",
+      "name": "2026-10-21-試作ショート/svg/homer.svg",
+      "bytes": 2776,
+      "sourceSha256": "02a48b289b8b2c7ecee8166d5a23e97ac848ba332fc9159e2fd298e9c17c1314",
+      "destinationSha256": "02a48b289b8b2c7ecee8166d5a23e97ac848ba332fc9159e2fd298e9c17c1314",
       "match": true
     },
     {
-      "name": "svg/kent.svg",
-      "bytes": 2766,
-      "source": "public/assets/characters/elder-svg/kent.svg",
-      "sourceSha256": "81904b65f0237ffe93d86d4541557b375cd0b9549676ebbb20bf3bf4d4d47a11",
-      "destinationSha256": "81904b65f0237ffe93d86d4541557b375cd0b9549676ebbb20bf3bf4d4d47a11",
+      "name": "2026-10-21-試作ショート/svg/homer-happy.svg",
+      "bytes": 2825,
+      "sourceSha256": "d8b07893d8c4fd0ddede5ba9f167d76a03a4cfab950bb2afd9374fa9cd0af9eb",
+      "destinationSha256": "d8b07893d8c4fd0ddede5ba9f167d76a03a4cfab950bb2afd9374fa9cd0af9eb",
+      "match": true
+    },
+    {
+      "name": "2026-10-21-試作ショート/svg/homer-cheer.svg",
+      "bytes": 2830,
+      "sourceSha256": "1817d647c52ff8c56fdd9073af7207c7de875be4041456607b7ca82c10135a43",
+      "destinationSha256": "1817d647c52ff8c56fdd9073af7207c7de875be4041456607b7ca82c10135a43",
+      "match": true
+    },
+    {
+      "name": "2026-10-21-試作ショート/svg/judd.svg",
+      "bytes": 2733,
+      "sourceSha256": "63f252128882a71716e0bb30b692b498aef55550c2c0a22cd20f0455ab3c9b3d",
+      "destinationSha256": "63f252128882a71716e0bb30b692b498aef55550c2c0a22cd20f0455ab3c9b3d",
+      "match": true
+    },
+    {
+      "name": "2026-10-21-試作ショート/svg/judd-sigh.svg",
+      "bytes": 2784,
+      "sourceSha256": "1b0fcd350e142385edf29880d66981fea14798ca52ddcb955a22b14c4418ecb2",
+      "destinationSha256": "1b0fcd350e142385edf29880d66981fea14798ca52ddcb955a22b14c4418ecb2",
+      "match": true
+    },
+    {
+      "name": "2026-10-21-試作ショート/svg/judd-stern.svg",
+      "bytes": 2773,
+      "sourceSha256": "d4c3800fcfc68e13c58829e26467c6b3a5ee961b2a985327035f092beee00cb4",
+      "destinationSha256": "d4c3800fcfc68e13c58829e26467c6b3a5ee961b2a985327035f092beee00cb4",
+      "match": true
+    },
+    {
+      "name": "2026-10-21-試作ショート/svg/kent.svg",
+      "bytes": 2878,
+      "sourceSha256": "dbe98dff8ae0f82ec92dd6fd1da19d4c40a21cb0a966edf960004b00fff9e948",
+      "destinationSha256": "dbe98dff8ae0f82ec92dd6fd1da19d4c40a21cb0a966edf960004b00fff9e948",
+      "match": true
+    },
+    {
+      "name": "2026-10-21-試作ショート/svg/kent-nod.svg",
+      "bytes": 2925,
+      "sourceSha256": "c088ee1604b2afea05df33c6617fe58bd0af7727f6e6a17ccbfe709d5f2f0ffd",
+      "destinationSha256": "c088ee1604b2afea05df33c6617fe58bd0af7727f6e6a17ccbfe709d5f2f0ffd",
+      "match": true
+    },
+    {
+      "name": "2026-10-21-試作ショート/svg/kent-think.svg",
+      "bytes": 2938,
+      "sourceSha256": "7517b9952bf209eee2df0fb60ed344abd59607e82a44c8d6aa1fb88258ce9cc4",
+      "destinationSha256": "7517b9952bf209eee2df0fb60ed344abd59607e82a44c8d6aa1fb88258ce9cc4",
       "match": true
     }
   ],
-  "notes": "MP4は1080x1920・30fps・20.00秒・無音。キャラの性格・役割・保有具は設定シートのまま。"
+  "notes": "キャラは手書きSVG（外部AI API不使用）。台本Welcomes the sourced figures only; 出典未確認の数値は不使用。"
 }
