@@ -12,7 +12,7 @@ const CHARACTERS: Accent[] = [
     line: 'あの時代を、誇りをもって話したい',
     file: 'assets/characters/elder-svg/homer.svg',
     color: '#C8322C',
-    ratio: 627 / 1175,
+    ratio: 340 / 560,
   },
   {
     key: 'judd',
@@ -21,7 +21,7 @@ const CHARACTERS: Accent[] = [
     line: '大変だったことも、忘れない',
     file: 'assets/characters/elder-svg/judd.svg',
     color: '#2B5FA8',
-    ratio: 466 / 1125,
+    ratio: 340 / 560,
   },
   {
     key: 'kent',
@@ -30,7 +30,7 @@ const CHARACTERS: Accent[] = [
     line: '数字も記憶も、確かめてから',
     file: 'assets/characters/elder-svg/kent.svg',
     color: '#2E7D4F',
-    ratio: 541 / 1150,
+    ratio: 340 / 560,
   },
 ];
 
@@ -242,8 +242,8 @@ export const ElderShortIntro: React.FC = () => {
           data={data}
           start={allStart + i * 8}
           end={durationInFrames}
-          x={[255, 545, 830][i]}
-          height={840}
+          x={[230, 540, 845][i]}
+          height={780}
           baseY={1560}
           lean={data.key === 'judd' ? 1.5 : 0}
         />

@@ -1,106 +1,76 @@
 {
   "date": "2026-10-21",
-  "approval": "本人「共有する」＋「専用トレーサを入れる」承認",
+  "approval": "本人「共有する」／トレース版は「採用できない」との判定→手書きフラットベクターへ切替",
   "destination": "/mnt/CE14D65D14D6485B/Shared/Transfer/エルダーチャンネル/2026-10-21-試作ショート",
   "windowsDirectory": "\\\\192.168.1.115\\Shared\\Transfer\\エルダーチャンネル\\2026-10-21-試作ショート",
-  "version": "v4（専用トレーサでベクター化・差し色はクリップ塗り分け）",
+  "version": "v5（手書きフラットベクターSVG・外部AI API不使用）",
   "superseded": [
     "elder-short-intro-v1.mp4",
     "elder-short-intro-v2-svg.mp4",
-    "elder-short-intro-v3-svg.mp4"
+    "elder-short-intro-v3-svg.mp4",
+    "elder-short-intro-v4-svg.mp4"
   ],
-  "vectorPipeline": {
-    "tracer": "imagetracerjs（npm・tools/vectorizer/）＋自作の輪郭抽出（scripts/build-elder-svg.py）",
-    "structure": "白地(シルエット)＋黒線画(evenodd)＋差し色(currentColor・クリップ領域で切り出し)",
-    "editable": "ルート要素のcolor属性1行で差し色を変更可能",
-    "background": "透明（白地パスは人物の内部のみ）"
-  },
-  "imageModel": {
-    "permission": "本人許可（設定シート由来の線画3枚の着色・生成3回まで）",
-    "status": "実行不可。現キーは画像モデルへ到達可（countTokens 200）だが生成側がクォータ429",
-    "script": "scripts/gemini-colorize-characters.py（保存のみ・再実行は許可の更新時のみ）"
+  "characterArt": {
+    "method": "手書きSVG（既存キャラ ルーノ等と同じ作・手法）",
+    "assets": [
+      "public/assets/characters/elder-svg/homer.svg",
+      "judd.svg",
+      "kent.svg"
+    ],
+    "viewBox": "340x560",
+    "editable": "差し色はルート要素のcolor属性1行",
+    "accents": "蝶ネクタイと帽子の帯のみ（つばは黒・裾は対象外）",
+    "retired": "設定シートのトレース版（imagetracerjs/自前トレーサ）は線画のハッチングがノイズとなり不採用"
   },
   "files": [
     {
-      "name": "elder-short-intro-v4-svg.mp4",
-      "bytes": 6768094,
-      "source": "output/elder-channel-characters-2026-10-21/elder-short-intro-v4-svg.mp4",
-      "sourceSha256": "903caa528e00e0604477a4bf0daaf2ba7fb1f69d34da33781d3d6a9c47a2edd4",
-      "destinationSha256": "903caa528e00e0604477a4bf0daaf2ba7fb1f69d34da33781d3d6a9c47a2edd4",
+      "name": "elder-short-intro-v5-flat-svg.mp4",
+      "bytes": 3287590,
+      "source": "output/elder-channel-characters-2026-10-21/elder-short-intro-v5-flat-svg.mp4",
+      "sourceSha256": "90ec81b002efd8030bb2b07f1a2abe33eb32384c0e6dc37483b392c5c2d6a44d",
+      "destinationSha256": "90ec81b002efd8030bb2b07f1a2abe33eb32384c0e6dc37483b392c5c2d6a44d",
       "match": true
     },
     {
       "name": "still-100.png",
-      "bytes": 951446,
+      "bytes": 898920,
       "source": "output/elder-channel-characters-2026-10-21/still-100.png",
-      "sourceSha256": "1a8704ea60c22454929629e0c5cf2de1435de397c63b9ac6615e0b1463a0d99d",
-      "destinationSha256": "1a8704ea60c22454929629e0c5cf2de1435de397c63b9ac6615e0b1463a0d99d",
+      "sourceSha256": "1f818a10f3a55ac7ed1de849d06ec1a60473707e12a2723a4d3445246669adc5",
+      "destinationSha256": "1f818a10f3a55ac7ed1de849d06ec1a60473707e12a2723a4d3445246669adc5",
       "match": true
     },
     {
       "name": "still-450.png",
-      "bytes": 977934,
+      "bytes": 923848,
       "source": "output/elder-channel-characters-2026-10-21/still-450.png",
-      "sourceSha256": "9b8b7d04586fc7727ced9b96cec85a1fdf255f23af0092e8fb2ecd3e062311b3",
-      "destinationSha256": "9b8b7d04586fc7727ced9b96cec85a1fdf255f23af0092e8fb2ecd3e062311b3",
-      "match": true
-    },
-    {
-      "name": "contact-sheet.png",
-      "bytes": 493823,
-      "source": "output/elder-channel-characters-2026-10-21/contact-sheet.png",
-      "sourceSha256": "512b866c63e2f6762d1e49485019c1370f2ea57c4655f7e0501fbfd1bf611ea1",
-      "destinationSha256": "512b866c63e2f6762d1e49485019c1370f2ea57c4655f7e0501fbfd1bf611ea1",
-      "match": true
-    },
-    {
-      "name": "homer.png",
-      "bytes": 768947,
-      "source": "public/assets/drafts/elder-characters-2026-10-21/homer.png",
-      "sourceSha256": "8f87252649c350c213296d72a29b632f65fb6b4b83f0772c5bec2918bfc8762f",
-      "destinationSha256": "8f87252649c350c213296d72a29b632f65fb6b4b83f0772c5bec2918bfc8762f",
-      "match": true
-    },
-    {
-      "name": "judd.png",
-      "bytes": 547643,
-      "source": "public/assets/drafts/elder-characters-2026-10-21/judd.png",
-      "sourceSha256": "5596f7f1a3113919a271d6593ffce28459056c05ea3f568a593e392558028204",
-      "destinationSha256": "5596f7f1a3113919a271d6593ffce28459056c05ea3f568a593e392558028204",
-      "match": true
-    },
-    {
-      "name": "kent.png",
-      "bytes": 689768,
-      "source": "public/assets/drafts/elder-characters-2026-10-21/kent.png",
-      "sourceSha256": "da7dd3daac63d71081a72616c5a1e3acf27276bca48586bb34b8715cc88ee83e",
-      "destinationSha256": "da7dd3daac63d71081a72616c5a1e3acf27276bca48586bb34b8715cc88ee83e",
+      "sourceSha256": "a2e566646ffc14c27691cf411ba5e8f3230486a3e1b0f64911145eb313a80d84",
+      "destinationSha256": "a2e566646ffc14c27691cf411ba5e8f3230486a3e1b0f64911145eb313a80d84",
       "match": true
     },
     {
       "name": "svg/homer.svg",
-      "bytes": 53697,
+      "bytes": 2664,
       "source": "public/assets/characters/elder-svg/homer.svg",
-      "sourceSha256": "8cf7a2ffb098c6714bb018cde5a0739df394ada0639f9214b70be0d117c613a8",
-      "destinationSha256": "8cf7a2ffb098c6714bb018cde5a0739df394ada0639f9214b70be0d117c613a8",
+      "sourceSha256": "0a0c1f615c4c7d104c7ec86614929f59de6d49926f3cd618211c979e5568fcfe",
+      "destinationSha256": "0a0c1f615c4c7d104c7ec86614929f59de6d49926f3cd618211c979e5568fcfe",
       "match": true
     },
     {
       "name": "svg/judd.svg",
-      "bytes": 54291,
+      "bytes": 2621,
       "source": "public/assets/characters/elder-svg/judd.svg",
-      "sourceSha256": "dd89411f02d9347eaec5de921bc642ab6d47eeb17dcf2940f30ef1e990807dc5",
-      "destinationSha256": "dd89411f02d9347eaec5de921bc642ab6d47eeb17dcf2940f30ef1e990807dc5",
+      "sourceSha256": "e694b847995a39cb594bae5dfcd8c51953525a833d3a193dd2e2e895197ac745",
+      "destinationSha256": "e694b847995a39cb594bae5dfcd8c51953525a833d3a193dd2e2e895197ac745",
       "match": true
     },
     {
       "name": "svg/kent.svg",
-      "bytes": 49568,
+      "bytes": 2766,
       "source": "public/assets/characters/elder-svg/kent.svg",
-      "sourceSha256": "4c4ff387c3c8a6fc2b29d5bf3f8019af07faff2a9a9479d3d566cbde9020029b",
-      "destinationSha256": "4c4ff387c3c8a6fc2b29d5bf3f8019af07faff2a9a9479d3d566cbde9020029b",
+      "sourceSha256": "81904b65f0237ffe93d86d4541557b375cd0b9549676ebbb20bf3bf4d4d47a11",
+      "destinationSha256": "81904b65f0237ffe93d86d4541557b375cd0b9549676ebbb20bf3bf4d4d47a11",
       "match": true
     }
   ],
-  "notes": "MP4は1080x1920・30fps・20.00秒・無音。線画は元ラスタのトレースで絵の形状は不変。"
+  "notes": "MP4は1080x1920・30fps・20.00秒・無音。キャラの性格・役割・保有具は設定シートのまま。"
 }
