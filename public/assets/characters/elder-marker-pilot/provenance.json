@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-23",
+  "files": [
+    {
+      "asset": "judd.png",
+      "source": "public/assets/characters/elder-v11/judd.png",
+      "sha256": "34024f086f5fe8c12b4959c65da0240630769a98a692fe8550685d2fd9689281"
+    },
+    {
+      "asset": "kent.png",
+      "source": "public/assets/characters/elder-v11/kent.png",
+      "sha256": "b9eff99145f03c36f406334f992374616e0a2ebfb844afb73c360feb324169fa"
+    }
+  ],
+  "pixel_edits": false,
+  "production_adoption": "pending user review"
+}
