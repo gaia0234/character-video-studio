@@ -2,10 +2,10 @@ import React from 'react';
 import {AbsoluteFill, Img, staticFile, useCurrentFrame} from 'remotion';
 
 // Original pixels remain unchanged. Clips define movable display parts only.
-const head = 'M24 181H217V324H195V419H52V326H24Z';
-// Hand ends before y=679; the coat starts at x=66 near y=680.
+const head = 'M24 186H217V324H195V419H52V326H24Z';
+// Leave white margins past the hand; keep the coat outside x=58.
 // Keep the boundary inside their white gap, rather than clipping the coat.
-const arm = 'M92 437L103 459L79 493L58 627V679H0V437Z';
+const arm = 'M92 437L103 459L79 493L58 627V681H0V437Z';
 const Picture = () => <foreignObject width={368} height={996}>
   <Img src={staticFile('assets/characters/homer-marker-pilot/homer-original.png')}
     style={{width: 368, height: 996, display: 'block'}} />
@@ -14,9 +14,9 @@ const Picture = () => <foreignObject width={368} height={996}>
 const MarkerHomer = ({animated}: {animated: boolean}) => {
   const frame = useCurrentFrame();
   const id = animated ? 'moving' : 'reference';
-  const nod = animated ? Math.sin(frame / 30 * 1.5) * 1.25 : 0;
-  const gesture = animated ? Math.sin(frame / 30 * 1.1) * 2.5 : 0;
-  const blink = animated && ((frame >= 70 && frame <= 73) || (frame >= 197 && frame <= 200));
+  const nod = animated ? Math.sin(frame / 30 * 1.5) * 3.75 : 0;
+  const gesture = animated ? Math.sin(frame / 30 * 1.1) * 7.5 : 0;
+  const blink = animated && ((frame >= 70 && frame <= 77) || (frame >= 197 && frame <= 204));
   return <svg viewBox="-30 -10 428 1026" width={340} height={816}>
     <defs>
       <clipPath id={`${id}-head`}><path d={head} /></clipPath>
