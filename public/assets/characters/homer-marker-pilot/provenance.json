@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-23",
+  "source": "public/assets/characters/elder-v11/homer.png",
+  "source_sha256": "6fe50cce96120751d6a7b9b1e6554f34eba2433db4b2e674697512e528c79e92",
+  "asset": "homer-original.png",
+  "pixel_edits": false,
+  "purpose": "Homer-only marker texture motion pilot; preserve existing original; display clips in HomerMarkerPilot.tsx",
+  "production_adoption": "pending user review"
+}
