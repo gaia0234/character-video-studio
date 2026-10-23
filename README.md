@@ -1,5 +1,15 @@
 # Character Video Studio
 
+<!-- hub-tool-catalog-20261023 -->
+## ツール選定の入口（2026-10-23）
+
+- 新規検索・導入を始める前に、[Hub用途別ツール索引](../project-hub/docs/internal-tools-inventory.md#tool-catalog)の[関連用途](../project-hub/docs/internal-tools-inventory.md#tools-media)だけを読む。採用/保留・利用条件・確認日・巡回目安を確認し、詳細と全履歴を複製しない。
+- この案件：音源6候補・映像表現6候補・漫画候補を用途別に参照する。台詞/映像完成を優先し、停止中作業・外部AI生成・導入を自動再開しない。
+- 画像解析のモデル差は[モデル担当索引](../project-hub/docs/internal-tools-inventory.md#tools-models)で確認する。掲載・キー存在は実行許可ではなく、Gemini等の他プロバイダ外部AI APIは都度モデル/用途/回数/上限の本人明示許可が必要。
+- 候補の追加・採否変更は案件の既存正本とHub索引を同じ区切りで更新する。索引が読めない/情報が古い場合は未確認とし、推測で導入しない。
+<!-- hub-tool-catalog-20261023 -->
+
+
 YouTube Shorts・X向け縦型解説動画の独立プロジェクト。React / Remotion、1080×1920、30fps。キャラクターの正本は `../knowledge-anime-character-system/` で管理する。縦型Shortsに加えて横型16:9のロング解説も制作する。ロングの工程運用は「ロング解説の6工程」節を参照する。
 
 ## ロング解説の6工程
