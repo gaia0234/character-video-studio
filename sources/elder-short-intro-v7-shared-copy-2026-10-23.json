@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-23",
+  "approval": "本人「SVGは失格、AI modelを変えたので、再度元画像からSVGを作成」→「進める」",
+  "destination": "/mnt/CE14D65D14D6485B/Shared/Transfer/エルダーチャンネル/2026-10-23-試作ショートv7",
+  "windowsDirectory": "\\\\192.168.1.115\\Shared\\Transfer\\エルダーチャンネル\\2026-10-23-試作ショートv7",
+  "method": "scripts/trace-elder-from-sheets.py（Python標準ライブラリのみ・外部AI API不使用）＋ build-elder-expressions.py（#mouth差し替え）",
+  "supersedes": "2026-10-21-試作ショート/（v6・手書きフラットSVGは本人「失格」判定）",
+  "verify": "原本↔共有先の全21ファイルをSHA256照合し一致",
+  "files": [
+    {
+      "name": "README.md",
+      "bytes": 2853,
+      "sha256": "59483e59387b719b95a4d0558355aee5d6d41bd346587b4bac4e2a9a144dfa95"
+    },
+    {
+      "name": "elder-short-intro-v7-traced.mp4",
+      "bytes": 6145223,
+      "sha256": "5cb647ed083946f08dbc5a438cc62d5c22f355df141dc7256c7ea5b1b70f66ae"
+    },
+    {
+      "name": "still-all.png",
+      "bytes": 958600,
+      "sha256": "db638784ea1e04a7e01838b580103e092544bbd8ccd4fd2c716fb898a992ae32"
+    },
+    {
+      "name": "still-homer.png",
+      "bytes": 928869,
+      "sha256": "b408bf131229f64c975649a6fa18ea2efecaa7c68d9b3653e4238485be6eeec3"
+    },
+    {
+      "name": "still-judd.png",
+      "bytes": 926619,
+      "sha256": "9786bee67b604b50988464c41ad379891034b7628c9f9a80dbb755bcf7bb7205"
+    },
+    {
+      "name": "still-kent.png",
+      "bytes": 913338,
+      "sha256": "b60ff55cb54d7d28da09e3bd1d478c7587836dfef4f927479fe5d280579a9c95"
+    },
+    {
+      "name": "svg/expressions.json",
+      "bytes": 127,
+      "sha256": "7bfc49592a8355b4219c041368539141251fa80e545e683fdd4c457de3115fc8"
+    },
+    {
+      "name": "svg/face-layout.json",
+      "bytes": 768,
+      "sha256": "f55855b7a04827b5b511829a1d52f15759261f31cc699f6a74aed157236cd79f"
+    },
+    {
+      "name": "svg/homer-cheer.svg",
+      "bytes": 4939,
+      "sha256": "b6ed456d45828875aaa324e0a24fee7a88419cb80fe767a9dd195b2973efa24c"
+    },
+    {
+      "name": "svg/homer-happy.svg",
+      "bytes": 4972,
+      "sha256": "66d26ecf41c4464e5948cd2cd6daec41d46d3962739703eb955eebd69aa56d85"
+    },
+    {
+      "name": "svg/homer.svg",
+      "bytes": 5068,
+      "sha256": "b677f1b85b613e87f14a3da3895900aeab6f70f13320a1841bc193a49fa90af6"
+    },
+    {
+      "name": "svg/judd-sigh.svg",
+      "bytes": 3955,
+      "sha256": "922abeaad6d48af9b6a9898757a251a95ed35c903a47fcefd5abd4e7d29d6994"
+    },
+    {
+      "name": "svg/judd-stern.svg",
+      "bytes": 3978,
+      "sha256": "c492b8e561182b93609ce10587e52c86cde974da3cd397d5bc884f412af0bc27"
+    },
+    {
+      "name": "svg/judd.svg",
+      "bytes": 4078,
+      "sha256": "2fe0830e22b8a3dc76609e720c234132b2a57112bd1ffcbdc651e139fb42212a"
+    },
+    {
+      "name": "svg/kent-nod.svg",
+      "bytes": 4104,
+      "sha256": "81b0bb814cc2f8e638ec6f8d51e2b34f746ba9852c598b1d4a767cdc4f031ed1"
+    },
+    {
+      "name": "svg/kent-think.svg",
+      "bytes": 4084,
+      "sha256": "60ad60eb6fd37bc6b88a37a3e8f53651be6fa78649d89f6d02a968a55cf1ba09"
+    },
+    {
+      "name": "svg/kent.svg",
+      "bytes": 4143,
+      "sha256": "0350365566905b336b0a0a28fc3d3a0026a019ed4ea03f90c18c663ec459f5b1"
+    },
+    {
+      "name": "svg/trace-source.json",
+      "bytes": 180,
+      "sha256": "85869b82944dd6e3dc2c0fecae7a841e1e6e976ad8e69706ca85220b2699fb4d"
+    },
+    {
+      "name": "参考-設定シート切出し/homer.png",
+      "bytes": 768947,
+      "sha256": "8f87252649c350c213296d72a29b632f65fb6b4b83f0772c5bec2918bfc8762f"
+    },
+    {
+      "name": "参考-設定シート切出し/judd.png",
+      "bytes": 547643,
+      "sha256": "5596f7f1a3113919a271d6593ffce28459056c05ea3f568a593e392558028204"
+    },
+    {
+      "name": "参考-設定シート切出し/kent.png",
+      "bytes": 689768,
+      "sha256": "da7dd3daac63d71081a72616c5a1e3acf27276bca48586bb34b8715cc88ee83e"
+    }
+  ]
+}

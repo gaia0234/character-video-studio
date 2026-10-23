@@ -14,7 +14,7 @@ const CHARACTERS: Accent[] = [
     exprFile: 'assets/characters/elder-svg/homer-happy.svg',
     exprAt: 26,
     color: '#C8322C',
-    ratio: 340 / 560,
+    ratio: 627 / 1175,
   },
   {
     key: 'judd',
@@ -25,7 +25,7 @@ const CHARACTERS: Accent[] = [
     exprFile: 'assets/characters/elder-svg/judd-sigh.svg',
     exprAt: 26,
     color: '#2B5FA8',
-    ratio: 340 / 560,
+    ratio: 466 / 1125,
   },
   {
     key: 'kent',
@@ -36,7 +36,7 @@ const CHARACTERS: Accent[] = [
     exprFile: 'assets/characters/elder-svg/kent-think.svg',
     exprAt: 26,
     color: '#2E7D4F',
-    ratio: 340 / 560,
+    ratio: 541 / 1150,
   },
 ];
 

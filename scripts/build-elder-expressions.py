@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""エルダーチャンネルのキャラSVGから表情差分を生成する（純Python標準ライブラリのみ）。
+"""元画像トレースSVGから表情差分を作る（純Python標準ライブラリのみ）。
 
-基準SVGの #mouth（口）と #brows（眉）を差し替えて表情版を作る。キャラ形状・配色は不変。
+基準SVGの `#mouth` のパスだけを差し替える。口の位置は face-layout.json に保存した
+元画像の口bboxからの相対配置なので、キャラの形・顔・差し色は一切変わらない。
+目・眉は元画像にないため足さない（キャラを勝手に変えない）。
+
 usage: python3 build-elder-expressions.py
 出力: public/assets/characters/elder-svg/{homer,judd,kent}-{expression}.svg
 """
@@ -12,63 +15,81 @@ from pathlib import Path
 
 D = Path('/home/ds-work/projects/character-video-studio/public/assets/characters/elder-svg')
 
-# 表情定義（mouth: 口の要素／brows: 眉のパス）
+# 表情定義。w/h は元の口bboxに対する倍率、depth は弧の深さ。
+# smile=下に膨らむ弧 / frown=上に膨らむ弧 / line=直線 / open=開いた楕円
 EXPRESSIONS = {
     'homer': {
-        'happy': {
-            'mouth': '<path d="M112 156 Q136 178 160 156" fill="none" stroke-width="4.5"/>',
-            'brows': '<path d="M114 128 L132 123" /><path d="M140 123 L158 128" />',
-        },
-        'cheer': {
-            'mouth': '<ellipse cx="136" cy="164" rx="13" ry="10" fill="#111111" stroke="none"/>',
-            'brows': '<path d="M112 124 L132 116" /><path d="M140 116 L160 124" />',
-        },
+        'happy': {'kind': 'smile', 'w': 1.35, 'depth': 0.85},
+        'cheer': {'kind': 'open', 'w': 1.15, 'h': 1.25},
     },
     'judd': {
-        'sigh': {
-            'mouth': '<ellipse cx="140" cy="188" rx="11" ry="6" fill="#111111" stroke="none"/>',
-            'brows': '<path d="M116 140 L134 132" /><path d="M146 132 L164 140" />',
-        },
-        'stern': {
-            'mouth': '<path d="M120 188 L160 186" fill="none" stroke-width="4.5"/>',
-            'brows': '<path d="M116 136 L134 143" /><path d="M146 143 L164 136" />',
-        },
+        'sigh': {'kind': 'open', 'w': 1.0, 'h': 0.9},
+        'stern': {'kind': 'line', 'w': 1.15},
     },
     'kent': {
-        'nod': {
-            'mouth': '<path d="M124 176 L148 176" fill="none" stroke-width="4.5"/>',
-            'brows': '<path d="M112 132 L132 130" /><path d="M140 130 L160 132" />',
-        },
-        'think': {
-            'mouth': '<ellipse cx="136" cy="176" rx="7" ry="6" fill="#111111" stroke="none"/>',
-            'brows': '<path d="M110 126 L132 118" /><path d="M142 130 L162 132" />',
-        },
+        'nod': {'kind': 'line', 'w': 1.15},
+        'think': {'kind': 'open', 'w': 1.25, 'h': 1.05},
     },
 }
 
 
-def build(base_name, expression, spec):
-    src = (D / base_name).read_text(encoding='utf-8')
-    out = re.sub(r'<g id="mouth">.*?</g>', '<g id="mouth">%s</g>' % spec['mouth'], src, count=1, flags=re.S)
-    out = re.sub(r'<g id="brows"[^>]*>.*?</g>',
-                 '<g id="brows" fill="none" stroke="#111111" stroke-width="3.5" stroke-linecap="round">%s</g>' % spec['brows'],
+def mouth_element(spec, box):
+    x0, y0, x1, y1 = box
+    cx, cy = (x0 + x1) / 2.0, (y0 + y1) / 2.0
+    w = (x1 - x0) * spec.get('w', 1.0)
+    h = (y1 - y0) * spec.get('h', 1.0)
+    sw = max(5.0, (y1 - y0) * 0.35)
+    kind = spec['kind']
+    if kind == 'smile':
+        depth = (y1 - y0) * spec.get('depth', 0.6)
+        d = 'M%.1f %.1f Q%.1f %.1f %.1f %.1f' % (
+            cx - w / 2, cy - h / 2, cx, cy + h / 2 + depth, cx + w / 2, cy - h / 2)
+        return ('<path id="mouth" fill="none" stroke="#111111" stroke-width="%.1f" '
+                'stroke-linecap="round" d="%s"/>' % (sw, d))
+    if kind == 'frown':
+        depth = (y1 - y0) * spec.get('depth', 0.6)
+        d = 'M%.1f %.1f Q%.1f %.1f %.1f %.1f' % (
+            cx - w / 2, cy + h / 2, cx, cy - h / 2 - depth, cx + w / 2, cy + h / 2)
+        return ('<path id="mouth" fill="none" stroke="#111111" stroke-width="%.1f" '
+                'stroke-linecap="round" d="%s"/>' % (sw, d))
+    if kind == 'line':
+        d = 'M%.1f %.1f L%.1f %.1f' % (cx - w / 2, cy, cx + w / 2, cy)
+        return ('<path id="mouth" fill="none" stroke="#111111" stroke-width="%.1f" '
+                'stroke-linecap="round" d="%s"/>' % (sw, d))
+    if kind == 'open':
+        return ('<path id="mouth" fill="#111111" d="M%.1f %.1f a%.1f %.1f 0 1 0 %.1f 0 '
+                'a%.1f %.1f 0 1 0 %.1f 0"/>' % (
+                    cx - w / 2, cy, w / 2, h / 2, w, w / 2, h / 2, -w))
+    raise SystemExit('未知の口の種類: %s' % kind)
+
+
+def build(key, expression, spec, layout):
+    src = (D / ('%s.svg' % key)).read_text(encoding='utf-8')
+    box = layout.get('mouth')
+    if not box:
+        raise SystemExit('%s: 口の位置が face-layout.json にありません' % key)
+    out = re.sub(r'<path id="mouth"[^>]*/>', mouth_element(spec, box), src, count=1)
+    if out == src:
+        raise SystemExit('%s: 基準SVGに #mouth パスがありません' % key)
+    out = re.sub(r'<title>.*?</title>', '<title>%s（%s）</title>' % (key, expression),
                  out, count=1, flags=re.S)
-    key = base_name.replace('.svg', '')
-    out = re.sub(r'<title>.*?</title>', '<title>%s（%s）</title>' % (key, expression), out, count=1, flags=re.S)
     path = D / ('%s-%s.svg' % (key, expression))
     path.write_text(out, encoding='utf-8')
     return path
 
 
 def main():
+    layout_all = json.loads((D / 'face-layout.json').read_text(encoding='utf-8'))
     made = []
     for key, exprs in EXPRESSIONS.items():
+        layout = layout_all[key]
         for name, spec in exprs.items():
-            p = build('%s.svg' % key, name, spec)
+            p = build(key, name, spec, layout)
             made.append(str(p))
             print('%s: %d bytes' % (p.name, p.stat().st_size))
     (D / 'expressions.json').write_text(json.dumps(
-        {k: sorted(v.keys()) for k, v in EXPRESSIONS.items()}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        {k: sorted(v.keys()) for k, v in EXPRESSIONS.items()}, ensure_ascii=False, indent=2) + '\n',
+        encoding='utf-8')
     return 0
 
 
