@@ -11,8 +11,8 @@ const CHARACTERS: Accent[] = [
     role: '称賛役',
     line: 'あの時代を、誇りをもって話したい',
     file: 'assets/characters/elder-svg/homer.svg',
-    exprFile: 'assets/characters/elder-svg/homer-happy.svg',
-    exprAt: 26,
+    // 本人「ホーマーは表情が変、そもそも元から笑っているからね。笑わせる必要はない」→
+    // 元画像の笑い顔を一貫して使用し、homer の表情差分は動画内で使わない
     color: '#C8322C',
     ratio: 627 / 1175,
   },
