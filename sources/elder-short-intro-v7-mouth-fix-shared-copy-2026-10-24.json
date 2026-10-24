@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-24",
+  "approval": "本人「homer-happy の口が右目と重なっている」への修正。共有先は本人承認の「修正版フォルダーへ新規共有」（Video制作Codex thread 01a14ef0 経由、識別 v7-mouth-fix-review-20261024）",
+  "destination": "/mnt/CE14D65D14D6485B/Shared/Transfer/エルダーチャンネル/2026-10-24-試作ショートv7-口重なり修正",
+  "windowsDirectory": "\\\\192.168.1.115\\Shared\\Transfer\\エルダーチャンネル\\2026-10-24-試作ショートv7-口重なり修正",
+  "method": "scripts/build-elder-expressions.py の mouth_element を修正（smile/frown の弧の端点を口bbox中央の高さへ移設、全種別に目下端+6px以上の自動補正）→ 表情6種再生成 → 動画再レンダー。生成器の新規修正・追加試験は本共有の範囲外",
+  "relation_to_legacy_share": "新規フォルダ共有（本人承認の経路）。旧 2026-10-23-試作ショートv7 共有とは別のフォルダ",
+  "legacy_share_status": {
+    "state": "旧共有フォルダ 2026-10-23-試作ショートv7 は本修正の先行処理として同名上書きにより修正版へ変更済み。本人承認の「新規フォルダ共有」とは別の経路であり、復元は未実施（復元・追加変更は禁止維持）",
+    "overwritten": [
+      "elder-short-intro-v7-traced.mp4（旧 sha256 5cb647ed… → 修正版 a583fd1c…）",
+      "svg/homer-happy.svg（旧 66d26ecf… → 5d5f3c15…）",
+      "svg/homer-cheer.svg（旧 b6ed456d… → 27719c68…）",
+      "still-all.png（再生成版 db638784… が旧共有とバイト同一のため内容不変）",
+      "README.md（修正経セクションの追記のみ。旧 sha256 59483e59…）"
+    ],
+    "preservation": {
+      "old_mp4": "/tmp/opencode/v7-before-fix.mp4（sha256 5cb647ed… で旧共有と一致）",
+      "old_svg_2kinds": "動画リポジトリ Git履歴 cf6a2cf:public/assets/characters/elder-svg/homer-happy.svg および homer-cheer.svg（旧共有 sha256 66d26ecf… / b6ed456d… と一致・復元可）",
+      "old_still_all": "再生成版が旧共有 sha256 db638784… とバイト同一のため内容保全",
+      "old_share_sha_list": "/tmp/opencode/share-before.sha（旧共有 全21ファイルのSHA一覧）",
+      "old_record_json": "sources/elder-short-intro-v7-shared-copy-2026-10-23.json は先行処理で旧共有sha256を上書き済み。旧値は share-before.sha と会話記録に保全"
+    }
+  },
+  "verify": "元（ローカル生成物／旧共有still3枚／still-all再生成版）↔新規共有先の全18ファイルをSHA256照合し一致。動画はRemotion同梱ffprobe（n7.1）で 1080×1920・30fps・20.000秒・600フレーム・h264・音声トラックなしを実測確認。検証値は現在6表情のもの（全種別・全設定の保証ではない）",
+  "unconfirmed": "本人視聴による受入は未実施",
+  "files": [
+    {
+      "name": "README.md",
+      "bytes": 3587,
+      "sha256": "4a24e6d9981e0a337b696ce21fa5dd3f3995e250b113356cdc5cfc0f537084be"
+    },
+    {
+      "name": "elder-short-intro-v7-traced.mp4",
+      "bytes": 6132687,
+      "sha256": "a583fd1caaf2464bb71b93aa977c1b6d62c17a8ddaeaa23a946c4085b6c8c415"
+    },
+    {
+      "name": "still-all.png",
+      "bytes": 958600,
+      "sha256": "db638784ea1e04a7e01838b580103e092544bbd8ccd4fd2c716fb898a992ae32"
+    },
+    {
+      "name": "still-homer.png",
+      "bytes": 928869,
+      "sha256": "b408bf131229f64c975649a6fa18ea2efecaa7c68d9b3653e4238485be6eeec3"
+    },
+    {
+      "name": "still-judd.png",
+      "bytes": 926619,
+      "sha256": "9786bee67b604b50988464c41ad379891034b7628c9f9a80dbb755bcf7bb7205"
+    },
+    {
+      "name": "still-kent.png",
+      "bytes": 913338,
+      "sha256": "b60ff55cb54d7d28da09e3bd1d478c7587836dfef4f927479fe5d280579a9c95"
+    },
+    {
+      "name": "svg/expressions.json",
+      "bytes": 127,
+      "sha256": "7bfc49592a8355b4219c041368539141251fa80e545e683fdd4c457de3115fc8"
+    },
+    {
+      "name": "svg/face-layout.json",
+      "bytes": 768,
+      "sha256": "f55855b7a04827b5b511829a1d52f15759261f31cc699f6a74aed157236cd79f"
+    },
+    {
+      "name": "svg/homer-cheer.svg",
+      "bytes": 4939,
+      "sha256": "27719c6898fcf3f7cec8c73638d038b8ef3c25cd0001dfbe686c83574743eb3e"
+    },
+    {
+      "name": "svg/homer-happy.svg",
+      "bytes": 4972,
+      "sha256": "5d5f3c157f7b77b7c10942b7f9735796ae6b5f6ac8b14902e9e1ca3152e620bc"
+    },
+    {
+      "name": "svg/homer.svg",
+      "bytes": 5068,
+      "sha256": "b677f1b85b613e87f14a3da3895900aeab6f70f13320a1841bc193a49fa90af6"
+    },
+    {
+      "name": "svg/judd-sigh.svg",
+      "bytes": 3955,
+      "sha256": "922abeaad6d48af9b6a9898757a251a95ed35c903a47fcefd5abd4e7d29d6994"
+    },
+    {
+      "name": "svg/judd-stern.svg",
+      "bytes": 3978,
+      "sha256": "c492b8e561182b93609ce10587e52c86cde974da3cd397d5bc884f412af0bc27"
+    },
+    {
+      "name": "svg/judd.svg",
+      "bytes": 4078,
+      "sha256": "2fe0830e22b8a3dc76609e720c234132b2a57112bd1ffcbdc651e139fb42212a"
+    },
+    {
+      "name": "svg/kent-nod.svg",
+      "bytes": 4104,
+      "sha256": "81b0bb814cc2f8e638ec6f8d51e2b34f746ba9852c598b1d4a767cdc4f031ed1"
+    },
+    {
+      "name": "svg/kent-think.svg",
+      "bytes": 4084,
+      "sha256": "60ad60eb6fd37bc6b88a37a3e8f53651be6fa78649d89f6d02a968a55cf1ba09"
+    },
+    {
+      "name": "svg/kent.svg",
+      "bytes": 4143,
+      "sha256": "0350365566905b336b0a0a28fc3d3a0026a019ed4ea03f90c18c663ec459f5b1"
+    },
+    {
+      "name": "svg/trace-source.json",
+      "bytes": 180,
+      "sha256": "85869b82944dd6e3dc2c0fecae7a841e1e6e976ad8e69706ca85220b2699fb4d"
+    }
+  ]
+}
