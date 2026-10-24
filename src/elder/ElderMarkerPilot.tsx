@@ -29,14 +29,15 @@ const Picture = ({who}: {who: Who}) => {
   </foreignObject>;
 };
 
-const Puppet = ({who, animated}: {who: Who; animated: boolean}) => {
+export const MarkerElder = ({who, animated, width = 365, height = 816, motionScale = 1, blinkPhase = 0}: {who: Who; animated: boolean; width?: number; height?: number; motionScale?: number; blinkPhase?: number}) => {
   const frame = useCurrentFrame();
   const s = settings[who];
-  const nod = animated ? Math.sin(frame / 30 * 1.5) * 3.75 : 0;
+  const nod = animated ? Math.sin(frame / 30 * 1.5) * 3.75 * motionScale : 0;
   // Move away from the body/face. The supporting hand and prop remain fixed.
-  const arm = animated ? -3.75 * (1 + Math.sin(frame / 30 * 1.1)) : 0;
-  const blink = animated && ((frame >= 70 && frame <= 77) || (frame >= 197 && frame <= 204));
-  return <svg viewBox={`-65 -12 ${s.width + 130} ${s.height + 30}`} width={365} height={816}>
+  const arm = animated ? -3.75 * (1 + Math.sin(frame / 30 * 1.1)) * motionScale : 0;
+  const blinkFrame = (frame + blinkPhase) % 300;
+  const blink = animated && ((blinkFrame >= 70 && blinkFrame <= 77) || (blinkFrame >= 197 && blinkFrame <= 204));
+  return <svg viewBox={`-65 -12 ${s.width + 130} ${s.height + 30}`} width={width} height={height}>
     <defs>
       <clipPath id={`${who}-head`}><path d={s.head} /></clipPath>
       <clipPath id={`${who}-arm`}><path d={s.arm} /></clipPath>
@@ -75,7 +76,7 @@ export const ElderMarkerPilot = ({who}: {who: Who}) => {
       {[false, true].map(animated => <div key={String(animated)} style={{background: 'white', borderRadius: 16,
         width: 560, display: 'flex', alignItems: 'center', flexDirection: 'column', paddingTop: 16}}>
         <div style={{fontSize: 26, fontWeight: 700}}>{animated ? 'パーツ動作' : '原画：静止'}</div>
-        <Puppet who={who} animated={animated} />
+        <MarkerElder who={who} animated={animated} />
       </div>)}
     </div>
     <div style={{fontSize: 21, marginTop: 14}}>造形・質感と継ぎ目の確認用 ／ 無音10秒・本編未反映</div>

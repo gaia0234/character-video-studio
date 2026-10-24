@@ -11,13 +11,14 @@ const Picture = () => <foreignObject width={368} height={996}>
     style={{width: 368, height: 996, display: 'block'}} />
 </foreignObject>;
 
-const MarkerHomer = ({animated}: {animated: boolean}) => {
+export const MarkerHomer = ({animated, width = 340, height = 816, motionScale = 1, blinkPhase = 0}: {animated: boolean; width?: number; height?: number; motionScale?: number; blinkPhase?: number}) => {
   const frame = useCurrentFrame();
   const id = animated ? 'moving' : 'reference';
-  const nod = animated ? Math.sin(frame / 30 * 1.5) * 3.75 : 0;
-  const gesture = animated ? Math.sin(frame / 30 * 1.1) * 7.5 : 0;
-  const blink = animated && ((frame >= 70 && frame <= 77) || (frame >= 197 && frame <= 204));
-  return <svg viewBox="-30 -10 428 1026" width={340} height={816}>
+  const nod = animated ? Math.sin(frame / 30 * 1.5) * 3.75 * motionScale : 0;
+  const gesture = animated ? Math.sin(frame / 30 * 1.1) * 7.5 * motionScale : 0;
+  const blinkFrame = (frame + blinkPhase) % 300;
+  const blink = animated && ((blinkFrame >= 70 && blinkFrame <= 77) || (blinkFrame >= 197 && blinkFrame <= 204));
+  return <svg viewBox="-30 -10 428 1026" width={width} height={height}>
     <defs>
       <clipPath id={`${id}-head`}><path d={head} /></clipPath>
       <clipPath id={`${id}-arm`}><path d={arm} /></clipPath>

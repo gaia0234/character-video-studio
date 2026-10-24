@@ -1,0 +1,46 @@
+{
+  "version": "toyota-v3-p1-01",
+  "sourceScript": "sources/script-longform-toyota-conversation-v3.md",
+  "sourceScriptSha256": "438a1023dcb87080de89e172dc6065fb9af4a9d76e89c34f95019ce2877f5562",
+  "scope": "v3-p1-01 only",
+  "scenes": [
+    {
+      "id": "v3-p1-01",
+      "part": 1,
+      "lines": [
+        {
+          "id": "v3-p1-01-l1",
+          "speaker": "ジャッド",
+          "text": "エンジンに、モーター。……これで燃料が減るというのが、どうも引っかかるんです。",
+          "spokenText": "エンジンに、モーター。……これで燃料が減るというのが、どうも引っかかるんです。",
+          "pauseAfter": 0.5,
+          "voiceSpeed": 1.0
+        },
+        {
+          "id": "v3-p1-01-l2",
+          "speaker": "ホーマー",
+          "text": "モーターが助けてくれるから、ではないんですか。",
+          "spokenText": "モーターが助けてくれるから、ではないんですか。",
+          "pauseAfter": 0.5,
+          "voiceSpeed": 1.0
+        },
+        {
+          "id": "v3-p1-01-l3",
+          "speaker": "ジャッド",
+          "text": "そのモーターにも、電気が要りますよね。エンジンが燃料を使って、モーターが電気を使う。二つとも働かせて、どうして節約になるのか。",
+          "spokenText": "そのモーターにも、電気が要りますよね。エンジンが燃料を使って、モーターが電気を使う。二つとも働かせて、どうして節約になるのか。",
+          "pauseAfter": 0.5,
+          "voiceSpeed": 1.0
+        },
+        {
+          "id": "v3-p1-01-l4",
+          "speaker": "ケント",
+          "text": "電気がどこから来るか、ですね。電池の所を見てください。ここにつながる道が、二つあります。",
+          "spokenText": "電気がどこから来るか、ですね。電池の所を見てください。ここにつながる道が、二つあります。",
+          "pauseAfter": 0.5,
+          "voiceSpeed": 1.0
+        }
+      ]
+    }
+  ]
+}
