@@ -33,34 +33,53 @@ EXPRESSIONS = {
 }
 
 
-def mouth_element(spec, box):
+def mouth_element(spec, box, eyes=None):
+    """口のパスを作る。
+
+    eyes（目bbox）を渡すと、口の上端が目の下端から6px以上空くように下へ補正する。
+    弧の端点は口bboxの中央の高さに置き、幅を広げても端が目の真下に出て重ならないようにする。
+    """
     x0, y0, x1, y1 = box
     cx, cy = (x0 + x1) / 2.0, (y0 + y1) / 2.0
     w = (x1 - x0) * spec.get('w', 1.0)
     h = (y1 - y0) * spec.get('h', 1.0)
     sw = max(5.0, (y1 - y0) * 0.35)
     kind = spec['kind']
+    depth = (y1 - y0) * spec.get('depth', 0.6)
+    if kind not in ('smile', 'frown', 'line', 'open'):
+        raise SystemExit('未知の口の種類: %s' % kind)
+
+    def top_of(center_y):
+        if kind == 'smile':
+            return center_y - sw / 2
+        if kind == 'frown':
+            return center_y - depth / 2 - sw / 2
+        if kind == 'line':
+            return center_y - sw / 2
+        return center_y - h / 2  # open
+
+    if eyes:
+        limit = eyes[3] + 6
+        if top_of(cy) < limit:
+            cy += limit - top_of(cy)
+
     if kind == 'smile':
-        depth = (y1 - y0) * spec.get('depth', 0.6)
         d = 'M%.1f %.1f Q%.1f %.1f %.1f %.1f' % (
-            cx - w / 2, cy - h / 2, cx, cy + h / 2 + depth, cx + w / 2, cy - h / 2)
+            cx - w / 2, cy, cx, cy + h, cx + w / 2, cy)
         return ('<path id="mouth" fill="none" stroke="#111111" stroke-width="%.1f" '
                 'stroke-linecap="round" d="%s"/>' % (sw, d))
     if kind == 'frown':
-        depth = (y1 - y0) * spec.get('depth', 0.6)
         d = 'M%.1f %.1f Q%.1f %.1f %.1f %.1f' % (
-            cx - w / 2, cy + h / 2, cx, cy - h / 2 - depth, cx + w / 2, cy + h / 2)
+            cx - w / 2, cy, cx, cy - h, cx + w / 2, cy)
         return ('<path id="mouth" fill="none" stroke="#111111" stroke-width="%.1f" '
                 'stroke-linecap="round" d="%s"/>' % (sw, d))
     if kind == 'line':
         d = 'M%.1f %.1f L%.1f %.1f' % (cx - w / 2, cy, cx + w / 2, cy)
         return ('<path id="mouth" fill="none" stroke="#111111" stroke-width="%.1f" '
                 'stroke-linecap="round" d="%s"/>' % (sw, d))
-    if kind == 'open':
-        return ('<path id="mouth" fill="#111111" d="M%.1f %.1f a%.1f %.1f 0 1 0 %.1f 0 '
-                'a%.1f %.1f 0 1 0 %.1f 0"/>' % (
-                    cx - w / 2, cy, w / 2, h / 2, w, w / 2, h / 2, -w))
-    raise SystemExit('未知の口の種類: %s' % kind)
+    return ('<path id="mouth" fill="#111111" d="M%.1f %.1f a%.1f %.1f 0 1 0 %.1f 0 '
+            'a%.1f %.1f 0 1 0 %.1f 0"/>' % (
+                cx - w / 2, cy, w / 2, h / 2, w, w / 2, h / 2, -w))
 
 
 def build(key, expression, spec, layout):
@@ -68,7 +87,8 @@ def build(key, expression, spec, layout):
     box = layout.get('mouth')
     if not box:
         raise SystemExit('%s: 口の位置が face-layout.json にありません' % key)
-    out = re.sub(r'<path id="mouth"[^>]*/>', mouth_element(spec, box), src, count=1)
+    out = re.sub(r'<path id="mouth"[^>]*/>', mouth_element(spec, box, layout.get('eyes')),
+                 src, count=1)
     if out == src:
         raise SystemExit('%s: 基準SVGに #mouth パスがありません' % key)
     out = re.sub(r'<title>.*?</title>', '<title>%s（%s）</title>' % (key, expression),

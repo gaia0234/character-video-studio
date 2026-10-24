@@ -5,17 +5,17 @@
   "windowsDirectory": "\\\\192.168.1.115\\Shared\\Transfer\\エルダーチャンネル\\2026-10-23-試作ショートv7",
   "method": "scripts/trace-elder-from-sheets.py（Python標準ライブラリのみ・外部AI API不使用）＋ build-elder-expressions.py（#mouth差し替え）",
   "supersedes": "2026-10-21-試作ショート/（v6・手書きフラットSVGは本人「失格」判定）",
-  "verify": "原本↔共有先の全21ファイルをSHA256照合し一致",
+  "verify": "原本↔共有先の全21ファイルをSHA256照合し一致。2026-10-24に口と目の重なり修正版へ差し替え（mp4・svg/homer-happy.svg・svg/homer-cheer.svg・still-all.pngの4件）し再照合一致。完成MP4はRemotion同梱ffprobe（n7.1）で 1080×1920・30fps・20.000秒・600フレーム・h264・音声トラックなしを実測確認。",
   "files": [
     {
       "name": "README.md",
-      "bytes": 2853,
-      "sha256": "59483e59387b719b95a4d0558355aee5d6d41bd346587b4bac4e2a9a144dfa95"
+      "bytes": 3848,
+      "sha256": "ecbf4ac7c793a73d2d454a8630001e13458268ec9ea5c281e5ad5781cc16394c"
     },
     {
       "name": "elder-short-intro-v7-traced.mp4",
-      "bytes": 6145223,
-      "sha256": "5cb647ed083946f08dbc5a438cc62d5c22f355df141dc7256c7ea5b1b70f66ae"
+      "bytes": 6132687,
+      "sha256": "a583fd1caaf2464bb71b93aa977c1b6d62c17a8ddaeaa23a946c4085b6c8c415"
     },
     {
       "name": "still-all.png",
@@ -50,12 +50,12 @@
     {
       "name": "svg/homer-cheer.svg",
       "bytes": 4939,
-      "sha256": "b6ed456d45828875aaa324e0a24fee7a88419cb80fe767a9dd195b2973efa24c"
+      "sha256": "27719c6898fcf3f7cec8c73638d038b8ef3c25cd0001dfbe686c83574743eb3e"
     },
     {
       "name": "svg/homer-happy.svg",
       "bytes": 4972,
-      "sha256": "66d26ecf41c4464e5948cd2cd6daec41d46d3962739703eb955eebd69aa56d85"
+      "sha256": "5d5f3c157f7b77b7c10942b7f9735796ae6b5f6ac8b14902e9e1ca3152e620bc"
     },
     {
       "name": "svg/homer.svg",
@@ -112,5 +112,13 @@
       "bytes": 689768,
       "sha256": "da7dd3daac63d71081a72616c5a1e3acf27276bca48586bb34b8715cc88ee83e"
     }
-  ]
+  ],
+  "revision": {
+    "date": "2026-10-24",
+    "trigger": "本人指摘「homer-happy の口が右目と重なっている」（指摘1件目）",
+    "cause": "smile弧の端点が口bbox上端（y=436）に固定され、happyは幅1.35倍で弧の端が右目（目下端y=435）の真下まで拡大。ストローク幅13.3の丸キャップが目と重複",
+    "change": "build-elder-expressions.py の mouth_element で smile/frown の弧の端点を口bbox中央の高さへ移設し、全種別に「口の上端が目下端+6px以上」の自動補正（目bbox参照）を追加。表情6種を再生成し、変更のあった homer-happy / homer-cheer / 本体mp4 / still-all.png の4件を差し替え（他表情4種は座標同一のため差し替えなし）",
+    "verify": "表情6種の拡大スチル＋動画frame100/220/340/560で口と目の分離を目視。口上端と目下端の間隔は6.0〜35.2px（自動補正の下限6pxを充足）。差し替え後に全21ファイルのSHA256照合で一致",
+    "codex": "Video制作Codex（thread 01a14ef0-15c3-70d3-97c5-90df6862e9d8）へ確認依頼を queue 送信（queued id 01a16d50-c759-7663-9a31-2685e08a4ec4）。返信未受領の間は本人「確認を取って進める」指示に基づき実施、Codex差し戻しがあれば対応"
+  }
 }

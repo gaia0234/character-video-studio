@@ -9,11 +9,14 @@ const LABELS: Record<string, string> = {
 
 /**
  * 元画像（設定シート切出し）と生成SVGの左右比較。
- * 使い方: npx remotion still src/elder/index.ts ElderSvgCheck out.png --props='{"char":"homer"}'
+ * 使い方:
+ *   npx remotion still src/elder/index.ts ElderSvgCheck out.png --props='{"char":"homer"}'
+ *   npx remotion still src/elder/index.ts ElderSvgCheck out.png --props='{"char":"homer","variant":"happy"}'
  */
 export const SvgCheck: React.FC = () => {
-  const {char = 'homer'} = getInputProps() as {char?: string};
+  const {char = 'homer', variant} = getInputProps() as {char?: string; variant?: string};
   const label = LABELS[char] ?? char;
+  const svgName = variant ? `${char}-${variant}` : char;
   const pane = (title: string, src: string): React.ReactNode => (
     <div style={{flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', padding: 12}}>
       <div style={{fontSize: 34, fontWeight: 700, marginBottom: 8}}>{title}</div>
@@ -25,7 +28,8 @@ export const SvgCheck: React.FC = () => {
   return (
     <AbsoluteFill style={{background: '#F6F1E4', flexDirection: 'row'}}>
       {pane(`元画像 ${label}`, staticFile(`assets/characters/elder-source/${char}.png`))}
-      {pane(`生成SVG ${label}`, staticFile(`assets/characters/elder-svg/${char}.svg`))}
+      {pane(`生成SVG ${label}${variant ? `（表情: ${variant}）` : ''}`,
+        staticFile(`assets/characters/elder-svg/${svgName}.svg`))}
     </AbsoluteFill>
   );
 };
