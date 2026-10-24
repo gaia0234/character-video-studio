@@ -1,6 +1,9 @@
+import {useCurrentFrame} from 'remotion';
 // Geometry retained from the accepted first-generation Prius side-view drawing.
 const ink = '#344657';
-export const ToyotaV3OpeningCar = () => <svg viewBox="100 60 1380 500" width="100%" height="100%" aria-label="初代プリウスの外観を参考にした説明図">
+export const ToyotaV3OpeningCar = ({moving = false}: {moving?: boolean}) => {
+  const frame = useCurrentFrame();
+  return <svg viewBox="100 60 1380 500" width="100%" height="100%" aria-label="初代プリウスの外観を参考にした説明図">
   <defs>
     <linearGradient id="pr-body" x2=".12" y2="1"><stop stopColor="#F3F8F7"/><stop offset=".42" stopColor="#BBD1CF"/><stop offset="1" stopColor="#91ADA9"/></linearGradient>
     <linearGradient id="pr-glass" x2=".2" y2="1"><stop stopColor="#657F86"/><stop offset=".5" stopColor="#9EBBBE"/><stop offset="1" stopColor="#D4E4E2"/></linearGradient>
@@ -37,7 +40,8 @@ export const ToyotaV3OpeningCar = () => <svg viewBox="100 60 1380 500" width="10
   {[370, 1138].map(cx => <g key={cx}>
     <circle cx={cx} cy={443} r={87} fill="#34454E"/>
     <circle cx={cx} cy={443} r={66} fill="#BACBD1" stroke="#6B838C" strokeWidth={5}/>
-    {[0,72,144,216,288].map(a => <path key={a} d={`M${cx-7} 425L${cx-15} 392Q${cx} 385 ${cx+15} 392L${cx+7} 425Z`} fill="#728E99" transform={`rotate(${a} ${cx} 443)`}/>)}
+    {[0,72,144,216,288].map(a => <path key={a} d={`M${cx-7} 425L${cx-15} 392Q${cx} 385 ${cx+15} 392L${cx+7} 425Z`} fill="#728E99" transform={`rotate(${a + (moving ? -frame * 3 : 0)} ${cx} 443)`}/>)}
     <circle cx={cx} cy={443} r={16} fill="#DDE8EB" stroke="#6B838C" strokeWidth={3}/>
   </g>)}
 </svg>;
+};

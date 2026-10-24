@@ -1,0 +1,86 @@
+{
+  "version": "toyota-v3-p1-01-r2",
+  "sourceScript": "sources/script-longform-toyota-conversation-v3.md",
+  "sourceScriptSha256": "2e239248c9da4690f88b4fbdf97ba6985687c813e979208b1b129fb96a08dd9c",
+  "scope": "v3-p1-01 revision only",
+  "scenes": [
+    {
+      "id": "v3-p1-01-r2",
+      "part": 1,
+      "lines": [
+        {
+          "id": "v3-p1-01-r2-l1",
+          "speaker": "ホーマー",
+          "text": "ハイブリッドって、よく聞きますけど。そもそも、どういう車なんでしょう。",
+          "spokenText": "ハイブリッドって、よく聞きますけど。そもそも、どういう車なんでしょう。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0
+        },
+        {
+          "id": "v3-p1-01-r2-l2",
+          "speaker": "ケント",
+          "text": "エンジンと、電気で動くモーター。この2種類の動力を組み合わせて走る車です。",
+          "spokenText": "エンジンと、電気で動くモーター。この2種類の動力を組み合わせて走る車です。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0
+        },
+        {
+          "id": "v3-p1-01-r2-l3",
+          "speaker": "ジャッド",
+          "text": "ああ、ガソリンで動くエンジンだけではないんですね。",
+          "spokenText": "ああ、ガソリンで動くエンジンだけではないんですね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0
+        },
+        {
+          "id": "v3-p1-01-r2-l4",
+          "speaker": "ケント",
+          "text": "プリウスでは、条件が合えば、モーターだけで走れます。",
+          "spokenText": "プリウスでは、条件が合えば、モーターだけで走れます。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0
+        },
+        {
+          "id": "v3-p1-01-r2-l5",
+          "speaker": "ケント",
+          "text": "加速するときには、エンジンとモーターが力を合わせることもあります。",
+          "spokenText": "加速するときには、エンジンとモーターが力を合わせることもあります。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0
+        },
+        {
+          "id": "v3-p1-01-r2-l6",
+          "speaker": "ホーマー",
+          "text": "状況に合わせて、使い分けたり、力を合わせたりするんですね。",
+          "spokenText": "状況に合わせて、使い分けたり、力を合わせたりするんですね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0
+        },
+        {
+          "id": "v3-p1-01-r2-l7",
+          "speaker": "ケント",
+          "text": "はい。異なる動力を組み合わせる。だから、ハイブリッドなんです。",
+          "spokenText": "はい。異なる動力を組み合わせる。だから、ハイブリッドなんです。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0
+        },
+        {
+          "id": "v3-p1-01-r2-l8",
+          "speaker": "ジャッド",
+          "text": "なるほど。でも、モーターの電気はどこから来るんでしょう。エンジンで発電するなら、燃料は使いますよね。",
+          "spokenText": "なるほど。でも、モーターの電気はどこから来るんでしょう。エンジンで発電するなら、燃料は使いますよね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0
+        },
+        {
+          "id": "v3-p1-01-r2-l9",
+          "speaker": "ケント",
+          "text": "その疑問を、電池に電気が入る道から確かめましょう。",
+          "spokenText": "その疑問を、電池に電気が入る道から確かめましょう。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0
+        }
+      ]
+    }
+  ]
+}

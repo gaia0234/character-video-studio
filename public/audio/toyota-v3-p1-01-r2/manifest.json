@@ -1,0 +1,190 @@
+{
+  "assets": [
+    {
+      "file": "audio/toyota-v3-p1-01-r2/v3-p1-01-r2-l1.wav",
+      "type": "voice-v3-p1-01-r2",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "玄野武宏",
+        "style": 39,
+        "model": "10",
+        "speed": 1.0
+      },
+      "speaker": "ホーマー",
+      "credit": "VOICEVOX:玄野武宏",
+      "sha256": "72451954d7c40315297c34aa661452641b0af7348a11a531c7befff56e6d8f5d",
+      "seconds": 4.789333333333333,
+      "approvalStatus": "preview-user-review-pending",
+      "licenseReference": "sources/elder-channel-characters.md"
+    },
+    {
+      "file": "audio/toyota-v3-p1-01-r2/v3-p1-01-r2-l2.wav",
+      "type": "voice-v3-p1-01-r2",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雀松朱司",
+        "style": 52,
+        "model": "12",
+        "speed": 1.0
+      },
+      "speaker": "ケント",
+      "credit": "VOICEVOX:雀松朱司",
+      "sha256": "d6d421c5fb4ccbff292ae4eb1c896d1cc0b5a6dda620f046d7953faab68c37d9",
+      "seconds": 5.749333333333333,
+      "approvalStatus": "preview-user-review-pending",
+      "licenseReference": "sources/elder-channel-characters.md"
+    },
+    {
+      "file": "audio/toyota-v3-p1-01-r2/v3-p1-01-r2-l3.wav",
+      "type": "voice-v3-p1-01-r2",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "青山龍星",
+        "style": 82,
+        "model": "15",
+        "speed": 1.0
+      },
+      "speaker": "ジャッド",
+      "credit": "VOICEVOX:青山龍星",
+      "sha256": "8321606f80b003293c7a2a0079786881ebb6e30bd4d2e4a7e2bfca85fba8c22b",
+      "seconds": 3.84,
+      "approvalStatus": "preview-user-review-pending",
+      "licenseReference": "sources/elder-channel-characters.md"
+    },
+    {
+      "file": "audio/toyota-v3-p1-01-r2/v3-p1-01-r2-l4.wav",
+      "type": "voice-v3-p1-01-r2",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雀松朱司",
+        "style": 52,
+        "model": "12",
+        "speed": 1.0
+      },
+      "speaker": "ケント",
+      "credit": "VOICEVOX:雀松朱司",
+      "sha256": "420b2c86df8cade8c1207a52160e18fe93b7e7e181bd207af4d92bc88d488968",
+      "seconds": 3.9466666666666668,
+      "approvalStatus": "preview-user-review-pending",
+      "licenseReference": "sources/elder-channel-characters.md"
+    },
+    {
+      "file": "audio/toyota-v3-p1-01-r2/v3-p1-01-r2-l5.wav",
+      "type": "voice-v3-p1-01-r2",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雀松朱司",
+        "style": 52,
+        "model": "12",
+        "speed": 1.0
+      },
+      "speaker": "ケント",
+      "credit": "VOICEVOX:雀松朱司",
+      "sha256": "9f9a78ef0c3083117580ed23e68fdcbe5986da9c90765da4ec8c03fb84b9daca",
+      "seconds": 4.341333333333333,
+      "approvalStatus": "preview-user-review-pending",
+      "licenseReference": "sources/elder-channel-characters.md"
+    },
+    {
+      "file": "audio/toyota-v3-p1-01-r2/v3-p1-01-r2-l6.wav",
+      "type": "voice-v3-p1-01-r2",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "玄野武宏",
+        "style": 39,
+        "model": "10",
+        "speed": 1.0
+      },
+      "speaker": "ホーマー",
+      "credit": "VOICEVOX:玄野武宏",
+      "sha256": "feadc539f02eceed1d70abe1328e5ad1229e055923a7c6511dfb3335897349fc",
+      "seconds": 3.978666666666667,
+      "approvalStatus": "preview-user-review-pending",
+      "licenseReference": "sources/elder-channel-characters.md"
+    },
+    {
+      "file": "audio/toyota-v3-p1-01-r2/v3-p1-01-r2-l7.wav",
+      "type": "voice-v3-p1-01-r2",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雀松朱司",
+        "style": 52,
+        "model": "12",
+        "speed": 1.0
+      },
+      "speaker": "ケント",
+      "credit": "VOICEVOX:雀松朱司",
+      "sha256": "6927f89a28d1fa366f72eae35fd57c62edb904f7ecf3a88ceb002b70bc6c69b8",
+      "seconds": 4.8853333333333335,
+      "approvalStatus": "preview-user-review-pending",
+      "licenseReference": "sources/elder-channel-characters.md"
+    },
+    {
+      "file": "audio/toyota-v3-p1-01-r2/v3-p1-01-r2-l8.wav",
+      "type": "voice-v3-p1-01-r2",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "青山龍星",
+        "style": 82,
+        "model": "15",
+        "speed": 1.0
+      },
+      "speaker": "ジャッド",
+      "credit": "VOICEVOX:青山龍星",
+      "sha256": "714f1d302863f879d967ef3be2f974ec612ab31fd0609b19346d14c09c2f461c",
+      "seconds": 8.661333333333333,
+      "approvalStatus": "preview-user-review-pending",
+      "licenseReference": "sources/elder-channel-characters.md"
+    },
+    {
+      "file": "audio/toyota-v3-p1-01-r2/v3-p1-01-r2-l9.wav",
+      "type": "voice-v3-p1-01-r2",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雀松朱司",
+        "style": 52,
+        "model": "12",
+        "speed": 1.0
+      },
+      "speaker": "ケント",
+      "credit": "VOICEVOX:雀松朱司",
+      "sha256": "a93b7b28b3cf501432de9b3d82842e781b9f7903a1ed9b3bed79774017a536ec",
+      "seconds": 3.7226666666666666,
+      "approvalStatus": "preview-user-review-pending",
+      "licenseReference": "sources/elder-channel-characters.md"
+    },
+    {
+      "file": "audio/toyota-v3-p1-01-r2/scene-v3-p1-01-r2.wav",
+      "type": "voice-v3-p1-01-r2",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（発話WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "発話WAV合成",
+      "sha256": "1d43f4046a1d873952278ca213ffcb4b413b89865cd6e6ec32f0425d24dc0251",
+      "seconds": 47.51466666666666,
+      "approvalStatus": "preview-user-review-pending",
+      "licenseReference": "sources/elder-channel-characters.md"
+    }
+  ],
+  "voiceCredits": [
+    "VOICEVOX:玄野武宏",
+    "VOICEVOX:雀松朱司",
+    "VOICEVOX:青山龍星"
+  ],
+  "sourceScript": "sources/script-longform-toyota-conversation-v3.md",
+  "sourceScriptSha256": "2e239248c9da4690f88b4fbdf97ba6985687c813e979208b1b129fb96a08dd9c"
+}
