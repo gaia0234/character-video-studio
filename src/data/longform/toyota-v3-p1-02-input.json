@@ -1,0 +1,77 @@
+{
+  "version": "toyota-v3-p1-02",
+  "sourceScript": "sources/script-longform-toyota-conversation-v3.md",
+  "sourceScriptSha256": "f12bd5770d0238d619679fa5cacc4bf2300299347db709a51f9f8219c67a7c2d",
+  "scope": "v3-p1-02 only",
+  "scenes": [
+    {
+      "id": "v3-p1-02",
+      "part": 1,
+      "lines": [
+        {
+          "id": "v3-p1-02-l1",
+          "speaker": "ホーマー",
+          "text": "このプリウスは、家のコンセントにつないで充電する車ではないんですよね。",
+          "spokenText": "このプリウスは、家のコンセントにつないで充電する車ではないんですよね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "street"
+        },
+        {
+          "id": "v3-p1-02-l2",
+          "speaker": "ケント",
+          "text": "はい。エンジンで発電した電気を、電池にためます。電気が入る道は、もう1つあります。",
+          "spokenText": "はい。エンジンで発電した電気を、電池にためます。電気が入る道は、もう1つあります。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "engine"
+        },
+        {
+          "id": "v3-p1-02-l3",
+          "speaker": "ホーマー",
+          "text": "もう1つは、どこから？",
+          "spokenText": "もう1つは、どこから？",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "question"
+        },
+        {
+          "id": "v3-p1-02-l4",
+          "speaker": "ケント",
+          "text": "車が減速するときです。車が動いているエネルギーの一部を電気に変えて、電池へ戻します。これを、回生ブレーキといいます。",
+          "spokenText": "車が減速するときです。車が動いているエネルギーの一部を電気に変えて、電池へ戻します。これを、回生ブレーキといいます。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "regen"
+        },
+        {
+          "id": "v3-p1-02-l5",
+          "speaker": "ホーマー",
+          "text": "止まるときにも、ですか。信号で何度もブレーキを踏む道なら、そのたびに取り戻せる分があるんですね。",
+          "spokenText": "止まるときにも、ですか。信号で何度もブレーキを踏む道なら、そのたびに取り戻せる分があるんですね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "recap"
+        },
+        {
+          "id": "v3-p1-02-l6",
+          "speaker": "ジャッド",
+          "text": "そちらは気になります。ただ、エンジンで発電するほうは燃料を使いますよね。電池があるだけでは、節約になるとは言えないでしょう。",
+          "spokenText": "そちらは気になります。ただ、エンジンで発電するほうは燃料を使いますよね。電池があるだけでは、節約になるとは言えないでしょう。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "fuel"
+        },
+        {
+          "id": "v3-p1-02-l7",
+          "speaker": "ケント",
+          "text": "はい。電気を作れば、その分がただになるわけではありません。2つをいつ、何のために使うかが肝心なんです。",
+          "spokenText": "はい。電気を作れば、その分がただになるわけではありません。2つをいつ、何のために使うかが肝心なんです。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "closing"
+        }
+      ]
+    }
+  ]
+}
