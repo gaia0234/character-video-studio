@@ -1,0 +1,32 @@
+{
+  "version": "toyota-v3-p1-03",
+  "sourceScript": "sources/script-longform-toyota-conversation-v3.md",
+  "sourceScriptSha256": "8f185b3bc46cec17696765fc4f05d887ad7259a154940f79a7e232c95f4978d5",
+  "scope": "v3-p1-03 only",
+  "scenes": [
+    {
+      "id": "v3-p1-03",
+      "part": 1,
+      "lines": [
+        {
+          "id": "v3-p1-03-l1",
+          "speaker": "ジャッド",
+          "text": "すると、エンジンもモーターも積んで、働き方まで考える。そこまでして、燃費をどれほど変えようとしたんですか。",
+          "spokenText": "すると、エンジンもモーターも積んで、働き方まで考える。そこまでして、燃費をどれほど変えようとしたんですか。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "question"
+        },
+        {
+          "id": "v3-p1-03-l2",
+          "speaker": "ナレ2",
+          "text": "1993年、トヨタでは21世紀にふさわしい車を考える取り組みが始まりました。G21と呼ばれる開発の出発点です。",
+          "spokenText": "1993年、トヨタでは21世紀にふさわしい車を考える取り組みが始まりました。G21と呼ばれる開発の出発点です。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "narration"
+        }
+      ]
+    }
+  ]
+}

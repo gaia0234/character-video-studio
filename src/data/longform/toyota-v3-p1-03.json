@@ -1,0 +1,65 @@
+{
+  "id": "v3-p1-03",
+  "fps": 30,
+  "frames": 603,
+  "audio": {
+    "src": "audio/toyota-v3-p1-03/scene-v3-p1-03.wav",
+    "seconds": 19.095333333333333,
+    "sha256": "d392a702e645600cf70380b60477a476ec70b78cc5893b0fcc839a0fb2f9caf5",
+    "lineOffsets": [
+      {"lineId": "v3-p1-03-l1", "startSecond": 0.0},
+      {"lineId": "v3-p1-03-l2", "startSecond": 9.239}
+    ]
+  },
+  "sourceScript": "sources/script-longform-toyota-conversation-v3.md",
+  "sourceScriptSha256": "8f185b3bc46cec17696765fc4f05d887ad7259a154940f79a7e232c95f4978d5",
+  "voiceCredits": ["VOICEVOX:青山龍星", "VOICEVOX Nemo"],
+  "evidence": ["F4"],
+  "lines": [
+    {
+      "id": "v3-p1-03-l1",
+      "speaker": "ジャッド",
+      "text": "すると、エンジンもモーターも積んで、働き方まで考える。そこまでして、燃費をどれほど変えようとしたんですか。",
+      "spokenText": "すると、エンジンもモーターも積んで、働き方まで考える。そこまでして、燃費をどれほど変えようとしたんですか。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "question",
+      "seconds": 8.789333333333333,
+      "audio": {
+        "src": "audio/toyota-v3-p1-03/v3-p1-03-l1.wav",
+        "seconds": 8.789333333333333,
+        "generatedFor": "[\"ジャッド\",\"15\",82,\"すると、エンジンもモーターも積んで、働き方まで考える。そこまでして、燃費をどれほど変えようとしたんですか。\",1.0]"
+      },
+      "start": 0.4,
+      "end": 9.189333333333333
+    },
+    {
+      "id": "v3-p1-03-l2",
+      "speaker": "ナレ2",
+      "text": "1993年、トヨタでは21世紀にふさわしい車を考える取り組みが始まりました。G21と呼ばれる開発の出発点です。",
+      "spokenText": "1993年、トヨタでは21世紀にふさわしい車を考える取り組みが始まりました。G21と呼ばれる開発の出発点です。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "narration",
+      "seconds": 9.856,
+      "audio": {
+        "src": "audio/toyota-v3-p1-03/v3-p1-03-l2.wav",
+        "seconds": 9.856,
+        "generatedFor": "[\"ナレ2\",\"n0\",10000,\"1993年、トヨタでは21世紀にふさわしい車を考える取り組みが始まりました。G21と呼ばれる開発の出発点です。\",1.0]"
+      },
+      "start": 9.639,
+      "end": 19.495
+    }
+  ],
+  "cues": [
+    {"start": 0.4, "end": 3.383, "speaker": "ジャッド", "text": "すると、エンジンもモーターも積んで、", "lineId": "v3-p1-03-l1"},
+    {"start": 3.383, "end": 4.875, "speaker": "ジャッド", "text": "働き方まで考える。", "lineId": "v3-p1-03-l1"},
+    {"start": 4.875, "end": 7.198, "speaker": "ジャッド", "text": "そこまでして、燃費をどれほど", "lineId": "v3-p1-03-l1"},
+    {"start": 7.198, "end": 9.189333333333333, "speaker": "ジャッド", "text": "変えようとしたんですか。", "lineId": "v3-p1-03-l1"},
+    {"start": 9.639, "end": 11.610, "speaker": "ナレ2", "text": "1993年、トヨタでは", "lineId": "v3-p1-03-l2"},
+    {"start": 11.610, "end": 14.299, "speaker": "ナレ2", "text": "21世紀にふさわしい車を考える", "lineId": "v3-p1-03-l2"},
+    {"start": 14.299, "end": 16.449, "speaker": "ナレ2", "text": "取り組みが始まりました。", "lineId": "v3-p1-03-l2"},
+    {"start": 16.449, "end": 19.495, "speaker": "ナレ2", "text": "G21と呼ばれる開発の出発点です。", "lineId": "v3-p1-03-l2"}
+  ],
+  "subtitleTimingMethod": "Character-ratio approximation within each actual utterance WAV; punctuation boundaries, <=18 chars where practical; not word alignment"
+}
