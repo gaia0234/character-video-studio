@@ -8,12 +8,8 @@ import {ToyotaV3OpeningCar} from './ToyotaV3OpeningCar';
 const c = {ink: '#293747', paper: '#FBFCFD', white: '#FFFCF5', gold: '#D9AB56', blue: '#437B9D'};
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 
-const ReferenceCar = () => <div style={{width: 470, textAlign: 'center'}}>
+const ReferenceCar = () => <div style={{width: 470, height: 317.5, textAlign: 'center'}}>
   <div style={{width: 470, height: 245}}><ToyotaV3OpeningCar /></div>
-  <div style={{fontSize: 25, lineHeight: 1.45, color: '#526C78'}}>
-    <div>後に発売された初代プリウスの</div>
-    <div>外観参考図</div>
-  </div>
 </div>;
 
 export const ToyotaV3Opening03 = () => {
