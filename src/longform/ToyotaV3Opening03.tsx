@@ -3,20 +3,18 @@ import {AbsoluteFill, Audio, Sequence, interpolate, staticFile, useCurrentFrame}
 import data from '../data/longform/toyota-v3-p1-03.json';
 import {MarkerElder} from '../elder/ElderMarkerPilot';
 import {Backdrop, MarkerFilters, useStudioFont} from './ToyotaV3VisualFrame';
+import {ToyotaV3OpeningCar} from './ToyotaV3OpeningCar';
 
 const c = {ink: '#293747', paper: '#FBFCFD', white: '#FFFCF5', gold: '#D9AB56', blue: '#437B9D'};
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 
-const ConceptCar = () => <svg width={470} height={245} viewBox="0 0 470 245" aria-label="構想を示す模式図">
-  <g fill="none" stroke={c.ink} strokeWidth={7} strokeLinejoin="round" strokeLinecap="round">
-    <path d="M42 151L64 105Q75 82 105 78L154 70L204 31H328Q360 31 386 69L417 89L435 151V181H35V157Z" fill="#DCE8E5" />
-    <path d="M168 70L209 39H316Q340 39 361 70Z" fill="#F5F0E5" />
-    <path d="M203 42V70M315 42V70M42 151H435M93 181A35 35 0 1 0 163 181A35 35 0 1 0 93 181ZM320 181A35 35 0 1 0 390 181A35 35 0 1 0 320 181Z" />
-  </g>
-  <g fill={c.white} stroke={c.ink} strokeWidth={5}>
-    <circle cx={128} cy={181} r={15} /><circle cx={355} cy={181} r={15} />
-  </g>
-</svg>;
+const ReferenceCar = () => <div style={{width: 470, textAlign: 'center'}}>
+  <div style={{width: 470, height: 245}}><ToyotaV3OpeningCar /></div>
+  <div style={{fontSize: 25, lineHeight: 1.45, color: '#526C78'}}>
+    <div>後に発売された初代プリウスの</div>
+    <div>外観参考図</div>
+  </div>
+</div>;
 
 export const ToyotaV3Opening03 = () => {
   useStudioFont();
@@ -41,14 +39,14 @@ export const ToyotaV3Opening03 = () => {
       <div style={{position: 'absolute', inset: 0, opacity: 0.3, backgroundImage: 'linear-gradient(#C8D3D9 1px, transparent 1px),linear-gradient(90deg,#C8D3D9 1px,transparent 1px)', backgroundSize: '52px 52px'}} />
       {!narration ? <>
         <div style={{position: 'absolute', left: 54, top: 42, fontSize: 42, fontWeight: 900}}>どれだけ燃費を変える？</div>
-        <div style={{position: 'absolute', left: 120, top: 166}}><ConceptCar /></div>
+        <div style={{position: 'absolute', left: 120, top: 166}}><ReferenceCar /></div>
         <div style={{position: 'absolute', left: 660, top: 205, width: 650, height: 150, display: 'grid', placeItems: 'center',
           background: '#D9AB561A', border: `4px solid ${c.gold}`, borderRadius: 24, fontSize: 48, fontWeight: 900, textAlign: 'center'}}>
           エンジンとモーター
         </div>
         <div style={{position: 'absolute', left: 720, top: 395, fontSize: 34, fontWeight: 700, color: '#526C78'}}>働き方まで考える</div>
       </> : <div style={{position: 'absolute', inset: 0, opacity: reveal}}>
-        <div style={{position: 'absolute', left: 70, top: 85, width: 420, height: 400, display: 'grid', placeItems: 'center', opacity: 0.72}}><ConceptCar /></div>
+        <div style={{position: 'absolute', left: 70, top: 85, width: 420, height: 400, display: 'grid', placeItems: 'center'}}><ReferenceCar /></div>
         <div style={{position: 'absolute', left: 545, top: 105, height: 370, width: 4, background: '#29374722'}} />
         <div style={{position: 'absolute', left: 650, top: 120, fontSize: 156, lineHeight: 1.1, fontWeight: 900, color: c.gold}}>1993年</div>
         <div style={{position: 'absolute', left: 675, top: 325, padding: '12px 26px', background: '#293747', color: c.white,
