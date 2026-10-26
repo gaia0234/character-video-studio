@@ -1,0 +1,53 @@
+{
+  "version": "toyota-v3-p1-05",
+  "sourceScript": "sources/script-longform-toyota-conversation-v3.md",
+  "scope": "v3-p1-05 only",
+  "evidence": [
+    "F6"
+  ],
+  "scenes": [
+    {
+      "id": "v3-p1-05",
+      "part": 1,
+      "lines": [
+        {
+          "id": "v3-p1-05-l1",
+          "speaker": "ナレ2",
+          "text": "1997年12月、初代プリウスが発売されました。構想は、エンジンとモーターを組み合わせた市販の車になります。",
+          "spokenText": "1997年12月、初代プリウスが発売されました。構想は、エンジンとモーターを組み合わせた市販の車になります。",
+          "pauseAfter": 0.65,
+          "voiceSpeed": 1.0,
+          "phase": "release"
+        },
+        {
+          "id": "v3-p1-05-l2",
+          "speaker": "ホーマー",
+          "text": "1997年には、もう買って乗れる車になったんですね。モーターの電気まで車の中でまかなう。その働き方を見たくなってきました。",
+          "spokenText": "1997年には、もう買って乗れる車になったんですね。モーターの電気まで車の中でまかなう。その働き方を見たくなってきました。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "interest"
+        },
+        {
+          "id": "v3-p1-05-l3",
+          "speaker": "ジャッド",
+          "text": "ええ。ただ、発売されたというだけでは、最初の疑問はまだ残っています。2つを積んだ車が、実際の道で何を変えるのか。",
+          "spokenText": "ええ。ただ、発売されたというだけでは、最初の疑問はまだ残っています。2つを積んだ車が、実際の道で何を変えるのか。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "question"
+        },
+        {
+          "id": "v3-p1-05-l4",
+          "speaker": "ケント",
+          "text": "そこを、車の動きと一緒に見ましょう。仕組みの名前を先に覚えるより、働く場面を分けると追いやすくなります。",
+          "spokenText": "そこを、車の動きと一緒に見ましょう。仕組みの名前を先に覚えるより、働く場面を分けると追いやすくなります。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "transition"
+        }
+      ]
+    }
+  ],
+  "sourceScriptSha256": "8f185b3bc46cec17696765fc4f05d887ad7259a154940f79a7e232c95f4978d5"
+}
