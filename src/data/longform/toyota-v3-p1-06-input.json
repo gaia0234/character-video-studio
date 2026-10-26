@@ -1,0 +1,62 @@
+{
+  "version": "toyota-v3-p1-06",
+  "sourceScript": "sources/script-longform-toyota-conversation-v3.md",
+  "scope": "v3-p1-06 only",
+  "evidence": [
+    "G8",
+    "G10"
+  ],
+  "scenes": [
+    {
+      "id": "v3-p1-06",
+      "part": 1,
+      "lines": [
+        {
+          "id": "v3-p1-06-l1",
+          "speaker": "ジャッド",
+          "text": "では、さっきの道です。信号が青になって発進する。速度を上げて、次の信号でブレーキをかける。その間、エンジンはいつ働くんですか。",
+          "spokenText": "では、さっきの道です。信号が青になって発進する。速度を上げて、次の信号でブレーキをかける。その間、エンジンはいつ働くんですか。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "depart"
+        },
+        {
+          "id": "v3-p1-06-l2",
+          "speaker": "ケント",
+          "text": "電池の状態や車種によっても変わります。図では1つの例を追いながら、モーターが受け持つ場面と、エンジンが働く場面を見分けます。",
+          "spokenText": "電池の状態や車種によっても変わります。図では1つの例を追いながら、モーターが受け持つ場面と、エンジンが働く場面を見分けます。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "accelerate"
+        },
+        {
+          "id": "v3-p1-06-l3",
+          "speaker": "ホーマー",
+          "text": "私は、ブレーキをかけた先が気になります。止まるときに戻した電気が、その後どこで役に立つのか。",
+          "spokenText": "私は、ブレーキをかけた先が気になります。止まるときに戻した電気が、その後どこで役に立つのか。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "decelerate"
+        },
+        {
+          "id": "v3-p1-06-l4",
+          "speaker": "ジャッド",
+          "text": "そこまでつながれば、電気を作るために燃料を使っても、なぜ節約できるのかが見えてきそうです。",
+          "spokenText": "そこまでつながれば、電気を作るために燃料を使っても、なぜ節約できるのかが見えてきそうです。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "stop"
+        },
+        {
+          "id": "v3-p1-06-l5",
+          "speaker": "ケント",
+          "text": "最初は、止まっている車が動き出すところからです。",
+          "spokenText": "最初は、止まっている車が動き出すところからです。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "handoff"
+        }
+      ]
+    }
+  ]
+}
