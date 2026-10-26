@@ -75,3 +75,8 @@
 - 案件Codex PMは承認済み作業をOpenCode優先で処理単位に委譲し、担当・所有・実効モデル・完了条件・失敗累計を引き継ぐ。送信受付だけで完了とせず、成果と必要証拠を照合して受け入れる。
 - 既存OCとの通信時は [共通通信手順](/home/ds-work/.codex/guides/session-communication.md) と [OC通信Skill](/home/ds-work/.codex/skills/opencode-communication/SKILL.md) を読む。CLI api経由の限定取得ではqueryをURLに明示し、件数・依頼ID・正常JSON・最終完了を確認する。
 - 案件の既存承認・停止・権限・秘密保護を維持し、同じ試験を各案件で再実行しない。常駐起動/全案件の無人運用/停止解除が検証済みとは扱わない。
+
+## レビュー役割とOC委譲（2026-10-26）
+- 成果物/変更は制作者とは別の適切なReviewerが完了前に確認する。共通手順 /home/ds-work/projects/project-hub/docs/review-workflow.md と案件別一覧 /home/ds-work/projects/project-hub/docs/agent-role-audit.md を参照し、未レビュー/重大な指摘未解決/重要な証拠不足なら完成・commit/pushへ進まない。
+- この案件の担当候補: production_reviewer / reviewer / writing_reviewer。確認の重点: 採用済み車/機械/人物図と採用根拠、説明順・実音/動きの確認範囲。コード/台本変更は該当役へ分担。全役を一律併用せず、変更内容に必要な役だけ選ぶ。既存docs_auditor/visual_auditor等は補助として維持し、担当の確認範囲で必須Reviewerへ証拠を渡す。
+- OCへは入出力/基準/権限/所有/受入が明確な仕事をまとめて渡す。小変更で往復が上回る場合はMain、難しい原因分析/高リスクは適切なCodex役割。必要操作/非対話runか対話か/承認経路を先に確定し、read/writeだけならshell・プロセス確認・追加検証を明示禁止する。既存モデル選定/Go切替/停止/秘密保護を維持する。
