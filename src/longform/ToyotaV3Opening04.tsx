@@ -42,7 +42,7 @@ export const ToyotaV3Opening04 = () => {
       <div style={{display: 'flex', gap: 8, marginTop: 5}}>{[1,2,3,4,5].map(p => <div key={p} style={{flex: 1, height: 10, borderRadius: 999,
         background: p === 1 ? c.gold : '#29374733'}} />)}</div>
     </div>
-    {combination ? <ToyotaTHSCutaway /> : <div style={{position: 'absolute', left: 115, top: 160, width: 1580, height: 630, background: '#FBFCFD',
+    {combination ? <ToyotaTHSCutaway spacious /> : <div style={{position: 'absolute', left: 115, top: 160, width: 1580, height: 630, background: '#FBFCFD',
       border: `4px solid ${c.ink}`, borderRadius: 26, boxShadow: '0 12px 0 #29374718', overflow: 'hidden'}}>
       <div style={{position: 'absolute', inset: 0, opacity: 0.3, backgroundImage: 'linear-gradient(#C8D3D9 1px, transparent 1px),linear-gradient(90deg,#C8D3D9 1px,transparent 1px)', backgroundSize: '52px 52px'}} />
       {target ? <>

@@ -37,7 +37,7 @@ const ElectricMachine = ({x, width, radius, color}: {x: number; width: number; r
   </g>)}
 </g>;
 
-export const ToyotaTHSCutaway = ({stamp}: {stamp?: string | null}) => <div
+export const ToyotaTHSCutaway = ({stamp, spacious = false}: {stamp?: string | null; spacious?: boolean}) => <div
   style={{position: 'absolute', left: 120, top: 160, width: 1580, height: 630,
     background: '#FBFCFD', border: `4px solid ${ink}`, borderRadius: 26,
     boxShadow: '0 12px 0 #29374718', overflow: 'hidden'}}>
@@ -67,8 +67,10 @@ export const ToyotaTHSCutaway = ({stamp}: {stamp?: string | null}) => <div
         <path d="M1 0 V9" stroke="#718493" strokeWidth={2} opacity={.5} />
       </pattern>
     </defs>
-    <text x={30} y={58} fontSize={36} fill={ink} fontWeight={900}>エンジン＋駆動ユニットの断面模式図</text>
-    <path d="M35 564 H1510" stroke="#E0E6EB" strokeWidth={2} />
+    <text x={spacious ? 54 : 30} y={58} fontSize={36} fill={ink} fontWeight={900}>エンジン＋駆動ユニットの断面模式図</text>
+    <path d={spacious ? 'M35 560 H1510' : 'M35 564 H1510'} stroke="#E0E6EB" strokeWidth={2} />
+    {/* 本体・影・引出し線を一緒に内側へ寄せる。既定は等倍のまま。 */}
+    <g transform={spacious ? 'translate(110 35) scale(.86)' : undefined}>
     <ellipse cx={790} cy={530} rx={660} ry={21} fill="#738695" opacity={.12} />
 
     {/* エンジンの鋳物と上蓋。写真に見られる4コイル列・締結部を反映。 */}
@@ -159,7 +161,8 @@ export const ToyotaTHSCutaway = ({stamp}: {stamp?: string | null}) => <div
     <Callout text="モーター" x={1135} y={107} width={190} points="1230,160 1230,223 1214,289" anchor={[1214,289]} color="#658F7D" />
     <Callout text="動力分割装置" x={650} y={535} width={255} points="776,535 776,505 788,436" anchor={[788,436]} color="#9A824C" />
     <Callout text="減速・出力" x={1114} y={535} width={220} points="1224,535 1224,514 1186,489" anchor={[1186,489]} />
-    <text x={28} y={612} fontSize={22} fill="#526574">1997年の公式資料を参考に構成を簡略化した断面模式図　｜　出典：トヨタ 1997年3月・10月資料</text>
+    </g>
+    <text x={28} y={spacious ? 600 : 612} fontSize={22} fill="#526574">1997年の公式資料を参考に構成を簡略化した断面模式図　｜　出典：トヨタ 1997年3月・10月資料</text>
   </svg>
   {stamp ? <div style={{position: 'absolute', top: 22, right: 24, fontSize: 34, fontWeight: 900,
     color: ink, background: '#FFF3CF', border: `3px solid ${ink}`, borderRadius: 12,
