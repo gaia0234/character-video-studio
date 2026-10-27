@@ -546,3 +546,12 @@ v3検査時点の結論（2026-10-18。後続の改善は「v4視覚改善の制
 - [PyAV](https://github.com/PyAV-Org/PyAV)：PythonからFFmpegのコンテナ・フレーム等へアクセスでき、Pillowとの連携に有用。既存FFmpegのコマンドで足りる場合は導入の利益が小さい。BSD-3-Clause、Python 3.12以上、配布バイナリ同梱FFmpeg等の条件と現環境対応は導入時確認。動画フレームをPythonで継続処理する具体的な必要が出た時に再検討。
 - 残作業・再検討：目的の発生、OS/版/規約/ライセンス変更時に再確認。導入、実素材の試用、素材の外部送信、全編出力、既存制作の停止解除は今回の承認に含まれない。既存の動画制作失敗累計・停止条件は維持する。
 - レビュー：writing_reviewerが本比較節・Hub索引と公式資料の要点を照合し合格、重大指摘なし。導入状態・実素材の品質や工数・依存物の全ライセンスは未確認。
+
+### Pillow画像処理環境（2026-10-27）
+
+- **状態：導入・動作確認・レビュー済み**。動画制作のPython画像処理補助としてPillow 13.0.0を案件専用環境へ設定。基準はRemotion・同梱FFmpeg・既存素材と既存Python環境。既存制作物・停止中作業・システムPythonを維持する。
+- **確認方法**：専用Pythonのimportと人工RGBA画像の切抜き・拡大・合成・PNG保存／読戻しを確認する。原画・動画・音声の処理や外部AI実行は行わない。今回の導入結果と未確認を追記する。
+- **設定と使用**：専用Pythonは `/home/ds-work/.local/share/character-video-image-python/bin/python`。`python3 -m venv --without-pip` と[PyPA get-pip](https://bootstrap.pypa.io/get-pip.py)でpip・Pillowを導入。システムPython 3.14.4にはPillowを追加していないため、画像処理スクリプトでは専用Pythonを明示する。他の依存を要求する既存スクリプトについては、この環境だけで動くと扱わない。
+- **検証結果**：Pillow 13.0.0 import、人工RGBA画像の切抜き・拡大・透過合成、メモリ上のPNG保存／読戻しが終了0。結果は16×16 RGBA、透明画素 `(0, 0, 0, 0)`・半透明画素 `(255, 0, 0, 128)` が期待値に一致。実素材の画質、既存スクリプト全体の動作、他のホストは未確認。
+- **使用例**：`/home/ds-work/.local/share/character-video-image-python/bin/python -c 'import PIL; print(PIL.__version__)'`。Pillowの[公式ドキュメント](https://pillow.readthedocs.io/en/stable/reference/Image.html)と[ライセンス](https://github.com/python-pillow/Pillow/blob/main/LICENSE)を参照。再配布時は同梱物の条件を確認する。
+- **レビュー**：別担当reviewerが専用venvとPillowの実物、記録・試験証拠を照合し合格、重大指摘なし。実素材の品質、既存スクリプト全体、他ホスト、既存素材の前後hashは未確認。
