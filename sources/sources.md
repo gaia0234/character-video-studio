@@ -534,3 +534,15 @@ v3検査時点の結論（2026-10-18。後続の改善は「v4視覚改善の制
 - 現行方針：画像は本人によるChatGPT/GPT生成、OpenCodeはプロンプト/生成後の取り込みを担当。Gemini画像APIは採用しない。声は最新決定事項でGemini TTS（制作保留）、VOICEVOX男声割当は旧保留記録。Gemini等の追加呼出しは無料/試験でもモデル・用途・素材・回数・上限を示した本人明示許可が必要、今回外部API実行なし。
 - 不整合（報告のみ）：構想冒頭にVOICEVOX確定の古い要約、動画ミラー冒頭に画像の生成経路未決が残るが、後段/最新決定事項はGemini音声保留/本人GPT画像を指定。GPT共通promptの「色は白黒グレーのみ」と個別の赤青緑、「文字なし」と「英語ラベル付き」が競合。正式画像生成前に必要最小限で整える対象。今回他担当正本/素材は編集しない。ホーマー名称調査など未確認は既存記録どおり、調査を追加しない。
 - 範囲/保全：兄弟repoをread-onlyで確認、既存dirtyを保全。動画側の本確認要点だけ追記。再生成/コピー/素材編集/依存追加/公開/共有/削除/pushなし。新規生成物/一時画像なし、task-only staging patchのみ。一連の確認は成功、動画関連43/次45・通信12/次15維持。兄弟repoのリモート同期は今回未実施で同期済みと扱わない。
+
+### 動画制作の補助ツール比較（2026-10-27）
+
+現在の結論：Remotion・同梱FFmpeg・既存編集画面を基礎として継続し、補助候補として音声調整のAudacityを第一候補、映像確認用のLosslessCut、既存動画のショット探索用PySceneDetect、Pythonでのフレーム処理用PyAVを条件付き候補として提案する。いずれも未採用・今回導入せず・未試用。既存導入状況とユーザーの回答は未確認。適用は用途確定と別途導入計画の承認後に判断する。
+
+- 目的・方法：character-video-studioのRemotion 4.0.533、同梱FFmpeg/ffprobe n7.1、字幕/音声の既存工程と過去の選定を読み、2026-10-27に各公式資料を確認。ライセンスは各本体の記載を確認したが、配布物や依存物の全条件は未精査。実際の導入状態・音声品質・精度・工数は未測定。元動画・台本・音声を変更せず、外部API・モデル実行もなし。
+- [Audacity](https://www.audacityteam.org/)：無料・オープンソースの音声編集。波形確認、[ラウドネス正規化](https://www.audacityteam.org/manual/effects/volume-and-compression/loudness-normalisation/)や[定常ノイズ除去](https://www.audacityteam.org/manual/effects/noise-removal-and-repair/noise-reduction/)に有用。既存FFmpegのloudnormと重複するため、聴きながら局所調整したい場合に推奨。既存素材・声の再生成は不要。GPLv3、過剰処理や作業ファイル管理に注意。Ubuntuの導入状況・実音声での効果は未確認。
+- [LosslessCut](https://github.com/mifi/lossless-cut)：映像・音声の区間抽出GUI。レビューしたい箇所の素早い抽出候補。既存FFmpegで可能な作業と重複し、無再エンコードではキーフレーム制約により指定位置と実際の切断位置がずれ得るため、出力確認が必要（[公式説明](https://github.com/mifi/lossless-cut/blob/master/docs/troubleshooting.md)）。Linux x64配布あり、GPL-2.0、実行・作品適合は未確認。優先度は手作業の区間抽出需要次第。
+- [PySceneDetect](https://www.scenedetect.com/)：既存動画の場面転換候補を検出して時刻として扱うPython/CLIツール。参考動画や既存素材で画面変化の探索量が多い場合の候補。閾値調整・誤検出の確認が必要で、見た目や音声の受入には使えない。BSD-3-Clause、Python 3.10以上とOpenCV依存、実際の精度・環境適合は未確認。シーンが既知のRemotion出力だけでは優先しない。
+- [PyAV](https://github.com/PyAV-Org/PyAV)：PythonからFFmpegのコンテナ・フレーム等へアクセスでき、Pillowとの連携に有用。既存FFmpegのコマンドで足りる場合は導入の利益が小さい。BSD-3-Clause、Python 3.12以上、配布バイナリ同梱FFmpeg等の条件と現環境対応は導入時確認。動画フレームをPythonで継続処理する具体的な必要が出た時に再検討。
+- 残作業・再検討：目的の発生、OS/版/規約/ライセンス変更時に再確認。導入、実素材の試用、素材の外部送信、全編出力、既存制作の停止解除は今回の承認に含まれない。既存の動画制作失敗累計・停止条件は維持する。
+- レビュー：writing_reviewerが本比較節・Hub索引と公式資料の要点を照合し合格、重大指摘なし。導入状態・実素材の品質や工数・依存物の全ライセンスは未確認。
