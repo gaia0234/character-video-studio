@@ -1,0 +1,50 @@
+{
+  "version": "toyota-v3-p2-08",
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part2-draft.md",
+  "scope": "v3-p2-08 only",
+  "evidence": ["G10"],
+  "scenes": [
+    {
+      "id": "v3-p2-08",
+      "part": 2,
+      "lines": [
+        {
+          "id": "v3-p2-08-l1",
+          "speaker": "ホーマー",
+          "text": "では、速度を上げたいときはどうでしょう。モーターだけに任せるんですか。",
+          "spokenText": "では、速度を上げたいときはどうでしょう。モーターだけに任せるんですか。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "accelerate"
+        },
+        {
+          "id": "v3-p2-08-l2",
+          "speaker": "ケント",
+          "text": "必要な力に応じて、エンジンとモーターが協力します。モーターがエンジンの働きを助ける場面もあります。",
+          "spokenText": "必要な力に応じて、エンジンとモーターが協力します。モーターがエンジンの働きを助ける場面もあります。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "accelerate"
+        },
+        {
+          "id": "v3-p2-08-l3",
+          "speaker": "ジャッド",
+          "text": "どちらかを完全に休ませるだけでなく、二つで受け持つこともあるんですね。",
+          "spokenText": "どちらかを完全に休ませるだけでなく、二つで受け持つこともあるんですね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "accelerate"
+        },
+        {
+          "id": "v3-p2-08-l4",
+          "speaker": "ケント",
+          "text": "そうです。二つの別々の車が入っているというより、そのとき必要な力をどう出すか、全体で調整しています。",
+          "spokenText": "そうです。二つの別々の車が入っているというより、そのとき必要な力をどう出すか、全体で調整しています。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "accelerate"
+        }
+      ]
+    }
+  ]
+}

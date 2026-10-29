@@ -1,0 +1,209 @@
+{
+  "id": "v3-p2-07",
+  "fps": 30,
+  "frames": 872,
+  "audio": {
+    "src": "audio/toyota-v3-p2-07/scene-v3-p2-07.wav",
+    "seconds": 28.144666666666666,
+    "sha256": "9e8dad92efe4410893ec6fb1d656bf6ce7f8e5683b2ef5e1a03761de0dbf5992",
+    "lineOffsets": [
+      {
+        "lineId": "v3-p2-07-l1",
+        "startSecond": 0.0
+      },
+      {
+        "lineId": "v3-p2-07-l2",
+        "startSecond": 9.154
+      },
+      {
+        "lineId": "v3-p2-07-l3",
+        "startSecond": 13.444
+      },
+      {
+        "lineId": "v3-p2-07-l4",
+        "startSecond": 18.225
+      }
+    ]
+  },
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part2-draft.md",
+  "sourceScriptSha256": "01af5d2f39b9211ba6723ca05202327ee21c00ae207e77b2ea39c141754b07f3",
+  "sourceInputSha256": "adc985dcea4cf551cc9e8ffae59ca695c999a50583c28230f1a2acb77c566825",
+  "voiceCredits": [
+    "VOICEVOX:雀松朱司",
+    "VOICEVOX:玄野武宏",
+    "VOICEVOX:青山龍星"
+  ],
+  "evidence": [
+    "G10"
+  ],
+  "lines": [
+    {
+      "id": "v3-p2-07-l1",
+      "speaker": "ケント",
+      "text": "では、発進です。条件が合えば、モーターで走り始められます。エンジンを回し続けなくてもよい場面が生まれるんですね。",
+      "spokenText": "では、発進です。条件が合えば、モーターで走り始められます。エンジンを回し続けなくてもよい場面が生まれるんですね。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "depart",
+      "seconds": 8.704,
+      "audio": {
+        "src": "audio/toyota-v3-p2-07/v3-p2-07-l1.wav",
+        "seconds": 8.704,
+        "generatedFor": "[\"ケント\",\"12\",52,\"では、発進です。条件が合えば、モーターで走り始められます。エンジンを回し続けなくてもよい場面が生まれるんですね。\",1.0]"
+      },
+      "start": 0.4,
+      "end": 9.104000000000001
+    },
+    {
+      "id": "v3-p2-07-l2",
+      "speaker": "ホーマー",
+      "text": "動き出すたびに、必ずエンジンが働くわけではない、と。",
+      "spokenText": "動き出すたびに、必ずエンジンが働くわけではない、と。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "depart",
+      "seconds": 3.84,
+      "audio": {
+        "src": "audio/toyota-v3-p2-07/v3-p2-07-l2.wav",
+        "seconds": 3.84,
+        "generatedFor": "[\"ホーマー\",\"10\",39,\"動き出すたびに、必ずエンジンが働くわけではない、と。\",1.0]"
+      },
+      "start": 9.554,
+      "end": 13.394
+    },
+    {
+      "id": "v3-p2-07-l3",
+      "speaker": "ジャッド",
+      "text": "それなら、いつでもモーターだけで走り出すと思ってよいですか。",
+      "spokenText": "それなら、いつでもモーターだけで走り出すと思ってよいですか。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "depart",
+      "seconds": 4.330666666666667,
+      "audio": {
+        "src": "audio/toyota-v3-p2-07/v3-p2-07-l3.wav",
+        "seconds": 4.330666666666667,
+        "generatedFor": "[\"ジャッド\",\"15\",82,\"それなら、いつでもモーターだけで走り出すと思ってよいですか。\",1.0]"
+      },
+      "start": 13.844,
+      "end": 18.174666666666667
+    },
+    {
+      "id": "v3-p2-07-l4",
+      "speaker": "ケント",
+      "text": "そこは車種や状況によります。電池の残量やエンジンの暖機などで動き方は変わります。図は、モーターが担当できる場面の例として見てください。",
+      "spokenText": "そこは車種や状況によります。電池の残量やエンジンの暖機などで動き方は変わります。図は、モーターが担当できる場面の例として見てください。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "depart",
+      "seconds": 9.92,
+      "audio": {
+        "src": "audio/toyota-v3-p2-07/v3-p2-07-l4.wav",
+        "seconds": 9.92,
+        "generatedFor": "[\"ケント\",\"12\",52,\"そこは車種や状況によります。電池の残量やエンジンの暖機などで動き方は変わります。図は、モーターが担当できる場面の例として見てください。\",1.0]"
+      },
+      "start": 18.624666666666663,
+      "end": 28.544666666666664
+    }
+  ],
+  "cues": [
+    {
+      "start": 0.4,
+      "end": 1.643,
+      "speaker": "ケント",
+      "text": "では、発進です。",
+      "lineId": "v3-p2-07-l1"
+    },
+    {
+      "start": 1.643,
+      "end": 2.731,
+      "speaker": "ケント",
+      "text": "条件が合えば、",
+      "lineId": "v3-p2-07-l1"
+    },
+    {
+      "start": 2.731,
+      "end": 4.907,
+      "speaker": "ケント",
+      "text": "モーターで走り始められます。",
+      "lineId": "v3-p2-07-l1"
+    },
+    {
+      "start": 4.907,
+      "end": 6.928,
+      "speaker": "ケント",
+      "text": "エンジンを回し続けなくても",
+      "lineId": "v3-p2-07-l1"
+    },
+    {
+      "start": 6.928,
+      "end": 9.104,
+      "speaker": "ケント",
+      "text": "よい場面が生まれるんですね。",
+      "lineId": "v3-p2-07-l1"
+    },
+    {
+      "start": 9.554,
+      "end": 10.736,
+      "speaker": "ホーマー",
+      "text": "動き出すたびに、",
+      "lineId": "v3-p2-07-l2"
+    },
+    {
+      "start": 10.736,
+      "end": 13.394,
+      "speaker": "ホーマー",
+      "text": "必ずエンジンが働くわけではない、と。",
+      "lineId": "v3-p2-07-l2"
+    },
+    {
+      "start": 13.844,
+      "end": 16.154,
+      "speaker": "ジャッド",
+      "text": "それなら、いつでもモーターだけで",
+      "lineId": "v3-p2-07-l3"
+    },
+    {
+      "start": 16.154,
+      "end": 18.175,
+      "speaker": "ジャッド",
+      "text": "走り出すと思ってよいですか。",
+      "lineId": "v3-p2-07-l3"
+    },
+    {
+      "start": 18.625,
+      "end": 20.698,
+      "speaker": "ケント",
+      "text": "そこは車種や状況によります。",
+      "lineId": "v3-p2-07-l4"
+    },
+    {
+      "start": 20.698,
+      "end": 22.326,
+      "speaker": "ケント",
+      "text": "電池の残量やエンジンの",
+      "lineId": "v3-p2-07-l4"
+    },
+    {
+      "start": 22.326,
+      "end": 24.547,
+      "speaker": "ケント",
+      "text": "暖機などで動き方は変わります。",
+      "lineId": "v3-p2-07-l4"
+    },
+    {
+      "start": 24.547,
+      "end": 26.916,
+      "speaker": "ケント",
+      "text": "図は、モーターが担当できる場面の",
+      "lineId": "v3-p2-07-l4"
+    },
+    {
+      "start": 26.916,
+      "end": 28.545,
+      "speaker": "ケント",
+      "text": "例として見てください。",
+      "lineId": "v3-p2-07-l4"
+    }
+  ]
+}

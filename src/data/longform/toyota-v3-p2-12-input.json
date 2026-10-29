@@ -1,0 +1,50 @@
+{
+  "version": "toyota-v3-p2-12",
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part2-draft.md",
+  "scope": "v3-p2-12 only",
+  "evidence": ["F3", "G10"],
+  "scenes": [
+    {
+      "id": "v3-p2-12",
+      "part": 2,
+      "lines": [
+        {
+          "id": "v3-p2-12-l1",
+          "speaker": "ケント",
+          "text": "THSの特徴の一つが動力分割装置です。エンジンの力を、車輪を動かす側と発電する側へ分ける仕組みです。",
+          "spokenText": "THSの特徴の一つが動力分割装置です。エンジンの力を、車輪を動かす側と発電する側へ分ける仕組みです。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "split"
+        },
+        {
+          "id": "v3-p2-12-l2",
+          "speaker": "ジャッド",
+          "text": "走るためと、電気を作るため。エンジンの力にも、二つの行き先があるんですね。",
+          "spokenText": "走るためと、電気を作るため。エンジンの力にも、二つの行き先があるんですね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "split"
+        },
+        {
+          "id": "v3-p2-12-l3",
+          "speaker": "ホーマー",
+          "text": "エンジンかモーターか、という二択ではなかった。力を出す、ためる、取り戻す。そのやりくりが車の中で続いているんですね。",
+          "spokenText": "エンジンかモーターか、という二択ではなかった。力を出す、ためる、取り戻す。そのやりくりが車の中で続いているんですね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "split"
+        },
+        {
+          "id": "v3-p2-12-l4",
+          "speaker": "ケント",
+          "text": "それが燃料の使い方を変える工夫です。では、この仕組みはプリウス一車種から、どう広がっていったのでしょう。",
+          "spokenText": "それが燃料の使い方を変える工夫です。では、この仕組みはプリウス一車種から、どう広がっていったのでしょう。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "split"
+        }
+      ]
+    }
+  ]
+}

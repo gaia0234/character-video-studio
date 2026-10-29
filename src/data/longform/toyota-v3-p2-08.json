@@ -1,0 +1,202 @@
+{
+  "id": "v3-p2-08",
+  "fps": 30,
+  "frames": 811,
+  "audio": {
+    "src": "audio/toyota-v3-p2-08/scene-v3-p2-08.wav",
+    "seconds": 26.107333333333333,
+    "sha256": "51bc8cef88de9752219d656b5845064810fb3d5b4a0d2dfabfc3c46dd260de63",
+    "lineOffsets": [
+      {
+        "lineId": "v3-p2-08-l1",
+        "startSecond": 0.0
+      },
+      {
+        "lineId": "v3-p2-08-l2",
+        "startSecond": 4.813
+      },
+      {
+        "lineId": "v3-p2-08-l3",
+        "startSecond": 12.463
+      },
+      {
+        "lineId": "v3-p2-08-l4",
+        "startSecond": 18.043
+      }
+    ]
+  },
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part2-draft.md",
+  "sourceScriptSha256": "01af5d2f39b9211ba6723ca05202327ee21c00ae207e77b2ea39c141754b07f3",
+  "sourceInputSha256": "bacd24d2449fcf2ecceeb98576cf4a272c8965b57250171749afae05678951a5",
+  "voiceCredits": [
+    "VOICEVOX:玄野武宏",
+    "VOICEVOX:雀松朱司",
+    "VOICEVOX:青山龍星"
+  ],
+  "evidence": [
+    "G10"
+  ],
+  "lines": [
+    {
+      "id": "v3-p2-08-l1",
+      "speaker": "ホーマー",
+      "text": "では、速度を上げたいときはどうでしょう。モーターだけに任せるんですか。",
+      "spokenText": "では、速度を上げたいときはどうでしょう。モーターだけに任せるんですか。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "accelerate",
+      "seconds": 4.362666666666667,
+      "audio": {
+        "src": "audio/toyota-v3-p2-08/v3-p2-08-l1.wav",
+        "seconds": 4.362666666666667,
+        "generatedFor": "[\"ホーマー\",\"10\",39,\"では、速度を上げたいときはどうでしょう。モーターだけに任せるんですか。\",1.0]"
+      },
+      "start": 0.4,
+      "end": 4.762666666666667
+    },
+    {
+      "id": "v3-p2-08-l2",
+      "speaker": "ケント",
+      "text": "必要な力に応じて、エンジンとモーターが協力します。モーターがエンジンの働きを助ける場面もあります。",
+      "spokenText": "必要な力に応じて、エンジンとモーターが協力します。モーターがエンジンの働きを助ける場面もあります。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "accelerate",
+      "seconds": 7.2,
+      "audio": {
+        "src": "audio/toyota-v3-p2-08/v3-p2-08-l2.wav",
+        "seconds": 7.2,
+        "generatedFor": "[\"ケント\",\"12\",52,\"必要な力に応じて、エンジンとモーターが協力します。モーターがエンジンの働きを助ける場面もあります。\",1.0]"
+      },
+      "start": 5.212666666666667,
+      "end": 12.412666666666667
+    },
+    {
+      "id": "v3-p2-08-l3",
+      "speaker": "ジャッド",
+      "text": "どちらかを完全に休ませるだけでなく、二つで受け持つこともあるんですね。",
+      "spokenText": "どちらかを完全に休ませるだけでなく、二つで受け持つこともあるんですね。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "accelerate",
+      "seconds": 5.1306666666666665,
+      "audio": {
+        "src": "audio/toyota-v3-p2-08/v3-p2-08-l3.wav",
+        "seconds": 5.1306666666666665,
+        "generatedFor": "[\"ジャッド\",\"15\",82,\"どちらかを完全に休ませるだけでなく、二つで受け持つこともあるんですね。\",1.0]"
+      },
+      "start": 12.862666666666668,
+      "end": 17.993333333333332
+    },
+    {
+      "id": "v3-p2-08-l4",
+      "speaker": "ケント",
+      "text": "そうです。二つの別々の車が入っているというより、そのとき必要な力をどう出すか、全体で調整しています。",
+      "spokenText": "そうです。二つの別々の車が入っているというより、そのとき必要な力をどう出すか、全体で調整しています。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "accelerate",
+      "seconds": 8.064,
+      "audio": {
+        "src": "audio/toyota-v3-p2-08/v3-p2-08-l4.wav",
+        "seconds": 8.064,
+        "generatedFor": "[\"ケント\",\"12\",52,\"そうです。二つの別々の車が入っているというより、そのとき必要な力をどう出すか、全体で調整しています。\",1.0]"
+      },
+      "start": 18.44333333333333,
+      "end": 26.50733333333333
+    }
+  ],
+  "cues": [
+    {
+      "start": 0.4,
+      "end": 0.774,
+      "speaker": "ホーマー",
+      "text": "では、",
+      "lineId": "v3-p2-08-l1"
+    },
+    {
+      "start": 0.774,
+      "end": 2.893,
+      "speaker": "ホーマー",
+      "text": "速度を上げたいときはどうでしょう。",
+      "lineId": "v3-p2-08-l1"
+    },
+    {
+      "start": 2.893,
+      "end": 4.763,
+      "speaker": "ホーマー",
+      "text": "モーターだけに任せるんですか。",
+      "lineId": "v3-p2-08-l1"
+    },
+    {
+      "start": 5.213,
+      "end": 6.535,
+      "speaker": "ケント",
+      "text": "必要な力に応じて、",
+      "lineId": "v3-p2-08-l2"
+    },
+    {
+      "start": 6.535,
+      "end": 8.886,
+      "speaker": "ケント",
+      "text": "エンジンとモーターが協力します。",
+      "lineId": "v3-p2-08-l2"
+    },
+    {
+      "start": 8.886,
+      "end": 10.796,
+      "speaker": "ケント",
+      "text": "モーターがエンジンの働きを",
+      "lineId": "v3-p2-08-l2"
+    },
+    {
+      "start": 10.796,
+      "end": 12.413,
+      "speaker": "ケント",
+      "text": "助ける場面もあります。",
+      "lineId": "v3-p2-08-l2"
+    },
+    {
+      "start": 12.863,
+      "end": 15.501,
+      "speaker": "ジャッド",
+      "text": "どちらかを完全に休ませるだけでなく、",
+      "lineId": "v3-p2-08-l3"
+    },
+    {
+      "start": 15.501,
+      "end": 17.993,
+      "speaker": "ジャッド",
+      "text": "二つで受け持つこともあるんですね。",
+      "lineId": "v3-p2-08-l3"
+    },
+    {
+      "start": 18.443,
+      "end": 19.25,
+      "speaker": "ケント",
+      "text": "そうです。",
+      "lineId": "v3-p2-08-l4"
+    },
+    {
+      "start": 19.25,
+      "end": 22.314,
+      "speaker": "ケント",
+      "text": "二つの別々の車が入っているというより、",
+      "lineId": "v3-p2-08-l4"
+    },
+    {
+      "start": 22.314,
+      "end": 24.733,
+      "speaker": "ケント",
+      "text": "そのとき必要な力をどう出すか、",
+      "lineId": "v3-p2-08-l4"
+    },
+    {
+      "start": 24.733,
+      "end": 26.507,
+      "speaker": "ケント",
+      "text": "全体で調整しています。",
+      "lineId": "v3-p2-08-l4"
+    }
+  ]
+}

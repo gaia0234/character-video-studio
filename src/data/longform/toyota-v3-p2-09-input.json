@@ -1,0 +1,50 @@
+{
+  "version": "toyota-v3-p2-09",
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part2-draft.md",
+  "scope": "v3-p2-09 only",
+  "evidence": ["G10"],
+  "scenes": [
+    {
+      "id": "v3-p2-09",
+      "part": 2,
+      "lines": [
+        {
+          "id": "v3-p2-09-l1",
+          "speaker": "ケント",
+          "text": "次は減速です。走っている車には、動いている分のエネルギーがあります。普通のブレーキでは、その一部が摩擦の熱になります。",
+          "spokenText": "次は減速です。走っている車には、動いている分のエネルギーがあります。普通のブレーキでは、その一部が摩擦の熱になります。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "decelerate"
+        },
+        {
+          "id": "v3-p2-09-l2",
+          "speaker": "ジャッド",
+          "text": "止まるために使うわけですから、その熱はもう走るほうには戻らないんですね。",
+          "spokenText": "止まるために使うわけですから、その熱はもう走るほうには戻らないんですね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "decelerate"
+        },
+        {
+          "id": "v3-p2-09-l3",
+          "speaker": "ケント",
+          "text": "そこで回生です。モーターを発電にも使い、減速するときのエネルギーの一部を電気へ変えて、電池に戻します。",
+          "spokenText": "そこで回生です。モーターを発電にも使い、減速するときのエネルギーの一部を電気へ変えて、電池に戻します。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "decelerate"
+        },
+        {
+          "id": "v3-p2-09-l4",
+          "speaker": "ホーマー",
+          "text": "ためた電気を使うだけでなく、減速するたびに一部を持ち帰れる。その分を次に走るときに使えるわけですね。",
+          "spokenText": "ためた電気を使うだけでなく、減速するたびに一部を持ち帰れる。その分を次に走るときに使えるわけですね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "decelerate"
+        }
+      ]
+    }
+  ]
+}

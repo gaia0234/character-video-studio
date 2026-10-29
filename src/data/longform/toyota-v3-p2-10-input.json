@@ -1,0 +1,50 @@
+{
+  "version": "toyota-v3-p2-10",
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part2-draft.md",
+  "scope": "v3-p2-10 only",
+  "evidence": ["G10"],
+  "scenes": [
+    {
+      "id": "v3-p2-10",
+      "part": 2,
+      "lines": [
+        {
+          "id": "v3-p2-10-l1",
+          "speaker": "ジャッド",
+          "text": "ブレーキで電気が戻るなら、走り続けるうちに電池がどんどん満タンになりませんか。",
+          "spokenText": "ブレーキで電気が戻るなら、走り続けるうちに電池がどんどん満タンになりませんか。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "decelerate"
+        },
+        {
+          "id": "v3-p2-10-l2",
+          "speaker": "ケント",
+          "text": "回収できるのは一部です。使ったエネルギーが全部戻るわけではありません。ガソリンを使わず、永久に走れる仕組みではないんです。",
+          "spokenText": "回収できるのは一部です。使ったエネルギーが全部戻るわけではありません。ガソリンを使わず、永久に走れる仕組みではないんです。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "decelerate"
+        },
+        {
+          "id": "v3-p2-10-l3",
+          "speaker": "ホーマー",
+          "text": "落とした物を全部拾い直すというより、捨てるはずだった分を少しでも減らす、と考えると近そうですね。",
+          "spokenText": "落とした物を全部拾い直すというより、捨てるはずだった分を少しでも減らす、と考えると近そうですね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "decelerate"
+        },
+        {
+          "id": "v3-p2-10-l4",
+          "speaker": "ケント",
+          "text": "ええ。回生は電気自動車にも使われます。ハイブリッドだけにしかない技術、と覚えないことも大切です。",
+          "spokenText": "ええ。回生は電気自動車にも使われます。ハイブリッドだけにしかない技術、と覚えないことも大切です。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "decelerate"
+        }
+      ]
+    }
+  ]
+}

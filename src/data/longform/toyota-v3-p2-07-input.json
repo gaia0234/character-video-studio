@@ -1,0 +1,52 @@
+{
+  "version": "toyota-v3-p2-07",
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part2-draft.md",
+  "scope": "v3-p2-07 only",
+  "evidence": [
+    "G10"
+  ],
+  "scenes": [
+    {
+      "id": "v3-p2-07",
+      "part": 2,
+      "lines": [
+        {
+          "id": "v3-p2-07-l1",
+          "speaker": "ケント",
+          "text": "では、発進です。条件が合えば、モーターで走り始められます。エンジンを回し続けなくてもよい場面が生まれるんですね。",
+          "spokenText": "では、発進です。条件が合えば、モーターで走り始められます。エンジンを回し続けなくてもよい場面が生まれるんですね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "depart"
+        },
+        {
+          "id": "v3-p2-07-l2",
+          "speaker": "ホーマー",
+          "text": "動き出すたびに、必ずエンジンが働くわけではない、と。",
+          "spokenText": "動き出すたびに、必ずエンジンが働くわけではない、と。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "depart"
+        },
+        {
+          "id": "v3-p2-07-l3",
+          "speaker": "ジャッド",
+          "text": "それなら、いつでもモーターだけで走り出すと思ってよいですか。",
+          "spokenText": "それなら、いつでもモーターだけで走り出すと思ってよいですか。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "depart"
+        },
+        {
+          "id": "v3-p2-07-l4",
+          "speaker": "ケント",
+          "text": "そこは車種や状況によります。電池の残量やエンジンの暖機などで動き方は変わります。図は、モーターが担当できる場面の例として見てください。",
+          "spokenText": "そこは車種や状況によります。電池の残量やエンジンの暖機などで動き方は変わります。図は、モーターが担当できる場面の例として見てください。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "depart"
+        }
+      ]
+    }
+  ]
+}

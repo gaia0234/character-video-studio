@@ -1,0 +1,50 @@
+{
+  "version": "toyota-v3-p2-11",
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part2-draft.md",
+  "scope": "v3-p2-11 only",
+  "evidence": ["G10", "G8", "G1"],
+  "scenes": [
+    {
+      "id": "v3-p2-11",
+      "part": 2,
+      "lines": [
+        {
+          "id": "v3-p2-11-l1",
+          "speaker": "ケント",
+          "text": "信号などで止まっているときは、条件に応じてエンジンを止められます。必要なときに動かすことで、燃料消費を抑える考え方です。",
+          "spokenText": "信号などで止まっているときは、条件に応じてエンジンを止められます。必要なときに動かすことで、燃料消費を抑える考え方です。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "stop"
+        },
+        {
+          "id": "v3-p2-11-l2",
+          "speaker": "ジャッド",
+          "text": "使わない時間は休む。減速の分は回収する。細かな場面を積み重ねているんですね。",
+          "spokenText": "使わない時間は休む。減速の分は回収する。細かな場面を積み重ねているんですね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "stop"
+        },
+        {
+          "id": "v3-p2-11-l3",
+          "speaker": "ホーマー",
+          "text": "でも、電池を使うのに充電ケーブルをつながない車もありますよね。電気はどこから来るんでしょう。",
+          "spokenText": "でも、電池を使うのに充電ケーブルをつながない車もありますよね。電気はどこから来るんでしょう。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "stop"
+        },
+        {
+          "id": "v3-p2-11-l4",
+          "speaker": "ケント",
+          "text": "ここまで見ているHEVは、エンジンによる発電と回生で電気をためます。外から充電するPHEVとの違いは、最後にもう一度整理しましょう。",
+          "spokenText": "ここまで見ているHEVは、エンジンによる発電と回生で電気をためます。外から充電するPHEVとの違いは、最後にもう一度整理しましょう。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "stop"
+        }
+      ]
+    }
+  ]
+}

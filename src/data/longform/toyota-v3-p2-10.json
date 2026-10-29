@@ -1,0 +1,216 @@
+{
+  "id": "v3-p2-10",
+  "fps": 30,
+  "frames": 921,
+  "audio": {
+    "src": "audio/toyota-v3-p2-10/scene-v3-p2-10.wav",
+    "seconds": 29.766,
+    "sha256": "9e386e0ebce2eff85df7311ff761a2fe03a42d792116878dd780598e5ef4a647",
+    "lineOffsets": [
+      {
+        "lineId": "v3-p2-10-l1",
+        "startSecond": 0.0
+      },
+      {
+        "lineId": "v3-p2-10-l2",
+        "startSecond": 6.05
+      },
+      {
+        "lineId": "v3-p2-10-l3",
+        "startSecond": 15.439
+      },
+      {
+        "lineId": "v3-p2-10-l4",
+        "startSecond": 22.15
+      }
+    ]
+  },
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part2-draft.md",
+  "sourceScriptSha256": "01af5d2f39b9211ba6723ca05202327ee21c00ae207e77b2ea39c141754b07f3",
+  "sourceInputSha256": "66b5cedf89cb82328a54898c54b864faf3f382432c22cef5d58c5ca640fcced8",
+  "voiceCredits": [
+    "VOICEVOX:青山龍星",
+    "VOICEVOX:雀松朱司",
+    "VOICEVOX:玄野武宏"
+  ],
+  "evidence": [
+    "G10"
+  ],
+  "lines": [
+    {
+      "id": "v3-p2-10-l1",
+      "speaker": "ジャッド",
+      "text": "ブレーキで電気が戻るなら、走り続けるうちに電池がどんどん満タンになりませんか。",
+      "spokenText": "ブレーキで電気が戻るなら、走り続けるうちに電池がどんどん満タンになりませんか。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "decelerate",
+      "seconds": 5.6,
+      "audio": {
+        "src": "audio/toyota-v3-p2-10/v3-p2-10-l1.wav",
+        "seconds": 5.6,
+        "generatedFor": "[\"ジャッド\",\"15\",82,\"ブレーキで電気が戻るなら、走り続けるうちに電池がどんどん満タンになりませんか。\",1.0]"
+      },
+      "start": 0.4,
+      "end": 6.0
+    },
+    {
+      "id": "v3-p2-10-l2",
+      "speaker": "ケント",
+      "text": "回収できるのは一部です。使ったエネルギーが全部戻るわけではありません。ガソリンを使わず、永久に走れる仕組みではないんです。",
+      "spokenText": "回収できるのは一部です。使ったエネルギーが全部戻るわけではありません。ガソリンを使わず、永久に走れる仕組みではないんです。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "decelerate",
+      "seconds": 8.938666666666666,
+      "audio": {
+        "src": "audio/toyota-v3-p2-10/v3-p2-10-l2.wav",
+        "seconds": 8.938666666666666,
+        "generatedFor": "[\"ケント\",\"12\",52,\"回収できるのは一部です。使ったエネルギーが全部戻るわけではありません。ガソリンを使わず、永久に走れる仕組みではないんです。\",1.0]"
+      },
+      "start": 6.45,
+      "end": 15.388666666666666
+    },
+    {
+      "id": "v3-p2-10-l3",
+      "speaker": "ホーマー",
+      "text": "落とした物を全部拾い直すというより、捨てるはずだった分を少しでも減らす、と考えると近そうですね。",
+      "spokenText": "落とした物を全部拾い直すというより、捨てるはずだった分を少しでも減らす、と考えると近そうですね。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "decelerate",
+      "seconds": 6.261333333333333,
+      "audio": {
+        "src": "audio/toyota-v3-p2-10/v3-p2-10-l3.wav",
+        "seconds": 6.261333333333333,
+        "generatedFor": "[\"ホーマー\",\"10\",39,\"落とした物を全部拾い直すというより、捨てるはずだった分を少しでも減らす、と考えると近そうですね。\",1.0]"
+      },
+      "start": 15.838666666666667,
+      "end": 22.1
+    },
+    {
+      "id": "v3-p2-10-l4",
+      "speaker": "ケント",
+      "text": "ええ。回生は電気自動車にも使われます。ハイブリッドだけにしかない技術、と覚えないことも大切です。",
+      "spokenText": "ええ。回生は電気自動車にも使われます。ハイブリッドだけにしかない技術、と覚えないことも大切です。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "decelerate",
+      "seconds": 7.616,
+      "audio": {
+        "src": "audio/toyota-v3-p2-10/v3-p2-10-l4.wav",
+        "seconds": 7.616,
+        "generatedFor": "[\"ケント\",\"12\",52,\"ええ。回生は電気自動車にも使われます。ハイブリッドだけにしかない技術、と覚えないことも大切です。\",1.0]"
+      },
+      "start": 22.549999999999997,
+      "end": 30.165999999999997
+    }
+  ],
+  "cues": [
+    {
+      "start": 0.4,
+      "end": 2.267,
+      "speaker": "ジャッド",
+      "text": "ブレーキで電気が戻るなら、",
+      "lineId": "v3-p2-10-l1"
+    },
+    {
+      "start": 2.267,
+      "end": 3.846,
+      "speaker": "ジャッド",
+      "text": "走り続けるうちに電池が",
+      "lineId": "v3-p2-10-l1"
+    },
+    {
+      "start": 3.846,
+      "end": 6.0,
+      "speaker": "ジャッド",
+      "text": "どんどん満タンになりませんか。",
+      "lineId": "v3-p2-10-l1"
+    },
+    {
+      "start": 6.45,
+      "end": 8.208,
+      "speaker": "ケント",
+      "text": "回収できるのは一部です。",
+      "lineId": "v3-p2-10-l2"
+    },
+    {
+      "start": 8.208,
+      "end": 9.527,
+      "speaker": "ケント",
+      "text": "使ったエネルギーが",
+      "lineId": "v3-p2-10-l2"
+    },
+    {
+      "start": 9.527,
+      "end": 11.579,
+      "speaker": "ケント",
+      "text": "全部戻るわけではありません。",
+      "lineId": "v3-p2-10-l2"
+    },
+    {
+      "start": 11.579,
+      "end": 12.898,
+      "speaker": "ケント",
+      "text": "ガソリンを使わず、",
+      "lineId": "v3-p2-10-l2"
+    },
+    {
+      "start": 12.898,
+      "end": 15.389,
+      "speaker": "ケント",
+      "text": "永久に走れる仕組みではないんです。",
+      "lineId": "v3-p2-10-l2"
+    },
+    {
+      "start": 15.839,
+      "end": 18.187,
+      "speaker": "ホーマー",
+      "text": "落とした物を全部拾い直すというより、",
+      "lineId": "v3-p2-10-l3"
+    },
+    {
+      "start": 18.187,
+      "end": 20.535,
+      "speaker": "ホーマー",
+      "text": "捨てるはずだった分を少しでも減らす、",
+      "lineId": "v3-p2-10-l3"
+    },
+    {
+      "start": 20.535,
+      "end": 22.1,
+      "speaker": "ホーマー",
+      "text": "と考えると近そうですね。",
+      "lineId": "v3-p2-10-l3"
+    },
+    {
+      "start": 22.55,
+      "end": 23.026,
+      "speaker": "ケント",
+      "text": "ええ。",
+      "lineId": "v3-p2-10-l4"
+    },
+    {
+      "start": 23.026,
+      "end": 25.565,
+      "speaker": "ケント",
+      "text": "回生は電気自動車にも使われます。",
+      "lineId": "v3-p2-10-l4"
+    },
+    {
+      "start": 25.565,
+      "end": 28.103,
+      "speaker": "ケント",
+      "text": "ハイブリッドだけにしかない技術、",
+      "lineId": "v3-p2-10-l4"
+    },
+    {
+      "start": 28.103,
+      "end": 30.166,
+      "speaker": "ケント",
+      "text": "と覚えないことも大切です。",
+      "lineId": "v3-p2-10-l4"
+    }
+  ]
+}

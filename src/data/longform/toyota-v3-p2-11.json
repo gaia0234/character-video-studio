@@ -1,0 +1,218 @@
+{
+  "id": "v3-p2-11",
+  "fps": 30,
+  "frames": 1049,
+  "audio": {
+    "src": "audio/toyota-v3-p2-11/scene-v3-p2-11.wav",
+    "seconds": 34.04333333333334,
+    "sha256": "56c3cb94e3ce005e8f66bce6ed67407725bf52c965ae105f8604c3fa7dde731e",
+    "lineOffsets": [
+      {
+        "lineId": "v3-p2-11-l1",
+        "startSecond": 0.0
+      },
+      {
+        "lineId": "v3-p2-11-l2",
+        "startSecond": 9.495
+      },
+      {
+        "lineId": "v3-p2-11-l3",
+        "startSecond": 17.06
+      },
+      {
+        "lineId": "v3-p2-11-l4",
+        "startSecond": 23.686
+      }
+    ]
+  },
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part2-draft.md",
+  "sourceScriptSha256": "01af5d2f39b9211ba6723ca05202327ee21c00ae207e77b2ea39c141754b07f3",
+  "sourceInputSha256": "2b0a0a89505ba36ad21c91ceb101f23ecc2d9f6ff3766f7bf90b27ad9ae89d48",
+  "voiceCredits": [
+    "VOICEVOX:雀松朱司",
+    "VOICEVOX:青山龍星",
+    "VOICEVOX:玄野武宏"
+  ],
+  "evidence": [
+    "G10",
+    "G8",
+    "G1"
+  ],
+  "lines": [
+    {
+      "id": "v3-p2-11-l1",
+      "speaker": "ケント",
+      "text": "信号などで止まっているときは、条件に応じてエンジンを止められます。必要なときに動かすことで、燃料消費を抑える考え方です。",
+      "spokenText": "信号などで止まっているときは、条件に応じてエンジンを止められます。必要なときに動かすことで、燃料消費を抑える考え方です。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "stop",
+      "seconds": 9.045333333333334,
+      "audio": {
+        "src": "audio/toyota-v3-p2-11/v3-p2-11-l1.wav",
+        "seconds": 9.045333333333334,
+        "generatedFor": "[\"ケント\",\"12\",52,\"信号などで止まっているときは、条件に応じてエンジンを止められます。必要なときに動かすことで、燃料消費を抑える考え方です。\",1.0]"
+      },
+      "start": 0.4,
+      "end": 9.445333333333334
+    },
+    {
+      "id": "v3-p2-11-l2",
+      "speaker": "ジャッド",
+      "text": "使わない時間は休む。減速の分は回収する。細かな場面を積み重ねているんですね。",
+      "spokenText": "使わない時間は休む。減速の分は回収する。細かな場面を積み重ねているんですね。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "stop",
+      "seconds": 7.1146666666666665,
+      "audio": {
+        "src": "audio/toyota-v3-p2-11/v3-p2-11-l2.wav",
+        "seconds": 7.1146666666666665,
+        "generatedFor": "[\"ジャッド\",\"15\",82,\"使わない時間は休む。減速の分は回収する。細かな場面を積み重ねているんですね。\",1.0]"
+      },
+      "start": 9.895333333333333,
+      "end": 17.009999999999998
+    },
+    {
+      "id": "v3-p2-11-l3",
+      "speaker": "ホーマー",
+      "text": "でも、電池を使うのに充電ケーブルをつながない車もありますよね。電気はどこから来るんでしょう。",
+      "spokenText": "でも、電池を使うのに充電ケーブルをつながない車もありますよね。電気はどこから来るんでしょう。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "stop",
+      "seconds": 6.176,
+      "audio": {
+        "src": "audio/toyota-v3-p2-11/v3-p2-11-l3.wav",
+        "seconds": 6.176,
+        "generatedFor": "[\"ホーマー\",\"10\",39,\"でも、電池を使うのに充電ケーブルをつながない車もありますよね。電気はどこから来るんでしょう。\",1.0]"
+      },
+      "start": 17.459999999999997,
+      "end": 23.635999999999996
+    },
+    {
+      "id": "v3-p2-11-l4",
+      "speaker": "ケント",
+      "text": "ここまで見ているHEVは、エンジンによる発電と回生で電気をためます。外から充電するPHEVとの違いは、最後にもう一度整理しましょう。",
+      "spokenText": "ここまで見ているHEVは、エンジンによる発電と回生で電気をためます。外から充電するPHEVとの違いは、最後にもう一度整理しましょう。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "stop",
+      "seconds": 10.357333333333333,
+      "audio": {
+        "src": "audio/toyota-v3-p2-11/v3-p2-11-l4.wav",
+        "seconds": 10.357333333333333,
+        "generatedFor": "[\"ケント\",\"12\",52,\"ここまで見ているHEVは、エンジンによる発電と回生で電気をためます。外から充電するPHEVとの違いは、最後にもう一度整理しましょう。\",1.0]"
+      },
+      "start": 24.086,
+      "end": 34.44333333333333
+    }
+  ],
+  "cues": [
+    {
+      "start": 0.4,
+      "end": 2.661,
+      "speaker": "ケント",
+      "text": "信号などで止まっているときは、",
+      "lineId": "v3-p2-11-l1"
+    },
+    {
+      "start": 2.661,
+      "end": 5.375,
+      "speaker": "ケント",
+      "text": "条件に応じてエンジンを止められます。",
+      "lineId": "v3-p2-11-l1"
+    },
+    {
+      "start": 5.375,
+      "end": 7.335,
+      "speaker": "ケント",
+      "text": "必要なときに動かすことで、",
+      "lineId": "v3-p2-11-l1"
+    },
+    {
+      "start": 7.335,
+      "end": 9.445,
+      "speaker": "ケント",
+      "text": "燃料消費を抑える考え方です。",
+      "lineId": "v3-p2-11-l1"
+    },
+    {
+      "start": 9.895,
+      "end": 11.768,
+      "speaker": "ジャッド",
+      "text": "使わない時間は休む。",
+      "lineId": "v3-p2-11-l2"
+    },
+    {
+      "start": 11.768,
+      "end": 13.64,
+      "speaker": "ジャッド",
+      "text": "減速の分は回収する。",
+      "lineId": "v3-p2-11-l2"
+    },
+    {
+      "start": 13.64,
+      "end": 17.01,
+      "speaker": "ジャッド",
+      "text": "細かな場面を積み重ねているんですね。",
+      "lineId": "v3-p2-11-l2"
+    },
+    {
+      "start": 17.46,
+      "end": 19.742,
+      "speaker": "ホーマー",
+      "text": "でも、電池を使うのに充電ケーブルを",
+      "lineId": "v3-p2-11-l3"
+    },
+    {
+      "start": 19.742,
+      "end": 21.622,
+      "speaker": "ホーマー",
+      "text": "つながない車もありますよね。",
+      "lineId": "v3-p2-11-l3"
+    },
+    {
+      "start": 21.622,
+      "end": 23.636,
+      "speaker": "ホーマー",
+      "text": "電気はどこから来るんでしょう。",
+      "lineId": "v3-p2-11-l3"
+    },
+    {
+      "start": 24.086,
+      "end": 26.126,
+      "speaker": "ケント",
+      "text": "ここまで見ているHEVは、",
+      "lineId": "v3-p2-11-l4"
+    },
+    {
+      "start": 26.126,
+      "end": 27.695,
+      "speaker": "ケント",
+      "text": "エンジンによる発電と",
+      "lineId": "v3-p2-11-l4"
+    },
+    {
+      "start": 27.695,
+      "end": 29.422,
+      "speaker": "ケント",
+      "text": "回生で電気をためます。",
+      "lineId": "v3-p2-11-l4"
+    },
+    {
+      "start": 29.422,
+      "end": 32.089,
+      "speaker": "ケント",
+      "text": "外から充電するPHEVとの違いは、",
+      "lineId": "v3-p2-11-l4"
+    },
+    {
+      "start": 32.089,
+      "end": 34.443,
+      "speaker": "ケント",
+      "text": "最後にもう一度整理しましょう。",
+      "lineId": "v3-p2-11-l4"
+    }
+  ]
+}
