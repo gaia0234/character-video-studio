@@ -1,0 +1,50 @@
+{
+  "version": "toyota-v3-p3-19",
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part3-draft.md",
+  "scope": "v3-p3-19 only",
+  "evidence": ["F9", "F11"],
+  "scenes": [
+    {
+      "id": "v3-p3-19",
+      "part": 3,
+      "lines": [
+        {
+          "id": "v3-p3-19-l1",
+          "speaker": "ジャッド",
+          "text": "車種も工場も広がった。では、トヨタだけがその技術を使い続ける、という考えだったんでしょうか。",
+          "spokenText": "車種も工場も広がった。では、トヨタだけがその技術を使い続ける、という考えだったんでしょうか。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p3-19-l2",
+          "speaker": "ホーマー",
+          "text": "開発に手間をかけた技術ですから、普通は自分の会社で大事に持っておきたい気もしますね。",
+          "spokenText": "開発に手間をかけた技術ですから、普通は自分の会社で大事に持っておきたい気もしますね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p3-19-l3",
+          "speaker": "ケント",
+          "text": "そこで次に見るのが、特許を無償で使えるようにする発表です。ただ、「全部を誰にでも無料で渡した」とまとめると、正確ではありません。",
+          "spokenText": "そこで次に見るのが、特許を無償で使えるようにする発表です。ただ、「全部を誰にでも無料で渡した」とまとめると、正確ではありません。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p3-19-l4",
+          "speaker": "ジャッド",
+          "text": "無料という言葉だけでは判断できないんですね。何が対象で、どんな条件があるのか、そこを教えてください。",
+          "spokenText": "無料という言葉だけでは判断できないんですね。何が対象で、どんな条件があるのか、そこを教えてください。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        }
+      ]
+    }
+  ]
+}

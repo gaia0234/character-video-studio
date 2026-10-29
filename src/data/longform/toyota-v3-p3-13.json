@@ -1,0 +1,210 @@
+{
+  "id": "v3-p3-13",
+  "fps": 30,
+  "frames": 994,
+  "audio": {
+    "src": "audio/toyota-v3-p3-13/scene-v3-p3-13.wav",
+    "seconds": 32.208666666666666,
+    "sha256": "40697278cf2c0c1e292cdc22b6a502793a2f8653bd5516dd855c5090101cb636",
+    "lineOffsets": [
+      {
+        "lineId": "v3-p3-13-l1",
+        "startSecond": 0.0
+      },
+      {
+        "lineId": "v3-p3-13-l2",
+        "startSecond": 7.554
+      },
+      {
+        "lineId": "v3-p3-13-l3",
+        "startSecond": 14.671
+      },
+      {
+        "lineId": "v3-p3-13-l4",
+        "startSecond": 23.675
+      }
+    ]
+  },
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part3-draft.md",
+  "sourceScriptSha256": "e157a99b3c3e37cbd09cff040b0a71a446b3c4bf0df14e5aa88a321d03fb1cc2",
+  "sourceInputSha256": "e16405174d35462d04a5bdf324f3db37b7fa8abc3da97c57d59e5074f6be3faa",
+  "voiceCredits": [
+    "VOICEVOX:青山龍星",
+    "VOICEVOX:玄野武宏",
+    "VOICEVOX:雀松朱司",
+    "VOICEVOX Nemo"
+  ],
+  "evidence": [
+    "F9"
+  ],
+  "lines": [
+    {
+      "id": "v3-p3-13-l1",
+      "speaker": "ジャッド",
+      "text": "仕組みは分かりました。でも、技術がよいことと、いろいろな人が使えることは別ですよね。",
+      "spokenText": "仕組みは分かりました。でも、技術がよいことと、いろいろな人が使えることは別ですよね。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "topic",
+      "seconds": 7.104,
+      "audio": {
+        "src": "audio/toyota-v3-p3-13/v3-p3-13-l1.wav",
+        "seconds": 7.104,
+        "generatedFor": "[\"ジャッド\",\"15\",82,\"仕組みは分かりました。でも、技術がよいことと、いろいろな人が使えることは別ですよね。\",1.0]"
+      },
+      "start": 0.4,
+      "end": 7.5040000000000004
+    },
+    {
+      "id": "v3-p3-13-l2",
+      "speaker": "ホーマー",
+      "text": "必要な大きさや使い道は、人によって違いますからね。選べる車が増えないと、広がりにくそうです。",
+      "spokenText": "必要な大きさや使い道は、人によって違いますからね。選べる車が増えないと、広がりにくそうです。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "topic",
+      "seconds": 6.666666666666667,
+      "audio": {
+        "src": "audio/toyota-v3-p3-13/v3-p3-13-l2.wav",
+        "seconds": 6.666666666666667,
+        "generatedFor": "[\"ホーマー\",\"10\",39,\"必要な大きさや使い道は、人によって違いますからね。選べる車が増えないと、広がりにくそうです。\",1.0]"
+      },
+      "start": 7.954000000000001,
+      "end": 14.620666666666668
+    },
+    {
+      "id": "v3-p3-13-l3",
+      "speaker": "ケント",
+      "text": "そこで、この章は三つに分けて見ます。仕組み自体の改良、載せる車種の広がり、そして生産や販売の広がりです。",
+      "spokenText": "そこで、この章は三つに分けて見ます。仕組み自体の改良、載せる車種の広がり、そして生産や販売の広がりです。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "topic",
+      "seconds": 8.554666666666666,
+      "audio": {
+        "src": "audio/toyota-v3-p3-13/v3-p3-13-l3.wav",
+        "seconds": 8.554666666666666,
+        "generatedFor": "[\"ケント\",\"12\",52,\"そこで、この章は三つに分けて見ます。仕組み自体の改良、載せる車種の広がり、そして生産や販売の広がりです。\",1.0]"
+      },
+      "start": 15.070666666666668,
+      "end": 23.625333333333334
+    },
+    {
+      "id": "v3-p3-13-l4",
+      "speaker": "ナレ2",
+      "text": "初代プリウスは改良を経て、2000年に北米と欧州でも発売されました。日本で生まれた車が、海外へ向かいます。",
+      "spokenText": "初代プリウスは改良を経て、2000年に北米と欧州でも発売されました。日本で生まれた車が、海外へ向かいます。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "topic",
+      "seconds": 8.533333333333333,
+      "audio": {
+        "src": "audio/toyota-v3-p3-13/v3-p3-13-l4.wav",
+        "seconds": 8.533333333333333,
+        "generatedFor": "[\"ナレ2\",\"n0\",10000,\"初代プリウスは改良を経て、2000年に北米と欧州でも発売されました。日本で生まれた車が、海外へ向かいます。\",1.0]"
+      },
+      "start": 24.075333333333333,
+      "end": 32.608666666666664
+    }
+  ],
+  "cues": [
+    {
+      "start": 0.4,
+      "end": 2.261,
+      "speaker": "ジャッド",
+      "text": "仕組みは分かりました。",
+      "lineId": "v3-p3-13-l1"
+    },
+    {
+      "start": 2.261,
+      "end": 4.29,
+      "speaker": "ジャッド",
+      "text": "でも、技術がよいことと、",
+      "lineId": "v3-p3-13-l1"
+    },
+    {
+      "start": 4.29,
+      "end": 7.504,
+      "speaker": "ジャッド",
+      "text": "いろいろな人が使えることは別ですよね。",
+      "lineId": "v3-p3-13-l1"
+    },
+    {
+      "start": 7.954,
+      "end": 9.693,
+      "speaker": "ホーマー",
+      "text": "必要な大きさや使い道は、",
+      "lineId": "v3-p3-13-l2"
+    },
+    {
+      "start": 9.693,
+      "end": 11.577,
+      "speaker": "ホーマー",
+      "text": "人によって違いますからね。",
+      "lineId": "v3-p3-13-l2"
+    },
+    {
+      "start": 11.577,
+      "end": 13.171,
+      "speaker": "ホーマー",
+      "text": "選べる車が増えないと、",
+      "lineId": "v3-p3-13-l2"
+    },
+    {
+      "start": 13.171,
+      "end": 14.621,
+      "speaker": "ホーマー",
+      "text": "広がりにくそうです。",
+      "lineId": "v3-p3-13-l2"
+    },
+    {
+      "start": 15.071,
+      "end": 18.032,
+      "speaker": "ケント",
+      "text": "そこで、この章は三つに分けて見ます。",
+      "lineId": "v3-p3-13-l3"
+    },
+    {
+      "start": 18.032,
+      "end": 21.158,
+      "speaker": "ケント",
+      "text": "仕組み自体の改良、載せる車種の広がり、",
+      "lineId": "v3-p3-13-l3"
+    },
+    {
+      "start": 21.158,
+      "end": 23.625,
+      "speaker": "ケント",
+      "text": "そして生産や販売の広がりです。",
+      "lineId": "v3-p3-13-l3"
+    },
+    {
+      "start": 24.075,
+      "end": 26.168,
+      "speaker": "ナレ2",
+      "text": "初代プリウスは改良を経て、",
+      "lineId": "v3-p3-13-l4"
+    },
+    {
+      "start": 26.168,
+      "end": 27.617,
+      "speaker": "ナレ2",
+      "text": "2000年に北米と",
+      "lineId": "v3-p3-13-l4"
+    },
+    {
+      "start": 27.617,
+      "end": 29.55,
+      "speaker": "ナレ2",
+      "text": "欧州でも発売されました。",
+      "lineId": "v3-p3-13-l4"
+    },
+    {
+      "start": 29.55,
+      "end": 32.609,
+      "speaker": "ナレ2",
+      "text": "日本で生まれた車が、海外へ向かいます。",
+      "lineId": "v3-p3-13-l4"
+    }
+  ]
+}

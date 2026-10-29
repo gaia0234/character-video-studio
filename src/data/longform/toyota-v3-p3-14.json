@@ -1,0 +1,217 @@
+{
+  "id": "v3-p3-14",
+  "fps": 30,
+  "frames": 997,
+  "audio": {
+    "src": "audio/toyota-v3-p3-14/scene-v3-p3-14.wav",
+    "seconds": 32.294,
+    "sha256": "926226c2e8ee8fbe4a37b7767c4913576ba25be5488fc24b3ddb4e926211a4c9",
+    "lineOffsets": [
+      {
+        "lineId": "v3-p3-14-l1",
+        "startSecond": 0.0
+      },
+      {
+        "lineId": "v3-p3-14-l2",
+        "startSecond": 9.783
+      },
+      {
+        "lineId": "v3-p3-14-l3",
+        "startSecond": 17.721
+      },
+      {
+        "lineId": "v3-p3-14-l4",
+        "startSecond": 26.342
+      }
+    ]
+  },
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part3-draft.md",
+  "sourceScriptSha256": "e157a99b3c3e37cbd09cff040b0a71a446b3c4bf0df14e5aa88a321d03fb1cc2",
+  "sourceInputSha256": "838c61c68ff7bcf1f3a2247d8158b6d2781ffcf15df5fe0421dc3eac3ed8e997",
+  "voiceCredits": [
+    "VOICEVOX Nemo",
+    "VOICEVOX:青山龍星",
+    "VOICEVOX:雀松朱司",
+    "VOICEVOX:玄野武宏"
+  ],
+  "evidence": [
+    "F9"
+  ],
+  "lines": [
+    {
+      "id": "v3-p3-14-l1",
+      "speaker": "ナレ2",
+      "text": "2003年9月には第2代プリウスが登場。システムはTHS IIへ進化し、モーターの出力向上などが進みました。",
+      "spokenText": "2003年9月には第2代プリウスが登場。システムはTHS IIへ進化し、モーターの出力向上などが進みました。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "topic",
+      "seconds": 9.333333333333334,
+      "audio": {
+        "src": "audio/toyota-v3-p3-14/v3-p3-14-l1.wav",
+        "seconds": 9.333333333333334,
+        "generatedFor": "[\"ナレ2\",\"n0\",10000,\"2003年9月には第2代プリウスが登場。システムはTHS IIへ進化し、モーターの出力向上などが進みました。\",1.0]"
+      },
+      "start": 0.4,
+      "end": 9.733333333333334
+    },
+    {
+      "id": "v3-p3-14-l2",
+      "speaker": "ジャッド",
+      "text": "見た目だけが新しくなったわけではないんですね。ハイブリッドという名前は同じでも、中は変わっている。",
+      "spokenText": "見た目だけが新しくなったわけではないんですね。ハイブリッドという名前は同じでも、中は変わっている。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "topic",
+      "seconds": 7.488,
+      "audio": {
+        "src": "audio/toyota-v3-p3-14/v3-p3-14-l2.wav",
+        "seconds": 7.488,
+        "generatedFor": "[\"ジャッド\",\"15\",82,\"見た目だけが新しくなったわけではないんですね。ハイブリッドという名前は同じでも、中は変わっている。\",1.0]"
+      },
+      "start": 10.183333333333334,
+      "end": 17.671333333333333
+    },
+    {
+      "id": "v3-p3-14-l3",
+      "speaker": "ケント",
+      "text": "ええ。初代の仕組みをそのまま長く売った、と考えると歩みを見落とします。電気を扱う部分も改良されてきました。",
+      "spokenText": "ええ。初代の仕組みをそのまま長く売った、と考えると歩みを見落とします。電気を扱う部分も改良されてきました。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "topic",
+      "seconds": 8.170666666666667,
+      "audio": {
+        "src": "audio/toyota-v3-p3-14/v3-p3-14-l3.wav",
+        "seconds": 8.170666666666667,
+        "generatedFor": "[\"ケント\",\"12\",52,\"ええ。初代の仕組みをそのまま長く売った、と考えると歩みを見落とします。電気を扱う部分も改良されてきました。\",1.0]"
+      },
+      "start": 18.121333333333332,
+      "end": 26.292
+    },
+    {
+      "id": "v3-p3-14-l4",
+      "speaker": "ホーマー",
+      "text": "一度作って終わりではなく、走りと燃費の両方を考えながら、次の車へつないできたんですね。",
+      "spokenText": "一度作って終わりではなく、走りと燃費の両方を考えながら、次の車へつないできたんですね。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "topic",
+      "seconds": 5.952,
+      "audio": {
+        "src": "audio/toyota-v3-p3-14/v3-p3-14-l4.wav",
+        "seconds": 5.952,
+        "generatedFor": "[\"ホーマー\",\"10\",39,\"一度作って終わりではなく、走りと燃費の両方を考えながら、次の車へつないできたんですね。\",1.0]"
+      },
+      "start": 26.741999999999997,
+      "end": 32.693999999999996
+    }
+  ],
+  "cues": [
+    {
+      "start": 0.4,
+      "end": 1.956,
+      "speaker": "ナレ2",
+      "text": "2003年9月には",
+      "lineId": "v3-p3-14-l1"
+    },
+    {
+      "start": 1.956,
+      "end": 3.857,
+      "speaker": "ナレ2",
+      "text": "第2代プリウスが登場。",
+      "lineId": "v3-p3-14-l1"
+    },
+    {
+      "start": 3.857,
+      "end": 6.622,
+      "speaker": "ナレ2",
+      "text": "システムはTHS IIへ進化し、",
+      "lineId": "v3-p3-14-l1"
+    },
+    {
+      "start": 6.622,
+      "end": 9.733,
+      "speaker": "ナレ2",
+      "text": "モーターの出力向上などが進みました。",
+      "lineId": "v3-p3-14-l1"
+    },
+    {
+      "start": 10.183,
+      "end": 12.476,
+      "speaker": "ジャッド",
+      "text": "見た目だけが新しくなったわけで",
+      "lineId": "v3-p3-14-l2"
+    },
+    {
+      "start": 12.476,
+      "end": 13.698,
+      "speaker": "ジャッド",
+      "text": "はないんですね。",
+      "lineId": "v3-p3-14-l2"
+    },
+    {
+      "start": 13.698,
+      "end": 16.296,
+      "speaker": "ジャッド",
+      "text": "ハイブリッドという名前は同じでも、",
+      "lineId": "v3-p3-14-l2"
+    },
+    {
+      "start": 16.296,
+      "end": 17.671,
+      "speaker": "ジャッド",
+      "text": "中は変わっている。",
+      "lineId": "v3-p3-14-l2"
+    },
+    {
+      "start": 18.121,
+      "end": 18.584,
+      "speaker": "ケント",
+      "text": "ええ。",
+      "lineId": "v3-p3-14-l3"
+    },
+    {
+      "start": 18.584,
+      "end": 21.205,
+      "speaker": "ケント",
+      "text": "初代の仕組みをそのまま長く売った、",
+      "lineId": "v3-p3-14-l3"
+    },
+    {
+      "start": 21.205,
+      "end": 23.517,
+      "speaker": "ケント",
+      "text": "と考えると歩みを見落とします。",
+      "lineId": "v3-p3-14-l3"
+    },
+    {
+      "start": 23.517,
+      "end": 26.292,
+      "speaker": "ケント",
+      "text": "電気を扱う部分も改良されてきました。",
+      "lineId": "v3-p3-14-l3"
+    },
+    {
+      "start": 26.742,
+      "end": 28.541,
+      "speaker": "ホーマー",
+      "text": "一度作って終わりではなく、",
+      "lineId": "v3-p3-14-l4"
+    },
+    {
+      "start": 28.541,
+      "end": 30.618,
+      "speaker": "ホーマー",
+      "text": "走りと燃費の両方を考えながら、",
+      "lineId": "v3-p3-14-l4"
+    },
+    {
+      "start": 30.618,
+      "end": 32.694,
+      "speaker": "ホーマー",
+      "text": "次の車へつないできたんですね。",
+      "lineId": "v3-p3-14-l4"
+    }
+  ]
+}

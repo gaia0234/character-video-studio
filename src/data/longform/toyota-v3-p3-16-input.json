@@ -1,0 +1,50 @@
+{
+  "version": "toyota-v3-p3-16",
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part3-draft.md",
+  "scope": "v3-p3-16 only",
+  "evidence": ["F9"],
+  "scenes": [
+    {
+      "id": "v3-p3-16",
+      "part": 3,
+      "lines": [
+        {
+          "id": "v3-p3-16-l1",
+          "speaker": "ジャッド",
+          "text": "海外へ持っていって売るだけだと、日本の工場で作り続けることになるんですか。",
+          "spokenText": "海外へ持っていって売るだけだと、日本の工場で作り続けることになるんですか。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p3-16-l2",
+          "speaker": "ケント",
+          "text": "生産の拠点も広がりました。2005年には中国、2006年にはアメリカ、2010年にはイギリスで量産が始まっています。",
+          "spokenText": "生産の拠点も広がりました。2005年には中国、2006年にはアメリカ、2010年にはイギリスで量産が始まっています。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p3-16-l3",
+          "speaker": "ホーマー",
+          "text": "販売先だけでなく、作る場所も増えた。地図にすると、二つの広がり方があるんですね。",
+          "spokenText": "販売先だけでなく、作る場所も増えた。地図にすると、二つの広がり方があるんですね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p3-16-l4",
+          "speaker": "ケント",
+          "text": "そうです。ここでは海外発売の年と、海外生産の開始年を分けて表示します。似た話でも、同じ出来事として混ぜないようにしましょう。",
+          "spokenText": "そうです。ここでは海外発売の年と、海外生産の開始年を分けて表示します。似た話でも、同じ出来事として混ぜないようにしましょう。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        }
+      ]
+    }
+  ]
+}

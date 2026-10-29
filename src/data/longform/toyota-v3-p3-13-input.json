@@ -1,0 +1,50 @@
+{
+  "version": "toyota-v3-p3-13",
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part3-draft.md",
+  "scope": "v3-p3-13 only",
+  "evidence": ["F9"],
+  "scenes": [
+    {
+      "id": "v3-p3-13",
+      "part": 3,
+      "lines": [
+        {
+          "id": "v3-p3-13-l1",
+          "speaker": "ジャッド",
+          "text": "仕組みは分かりました。でも、技術がよいことと、いろいろな人が使えることは別ですよね。",
+          "spokenText": "仕組みは分かりました。でも、技術がよいことと、いろいろな人が使えることは別ですよね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p3-13-l2",
+          "speaker": "ホーマー",
+          "text": "必要な大きさや使い道は、人によって違いますからね。選べる車が増えないと、広がりにくそうです。",
+          "spokenText": "必要な大きさや使い道は、人によって違いますからね。選べる車が増えないと、広がりにくそうです。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p3-13-l3",
+          "speaker": "ケント",
+          "text": "そこで、この章は三つに分けて見ます。仕組み自体の改良、載せる車種の広がり、そして生産や販売の広がりです。",
+          "spokenText": "そこで、この章は三つに分けて見ます。仕組み自体の改良、載せる車種の広がり、そして生産や販売の広がりです。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p3-13-l4",
+          "speaker": "ナレ2",
+          "text": "初代プリウスは改良を経て、2000年に北米と欧州でも発売されました。日本で生まれた車が、海外へ向かいます。",
+          "spokenText": "初代プリウスは改良を経て、2000年に北米と欧州でも発売されました。日本で生まれた車が、海外へ向かいます。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        }
+      ]
+    }
+  ]
+}

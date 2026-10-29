@@ -1,0 +1,50 @@
+{
+  "version": "toyota-v3-p3-14",
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part3-draft.md",
+  "scope": "v3-p3-14 only",
+  "evidence": ["F9"],
+  "scenes": [
+    {
+      "id": "v3-p3-14",
+      "part": 3,
+      "lines": [
+        {
+          "id": "v3-p3-14-l1",
+          "speaker": "ナレ2",
+          "text": "2003年9月には第2代プリウスが登場。システムはTHS IIへ進化し、モーターの出力向上などが進みました。",
+          "spokenText": "2003年9月には第2代プリウスが登場。システムはTHS IIへ進化し、モーターの出力向上などが進みました。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p3-14-l2",
+          "speaker": "ジャッド",
+          "text": "見た目だけが新しくなったわけではないんですね。ハイブリッドという名前は同じでも、中は変わっている。",
+          "spokenText": "見た目だけが新しくなったわけではないんですね。ハイブリッドという名前は同じでも、中は変わっている。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p3-14-l3",
+          "speaker": "ケント",
+          "text": "ええ。初代の仕組みをそのまま長く売った、と考えると歩みを見落とします。電気を扱う部分も改良されてきました。",
+          "spokenText": "ええ。初代の仕組みをそのまま長く売った、と考えると歩みを見落とします。電気を扱う部分も改良されてきました。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p3-14-l4",
+          "speaker": "ホーマー",
+          "text": "一度作って終わりではなく、走りと燃費の両方を考えながら、次の車へつないできたんですね。",
+          "spokenText": "一度作って終わりではなく、走りと燃費の両方を考えながら、次の車へつないできたんですね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        }
+      ]
+    }
+  ]
+}
