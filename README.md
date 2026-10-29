@@ -161,6 +161,8 @@ npm run render:test
 
 ## 制作Skill
 
+- 分解図・断面図・経路模式図の制作：[技術図解制作Skill](.agents/skills/technical-diagram/SKILL.md)。実物の受入：[video-acceptance](.agents/skills/video-acceptance/SKILL.md)。
+
 [skills/youtube-short-generator/SKILL.md](skills/youtube-short-generator/SKILL.md) に制作手順をまとめる。元記事の保存先と移設前のSkillは同フォルダの `references/` に置く。元記事は `references/original-article.md` に保存済み。Skillはこのプロジェクト内に配置しており、グローバルなSkill登録は行っていない。
 
 ## Ubuntu移行後の起動確認（2026-10-12）
