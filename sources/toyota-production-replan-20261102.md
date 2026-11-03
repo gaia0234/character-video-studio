@@ -83,6 +83,6 @@
 - 受入：本人「Rev2 OK」（2026-11-03）。実聴取・テンポ・C後半約10秒の静止・A紙束・C注記の扱いを含めて本人判断済み。PM受入と別production_reviewer合格は2026-11-03。
 - 完成物：`output/toyota-ch1-opening-20261102/ch1-01-rev2.mp4`（811フレーム・30fps・SHA-256 先頭 `6f2d72d95b614067`、output/はGit管理外）。共有 `\\192.168.1.115\Shared\Transfer\character-video-studio\2026-11-03-ch1-opening-rev2`。仕様票・計画・STATUSは同フォルダ。
 - 正本コード：`src/longform/ToyotaCh1Opening20261102.tsx`、`src/index-toyota-ch1-opening-20261102.tsx`（composition `ToyotaCh1Opening20261102`）。検査：`scripts/layout-check.mjs`・`contact-sheet.mjs`・`audio-report.mjs`。
-- 未追跡の依存：音声 `public/audio/toyota-v19-chapter1-20261029/v19-ch1-01.wav` は所有確認前のためcommitしない（Git棚卸しで判断）。
+- 依存の固定（2026-11-03 本人承認）：音声 `public/audio/toyota-v19-chapter1-20261029/v19-ch1-01.wav` と仕様票・layout spec A/B/C をcommit。`toyota-v19-chapter1-20261029/`・`toyota-v19-chapter2-20261029/` の音声はv20でも使うため、旧版として退避・削除しない。
 - 既知の弱点：layout-checkの`box:"border"`が常に失敗、起動失敗と配置不良がともにexit 1。次の改善で扱う。
 - 失敗累計：実行失敗9/次停止15（2026-11-03本人延長）。MiMo残り7/10。

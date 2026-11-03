@@ -1,0 +1,180 @@
+{
+  "elements": [
+    {
+      "id": "chapter-pill",
+      "dataCheckId": "chapter-pill",
+      "space": "screen",
+      "expect": {
+        "x": 55.0,
+        "y": 36.0,
+        "w": 304.0,
+        "h": 66.0,
+        "tolerance": 2
+      }
+    },
+    {
+      "id": "progress-bar",
+      "dataCheckId": "progress-bar",
+      "space": "screen",
+      "expect": {
+        "x": 55.0,
+        "y": 107.0,
+        "w": 304.0,
+        "h": 10.0,
+        "tolerance": 2
+      }
+    },
+    {
+      "id": "progress-current",
+      "dataCheckId": "progress-current",
+      "space": "screen",
+      "expect": {
+        "x": 94.0,
+        "y": 107.0,
+        "w": 31.0,
+        "h": 10.0,
+        "tolerance": 2
+      }
+    },
+    {
+      "id": "board",
+      "dataCheckId": "board",
+      "space": "screen",
+      "expect": {
+        "x": 115.0,
+        "y": 160.0,
+        "w": 1580.0,
+        "h": 630.0,
+        "tolerance": 1
+      }
+    },
+    {
+      "id": "subtitle-wrap",
+      "dataCheckId": "subtitle-wrap",
+      "space": "screen",
+      "expect": {
+        "x": 95.0,
+        "y": 942.0,
+        "w": 1730.0,
+        "h": 106.0,
+        "tolerance": 2
+      }
+    },
+    {
+      "id": "a-year-card",
+      "dataCheckId": "a-year-card",
+      "space": "screen",
+      "expect": {
+        "x": 173.0,
+        "y": 357.0,
+        "w": 200.0,
+        "h": 100.0,
+        "tolerance": 2
+      }
+    },
+    {
+      "id": "a-g21",
+      "dataCheckId": "a-g21",
+      "space": "screen",
+      "expect": {
+        "x": 173.0,
+        "y": 487.0,
+        "w": 136.578,
+        "h": 101.0,
+        "tolerance": 6
+      }
+    },
+    {
+      "id": "a-desk",
+      "dataCheckId": "a-desk",
+      "space": "screen",
+      "expect": {
+        "x": 449.0,
+        "y": 210.0,
+        "w": 1146.0,
+        "h": 531.0,
+        "tolerance": 2
+      }
+    },
+    {
+      "id": "a-paper",
+      "dataCheckId": "a-paper",
+      "space": "screen",
+      "expect": {
+        "x": 549.0,
+        "y": 268.0,
+        "w": 930.0,
+        "h": 399.0,
+        "tolerance": 4
+      }
+    },
+    {
+      "id": "a-car",
+      "dataCheckId": "a-car",
+      "space": "screen",
+      "expect": {
+        "x": 665.0,
+        "y": 318.0,
+        "w": 714.0,
+        "h": 286.0,
+        "tolerance": 2
+      }
+    },
+    {
+      "id": "a-note",
+      "dataCheckId": "a-note",
+      "space": "screen",
+      "expect": {
+        "x": 681.0,
+        "y": 608.0,
+        "w": 242.016,
+        "h": 32.0,
+        "tolerance": 6
+      }
+    }
+  ],
+  "overlaps": [
+    {
+      "id": "progress-bar__board",
+      "a": "progress-bar",
+      "b": "board",
+      "space": "screen",
+      "tolerance": 0
+    },
+    {
+      "id": "board__subtitle-wrap",
+      "a": "board",
+      "b": "subtitle-wrap",
+      "space": "screen",
+      "tolerance": 0
+    },
+    {
+      "id": "a-year-card__a-g21",
+      "a": "a-year-card",
+      "b": "a-g21",
+      "space": "screen",
+      "tolerance": 0
+    },
+    {
+      "id": "a-year-card__a-desk",
+      "a": "a-year-card",
+      "b": "a-desk",
+      "space": "screen",
+      "tolerance": 0
+    },
+    {
+      "id": "a-g21__a-desk",
+      "a": "a-g21",
+      "b": "a-desk",
+      "space": "screen",
+      "tolerance": 0
+    },
+    {
+      "id": "a-car__a-note",
+      "a": "a-car",
+      "b": "a-note",
+      "space": "screen",
+      "tolerance": 0
+    }
+  ]
+}

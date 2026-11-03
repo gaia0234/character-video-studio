@@ -1,0 +1,358 @@
+{
+  "elements": [
+    {
+      "id": "chapter-pill",
+      "dataCheckId": "chapter-pill",
+      "space": "screen",
+      "expect": {
+        "x": 55.0,
+        "y": 36.0,
+        "w": 304.0,
+        "h": 66.0,
+        "tolerance": 2
+      }
+    },
+    {
+      "id": "progress-bar",
+      "dataCheckId": "progress-bar",
+      "space": "screen",
+      "expect": {
+        "x": 55.0,
+        "y": 107.0,
+        "w": 304.0,
+        "h": 10.0,
+        "tolerance": 2
+      }
+    },
+    {
+      "id": "progress-current",
+      "dataCheckId": "progress-current",
+      "space": "screen",
+      "expect": {
+        "x": 94.0,
+        "y": 107.0,
+        "w": 31.0,
+        "h": 10.0,
+        "tolerance": 2
+      }
+    },
+    {
+      "id": "board",
+      "dataCheckId": "board",
+      "space": "screen",
+      "expect": {
+        "x": 115.0,
+        "y": 160.0,
+        "w": 1580.0,
+        "h": 630.0,
+        "tolerance": 1
+      }
+    },
+    {
+      "id": "subtitle-wrap",
+      "dataCheckId": "subtitle-wrap",
+      "space": "screen",
+      "expect": {
+        "x": 95.0,
+        "y": 942.0,
+        "w": 1730.0,
+        "h": 106.0,
+        "tolerance": 2
+      }
+    },
+    {
+      "id": "c-heading",
+      "dataCheckId": "c-heading",
+      "space": "screen",
+      "expect": {
+        "x": 173.0,
+        "y": 206.0,
+        "w": 378.016,
+        "h": 61.0,
+        "tolerance": 6
+      }
+    },
+    {
+      "id": "c-sub",
+      "dataCheckId": "c-sub",
+      "space": "screen",
+      "expect": {
+        "x": 173.0,
+        "y": 270.0,
+        "w": 675.016,
+        "h": 36.0,
+        "tolerance": 6
+      }
+    },
+    {
+      "id": "c-pill-resource",
+      "dataCheckId": "c-pill-resource",
+      "space": "screen",
+      "expect": {
+        "x": 232.0,
+        "y": 316.0,
+        "w": 114.0,
+        "h": 69.0,
+        "tolerance": 2
+      }
+    },
+    {
+      "id": "c-fuel",
+      "dataCheckId": "c-fuel",
+      "space": "screen",
+      "expect": {
+        "x": 217.0,
+        "y": 391.0,
+        "w": 330.0,
+        "h": 215.0,
+        "tolerance": 2
+      }
+    },
+    {
+      "id": "c-fuel-caption",
+      "dataCheckId": "c-fuel-caption",
+      "space": "screen",
+      "expect": {
+        "x": 225.0,
+        "y": 616.0,
+        "w": 208.016,
+        "h": 38.0,
+        "tolerance": 6
+      }
+    },
+    {
+      "id": "c-arrow-in",
+      "dataCheckId": "c-arrow-in",
+      "space": "screen",
+      "expect": {
+        "x": 557.0,
+        "y": 505.0,
+        "w": 100.0,
+        "h": 27.0,
+        "tolerance": 4
+      }
+    },
+    {
+      "id": "c-label-in",
+      "dataCheckId": "c-label-in",
+      "space": "screen",
+      "expect": {
+        "x": 587.0,
+        "y": 478.0,
+        "w": 40.0,
+        "h": 24.0,
+        "tolerance": 6
+      }
+    },
+    {
+      "id": "c-car",
+      "dataCheckId": "c-car",
+      "space": "screen",
+      "expect": {
+        "x": 667.0,
+        "y": 459.0,
+        "w": 420.0,
+        "h": 168.0,
+        "tolerance": 2
+      }
+    },
+    {
+      "id": "c-car-caption",
+      "dataCheckId": "c-car-caption",
+      "space": "screen",
+      "expect": {
+        "x": 667.0,
+        "y": 639.0,
+        "w": 286.016,
+        "h": 32.0,
+        "tolerance": 6
+      }
+    },
+    {
+      "id": "c-arrow-out",
+      "dataCheckId": "c-arrow-out",
+      "space": "screen",
+      "expect": {
+        "x": 1095.0,
+        "y": 475.0,
+        "w": 93.0,
+        "h": 65.0,
+        "tolerance": 4
+      }
+    },
+    {
+      "id": "c-label-out",
+      "dataCheckId": "c-label-out",
+      "space": "screen",
+      "expect": {
+        "x": 1121.0,
+        "y": 544.0,
+        "w": 40.0,
+        "h": 24.0,
+        "tolerance": 6
+      }
+    },
+    {
+      "id": "c-pill-env",
+      "dataCheckId": "c-pill-env",
+      "space": "screen",
+      "expect": {
+        "x": 1198.0,
+        "y": 316.0,
+        "w": 114.0,
+        "h": 69.0,
+        "tolerance": 2
+      }
+    },
+    {
+      "id": "c-city",
+      "dataCheckId": "c-city",
+      "space": "screen",
+      "expect": {
+        "x": 1196.0,
+        "y": 391.0,
+        "w": 290.0,
+        "h": 245.0,
+        "tolerance": 2
+      }
+    },
+    {
+      "id": "c-city-caption",
+      "dataCheckId": "c-city-caption",
+      "space": "screen",
+      "expect": {
+        "x": 1201.0,
+        "y": 646.0,
+        "w": 286.016,
+        "h": 38.0,
+        "tolerance": 6
+      }
+    },
+    {
+      "id": "c-note",
+      "dataCheckId": "c-note",
+      "space": "screen",
+      "expect": {
+        "x": 173.0,
+        "y": 696.0,
+        "w": 1400.0,
+        "h": 62.0,
+        "tolerance": 6
+      }
+    }
+  ],
+  "overlaps": [
+    {
+      "id": "c-sub__c-pill-resource",
+      "a": "c-sub",
+      "b": "c-pill-resource",
+      "space": "screen",
+      "tolerance": 0
+    },
+    {
+      "id": "c-sub__c-pill-env",
+      "a": "c-sub",
+      "b": "c-pill-env",
+      "space": "screen",
+      "tolerance": 0
+    },
+    {
+      "id": "c-pill-resource__c-fuel",
+      "a": "c-pill-resource",
+      "b": "c-fuel",
+      "space": "screen",
+      "tolerance": 0
+    },
+    {
+      "id": "c-pill-env__c-city",
+      "a": "c-pill-env",
+      "b": "c-city",
+      "space": "screen",
+      "tolerance": 0
+    },
+    {
+      "id": "c-fuel__c-arrow-in",
+      "a": "c-fuel",
+      "b": "c-arrow-in",
+      "space": "screen",
+      "tolerance": 0
+    },
+    {
+      "id": "c-arrow-in__c-car",
+      "a": "c-arrow-in",
+      "b": "c-car",
+      "space": "screen",
+      "tolerance": 0
+    },
+    {
+      "id": "c-car__c-arrow-out",
+      "a": "c-car",
+      "b": "c-arrow-out",
+      "space": "screen",
+      "tolerance": 0
+    },
+    {
+      "id": "c-arrow-out__c-city",
+      "a": "c-arrow-out",
+      "b": "c-city",
+      "space": "screen",
+      "tolerance": 0
+    },
+    {
+      "id": "c-label-in__c-arrow-in",
+      "a": "c-label-in",
+      "b": "c-arrow-in",
+      "space": "screen",
+      "tolerance": 0
+    },
+    {
+      "id": "c-label-out__c-arrow-out",
+      "a": "c-label-out",
+      "b": "c-arrow-out",
+      "space": "screen",
+      "tolerance": 0
+    },
+    {
+      "id": "c-fuel__c-fuel-caption",
+      "a": "c-fuel",
+      "b": "c-fuel-caption",
+      "space": "screen",
+      "tolerance": 0
+    },
+    {
+      "id": "c-car__c-car-caption",
+      "a": "c-car",
+      "b": "c-car-caption",
+      "space": "screen",
+      "tolerance": 0
+    },
+    {
+      "id": "c-city__c-city-caption",
+      "a": "c-city",
+      "b": "c-city-caption",
+      "space": "screen",
+      "tolerance": 0
+    },
+    {
+      "id": "c-fuel-caption__c-note",
+      "a": "c-fuel-caption",
+      "b": "c-note",
+      "space": "screen",
+      "tolerance": 0
+    },
+    {
+      "id": "c-car-caption__c-note",
+      "a": "c-car-caption",
+      "b": "c-note",
+      "space": "screen",
+      "tolerance": 0
+    },
+    {
+      "id": "c-city-caption__c-note",
+      "a": "c-city-caption",
+      "b": "c-note",
+      "space": "screen",
+      "tolerance": 0
+    }
+  ]
+}

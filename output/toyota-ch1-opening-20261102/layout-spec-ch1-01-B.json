@@ -1,0 +1,219 @@
+{
+  "elements": [
+    {
+      "id": "chapter-pill",
+      "dataCheckId": "chapter-pill",
+      "space": "screen",
+      "expect": {
+        "x": 55.0,
+        "y": 36.0,
+        "w": 304.0,
+        "h": 66.0,
+        "tolerance": 2
+      }
+    },
+    {
+      "id": "progress-bar",
+      "dataCheckId": "progress-bar",
+      "space": "screen",
+      "expect": {
+        "x": 55.0,
+        "y": 107.0,
+        "w": 304.0,
+        "h": 10.0,
+        "tolerance": 2
+      }
+    },
+    {
+      "id": "progress-current",
+      "dataCheckId": "progress-current",
+      "space": "screen",
+      "expect": {
+        "x": 94.0,
+        "y": 107.0,
+        "w": 31.0,
+        "h": 10.0,
+        "tolerance": 2
+      }
+    },
+    {
+      "id": "board",
+      "dataCheckId": "board",
+      "space": "screen",
+      "expect": {
+        "x": 115.0,
+        "y": 160.0,
+        "w": 1580.0,
+        "h": 630.0,
+        "tolerance": 1
+      }
+    },
+    {
+      "id": "subtitle-wrap",
+      "dataCheckId": "subtitle-wrap",
+      "space": "screen",
+      "expect": {
+        "x": 95.0,
+        "y": 942.0,
+        "w": 1730.0,
+        "h": 106.0,
+        "tolerance": 2
+      }
+    },
+    {
+      "id": "b-heading",
+      "dataCheckId": "b-heading",
+      "space": "screen",
+      "expect": {
+        "x": 173.0,
+        "y": 206.0,
+        "w": 570.328,
+        "h": 61.0,
+        "tolerance": 6
+      }
+    },
+    {
+      "id": "b-sub",
+      "dataCheckId": "b-sub",
+      "space": "screen",
+      "expect": {
+        "x": 173.0,
+        "y": 270.0,
+        "w": 629.516,
+        "h": 36.0,
+        "tolerance": 6
+      }
+    },
+    {
+      "id": "b-chart",
+      "selector": "[data-check-id=\"b-chart\"] svg",
+      "space": "screen",
+      "expect": {
+        "x": 249.0,
+        "y": 314.0,
+        "w": 1180.0,
+        "h": 360.0,
+        "tolerance": 2
+      }
+    },
+    {
+      "id": "b-zero",
+      "dataCheckId": "b-zero",
+      "space": "screen",
+      "expect": {
+        "x": 299.0,
+        "y": 610.0,
+        "w": 188.219,
+        "h": 32.0,
+        "tolerance": 6
+      }
+    },
+    {
+      "id": "b-note1",
+      "dataCheckId": "b-note1",
+      "space": "screen",
+      "expect": {
+        "x": 173.0,
+        "y": 690.0,
+        "w": 914.172,
+        "h": 32.0,
+        "tolerance": 6
+      }
+    },
+    {
+      "id": "b-note2",
+      "dataCheckId": "b-note2",
+      "space": "screen",
+      "expect": {
+        "x": 173.0,
+        "y": 726.0,
+        "w": 492.547,
+        "h": 32.0,
+        "tolerance": 6
+      }
+    },
+    {
+      "id": "b-bar-old",
+      "selector": "[data-check-id=\"b-chart\"] svg rect",
+      "index": 0,
+      "space": "screen",
+      "expect": {
+        "x": 654.0,
+        "y": 457.333,
+        "w": 150.0,
+        "h": 146.667,
+        "tolerance": 2
+      }
+    },
+    {
+      "id": "b-bar-target",
+      "selector": "[data-check-id=\"b-chart\"] svg rect",
+      "index": 1,
+      "space": "screen",
+      "expect": {
+        "x": 874.0,
+        "y": 384.0,
+        "w": 150.0,
+        "h": 220.0,
+        "tolerance": 2
+      }
+    }
+  ],
+  "overlaps": [
+    {
+      "id": "b-heading__b-sub",
+      "a": "b-heading",
+      "b": "b-sub",
+      "space": "screen",
+      "tolerance": 0
+    },
+    {
+      "id": "b-sub__b-chart",
+      "a": "b-sub",
+      "b": "b-chart",
+      "space": "screen",
+      "tolerance": 0
+    },
+    {
+      "id": "b-zero__b-bar-old",
+      "a": "b-zero",
+      "b": "b-bar-old",
+      "space": "screen",
+      "tolerance": 0
+    },
+    {
+      "id": "b-chart__b-note1",
+      "a": "b-chart",
+      "b": "b-note1",
+      "space": "screen",
+      "tolerance": 0
+    },
+    {
+      "id": "b-note1__b-note2",
+      "a": "b-note1",
+      "b": "b-note2",
+      "space": "screen",
+      "tolerance": 0
+    }
+  ],
+  "ratios": [
+    {
+      "id": "bar-height-ratio",
+      "a": "b-bar-old",
+      "b": "b-bar-target",
+      "dimension": "height",
+      "box": "screen",
+      "expected": 1.5,
+      "tolerance": 0.012
+    },
+    {
+      "id": "bar-width-ratio",
+      "a": "b-bar-old",
+      "b": "b-bar-target",
+      "dimension": "width",
+      "box": "screen",
+      "expected": 1.0,
+      "tolerance": 0.01
+    }
+  ]
+}
