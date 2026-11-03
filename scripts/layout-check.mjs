@@ -41,6 +41,12 @@ const parseArgs = (argv) => {
   return args;
 };
 
+// Any error outside the main try (module loading, temp dir) is a tool error.
+process.on('uncaughtException', (error) => {
+  console.error(`layout-check: ERROR: ${error?.stack ?? error}`);
+  process.exit(2);
+});
+
 const args = parseArgs(process.argv.slice(2));
 if (args.help) {
   console.log(`Usage: node scripts/layout-check.mjs --entry <entry.tsx> --composition <id> --frame <N> --spec <json> [--json <out>] [--screenshot <png>] [--temp-dir <dir>]`);
@@ -55,8 +61,9 @@ process.env.TMPDIR = tempRoot;
 const require = createRequire(import.meta.url);
 const {bundle} = require('@remotion/bundler');
 const {RenderInternals, openBrowser, selectComposition} = require('@remotion/renderer');
-const {setPropsAndEnv} = require(path.join(root, 'node_modules/@remotion/renderer/dist/set-props-and-env.js'));
-const {seekToFrame} = require(path.join(root, 'node_modules/@remotion/renderer/dist/seek-to-frame.js'));
+const rendererDist = path.dirname(require.resolve('@remotion/renderer'));
+const {setPropsAndEnv} = require(path.join(rendererDist, 'set-props-and-env.js'));
+const {seekToFrame} = require(path.join(rendererDist, 'seek-to-frame.js'));
 
 const entry = path.resolve(root, args.entry || 'src/index.ts');
 const compositionId = args.composition;
@@ -67,45 +74,50 @@ const screenshotOut = args.screenshot ? path.resolve(root, args.screenshot) : nu
 const browserExecutable = args['browser-executable'] || process.env.REMOTION_BROWSER_EXECUTABLE || '/home/ds-work/.local/lib/chrome-headless-shell/chrome-headless-shell';
 const timeout = Number(args.timeout ?? 60000);
 
-if (!compositionId) throw new Error('--composition is required');
-if (!Number.isInteger(frame) || frame < 0) throw new Error('--frame must be a non-negative integer');
-if (!specPath) throw new Error('--spec is required');
-if (!fs.existsSync(specPath)) throw new Error(`Spec not found: ${specPath}`);
-if (!fs.existsSync(browserExecutable)) throw new Error(`Browser executable not found: ${browserExecutable}`);
-
-const spec = JSON.parse(fs.readFileSync(specPath, 'utf8'));
-if (!Array.isArray(spec.elements)) throw new Error('spec.elements must be an array');
-
-const bundlePath = await bundle({
-  entryPoint: entry,
-  publicDir: path.resolve(root, 'public'),
-  outDir: null,
-  symlinkPublicDir: true,
-});
-
-const server = await RenderInternals.prepareServer({
-  webpackConfigOrServeUrl: bundlePath,
-  port: null,
-  remotionRoot: root,
-  offthreadVideoThreads: null,
-  logLevel: 'error',
-  indent: false,
-  offthreadVideoCacheSizeInBytes: null,
-  binariesDirectory: null,
-  forceIPv4: false,
-  sampleRate: 48000,
-});
-
-const browser = await openBrowser('chrome', {
-  browserExecutable,
-  chromeMode: 'headless-shell',
-  chromiumOptions: {gl: 'swangle'},
-  logLevel: 'error',
-});
-
+let spec = null;
+let bundlePath = null;
+let server = null;
+let browser = null;
 let page = null;
 let exitCode = 0;
+// Startup failures are tool errors (exit 2), not layout issues (exit 1).
 try {
+  if (!compositionId) throw new Error('--composition is required');
+  if (!Number.isInteger(frame) || frame < 0) throw new Error('--frame must be a non-negative integer');
+  if (!specPath) throw new Error('--spec is required');
+  if (!fs.existsSync(specPath)) throw new Error(`Spec not found: ${specPath}`);
+  if (!fs.existsSync(browserExecutable)) throw new Error(`Browser executable not found: ${browserExecutable}`);
+
+  spec = JSON.parse(fs.readFileSync(specPath, 'utf8'));
+  if (!Array.isArray(spec.elements)) throw new Error('spec.elements must be an array');
+
+  bundlePath = await bundle({
+    entryPoint: entry,
+    publicDir: path.resolve(root, 'public'),
+    outDir: null,
+    symlinkPublicDir: true,
+  });
+
+  server = await RenderInternals.prepareServer({
+    webpackConfigOrServeUrl: bundlePath,
+    port: null,
+    remotionRoot: root,
+    offthreadVideoThreads: null,
+    logLevel: 'error',
+    indent: false,
+    offthreadVideoCacheSizeInBytes: null,
+    binariesDirectory: null,
+    forceIPv4: false,
+    sampleRate: 48000,
+  });
+
+  browser = await openBrowser('chrome', {
+    browserExecutable,
+    chromeMode: 'headless-shell',
+    chromiumOptions: {gl: 'swangle'},
+    logLevel: 'error',
+  });
+
   const composition = await selectComposition({
     serveUrl: server.serveUrl,
     id: compositionId,
@@ -335,7 +347,7 @@ try {
     const dimension = ratio.dimension === 'width' ? 'width' : 'height';
     const value = (item) => {
       if (box === 'screen') return item.screen[dimension === 'width' ? 'w' : 'h'];
-      if (box === 'border') return item.layout[dimension];
+      if (box === 'border') return item.layout[dimension === 'width' ? 'w' : 'h'];
       return item.css[dimension];
     };
     const av = value(a);
@@ -403,9 +415,9 @@ try {
   exitCode = 2;
 } finally {
   if (page) await page.close().catch(() => undefined);
-  await browser.close({silent: true}).catch(() => undefined);
-  await server.closeServer(true).catch(() => undefined);
-  fs.rmSync(bundlePath, {recursive: true, force: true});
+  if (browser) await browser.close({silent: true}).catch(() => undefined);
+  if (server) await server.closeServer(true).catch(() => undefined);
+  if (bundlePath) fs.rmSync(bundlePath, {recursive: true, force: true});
 }
 
 process.exit(exitCode);
