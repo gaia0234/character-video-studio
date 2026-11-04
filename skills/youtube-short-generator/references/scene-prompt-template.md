@@ -4,6 +4,8 @@
 
 動きの基準は [motion-design.md](motion-design.md) を先に読む。場景は `src/data/longform/` の対象版JSONと、`src/longform/` の既存コンポーネントを基準にする。
 
+新規タスクは先に [spec-template.md](spec-template.md) の「継承する受入済み基準」を埋め、採用根拠・維持要素・変更範囲を担当へ渡す。v20の数値は章data、演出は場面内相対フレームのtiming、字幕境界は音声manifestを参照し、このひな形へ同じ時刻を重複定義しない。
+
 ## 使い方
 
 1. 1場景1目的で書く。複数の論点を1場景へ詰めない。

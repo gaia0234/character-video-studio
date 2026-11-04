@@ -124,7 +124,7 @@ try {
     puppeteerInstance: browser,
     browserExecutable,
     chromiumOptions: {gl: 'swangle'},
-    inputProps: {},
+    inputProps: spec.inputProps ?? {},
     logLevel: 'error',
   });
   if (frame >= composition.durationInFrames) {
@@ -165,7 +165,7 @@ try {
   }, {
     type: 'composition',
     compositionName: composition.id,
-    serializedResolvedPropsWithSchema: JSON.stringify(spec.inputProps ?? {}),
+    serializedResolvedPropsWithSchema: JSON.stringify(composition.props),
     compositionDurationInFrames: composition.durationInFrames,
     compositionFps: composition.fps,
     compositionHeight: composition.height,

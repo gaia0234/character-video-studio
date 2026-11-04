@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "boundaryUnit": "samples",
+  "origin": "audio-start",
+  "interval": "[start,end)",
+  "provenance": {
+    "kind": "inherited-approved-boundaries",
+    "source": "src/longform/ToyotaCh1Opening20261102.tsx CUES",
+    "sourceSha256": "343ba1f09529d991e5916cffeb0785190198ee8a4d58adc3e1494c19770a76d6",
+    "acceptance": "sources/toyota-production-replan-20261102.md v19第1章冒頭 ch1-01 rev2（2026-11-03 本人受入）",
+    "conversion": "(accepted scene frame - 12 frame audio lead) * 24000 / 30. Exact integer mapping, not new acoustic measurement.",
+    "checkedAt": "2026-11-04"
+  },
+  "generation": {
+    "mode": "reuse-existing-wav",
+    "newGeneration": false,
+    "sourceRecord": "output/toyota-ch1-opening-20261102/result.json audio; original generation settings unchanged/not re-executed"
+  },
+  "clips": [
+    {
+      "id": "ch1-01-voice",
+      "sceneId": "ch1-01",
+      "path": "audio/toyota-v19-chapter1-20261029/v19-ch1-01.wav",
+      "sha256": "86d2c9b5c2958557e4afbc7533195ee65656de82f067544be0fdf7fbcde68c4d",
+      "sampleRate": 24000,
+      "sampleCount": 626432,
+      "channels": 1,
+      "pcmBits": 16,
+      "measurement": "PCM header read via Python wave on 2026-11-04; no speech alignment performed",
+      "subtitleSource": "src/longform/v20/chapters/ch1/data.json subtitles",
+      "cues": [
+        {
+          "id": "ch1-01-01",
+          "startSample": 0,
+          "endSample": 46400
+        },
+        {
+          "id": "ch1-01-02",
+          "startSample": 46400,
+          "endSample": 167200
+        },
+        {
+          "id": "ch1-01-03",
+          "startSample": 167200,
+          "endSample": 211200
+        },
+        {
+          "id": "ch1-01-04",
+          "startSample": 211200,
+          "endSample": 287200
+        },
+        {
+          "id": "ch1-01-05",
+          "startSample": 287200,
+          "endSample": 341600
+        },
+        {
+          "id": "ch1-01-06",
+          "startSample": 341600,
+          "endSample": 410400
+        },
+        {
+          "id": "ch1-01-07",
+          "startSample": 410400,
+          "endSample": 482400
+        },
+        {
+          "id": "ch1-01-08",
+          "startSample": 482400,
+          "endSample": 552000
+        },
+        {
+          "id": "ch1-01-09",
+          "startSample": 552000,
+          "endSample": 626400
+        }
+      ]
+    }
+  ]
+}

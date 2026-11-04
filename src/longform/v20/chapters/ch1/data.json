@@ -1,0 +1,128 @@
+{
+  "chapterId": "ch1",
+  "sceneId": "ch1-01",
+  "projectName": "G21",
+  "claims": {
+    "g21-start": {
+      "value": 1993,
+      "unit": "年",
+      "period": "1993年のG21初期構想",
+      "definition": "G21に関する社内議論開始の年。量産開発本格化の開始年を意味しない。",
+      "source": {
+        "record": "sources/longform-toyota-full-facts.md",
+        "location": "F4、節3",
+        "url": "https://www.toyota-global.com/company/history_of_toyota/75years/text/leaping_forward_as_a_global_corporation/chapter4/section8/item1_a.html"
+      },
+      "checkedAt": "2026-11-04",
+      "verification": "保存済みfactsと本人受入済み台本・画面との対応確認。外部原ページの再閲覧・再検証は実施していない。"
+    },
+    "design-century": {
+      "value": 21,
+      "unit": "世紀",
+      "period": "1993年のG21初期構想",
+      "definition": "計画が対象とする将来の車の世紀。開始年・発売年を意味しない。",
+      "source": {
+        "record": "sources/longform-toyota-full-facts.md",
+        "location": "F2/F4、sources/script-longform-toyota-v20.md 第1章冒頭",
+        "url": "https://www.toyota-global.com/company/history_of_toyota/75years/text/leaping_forward_as_a_global_corporation/chapter4/section8/item1_a.html"
+      },
+      "checkedAt": "2026-11-04",
+      "verification": "保存済みfactsと本人受入済み台本・画面との対応確認。外部原ページの再閲覧・再検証は実施していない。"
+    },
+    "economy-baseline": {
+      "value": 1,
+      "unit": "倍",
+      "period": "1993年のG21初期構想",
+      "definition": "同じ燃料量で走れる距離の従来車を1とする比較基準。実測の絶対燃費ではない。",
+      "source": {
+        "record": "sources/longform-toyota-full-facts.md",
+        "location": "F2",
+        "url": "https://www.toyota-global.com/company/history_of_toyota/75years/text/leaping_forward_as_a_global_corporation/chapter4/section8/item1_a.html"
+      },
+      "checkedAt": "2026-11-04",
+      "verification": "保存済みfactsと本人受入済み台本・画面との対応確認。外部原ページの再閲覧・再検証は実施していない。"
+    },
+    "economy-target": {
+      "value": 1.5,
+      "unit": "倍",
+      "period": "1993年のG21初期構想",
+      "definition": "従来車を1とした同じ燃料量で走れる距離の初期目標比。燃料消費量1.5倍や達成実績ではない。",
+      "source": {
+        "record": "sources/longform-toyota-full-facts.md",
+        "location": "F2",
+        "url": "https://www.toyota-global.com/company/history_of_toyota/75years/text/leaping_forward_as_a_global_corporation/chapter4/section8/item1_a.html"
+      },
+      "checkedAt": "2026-11-04",
+      "verification": "保存済みfactsと本人受入済み台本・画面との対応確認。外部原ページの再閲覧・再検証は実施していない。"
+    },
+    "chart-zero": {
+      "value": 0,
+      "unit": "倍",
+      "period": "1993年のG21初期構想",
+      "definition": "目標比グラフの共通ゼロ点。実車の燃費測定値ではない。",
+      "source": {
+        "record": "sources/longform-toyota-full-facts.md",
+        "location": "F2、output/toyota-ch1-opening-20261102/spec.md カットB",
+        "url": "https://www.toyota-global.com/company/history_of_toyota/75years/text/leaping_forward_as_a_global_corporation/chapter4/section8/item1_a.html"
+      },
+      "checkedAt": "2026-11-04",
+      "verification": "保存済みfactsと本人受入済み台本・画面との対応確認。外部原ページの再閲覧・再検証は実施していない。"
+    }
+  },
+  "subtitles": {
+    "ch1-01-01": {
+      "template": "{{g21-start}}。",
+      "claimIds": [
+        "g21-start"
+      ]
+    },
+    "ch1-01-02": {
+      "template": "トヨタで「{{design-century}}の車」を考える計画が始まった。",
+      "claimIds": [
+        "design-century"
+      ]
+    },
+    "ch1-01-03": {
+      "template": "名前はG21。",
+      "claimIds": []
+    },
+    "ch1-01-04": {
+      "template": "燃費の目標は、従来の{{economy-target}}。",
+      "claimIds": [
+        "economy-target"
+      ]
+    },
+    "ch1-01-05": {
+      "template": "決して低い目標ではなかった。",
+      "claimIds": []
+    },
+    "ch1-01-06": {
+      "template": "テーマに据えたのは、環境と資源。",
+      "claimIds": []
+    },
+    "ch1-01-07": {
+      "template": "規模が大きすぎて取り組むメーカーが少なく、",
+      "claimIds": []
+    },
+    "ch1-01-08": {
+      "template": "いずれは誰かがやらねばならない問題だった。",
+      "claimIds": []
+    },
+    "ch1-01-09": {
+      "template": "内山田氏は、後年そう振り返っている。",
+      "claimIds": []
+    }
+  },
+  "narrationOrder": [
+    "ch1-01-01",
+    "ch1-01-02",
+    "ch1-01-03",
+    "ch1-01-04",
+    "ch1-01-05",
+    "ch1-01-06",
+    "ch1-01-07",
+    "ch1-01-08",
+    "ch1-01-09"
+  ],
+  "acceptedScript": "sources/script-longform-toyota-v20.md 第1章冒頭（ch1-01のナレ2を維持）"
+}
