@@ -1,0 +1,43 @@
+{
+  "outDir": "/home/ds-work/projects/character-video-studio/public/assets/characters/elder-v11",
+  "note": "V11用の紳士3体。参照3面図（Transfer/キャラ参考）の前面ビューだけを切出し、外周白をflood fillで透明化（体内・顔の白は保持）。差し色は帽子の帯と蝶ネクタイのみ（燕尾服の裏地は背面ビュー側の要素で前面には無いため対象外）。rulesの座標は設定シート原本の座標。蝶ネクタイの座標は縦スキャン実測値。",
+  "characters": [
+    {
+      "name": "ホーマー（称賛・赤）",
+      "source": "/mnt/CE14D65D14D6485B/Shared/Transfer/キャラ参考/ChatGPT Image Oct 20, 2026, 03_17_13 AM.png",
+      "out": "homer.png",
+      "crop": [20, 160, 368, 1000],
+      "tighten": true,
+      "pad": 6,
+      "cutout": true,
+      "rules": [
+        {"mode": "line", "color": [200, 50, 44], "p1": [70, 444], "p2": [160, 442], "width": 14, "note": "帽子の帯（白帯 y439-450 の上下の線画）"},
+        {"mode": "ink", "color": [200, 50, 44], "box": [126, 574, 40, 18], "note": "蝶ネクタイ（実測 x126-166/y574-592）"}
+      ]
+    },
+    {
+      "name": "ジャッド（批判・青）",
+      "source": "/mnt/CE14D65D14D6485B/Shared/Transfer/キャラ参考/ChatGPT Image Oct 20, 2026, 03_17_28 AM.png",
+      "out": "judd.png",
+      "crop": [45, 150, 290, 1055],
+      "tighten": true,
+      "pad": 6,
+      "cutout": true,
+      "rules": [
+        {"mode": "ink", "color": [43, 95, 168], "box": [180, 416, 22, 14], "note": "蝶ネクタイ（実測 x180-202/y416-430。この3面図の帽子に白帯は無い）"}
+      ]
+    },
+    {
+      "name": "ケント（検証・緑）",
+      "source": "/mnt/CE14D65D14D6485B/Shared/Transfer/キャラ参考/ChatGPT Image Oct 20, 2026, 03_17_37 AM.png",
+      "out": "kent.png",
+      "crop": [30, 135, 380, 1050],
+      "tighten": true,
+      "pad": 6,
+      "cutout": true,
+      "rules": [
+        {"mode": "ink", "color": [46, 125, 79], "box": [212, 378, 50, 34], "note": "蝶ネクタイ（目視で確認済み・山高帽子に白帯の指定なし）"}
+      ]
+    }
+  ]
+}

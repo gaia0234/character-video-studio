@@ -1,0 +1,119 @@
+[
+  {
+    "character": "ホーマー（称賛・赤）",
+    "out": "/home/ds-work/projects/character-video-studio/public/assets/characters/elder-v11/homer.png",
+    "size": [
+      368,
+      996
+    ],
+    "origin": [
+      20,
+      162
+    ],
+    "painted": [
+      {
+        "rule": {
+          "mode": "line",
+          "color": [
+            200,
+            50,
+            44
+          ],
+          "p1": [
+            70,
+            444
+          ],
+          "p2": [
+            160,
+            442
+          ],
+          "width": 14,
+          "note": "帽子の帯（白帯 y439-450 の上下の線画）"
+        },
+        "pixels": 385
+      },
+      {
+        "rule": {
+          "mode": "ink",
+          "color": [
+            200,
+            50,
+            44
+          ],
+          "box": [
+            126,
+            574,
+            40,
+            18
+          ],
+          "note": "蝶ネクタイ（実測 x126-166/y574-592）"
+        },
+        "pixels": 477
+      }
+    ]
+  },
+  {
+    "character": "ジャッド（批判・青）",
+    "out": "/home/ds-work/projects/character-video-studio/public/assets/characters/elder-v11/judd.png",
+    "size": [
+      290,
+      1052
+    ],
+    "origin": [
+      45,
+      150
+    ],
+    "painted": [
+      {
+        "rule": {
+          "mode": "ink",
+          "color": [
+            43,
+            95,
+            168
+          ],
+          "box": [
+            180,
+            416,
+            22,
+            14
+          ],
+          "note": "蝶ネクタイ（実測 x180-202/y416-430。この3面図の帽子に白帯は無い）"
+        },
+        "pixels": 204
+      }
+    ]
+  },
+  {
+    "character": "ケント（検証・緑）",
+    "out": "/home/ds-work/projects/character-video-studio/public/assets/characters/elder-v11/kent.png",
+    "size": [
+      380,
+      1046
+    ],
+    "origin": [
+      30,
+      136
+    ],
+    "painted": [
+      {
+        "rule": {
+          "mode": "ink",
+          "color": [
+            46,
+            125,
+            79
+          ],
+          "box": [
+            212,
+            378,
+            50,
+            34
+          ],
+          "note": "蝶ネクタイ（目視で確認済み・山高帽子に白帯の指定なし）"
+        },
+        "pixels": 1326
+      }
+    ]
+  }
+]
