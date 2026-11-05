@@ -55,3 +55,11 @@
 | `0.7/vectorize-report.json`（2026-10-22、3B） | `archive/legacy/unknown-origin/0.7/vectorize-report.json` | （移動前後一致） | vectorizer実行の出力先を誤った空に近い出力と推定（参照元なし）。`0.7/` は空になり削除 | フォルダを作って逆向きの mv |
 
 - 由来が分かったため退避しなかったもの：`sources/# トヨタのハイブリッドは、なぜ進化し続けたのか.md`（v18準拠の音声制作準備稿、本文に「本人確認済み・採用済み」→ U2 の記録としてコミット）、`tools/vectorizer/`（追跡済みの現役ツール、scripts/build-elder-svg.py から参照。未追跡は package-lock.json のみ → U5）。
+
+## U8：Codex v6 共有ファイル途中変更のパッチ保全（2026-11-06 本人「保全」、PM Main 実施）
+
+- 対象：変更中のまま残っていた5件（public/assets/manifest.json、scripts/check-longform.mjs、scripts/generate-dialogue-voice.py、src/data/longform/toyota01.json、src/longform/LongformToyota01.tsx）。更新は2026-10-19 14:15〜18:16（JST）。
+- 由来：toyota01.json・LongformToyota01.tsx 等は、Codex が v6 冒頭3人掛け合いを共有ファイルへ直接入れた途中作業と判断（sources/longform-v6-record.md:42 の観測記録、toyota01.json の note が「v6：承認済み3キャラ掛け合い18秒をv5本編の前へ追加」）。v6 はその後 57b8e22 で別コピーとして実装された。manifest.json は v6 だけでなく v5〜v9 の音声登録（narrator-v5、intro-v6、longform-toyota01-v5〜v9、各 audition）と akio-toyoda-illustration-v1 の移動を含み、v6 以降の登録が混在する。本人受入なし。
+- 保全先：`archive/legacy/codex-v6-shared-20261019/codex-v6-shared-20261019.patch`（`git diff --binary`、2563行、SHA-256 先頭 24dcddd2733cc6c8、基準 566d256）。参照する音声は 566d256 でコミット済み（U7）。
+- 作業ツリーの5件は変更中のまま残した（戻していない）。共有ファイルの追跡版は v5 のまま。
+- 復元：基準コミットの5件に対して `git apply archive/legacy/codex-v6-shared-20261019/codex-v6-shared-20261019.patch`（事前に `git apply --check`）。作成時に `git apply --check -R` が通ることを確認済み。
