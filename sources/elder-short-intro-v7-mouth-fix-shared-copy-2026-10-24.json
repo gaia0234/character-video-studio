@@ -32,8 +32,8 @@
     },
     {
       "name": "elder-short-intro-v7-traced.mp4",
-      "bytes": 6132687,
-      "sha256": "a583fd1caaf2464bb71b93aa977c1b6d62c17a8ddaeaa23a946c4085b6c8c415"
+      "bytes": 6132651,
+      "sha256": "70e023d16eeac3c5529e1938688efd0340663c00013cd7d1a494057c47ff4002"
     },
     {
       "name": "still-all.png",
@@ -115,5 +115,15 @@
       "bytes": 180,
       "sha256": "85869b82944dd6e3dc2c0fecae7a841e1e6e976ad8e69706ca85220b2699fb4d"
     }
-  ]
+  ],
+  "revision": {
+    "date": "2026-10-24",
+    "trigger": "本人「ホーマーは表情が変、そもそも元から笑っているからね。笑わせる必要はない」→ 本人承認「①既存フォルダの上書き」",
+    "change": "ElderShortIntro.tsx の homer から exprFile/exprAt を外し、元画像トレースの笑い顔を一貫して使用（judd/kent の表情差分は従来どおり）。動画を再レンダーして共有先の本体mp4を上書き。svg9種・スチル4枚は構成変更の影響なしのため現行のまま（homer-happy/homer-cheer は動画未使用の資産として残置）",
+    "verify": "frame100 の still で基本の笑い顔に変更されたことを目視。動画はRemotion同梱ffprobe（n7.1）で 1080×1920・30fps・20.000秒・600フレーム・h264 を実測。上書き後に全18件のSHA256再照合で一致",
+    "video_sha256": {
+      "new": "70e023d16eeac3c5529e1938688efd0340663c00013cd7d1a494057c47ff4002",
+      "previous": "a583fd1caaf2464bb71b93aa977c1b6d62c17a8ddaeaa23a946c4085b6c8c415"
+    }
+  }
 }

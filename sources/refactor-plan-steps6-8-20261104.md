@@ -2,9 +2,11 @@
 
 ## 現在の実行承認（2026-11-04 更新）
 
-**承認範囲の実装・必要検証完了、Claude PMの最終受入待ち**：2026-11-04、本人の明示再開承認を受けdanger-full-access環境で残修正・still比較・layout-check・別Reviewerを完了。手7は対象一覧だけ。手8・STATUS実変更・Git commit/fetch/pushは未実施。前回のChrome拒否はPMのworkspace-write起動設定が原因と本人確認し、停止経緯・累計は後段に保持。最新証拠は `output/refactor-step6-ch1-20261104/implementation-result.json`。
+**手6の実装・必要検証、手7のSTATUS実変更が完了・別Reviewer合格**：2026-11-04、本人承認の手7はB1-r6を除く9件を8欄へ整理し、原文/証拠/旧停止条件を保持して受入済み。B1-r6・手8・Git操作は未実施。手6証拠は `output/refactor-step6-ch1-20261104/implementation-result.json`、手7証拠は `output/refactor-step7-status-20261104/migration-result.json`。過去の停止経緯・累計は後段に保持。
 
-- 本人承認：手6の契約・specテンプレート・受入済みch1オープニング1場面の移行、手7の対象一覧だけ。下記の初期計画中の「計画のみ」は作成時の履歴。手8・3D依存・STATUS実変更・他場面は未承認。
+- 最新（2026-11-05）：手8は開始・段階B実施済み、3D依存は採用。末尾「手8 開始」節を参照（本節の「手8・Git操作は未実施」「3D依存は未承認」は2026-11-04時点）。
+
+- 本人承認：手6の契約・specテンプレート・受入済みch1オープニング1場面の移行。手7は対象一覧作成後、本人がB1-r6を除く9件のSTATUS実変更を追加承認した。下記の初期計画中の「計画のみ」は作成時の履歴。手8・3D依存・他場面は未承認。
 - 基準：`sources/toyota-production-replan-20261102.md`「v19第1章冒頭 ch1-01 rev2（2026-11-03 本人受入）」の本人「Rev2 OK」、`src/longform/ToyotaCh1Opening20261102.tsx` と専用entry、811f/30fps、既存WAVとlead12f、既存still A f255/B f360/C f570。構想車・机・紙・資源・街の形/配置/文言・音声/尺/演出を維持する。
 - 変更：新規v20コード/章data/timing、既存境界のSHA付き移管、specテンプレート、layout-checkのprops受渡しのみ。既存採用コード・音声・dirtyファイルは変更しない。外部AI・音声生成・全編出力・commit/fetch/push禁止。
 - 検証：同一frameの比較still、既存A/B/C specで新entryのlayout-check exit 0、npm run check exit 0、契約境界テスト、別reviewer。実装・結果は以下に追記する。検証先 `output/refactor-step6-ch1-20261104/`。新たな動き・声の受入へ拡大しない。
@@ -170,3 +172,27 @@ PMが欄を埋め、そのままOCへ渡してから制作する。実在物の�
 - 共有：標準Transferの `character-video-studio/2026-11-04-ch1-refactor-step6-still-comparison/` へ比較画像3枚だけを保存し、全てコピー先読み戻しSHA一致。WindowsパスとSHAは `sharing-result.json`。資料画像・source素材・秘密値を共有していない。
 - 失敗累計②4/次5を保持：前段python不在1、保存PNGの厳密比較非一致1、同型読取引数ミス3回目1、Reviewerの未提出証拠への照会1。①fetch/Chrome各1は本人再開済み、③2はそのまま。改善は実在パスの列挙と確定提出通知を待つこと。成功・再開・担当変更で累計を下げない。
 - 再開から記録完了まで約8分（14:14:13〜14:22:08 UTC、停止待ち時間を除く）。一時bundle/tmp/cacheと失敗ログは再開証拠として残し、削除なし。新しい別タスクへ進まず、本タスクの技術成果をClaude PMへ渡せる状態。PM受入/後続commitは本人指定どおりこの実行の対象外。
+
+## 手7 STATUS実変更（2026-11-04 本人承認）
+
+- 目的・対象：`sources/refactor-status-inventory-20261104.md` の9件をHubの8項目・各1行へ整理する。B1-r6進行中の `output/toyota-ch2-49days-pilotb-20261103/STATUS.md` は明示除外。Git操作・制作/依存/手8は行わない。
+- 基準・維持：元STATUS全文、既存履歴/証拠、旧失敗集計と停止値/条件を無変更で保全。過去のuser_reviewや受入未確認を現行の制作再開指示にしない。ch1の本人受入doneを維持。
+- 変更・順序：各タスクに元全文のバイト同一snapshotを `submissions/NN.md` として保存 → 失敗原文を `failures.md` へ保存/参照 → STATUSを8欄化 → 元SHA・8欄・参照・旧集計保持と他ファイル保全を確認 → 別Reviewer → 本一覧/記録の適用状態を更新。
+- 所有：同一Implementerが対象9フォルダのSTATUSと新規移管先/結果を所有。Mainはsources正本を所有。共有②累計4/次5を保持し、①即停止。同じ役割スレッドを再利用、B1-r6のOC担当へ追加指示なし。
+- 必須検証：元本文SHA=移管先SHA、9件各8行/各キー1つ、owner1人、state enum、日時形式、参照存在、失敗抜粋原文一致、証拠/既存履歴の無変更。文書整理のためnpm・still・layout等の制作検査は行わない。
+- 結果保存先：`output/refactor-step7-status-20261104/migration-result.json`。Reviewer結果回収前は未完了。
+
+### 手7完了・受入
+
+- 指定9件すべて8行化し、各元STATUSは `submissions/01.md` にバイト同一保存。失敗は各 `failures.md` に元行/byte/SHA付きで移管。既存295ファイルの証拠/履歴はSHA不変。原文・旧累計/停止・却下/委譲条件の削除/再分類なし。
+- 局所処理exit0、8項目・参照先・原文一致・既存ファイル保全の検証が合格。別reviewerが現物/証拠を確認し合格（重要指摘なし）、Mainが形式移管として受入。制作検査の再実行なし。
+- B1-r6は本人の明示除外で未変更。旧版8件の現役/凍結や過去の確認待ちの現在への適用は未確認としてPMへ残す。ch1の本人受入doneを維持し、作品の新しい採否・制作再開を行っていない。
+- 適用ファイル一覧・各SHA・未対応理由は `sources/refactor-status-inventory-20261104.md` とmigration-resultを参照。Git操作・手8・外部操作・削除なし。局所処理script/台帳/log/resultは保全証拠として保持。新規失敗0、共有②4/次5を維持。
+- 本リファクタタスクの今回承認範囲は完了。追加の制作/手8は未承認のため着手せず、本人が次を判断する。セッションは自己終了しない。
+
+## 手8 開始（2026-11-05 本人「8の計画を進める」）
+- 3D依存：採用（r10f 本人受入 2026-11-05）。依存は残し、3D部品は現役/基準/未参照に分類する。
+- 段階A（棚卸し・台帳案・Gemini隔離案・pycache案、移動/削除なし）を Codex に委譲。証拠 output/refactor-step8-20261105/。段階B（移動）は PM 確認後に本人が単位を指定してから。削除は本人の対象指定後。
+- 本人「1」（2026-11-05）：手8段階Aは Codex の回復後（23:30開始の予約、job cvs-step8a-codex-2）に実行。
+- 段階A完了（2026-11-05 23:5x）：1356ファイル、退避候補1（src/longform/ToyotaV3Opening01.tsx、元位置で論理凍結を推奨）、延期738（未追跡・dirty）。独立Reviewer合格。PM確認済み。Gemini隔離・pycacheは未追跡のため案のみ。段階Bは本人の単位指定待ち。
+- 段階B実施（2026-11-05、本人「そのように・添える・削除追記」）：L01論理凍結、Gemini script を scripts/manual-external-ai/ へ移動＋README、pycache4件削除＋.gitignore追記。台帳 sources/legacy-archive-index.md。tsc exit 0。

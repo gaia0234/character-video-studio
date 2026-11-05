@@ -1,0 +1,18 @@
+{
+  "title": "内山田竹志 似顔絵 v1",
+  "file": "public/assets/people/uchiyama-takeshi-v1.svg",
+  "created": "2026-10-30",
+  "reference_url": "https://global.toyota/pages/news/images/2018/08/06/1500/20180806_03_01.jpg",
+  "reference_usage": "閲覧のみ。画像ファイルはrepo/output/共有へ保存せず、SVGへの埋め込み・トレースもしていない。",
+  "method": "SVG手描きパス（外部AI画像生成なし）",
+  "depicts": "内山田竹志氏の説明用似顔絵（実写の再現ではない）",
+  "features": [
+    "短い白髪混じりの髪",
+    "眼鏡",
+    "紺のスーツ",
+    "白シャツ",
+    "ネクタイ",
+    "中立の表情"
+  ],
+  "status": "pilot用ドラフト。PM/本人受入前。"
+}

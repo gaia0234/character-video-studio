@@ -278,6 +278,13 @@ v3検査時点の結論（2026-10-18。後続の改善は「v4視覚改善の制
 - 承認境界：試作は非公開・試験限定。push・公開・商用は別途本人承認。台本の数値・固有名詞は出典確認を通し、確認できない数値は使わない（参考チャンネルの23,740件のような数値問題の回避）。
 - 題材：トヨタ（2019年電動化特許の無償開放〜第6世代ハイブリッドシステム）で本人確定。事実確認完了（2026-10-17、docs-researcher）：2019年4月3日発表の電動化関連特許の無償開放は約23,740件（期限2030年末、global.toyota 27512455）。約5,680件は2015年1月の燃料電池特許（FCV、期限2020年頃目安・水素関連は無期限、global.toyota 4663648）。プリウスは1997年12月発売・世界初量産ハイブリッド（75年史。prius20thページの10月と整合しないため台本では12月とし75年史を第一出典にする）。第6世代ハイブリッドシステムは2025年5月21日の新型RAV4世界初公開で第6世代の呼称を公式使用、PHEVにトヨタ初搭載、PHEV日本発売2026年3月9日。EU規制は2021年7月提案、規則(EU) 2023/851で2035年から新車CO2実質ゼロ（2025年12月に緩和改正案が出ている点は台本で扱うなら前提供了）。ハイブリッド累計販売の公式確認できる最新マイルストーンは2020年1月時点で1,500万台超。
 
+### V9 credit修正版の残工程再開（2026-10-19・承認済み／依頼受付）
+
+現在の結論：本人「進める」で現行修正の完成を再開。Git fetch成功ahead20／behind0、HEAD83c3cdb、旧差分は保全。既存OpenCode担当はactive対象なし・outcome interrupted、保留なし、前回全尺render要求もinterruptedと確認。新MP4は未完成。GLM同担当をvariant=maxへ変更してGETで読戻し確認し、出力→既存音量／実音→完成MP4末尾PNG→結果記録を一括依頼した。共有は本人画面受入・共有範囲承認を区別し、この依頼では行わない。
+
+- 所有：OpenCodeはV9.tsx／v9-recordと新規credit出力のみ、Mainはsources.md記録と受入。他版・基底v6・manifest・voice・draftsは非変更。3行と119秒原寸の合格は再検査せず再利用する。
+- 操作：POST session/modelは空応答で成功、呼出側のJSON解釈が1回失敗したため変更を再送せずGETでmax実値確認。通信6にこの解釈失敗1を保守加算し累計7／次10停止。動画10／次15、過去high比較は変更しない。グローバル設定変更・追加比較・自動承認・削除・pushなし。
+
 ### ハーネス読取監査と6工程の現行差分（2026-10-19）
 
 本節は2026-10-19時点の監査・構成整理の記録（履歴）。以下の「現在の結論」「現在地」「受入境界／不足」等の書き出しは当時の値であり、現在値として読み替えない。credit修正版MP4未確認・残工程優先・失敗10・通信6等の記述は当時点の記録として保持する。現行の6工程運用正本は [READMEの「ロング解説の6工程」](../README.md#ロング解説の6工程)、制作状態と最新の失敗累計は [longform-v9-record.md](longform-v9-record.md) を参照。下記の表は当時の分析として保全し、今回の整備では編集していない。
@@ -322,6 +329,46 @@ v3検査時点の結論（2026-10-18。後続の改善は「v4視覚改善の制
 3. 将来の必要時だけ、共通描画／schema／検査ロジックを1箇所へ寄せ、版別JSON・音声・成果物・出典判断は固定保存する選択肢を検討。現状維持＋入口整理が最小案、共通ロジック分離は別の承認単位。全版削除・全版一本化・新規測定基盤を前提にしない。
 
 参照訂正（2026-10-19・Hub通知）：A＝一本化、B＝出荷自動化、C＝数値出典照合、D＝仕様分離の記号定義はProject Hub `docs/operations-decisions.md`先頭「保留・次工程」節に現存し、今回その行を確認した。元提案全文の未照合と記号定義の不存在を混同しない。A〜Dは提案のままで採用・実装は未承認。6工程の境界と必要最小案は上記のとおりで、今回の参照訂正で追加調査・OpenCode再送・実装・試験を開始しない。動画失敗累計10／次15を維持。通信は旧停止5→本人再開後の要求ID消失404で6、次10停止という案件記録を保持するが、今回Hub承認は読取監査だけでありOpenCode通信を再開する許可ではない。
+
+### Hub調整 cvs-coordination-20261019（2026-10-19・状況報告／統合案）
+
+現在の結論：V9はOpenCode制作・共有・local commit b50eab4まで完了（正本とGitで確認）。案件CodexはOpenCode通信累計5停止中で、比較依頼の現時点の稼働は未確認。今回のHub照会は状況報告と統合担当案のみで、通信再試行・新規実装・既存差分破棄を承認しない。
+
+- 返信受付：codex queueがmessage 01a153a8-0fd6-76b1-a8ab-a0cb94839b52をHub宛てに受付。Hub受信・返信・統合承認は未確認。送信本文は/tmp/cvs-coordination-20261019.txtに保存し、再開証拠として保持（秘密値なし）。
+- Hub追記への分担案：Codexは承認・設計仮説・問題切分け・差分証拠の受入、OpenCodeは明確な実装／定型調査／必要検証を処理単位で担当。次の安全な単位は、本人の通信再開後に既存比較の状態・所有・実モデル・保留要求・失敗累計を確認し、1担当へV9の3声credit最小追加→型／末尾代表→必要出力・音量・実音・共有一致・結果記録をまとめて渡す案。確認済み本編の検査を繰返さず、声・台詞・尺・配置を維持。記録整理は別単位で範囲承認後、sources.mdの既存差分を渡して1担当へ所有移管する。今回の追記は通信停止解除・A〜D着手の許可ではなく、OpenCodeへ新規送信なし。
+- 宛先Hub 01a14ffc-5bb8-7733-acfb-534bbe5d60b9、送信元案件Codex 01a14ef0-15c3-70d3-97c5-90df6862e9d8。OpenCode V9担当ses_eb52ac5b5ffeTx75Nm4gRniRy8（GLM high）、品質比較DS専用ses_eac68bb0effemndIqAk0pR6grq。Hub照会のses_eacbb1b48ffeLvmbYGUzzZUZ3dは別調整用でV9制作担当ではない。
+- 所有・権限：案件Codexはsources.mdの判断・承認・受入記録、旧v6差分を保全管理。OpenCode制作担当はv9専用TSX／JSON／entry／check／19WAV／v9-record（commit済み）。現在比較2担当はoutput/opencode-quality-20261019/{glm,ds}/candidate.patch/result.jsonのみ、src編集は未許可。共通構造A〜D変更・基底v6破棄・削除・pushは未承認。
+- 統合案（提案・まだ適用しない）：案件Codexが正本の採用状態・承認境界を決め、通信再開と統合範囲承認後にOpenCodeの1担当へsources.mdのv6予定表記とv6/7/8/9記録の入口・状態の整理だけを委譲する。台本／Compositionの物理統合・置換は含めず、既存専用JSONを版別正本として維持し、最新視聴候補V9と旧版保全の関係を明示する。Codexは差分と既存証拠を受入、Hubは案件間調整のみ。新しい動画検証や過去検査の反復は行わない。
+
+### OpenCodeへの制作集約とGLM／DS比較（2026-10-19・比較回収／GLMへ修正依頼受付）
+
+現在の結論：本人がMainの作業担当をやめOpenCodeに制作させ、GLMとDSの品質も計測する方向を指定。Mainのv6実装・追加生成は停止し、既存成果を保全。Mainは要件・承認範囲・評価と受入の担当とする。本人の「進める」で既存CLIによる指示・受入と品質比較を承認。V9の掛け合いcredit不足を共通課題として、各1候補を別outputへ作成中。GLM/DSとも既存freeモデルを使用し、有料モデル・設定変更は行わない。
+
+- 画面受入（2026-10-19）：source APIで訂正stillコマンド／cwd一致を照合。once承認送信時にrequestID消失の404（通信累計6）を観測し、保留一覧とsourceツール結果を読み戻した。stillは既にexit0で生成済み、実行許可の主体は未確認。Mainがclosing.png原寸を目視し、横並びcredit・字幕・カーノ・年表・つづく非干渉と3行差分を合格と判断。新版出力／音量／共有／結果記録の既存承認工程をGLMへ送信。過去の不適切render要求は未実行で是正済み。
+- 修正途中の品質管理：GLMが横並び3行をV9.tsxへ適用。末尾画像用permissionがrender ... closing.png --frames=3570だったためMainがsourceを照合して個別rejectし、既存still --frame=3570へ訂正指示（受付msg_153bca4840014otDSjCHA7gwNg）。不要な差分比較スクリプトの書式加工失敗も担当ログで観測し追加検証を止める指示。今回の型/画像/完成動画の受入は未完了、音声・台本は非変更。通信再開後の送信とpermission拒否は成功し通信累計5を保持。
+- Hub報告：本人が比較・分析・採用内容・結果の報告を明示指示。実測/候補選定/指示遵守問題/実装途中と未確認/所有・停止条件を分け、Hub 01a14ffc-5bb8-7733-acfb-534bbe5d60b9へqueueする。元本文/tmp/cvs-opencode-quality-report-20261019.txtを証拠として保持。通常受領往復不要とする。
+- 明示再開・比較結果（2026-10-19）：本人「進める」で通信5停止から再開。開始済みrun2件はexit0で終了済み、両候補とresultを回収。DSの横並び3行追加は縦増大を避けるため採用候補、GLMの縦積み1行は字幕干渉未検証で保留。両モデルが不要なshell検証を追加し、GLMは7shell/拒否2、DSは34shell/拒否6。DS自己申告failures0は実ログと矛盾し補正、DSの追加実行は停止。GLM候補の自己説明「他ファイル未参照」も参照ログと区別して評価する。
+- 既存利用記録の実測：GLM high 342.788秒／tool8／input138189・output3413・reasoning4225・cacheRead829312、DS high 1094.735秒／tool62／input215867・output27614・reasoning77935・cacheRead3587456。各costReported0。新しい計測基盤・追加比較なし、ログ集計のみ。GLM既存履歴とDS新規文脈が異なる1課題のためモデル全般の優劣や節約率へ一般化しない。出典`output/opencode-quality-20261019/run-metrics.json`。集計のerror型が文字列でないため1回失敗しstr変換で解消、通信失敗とは別。
+- 次の処理単位：V9担当GLMだけへDS候補の適用→型→末尾119秒still→Main画面受入後の全尺出力／既存音量経路／共有一致／結果記録を依頼。所有はV9.tsx／v9-record／新規outputだけ。旧v6・声・台本・尺・manifestを変更しない。Mainはsources.md所有のまま。正規APIは実serverの要求に合わせtop-level textで送信成功（message msg_153b8f8ff001UU8RWcMyRBhg8H）。受付のみで受信・実装未確認。通信失敗5を保持、次10停止。権限askは承認済み具体操作だけonceで中継し、不要検証は通さない。
+- 通信停止（2026-10-19）：今回の比較runはGLM既存ses_eb52ac5b5ffeTx75Nm4gRniRy8とDS新規ses_eac68bb0effemndIqAk0pR6grqで開始。両者は元指示で不要としたshell検証を試み、非対話runがaskを拒否。GLMは2回拒否後に別コマンド検証へ進もうとしている旨を観測。Codexは元範囲へ戻す是正指示を正規APIで送ったが、ローカルSDKのPOST /api/session/{sessionID}/promptのprompt.text形式に対し実serverはtext必須と400を返し、2宛先とも送信失敗。先行の通信3（sandboxログEROFS1＋export pipe JSON欠落2）に今回2を加え累計5で追加通信・再試行・調査を停止し本人へ再開相談。是正受信・比較完了・実装受入は未確認、既存runの終了も未確認。設定変更・自動承認・動画再生成・src修正はCodexから実施していない。
+- この時点の候補：GLMのcandidate.patchはNemoラベル内へ3声creditを1行追加。高さ増による字幕干渉が未検証なので受入保留。DSは結果未確認。比較指示／基点はoutput/opencode-quality-20261019/に保全。新しい評価用基点・依頼文・候補は証拠として保持し削除なし。最新本人規則の個別once承認中継は承認済み操作に限るが、今回不要とした検証をその権限で通さない。
+- 通信／実効モデル確認：CLI `/home/ds-work/.opencode/bin/opencode`、制作担当 `ses_eb52ac5b5ffeTx75Nm4gRniRy8` はV9完了・idle succeeded、実モデルopencode/glm-5.3-flash-free variant high。別セッションses_eacbb1b48ffeLvmbYGUzzZUZ3dはHub別作業のDSなので流用しない。送信元Codex 01a14ef0-15c3-70d3-97c5-90df6862e9d8。設定はGLM主モデル／DeepSeek small_model、今回のDS評価は比較専用セッションでexplicit指定し永続設定は不変。
+- 比較実行：V9固定入力のSHA/HEAD・共通指示・出力所有範囲を`output/opencode-quality-20261019/`へ保存。GLM既存担当、DS新規比較専用へrun送信、GLM/DSともhigh。1候補のみcandidate.patch＋result.json、srcは非編集、採用後にOpenCode1担当が実装・必要検証を行う。初回可用性／指示適合／最小差分／画面内収まり、修正回数・所要時間・tokens/costを評価する。既存GLMの履歴と新規DSの文脈量は異なるため厳密なモデル単体ベンチではない。
+- 通信障害：sandboxのログEROFS1回は昇格CLIで解消。exportはpipeでJSON途中切れ2回、2回時点で原因整理しstdoutを一時ファイルへ直接接続して完全JSON取得に成功（ファイル自動close、永続一時物なし）。出力schemaはv2のtype/content/modelを使用。通信確認の失敗3を保持、次累計5で停止。送信runは開始済み、受信・結果はまだ未確認。
+- 提案：既存OpenCodeの設定／GLM・DSの実モデル名・提供元を確認し、同じV8素材と同じ修正指示、独立出力先で比較する。初回品質（話者・配置・字幕・音声・尺・creditの指示適合／破綻）、完成までの修正回数、所要時間、使用量・実費を記録する。実測できない費用やモデル版は未確認とし、1課題の結果を全用途へ一般化しない。比較用の重複制作や本制作への反映は承認範囲を先に定める。
+- V8確認：OpenCode記録はV8出力・共有完了、V9速度1.04版を制作中。MainはV8正本・TSX/JSON・保存済み8シート253コマ（索引0.0〜126.0秒）を確認し、重大な欠け／重なりは認めず。冒頭は左ルーノ／中央ミーノ／右カーノ、ミーノ疑問→カーノ補足→ルーノ進行。Nemo男声2、pitch−0.06／intonation0.75／speed0.94、20場面126.7秒。音量−14.3 LUFS／−1.7dBTPはOpenCode記録でMainは再測定していない。聴取・連続再生は未実施。
+- V8共有実値：7,732,617bytes、SHA-256 a7c4730449d4fce591d0b4bb1e0b02f3caf31e08e29495c2ffb32d0eeabcf724、標準共有の2026-10-19-longform-v8-narrator2内MP4とMain読み戻し一致。V8 commit a257b59。画面末尾の音声creditはNemoのみで、掛け合い3声のcredit表示はTSX/JSONにない（素材manifest等の出典記録とは区別）。修正は未実施、受入課題候補として報告する。
+- 保全・停止：V8/V9および別セッション成果を変更せず、Mainのv6未完了差分・3導入WAV・比較7素材は保全。実装担当と監査担当は利用枠上限で停止しているが、品質検査合格とは扱わない。OpenCodeへの通信・起動・モデル実行はまだ行っていない。新規一時物なし。
+
+### v6：3キャラの導入と低音ナレーション比較（2026-10-19・Main作業停止／差分保全）
+
+現在の結論：本人が「進める」で冒頭掛け合い追加と低く落ち着いた男性ナレーションの代表3文比較を承認し、中断後「再開」。ナレーター本採用・全16本の声差替えは比較聴取後に判断する。
+
+- 目的・対象：ミーノがルーノへ「世界はEVの時代って聞くけど、日本は遅れていないの？」と質問、カーノ「そんなことはないみたいですよ。トヨタのハイブリッドは、今も人気があるみたいです。」、ミーノ「それじゃあ、トヨタのハイブリッドの歴史をひもといてみよう！」。3体を同時表示し発話・反応を既存ポーズで表現。質問はキャラの疑問として扱い、世界のEV化の断定を追加しない。
+- 手順・完成条件：既存VOICEVOX経路で掛け合い3本生成→新しい冒頭画面・字幕・発話割当→既存本編と接続した新版の出力／必要画像・音量検査→共有。並行して既存Nemoで低め・抑揚控えめ・少しゆっくりの代表3文比較音声を作成し、設定とクレジットを添えて共有。本編声は採用前の現行を維持する。
+- 保全：v5動画／WAV、別セッションのv5bファイル、別prefix音声16本とmanifest追加、drafts、pycacheは保持。push・公開・削除なし。実装担当はTSX/台本/check、Heavyは音声生成と比較／manifest、Mainは正本・共有・commit。失敗累計は動画10、voice setup2／生成0を引継ぎ、2回で原因整理・累計15（動画）で停止。
+- 開始Git：fetch成功、masterはorigin/masterにahead14／behind0。初回状態確認直後に別セッションのv5b分離commit `300bf86`を確認し保全。今回の編集前からmanifest16追加・drafts・別prefix16音声・pycacheが存在。今回のcommitから除外する。
+- 必須検証：型・台本／音声実尺・話者対応・本編データ保持・新しい導入と接続画面・全尺出力／実音・音量。比較の聴取は本人待ちで、声の品質合格とは断定しない。長時間の出力は担当へ一括委譲する。
 
 ### v5：ナレーター・説明役・登場人物の分離（2026-10-19・実装／技術検査／共有完了）
 
@@ -522,6 +569,29 @@ v3検査時点の結論（2026-10-18。後続の改善は「v4視覚改善の制
 - 当面使わない：本人表でNano Banana/Veo/Lyriaの対象枠は0。現行無料枠で画像/動画/BGM生成を予定に含めない。Liveは会話用途、Embeddingsは大規模検索が必要な時の候補に留め、今回の完成に必須ではない環境を追加しない。
 - 出典：https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash-lite 、https://ai.google.dev/gemini-api/docs/video-understanding 、https://ai.google.dev/gemini-api/docs/models/gemini-3.5-transcribe 。各公式ページを本日開いて確認。TTS比較は既存公式model資料を再利用。制限数値は本人貼付表の時点値、現アカウントのAPI実利用/無料請求適用/日本語精度は未検証。
 - 提案の効果/負担と採用単位：補助3種を一括導入せず、通常制作で必要になった1用途だけ既存CLI/APIから限定利用する案。効果は見落とし候補と整理負担の削減、負担は接続/入力設計/結果照合。新しい承認済み処理に必要な入出力/所有/受入を固定してから実装し、今回調査を追加試験や自動化の承認にしない。動画関連38/次40、通信11/次15を維持。新規一時物はtask-only staging patchのみ、削除なし。
+
+
+### Gemini補助活用・冒頭比較の実行計画（2026-10-21）
+
+本人「それで進める」により補助モデル活用を承認、まず3.8 Flashで深読み地図の参考動画とV10の冒頭各120秒を比較する。目的は既存の静止画/説明欄調査で未確認だった音声と画面の組合せを、改善判断に使える時刻付き候補へすること。追加Transcribe/Flash-Liteは必要時のみ。全尺受入/事実検証/本編改変/動画再生成/自動共有の承認とは扱わない。
+
+- 入力：output/longform-toyota01-v10-lufs14.mp4の0–120秒（同梱ffmpegでcopy切出し、原本不変）と既存参考 https://www.youtube.com/watch?v=3xdIwOjzUL8 の0–120秒。ユーザー評価は仮説として扱い、キャラ造形/出番/動き/字幕/声の低さと抑揚/間/導入を比較し、観測・推測・未確認を分ける。Geminiは候補提出のみ、Codexが採否。
+- 方法：公式Interactions RESTを既存キーの秘密ヘッダー経路で使用、video inlineとYouTube URI、processing static/start_offset0/end_offset120/fps1。モデル呼出し1回だけ、出力日本語。参考URLを読めないとき創作せず不明。HTTP失敗/枠不足では自動再送/別モデル切替なし。現在の無料設定を変更しない。APIキー/生base64/認証URLをログ/Gitへ残さない。
+- 所有：OpenCode既存担当のidle/案件パスを確認。今回起動で承認済みopencode/glm-5.3-flash-free#maxを明示（CLI runの正規model指定、安全な待機区切り）。編集所有はscripts/analyze-gemini-video-opening.pyとoutput/gemini-video-opening-review-2026-10-21/のみ。Mainはsources記録と結果受入を所有、既存dirtyは保全。
+- 必須検証/完了条件：構文/固定入力/1回API結果と実効モデル/usage、根拠の時刻と分析範囲、参考未取得/聞取不明を区別。最終的に本編へ必要な改善だけ記録、同じ解析を二重実行しない。動画38/次40、通信11/次15を保持。2失敗で原因整理、上限は本人相談まで停止。新規依存/アカウント/課金/削除/pushなし。
+
+- Hub報告（本人「Hub統括に報告」/2026-10-21）：Hub01a14ffc-5bb8-7733-acfb-534bbe5d60b9へcvs-gemini-adoption-20261021としてGemini全4役/無料枠、Qwen試聴共有、OpenAI中止、補助モデルの承認範囲と未実行をqueue送信。受付ID01a15e14-e111-7e93-8245-66c064a7f513。送信受付のみ確認、受領/返信未確認。
+- 実装担当の切替（2026-10-21）：既存OpenCodeはsucceeded/idle確認後、正規runの--model opencode/glm-5.3-flash-free#maxで既存セッションへ今回依頼。実効GLM maxは確認できたがprovider.free-limit/429で開始前失敗、retryAfterMs47019000（約13時間）。課金/別モデル/同呼出し再試行なし。動画関連39/次40へ。既存Codex implementerへ処理単位を引継ぎ、同じ編集の競合なし。list_agentsにMainのみだったため同名実装役をspawnしようとして既存path重複の拒否1、通信12/次15へ。既存/root/implementerへのfollowup再利用に修正し依頼受付。新しい実装スレッドの生成は成立せず、既存役の実行設定変更はしていない。実装失敗の次1件で動画40停止を担当へ明示。
+
+- 冒頭比較・累計40停止（2026-10-21）：実装役が固定plan/scriptを用意し構文確認後に実行。保存result.jsonのstatus=error_api/requestedModel=gemini-3.8-flash/httpStatus400/failureCount1をMain確認。比較結果は未取得、時刻付き改善案や音声評価は未確認。失敗1で動画関連40到達、通信12/次15を維持。Mainが実装役へ追加読取/調査/修正/再送/代替/検証を停止通知。HTTP400の具体的な拒否理由は未確認、推測でモデル非対応やキー不正と断定しない。既存の技術受入済みV10/Gemini試聴は無変更。
+- 保存/未完了：scripts/analyze-gemini-video-opening.py、output/gemini-video-opening-review-2026-10-21/のplan/request/resultと分析用clip等を保全（詳細棚卸しは停止後未実施）。未完了タスクのためlocal commitなし。本人が累計40停止を踏まえ明示再開するまでエラー原因の追加確認/最小修正/再送を行わない。停止前のHub報告は送信受付済み、今回重要障害は追記報告する。失敗で無料枠を何回消費したかは未確認。
+
+- 累計40後の再開/原因整理（2026-10-21本人「再開」）：停止解除、動画40/次45・通信12/次15を引継ぎ。関連API referenceの推測URL1件が取得不可で動画41/次45、公式overviewから参照リンクを辿る正規経路で取得。これ以上URLを推測しない。公式 https://ai.google.dev/api/interactions-api のVideoContent.processing.start_offset/end_offsetは「秒数+s」のstringを要求（0s/120s）。ガイドの数値例と正式referenceに不一致あり、失敗manifestの数値0/120は型が不適合。flat Content配列とstore:falseは正式仕様にあるため、それらを原因と断定/無用変更しない。旧400本文未保存で当時の唯一の原因とは未確定だが、根拠ある修正箇所と判断。
+- 実行元訂正：既存OpenCode履歴msg_15e1de701001FHvhfmsRBeIu2yでminimax-m3.1-flash-free/maxが10:59UTCのclip/request/resultを生成しHTTP400で停止したことを確認。MainのGLM429後にも元の依頼がそのsessionで処理されていた。Codex implementerが11:02UTCにscript/planを保存し、実行cell6は既存成果ガードでexit2、API未送信（待機結果を本人再開後確認）。前報の「Codex実装役がHTTP400を発生」は実行元の誤認として訂正。比較API失敗は1件のまま、ガード停止は期待どおりの二重実行防止で失敗加算しない。OpenCodeは直近succeeded/idle、Codex担当も停止済み確認し、今回の単一編集所有を既存Codex implementerへ固定、OpenCodeへ新依頼/自動再試行しない。
+- 限定修正/再送：旧clip/manifest/resultは保持し、新規output/gemini-video-opening-review-2026-10-21-resume1/へ計画/manifest/resultを保存。既存clip-v10-opening-120s.mp4（5,940,851B、120.066667秒、SHA21c7f05a278b7c60ad84e78e1ca773891602355cab3e8a1375bdf769f28bb291）を再利用、copy切出し再実行なし。video処理時刻を0s/120sへ修正、同じ2動画/モデル/1fps/キー経路/秘密保護でPOST1回のみ。APIエラーは秘密を伏せた構造化理由を保存し、再送は自動で繰り返さない。コード所有はimplementer、正本記録はMain、原動画/他dirty/旧版保全。本人聴取/全尺受入/本編改変/共有/pushなし。
+
+- 本人による外部AI許可境界の再明示（2026-10-21）：新AGENTSが以前の指示を置換し、本人「やたらGemini使わないように明記、明示的に許可が必要」。基本はCodex/OpenCode、Gemini等は無料の試聴/検証でも処理単位の対象モデル・素材/用途・回数・上限を示し明示許可を得る。一般的な進める/再開/別工程承認を転用しない。案件AGENTSの既存本人許可節へこの具体境界を補足、共通設定は変更しない。今回追加外部API呼出しなし。
+- 再送済み結果の読戻し（同日）：resume1/result.jsonはHTTP200/status completed/model gemini-3.8-flash/api_calls1、usage入力22451/出力3053/思考1908/計27412。既に依頼され実行された1回の結果を読んだもので、追加送信なし。両映像/音声取得はモデル自己申告。O11が152–159秒と120秒範囲外、observation_times_within_scope=falseのため当該指摘と依存するpriority2は不受入。残る観測も独立目視/聴取済みとは扱わず改善候補として留める。実装Agent利用上限による未完了1と範囲違反の受入不合格1を保守的に加え動画関連43/次45・通信12/次15。スクリプトが担当提出時と再度異なる状態のため現物と成功実行コードの対応は未確認、実装task commit/再実行は保留。完成動画/音声制作を追加のAPI検証へ置換せず、追加外部呼出しは本人の具体許可待ち。
 
 
 ### 大人向け新キャラ正本の読取確認（2026-10-21）

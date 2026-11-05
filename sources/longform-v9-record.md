@@ -175,3 +175,7 @@
 - Qwen試聴・累計35停止（2026-10-21）：本人承認のqwen3-tts-flash/Eldric Sage/Japanese、Gemini同原文1回はHTTP200で認証/生成成功。担当scriptが返却音声URLをscheme/host条件で拒みexit3、WAV未保存。動画関連35に達したため再試行/代替/追加調査/編集/委譲停止・本人再開待ち。通信11/次15（履歴JSON末尾切断1、先頭解析で受信確認）。詳細はsources.md末尾「Qwen TTS限定試聴」、証拠output/qwen-tts-pilot-2026-10-21/{request,result}.json。未完成・local commitなし、既存差分/成果保全、共有なし。
 
 - Qwen試聴の再開完了（2026-10-21本人「進める」）：再生成1回・HTTPS取得成功、WAV不定長ヘッダーをPCM不変で確定し28.72秒/24kHzmonoPCM16/非無音を技術受入。試聴用output/qwen-tts-pilot-2026-10-21-resume1/qwen-eldric-sage-2-6-b1.wav、SHA e10f623c3c70f2895666245976f2702a41c48c9a3ab469b4f7c45ddde1b1ea66。誤測定1を加え動画36/次40、通信11/次15。現OpenCodeはMiniMax maxへ変更されidleのため設定を戻さず小修正をMain直接処理。詳細sources.md末尾とsources/qwen-tts-pilot-2026-10-21.json。本人聴感/実請求未確認、Gemini本線方針維持、本編変更/共有/pushなし。
+
+- 現行停止境界（2026-10-21）：Gemini3.8Flash冒頭比較で保存resultがHTTP400/error_apiとなり動画関連40に到達。OpenCode無料上限429を38→39、本Gemini400を39→40として保持。通信12/次15。本人再開まで追加調査/修正/再試行/代替/委譲を停止、制作原本/既存差分/分析準備成果保全。新比較結果なし・本編変更なし・今回commitなし。詳細sources.md末尾「Gemini補助活用・冒頭比較の実行計画」、証拠output/gemini-video-opening-review-2026-10-21/result.json。
+
+- 最新停止境界（2026-10-21・V11）：本人はVOICEVOXで完成→後日声差替え、3〜5分区間制作/結合、自然会話の改稿と深読み地図参考を承認。Mainの参考録画検査コマンド失敗1で43→44、OpenCode初回台本書出しの破損/未整理断片混入の自己報告1で44→45。通信12/次15。累計45到達で改稿/調査/生成/レンダー/代替/委譲を停止、本人再開待ち。詳細sources/longform-v11-record.md、参考証拠output/reference-screenpresso-2026-10-22-002245/inspection.json。台本未受入/映像音声未作成、本編V10は保全、今回commitなし。

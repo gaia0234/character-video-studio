@@ -74,6 +74,17 @@
 - 証拠一覧＝loudnorm-pass1-v2.txt／loudnorm-pass2.txt／loudnorm-final-measure.txt／readback-ffprobe-video.json／readback-ffprobe-audio-raw.json／readback-ffprobe-audio-lufs14.json／render-log3.txt／still-*.png×9／上記verification.json（現行の一時物明細はverification.jsonに統一）。
 - 後始末候補（削除は承認制）：output/longform-v10-review/tmp-render（4K・空）。旧log1/2・失敗readbackログは証拠として保全。
 - 分担/所有・禁止事項変更なし。commit/push/共有/削除/共同manifest/package/OS設定は行っていない。
+- 共有（2026-10-21本人指示「共有する」）：`\\192.168.1.115\Shared\Transfer\character-video-studio\2026-10-21-本人試聴資料\` へ完成MP4（lufs14・43,242,863B）＋Gemini試作 `gemini-charon-2-6-b1.wav`（1,442,278B）＋baseline `baseline-voicevox-2-6-b1.wav`（1,161,772B）をコピーし、`cmp`で3件ともバイト一致を確認済み。上記「共有なし」は2026-10-20/21の初稿制作段階の実績で、本共有は当日の本人指示による範囲。V10の内容・配布版を作成しない、他資料は共有していない。
+
+## 冒頭比較分析（2026-10-21・OC側・外部AI API未使用）
+
+- 目的：現行V10の冒頭0–120秒を直接観測し、参考（深読み地図・3xdIwOjzUL8）との差の所在と最優先改善候補をまとめる。
+- 方法・証拠：冒頭120.07秒clip（sha256 `21c7f05a…b291`・原本不変・-c copy）を10秒間隔でフレーム14枚抽出→8点を目視、JSONのscene/cueデータ（0–120秒に17シーン）、音声はPCM(24kHz mono)へdecodeし標準wave/arrayで実測（peak -1.92 dBFS／RMS -18.06 dBFS・発話≒76.8秒・最長無音5.64秒・無音75区間・話速proxy 4.77字/秒）。
+- 観測：キャラは0–23.8秒の3シーンのみ（120秒中80%が不在）／冒頭0–10秒はキャラ未登場～半透明で実質待ち（確度中）／字幕は1語折り返しが60秒に1件（checker WARN 7件と整合）／図解画面の余白は60秒（HEV/PHEV）が特に大きい。
+- 改善候補（**未実装・採否は本人/Codex**）：①説明者の常時配置（効果中〜大・負担中）②字幕の1語折り返し解消（効果小〜中・負担小）③図解画面の余白解消（効果中・負担小〜中）。
+- 限界：10秒間隔8点のサンプリングで全コマ走査・全尺比較・factcheckではない／参考の0–120秒実映像は未取得（B側はサムネイル1枚＋既存記録＋本人所見の二次情報）／声の主観評価は本人聴取待ち。
+- 成果物：`output/gemini-video-opening-review-2026-10-21/oc/`（analysis.md・result.json・observe.py・observation.json・frames/）。本単位の外部AI API呼び出しは**0回**。
+- なおMain委譲下で先に実施したGemini比較API（POST2回＝400/503・本文取得0）は本分析と無関係。2026-10-21本人指示により他プロバイダの外部AI APIは都度明示許可が必要となる。
 
 ## 最終受入・記録訂正（2026-10-21・Main）
 
