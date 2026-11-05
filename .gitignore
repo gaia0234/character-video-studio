@@ -5,3 +5,5 @@ output/*
 .voicevox/
 .editor/
 .env
+__pycache__/
+*.py[cod]

@@ -84,6 +84,7 @@
 - 背景：2026-11-03〜04のB案で、2026-10-23受入済みの初代プリウス基準を継承せず汎用セダンを描かせ、S5の車が同じカットで3回差戻しになった（PMの継承漏れ）。
 
 ## OC委譲と結果受入（2026-10-25共通運用）
+- 2026-11-05本人指示：**GLM-5.3（opencode/glm-5.3・opencode-go/glm-5.3）は使用禁止。** GLMを使う場合は GLM-5.3-Flash（opencode/glm-5.3-flash-free → opencode-go/glm-5.3-flash）を使う。
 - 案件Codex PMは承認済み作業をOpenCode優先で処理単位に委譲し、担当・所有・実効モデル・完了条件・失敗累計を引き継ぐ。送信受付だけで完了とせず、成果と必要証拠を照合して受け入れる。
 - 既存OCとの通信時は [共通通信手順](/home/ds-work/.codex/guides/session-communication.md) と [OC通信Skill](/home/ds-work/.codex/skills/opencode-communication/SKILL.md) を読む。CLI api経由の限定取得ではqueryをURLに明示し、件数・依頼ID・正常JSON・最終完了を確認する。
 - 案件の既存承認・停止・権限・秘密保護を維持し、同じ試験を各案件で再実行しない。常駐起動/全案件の無人運用/停止解除が検証済みとは扱わない。

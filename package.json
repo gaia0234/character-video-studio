@@ -19,11 +19,14 @@
     "review:longform": "node scripts/review-longform.mjs"
   },
   "dependencies": {
+    "@react-three/fiber": "^9.8.2",
     "@remotion/cli": "4.0.533",
     "@remotion/player": "4.0.533",
+    "@remotion/three": "^4.0.533",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "remotion": "4.0.533",
+    "three": "^0.180.0",
     "zod": "4.5.4"
   },
   "devDependencies": {
@@ -31,6 +34,7 @@
     "@remotion/renderer": "4.0.533",
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.0",
+    "@types/three": "^0.180.0",
     "esbuild": "0.28.1",
     "typescript": "^5.9.0"
   }
