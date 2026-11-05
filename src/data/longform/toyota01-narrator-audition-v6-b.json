@@ -1,0 +1,35 @@
+{
+  "note": "聴取比較用B:同じ3文、Nemo男声1。pitchScale=-0.06、intonationScale=0.75、speedScale=0.94。採用・本編差替え未承認。",
+  "beats": [
+    {
+      "id": "b-1",
+      "speaker": "ナレーター",
+      "spokenText": "一九九七年十二月。日本は、二つの答えを出した。",
+      "voiceSpeed": 0.94,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75
+    },
+    {
+      "id": "b-2",
+      "speaker": "ナレーター",
+      "spokenText": "二〇一九年四月。電動化の特許、約2万3千740件を無償開放。期限は2030年末。",
+      "voiceSpeed": 0.94,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75
+    },
+    {
+      "id": "b-3",
+      "speaker": "ナレーター",
+      "spokenText": "二十九年前の、一台の答え。それが、今のトヨタを作っている。",
+      "voiceSpeed": 0.94,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0,
+      "pitchScale": -0.06,
+      "intonationScale": 0.75
+    }
+  ]
+}

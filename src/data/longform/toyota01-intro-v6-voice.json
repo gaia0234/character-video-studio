@@ -1,0 +1,29 @@
+{
+  "note": "承認済みの冒頭3掛け合い。既存キャラvoice設定を保持。v5本編16ナレ音声は再生成しない。",
+  "beats": [
+    {
+      "id": "intro-1",
+      "speaker": "ミーノ",
+      "spokenText": "世界はEVの時代って聞くけど、日本は遅れていないの？",
+      "voiceSpeed": 1.06,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0
+    },
+    {
+      "id": "intro-2",
+      "speaker": "カーノ",
+      "spokenText": "そんなことはないみたいですよ。トヨタのハイブリッドは、今も人気があるみたいです。",
+      "voiceSpeed": 0.9,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0
+    },
+    {
+      "id": "intro-3",
+      "speaker": "ミーノ",
+      "spokenText": "それじゃあ、トヨタのハイブリッドの歴史をひもといてみよう！",
+      "voiceSpeed": 1.06,
+      "pauseSeconds": 0.2,
+      "holdSeconds": 0
+    }
+  ]
+}
