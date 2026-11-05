@@ -1136,4 +1136,5 @@
 - 良かった理由：寸法と数点だけの押し出し（r7〜r9f）では汎用セダンになり本人不合格。側面パスを正本にすると真横が一致し、同じモデルを上から/横から/斜めで見せても形が場面ごとにずれない（S3上面のタイヤはみ出しも解消）。
 - 確認根拠：output/toyota-ch2-49days-pilotb-20261103/reference/r10b-car-side-overlay.png ほか、PM一覧 reference/pm-compare-contact-r10f.png、MP4 r10/pilotb-r10f.mp4（SHA 333b28f1a3af…）。
 - 適用条件・未確認：簡易ローポリで後面の丸み・尾灯形状は簡略。GLMの一次チェックは未実施。新しい車種は同じ手順で、その車の受入済み側面を正本にする。
-- モデル比較（同じ課題：Im9から共用3D車）：Codex＝差戻し後に3方向合格（採用）／Qwen3.7 Plus＝真横のみ良／GLM-5.3-Flash・Muse Spark 1.3＝全面不合格（Museは自己確認が過大）／GLM-5.3＝本人指示で使用禁止／Big Pickle＝無料枠上限で未実施。詳細 output/toyota-ch2-49days-pilotb-20261103/model-test/pm-evaluation.md。
+- モデル比較（同じ課題：Im9から共用3D車）：Codex＝差戻し後に3方向合格（採用）／Qwen3.7 Plus＝真横のみ良／Beam Free＝真上のみ良／Pulse Alpha Free＝外形比率は良いが面が破綻／GLM-5.3-Flash・Muse Spark 1.3・Nemotron 3.5 Super VL Free（2026-11-06）＝全面不合格（Museは自己確認が過大）／GLM-5.3＝本人指示で使用禁止／Big Pickle＝無料枠上限で未実施。詳細 output/toyota-ch2-49days-pilotb-20261103/model-test/pm-evaluation.md。
+- 本人決定（2026-11-06）：「r10f はよく出来ているので、この方法で進める」。PMの解釈：車が出る場面は r10f の方法（受入済み側面を正本にした共用3D車、1つの3D空間＋カメラで構図、正投影の重ね確認）を標準にする。車が出ない場面や全編への適用範囲は本人未確認。
