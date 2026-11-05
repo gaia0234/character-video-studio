@@ -1,6 +1,6 @@
 # 未コミット作業のコミット計画（2026-11-05・案）
 
-本人「4.立てる」（2026-11-05）。手8の棚卸しで、未追跡・変更中の738件が退避・整理を止めていたため、受入済みの作業から順にコミットする。この文書は計画で、コミットはまだしていない。
+本人「4.立てる」（2026-11-05）。手8の棚卸しで、未追跡・変更中の738件が退避・整理を止めていたため、受入済みの作業から順にコミットする。U1〜U6は2026-11-06までに実施済み（末尾「進捗」）。
 
 ## 現状（2026-11-05 PM確認）
 
@@ -36,3 +36,10 @@
 ## 担当
 
 - PM（Claude Code）が単位の確定・差分確認・受入判断・コミット/push を行う（Git書込みはPMの正規環境で行う、手6〜8計画）。差分の読み取り確認は reviewer / writing-reviewer。
+
+## 進捗（2026-11-06）
+
+- U1 bfdca24、U2 c1cf302、U3 078ab8e（未受入の保全）、U4 5443f53（未受入の保全）、U5 661c5b2（未受入の保全）、U6 は本節と同じコミット。各単位で reviewer／writing-reviewer 合格後にコミットした。U1〜U5 は push 後に追跡先との一致を確認済み、U6 も同じ手順で行う。
+- 別件：68fddaa（Windows起動スクリプトを ssh ubuntu-work 経由へ修正）。
+- どの単位にも入れていない未追跡（計画外、扱いは本人判断待ち）：motion-pilot01 系（初版と rev2〜6 の TSX・entry・JSON・public/assets/pilots/toyota-motion-pilot01*）、ToyotaReplanStoryboard20261102（TSX・entry、rev2 含む）、public/assets/drafts/luno-loop-v1/、旧音声フォルダ（public/audio/longform-toyota01-intro-v6・-narrator-audition-v6・-narrator-v5・longform-v8-audition・toyota-v5-narration-20261027）と対応JSON（toyota01-intro-v6-voice・toyota01-narrator-audition-v6-a/b）。
+- 変更中で対象外のまま：public/assets/manifest.json、scripts/check-longform.mjs、scripts/generate-dialogue-voice.py、src/data/longform/toyota01.json、src/longform/LongformToyota01.tsx（所有の確認前）。
