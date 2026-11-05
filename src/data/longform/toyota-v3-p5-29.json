@@ -1,0 +1,223 @@
+{
+  "id": "v3-p5-29",
+  "fps": 30,
+  "frames": 1078,
+  "audio": {
+    "src": "audio/toyota-v3-p5-29/scene-v3-p5-29.wav",
+    "seconds": 35.00333333333333,
+    "sha256": "c62506efd1ac7eccd8ab3f33cefdc493f825df054e1e93db48725d1c7279c5c3",
+    "lineOffsets": [
+      {
+        "lineId": "v3-p5-29-l1",
+        "startSecond": 0.0
+      },
+      {
+        "lineId": "v3-p5-29-l2",
+        "startSecond": 5.975
+      },
+      {
+        "lineId": "v3-p5-29-l3",
+        "startSecond": 16.868
+      },
+      {
+        "lineId": "v3-p5-29-l4",
+        "startSecond": 23.899
+      }
+    ]
+  },
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part5-draft.md",
+  "sourceScriptSha256": "e823c9253fd84c14448608c1a51e387233280b69dcae405c276b679e20287ace",
+  "sourceInputSha256": "85944a68a530a051040f2010eff422fce05d5201f6e84d77cd68faef95f1148d",
+  "voiceCredits": [
+    "VOICEVOX:玄野武宏",
+    "VOICEVOX:雀松朱司",
+    "VOICEVOX:青山龍星"
+  ],
+  "evidence": [
+    "G4"
+  ],
+  "lines": [
+    {
+      "id": "v3-p5-29-l1",
+      "speaker": "ホーマー",
+      "text": "環境のことなら、走っているときに排気が出ないBEVがよい、という見方もありますね。",
+      "spokenText": "環境のことなら、走っているときに排気が出ないBEVがよい、という見方もありますね。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "topic",
+      "seconds": 5.525333333333333,
+      "audio": {
+        "src": "audio/toyota-v3-p5-29/v3-p5-29-l1.wav",
+        "seconds": 5.525333333333333,
+        "generatedFor": "[\"ホーマー\",\"10\",39,\"環境のことなら、走っているときに排気が出ないBEVがよい、という見方もありますね。\",1.0]"
+      },
+      "start": 0.4,
+      "end": 5.925333333333334
+    },
+    {
+      "id": "v3-p5-29-l2",
+      "speaker": "ケント",
+      "text": "走行時に排気が出ないのは大切な特徴です。一方、電気を作るときのCO2は電源構成で変わり、車を製造するときの影響もあります。",
+      "spokenText": "走行時に排気が出ないのは大切な特徴です。一方、電気を作るときのCO2は電源構成で変わり、車を製造するときの影響もあります。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "topic",
+      "seconds": 10.442666666666666,
+      "audio": {
+        "src": "audio/toyota-v3-p5-29/v3-p5-29-l2.wav",
+        "seconds": 10.442666666666666,
+        "generatedFor": "[\"ケント\",\"12\",52,\"走行時に排気が出ないのは大切な特徴です。一方、電気を作るときのCO2は電源構成で変わり、車を製造するときの影響もあります。\",1.0]"
+      },
+      "start": 6.375333333333334,
+      "end": 16.817999999999998
+    },
+    {
+      "id": "v3-p5-29-l3",
+      "speaker": "ジャッド",
+      "text": "では、製造や発電まで考えると、BEVのほうが悪いという話になるんですか。",
+      "spokenText": "では、製造や発電まで考えると、BEVのほうが悪いという話になるんですか。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "topic",
+      "seconds": 6.581333333333333,
+      "audio": {
+        "src": "audio/toyota-v3-p5-29/v3-p5-29-l3.wav",
+        "seconds": 6.581333333333333,
+        "generatedFor": "[\"ジャッド\",\"15\",82,\"では、製造や発電まで考えると、BEVのほうが悪いという話になるんですか。\",1.0]"
+      },
+      "start": 17.267999999999997,
+      "end": 23.84933333333333
+    },
+    {
+      "id": "v3-p5-29-l4",
+      "speaker": "ケント",
+      "text": "そう単純には言えません。発電や製造を含めても、BEVの排出量がガソリン車より低くなることは多い。ただし差は、車種や電源などの条件で変わります。",
+      "spokenText": "そう単純には言えません。発電や製造を含めても、BEVの排出量がガソリン車より低くなることは多い。ただし差は、車種や電源などの条件で変わります。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "topic",
+      "seconds": 11.104,
+      "audio": {
+        "src": "audio/toyota-v3-p5-29/v3-p5-29-l4.wav",
+        "seconds": 11.104,
+        "generatedFor": "[\"ケント\",\"12\",52,\"そう単純には言えません。発電や製造を含めても、BEVの排出量がガソリン車より低くなることは多い。ただし差は、車種や電源などの条件で変わります。\",1.0]"
+      },
+      "start": 24.29933333333333,
+      "end": 35.40333333333333
+    }
+  ],
+  "cues": [
+    {
+      "start": 0.4,
+      "end": 2.961,
+      "speaker": "ホーマー",
+      "text": "環境のことなら、走っているときに排気が",
+      "lineId": "v3-p5-29-l1"
+    },
+    {
+      "start": 2.961,
+      "end": 4.308,
+      "speaker": "ホーマー",
+      "text": "出ないBEVがよい、",
+      "lineId": "v3-p5-29-l1"
+    },
+    {
+      "start": 4.308,
+      "end": 5.925,
+      "speaker": "ホーマー",
+      "text": "という見方もありますね。",
+      "lineId": "v3-p5-29-l1"
+    },
+    {
+      "start": 6.375,
+      "end": 8.258,
+      "speaker": "ケント",
+      "text": "走行時に排気が出ないの",
+      "lineId": "v3-p5-29-l2"
+    },
+    {
+      "start": 8.258,
+      "end": 9.799,
+      "speaker": "ケント",
+      "text": "は大切な特徴です。",
+      "lineId": "v3-p5-29-l2"
+    },
+    {
+      "start": 9.799,
+      "end": 12.367,
+      "speaker": "ケント",
+      "text": "一方、電気を作るときのCO2は",
+      "lineId": "v3-p5-29-l2"
+    },
+    {
+      "start": 12.367,
+      "end": 13.908,
+      "speaker": "ケント",
+      "text": "電源構成で変わり、",
+      "lineId": "v3-p5-29-l2"
+    },
+    {
+      "start": 13.908,
+      "end": 16.818,
+      "speaker": "ケント",
+      "text": "車を製造するときの影響もあります。",
+      "lineId": "v3-p5-29-l2"
+    },
+    {
+      "start": 17.268,
+      "end": 20.01,
+      "speaker": "ジャッド",
+      "text": "では、製造や発電まで考えると、",
+      "lineId": "v3-p5-29-l3"
+    },
+    {
+      "start": 20.01,
+      "end": 21.838,
+      "speaker": "ジャッド",
+      "text": "BEVのほうが悪いと",
+      "lineId": "v3-p5-29-l3"
+    },
+    {
+      "start": 21.838,
+      "end": 23.849,
+      "speaker": "ジャッド",
+      "text": "いう話になるんですか。",
+      "lineId": "v3-p5-29-l3"
+    },
+    {
+      "start": 24.299,
+      "end": 26.176,
+      "speaker": "ケント",
+      "text": "そう単純には言えません。",
+      "lineId": "v3-p5-29-l4"
+    },
+    {
+      "start": 26.176,
+      "end": 29.148,
+      "speaker": "ケント",
+      "text": "発電や製造を含めても、BEVの排出量が",
+      "lineId": "v3-p5-29-l4"
+    },
+    {
+      "start": 29.148,
+      "end": 31.806,
+      "speaker": "ケント",
+      "text": "ガソリン車より低くなることは多い。",
+      "lineId": "v3-p5-29-l4"
+    },
+    {
+      "start": 31.806,
+      "end": 32.745,
+      "speaker": "ケント",
+      "text": "ただし差は、",
+      "lineId": "v3-p5-29-l4"
+    },
+    {
+      "start": 32.745,
+      "end": 35.403,
+      "speaker": "ケント",
+      "text": "車種や電源などの条件で変わります。",
+      "lineId": "v3-p5-29-l4"
+    }
+  ]
+}

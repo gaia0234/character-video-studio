@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700" role="img" aria-label="開いた取材手帳">
+  <ellipse cx="500" cy="646" rx="430" ry="28" fill="#000000" opacity="0.22"/>
+  <rect x="40" y="90" width="920" height="540" rx="20" fill="#2F3E55" stroke="#293747" stroke-width="8"/>
+  <rect x="70" y="118" width="410" height="486" rx="8" fill="#FFFCF5" stroke="#6B5A45" stroke-width="5"/>
+  <rect x="520" y="118" width="410" height="486" rx="8" fill="#FFFCF5" stroke="#6B5A45" stroke-width="5"/>
+  <path d="M500 118 V604" stroke="#6B5A45" stroke-width="7"/>
+  <g fill="none" stroke="#D9AB56" stroke-width="6">
+    <path d="M470 150 Q500 130 530 150"/>
+    <path d="M470 190 Q500 170 530 190"/>
+    <path d="M470 230 Q500 210 530 230"/>
+    <path d="M470 270 Q500 250 530 270"/>
+    <path d="M470 310 Q500 290 530 310"/>
+    <path d="M470 350 Q500 330 530 350"/>
+  </g>
+  <g stroke="#C8D3D9" stroke-width="3" opacity="0.7">
+    <line x1="104" y1="180" x2="446" y2="180"/>
+    <line x1="104" y1="220" x2="446" y2="220"/>
+    <line x1="104" y1="260" x2="410" y2="260"/>
+    <line x1="104" y1="300" x2="446" y2="300"/>
+    <line x1="104" y1="340" x2="390" y2="340"/>
+    <line x1="104" y1="380" x2="446" y2="380"/>
+    <line x1="104" y1="420" x2="420" y2="420"/>
+    <line x1="104" y1="460" x2="446" y2="460"/>
+    <line x1="104" y1="500" x2="380" y2="500"/>
+    <line x1="554" y1="180" x2="896" y2="180"/>
+    <line x1="554" y1="220" x2="896" y2="220"/>
+    <line x1="554" y1="260" x2="840" y2="260"/>
+    <line x1="554" y1="300" x2="896" y2="300"/>
+    <line x1="554" y1="340" x2="820" y2="340"/>
+    <line x1="554" y1="380" x2="896" y2="380"/>
+    <line x1="554" y1="420" x2="860" y2="420"/>
+    <line x1="554" y1="460" x2="896" y2="460"/>
+    <line x1="554" y1="500" x2="800" y2="500"/>
+  </g>
+  <rect x="850" y="150" width="58" height="128" rx="8" fill="#D9AB56" opacity="0.8"/>
+  <g transform="rotate(-14 820 560)">
+    <rect x="720" y="540" width="220" height="18" rx="8" fill="#293747"/>
+    <rect x="930" y="540" width="44" height="18" rx="6" fill="#D9AB56"/>
+    <path d="M974 540 L1002 549 L974 558 Z" fill="#293747"/>
+  </g>
+  <rect x="88" y="132" width="374" height="458" rx="4" fill="none" stroke="#D9AB56" stroke-width="2" stroke-dasharray="9 8" opacity="0.55"/>
+  <rect x="538" y="132" width="374" height="458" rx="4" fill="none" stroke="#D9AB56" stroke-width="2" stroke-dasharray="9 8" opacity="0.55"/>
+</svg>

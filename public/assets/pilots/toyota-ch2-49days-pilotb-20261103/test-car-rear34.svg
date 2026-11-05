@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 470" width="940" height="470" role="img" aria-label="斜め後方から見た初代プリウス（NHW10）">
+  <defs>
+    <clipPath id="p5body">
+      <path d="M60 360 H280 L690 245 V100 H280 L60 215 Z"/>
+    </clipPath>
+    <clipPath id="p5green">
+      <path d="M96 170 H262 L246 94 H112 Z"/>
+    </clipPath>
+  </defs>
+  <path d="M96 446 L640 350 L700 368 L140 462 Z" fill="#000000" opacity="0.15"/>
+  <g>
+    <ellipse cx="215" cy="370" rx="70" ry="70" fill="#293747"/>
+    <ellipse cx="215" cy="370" rx="43" ry="43" fill="#C3CED5" stroke="#293747" stroke-width="6"/>
+    <ellipse cx="215" cy="370" rx="13" ry="13" fill="#8A9AA8"/>
+    <ellipse cx="620" cy="290" rx="64" ry="64" fill="#293747"/>
+    <ellipse cx="620" cy="290" rx="40" ry="40" fill="#C3CED5" stroke="#293747" stroke-width="6"/>
+    <ellipse cx="620" cy="290" rx="12" ry="12" fill="#8A9AA8"/>
+  </g>
+  <path d="M60 360 H280 L690 245 V100 H280 L60 215 Z" fill="#E9EFF4"/>
+  <g clip-path="url(#p5body)">
+    <path d="M60 300 H280 L690 185 V245 H280 L60 360 Z" fill="#D5E0E9"/>
+    <path d="M60 340 H280 L690 225 V245 H280 L60 360 Z" fill="#C2D0DB"/>
+    <rect x="120" y="130" width="300" height="80" fill="#FFFFFF" opacity="0.3"/>
+  </g>
+  <path d="M60 360 H280 L690 245 V100 H280 L60 215 Z" fill="none" stroke="#293747" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M280 215 L690 100" fill="none" stroke="#D9AB56" stroke-width="8" stroke-linecap="round"/>
+  <path d="M60 215 H280 L318 170 H96 Z" fill="#F4F8FB" stroke="#293747" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M96 170 H262 L246 94 H112 Z" fill="#7FA3B8" stroke="#293747" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M108 164 H250" fill="none" stroke="#DCE9F2" stroke-width="5" opacity="0.8"/>
+  <path d="M262 170 L520 148 L520 60 L246 94 Z" fill="#7FA3B8" stroke="#293747" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M272 164 L506 146" fill="none" stroke="#DCE9F2" stroke-width="5" opacity="0.8"/>
+  <path d="M384 158 L378 76" fill="none" stroke="#293747" stroke-width="6" opacity="0.85"/>
+  <path d="M112 94 H246 L520 60 H392 Z" fill="#F4F8FB" stroke="#293747" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M400 72 H512" fill="none" stroke="#E2ECF3" stroke-width="4" opacity="0.9"/>
+  <path d="M60 340 H280 V360 H60 Z" fill="#C9D6DE" stroke="#293747" stroke-width="6" stroke-linejoin="round"/>
+  <rect x="68" y="186" width="74" height="90" rx="9" fill="#C4513F" stroke="#293747" stroke-width="5"/>
+  <rect x="198" y="186" width="74" height="90" rx="9" fill="#C4513F" stroke="#293747" stroke-width="5"/>
+  <rect x="150" y="212" width="44" height="48" rx="4" fill="#F4F8FB" stroke="#293747" stroke-width="4"/>
+  <path d="M60 215 H280" fill="none" stroke="#293747" stroke-width="4" opacity="0.22"/>
+  <path d="M310 292 L390 268" fill="none" stroke="#293747" stroke-width="5" opacity="0.3"/>
+  <path d="M300 230 L340 222" fill="none" stroke="#293747" stroke-width="5" opacity="0.6"/>
+  <path d="M470 208 L500 202" fill="none" stroke="#293747" stroke-width="5" opacity="0.7"/>
+  <rect x="452" y="214" width="46" height="11" rx="5" fill="#293747" opacity="0.75"/>
+  <path d="M540 176 L556 172" fill="none" stroke="#293747" stroke-width="5" opacity="0.6"/>
+</svg>

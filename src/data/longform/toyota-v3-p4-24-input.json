@@ -1,0 +1,50 @@
+{
+  "version": "toyota-v3-p4-24",
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part4-draft.md",
+  "scope": "v3-p4-24 only",
+  "evidence": ["F11"],
+  "scenes": [
+    {
+      "id": "v3-p4-24",
+      "part": 4,
+      "lines": [
+        {
+          "id": "v3-p4-24-l1",
+          "speaker": "ジャッド",
+          "text": "でも、使う権利があれば、それだけで自分の会社の車にぴったり組み込めるんでしょうか。",
+          "spokenText": "でも、使う権利があれば、それだけで自分の会社の車にぴったり組み込めるんでしょうか。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p4-24-l2",
+          "speaker": "ケント",
+          "text": "そこで別に用意されたのが、有料の技術支援です。トヨタのモーターや電池などを使う車に合わせて、調整や性能設定を支援するものでした。",
+          "spokenText": "そこで別に用意されたのが、有料の技術支援です。トヨタのモーターや電池などを使う車に合わせて、調整や性能設定を支援するものでした。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p4-24-l3",
+          "speaker": "ホーマー",
+          "text": "特許の使用料と、実際に車へ組み込む手助けの費用は、別に考える必要があるんですね。",
+          "spokenText": "特許の使用料と、実際に車へ組み込む手助けの費用は、別に考える必要があるんですね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p4-24-l4",
+          "speaker": "ケント",
+          "text": "はい。無償の特許と有料の支援をひとまとめにすると、「全部無料」という誤解になります。画面でも二つの欄に分けておきましょう。",
+          "spokenText": "はい。無償の特許と有料の支援をひとまとめにすると、「全部無料」という誤解になります。画面でも二つの欄に分けておきましょう。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        }
+      ]
+    }
+  ]
+}

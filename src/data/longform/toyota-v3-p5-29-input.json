@@ -1,0 +1,50 @@
+{
+  "version": "toyota-v3-p5-29",
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part5-draft.md",
+  "scope": "v3-p5-29 only",
+  "evidence": ["G4"],
+  "scenes": [
+    {
+      "id": "v3-p5-29",
+      "part": 5,
+      "lines": [
+        {
+          "id": "v3-p5-29-l1",
+          "speaker": "ホーマー",
+          "text": "環境のことなら、走っているときに排気が出ないBEVがよい、という見方もありますね。",
+          "spokenText": "環境のことなら、走っているときに排気が出ないBEVがよい、という見方もありますね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p5-29-l2",
+          "speaker": "ケント",
+          "text": "走行時に排気が出ないのは大切な特徴です。一方、電気を作るときのCO2は電源構成で変わり、車を製造するときの影響もあります。",
+          "spokenText": "走行時に排気が出ないのは大切な特徴です。一方、電気を作るときのCO2は電源構成で変わり、車を製造するときの影響もあります。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p5-29-l3",
+          "speaker": "ジャッド",
+          "text": "では、製造や発電まで考えると、BEVのほうが悪いという話になるんですか。",
+          "spokenText": "では、製造や発電まで考えると、BEVのほうが悪いという話になるんですか。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p5-29-l4",
+          "speaker": "ケント",
+          "text": "そう単純には言えません。発電や製造を含めても、BEVの排出量がガソリン車より低くなることは多い。ただし差は、車種や電源などの条件で変わります。",
+          "spokenText": "そう単純には言えません。発電や製造を含めても、BEVの排出量がガソリン車より低くなることは多い。ただし差は、車種や電源などの条件で変わります。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        }
+      ]
+    }
+  ]
+}

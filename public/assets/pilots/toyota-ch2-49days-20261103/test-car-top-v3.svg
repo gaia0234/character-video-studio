@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 300" width="180" height="300" role="img" aria-label="上から見た初代プリウス（NHW10）">
+  <rect x="41" y="26" width="98" height="248" rx="42" fill="#E9EFF4" stroke="#293747" stroke-width="6"/>
+  <path d="M52 60 H128 L122 104 H58 Z" fill="#7FA3B8" stroke="#293747" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M56 60 H124" stroke="#DCE9F2" stroke-width="4" opacity="0.85"/>
+  <rect x="58" y="104" width="64" height="64" rx="8" fill="#E9EFF4" stroke="#293747" stroke-width="3" opacity="0.95"/>
+  <path d="M54 190 H126 L130 226 H50 Z" fill="#7FA3B8" stroke="#293747" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M58 192 H122" stroke="#DCE9F2" stroke-width="4" opacity="0.85"/>
+  <rect x="85" y="112" width="10" height="92" rx="5" fill="#D9AB56" opacity="0.95"/>
+  <path d="M41 118 H54 M41 176 H54 M126 118 H139 M126 176 H139" stroke="#B9C9D6" stroke-width="3" opacity="0.8"/>
+  <path d="M45 116 V228 M135 116 V228" stroke="#D9AB56" stroke-width="4" opacity="0.8"/>
+  <rect x="47" y="252" width="26" height="14" rx="4" fill="#C4513F" stroke="#293747" stroke-width="3"/>
+  <rect x="107" y="252" width="26" height="14" rx="4" fill="#C4513F" stroke="#293747" stroke-width="3"/>
+  <ellipse cx="56" cy="43" rx="11" ry="8" fill="#F2DFAC" stroke="#293747" stroke-width="4"/>
+  <ellipse cx="124" cy="43" rx="11" ry="8" fill="#F2DFAC" stroke="#293747" stroke-width="4"/>
+  <g fill="#293747">
+    <rect x="24" y="70" width="17" height="44" rx="8"/>
+    <rect x="139" y="70" width="17" height="44" rx="8"/>
+  </g>
+</svg>

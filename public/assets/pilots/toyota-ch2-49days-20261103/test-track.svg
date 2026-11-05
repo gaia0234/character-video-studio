@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 850" width="1500" height="850" role="img" aria-label="試験路の俯瞰">
+  <rect width="1500" height="850" fill="#7A8A6A"/>
+  <path d="M0 120 H1500 V850 H0 Z" fill="#6D7D5F"/>
+  <g fill="#87966F" opacity="0.7">
+    <ellipse cx="180" cy="160" rx="120" ry="38"/>
+    <ellipse cx="1320" cy="760" rx="160" ry="46"/>
+    <ellipse cx="120" cy="760" rx="160" ry="44"/>
+  </g>
+  <path d="M180 560 H1500" stroke="#3A3F45" stroke-width="300" stroke-linecap="round"/>
+  <path d="M180 560 H1500" stroke="#4A5056" stroke-width="260" stroke-linecap="round"/>
+  <path d="M200 560 H1480" stroke="#E8DFC8" stroke-width="6" stroke-dasharray="34 26" opacity="0.85"/>
+  <path d="M180 420 H1500" stroke="#D9AB56" stroke-width="5" opacity="0.55"/>
+  <path d="M180 700 H1500" stroke="#D9AB56" stroke-width="5" opacity="0.55"/>
+  <g fill="none" stroke="#3A3F45" stroke-width="44">
+    <ellipse cx="210" cy="560" rx="170" ry="210"/>
+  </g>
+  <g fill="none" stroke="#E8DFC8" stroke-width="4" stroke-dasharray="26 24" opacity="0.6">
+    <ellipse cx="210" cy="560" rx="140" ry="178"/>
+  </g>
+  <g stroke="#293747" stroke-width="3" fill="#C9A47E">
+    <rect x="420" y="736" width="60" height="18" rx="6"/>
+    <rect x="900" y="736" width="60" height="18" rx="6"/>
+    <rect x="1250" y="736" width="60" height="18" rx="6"/>
+  </g>
+  <path d="M0 780 H1500" stroke="#5A674F" stroke-width="6"/>
+  <rect x="80" y="90" width="260" height="80" rx="8" fill="#C3CED5" stroke="#293747" stroke-width="5"/>
+  <rect x="100" y="108" width="220" height="18" rx="4" fill="#E3EDF5"/>
+  <rect x="100" y="136" width="160" height="14" rx="4" fill="#E3EDF5"/>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="900" height="360" role="img" aria-label="初代プリウス（NHW10）の側面">
+  <defs>
+    <clipPath id="priusBody">
+      <path d="M0 636 Q4 598 18 584 L58 563 C119 474 270 422 468 377 L734 220 C811 176 857 160 943 153 C1105 143 1408 139 1484 172 C1556 197 1639 242 1738 296 Q1794 335 1852 343 L1961 361 Q1991 383 1999 434 L2001 488 Q2040 522 2045 578 L2044 672 Q2029 705 1919 730 L1785 763 C1797 509 1428 523 1439 792 L536 780 C533 512 183 505 174 786 L45 769 L23 722 L13 690 Z"/>
+    </clipPath>
+  </defs>
+  <g transform="translate(0 -39.2) scale(0.44009)">
+    <ellipse cx="1020" cy="872" rx="1060" ry="26" fill="#000000" opacity="0.13"/>
+    <g>
+      <circle cx="354" cy="717" r="150" fill="#293747"/>
+      <circle cx="354" cy="717" r="92" fill="#C3CED5" stroke="#293747" stroke-width="9"/>
+      <circle cx="354" cy="717" r="30" fill="#8A9AA8" stroke="#293747" stroke-width="7"/>
+      <circle cx="1616" cy="717" r="150" fill="#293747"/>
+      <circle cx="1616" cy="717" r="92" fill="#C3CED5" stroke="#293747" stroke-width="9"/>
+      <circle cx="1616" cy="717" r="30" fill="#8A9AA8" stroke="#293747" stroke-width="7"/>
+    </g>
+    <path d="M0 636 Q4 598 18 584 L58 563 C119 474 270 422 468 377 L734 220 C811 176 857 160 943 153 C1105 143 1408 139 1484 172 C1556 197 1639 242 1738 296 Q1794 335 1852 343 L1961 361 Q1991 383 1999 434 L2001 488 Q2040 522 2045 578 L2044 672 Q2029 705 1919 730 L1785 763 C1797 509 1428 523 1439 792 L536 780 C533 512 183 505 174 786 L45 769 L23 722 L13 690 Z"
+      fill="#E9EFF4"/>
+    <g clip-path="url(#priusBody)">
+      <rect x="-40" y="612" width="2160" height="220" fill="#D5E0E9"/>
+      <rect x="-40" y="716" width="2160" height="140" fill="#C2D0DB"/>
+      <rect x="120" y="200" width="900" height="260" fill="#FFFFFF" opacity="0.28"/>
+    </g>
+    <path d="M0 636 Q4 598 18 584 L58 563 C119 474 270 422 468 377 L734 220 C811 176 857 160 943 153 C1105 143 1408 139 1484 172 C1556 197 1639 242 1738 296 Q1794 335 1852 343 L1961 361 Q1991 383 1999 434 L2001 488 Q2040 522 2045 578 L2044 672 Q2029 705 1919 730 L1785 763 C1797 509 1428 523 1439 792 L536 780 C533 512 183 505 174 786 L45 769 L23 722 L13 690 Z"
+      fill="none" stroke="#293747" stroke-width="14" stroke-linejoin="round"/>
+    <path d="M511 424 L787 249 Q853 211 957 194 L1106 186 L1071 387 Z"
+      fill="#7FA3B8" stroke="#293747" stroke-width="12" stroke-linejoin="round"/>
+    <path d="M1144 189 Q1361 184 1460 225 L1582 315 Q1569 359 1536 369 L1112 390 Z"
+      fill="#7FA3B8" stroke="#293747" stroke-width="12" stroke-linejoin="round"/>
+    <path d="M1106 180 L1133 180 L1106 398 L1071 400 Z" fill="#293747"/>
+    <path d="M557 403 L807 255 Q877 218 1089 205 M1164 207 Q1356 204 1425 237"
+      fill="none" stroke="#DCE9F2" stroke-width="13" opacity="0.85"/>
+    <path d="M64 553 Q110 497 190 474 Q177 519 121 550 Z" fill="#F2DFAC" stroke="#293747" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M150 520 H1866" fill="none" stroke="#D9AB56" stroke-width="22" stroke-linecap="round" opacity="0.95"/>
+    <path d="M1890 414 L1982 435 L1994 506 L1968 550 L1923 495 Z" fill="#C4513F" stroke="#293747" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M967 480 Q996 468 1024 471 L1021 491 L969 495 Z M1473 454 Q1508 441 1543 444 L1539 463 L1474 467 Z"
+      fill="#C9D6DE" stroke="#293747" stroke-width="8"/>
+    <path d="M517 394 Q568 357 605 354 Q626 380 615 406 L525 426 Z"
+      fill="#C9D6DE" stroke="#293747" stroke-width="9" stroke-linejoin="round"/>
+    <path d="M565 800 H1423" stroke="#293747" stroke-width="12" opacity="0.55"/>
+  </g>
+</svg>

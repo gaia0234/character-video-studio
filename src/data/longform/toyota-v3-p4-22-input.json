@@ -1,0 +1,50 @@
+{
+  "version": "toyota-v3-p4-22",
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part4-draft.md",
+  "scope": "v3-p4-22 only",
+  "evidence": ["F10"],
+  "scenes": [
+    {
+      "id": "v3-p4-22",
+      "part": 4,
+      "lines": [
+        {
+          "id": "v3-p4-22-l1",
+          "speaker": "ケント",
+          "text": "さらに、その発表に含まれる水素ステーション関連の約70件については、期限を設けない扱いでした。",
+          "spokenText": "さらに、その発表に含まれる水素ステーション関連の約70件については、期限を設けない扱いでした。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p4-22-l2",
+          "speaker": "ジャッド",
+          "text": "同じ発表の中でも、車の側とステーションの側で、期限が違っていたんですか。",
+          "spokenText": "同じ発表の中でも、車の側とステーションの側で、期限が違っていたんですか。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p4-22-l3",
+          "speaker": "ケント",
+          "text": "はい。だから「5,680件、無料」という一行だけだと、対象の違いや条件が見えなくなります。",
+          "spokenText": "はい。だから「5,680件、無料」という一行だけだと、対象の違いや条件が見えなくなります。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p4-22-l4",
+          "speaker": "ホーマー",
+          "text": "件数を比べる前に、何が入っている数字かを確かめる。販売台数のときと、見方は同じなんですね。",
+          "spokenText": "件数を比べる前に、何が入っている数字かを確かめる。販売台数のときと、見方は同じなんですね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "version": "toyota-v3-p5-31",
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part5-draft.md",
+  "scope": "v3-p5-31 only",
+  "evidence": ["F12"],
+  "scenes": [
+    {
+      "id": "v3-p5-31",
+      "part": 5,
+      "lines": [
+        {
+          "id": "v3-p5-31-l1",
+          "speaker": "ナレ2",
+          "text": "2025年5月21日、トヨタは新型RAV4を世界初公開。PHEVに、トヨタとして初めて第6世代ハイブリッドシステムを搭載すると発表しました。",
+          "spokenText": "2025年5月21日、トヨタは新型RAV4を世界初公開。PHEVに、トヨタとして初めて第6世代ハイブリッドシステムを搭載すると発表しました。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p5-31-l2",
+          "speaker": "ホーマー",
+          "text": "外から充電する車にも、ハイブリッドの仕組みを改良してつないでいるんですね。",
+          "spokenText": "外から充電する車にも、ハイブリッドの仕組みを改良してつないでいるんですね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p5-31-l3",
+          "speaker": "ジャッド",
+          "text": "ただ、第6世代というだけで、すべてのハイブリッド車が一斉に変わったと思わないほうがよいんでしょう。",
+          "spokenText": "ただ、第6世代というだけで、すべてのハイブリッド車が一斉に変わったと思わないほうがよいんでしょう。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p5-31-l4",
+          "speaker": "ケント",
+          "text": "そのとおりです。ここで確認しているのは、この発表でのPHEVへの初搭載という範囲です。名前だけを広げず、どの車の話かを添えておきます。",
+          "spokenText": "そのとおりです。ここで確認しているのは、この発表でのPHEVへの初搭載という範囲です。名前だけを広げず、どの車の話かを添えておきます。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        }
+      ]
+    }
+  ]
+}

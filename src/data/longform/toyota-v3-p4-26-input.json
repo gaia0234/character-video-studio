@@ -1,0 +1,50 @@
+{
+  "version": "toyota-v3-p4-26",
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part4-draft.md",
+  "scope": "v3-p4-26 only",
+  "evidence": ["F11", "G1", "G2", "G3"],
+  "scenes": [
+    {
+      "id": "v3-p4-26",
+      "part": 4,
+      "lines": [
+        {
+          "id": "v3-p4-26-l1",
+          "speaker": "ジャッド",
+          "text": "電動化という言葉が何度も出てきました。エンジンがある車まで、そこに入るんですね。",
+          "spokenText": "電動化という言葉が何度も出てきました。エンジンがある車まで、そこに入るんですね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p4-26-l2",
+          "speaker": "ケント",
+          "text": "モーターをどう使うかで見ると、ハイブリッドも電動化の一つです。ただし、外から充電する車と、しない車では使い方が違います。",
+          "spokenText": "モーターをどう使うかで見ると、ハイブリッドも電動化の一つです。ただし、外から充電する車と、しない車では使い方が違います。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p4-26-l3",
+          "speaker": "ホーマー",
+          "text": "最初のEVの疑問に戻ってきましたね。全部を同じものとして比べると、かえって分からなくなりそうです。",
+          "spokenText": "最初のEVの疑問に戻ってきましたね。全部を同じものとして比べると、かえって分からなくなりそうです。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p4-26-l4",
+          "speaker": "ケント",
+          "text": "では最後は、三つの車を並べましょう。名前の新しさではなく、エネルギーをどこから入れ、どう使うかを見ます。",
+          "spokenText": "では最後は、三つの車を並べましょう。名前の新しさではなく、エネルギーをどこから入れ、どう使うかを見ます。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        }
+      ]
+    }
+  ]
+}

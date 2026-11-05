@@ -1,0 +1,50 @@
+{
+  "version": "toyota-v3-p5-33",
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part5-draft.md",
+  "scope": "v3-p5-33 only",
+  "evidence": ["F3", "G1", "G2", "G3", "G4"],
+  "scenes": [
+    {
+      "id": "v3-p5-33",
+      "part": 5,
+      "lines": [
+        {
+          "id": "v3-p5-33-l1",
+          "speaker": "ケント",
+          "text": "次に電動車を見るときは、三つだけ確かめてみてください。何で走るのか。エネルギーをどこから入れるのか。そして、比べている条件は何か。",
+          "spokenText": "次に電動車を見るときは、三つだけ確かめてみてください。何で走るのか。エネルギーをどこから入れるのか。そして、比べている条件は何か。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p5-33-l2",
+          "speaker": "ホーマー",
+          "text": "技術の名前だけでなく、暮らしの中でどう使えるかを見るわけですね。",
+          "spokenText": "技術の名前だけでなく、暮らしの中でどう使えるかを見るわけですね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p5-33-l3",
+          "speaker": "ジャッド",
+          "text": "今日の話を知ると、ハイブリッドという言葉の中にも、まだ確かめることがありそうです。",
+          "spokenText": "今日の話を知ると、ハイブリッドという言葉の中にも、まだ確かめることがありそうです。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p5-33-l4",
+          "speaker": "ナレ2",
+          "text": "1997年のプリウスから、車種の広がり、技術の開放、そして新しいPHEVへ。一台の車だけでなく、つながる技術として見ると、その歩みが見えてきます。",
+          "spokenText": "1997年のプリウスから、車種の広がり、技術の開放、そして新しいPHEVへ。一台の車だけでなく、つながる技術として見ると、その歩みが見えてきます。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        }
+      ]
+    }
+  ]
+}

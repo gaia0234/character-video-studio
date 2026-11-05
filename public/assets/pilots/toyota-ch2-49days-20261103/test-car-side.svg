@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="900" height="360" role="img" aria-label="塗りのある試作車の側面">
+  <path d="M70 262 C80 226 120 210 190 198 L370 132 C450 108 540 102 620 116 L760 146 C820 160 850 196 856 238 L856 262 L70 262 Z"
+    fill="#E3EDF5" stroke="#293747" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M190 198 L370 132 L470 128 L470 198 Z" fill="#7FA3B8" stroke="#293747" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M492 128 L620 116 L700 138 L700 198 L492 198 Z" fill="#7FA3B8" stroke="#293747" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M470 128 L492 128 L492 198" fill="none" stroke="#293747" stroke-width="5"/>
+  <path d="M96 230 H824" stroke="#D9AB56" stroke-width="8" stroke-linecap="round"/>
+  <path d="M344 204 H470 M492 204 H700" stroke="#293747" stroke-width="4" opacity="0.5"/>
+  <circle cx="250" cy="262" r="52" fill="#293747" stroke="#293747" stroke-width="8"/>
+  <circle cx="700" cy="262" r="52" fill="#293747" stroke="#293747" stroke-width="8"/>
+  <circle cx="250" cy="262" r="18" fill="#E3EDF5" stroke="#293747" stroke-width="5"/>
+  <circle cx="700" cy="262" r="18" fill="#E3EDF5" stroke="#293747" stroke-width="5"/>
+  <path d="M76 216 Q96 202 118 208" fill="none" stroke="#F2DFAC" stroke-width="10" stroke-linecap="round"/>
+  <rect x="826" y="208" width="24" height="16" rx="4" fill="#AC5144" stroke="#293747" stroke-width="4"/>
+  <path d="M150 198 L210 198" stroke="#293747" stroke-width="5" stroke-linecap="round"/>
+  <path d="M720 198 L790 198" stroke="#293747" stroke-width="5" stroke-linecap="round"/>
+</svg>

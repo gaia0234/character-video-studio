@@ -1,0 +1,50 @@
+{
+  "version": "toyota-v3-p5-30",
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part5-draft.md",
+  "scope": "v3-p5-30 only",
+  "evidence": ["G4", "G1", "G2", "G3"],
+  "scenes": [
+    {
+      "id": "v3-p5-30",
+      "part": 5,
+      "lines": [
+        {
+          "id": "v3-p5-30-l1",
+          "speaker": "ジャッド",
+          "text": "一つの数字だけを取り出して、どの車が絶対によい、と決めないほうがよさそうですね。",
+          "spokenText": "一つの数字だけを取り出して、どの車が絶対によい、と決めないほうがよさそうですね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p5-30-l2",
+          "speaker": "ケント",
+          "text": "はい。どの車を、どの地域で、どう使う想定で比べたのか。条件がそろって初めて、数字の意味が分かります。",
+          "spokenText": "はい。どの車を、どの地域で、どう使う想定で比べたのか。条件がそろって初めて、数字の意味が分かります。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p5-30-l3",
+          "speaker": "ホーマー",
+          "text": "ハイブリッドを認めるためにEVを悪く言う必要もないし、その逆でもない。用途ごとの違いを知るのが先なんですね。",
+          "spokenText": "ハイブリッドを認めるためにEVを悪く言う必要もないし、その逆でもない。用途ごとの違いを知るのが先なんですね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p5-30-l4",
+          "speaker": "ケント",
+          "text": "そこが、この話の着地点です。エンジンを積んでいるかどうかだけでは、電動化の工夫も、使う人の条件も見落としてしまいます。",
+          "spokenText": "そこが、この話の着地点です。エンジンを積んでいるかどうかだけでは、電動化の工夫も、使う人の条件も見落としてしまいます。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        }
+      ]
+    }
+  ]
+}

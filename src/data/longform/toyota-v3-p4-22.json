@@ -1,0 +1,216 @@
+{
+  "id": "v3-p4-22",
+  "fps": 30,
+  "frames": 935,
+  "audio": {
+    "src": "audio/toyota-v3-p4-22/scene-v3-p4-22.wav",
+    "seconds": 30.224666666666668,
+    "sha256": "42bb6d8db857f12aeaf52d8b9416fdf8d8bc391b303240b611c3e9baba0140ad",
+    "lineOffsets": [
+      {
+        "lineId": "v3-p4-22-l1",
+        "startSecond": 0.0
+      },
+      {
+        "lineId": "v3-p4-22-l2",
+        "startSecond": 7.821
+      },
+      {
+        "lineId": "v3-p4-22-l3",
+        "startSecond": 14.553
+      },
+      {
+        "lineId": "v3-p4-22-l4",
+        "startSecond": 23.227
+      }
+    ]
+  },
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part4-draft.md",
+  "sourceScriptSha256": "b208e3976907443caf15302f3ad821a303adf10ac639a2ca849d42e2b6d24c89",
+  "sourceInputSha256": "76cf47db3a81207b3194e5beb317115e92f3fd61bec7d12a8e707fbadf9c55fd",
+  "voiceCredits": [
+    "VOICEVOX:雀松朱司",
+    "VOICEVOX:青山龍星",
+    "VOICEVOX:玄野武宏"
+  ],
+  "evidence": [
+    "F10"
+  ],
+  "lines": [
+    {
+      "id": "v3-p4-22-l1",
+      "speaker": "ケント",
+      "text": "さらに、その発表に含まれる水素ステーション関連の約70件については、期限を設けない扱いでした。",
+      "spokenText": "さらに、その発表に含まれる水素ステーション関連の約70件については、期限を設けない扱いでした。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "topic",
+      "seconds": 7.370666666666667,
+      "audio": {
+        "src": "audio/toyota-v3-p4-22/v3-p4-22-l1.wav",
+        "seconds": 7.370666666666667,
+        "generatedFor": "[\"ケント\",\"12\",52,\"さらに、その発表に含まれる水素ステーション関連の約70件については、期限を設けない扱いでした。\",1.0]"
+      },
+      "start": 0.4,
+      "end": 7.770666666666667
+    },
+    {
+      "id": "v3-p4-22-l2",
+      "speaker": "ジャッド",
+      "text": "同じ発表の中でも、車の側とステーションの側で、期限が違っていたんですか。",
+      "spokenText": "同じ発表の中でも、車の側とステーションの側で、期限が違っていたんですか。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "topic",
+      "seconds": 6.282666666666667,
+      "audio": {
+        "src": "audio/toyota-v3-p4-22/v3-p4-22-l2.wav",
+        "seconds": 6.282666666666667,
+        "generatedFor": "[\"ジャッド\",\"15\",82,\"同じ発表の中でも、車の側とステーションの側で、期限が違っていたんですか。\",1.0]"
+      },
+      "start": 8.220666666666666,
+      "end": 14.503333333333334
+    },
+    {
+      "id": "v3-p4-22-l3",
+      "speaker": "ケント",
+      "text": "はい。だから「5,680件、無料」という一行だけだと、対象の違いや条件が見えなくなります。",
+      "spokenText": "はい。だから「5,680件、無料」という一行だけだと、対象の違いや条件が見えなくなります。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "topic",
+      "seconds": 8.224,
+      "audio": {
+        "src": "audio/toyota-v3-p4-22/v3-p4-22-l3.wav",
+        "seconds": 8.224,
+        "generatedFor": "[\"ケント\",\"12\",52,\"はい。だから「5,680件、無料」という一行だけだと、対象の違いや条件が見えなくなります。\",1.0]"
+      },
+      "start": 14.953333333333335,
+      "end": 23.177333333333337
+    },
+    {
+      "id": "v3-p4-22-l4",
+      "speaker": "ホーマー",
+      "text": "件数を比べる前に、何が入っている数字かを確かめる。販売台数のときと、見方は同じなんですね。",
+      "spokenText": "件数を比べる前に、何が入っている数字かを確かめる。販売台数のときと、見方は同じなんですね。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "topic",
+      "seconds": 6.997333333333334,
+      "audio": {
+        "src": "audio/toyota-v3-p4-22/v3-p4-22-l4.wav",
+        "seconds": 6.997333333333334,
+        "generatedFor": "[\"ホーマー\",\"10\",39,\"件数を比べる前に、何が入っている数字かを確かめる。販売台数のときと、見方は同じなんですね。\",1.0]"
+      },
+      "start": 23.627333333333333,
+      "end": 30.624666666666666
+    }
+  ],
+  "cues": [
+    {
+      "start": 0.4,
+      "end": 1.027,
+      "speaker": "ケント",
+      "text": "さらに、",
+      "lineId": "v3-p4-22-l1"
+    },
+    {
+      "start": 1.027,
+      "end": 4.007,
+      "speaker": "ケント",
+      "text": "その発表に含まれる水素ステーション関連",
+      "lineId": "v3-p4-22-l1"
+    },
+    {
+      "start": 4.007,
+      "end": 5.732,
+      "speaker": "ケント",
+      "text": "の約70件については、",
+      "lineId": "v3-p4-22-l1"
+    },
+    {
+      "start": 5.732,
+      "end": 7.771,
+      "speaker": "ケント",
+      "text": "期限を設けない扱いでした。",
+      "lineId": "v3-p4-22-l1"
+    },
+    {
+      "start": 8.221,
+      "end": 9.791,
+      "speaker": "ジャッド",
+      "text": "同じ発表の中でも、",
+      "lineId": "v3-p4-22-l2"
+    },
+    {
+      "start": 9.791,
+      "end": 12.235,
+      "speaker": "ジャッド",
+      "text": "車の側とステーションの側で、",
+      "lineId": "v3-p4-22-l2"
+    },
+    {
+      "start": 12.235,
+      "end": 14.503,
+      "speaker": "ジャッド",
+      "text": "期限が違っていたんですか。",
+      "lineId": "v3-p4-22-l2"
+    },
+    {
+      "start": 14.953,
+      "end": 15.502,
+      "speaker": "ケント",
+      "text": "はい。",
+      "lineId": "v3-p4-22-l3"
+    },
+    {
+      "start": 15.502,
+      "end": 17.512,
+      "speaker": "ケント",
+      "text": "だから「5,680件、",
+      "lineId": "v3-p4-22-l3"
+    },
+    {
+      "start": 17.512,
+      "end": 19.888,
+      "speaker": "ケント",
+      "text": "無料」という一行だけだと、",
+      "lineId": "v3-p4-22-l3"
+    },
+    {
+      "start": 19.888,
+      "end": 23.177,
+      "speaker": "ケント",
+      "text": "対象の違いや条件が見えなくなります。",
+      "lineId": "v3-p4-22-l3"
+    },
+    {
+      "start": 23.627,
+      "end": 25.027,
+      "speaker": "ホーマー",
+      "text": "件数を比べる前に、",
+      "lineId": "v3-p4-22-l4"
+    },
+    {
+      "start": 25.027,
+      "end": 27.515,
+      "speaker": "ホーマー",
+      "text": "何が入っている数字かを確かめる。",
+      "lineId": "v3-p4-22-l4"
+    },
+    {
+      "start": 27.515,
+      "end": 28.914,
+      "speaker": "ホーマー",
+      "text": "販売台数のときと、",
+      "lineId": "v3-p4-22-l4"
+    },
+    {
+      "start": 28.914,
+      "end": 30.625,
+      "speaker": "ホーマー",
+      "text": "見方は同じなんですね。",
+      "lineId": "v3-p4-22-l4"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-label="夕暮れの直線試験路">
+  <rect width="1920" height="1080" fill="#2E3A50"/>
+  <rect width="1920" height="520" fill="#33415A"/>
+  <ellipse cx="1420" cy="540" rx="520" ry="110" fill="#D9AB56" opacity="0.18"/>
+  <path d="M0 520 Q300 430 620 500 T1220 480 T1920 520 V620 H0 Z" fill="#3B4A5A"/>
+  <path d="M0 560 Q260 490 560 535 T1100 520 T1920 560 V650 H0 Z" fill="#4F5E4A"/>
+  <rect y="620" width="1920" height="460" fill="#3A3F45"/>
+  <rect y="620" width="1920" height="18" fill="#D9AB56" opacity="0.45"/>
+  <path d="M0 700 H1920" stroke="#E8DFC8" stroke-width="8" stroke-dasharray="54 42" opacity="0.8"/>
+  <path d="M0 620 H1920" stroke="#E8DFC8" stroke-width="5" opacity="0.45"/>
+  <path d="M0 980 H1920" stroke="#E8DFC8" stroke-width="5" opacity="0.35"/>
+  <g stroke="#293747" stroke-width="5" fill="#C3CED5">
+    <rect x="180" y="560" width="20" height="80"/>
+    <rect x="620" y="560" width="20" height="80"/>
+    <rect x="1140" y="560" width="20" height="80"/>
+    <rect x="1660" y="560" width="20" height="80"/>
+    <rect x="180" y="548" width="60" height="22" rx="4"/>
+    <rect x="620" y="548" width="60" height="22" rx="4"/>
+    <rect x="1140" y="548" width="60" height="22" rx="4"/>
+    <rect x="1660" y="548" width="60" height="22" rx="4"/>
+  </g>
+  <g stroke="#293747" stroke-width="4" fill="#8B5F3B">
+    <rect x="80" y="470" width="70" height="170"/>
+    <rect x="1560" y="450" width="60" height="190"/>
+  </g>
+  <g fill="#6D7D5F" opacity="0.8">
+    <ellipse cx="300" cy="600" rx="120" ry="28"/>
+    <ellipse cx="900" cy="600" rx="150" ry="32"/>
+    <ellipse cx="1500" cy="600" rx="130" ry="30"/>
+  </g>
+  <ellipse cx="480" cy="860" rx="360" ry="48" fill="#000000" opacity="0.18"/>
+  <rect y="1040" width="1920" height="40" fill="#2B2A2D" opacity="0.35"/>
+</svg>

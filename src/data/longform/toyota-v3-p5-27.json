@@ -1,0 +1,225 @@
+{
+  "id": "v3-p5-27",
+  "fps": 30,
+  "frames": 1044,
+  "audio": {
+    "src": "audio/toyota-v3-p5-27/scene-v3-p5-27.wav",
+    "seconds": 33.862,
+    "sha256": "91606a128d7cb0a1ce9605a5363eb89c04d838be527d7038d35f22d7b0f464a5",
+    "lineOffsets": [
+      {
+        "lineId": "v3-p5-27-l1",
+        "startSecond": 0.0
+      },
+      {
+        "lineId": "v3-p5-27-l2",
+        "startSecond": 10.018
+      },
+      {
+        "lineId": "v3-p5-27-l3",
+        "startSecond": 16.079
+      },
+      {
+        "lineId": "v3-p5-27-l4",
+        "startSecond": 27.398
+      }
+    ]
+  },
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part5-draft.md",
+  "sourceScriptSha256": "e823c9253fd84c14448608c1a51e387233280b69dcae405c276b679e20287ace",
+  "sourceInputSha256": "2177c147851477d61417559e1e0417c0e6fcc17333e573fae262987409caebb8",
+  "voiceCredits": [
+    "VOICEVOX:雀松朱司",
+    "VOICEVOX:玄野武宏",
+    "VOICEVOX:青山龍星"
+  ],
+  "evidence": [
+    "G1",
+    "G2",
+    "G3"
+  ],
+  "lines": [
+    {
+      "id": "v3-p5-27-l1",
+      "speaker": "ケント",
+      "text": "まずHEV。ここまで説明した、外から充電しないハイブリッドです。ガソリンを補給し、エンジンとモーターを組み合わせて走ります。",
+      "spokenText": "まずHEV。ここまで説明した、外から充電しないハイブリッドです。ガソリンを補給し、エンジンとモーターを組み合わせて走ります。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "topic",
+      "seconds": 9.568,
+      "audio": {
+        "src": "audio/toyota-v3-p5-27/v3-p5-27-l1.wav",
+        "seconds": 9.568,
+        "generatedFor": "[\"ケント\",\"12\",52,\"まずHEV。ここまで説明した、外から充電しないハイブリッドです。ガソリンを補給し、エンジンとモーターを組み合わせて走ります。\",1.0]"
+      },
+      "start": 0.4,
+      "end": 9.968
+    },
+    {
+      "id": "v3-p5-27-l2",
+      "speaker": "ホーマー",
+      "text": "PHEVは、そこに外から充電する方法も加わるんですね。エンジンも残っている。",
+      "spokenText": "PHEVは、そこに外から充電する方法も加わるんですね。エンジンも残っている。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "topic",
+      "seconds": 5.610666666666667,
+      "audio": {
+        "src": "audio/toyota-v3-p5-27/v3-p5-27-l2.wav",
+        "seconds": 5.610666666666667,
+        "generatedFor": "[\"ホーマー\",\"10\",39,\"PHEVは、そこに外から充電する方法も加わるんですね。エンジンも残っている。\",1.0]"
+      },
+      "start": 10.418,
+      "end": 16.028666666666666
+    },
+    {
+      "id": "v3-p5-27-l3",
+      "speaker": "ケント",
+      "text": "そうです。そしてBEVはエンジンを持たず、充電した電気でモーターを動かす車です。この動画では、普段EVと呼ばれる車をBEVとして区別します。",
+      "spokenText": "そうです。そしてBEVはエンジンを持たず、充電した電気でモーターを動かす車です。この動画では、普段EVと呼ばれる車をBEVとして区別します。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "topic",
+      "seconds": 10.869333333333334,
+      "audio": {
+        "src": "audio/toyota-v3-p5-27/v3-p5-27-l3.wav",
+        "seconds": 10.869333333333334,
+        "generatedFor": "[\"ケント\",\"12\",52,\"そうです。そしてBEVはエンジンを持たず、充電した電気でモーターを動かす車です。この動画では、普段EVと呼ばれる車をBEVとして区別します。\",1.0]"
+      },
+      "start": 16.478666666666665,
+      "end": 27.348
+    },
+    {
+      "id": "v3-p5-27-l4",
+      "speaker": "ジャッド",
+      "text": "似た文字が並びますが、図で電気とガソリンの入り口を見ると、違いは追いやすいですね。",
+      "spokenText": "似た文字が並びますが、図で電気とガソリンの入り口を見ると、違いは追いやすいですね。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "topic",
+      "seconds": 6.464,
+      "audio": {
+        "src": "audio/toyota-v3-p5-27/v3-p5-27-l4.wav",
+        "seconds": 6.464,
+        "generatedFor": "[\"ジャッド\",\"15\",82,\"似た文字が並びますが、図で電気とガソリンの入り口を見ると、違いは追いやすいですね。\",1.0]"
+      },
+      "start": 27.798,
+      "end": 34.262
+    }
+  ],
+  "cues": [
+    {
+      "start": 0.4,
+      "end": 1.326,
+      "speaker": "ケント",
+      "text": "まずHEV。",
+      "lineId": "v3-p5-27-l1"
+    },
+    {
+      "start": 1.326,
+      "end": 2.715,
+      "speaker": "ケント",
+      "text": "ここまで説明した、",
+      "lineId": "v3-p5-27-l1"
+    },
+    {
+      "start": 2.715,
+      "end": 5.338,
+      "speaker": "ケント",
+      "text": "外から充電しないハイブリッドです。",
+      "lineId": "v3-p5-27-l1"
+    },
+    {
+      "start": 5.338,
+      "end": 8.27,
+      "speaker": "ケント",
+      "text": "ガソリンを補給し、エンジンとモーターを",
+      "lineId": "v3-p5-27-l1"
+    },
+    {
+      "start": 8.27,
+      "end": 9.968,
+      "speaker": "ケント",
+      "text": "組み合わせて走ります。",
+      "lineId": "v3-p5-27-l1"
+    },
+    {
+      "start": 10.418,
+      "end": 13.223,
+      "speaker": "ホーマー",
+      "text": "PHEVは、そこに外から充電する方法も",
+      "lineId": "v3-p5-27-l2"
+    },
+    {
+      "start": 13.223,
+      "end": 14.405,
+      "speaker": "ホーマー",
+      "text": "加わるんですね。",
+      "lineId": "v3-p5-27-l2"
+    },
+    {
+      "start": 14.405,
+      "end": 16.029,
+      "speaker": "ホーマー",
+      "text": "エンジンも残っている。",
+      "lineId": "v3-p5-27-l2"
+    },
+    {
+      "start": 16.479,
+      "end": 17.255,
+      "speaker": "ケント",
+      "text": "そうです。",
+      "lineId": "v3-p5-27-l3"
+    },
+    {
+      "start": 17.255,
+      "end": 19.739,
+      "speaker": "ケント",
+      "text": "そしてBEVはエンジンを持たず、",
+      "lineId": "v3-p5-27-l3"
+    },
+    {
+      "start": 19.739,
+      "end": 22.69,
+      "speaker": "ケント",
+      "text": "充電した電気でモーターを動かす車です。",
+      "lineId": "v3-p5-27-l3"
+    },
+    {
+      "start": 22.69,
+      "end": 25.485,
+      "speaker": "ケント",
+      "text": "この動画では、普段EVと呼ばれる車を",
+      "lineId": "v3-p5-27-l3"
+    },
+    {
+      "start": 25.485,
+      "end": 27.348,
+      "speaker": "ケント",
+      "text": "BEVとして区別します。",
+      "lineId": "v3-p5-27-l3"
+    },
+    {
+      "start": 27.798,
+      "end": 29.532,
+      "speaker": "ジャッド",
+      "text": "似た文字が並びますが、",
+      "lineId": "v3-p5-27-l4"
+    },
+    {
+      "start": 29.532,
+      "end": 32.37,
+      "speaker": "ジャッド",
+      "text": "図で電気とガソリンの入り口を見ると、",
+      "lineId": "v3-p5-27-l4"
+    },
+    {
+      "start": 32.37,
+      "end": 34.262,
+      "speaker": "ジャッド",
+      "text": "違いは追いやすいですね。",
+      "lineId": "v3-p5-27-l4"
+    }
+  ]
+}

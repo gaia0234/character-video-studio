@@ -1,0 +1,50 @@
+{
+  "version": "toyota-v3-p5-28",
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part5-draft.md",
+  "scope": "v3-p5-28 only",
+  "evidence": ["G2", "G3"],
+  "scenes": [
+    {
+      "id": "v3-p5-28",
+      "part": 5,
+      "lines": [
+        {
+          "id": "v3-p5-28-l1",
+          "speaker": "ジャッド",
+          "text": "では、電気で走れる距離が長い車を選べば、それで自分に合うと考えてよいですか。",
+          "spokenText": "では、電気で走れる距離が長い車を選べば、それで自分に合うと考えてよいですか。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p5-28-l2",
+          "speaker": "ケント",
+          "text": "車の数字だけでは決まりません。家で充電できるか、出先でどんな設備を使えるか。充電にかかる時間も、設備や車種、温度、電池の残量で変わります。",
+          "spokenText": "車の数字だけでは決まりません。家で充電できるか、出先でどんな設備を使えるか。充電にかかる時間も、設備や車種、温度、電池の残量で変わります。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p5-28-l3",
+          "speaker": "ホーマー",
+          "text": "車を選ぶときに、その車だけでなく、毎日の使い方まで一緒に考える必要があるんですね。",
+          "spokenText": "車を選ぶときに、その車だけでなく、毎日の使い方まで一緒に考える必要があるんですね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p5-28-l4",
+          "speaker": "ケント",
+          "text": "ええ。家で充電できる人と、そうでない人では条件が違います。どの車なら不便が少ないかは、生活と組み合わせて考える話です。",
+          "spokenText": "ええ。家で充電できる人と、そうでない人では条件が違います。どの車なら不便が少ないかは、生活と組み合わせて考える話です。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        }
+      ]
+    }
+  ]
+}

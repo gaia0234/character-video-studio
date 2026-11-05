@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 320" width="360" height="320" role="img" aria-label="販売店の建物">
+  <ellipse cx="180" cy="306" rx="152" ry="12" fill="#000000" opacity="0.18"/>
+  <g stroke="#293747" stroke-width="5">
+    <line x1="22" y1="58" x2="22" y2="288"/>
+    <line x1="338" y1="58" x2="338" y2="288"/>
+  </g>
+  <rect x="4" y="68" width="36" height="140" rx="4" fill="#C4513F" stroke="#293747" stroke-width="5"/>
+  <path d="M4 104 H40 M4 140 H40 M4 176 H40" stroke="#FFFCF5" stroke-width="6" opacity="0.75"/>
+  <rect x="320" y="68" width="36" height="140" rx="4" fill="#3F6FA0" stroke="#293747" stroke-width="5"/>
+  <path d="M320 104 H356 M320 140 H356 M320 176 H356" stroke="#FFFCF5" stroke-width="6" opacity="0.75"/>
+  <circle cx="22" cy="56" r="6" fill="#D9AB56" stroke="#293747" stroke-width="4"/>
+  <circle cx="338" cy="56" r="6" fill="#D9AB56" stroke="#293747" stroke-width="4"/>
+  <rect x="52" y="96" width="256" height="192" rx="4" fill="#E9EFF4" stroke="#293747" stroke-width="6"/>
+  <path d="M30 102 L180 32 L330 102 Z" fill="#D9AB56" stroke="#293747" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M52 96 H308" stroke="#FFFCF5" stroke-width="5" opacity="0.5"/>
+  <rect x="76" y="120" width="208" height="120" fill="#F6DFA6" stroke="#293747" stroke-width="5"/>
+  <g stroke="#293747" stroke-width="4">
+    <line x1="145" y1="120" x2="145" y2="240"/>
+    <line x1="214" y1="120" x2="214" y2="240"/>
+  </g>
+  <rect x="80" y="124" width="60" height="112" fill="#FFFCF5" opacity="0.22"/>
+  <rect x="149" y="124" width="60" height="112" fill="#FFFCF5" opacity="0.16"/>
+  <rect x="218" y="124" width="60" height="112" fill="#FFFCF5" opacity="0.2"/>
+  <rect x="158" y="214" width="44" height="74" fill="#2F3E55" stroke="#293747" stroke-width="5"/>
+  <rect x="52" y="288" width="256" height="8" fill="#293747" opacity="0.35"/>
+</svg>

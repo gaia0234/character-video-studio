@@ -1,0 +1,50 @@
+{
+  "version": "toyota-v3-p5-27",
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part5-draft.md",
+  "scope": "v3-p5-27 only",
+  "evidence": ["G1", "G2", "G3"],
+  "scenes": [
+    {
+      "id": "v3-p5-27",
+      "part": 5,
+      "lines": [
+        {
+          "id": "v3-p5-27-l1",
+          "speaker": "ケント",
+          "text": "まずHEV。ここまで説明した、外から充電しないハイブリッドです。ガソリンを補給し、エンジンとモーターを組み合わせて走ります。",
+          "spokenText": "まずHEV。ここまで説明した、外から充電しないハイブリッドです。ガソリンを補給し、エンジンとモーターを組み合わせて走ります。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p5-27-l2",
+          "speaker": "ホーマー",
+          "text": "PHEVは、そこに外から充電する方法も加わるんですね。エンジンも残っている。",
+          "spokenText": "PHEVは、そこに外から充電する方法も加わるんですね。エンジンも残っている。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p5-27-l3",
+          "speaker": "ケント",
+          "text": "そうです。そしてBEVはエンジンを持たず、充電した電気でモーターを動かす車です。この動画では、普段EVと呼ばれる車をBEVとして区別します。",
+          "spokenText": "そうです。そしてBEVはエンジンを持たず、充電した電気でモーターを動かす車です。この動画では、普段EVと呼ばれる車をBEVとして区別します。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p5-27-l4",
+          "speaker": "ジャッド",
+          "text": "似た文字が並びますが、図で電気とガソリンの入り口を見ると、違いは追いやすいですね。",
+          "spokenText": "似た文字が並びますが、図で電気とガソリンの入り口を見ると、違いは追いやすいですね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        }
+      ]
+    }
+  ]
+}

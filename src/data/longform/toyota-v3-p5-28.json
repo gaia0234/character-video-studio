@@ -1,0 +1,224 @@
+{
+  "id": "v3-p5-28",
+  "fps": 30,
+  "frames": 1116,
+  "audio": {
+    "src": "audio/toyota-v3-p5-28/scene-v3-p5-28.wav",
+    "seconds": 36.262,
+    "sha256": "527cacd8eed9b26de7995b65ea7be1ff678db3e548b11820d65fe81cc5f734ea",
+    "lineOffsets": [
+      {
+        "lineId": "v3-p5-28-l1",
+        "startSecond": 0.0
+      },
+      {
+        "lineId": "v3-p5-28-l2",
+        "startSecond": 7.17
+      },
+      {
+        "lineId": "v3-p5-28-l3",
+        "startSecond": 19.577
+      },
+      {
+        "lineId": "v3-p5-28-l4",
+        "startSecond": 26.075
+      }
+    ]
+  },
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part5-draft.md",
+  "sourceScriptSha256": "e823c9253fd84c14448608c1a51e387233280b69dcae405c276b679e20287ace",
+  "sourceInputSha256": "f6d15b235f87c74896d062c6cdef45ab6d19a8e770fb3d4fbde21ea99bd31eb3",
+  "voiceCredits": [
+    "VOICEVOX:青山龍星",
+    "VOICEVOX:雀松朱司",
+    "VOICEVOX:玄野武宏"
+  ],
+  "evidence": [
+    "G2",
+    "G3"
+  ],
+  "lines": [
+    {
+      "id": "v3-p5-28-l1",
+      "speaker": "ジャッド",
+      "text": "では、電気で走れる距離が長い車を選べば、それで自分に合うと考えてよいですか。",
+      "spokenText": "では、電気で走れる距離が長い車を選べば、それで自分に合うと考えてよいですか。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "topic",
+      "seconds": 6.72,
+      "audio": {
+        "src": "audio/toyota-v3-p5-28/v3-p5-28-l1.wav",
+        "seconds": 6.72,
+        "generatedFor": "[\"ジャッド\",\"15\",82,\"では、電気で走れる距離が長い車を選べば、それで自分に合うと考えてよいですか。\",1.0]"
+      },
+      "start": 0.4,
+      "end": 7.12
+    },
+    {
+      "id": "v3-p5-28-l2",
+      "speaker": "ケント",
+      "text": "車の数字だけでは決まりません。家で充電できるか、出先でどんな設備を使えるか。充電にかかる時間も、設備や車種、温度、電池の残量で変わります。",
+      "spokenText": "車の数字だけでは決まりません。家で充電できるか、出先でどんな設備を使えるか。充電にかかる時間も、設備や車種、温度、電池の残量で変わります。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "topic",
+      "seconds": 11.957333333333333,
+      "audio": {
+        "src": "audio/toyota-v3-p5-28/v3-p5-28-l2.wav",
+        "seconds": 11.957333333333333,
+        "generatedFor": "[\"ケント\",\"12\",52,\"車の数字だけでは決まりません。家で充電できるか、出先でどんな設備を使えるか。充電にかかる時間も、設備や車種、温度、電池の残量で変わります。\",1.0]"
+      },
+      "start": 7.57,
+      "end": 19.52733333333333
+    },
+    {
+      "id": "v3-p5-28-l3",
+      "speaker": "ホーマー",
+      "text": "車を選ぶときに、その車だけでなく、毎日の使い方まで一緒に考える必要があるんですね。",
+      "spokenText": "車を選ぶときに、その車だけでなく、毎日の使い方まで一緒に考える必要があるんですね。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "topic",
+      "seconds": 6.048,
+      "audio": {
+        "src": "audio/toyota-v3-p5-28/v3-p5-28-l3.wav",
+        "seconds": 6.048,
+        "generatedFor": "[\"ホーマー\",\"10\",39,\"車を選ぶときに、その車だけでなく、毎日の使い方まで一緒に考える必要があるんですね。\",1.0]"
+      },
+      "start": 19.97733333333333,
+      "end": 26.02533333333333
+    },
+    {
+      "id": "v3-p5-28-l4",
+      "speaker": "ケント",
+      "text": "ええ。家で充電できる人と、そうでない人では条件が違います。どの車なら不便が少ないかは、生活と組み合わせて考える話です。",
+      "spokenText": "ええ。家で充電できる人と、そうでない人では条件が違います。どの車なら不便が少ないかは、生活と組み合わせて考える話です。",
+      "pauseAfter": 0.45,
+      "voiceSpeed": 1.0,
+      "phase": "topic",
+      "seconds": 10.186666666666667,
+      "audio": {
+        "src": "audio/toyota-v3-p5-28/v3-p5-28-l4.wav",
+        "seconds": 10.186666666666667,
+        "generatedFor": "[\"ケント\",\"12\",52,\"ええ。家で充電できる人と、そうでない人では条件が違います。どの車なら不便が少ないかは、生活と組み合わせて考える話です。\",1.0]"
+      },
+      "start": 26.47533333333333,
+      "end": 36.662
+    }
+  ],
+  "cues": [
+    {
+      "start": 0.4,
+      "end": 0.931,
+      "speaker": "ジャッド",
+      "text": "では、",
+      "lineId": "v3-p5-28-l1"
+    },
+    {
+      "start": 0.931,
+      "end": 3.937,
+      "speaker": "ジャッド",
+      "text": "電気で走れる距離が長い車を選べば、",
+      "lineId": "v3-p5-28-l1"
+    },
+    {
+      "start": 3.937,
+      "end": 7.12,
+      "speaker": "ジャッド",
+      "text": "それで自分に合うと考えてよいですか。",
+      "lineId": "v3-p5-28-l1"
+    },
+    {
+      "start": 7.57,
+      "end": 10.169,
+      "speaker": "ケント",
+      "text": "車の数字だけでは決まりません。",
+      "lineId": "v3-p5-28-l2"
+    },
+    {
+      "start": 10.169,
+      "end": 11.729,
+      "speaker": "ケント",
+      "text": "家で充電できるか、",
+      "lineId": "v3-p5-28-l2"
+    },
+    {
+      "start": 11.729,
+      "end": 14.155,
+      "speaker": "ケント",
+      "text": "出先でどんな設備を使えるか。",
+      "lineId": "v3-p5-28-l2"
+    },
+    {
+      "start": 14.155,
+      "end": 17.448,
+      "speaker": "ケント",
+      "text": "充電にかかる時間も、設備や車種、温度、",
+      "lineId": "v3-p5-28-l2"
+    },
+    {
+      "start": 17.448,
+      "end": 19.527,
+      "speaker": "ケント",
+      "text": "電池の残量で変わります。",
+      "lineId": "v3-p5-28-l2"
+    },
+    {
+      "start": 19.977,
+      "end": 22.485,
+      "speaker": "ホーマー",
+      "text": "車を選ぶときに、その車だけでなく、",
+      "lineId": "v3-p5-28-l3"
+    },
+    {
+      "start": 22.485,
+      "end": 24.108,
+      "speaker": "ホーマー",
+      "text": "毎日の使い方まで一緒に",
+      "lineId": "v3-p5-28-l3"
+    },
+    {
+      "start": 24.108,
+      "end": 26.025,
+      "speaker": "ホーマー",
+      "text": "考える必要があるんですね。",
+      "lineId": "v3-p5-28-l3"
+    },
+    {
+      "start": 26.475,
+      "end": 26.993,
+      "speaker": "ケント",
+      "text": "ええ。",
+      "lineId": "v3-p5-28-l4"
+    },
+    {
+      "start": 26.993,
+      "end": 28.72,
+      "speaker": "ケント",
+      "text": "家で充電できる人と、",
+      "lineId": "v3-p5-28-l4"
+    },
+    {
+      "start": 28.72,
+      "end": 31.482,
+      "speaker": "ケント",
+      "text": "そうでない人では条件が違います。",
+      "lineId": "v3-p5-28-l4"
+    },
+    {
+      "start": 31.482,
+      "end": 33.9,
+      "speaker": "ケント",
+      "text": "どの車なら不便が少ないかは、",
+      "lineId": "v3-p5-28-l4"
+    },
+    {
+      "start": 33.9,
+      "end": 36.662,
+      "speaker": "ケント",
+      "text": "生活と組み合わせて考える話です。",
+      "lineId": "v3-p5-28-l4"
+    }
+  ]
+}

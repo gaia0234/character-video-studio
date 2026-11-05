@@ -1,0 +1,50 @@
+{
+  "version": "toyota-v3-p4-20",
+  "sourceScript": "sources/script-longform-toyota-conversation-v3-part4-draft.md",
+  "scope": "v3-p4-20 only",
+  "evidence": ["F10", "F11"],
+  "scenes": [
+    {
+      "id": "v3-p4-20",
+      "part": 4,
+      "lines": [
+        {
+          "id": "v3-p4-20-l1",
+          "speaker": "ケント",
+          "text": "まず、別々の発表が二つあります。2015年は燃料電池車の技術。2019年は、電動化に関わる幅広い技術です。",
+          "spokenText": "まず、別々の発表が二つあります。2015年は燃料電池車の技術。2019年は、電動化に関わる幅広い技術です。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p4-20-l2",
+          "speaker": "ジャッド",
+          "text": "ハイブリッドの話をしていたのに、今度は燃料電池車。ここは同じ種類の車と思わないほうがよいんですね。",
+          "spokenText": "ハイブリッドの話をしていたのに、今度は燃料電池車。ここは同じ種類の車と思わないほうがよいんですね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p4-20-l3",
+          "speaker": "ホーマー",
+          "text": "年と件数だけが並ぶと、一つの制度が大きくなったように見えます。最初に対象を分けると追いやすいですね。",
+          "spokenText": "年と件数だけが並ぶと、一つの制度が大きくなったように見えます。最初に対象を分けると追いやすいですね。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        },
+        {
+          "id": "v3-p4-20-l4",
+          "speaker": "ケント",
+          "text": "そのとおりです。同じ「特許の無償開放」という見出しでも、何の技術を指しているか、発表ごとに見ていきます。",
+          "spokenText": "そのとおりです。同じ「特許の無償開放」という見出しでも、何の技術を指しているか、発表ごとに見ていきます。",
+          "pauseAfter": 0.45,
+          "voiceSpeed": 1.0,
+          "phase": "topic"
+        }
+      ]
+    }
+  ]
+}

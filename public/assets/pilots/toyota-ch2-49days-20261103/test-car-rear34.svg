@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 470" width="940" height="470" role="img" aria-label="斜め後方から見た初代プリウス（NHW10）">
+  <defs>
+    <clipPath id="p5body">
+      <path d="M60 360 H400 L700 240 V95 H400 L60 215 Z"/>
+    </clipPath>
+  </defs>
+  <path d="M96 446 L700 328 L740 344 L130 462 Z" fill="#000000" opacity="0.15"/>
+  <g>
+    <ellipse cx="209" cy="367" rx="73" ry="73" fill="#293747"/>
+    <ellipse cx="209" cy="367" rx="45" ry="45" fill="#C3CED5" stroke="#293747" stroke-width="6"/>
+    <ellipse cx="209" cy="367" rx="14" ry="14" fill="#8A9AA8"/>
+    <ellipse cx="660" cy="266" rx="68" ry="68" fill="#293747"/>
+    <ellipse cx="660" cy="266" rx="42" ry="42" fill="#C3CED5" stroke="#293747" stroke-width="6"/>
+    <ellipse cx="660" cy="266" rx="13" ry="13" fill="#8A9AA8"/>
+  </g>
+  <path d="M60 360 H400 L700 240 V95 H400 L60 215 Z" fill="#E9EFF4"/>
+  <g clip-path="url(#p5body)">
+    <path d="M60 300 H400 L700 180 V240 H400 L60 360 Z" fill="#D5E0E9"/>
+    <path d="M60 340 H400 L700 220 V240 H400 L60 360 Z" fill="#C2D0DB"/>
+    <rect x="120" y="120" width="360" height="90" fill="#FFFFFF" opacity="0.3"/>
+  </g>
+  <path d="M60 360 H400 L700 240 V95 H400 L60 215 Z" fill="none" stroke="#293747" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M400 215 L700 95" fill="none" stroke="#D9AB56" stroke-width="8" stroke-linecap="round"/>
+  <path d="M60 215 H400 L438 165 H100 Z" fill="#F4F8FB" stroke="#293747" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M88 165 H410 L394 77 H118 Z" fill="#7FA3B8" stroke="#293747" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M102 160 H398 L386 84 H128 Z" fill="none" stroke="#DCE9F2" stroke-width="6" opacity="0.85"/>
+  <path d="M410 165 L600 95 L560 47 L394 77 Z" fill="#7FA3B8" stroke="#293747" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M416 158 L588 96" fill="none" stroke="#DCE9F2" stroke-width="5" opacity="0.8"/>
+  <path d="M118 77 H394 L560 47 H330 Z" fill="#F4F8FB" stroke="#293747" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M340 62 H520" fill="none" stroke="#E2ECF3" stroke-width="4" opacity="0.9"/>
+  <path d="M60 340 H400 V360 H60 Z" fill="#C9D6DE" stroke="#293747" stroke-width="6" stroke-linejoin="round"/>
+  <rect x="72" y="180" width="92" height="96" rx="10" fill="#C4513F" stroke="#293747" stroke-width="5"/>
+  <rect x="296" y="180" width="92" height="96" rx="10" fill="#C4513F" stroke="#293747" stroke-width="5"/>
+  <rect x="196" y="207" width="58" height="53" rx="4" fill="#F4F8FB" stroke="#293747" stroke-width="4"/>
+  <path d="M60 215 H400" fill="none" stroke="#293747" stroke-width="4" opacity="0.22"/>
+  <path d="M420 300 L500 272" fill="none" stroke="#293747" stroke-width="5" opacity="0.3"/>
+  <path d="M470 236 L492 230" fill="none" stroke="#293747" stroke-width="5" opacity="0.7"/>
+  <rect x="456" y="242" width="48" height="11" rx="5" fill="#293747" opacity="0.75"/>
+  <path d="M540 190 L560 184" fill="none" stroke="#293747" stroke-width="5" opacity="0.65"/>
+</svg>
