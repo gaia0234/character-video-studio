@@ -74,7 +74,7 @@
 - 保存前バックアップは `.editor/backups/`、新規音声は `public/audio/editor/<処理ID>/`、動画と台本のスナップショットは `output/editor/jobs/<処理ID>/`。従来の試験動画・音声は保持した。
 - 主な追加ファイル：`src/editor/{index.html,index.tsx,style.css}`、`src/data/{editor-project.json,editorProject.ts}`、`scripts/{start-editor.mjs,editor-server.mjs,render-editor-video.mjs,verify-editor.cjs}`、`docs/editor.md`。
 - 主な変更ファイル：`src/{Root.tsx,CharacterDialogue.tsx}`、`src/data/characterDialogue.ts`、`scripts/generate-dialogue-voice.py`、`package.json`、`package-lock.json`、`.gitignore`、`README.md`。Playerとesbuildの直接依存、`editor`・`verify:editor`コマンドを追加した。
-- Windows起動用追加ファイル：`scripts/start-editor-windows.ps1`、`scripts/install-editor-shortcut.ps1`。対象は **Ubuntu-26.04** と `/home/gaia2/projects/character-video-studio`（スクリプトは現環境Ubuntu ds-work `/home/ds-work/...` へ未更新、2026-11-06確認）。WSLの対話シェルで既存nvm環境を読み込み、独立したPowerShellウィンドウでサーバーを起動する。
+- Windows起動用追加ファイル：`scripts/start-editor-windows.ps1`、`scripts/install-editor-shortcut.ps1`。当初の対象はWSL Ubuntu-26.04と `/home/gaia2/...`。2026-11-06にWSLから、Windowsの `ssh ubuntu-work`（ds-server-01 / ds-work）経由へ変更：独立したPowerShellウィンドウで `ssh -t -L 3210:127.0.0.1:3210` を開き、`/home/ds-work/projects/character-video-studio` で `bash -ic 'npm run editor'` を起動する。サーバ側の起動は確認済み、Windows側での実行は未確認。
 
 ## 検証済み
 

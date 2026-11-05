@@ -11,11 +11,11 @@ Windowsのデスクトップにある **Knowledge Anime Editor** をダブルク
 終了はサーバー用ターミナルで Ctrl+C。Codexの起動は不要です。
 
 ショートカットは `scripts/install-editor-shortcut.ps1`、起動処理は
-`scripts/start-editor-windows.ps1` にあります。現在のWSLディストリビューション
-`Ubuntu-26.04` とこのプロジェクトのパスを使用します。
+`scripts/start-editor-windows.ps1` にあります。Windowsの `ssh ubuntu-work`（Ubuntu ds-server-01 / ds-work）で
+`/home/ds-work/projects/character-video-studio` に入り、3210番を `127.0.0.1:3210` へ転送して起動します（2026-11-06、WSLから変更。Windows側での実行は未確認）。
 
 コマンドで起動する場合は、
-WSL側のこのプロジェクトで実行します。
+ds-server-01（`ssh ubuntu-work`）のこのプロジェクトで実行します。Windowsのブラウザから開く場合は `ssh -L 3210:127.0.0.1:3210 ubuntu-work` で転送します。
 
 ```sh
 npm run editor
@@ -59,7 +59,7 @@ Windowsのブラウザーで **http://127.0.0.1:3210** を開きます。
 
 ## 環境
 
-Node.js・Python・VOICEVOX Coreは現在のWSL環境を使用します。
+Node.js・Python・VOICEVOX Coreは ds-server-01（ds-work）の環境を使用します。
 音声クレジット・利用規約の確認状況は [音声試験の記録](../sources/character-dialogue-voice.md) を参照してください。
 初版の調整方法は入力欄とスライダーです。
 

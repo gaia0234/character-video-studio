@@ -2,8 +2,8 @@ param([switch]$NoBrowser)
 
 $ErrorActionPreference = 'Stop'
 $editorUrl = 'http://127.0.0.1:3210'
-$distribution = 'Ubuntu-26.04'
-$linuxProject = '/home/gaia2/projects/character-video-studio'
+$sshHost = 'ubuntu-work'
+$linuxProject = '/home/ds-work/projects/character-video-studio'
 
 function Test-EditorReady {
     $request = [System.Net.HttpWebRequest]::Create("$editorUrl/api/project")
@@ -34,7 +34,7 @@ function Test-EditorReady {
 try {
     if (-not (Test-EditorReady)) {
         Write-Host 'Starting Knowledge Anime Editor...'
-        $serverCommand = "`$Host.UI.RawUI.WindowTitle = 'Knowledge Anime Editor Server'; & '$env:SystemRoot\System32\wsl.exe' --distribution '$distribution' --cd '$linuxProject' --exec bash -ic 'npm run editor'"
+        $serverCommand = "`$Host.UI.RawUI.WindowTitle = 'Knowledge Anime Editor Server'; & '$env:SystemRoot\System32\OpenSSH\ssh.exe' -t -o ExitOnForwardFailure=yes -L 3210:127.0.0.1:3210 '$sshHost' `"cd $linuxProject && bash -ic 'npm run editor'`""
         $encodedCommand = [Convert]::ToBase64String([Text.Encoding]::Unicode.GetBytes($serverCommand))
         $arguments = "-NoProfile -NoExit -EncodedCommand $encodedCommand"
         $serverProcess = Start-Process -FilePath "$env:SystemRoot\System32\WindowsPowerShell\v1.0\powershell.exe" -ArgumentList $arguments -PassThru
@@ -51,7 +51,7 @@ try {
     if (-not $NoBrowser) { Start-Process $editorUrl }
 } catch {
     Write-Host $_.Exception.Message -ForegroundColor Red
-    Write-Host "Manual start: wsl -d $distribution --cd $linuxProject --exec bash -ic `"npm run editor`""
+    Write-Host "Manual start: ssh -t -L 3210:127.0.0.1:3210 $sshHost `"cd $linuxProject && bash -ic 'npm run editor'`""
     if (-not $NoBrowser) { Read-Host 'Press Enter to close' | Out-Null }
     exit 1
 }
