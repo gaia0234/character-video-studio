@@ -1,0 +1,8 @@
+import React from 'react';
+import {Composition, registerRoot} from 'remotion';
+import {ToyotaV19Shu} from './longform/ToyotaV19Shu';
+import data from './data/longform/toyota-v19-shu.json';
+
+const Root = () => <Composition id="ToyotaV19Shu" component={ToyotaV19Shu}
+  width={1920} height={1080} fps={30} durationInFrames={data.frames} />;
+registerRoot(Root);

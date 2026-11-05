@@ -1,0 +1,221 @@
+{
+  "assets": [
+    {
+      "file": "audio/toyota-v19-maku-20261029/v19-maku-01.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雀松朱司",
+        "style": 52,
+        "model": "12",
+        "speed": 1.0
+      },
+      "speaker": "ケント",
+      "credit": "VOICEVOX:雀松朱司",
+      "sha256": "45beb7a9e54101404e662740755c002c23d472eb821017fb148d664293422ba5",
+      "seconds": 4.96,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "sources/elder-channel-characters.md"
+    },
+    {
+      "file": "audio/toyota-v19-maku-20261029/v19-maku-02.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "玄野武宏",
+        "style": 39,
+        "model": "10",
+        "speed": 1.0
+      },
+      "speaker": "ホーマー",
+      "credit": "VOICEVOX:玄野武宏",
+      "sha256": "b0e0aa43013f31d74ced6a7bc194fc8e39368f6a97d0ea41d4bd572cf3cf12ed",
+      "seconds": 8.202666666666667,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "sources/elder-channel-characters.md"
+    },
+    {
+      "file": "audio/toyota-v19-maku-20261029/v19-maku-03.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雀松朱司",
+        "style": 52,
+        "model": "12",
+        "speed": 1.0
+      },
+      "speaker": "ケント",
+      "credit": "VOICEVOX:雀松朱司",
+      "sha256": "c0ddc7ff7246d9afce094a840954d01598317709e7609725c47ec0ebbe50a8d9",
+      "seconds": 10.250666666666667,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "sources/elder-channel-characters.md"
+    },
+    {
+      "file": "audio/toyota-v19-maku-20261029/v19-maku-04.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "青山龍星",
+        "style": 82,
+        "model": "15",
+        "speed": 1.0
+      },
+      "speaker": "ジャッド",
+      "credit": "VOICEVOX:青山龍星",
+      "sha256": "55e1c40752f1f899bfb223e92debf6493968800a18ada28f4504d672f1a3ad46",
+      "seconds": 2.304,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "sources/elder-channel-characters.md"
+    },
+    {
+      "file": "audio/toyota-v19-maku-20261029/v19-maku-05.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雀松朱司",
+        "style": 52,
+        "model": "12",
+        "speed": 1.0
+      },
+      "speaker": "ケント",
+      "credit": "VOICEVOX:雀松朱司",
+      "sha256": "666552de7dcd7885abf4cd490a31e9e839afc79a3b73a835a2c64557936f0f73",
+      "seconds": 2.7093333333333334,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "sources/elder-channel-characters.md"
+    },
+    {
+      "file": "audio/toyota-v19-maku-20261029/v19-maku-06.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "青山龍星",
+        "style": 82,
+        "model": "15",
+        "speed": 1.0
+      },
+      "speaker": "ジャッド",
+      "credit": "VOICEVOX:青山龍星",
+      "sha256": "2215b8bbde9f1555889c51c8c7b41865702b8ebed9c7121e85226d7191a842a8",
+      "seconds": 4.256,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "sources/elder-channel-characters.md"
+    },
+    {
+      "file": "audio/toyota-v19-maku-20261029/v19-maku-07.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雀松朱司",
+        "style": 52,
+        "model": "12",
+        "speed": 1.0
+      },
+      "speaker": "ケント",
+      "credit": "VOICEVOX:雀松朱司",
+      "sha256": "98336e6d4352b3241f00adf2ad87d6d571d4f220d9185935594009521d6fc6c1",
+      "seconds": 2.0906666666666665,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "sources/elder-channel-characters.md"
+    },
+    {
+      "file": "audio/toyota-v19-maku-20261029/v19-maku-08.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "青山龍星",
+        "style": 82,
+        "model": "15",
+        "speed": 1.0
+      },
+      "speaker": "ジャッド",
+      "credit": "VOICEVOX:青山龍星",
+      "sha256": "48988feab66129f56d2c9f78aa8da581fd233d1b6662bcaeccc5d4b1aacb9ff9",
+      "seconds": 8.885333333333334,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "sources/elder-channel-characters.md"
+    },
+    {
+      "file": "audio/toyota-v19-maku-20261029/v19-maku-09.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雀松朱司",
+        "style": 52,
+        "model": "12",
+        "speed": 1.0
+      },
+      "speaker": "ケント",
+      "credit": "VOICEVOX:雀松朱司",
+      "sha256": "408b957414df00e6a1b9bc67bc74e03703369eeb475871f8e06a8574b06b750e",
+      "seconds": 3.2,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "sources/elder-channel-characters.md"
+    },
+    {
+      "file": "audio/toyota-v19-maku-20261029/v19-maku-10.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "青山龍星",
+        "style": 82,
+        "model": "15",
+        "speed": 1.0
+      },
+      "speaker": "ジャッド",
+      "credit": "VOICEVOX:青山龍星",
+      "sha256": "a3efe1bb3a08c26316488ac82fae5a6ae68482c2d2396030094fe2ad172eb56c",
+      "seconds": 7.434666666666667,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "sources/elder-channel-characters.md"
+    },
+    {
+      "file": "audio/toyota-v19-maku-20261029/v19-maku-11.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "891208c5abd3367f2bcdf4495222f94d7d375b63557b0b29295ff26f8c4e1f1d",
+      "seconds": 9.354666666666667,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/toyota-v19-maku-20261029/scene-v19-maku.wav",
+      "type": "voice-v11-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（発話WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "発話WAV合成",
+      "sha256": "56385ea342374f0c7d358f8bddeddffb86dccdbb11877b2fc5f3ff08ff8e3646",
+      "seconds": 68.148,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "sources/elder-channel-characters.md"
+    }
+  ]
+}

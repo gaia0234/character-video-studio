@@ -1,0 +1,211 @@
+{
+  "assets": [
+    {
+      "file": "audio/toyota-v19-chapter1-20261029/v19-ch1-01.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "86d2c9b5c2958557e4afbc7533195ee65656de82f067544be0fdf7fbcde68c4d",
+      "seconds": 26.101333333333333,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/toyota-v19-chapter1-20261029/v19-ch1-02.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雀松朱司",
+        "style": 52,
+        "model": "12",
+        "speed": 1.0
+      },
+      "speaker": "ケント",
+      "credit": "VOICEVOX:雀松朱司",
+      "sha256": "1e0b0d84255dbb57c71cca0503b1baa2d641acd9a9d2d5ea71e3c7e3e75d50dc",
+      "seconds": 6.88,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "sources/elder-channel-characters.md"
+    },
+    {
+      "file": "audio/toyota-v19-chapter1-20261029/v19-ch1-03.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "ef27594f822b8a60722f6239e4cb2897f9fa454dc270d7019020e5615f06d46e",
+      "seconds": 5.536,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/toyota-v19-chapter1-20261029/v19-ch1-04.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "玄野武宏",
+        "style": 39,
+        "model": "10",
+        "speed": 1.0
+      },
+      "speaker": "ホーマー",
+      "credit": "VOICEVOX:玄野武宏",
+      "sha256": "7bbe675addbcc875dda6f96dcd16b8666fd4a6569a958306cde0178f3da65778",
+      "seconds": 3.2853333333333334,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "sources/elder-channel-characters.md"
+    },
+    {
+      "file": "audio/toyota-v19-chapter1-20261029/v19-ch1-05.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "青山龍星",
+        "style": 82,
+        "model": "15",
+        "speed": 1.0
+      },
+      "speaker": "ジャッド",
+      "credit": "VOICEVOX:青山龍星",
+      "sha256": "5aa56bc1da6bdf257c0d7f9968703fb2e64627847443da182ea2f292b93ed272",
+      "seconds": 4.64,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "sources/elder-channel-characters.md"
+    },
+    {
+      "file": "audio/toyota-v19-chapter1-20261029/v19-ch1-06.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "1b92e4aac9a92af20dece106dddff9cca746e2f66fb5f2510285ba003d75b33f",
+      "seconds": 12.821333333333333,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/toyota-v19-chapter1-20261029/v19-ch1-07.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雀松朱司",
+        "style": 52,
+        "model": "12",
+        "speed": 1.0
+      },
+      "speaker": "ケント",
+      "credit": "VOICEVOX:雀松朱司",
+      "sha256": "577280b2016dd8104d49381b0d324e0889dd707684751b895e803a4981c723ac",
+      "seconds": 6.314666666666667,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "sources/elder-channel-characters.md"
+    },
+    {
+      "file": "audio/toyota-v19-chapter1-20261029/v19-ch1-08.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "ab68195e360f012b857e25c4f5e71b39174ca1d913e3a323014d9400dfbd7786",
+      "seconds": 15.594666666666667,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/toyota-v19-chapter1-20261029/v19-ch1-09.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "玄野武宏",
+        "style": 39,
+        "model": "10",
+        "speed": 1.0
+      },
+      "speaker": "ホーマー",
+      "credit": "VOICEVOX:玄野武宏",
+      "sha256": "21b1ae15cd64452616f585cb09c73813d03745ff8ba3158c3f73295b8b3303aa",
+      "seconds": 3.1573333333333333,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "sources/elder-channel-characters.md"
+    },
+    {
+      "file": "audio/toyota-v19-chapter1-20261029/v19-ch1-10.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "2b1f5e95649114a6f843a9cc6186d28df3c359ffb24da40cb1fd20003bd6d188",
+      "seconds": 4.213333333333333,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+    },
+    {
+      "file": "audio/toyota-v19-chapter1-20261029/scene-v19-ch1.wav",
+      "type": "voice-v11-scene",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "実尺合成（発話WAVの連結）",
+        "style": null,
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "credit": "発話WAV合成",
+      "sha256": "ff6300618f1ffcdc12f080764159e544f1978384c4446d29e738e387947dd87c",
+      "seconds": 92.594,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "sources/elder-channel-characters.md"
+    }
+  ]
+}
