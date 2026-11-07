@@ -1,0 +1,240 @@
+{
+  "assets": [
+    {
+      "file": "audio/toyota-v19-maku-20261029/v19-maku-04.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "青山龍星",
+        "style": 82,
+        "model": "15",
+        "speed": 1.0
+      },
+      "speaker": "ジャッド",
+      "credit": "VOICEVOX:青山龍星",
+      "sha256": "55e1c40752f1f899bfb223e92debf6493968800a18ada28f4504d672f1a3ad46",
+      "seconds": 2.304,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "sources/elder-channel-characters.md",
+      "reusedFrom": "audio/toyota-v19-maku-20261029/v19-maku-04.wav",
+      "reusedSha256": "55e1c40752f1f899bfb223e92debf6493968800a18ada28f4504d672f1a3ad46",
+      "text": "そうだな。そこは間違いない。",
+      "lineId": "rest-04",
+      "note": "Existing WAV reused unchanged (not copied)."
+    },
+    {
+      "file": "audio/toyota-v19-maku-20261029/v19-maku-05.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雀松朱司",
+        "style": 52,
+        "model": "12",
+        "speed": 1.0
+      },
+      "speaker": "ケント",
+      "credit": "VOICEVOX:雀松朱司",
+      "sha256": "666552de7dcd7885abf4cd490a31e9e839afc79a3b73a835a2c64557936f0f73",
+      "seconds": 2.7093333333333334,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "sources/elder-channel-characters.md",
+      "reusedFrom": "audio/toyota-v19-maku-20261029/v19-maku-05.wav",
+      "reusedSha256": "666552de7dcd7885abf4cd490a31e9e839afc79a3b73a835a2c64557936f0f73",
+      "text": "珍しいですね。すんなり認めるなんて。",
+      "lineId": "rest-05",
+      "note": "Existing WAV reused unchanged (not copied)."
+    },
+    {
+      "file": "audio/toyota-v20-opening3d-rest-20261107/rest-06.wav",
+      "type": "voice-v20-opening-rest",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "青山龍星",
+        "style": 82,
+        "model": "15",
+        "speed": 1.0
+      },
+      "speaker": "ジャッド",
+      "credit": "VOICEVOX:青山龍星",
+      "sha256": "360ea89dbc123fbac1a529baf46656ad30d6f56b5976a84a54df44e69efeeac8",
+      "seconds": 11.914666666666667,
+      "approvalStatus": "draft-v20-opening-rest",
+      "licenseReference": "sources/elder-channel-characters.md",
+      "generatedFor": "[\"ジャッド\",\"15\",82,\"ただ……電気だけで走る車、か。いや、いい。年を取ると、妙なところが引っかかる。プリウスが出たのは、いつだった。\",1.0]",
+      "text": "ただ……電気だけで走る車、か。いや、いい。年を取ると、妙なところが引っかかる。プリウスが出たのは、いつだった。",
+      "lineId": "rest-06",
+      "generator": "output/toyota-v20-opening-rest-20261107/voice/generate-voice.py (local VOICEVOX core, no network)"
+    },
+    {
+      "file": "audio/toyota-v19-maku-20261029/v19-maku-07.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雀松朱司",
+        "style": 52,
+        "model": "12",
+        "speed": 1.0
+      },
+      "speaker": "ケント",
+      "credit": "VOICEVOX:雀松朱司",
+      "sha256": "98336e6d4352b3241f00adf2ad87d6d571d4f220d9185935594009521d6fc6c1",
+      "seconds": 2.0906666666666665,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "sources/elder-channel-characters.md",
+      "reusedFrom": "audio/toyota-v19-maku-20261029/v19-maku-07.wav",
+      "reusedSha256": "98336e6d4352b3241f00adf2ad87d6d571d4f220d9185935594009521d6fc6c1",
+      "text": "1997年です。",
+      "lineId": "rest-07",
+      "note": "Existing WAV reused unchanged (not copied)."
+    },
+    {
+      "file": "audio/toyota-v19-maku-20261029/v19-maku-08.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "青山龍星",
+        "style": 82,
+        "model": "15",
+        "speed": 1.0
+      },
+      "speaker": "ジャッド",
+      "credit": "VOICEVOX:青山龍星",
+      "sha256": "48988feab66129f56d2c9f78aa8da581fd233d1b6662bcaeccc5d4b1aacb9ff9",
+      "seconds": 8.885333333333334,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "sources/elder-channel-characters.md",
+      "reusedFrom": "audio/toyota-v19-maku-20261029/v19-maku-08.wav",
+      "reusedSha256": "48988feab66129f56d2c9f78aa8da581fd233d1b6662bcaeccc5d4b1aacb9ff9",
+      "text": "29年前か。そのころからモーターを使う車を売ってきたんだな。そこで覚えたことは、今のEVにも使えるのかね。",
+      "lineId": "rest-08",
+      "note": "Existing WAV reused unchanged (not copied)."
+    },
+    {
+      "file": "audio/toyota-v19-maku-20261029/v19-maku-09.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "雀松朱司",
+        "style": 52,
+        "model": "12",
+        "speed": 1.0
+      },
+      "speaker": "ケント",
+      "credit": "VOICEVOX:雀松朱司",
+      "sha256": "408b957414df00e6a1b9bc67bc74e03703369eeb475871f8e06a8574b06b750e",
+      "seconds": 3.2,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "sources/elder-channel-characters.md",
+      "reusedFrom": "audio/toyota-v19-maku-20261029/v19-maku-09.wav",
+      "reusedSha256": "408b957414df00e6a1b9bc67bc74e03703369eeb475871f8e06a8574b06b750e",
+      "text": "昔の実績で、今の遅れは埋まりませんよ。",
+      "lineId": "rest-09",
+      "note": "Existing WAV reused unchanged (not copied)."
+    },
+    {
+      "file": "audio/toyota-v19-maku-20261029/v19-maku-10.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "青山龍星",
+        "style": 82,
+        "model": "15",
+        "speed": 1.0
+      },
+      "speaker": "ジャッド",
+      "credit": "VOICEVOX:青山龍星",
+      "sha256": "a3efe1bb3a08c26316488ac82fae5a6ae68482c2d2396030094fe2ad172eb56c",
+      "seconds": 7.434666666666667,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "sources/elder-channel-characters.md",
+      "reusedFrom": "audio/toyota-v19-maku-20261029/v19-maku-10.wav",
+      "reusedSha256": "a3efe1bb3a08c26316488ac82fae5a6ae68482c2d2396030094fe2ad172eb56c",
+      "text": "それはそうだ。じゃあ、プリウスで何を積み重ねてきたのか。まずは、そこから聞かせてくれ。",
+      "lineId": "rest-10",
+      "note": "Existing WAV reused unchanged (not copied)."
+    },
+    {
+      "file": "audio/toyota-v19-maku-20261029/v19-maku-11.wav",
+      "type": "voice-v11",
+      "source": "https://github.com/VOICEVOX/voicevox_vvm/releases/tag/0.16.4",
+      "coreVersion": "0.17.0",
+      "voice": {
+        "name": "男声2",
+        "style": 10000,
+        "model": "n0",
+        "speed": 1.04,
+        "credit": "VOICEVOX Nemo",
+        "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/"
+      },
+      "speaker": "ナレ2",
+      "credit": "VOICEVOX Nemo",
+      "sha256": "891208c5abd3367f2bcdf4495222f94d7d375b63557b0b29295ff26f8c4e1f1d",
+      "seconds": 9.354666666666667,
+      "approvalStatus": "draft-v11",
+      "licenseReference": "https://voicevox.hiroshiba.jp/nemo/term/",
+      "reusedFrom": "audio/toyota-v19-maku-20261029/v19-maku-11.wav",
+      "reusedSha256": "891208c5abd3367f2bcdf4495222f94d7d375b63557b0b29295ff26f8c4e1f1d",
+      "text": "その29年をたどると、一台の走らない車に行き着く。技術者たちは、その車を走らせるまでに、49日かかった。",
+      "lineId": "rest-11",
+      "note": "Existing WAV reused unchanged (not copied). Actual query speedScale 1.0 (v19-maku-11-query.json); manifest voice.speed 1.04 for ナレ2 is a stale label."
+    },
+    {
+      "file": "audio/toyota-v20-opening3d-rest-20261107/scene-opening3d-rest.wav",
+      "type": "voice-v20-opening-rest-scene",
+      "voice": {
+        "name": "実尺合成（発話WAVの連結、間0.45秒、先頭リードなし）",
+        "model": "composed"
+      },
+      "speaker": "composed",
+      "sha256": "800c58615b296bb166687ea52c30cf7b40c226cc2dcd82adacfd69cedd10b4cb",
+      "seconds": 51.04333333333334,
+      "approvalStatus": "draft-v20-opening-rest",
+      "lineOffsets": [
+        {
+          "lineId": "rest-04",
+          "startSecond": 0.0
+        },
+        {
+          "lineId": "rest-05",
+          "startSecond": 2.754
+        },
+        {
+          "lineId": "rest-06",
+          "startSecond": 5.913
+        },
+        {
+          "lineId": "rest-07",
+          "startSecond": 18.278
+        },
+        {
+          "lineId": "rest-08",
+          "startSecond": 20.819
+        },
+        {
+          "lineId": "rest-09",
+          "startSecond": 30.154
+        },
+        {
+          "lineId": "rest-10",
+          "startSecond": 33.804
+        },
+        {
+          "lineId": "rest-11",
+          "startSecond": 41.689
+        }
+      ],
+      "credit": [
+        "VOICEVOX:雀松朱司",
+        "VOICEVOX:青山龍星",
+        "VOICEVOX Nemo"
+      ]
+    }
+  ]
+}

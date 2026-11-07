@@ -1,0 +1,302 @@
+{
+  "fps": 30,
+  "frames": 1565,
+  "audio": {
+    "src": "audio/toyota-v20-opening3d-rest-20261107/scene-opening3d-rest.wav",
+    "seconds": 51.04333333333334,
+    "sha256": "800c58615b296bb166687ea52c30cf7b40c226cc2dcd82adacfd69cedd10b4cb",
+    "leadFrames": 12,
+    "lineOffsets": [
+      {
+        "lineId": "rest-04",
+        "startSecond": 0.0
+      },
+      {
+        "lineId": "rest-05",
+        "startSecond": 2.754
+      },
+      {
+        "lineId": "rest-06",
+        "startSecond": 5.913
+      },
+      {
+        "lineId": "rest-07",
+        "startSecond": 18.278
+      },
+      {
+        "lineId": "rest-08",
+        "startSecond": 20.819
+      },
+      {
+        "lineId": "rest-09",
+        "startSecond": 30.154
+      },
+      {
+        "lineId": "rest-10",
+        "startSecond": 33.804
+      },
+      {
+        "lineId": "rest-11",
+        "startSecond": 41.689
+      }
+    ]
+  },
+  "lines": [
+    {
+      "id": "rest-04",
+      "utterance": 4,
+      "speaker": "ジャッド",
+      "text": "そうだな。そこは間違いない。",
+      "src": "audio/toyota-v19-maku-20261029/v19-maku-04.wav",
+      "seconds": 2.304,
+      "startFrame": 12,
+      "endFrame": 81
+    },
+    {
+      "id": "rest-05",
+      "utterance": 5,
+      "speaker": "ケント",
+      "text": "珍しいですね。すんなり認めるなんて。",
+      "src": "audio/toyota-v19-maku-20261029/v19-maku-05.wav",
+      "seconds": 2.7093333333333334,
+      "startFrame": 95,
+      "endFrame": 176
+    },
+    {
+      "id": "rest-06",
+      "utterance": 6,
+      "speaker": "ジャッド",
+      "text": "ただ……電気だけで走る車、か。いや、いい。年を取ると、妙なところが引っかかる。プリウスが出たのは、いつだった。",
+      "src": "audio/toyota-v20-opening3d-rest-20261107/rest-06.wav",
+      "seconds": 11.914666666666667,
+      "startFrame": 189,
+      "endFrame": 547
+    },
+    {
+      "id": "rest-07",
+      "utterance": 7,
+      "speaker": "ケント",
+      "text": "1997年です。",
+      "src": "audio/toyota-v19-maku-20261029/v19-maku-07.wav",
+      "seconds": 2.0906666666666665,
+      "startFrame": 560,
+      "endFrame": 623
+    },
+    {
+      "id": "rest-08",
+      "utterance": 8,
+      "speaker": "ジャッド",
+      "text": "29年前か。そのころからモーターを使う車を売ってきたんだな。そこで覚えたことは、今のEVにも使えるのかね。",
+      "src": "audio/toyota-v19-maku-20261029/v19-maku-08.wav",
+      "seconds": 8.885333333333334,
+      "startFrame": 637,
+      "endFrame": 903
+    },
+    {
+      "id": "rest-09",
+      "utterance": 9,
+      "speaker": "ケント",
+      "text": "昔の実績で、今の遅れは埋まりませんよ。",
+      "src": "audio/toyota-v19-maku-20261029/v19-maku-09.wav",
+      "seconds": 3.2,
+      "startFrame": 917,
+      "endFrame": 1013
+    },
+    {
+      "id": "rest-10",
+      "utterance": 10,
+      "speaker": "ジャッド",
+      "text": "それはそうだ。じゃあ、プリウスで何を積み重ねてきたのか。まずは、そこから聞かせてくれ。",
+      "src": "audio/toyota-v19-maku-20261029/v19-maku-10.wav",
+      "seconds": 7.434666666666667,
+      "startFrame": 1026,
+      "endFrame": 1249
+    },
+    {
+      "id": "rest-11",
+      "utterance": 11,
+      "speaker": "ナレ2",
+      "text": "その29年をたどると、一台の走らない車に行き着く。技術者たちは、その車を走らせるまでに、49日かかった。",
+      "src": "audio/toyota-v19-maku-20261029/v19-maku-11.wav",
+      "seconds": 9.354666666666667,
+      "startFrame": 1263,
+      "endFrame": 1543
+    }
+  ],
+  "cues": [
+    {
+      "speaker": "ジャッド",
+      "text": "そうだな。そこは間違いない。",
+      "lines": [
+        "そうだな。そこは間違いない。"
+      ],
+      "startFrame": 12,
+      "endFrame": 81
+    },
+    {
+      "speaker": "ケント",
+      "text": "珍しいですね。すんなり認めるなんて。",
+      "lines": [
+        "珍しいですね。すんなり認めるなんて。"
+      ],
+      "startFrame": 95,
+      "endFrame": 176
+    },
+    {
+      "speaker": "ジャッド",
+      "text": "ただ……電気だけで走る車、か。",
+      "lines": [
+        "ただ……電気だけで走る車、か。"
+      ],
+      "startFrame": 189,
+      "endFrame": 309
+    },
+    {
+      "speaker": "ジャッド",
+      "text": "いや、いい。",
+      "lines": [
+        "いや、いい。"
+      ],
+      "startFrame": 309,
+      "endFrame": 377
+    },
+    {
+      "speaker": "ジャッド",
+      "text": "年を取ると、妙なところが引っかかる。",
+      "lines": [
+        "年を取ると、妙なところが引っかかる。"
+      ],
+      "startFrame": 377,
+      "endFrame": 476
+    },
+    {
+      "speaker": "ジャッド",
+      "text": "プリウスが出たのは、いつだった。",
+      "lines": [
+        "プリウスが出たのは、いつだった。"
+      ],
+      "startFrame": 476,
+      "endFrame": 547
+    },
+    {
+      "speaker": "ケント",
+      "text": "1997年です。",
+      "lines": [
+        "1997年です。"
+      ],
+      "startFrame": 560,
+      "endFrame": 623
+    },
+    {
+      "speaker": "ジャッド",
+      "text": "29年前か。",
+      "lines": [
+        "29年前か。"
+      ],
+      "startFrame": 637,
+      "endFrame": 689
+    },
+    {
+      "speaker": "ジャッド",
+      "text": "そのころからモーターを使う車を売ってきたんだな。",
+      "lines": [
+        "そのころからモーターを使う車を売ってきたんだな。"
+      ],
+      "startFrame": 689,
+      "endFrame": 790
+    },
+    {
+      "speaker": "ジャッド",
+      "text": "そこで覚えたことは、今のEVにも使えるのかね。",
+      "lines": [
+        "そこで覚えたことは、今のEVにも使えるのかね。"
+      ],
+      "startFrame": 790,
+      "endFrame": 903
+    },
+    {
+      "speaker": "ケント",
+      "text": "昔の実績で、今の遅れは埋まりませんよ。",
+      "lines": [
+        "昔の実績で、今の遅れは埋まりませんよ。"
+      ],
+      "startFrame": 917,
+      "endFrame": 1013
+    },
+    {
+      "speaker": "ジャッド",
+      "text": "それはそうだ。",
+      "lines": [
+        "それはそうだ。"
+      ],
+      "startFrame": 1026,
+      "endFrame": 1073
+    },
+    {
+      "speaker": "ジャッド",
+      "text": "じゃあ、プリウスで何を積み重ねてきたのか。",
+      "lines": [
+        "じゃあ、プリウスで何を積み重ねてきたのか。"
+      ],
+      "startFrame": 1073,
+      "endFrame": 1184
+    },
+    {
+      "speaker": "ジャッド",
+      "text": "まずは、そこから聞かせてくれ。",
+      "lines": [
+        "まずは、そこから聞かせてくれ。"
+      ],
+      "startFrame": 1184,
+      "endFrame": 1249
+    },
+    {
+      "speaker": "ナレ2",
+      "text": "その29年をたどると、1台の走らない車に行き着く。",
+      "lines": [
+        "その29年をたどると、1台の走らない車に行き着く。"
+      ],
+      "startFrame": 1263,
+      "endFrame": 1406
+    },
+    {
+      "speaker": "ナレ2",
+      "text": "技術者たちは、",
+      "lines": [
+        "技術者たちは、"
+      ],
+      "startFrame": 1406,
+      "endFrame": 1444
+    },
+    {
+      "speaker": "ナレ2",
+      "text": "その車を走らせるまでに、49日かかった。",
+      "lines": [
+        "その車を走らせるまでに、49日かかった。"
+      ],
+      "startFrame": 1444,
+      "endFrame": 1543
+    }
+  ],
+  "events": {
+    "line4Start": 12,
+    "line5Start": 95,
+    "evEmphasis": 215,
+    "question": 476,
+    "line6Start": 189,
+    "year": 560,
+    "line7Start": 560,
+    "elapsed": 637,
+    "motor": 711,
+    "evUse": 842,
+    "line8Start": 637,
+    "line9Start": 917,
+    "accumulate": 1103,
+    "line10Start": 1026,
+    "end29": 1272,
+    "notRunning": 1346,
+    "untilRun": 1465,
+    "days49": 1505,
+    "line11Start": 1263
+  }
+}
