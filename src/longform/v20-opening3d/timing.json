@@ -1,0 +1,169 @@
+{
+  "fps": 30,
+  "frames": 832,
+  "audio": {
+    "src": "audio/toyota-v20-opening3d-20261106/scene-opening3d-three-lines.wav",
+    "seconds": 26.606666666666666,
+    "sha256": "c0e8e9696967e133cc7cf7dad687300967c2e60b1f670957d448c108d5cbb1eb",
+    "lineOffsets": [
+      {
+        "lineId": "opening3d-01",
+        "startSecond": 0.0
+      },
+      {
+        "lineId": "opening3d-02",
+        "startSecond": 5.41
+      },
+      {
+        "lineId": "opening3d-03",
+        "startSecond": 16.783
+      }
+    ]
+  },
+  "lines": [
+    {
+      "id": "opening3d-01",
+      "speaker": "ケント",
+      "text": "トヨタはEVに出遅れた。売れた台数を見れば、もう分かる話でしょう。",
+      "src": "audio/toyota-v19-maku-20261029/v19-maku-01.wav",
+      "seconds": 4.96,
+      "startFrame": 12,
+      "endFrame": 161
+    },
+    {
+      "id": "opening3d-02",
+      "speaker": "ホーマー",
+      "text": "次に車を買うなら、EVがいいのか、ハイブリッドがいいのか。迷いますよね。トヨタには、ずっと前からプリウスもあるし。プリウスは、EVじゃないんですか。",
+      "src": "audio/toyota-v20-opening3d-20261106/opening3d-02.wav",
+      "seconds": 10.922666666666666,
+      "startFrame": 174,
+      "endFrame": 502
+    },
+    {
+      "id": "opening3d-03",
+      "speaker": "ケント",
+      "text": "プリウスは、エンジンとモーターの両方を使うハイブリッドです。ガソリンも使います。私が数えているのは、電気だけで走るEVの台数です。",
+      "src": "audio/toyota-v20-opening3d-20261106/opening3d-03.wav",
+      "seconds": 9.824,
+      "startFrame": 515,
+      "endFrame": 810
+    }
+  ],
+  "cues": [
+    {
+      "speaker": "ケント",
+      "text": "トヨタはEVに出遅れた。",
+      "lines": [
+        "トヨタはEVに出遅れた。"
+      ],
+      "startFrame": 12,
+      "endFrame": 71
+    },
+    {
+      "speaker": "ケント",
+      "text": "売れた台数を見れば、もう分かる話でしょう。",
+      "lines": [
+        "売れた台数を見れば、もう分かる話でしょう。"
+      ],
+      "startFrame": 71,
+      "endFrame": 161
+    },
+    {
+      "speaker": "ホーマー",
+      "text": "次に車を買うなら、",
+      "lines": [
+        "次に車を買うなら、"
+      ],
+      "startFrame": 174,
+      "endFrame": 224
+    },
+    {
+      "speaker": "ホーマー",
+      "text": "EVがいいのか、ハイブリッドがいいのか。",
+      "lines": [
+        "EVがいいのか、ハイブリッドがいいのか。"
+      ],
+      "startFrame": 224,
+      "endFrame": 307
+    },
+    {
+      "speaker": "ホーマー",
+      "text": "迷いますよね。",
+      "lines": [
+        "迷いますよね。"
+      ],
+      "startFrame": 307,
+      "endFrame": 343
+    },
+    {
+      "speaker": "ホーマー",
+      "text": "トヨタには、ずっと前からプリウスもあるし。",
+      "lines": [
+        "トヨタには、ずっと前からプリウスもあるし。"
+      ],
+      "startFrame": 343,
+      "endFrame": 436
+    },
+    {
+      "speaker": "ホーマー",
+      "text": "プリウスは、EVじゃないんですか。",
+      "lines": [
+        "プリウスは、EVじゃないんですか。"
+      ],
+      "startFrame": 436,
+      "endFrame": 502
+    },
+    {
+      "speaker": "ケント",
+      "text": "プリウスは、",
+      "lines": [
+        "プリウスは、"
+      ],
+      "startFrame": 515,
+      "endFrame": 545
+    },
+    {
+      "speaker": "ケント",
+      "text": "エンジンとモーターの両方を使うハイブリッドです。",
+      "lines": [
+        "エンジンとモーターの両方を使うハイブリッドです。"
+      ],
+      "startFrame": 545,
+      "endFrame": 643
+    },
+    {
+      "speaker": "ケント",
+      "text": "ガソリンも使います。",
+      "lines": [
+        "ガソリンも使います。"
+      ],
+      "startFrame": 643,
+      "endFrame": 690
+    },
+    {
+      "speaker": "ケント",
+      "text": "私が数えているのは、",
+      "lines": [
+        "私が数えているのは、"
+      ],
+      "startFrame": 690,
+      "endFrame": 741
+    },
+    {
+      "speaker": "ケント",
+      "text": "電気だけで走るEVの台数です。",
+      "lines": [
+        "電気だけで走るEVの台数です。"
+      ],
+      "startFrame": 741,
+      "endFrame": 810
+    }
+  ],
+  "events": {
+    "priusMentionFrame": 395,
+    "hybridFrame": 545,
+    "hybridNameFrame": 603,
+    "gasolineFrame": 643,
+    "evFrame": 741
+  }
+}
